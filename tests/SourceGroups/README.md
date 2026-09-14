@@ -2,7 +2,7 @@
 
 The calculation core accepts unique positive Int32 source group IDs and maps them to compact internal indices. Arrays for emission totals and decay rates use the selected group count, so sparse IDs do not allocate memory up to the largest ID. Particle and source IDs use `int` instead of `byte`.
 
-The GUI's 1-99 input restriction is separate. This change does not extend GUI source editing, input generation, or result interpretation. Generate extended inputs directly and do not save them through the stock GUI.
+The [companion GUI extension](https://github.com/Borealis-Thoon/GUI/tree/codex/extend-gui-source-groups) removes the GUI's 99-group limits in editing, input generation, and result analysis. Its regression suite includes GUI-generated inputs, this core, and GUI result evaluation for 302 groups. Both contributions are needed for that workflow. Unmodified GUIs retain the restriction; do not save extended projects through the stock GUI.
 
 ## Tests
 
