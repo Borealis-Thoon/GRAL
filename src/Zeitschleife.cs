@@ -62,15 +62,7 @@ namespace GRAL_2001
             double masse = Program.ParticleMass[nteil];
             
             //get index of internal source group number
-            int SG_nteil = Program.ParticleSG[nteil];
-            for (int i = 0; i < Program.SourceGroups.Count; i++)
-            {
-                if (SG_nteil == Program.SourceGroups[i])
-                {
-                    SG_nteil = i;
-                    break;
-                }
-            }
+            int SG_nteil = Program.Get_Internal_SG_Number(Program.ParticleSG[nteil]);
 
             // deposition parameters
             int Deposition_type = Program.ParticleMode[nteil]; // 0 = no deposition, 1 = depo + conc, 2 = only deposition
@@ -148,7 +140,7 @@ namespace GRAL_2001
             int reflexion_number = 0; 		  // counter to limit max. number of reflexions
             int timestep_number = 0;         // counter for the time-steps LOG-output
 
-            double decay_rate = Program.DecayRate[Program.ParticleSG[nteil]]; // decay rate for real source group number of this source
+            double decay_rate = Program.DecayRate[SG_nteil]; // decay rate for internal source group index
 
             //for transient simulations dispersion time needs to be equally distributed from zero to TAUS
             float tgesamt = Program.DispTimeSum;

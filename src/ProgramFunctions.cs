@@ -460,15 +460,7 @@ namespace GRAL_2001
         /// <returns>Internal contiguous source group number, starting with 0</returns>
         public static int Get_Internal_SG_Number(int Real_SG_Number)
         {
-            int SG_Internal = -1; // if SG is not indicated to be computed
-            for (int im = 0; im < Program.SourceGroups.Count; im++)
-            {
-                if (Real_SG_Number == Program.SourceGroups[im])
-                {
-                    SG_Internal = im;
-                }
-            }
-            return SG_Internal;
+            return SourceGroupIndices.TryGetValue(Real_SG_Number, out int index) ? index : -1;
         }
 
         /// <summary>

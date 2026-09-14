@@ -75,6 +75,7 @@ namespace GRAL_2001
         ///Number of used source groups
         ///</summary>
         public static List<int> SourceGroups = new List<int>();
+        public static readonly Dictionary<int, int> SourceGroupIndices = new Dictionary<int, int>();
         ///<summary>
         ///Maximum number of vertical cells in the flow field grid
         ///</summary>
@@ -657,7 +658,7 @@ namespace GRAL_2001
         ///<summary>
         ///Source group of point source
         ///</summary>
-        public static byte[] PS_SG = new byte[1];
+        public static int[] PS_SG = new int[1];
         ///<summary>
         ///Final plume rise of point sources
         ///</summary>
@@ -745,7 +746,7 @@ namespace GRAL_2001
         ///<summary>
         ///Source group of line source
         ///</summary>
-        public static byte[] LS_SG = new byte[1];
+        public static int[] LS_SG = new int[1];
         ///<summary>
         ///Deposition mode 0 = no deposition, 1 = conc+dep, 2= dep only
         ///</summary>
@@ -805,7 +806,7 @@ namespace GRAL_2001
         ///<summary>
         ///Source group of Tunnel Portal source
         ///</summary>
-        public static byte[] TS_SG = new byte[1];
+        public static int[] TS_SG = new int[1];
         ///<summary>
         ///Cross area of tunnel portals
         ///</summary>
@@ -893,7 +894,7 @@ namespace GRAL_2001
         ///<summary>
         ///Source group of area source
         ///</summary>
-        public static byte[] AS_SG = new byte[1];
+        public static int[] AS_SG = new int[1];
         ///<summary>
         ///Deposition mode 0 = no deposition, 1 = conc+dep, 2= dep only
         ///</summary>
@@ -929,7 +930,7 @@ namespace GRAL_2001
         ///<summary>
         ///Each particle is assigned a source group
         ///</summary>
-        public static byte[] ParticleSG = new byte[1];
+        public static int[] ParticleSG = new int[1];
         ///<summary>
         ///x-coordinate of a particle
         ///</summary>
@@ -1229,7 +1230,7 @@ namespace GRAL_2001
         ///<summary>
         /// decay rate for bioaerosols for each source group
         ///</summary>
-        public static readonly double[] DecayRate = new double[102];
+        public static double[] DecayRate = Array.Empty<double>(); // Indexed by internal source group index.
         ///<summary>
         /// Pollutant name
         ///</summary>

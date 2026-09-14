@@ -177,7 +177,7 @@ namespace GRAL_2001
             float DUDX = 0, DVDX = 0, DUDY = 0, DVDY = 0;
 
             //decay rate
-            double decay_rate = Program.DecayRate[Program.SourceGroups[SG]]; // decay rate for real source group number of this source
+            double decay_rate = Program.DecayRate[SG]; // decay rate for internal source group index
 
             //cell-indices of particles moving in the microscale flow field
             double xsi = xcoord_nteil - IKOOAGRAL;
