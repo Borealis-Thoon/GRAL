@@ -17,9 +17,9 @@ namespace GRAL_2001
             {
                 if (string.IsNullOrWhiteSpace(token)) continue;
                 if (!int.TryParse(token.Trim(), NumberStyles.Integer, CultureInfo.InvariantCulture, out int id)
-                    || id <= 0 || indices.ContainsKey(id))
+                    || !SourceGroupFileName.IsSupported(id) || indices.ContainsKey(id))
                 {
-                    string error = "Source groups must be unique positive Int32 IDs: " + token;
+                    string error = "Source groups must be unique IDs in 1..1295: " + token;
                     Console.Error.WriteLine(error);
                     throw new InvalidDataException(error);
                 }

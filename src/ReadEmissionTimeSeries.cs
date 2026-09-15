@@ -57,7 +57,7 @@ namespace GRAL_2001
                             {
                                 //get the column corresponding with the source group number stored in sg_numbers
                                 int sg_temp = Convert.ToInt32(text10[ii]);
-                                if (sg_temp <= 0 || !seenGroups.Add(sg_temp))
+                                if (!SourceGroupFileName.IsSupported(sg_temp) || !seenGroups.Add(sg_temp))
                                     throw new InvalidDataException("Invalid or duplicate source group in emissions_timeseries.txt");
                                 SG_Time_Series[ii - 2] = sg_temp; // remember the real SG Number for each column in emissions_timeseries.txt
                             }
