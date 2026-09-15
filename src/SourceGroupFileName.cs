@@ -28,7 +28,9 @@ namespace GRAL_2001
         {
             id = 0;
             if (token == null || token.Length != 2) return false;
-            char a = char.ToUpperInvariant(token[0]), b = char.ToUpperInvariant(token[1]);
+            char a = token[0], b = token[1];
+            if (a >= 'a' && a <= 'z') a = (char)(a - 'a' + 'A');
+            if (b >= 'a' && b <= 'z') b = (char)(b - 'a' + 'A');
             bool ad = a >= '0' && a <= '9', bd = b >= '0' && b <= '9';
             bool al = a >= 'A' && a <= 'Z', bl = b >= 'A' && b <= 'Z';
             if (ad && bd) id = (a - '0') * 10 + b - '0';

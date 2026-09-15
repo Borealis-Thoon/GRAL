@@ -1,36 +1,46 @@
-# Extended source groups
+# Source groups through 1295
 
-The calculation core accepts unique positive Int32 source group IDs and maps them to compact internal indices. Arrays for emission totals and decay rates use the selected group count, so sparse IDs do not allocate memory up to the largest ID. Particle and source IDs use `int` instead of `byte`.
+The core accepts unique IDs in 1..1295 and maps them to compact internal indices. Source and particle IDs use int. Emission totals and decay arrays follow the selected group count. Use the [companion GUI PR #96](https://github.com/GralDispersionModel/GUI/pull/96) with [core PR #54](https://github.com/GralDispersionModel/GRAL/pull/54).
 
-The [companion GUI extension](https://github.com/Borealis-Thoon/GUI/tree/codex/extend-gui-source-groups) removes the GUI's 99-group limits in editing, input generation, and result analysis. Its regression suite includes GUI-generated inputs, this core, and GUI result evaluation for 302 groups. Both contributions are needed for that workflow. Unmodified GUIs retain the restriction; do not save extended projects through the stock GUI.
+[FilenameProtocol.md](FilenameProtocol.md) defines the shared two-character tokens. Existing names for IDs 1..99 are unchanged. The original Int32 extension remains on [codex/archive-source-groups-int32-20260915](https://github.com/Borealis-Thoon/GRAL/tree/codex/archive-source-groups-int32-20260915).
 
-## Tests
+## Concentration storage
 
-Requirements: .NET 10 SDK. The simulation comparison also uses Python 3 and its standard library.
+Large source-group cells allocate blocks of 32 values when a nonzero value is written. Cells that fill at least three quarters of their block capacity switch to a dense array. Clearing a large cell releases its blocks. Legacy cells retain their original float[] or double[] allocation, including the transient guard slot.
 
-From the repository root:
+This applies to concentration slices, deposition, odour gradients, and both transient fields. It preserves source/particle traversal, cell locks, accumulation expressions, RNG settings, and output/checkpoint phases. It does not implement a group-by-group ring buffer. Such a scheduler would need separate review of transient carryover, particle order and performance.
+
+The memory benefit depends on occupancy. In an isolated storage test with 20000 cells and 1295 groups, one occupied group per cell used 10.50 MiB versus 99.48 MiB for the previous dense arrays. Fully occupied cells used 100.24 MiB versus 99.48 MiB. At 99 groups, both used 8.22 MiB. These are managed storage measurements, not whole-model RAM figures.
+
+The dense buffer-only workload was about 2.5 to 2.7 times slower with extended groups. In the small simulation comparisons, median total times increased by about 0 to 19 percent. This tradeoff needs production-domain profiling before adoption; memory savings are not a performance guarantee.
+
+## Reproduce the tests
+
+Use .NET 10 SDK and Python 3. The GUI integration harness additionally needs Windows Desktop.
 
 ```powershell
 dotnet build src/GRAL.csproj -c Release -o artifacts/source-groups/core
-dotnet run --project tests/SourceGroups/SourceGroups.csproj -c Release -- artifacts/source-groups/components
+dotnet build tests/SourceGroups/SourceGroups.csproj -c Release -o artifacts/source-groups/tests
+dotnet artifacts/source-groups/tests/SourceGroups.dll artifacts/source-groups/components
+py -3 tests/SourceGroups/validation.py --original path/to/unmodified/GRAL.dll --patched artifacts/source-groups/core/GRAL.dll --output artifacts/source-groups/simulations
 ```
 
-The component harness tests configuration validation, compact indexing, all four source readers, decay mapping, temporal headers, concentration/deposition output, and odour filenames. The odour fixture checks names only.
+Use a new output directory. The component harness checks 17 cases, including storage reuse and locked parallel accumulation, four source readers, temporal mapping, decay, and concentration/deposition/odour filenames. The simulation comparison checks 297 identical legacy payloads, 100/300/1295 groups, 101 full hourly steps, rejected inputs, and transient carryover.
 
-Build an unmodified checkout of the same base commit into a separate directory. Then compare both engines, replacing the baseline DLL path below with that build:
+For the memory comparison, build the dense filename-compatible revision 0288968f47ae632ec44b2cb6675a3f614053caae in a separate checkout, then run:
 
 ```powershell
-py -3 tests/SourceGroups/validation.py --original "D:/GRAL-baseline/bin/GRAL.dll" --patched "artifacts/source-groups/core/GRAL.dll" --output "artifacts/source-groups/simulations"
+py -3 tests/SourceGroups/memory_validation.py --dense path/to/dense/GRAL.dll --patched artifacts/source-groups/core/GRAL.dll --harness artifacts/source-groups/tests/SourceGroups.dll --output artifacts/source-groups/memory
 ```
 
-The simulation output directory must be new. The test creates all meteorology and emissions; it does not require research data. On other platforms, use the installed Python 3 command instead of `py -3`.
-
-The comparison covers 99 groups with byte-identical concentration payloads, 100/300 groups, sparse IDs through 2147483647, invalid configurations, and 101 distinct groups over 101 hourly steps. The original engine can accept a 100-group fixture even though the GUI stops at 99; its other storage/parsing limits remain visible with 300 groups and high IDs.
+This script measures storage in isolated processes, repeats four simulation comparisons three times per build, and compares equivalent restarts in both directions. Normal, transient, and odour payloads match the dense implementation in the supplied fixtures. Deposition data and filenames are covered by component tests; physical deposition and building-volume corrections need broader model validation.
 
 ## Limits and restart contract
 
-This is functional validation on a small flat domain. It does not establish production-domain accuracy, long-run convergence, or practical capacity for thousands of groups. Memory and particle requirements still grow with the selected group count.
+These are small synthetic cases on Windows/.NET 10.0.9 with one worker and the existing reproducible option. They do not establish annual-scale capacity, physical convergence, cross-device equality, or coverage of complex terrain/buildings.
 
-The existing checkpoint format stores group counts, not external IDs or their order. Restart only with the identical group list and ordering and unchanged model inputs. Use a fresh computation directory if these change. This core change does not add checkpoint fingerprints; the separate research launcher is not part of this contribution.
+Dense plumes still need memory proportional to the group count. Receptor arrays, meteorology, particles and output volume are not made sparse. One group per hour now has a maximum of 1295 distinct group IDs.
 
-Missing selected columns retain the existing default emission factor of 1. Unselected temporal columns are ignored. Selected factors must be finite and nonnegative, and duplicate temporal headers are rejected.
+The existing checkpoint format stores counts, not the ordered external IDs. Restart only with the same ordered groups and unchanged inputs. Dense and sparse storage give identical results when resuming the same checkpoint. An uninterrupted run is not generally byte-identical to a restart: the pre-existing checkpoint writer filters stored concentrations and omits the upper boundary level. The comparison records this difference for both implementations. Checkpoint format and filtering are unchanged by this patch.
+
+Missing selected temporal columns retain factor 1. Unselected columns are ignored after validating their IDs. Selected factors must be finite and nonnegative. Duplicate headers and unsupported IDs are rejected.

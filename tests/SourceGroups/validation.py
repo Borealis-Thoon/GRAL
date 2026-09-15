@@ -26,6 +26,12 @@ def make_case(folder, groups, factors, duration=DURATION, tps=100):
     write(folder/'KeepAndReadTransientTempFiles.dat', '1\n')
     return {'groups':groups, 'factors':factors, 'steps':len(factors), 'duration_seconds':duration, 'base_emission_kg_per_hour':1.0}
 
+def token(sg):
+    if sg < 100: return f'{sg:02d}'
+    if sg < 360: return chr(65+(sg-100)//10)+str((sg-100)%10)
+    if sg < 620: return str((sg-360)%10)+chr(65+(sg-360)//10)
+    return chr(65+(sg-620)//26)+chr(65+(sg-620)%26)
+
 def read_grids(folder, groups, steps):
     grids, raw = {}, {}
     for hour in range(1,steps+1):
@@ -37,9 +43,7 @@ def read_grids(folder, groups, steps):
             if len(names) != len(set(names)) or len(names) != len(groups):
                 raise AssertionError(f'nonunique or wrong file count: {archive.name}: {len(names)}')
             for sg in groups:
-                # Legacy minimum-width naming and explicit extended format are accepted;
-                # unique membership is enforced rather than decoding an ambiguous suffix.
-                candidates = [f'{hour:05d}-1{sg:02d}.con', f'{hour:05d}-1-SG{sg}.con', f'{hour:05d}-1-SG{sg:05d}.con', f'{hour:05d}-1-{sg}.con']
+                candidates = [f'{hour:05d}-1{token(sg)}.con']
                 found = [n for n in candidates if n in names]
                 if len(set(found)) != 1:
                     raise AssertionError(f'cannot map SG {sg}: {names[:3]}')
@@ -137,14 +141,10 @@ def main():
             r1,g1,h1=run_case(root,'patched_99',a.patched,groups,rows);report['cases'].append(r1)
             assert h0==h1,'legacy 99-source-group concentration payloads differ'
             report['checks'].append({'name':'legacy_99_bitwise_grid_regression','status':'pass','grid_payloads_compared':len(h0)})
-            groups=list(range(1,101)); rows=[{sg:int(sg==1) for sg in groups},{sg:int(sg==100) for sg in groups},{sg:0 for sg in groups}]
-            r,g,h=run_case(root,'original_100_boundary',a.original,groups,rows);report['cases'].append(r)
-            report['checks'].append({'name':'original_core_accepts_100_gui_boundary_is_separate','status':'pass'})
-            report['checks'].append(expect_rejection(root,'original_300_rejected',a.original,list(range(1,301)),'Error when reading file cadastre.dat'))
-            for label,invalid in [('duplicate',[1,1]),('zero',[0]),('negative',[-1]),('overflow',[2147483648])]:
-                report['checks'].append(expect_rejection(root,'patched_reject_'+label,a.patched,invalid,'Source groups must be unique positive Int32 IDs'))
-            for count in [100,300]:
-                groups=list(range(1,count+1)); active=[1,100] if count==100 else [1,100,256,300]
+            for label,invalid in [('duplicate',[1,1]),('zero',[0]),('negative',[-1]),('overflow',[2147483648]),('filename_limit',[1296])]:
+                report['checks'].append(expect_rejection(root,'patched_reject_'+label,a.patched,invalid,'Source groups must be unique IDs in 1..1295'))
+            for count in [100,300,1295]:
+                groups=list(range(1,count+1)); active=[1,100] if count==100 else [1,100,256,count]
                 rows=[{sg:int(sg==selected) for sg in groups} for selected in active]
                 rows.append({sg:0 for sg in groups})
                 r,g,h=run_case(root,f'patched_{count}',a.patched,groups,rows);report['cases'].append(r)
@@ -155,12 +155,12 @@ def main():
                 never=set(groups)-set(active)
                 assert all(sum(g[(step,sg)])==0 for step in range(1,len(rows)+1) for sg in never),'inactive SG contamination'
                 report['checks'].append({'name':f'{count}_groups_temporal_routing_mass_and_carryover','status':'pass','active_sg_in_order':active,'zero_inactive_groups':len(never)})
-            # Sparse high identifiers exercise the external SG identifier storage independently from count.
-            groups=[1,100,256,300,8760,32767,32768,65535,2147483647]
+            # Sparse identifiers test the filename boundaries independently from group count.
+            groups=[1,99,100,359,360,619,620,1001,1295]
             rows=[{sg:1 for sg in groups},{sg:0 for sg in groups}]
             r,g,h=run_case(root,'patched_sparse_high_ids',a.patched,groups,rows);report['cases'].append(r)
             assert all(sum(g[(1,sg)])>0 and sum(g[(2,sg)])>0 for sg in groups)
-            report['checks'].append({'name':'sparse_identifiers_through_int32_max','status':'pass','groups':groups})
+            report['checks'].append({'name':'sparse_identifiers_through_1295','status':'pass','groups':groups})
             groups=list(range(1,102))
             rows=[{sg:int(sg==selected) for sg in groups} for selected in groups]
             r,g,h=run_case(root,'patched_101_hourly_groups',a.patched,groups,rows,duration=3600,tps=1)

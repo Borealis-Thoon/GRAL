@@ -251,7 +251,7 @@ namespace GRAL_2001
         ///<summary>
         ///2D concentration separated into source groups and horizontal slices
         ///</summary>
-        public static float[][][][] Conz3d = CreateArray<float[][][]>(1, () => CreateArray<float[][]>(1, () => CreateArray<float[]>(1, () => new float[1])));
+        public static SourceGroupBuffer<float>[][][] Conz3d = CreateArray<SourceGroupBuffer<float>[][]>(1, () => CreateArray<SourceGroupBuffer<float>[]>(1, () => CreateArray<SourceGroupBuffer<float>>(1, () => new SourceGroupBuffer<float>(1))));
         ///<summary>
         ///Height of u,v measurements
         ///</summary>
@@ -1110,11 +1110,11 @@ namespace GRAL_2001
         ///<summary>
         ///2D concentration separated into source groups and horizontal slices for the adjecent layer upwards
         ///</summary>
-        public static float[][][][] Conz3dp = CreateArray<float[][][]>(1, () => CreateArray<float[][]>(1, () => CreateArray<float[]>(1, () => new float[1])));
+        public static SourceGroupBuffer<float>[][][] Conz3dp = CreateArray<SourceGroupBuffer<float>[][]>(1, () => CreateArray<SourceGroupBuffer<float>[]>(1, () => CreateArray<SourceGroupBuffer<float>>(1, () => new SourceGroupBuffer<float>(1))));
         ///<summary>
         ///2D concentration separated into source groups and horizontal slices for the adjecent layer downwards
         ///</summary>
-        public static float[][][][] Conz3dm = CreateArray<float[][][]>(1, () => CreateArray<float[][]>(1, () => CreateArray<float[]>(1, () => new float[1])));
+        public static SourceGroupBuffer<float>[][][] Conz3dm = CreateArray<SourceGroupBuffer<float>[][]>(1, () => CreateArray<SourceGroupBuffer<float>[]>(1, () => CreateArray<SourceGroupBuffer<float>>(1, () => new SourceGroupBuffer<float>(1))));
         ///<summary>
         ///2D source term for concentration variance
         ///</summary>
@@ -1126,7 +1126,7 @@ namespace GRAL_2001
         ///<summary>
         ///deposition results
         ///</summary>
-        public static double[][][] Depo_conz = CreateArray<double[][]>(1, () => CreateArray<double[]>(1, () => new double[1]));
+        public static SourceGroupBuffer<double>[][] Depo_conz = CreateArray<SourceGroupBuffer<double>[]>(1, () => CreateArray<SourceGroupBuffer<double>>(1, () => new SourceGroupBuffer<double>(1)));
         ///<summary>
         ///Top of the GRAL domain in [m] default 800 for flat terrain
         ///</summary>
@@ -1134,11 +1134,11 @@ namespace GRAL_2001
         ///<summary>
         ///3D concentration separated into source groups old time step
         ///</summary>
-        public static float[][][][] Conz4d = CreateArray<float[][][]>(1, () => CreateArray<float[][]>(1, () => CreateArray<float[]>(1, () => new float[1])));
+        public static SourceGroupBuffer<float>[][][] Conz4d = CreateArray<SourceGroupBuffer<float>[][]>(1, () => CreateArray<SourceGroupBuffer<float>[]>(1, () => CreateArray<SourceGroupBuffer<float>>(1, () => new SourceGroupBuffer<float>(1))));
         ///<summary>
         ///3D concentration separated into source groups new time step
         ///</summary>
-        public static float[][][][] Conz5d = CreateArray<float[][][]>(1, () => CreateArray<float[][]>(1, () => CreateArray<float[]>(1, () => new float[1])));
+        public static SourceGroupBuffer<float>[][][] Conz5d = CreateArray<SourceGroupBuffer<float>[][]>(1, () => CreateArray<SourceGroupBuffer<float>[]>(1, () => CreateArray<SourceGroupBuffer<float>>(1, () => new SourceGroupBuffer<float>(1))));
         ///<summary>
         ///3D concentration sum file
         ///</summary>

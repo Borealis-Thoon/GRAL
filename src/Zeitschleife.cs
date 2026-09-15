@@ -1339,9 +1339,9 @@ namespace GRAL_2001
                                     float Pd1 = Pd(varw, vsed, vdep, Deposition_type, FFCellX, FFCellY);
                                     int ik = (int)(xsi * ConcGridXRez) + 1;
                                     int jk = (int)(eta * ConcGridYRez) + 1;
-                                    double[] depo_L = Program.Depo_conz[ik][jk];
+                                    SourceGroupBuffer<double> depo_L = Program.Depo_conz[ik][jk];
                                     double conc = masse * Pd1 * area_rez_fac;
-                                    lock (depo_L)
+                                    lock (depo_L.SyncRoot)
                                     {
                                         depo_L[SG_nteil] += conc;
                                     }
@@ -1407,9 +1407,9 @@ namespace GRAL_2001
                                 float Pd1 = Pd(varw, vsed, vdep, Deposition_type, FFCellX, FFCellY);
                                 int ik = (int)(xsi * ConcGridXRez) + 1;
                                 int jk = (int)(eta * ConcGridYRez) + 1;
-                                double[] depo_L = Program.Depo_conz[ik][jk];
+                                SourceGroupBuffer<double> depo_L = Program.Depo_conz[ik][jk];
                                 double conc = masse * Pd1 * area_rez_fac;
-                                lock (depo_L)
+                                lock (depo_L.SyncRoot)
                                 {
                                     depo_L[SG_nteil] += conc;
                                 }
@@ -1476,9 +1476,9 @@ namespace GRAL_2001
                             float Pd1 = Pd(varw, vsed, vdep, Deposition_type, FFCellX, FFCellY);
                             int ik = (int)(xsi * ConcGridXRez) + 1;
                             int jk = (int)(eta * ConcGridYRez) + 1;
-                            double[] depo_L = Program.Depo_conz[ik][jk];
+                            SourceGroupBuffer<double> depo_L = Program.Depo_conz[ik][jk];
                             double conc = masse * Pd1 * area_rez_fac;
-                            lock (depo_L)
+                            lock (depo_L.SyncRoot)
                             {
                                 depo_L[SG_nteil] += conc;
                             }
@@ -1665,9 +1665,9 @@ namespace GRAL_2001
                                     float Pd1 = Pd(varw, vsed, vdep, Deposition_type, FFCellX, FFCellY);
                                     int ik = (int)(xsi * ConcGridXRez) + 1;
                                     int jk = (int)(eta * ConcGridYRez) + 1;
-                                    double[] depo_L = Program.Depo_conz[ik][jk];
+                                    SourceGroupBuffer<double> depo_L = Program.Depo_conz[ik][jk];
                                     double conc = masse * Pd1 * area_rez_fac;
-                                    lock (depo_L)
+                                    lock (depo_L.SyncRoot)
                                     {
                                         depo_L[SG_nteil] += conc;
                                     }
@@ -1688,9 +1688,9 @@ namespace GRAL_2001
                                     float Pd1 = Pd(varw, vsed, vdep, Deposition_type, FFCellX, FFCellY);
                                     int ik = (int)(xsi * ConcGridXRez) + 1;
                                     int jk = (int)(eta * ConcGridYRez) + 1;
-                                    double[] depo_L = Program.Depo_conz[ik][jk];
+                                    SourceGroupBuffer<double> depo_L = Program.Depo_conz[ik][jk];
                                     double conc = masse * Pd1 * area_rez_fac;
-                                    lock (depo_L)
+                                    lock (depo_L.SyncRoot)
                                     {
                                         depo_L[SG_nteil] += conc;
                                     }
@@ -1714,9 +1714,9 @@ namespace GRAL_2001
                                     float Pd1 = Pd(varw, vsed, vdep, Deposition_type, FFCellX, FFCellY);
                                     int ik = (int)(xsi * ConcGridXRez) + 1;
                                     int jk = (int)(eta * ConcGridYRez) + 1;
-                                    double[] depo_L = Program.Depo_conz[ik][jk];
+                                    SourceGroupBuffer<double> depo_L = Program.Depo_conz[ik][jk];
                                     double conc = masse * Pd1 * area_rez_fac;
-                                    lock (depo_L)
+                                    lock (depo_L.SyncRoot)
                                     {
                                         depo_L[SG_nteil] += conc;
                                     }
@@ -1912,9 +1912,9 @@ namespace GRAL_2001
                         float Pd1 = Pd(varw, vsed, vdep, Deposition_type, FFCellX, FFCellY);
                         int ik = (int)(xsi * ConcGridXRez) + 1;
                         int jk = (int)(eta * ConcGridYRez) + 1;
-                        double[] depo_L = Program.Depo_conz[ik][jk];
+                        SourceGroupBuffer<double> depo_L = Program.Depo_conz[ik][jk];
                         double conc = masse * Pd1 * area_rez_fac;
-                        lock (depo_L)
+                        lock (depo_L.SyncRoot)
                         {
                             depo_L[SG_nteil] += conc;
                         }
@@ -2014,9 +2014,9 @@ namespace GRAL_2001
                     }
                     masse -= epsilonW_Masse;
 
-                    double[] depo_L = Program.Depo_conz[iko][jko];
+                    SourceGroupBuffer<double> depo_L = Program.Depo_conz[iko][jko];
                     double conc = epsilonW_Masse * area_rez_fac;
-                    lock (depo_L)
+                    lock (depo_L.SyncRoot)
                     {
                         depo_L[SG_nteil] += conc;
                     }
@@ -2067,9 +2067,9 @@ namespace GRAL_2001
                     {
                         if ((kko[II] == 0) && (reflexion_flag == Consts.ParticleNotReflected))
                         {
-                            float[] conz3d_L = Program.Conz3d[iko][jko][II];
+                            SourceGroupBuffer<float> conz3d_L = Program.Conz3d[iko][jko][II];
                             double conc = masse * idt;
-                            lock (conz3d_L)
+                            lock (conz3d_L.SyncRoot)
                             {
                                 conz3d_L[SG_nteil] += (float)conc;
                             }
@@ -2106,9 +2106,9 @@ namespace GRAL_2001
                         {
                             if ((kko[II] == 0) && (reflexion_flag == Consts.ParticleNotReflected))
                             {
-                                float[] conz3dp_L = Program.Conz3dp[iko][jko][II];
+                                SourceGroupBuffer<float> conz3dp_L = Program.Conz3dp[iko][jko][II];
                                 double conc = masse * idt;
-                                lock (conz3dp_L)
+                                lock (conz3dp_L.SyncRoot)
                                 {
                                     conz3dp_L[SG_nteil] += (float)conc;
                                 }
@@ -2123,9 +2123,9 @@ namespace GRAL_2001
                         {
                             if ((kko[II] == 0) && (reflexion_flag == Consts.ParticleNotReflected))
                             {
-                                float[] conz3dm_L = Program.Conz3dm[iko][jko][II];
+                                SourceGroupBuffer<float> conz3dm_L = Program.Conz3dm[iko][jko][II];
                                 double conc = masse * idt;
-                                lock (conz3dm_L)
+                                lock (conz3dm_L.SyncRoot)
                                 {
                                     conz3dm_L[SG_nteil] += (float)conc;
                                 }
