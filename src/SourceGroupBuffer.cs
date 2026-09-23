@@ -9,8 +9,6 @@ namespace GRAL_2001
     // Reads, output, clearing and checkpoint I/O keep the existing phase barriers.
     public readonly struct SourceGroupBuffer<T> where T : unmanaged
     {
-        // One reference per cell, as in the original jagged arrays.
-        // Legacy cells keep the original T[] allocation without an extra wrapper object.
         private readonly object storage;
         public object SyncRoot => storage;
         public int Length => storage is T[] values ? values.Length : ((SparseCell)storage).Length;
@@ -43,9 +41,12 @@ namespace GRAL_2001
         {
             private const int BlockShift = 5;
             private const int BlockSize = 1 << BlockShift;
-            private T[] dense;
+            // With no block directory, values holds one block (state = its slot)
+            // or a dense array (state = -1). With a directory, state is its block count.
+            // Reuse the existing fields so untouched cells do not gain an extra object or reference.
+            private T[] values;
             private T[][] blocks;
-            private int allocatedBlocks;
+            private int state = -1;
             public int Length { get; }
 
             public SparseCell(int length) { Length = length; }
@@ -56,7 +57,9 @@ namespace GRAL_2001
                 get
                 {
                     if ((uint)index >= (uint)Length) throw new IndexOutOfRangeException();
-                    if (dense != null) return dense[index];
+                    if (values != null)
+                        return state < 0 ? values[index] :
+                            (state == index >> BlockShift ? values[index & (BlockSize - 1)] : default);
                     T[] block = blocks == null ? null : blocks[index >> BlockShift];
                     return block == null ? default : block[index & (BlockSize - 1)];
                 }
@@ -64,32 +67,50 @@ namespace GRAL_2001
                 set
                 {
                     if ((uint)index >= (uint)Length) throw new IndexOutOfRangeException();
-                    if (dense != null) { dense[index] = value; return; }
+                    if (values != null && state < 0) { values[index] = value; return; }
                     int slot = index >> BlockShift;
-                    T[] block = blocks == null ? null : blocks[slot];
+                    if (blocks == null)
+                    {
+                        if (values == null)
+                        {
+                            if (EqualityComparer<T>.Default.Equals(value, default)) return;
+                            values = new T[Math.Min(BlockSize, Length - slot * BlockSize)];
+                            state = slot;
+                        }
+                        else if (state != slot)
+                        {
+                            if (EqualityComparer<T>.Default.Equals(value, default)) return;
+                            blocks = new T[(Length + BlockSize - 1) >> BlockShift][];
+                            blocks[state] = values;
+                            values = null;
+                            state = 1;
+                        }
+                        if (blocks == null) { values[index & (BlockSize - 1)] = value; return; }
+                    }
+                    T[] block = blocks[slot];
                     if (block == null)
                     {
                         if (EqualityComparer<T>.Default.Equals(value, default)) return;
-                        if (blocks == null) blocks = new T[(Length + BlockSize - 1) >> BlockShift][];
                         block = new T[Math.Min(BlockSize, Length - slot * BlockSize)];
                         blocks[slot] = block;
-                        allocatedBlocks++;
+                        state++;
                     }
                     block[index & (BlockSize - 1)] = value;
-                    if (allocatedBlocks * BlockSize >= Length * 3 / 4) MakeDense();
+                    if (state * BlockSize >= Length * 3 / 4) MakeDense();
                 }
             }
 
             private void MakeDense()
             {
-                var values = new T[Length];
+                var dense = new T[Length];
                 for (int i = 0; i < blocks.Length; i++)
-                    if (blocks[i] != null) Array.Copy(blocks[i], 0, values, i * BlockSize, blocks[i].Length);
-                dense = values;
+                    if (blocks[i] != null) Array.Copy(blocks[i], 0, dense, i * BlockSize, blocks[i].Length);
+                values = dense;
                 blocks = null;
+                state = -1;
             }
 
-            public void Clear() { dense = null; blocks = null; allocatedBlocks = 0; }
+            public void Clear() { values = null; blocks = null; state = -1; }
         }
     }
 }

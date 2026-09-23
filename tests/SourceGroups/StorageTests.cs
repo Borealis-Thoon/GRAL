@@ -27,6 +27,23 @@ internal static class StorageTests
             try { actual[count] = 1; } catch (IndexOutOfRangeException) { rejected = true; }
             check(rejected, "upper boundary");
         }
+        // Exercise the direct first block before random writes cause dense promotion.
+        foreach (int first in new[] { 0, 31, 32, 1024, 1294 })
+        {
+            var cell = new SourceGroupBuffer<double>(1295);
+            object gate = cell.SyncRoot;
+            cell[first] = 2.5;
+            for (int i = 0; i < cell.Length; i++) check(cell[i] == (i == first ? 2.5 : 0), "single block read");
+            int other = first < 1000 ? 1294 : 0;
+            cell[other] = 0; // Writing zero outside the first block must keep its values.
+            check(cell[first] == 2.5 && cell[other] == 0, "zero outside first block");
+            cell[other] = -3.25;
+            check(cell[first] == 2.5 && cell[other] == -3.25, "first block directory promotion");
+            for (int i = 0; i < cell.Length; i++) cell[i] += i;
+            for (int i = 0; i < cell.Length; i++) check(cell[i] == i + (i == first ? 2.5 : i == other ? -3.25 : 0), "first block dense promotion");
+            cell.Clear(); cell[other] = 9;
+            check(ReferenceEquals(gate, cell.SyncRoot) && cell[first] == 0 && cell[other] == 9, "stable lock after clear");
+        }
         var concurrent = new SourceGroupBuffer<double>(1295);
         Parallel.For(0, 16, worker =>
         {
