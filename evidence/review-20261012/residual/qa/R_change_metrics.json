@@ -1,0 +1,160 @@
+{
+  "C2_revision_only": {
+    "files": [
+      {
+        "path": "src/TeilchenAufteilung.cs",
+        "added_lines": 2,
+        "deleted_lines": 2,
+        "added_body_characters": 87,
+        "deleted_body_characters": 125
+      }
+    ],
+    "changed_files": 1,
+    "added_lines": 2,
+    "deleted_lines": 2,
+    "changed_body_characters": 212,
+    "patch_characters": 882,
+    "patch_sha256": "fcbae18825a12c74b5f0674000387aa924056a1e661eeeda189ed80b5139cffa"
+  },
+  "C3_revision_with_C2_fix": {
+    "files": [
+      {
+        "path": "src/TeilchenAufteilung.cs",
+        "added_lines": 2,
+        "deleted_lines": 2,
+        "added_body_characters": 87,
+        "deleted_body_characters": 125
+      },
+      {
+        "path": "src/Zeitschleife_nonsteadystate.cs",
+        "added_lines": 2,
+        "deleted_lines": 2,
+        "added_body_characters": 182,
+        "deleted_body_characters": 138
+      }
+    ],
+    "changed_files": 2,
+    "added_lines": 4,
+    "deleted_lines": 4,
+    "changed_body_characters": 532,
+    "patch_characters": 1579,
+    "patch_sha256": "44ea7116b9360cc164fa39e9e6e4a7e6d72df0ca6466637bbfcec2b6f18c9f3c"
+  },
+  "C2_topic_vs_C1": {
+    "files": [
+      {
+        "path": "src/Program.cs",
+        "added_lines": 1,
+        "deleted_lines": 0,
+        "added_body_characters": 69,
+        "deleted_body_characters": 0
+      },
+      {
+        "path": "src/TeilchenAufteilung.cs",
+        "added_lines": 41,
+        "deleted_lines": 0,
+        "added_body_characters": 1852,
+        "deleted_body_characters": 0
+      },
+      {
+        "path": "src/Zeitschleife_nonsteadystate.cs",
+        "added_lines": 1,
+        "deleted_lines": 1,
+        "added_body_characters": 96,
+        "deleted_body_characters": 83
+      }
+    ],
+    "changed_files": 3,
+    "added_lines": 43,
+    "deleted_lines": 1,
+    "changed_body_characters": 2100,
+    "patch_characters": 3396,
+    "patch_sha256": "9894677716c907260e51de559d06e850638470094dd87b52cfefb460153e677d"
+  },
+  "C3_topic_vs_revised_C2": {
+    "files": [
+      {
+        "path": "src/Program.cs",
+        "added_lines": 2,
+        "deleted_lines": 0,
+        "added_body_characters": 147,
+        "deleted_body_characters": 0
+      },
+      {
+        "path": "src/Zeitschleife_nonsteadystate.cs",
+        "added_lines": 49,
+        "deleted_lines": 2,
+        "added_body_characters": 2207,
+        "deleted_body_characters": 155
+      }
+    ],
+    "changed_files": 2,
+    "added_lines": 51,
+    "deleted_lines": 2,
+    "changed_body_characters": 2509,
+    "patch_characters": 3737,
+    "patch_sha256": "d53b70e5c9674cf84ebd388ae450ae8809951f9bea9bc9838036fdb8d03cf3f8"
+  },
+  "C2_cumulative_vs_warning_free": {
+    "files": [
+      {
+        "path": "src/Program.cs",
+        "added_lines": 1,
+        "deleted_lines": 0,
+        "added_body_characters": 69,
+        "deleted_body_characters": 0
+      },
+      {
+        "path": "src/TeilchenAufteilung.cs",
+        "added_lines": 41,
+        "deleted_lines": 0,
+        "added_body_characters": 1852,
+        "deleted_body_characters": 0
+      },
+      {
+        "path": "src/Zeitschleife_nonsteadystate.cs",
+        "added_lines": 35,
+        "deleted_lines": 7,
+        "added_body_characters": 1804,
+        "deleted_body_characters": 586
+      }
+    ],
+    "changed_files": 3,
+    "added_lines": 77,
+    "deleted_lines": 7,
+    "changed_body_characters": 4311,
+    "patch_characters": 6864,
+    "patch_sha256": "65ef50b48dd72471f3ca90905b5f8493f634a0b8efa6cd7dd9c0a2ee67148316"
+  },
+  "C3_cumulative_vs_warning_free": {
+    "files": [
+      {
+        "path": "src/Program.cs",
+        "added_lines": 3,
+        "deleted_lines": 0,
+        "added_body_characters": 216,
+        "deleted_body_characters": 0
+      },
+      {
+        "path": "src/TeilchenAufteilung.cs",
+        "added_lines": 41,
+        "deleted_lines": 0,
+        "added_body_characters": 1852,
+        "deleted_body_characters": 0
+      },
+      {
+        "path": "src/Zeitschleife_nonsteadystate.cs",
+        "added_lines": 83,
+        "deleted_lines": 8,
+        "added_body_characters": 3873,
+        "deleted_body_characters": 603
+      }
+    ],
+    "changed_files": 3,
+    "added_lines": 127,
+    "deleted_lines": 8,
+    "changed_body_characters": 6544,
+    "patch_characters": 9185,
+    "patch_sha256": "263896f8998c4298fba36e3aa0e561a63ba58d633a4ea211050695ed13ad7641"
+  }
+}

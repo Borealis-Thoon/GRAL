@@ -1,0 +1,197 @@
+{
+  "status": "pass",
+  "final_suite": "work/F_validation/run02",
+  "portable_package": "work/F_validation/package",
+  "runner": "reproduce/extend_revalidate.py",
+  "source_changes": false,
+  "frozen_source_hash_check": "pass before and after suite",
+  "extra_input_manifest_check": "pass all six cases",
+  "final_suite_elapsed_s": 25.223876500007464,
+  "max_additional_main_elapsed_s": 0.341676500000176,
+  "total_main_runs": 60,
+  "total_main_checks_passed": 648,
+  "helper_checks_passed": 120,
+  "total_concentration_payloads": 360,
+  "total_float_values": 43800,
+  "single_worker_repeat_pairs": 28,
+  "multiworker_repeat_pairs": 2,
+  "protected_payload_pairs_equal": 34,
+  "additional_relative_l1_percent_range": [
+    1.5222455335109946e-05,
+    0.0018212144744997416
+  ],
+  "additional_cases": [
+    {
+      "id": "day_stationary_10m_n100",
+      "mode": "stationary",
+      "budget": 100,
+      "slices": 1,
+      "workers": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "dx": 10,
+      "dy": 10,
+      "nx": 20,
+      "ny": 20,
+      "wind_speed": 2.5,
+      "stability": 2,
+      "directions": [
+        9
+      ],
+      "domain_extent_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "situation_duration_s": 30,
+      "weather_situations": 1
+    },
+    {
+      "id": "day_transient_10m_n1000",
+      "mode": "transient",
+      "budget": 1000,
+      "slices": 1,
+      "workers": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "dx": 10,
+      "dy": 10,
+      "nx": 20,
+      "ny": 20,
+      "wind_speed": 2.5,
+      "stability": 2,
+      "directions": [
+        9,
+        18,
+        27
+      ],
+      "domain_extent_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "situation_duration_s": 30,
+      "weather_situations": 3
+    },
+    {
+      "id": "day_stationary_40m_n3000",
+      "mode": "stationary",
+      "budget": 3000,
+      "slices": 1,
+      "workers": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "dx": 40,
+      "dy": 40,
+      "nx": 5,
+      "ny": 5,
+      "wind_speed": 2.5,
+      "stability": 2,
+      "directions": [
+        18
+      ],
+      "domain_extent_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "situation_duration_s": 30,
+      "weather_situations": 1
+    },
+    {
+      "id": "stable_transient_40m_n100",
+      "mode": "transient",
+      "budget": 100,
+      "slices": 1,
+      "workers": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "dx": 40,
+      "dy": 40,
+      "nx": 5,
+      "ny": 5,
+      "wind_speed": 0.5,
+      "stability": 6,
+      "directions": [
+        27,
+        18,
+        9
+      ],
+      "domain_extent_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "situation_duration_s": 30,
+      "weather_situations": 3
+    },
+    {
+      "id": "stable_stationary_10m_n1000",
+      "mode": "stationary",
+      "budget": 1000,
+      "slices": 1,
+      "workers": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "dx": 10,
+      "dy": 10,
+      "nx": 20,
+      "ny": 20,
+      "wind_speed": 0.5,
+      "stability": 6,
+      "directions": [
+        27
+      ],
+      "domain_extent_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "situation_duration_s": 30,
+      "weather_situations": 1
+    },
+    {
+      "id": "stable_transient_40m_n3000",
+      "mode": "transient",
+      "budget": 3000,
+      "slices": 1,
+      "workers": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "dx": 40,
+      "dy": 40,
+      "nx": 5,
+      "ny": 5,
+      "wind_speed": 0.5,
+      "stability": 6,
+      "directions": [
+        18,
+        27,
+        9
+      ],
+      "domain_extent_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "situation_duration_s": 30,
+      "weather_situations": 3
+    }
+  ],
+  "final_test_metadata_corrected": true,
+  "preparatory_run_also_passed": true,
+  "remote_mutations": 0,
+  "limitation": "Numerical and binary-format checks on a small virtual field; no truth concentration, convergence or production performance claim."
+}

@@ -1,0 +1,160 @@
+{
+  "status": "pass",
+  "source_findings": [],
+  "topics": {
+    "F": "ready",
+    "PR62": "ready",
+    "PR63": "ready"
+  },
+  "R_final_run": "run04",
+  "R_raw_main_runs": 36,
+  "R_raw_main_checks": 288,
+  "R_raw_concentration_payload_comparisons": 208,
+  "R_raw_float_values_redecoded": 20800,
+  "R_compiled_frozen_source_files": 340,
+  "R_source_hash_mismatches": 0,
+  "reference_witness_copies_verified": 4,
+  "R_checkpoints": [
+    {
+      "variant": "old_C2_active_reference",
+      "checkpoint_situation": 2,
+      "payload_bytes": 2212,
+      "float_values": 51,
+      "source_groups": 2,
+      "full_legacy_format_consumed": true,
+      "reference_equal": false
+    },
+    {
+      "variant": "old_C3_adaptive_budget",
+      "checkpoint_situation": 2,
+      "payload_bytes": 2212,
+      "float_values": 51,
+      "source_groups": 2,
+      "full_legacy_format_consumed": true,
+      "reference_equal": false
+    },
+    {
+      "variant": "new_C2_active_reference",
+      "checkpoint_situation": 2,
+      "payload_bytes": 2212,
+      "float_values": 51,
+      "source_groups": 2,
+      "full_legacy_format_consumed": true,
+      "reference_equal": true
+    },
+    {
+      "variant": "new_C3_adaptive_budget",
+      "checkpoint_situation": 2,
+      "payload_bytes": 2212,
+      "float_values": 51,
+      "source_groups": 2,
+      "full_legacy_format_consumed": true,
+      "reference_equal": true
+    }
+  ],
+  "R_strict_builds": {
+    "old_C2_active_reference": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "old_C3_adaptive_budget": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "new_C2_active_reference": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "new_C3_adaptive_budget": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "actual_dll_fixture": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "worker_cancel_fixture": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "old_C2_active_reference_reference_witness": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "old_C3_adaptive_budget_reference_witness": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "new_C2_active_reference_reference_witness": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "new_C3_adaptive_budget_reference_witness": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "R_total_helper_checks": 83,
+  "R_actual_dll_checks": 72,
+  "R_runtime_checks": {
+    "one_worker": {
+      "configured_max_degree": 1,
+      "max_concurrent_rows": 1,
+      "visited_rows": 32,
+      "final_k": 55
+    },
+    "already_cancelled": {
+      "visited_rows": 0,
+      "elapsed_s": 1e-06,
+      "no_grid_index_read": true
+    },
+    "cancel_during_planning": {
+      "visited_rows": 3,
+      "max_concurrent_rows": 1,
+      "final_k": 10,
+      "elapsed_s": 0.0466493
+    },
+    "checks_passed": 11,
+    "scope": "Actual extracted PlanResidual with only test row-entry/exit witnesses. No production-source instrumentation."
+  },
+  "R_K10_boundary_cases": 210000,
+  "R_K10_nested_floor_mismatches": 0,
+  "R_old_product_boundary_disagreements": 21012,
+  "R_policy_changes": [
+    "All-off reference always falls back to ParticleMassMean, removing the prior history-dependent state.",
+    "C3 uses the preceding nested-floor convention and bounds the selected split count before Int32 conversion."
+  ],
+  "limitations": [
+    "Reference equality does not guarantee full engine bitwise checkpoint restart.",
+    "Boundary sweep values were deliberately selected near integer thresholds; disagreement counts are not a population error rate.",
+    "Float split mass still rounds and may underflow at subnormal values.",
+    "Planner target remains soft and takes at most six passes.",
+    "Field differences do not establish atmospheric accuracy."
+  ],
+  "remaining_publication_review": [
+    "Final PR wording, links, figures and remote source parity are controlled by the root agent."
+  ],
+  "evidence_sha256": {
+    "summary": "034028bb413b3844200e0deaa2d3ce6eab9340b5f3437100204a3ad13908c085",
+    "actual_main": "04cb8dd87272643eeeb96213755ad71a4f788d1d39a8cb40ec17bc304349bd70",
+    "source_manifest": "b4e265af5911fc979b2c4696c8cb4bceccfa87e790c0be6349a3d5d73161b698",
+    "runtime": "7d25241ffc15efe50023744b91dffcd98412153ce25f57ecda4158c6c769dd75"
+  },
+  "R_runtime_production_methods_verified": [
+    "SetResidualParticleMass",
+    "ActiveEmission",
+    "ResidualSplitCount",
+    "PlanResidual"
+  ],
+  "R_runtime_instrumentation": "Two row entry/exit observations in the extracted test copy; production candidate is unchanged."
+}

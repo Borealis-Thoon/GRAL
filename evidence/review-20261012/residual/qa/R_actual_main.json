@@ -1,0 +1,2138 @@
+[
+  {
+    "run_id": "n100_old_C2_active_reference_r1",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "5c365c9b1cd66e5e84ec1096f756e04f7362996b0358644d1f4a3dd93ce257d3",
+        "sum": 2552.7532691955566
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b8c386476b5a4ef25803e7011667d5bbdd0abea1f8f50d2b7f4e87810d9a8ab2",
+        "sum": 2305.248992919922
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "d8056f1ba5807c66ba2b434282ada6f087df1e000b12635faedbba2705e7fab4",
+        "sum": 4094.453037261963
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "a9914ca8796a4dd148ec317fcfb3cba00a4fa79e3f86b5bb9231e1ca31a7a18b",
+        "sum": 7109.974914550781
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "98cfb14bdbd61073f49006bf4e4f494cef306163888c03e9b24dfe56455d1779",
+        "sum": 3011.062469482422
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "634161683cedeeb6db4ab8d1cb95bae03349fb6c0ea3139663e2b30f5626dd03",
+        "sum": 7927.457143783569
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n100_old_C3_adaptive_budget_r1",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "5c365c9b1cd66e5e84ec1096f756e04f7362996b0358644d1f4a3dd93ce257d3",
+        "sum": 2552.7532691955566
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b8c386476b5a4ef25803e7011667d5bbdd0abea1f8f50d2b7f4e87810d9a8ab2",
+        "sum": 2305.248992919922
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "d8056f1ba5807c66ba2b434282ada6f087df1e000b12635faedbba2705e7fab4",
+        "sum": 4094.453037261963
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "a9914ca8796a4dd148ec317fcfb3cba00a4fa79e3f86b5bb9231e1ca31a7a18b",
+        "sum": 7109.974914550781
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "98cfb14bdbd61073f49006bf4e4f494cef306163888c03e9b24dfe56455d1779",
+        "sum": 3011.062469482422
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "634161683cedeeb6db4ab8d1cb95bae03349fb6c0ea3139663e2b30f5626dd03",
+        "sum": 7927.457143783569
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n100_new_C2_active_reference_r1",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "5c365c9b1cd66e5e84ec1096f756e04f7362996b0358644d1f4a3dd93ce257d3",
+        "sum": 2552.7532691955566
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b8c386476b5a4ef25803e7011667d5bbdd0abea1f8f50d2b7f4e87810d9a8ab2",
+        "sum": 2305.248992919922
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "d8056f1ba5807c66ba2b434282ada6f087df1e000b12635faedbba2705e7fab4",
+        "sum": 4094.453037261963
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "a9914ca8796a4dd148ec317fcfb3cba00a4fa79e3f86b5bb9231e1ca31a7a18b",
+        "sum": 7109.974914550781
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "47363fbc95ddb5a96090eb14bbc98ff36af7320d958479aa2240f7d5a63adf40",
+        "sum": 2893.272659301758
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "193780d9344b0941b0788df4144d2d3acc22b4d79adb0300fb9caf0346b3d1ff",
+        "sum": 7033.221393585205
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n100_new_C3_adaptive_budget_r1",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "5c365c9b1cd66e5e84ec1096f756e04f7362996b0358644d1f4a3dd93ce257d3",
+        "sum": 2552.7532691955566
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b8c386476b5a4ef25803e7011667d5bbdd0abea1f8f50d2b7f4e87810d9a8ab2",
+        "sum": 2305.248992919922
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "d8056f1ba5807c66ba2b434282ada6f087df1e000b12635faedbba2705e7fab4",
+        "sum": 4094.453037261963
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "a9914ca8796a4dd148ec317fcfb3cba00a4fa79e3f86b5bb9231e1ca31a7a18b",
+        "sum": 7109.974914550781
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "47363fbc95ddb5a96090eb14bbc98ff36af7320d958479aa2240f7d5a63adf40",
+        "sum": 2893.272659301758
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "193780d9344b0941b0788df4144d2d3acc22b4d79adb0300fb9caf0346b3d1ff",
+        "sum": 7033.221393585205
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n100_old_C2_active_reference_r2",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "5c365c9b1cd66e5e84ec1096f756e04f7362996b0358644d1f4a3dd93ce257d3",
+        "sum": 2552.7532691955566
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b8c386476b5a4ef25803e7011667d5bbdd0abea1f8f50d2b7f4e87810d9a8ab2",
+        "sum": 2305.248992919922
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "d8056f1ba5807c66ba2b434282ada6f087df1e000b12635faedbba2705e7fab4",
+        "sum": 4094.453037261963
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "a9914ca8796a4dd148ec317fcfb3cba00a4fa79e3f86b5bb9231e1ca31a7a18b",
+        "sum": 7109.974914550781
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "98cfb14bdbd61073f49006bf4e4f494cef306163888c03e9b24dfe56455d1779",
+        "sum": 3011.062469482422
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "634161683cedeeb6db4ab8d1cb95bae03349fb6c0ea3139663e2b30f5626dd03",
+        "sum": 7927.457143783569
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n100_old_C3_adaptive_budget_r2",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "5c365c9b1cd66e5e84ec1096f756e04f7362996b0358644d1f4a3dd93ce257d3",
+        "sum": 2552.7532691955566
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b8c386476b5a4ef25803e7011667d5bbdd0abea1f8f50d2b7f4e87810d9a8ab2",
+        "sum": 2305.248992919922
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "d8056f1ba5807c66ba2b434282ada6f087df1e000b12635faedbba2705e7fab4",
+        "sum": 4094.453037261963
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "a9914ca8796a4dd148ec317fcfb3cba00a4fa79e3f86b5bb9231e1ca31a7a18b",
+        "sum": 7109.974914550781
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "98cfb14bdbd61073f49006bf4e4f494cef306163888c03e9b24dfe56455d1779",
+        "sum": 3011.062469482422
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "634161683cedeeb6db4ab8d1cb95bae03349fb6c0ea3139663e2b30f5626dd03",
+        "sum": 7927.457143783569
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n100_new_C2_active_reference_r2",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "5c365c9b1cd66e5e84ec1096f756e04f7362996b0358644d1f4a3dd93ce257d3",
+        "sum": 2552.7532691955566
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b8c386476b5a4ef25803e7011667d5bbdd0abea1f8f50d2b7f4e87810d9a8ab2",
+        "sum": 2305.248992919922
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "d8056f1ba5807c66ba2b434282ada6f087df1e000b12635faedbba2705e7fab4",
+        "sum": 4094.453037261963
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "a9914ca8796a4dd148ec317fcfb3cba00a4fa79e3f86b5bb9231e1ca31a7a18b",
+        "sum": 7109.974914550781
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "47363fbc95ddb5a96090eb14bbc98ff36af7320d958479aa2240f7d5a63adf40",
+        "sum": 2893.272659301758
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "193780d9344b0941b0788df4144d2d3acc22b4d79adb0300fb9caf0346b3d1ff",
+        "sum": 7033.221393585205
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n100_new_C3_adaptive_budget_r2",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "5c365c9b1cd66e5e84ec1096f756e04f7362996b0358644d1f4a3dd93ce257d3",
+        "sum": 2552.7532691955566
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b8c386476b5a4ef25803e7011667d5bbdd0abea1f8f50d2b7f4e87810d9a8ab2",
+        "sum": 2305.248992919922
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "d8056f1ba5807c66ba2b434282ada6f087df1e000b12635faedbba2705e7fab4",
+        "sum": 4094.453037261963
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "a9914ca8796a4dd148ec317fcfb3cba00a4fa79e3f86b5bb9231e1ca31a7a18b",
+        "sum": 7109.974914550781
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "47363fbc95ddb5a96090eb14bbc98ff36af7320d958479aa2240f7d5a63adf40",
+        "sum": 2893.272659301758
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "193780d9344b0941b0788df4144d2d3acc22b4d79adb0300fb9caf0346b3d1ff",
+        "sum": 7033.221393585205
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n1000_old_C2_active_reference_r1",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "4d3c23cc7370ee86ae37399a2c2e40301698d91982799fba2f0fe4afbaa2cde8",
+        "sum": 3196.926824569702
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "0a55d5b2d0c2605364abe8ec6651bc9ea25253ce4d1006015cdfad15c02fa430",
+        "sum": 7785.055066585541
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n1000_old_C3_adaptive_budget_r1",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "4d3c23cc7370ee86ae37399a2c2e40301698d91982799fba2f0fe4afbaa2cde8",
+        "sum": 3196.926824569702
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "0a55d5b2d0c2605364abe8ec6651bc9ea25253ce4d1006015cdfad15c02fa430",
+        "sum": 7785.055066585541
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n1000_new_C2_active_reference_r1",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "db522758f74979158d95a388c67aaa5f3623de109422e1ce690217cb63d77f0e",
+        "sum": 3281.823757171631
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "b06a7e49d8a475c8f10b1f97f9f5ec8e8ea9dd380a34240616d4f773795e4757",
+        "sum": 7494.459910392761
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n1000_new_C3_adaptive_budget_r1",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "db522758f74979158d95a388c67aaa5f3623de109422e1ce690217cb63d77f0e",
+        "sum": 3281.823757171631
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "b06a7e49d8a475c8f10b1f97f9f5ec8e8ea9dd380a34240616d4f773795e4757",
+        "sum": 7494.459910392761
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n1000_old_C2_active_reference_r2",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "4d3c23cc7370ee86ae37399a2c2e40301698d91982799fba2f0fe4afbaa2cde8",
+        "sum": 3196.926824569702
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "0a55d5b2d0c2605364abe8ec6651bc9ea25253ce4d1006015cdfad15c02fa430",
+        "sum": 7785.055066585541
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n1000_old_C3_adaptive_budget_r2",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "4d3c23cc7370ee86ae37399a2c2e40301698d91982799fba2f0fe4afbaa2cde8",
+        "sum": 3196.926824569702
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "0a55d5b2d0c2605364abe8ec6651bc9ea25253ce4d1006015cdfad15c02fa430",
+        "sum": 7785.055066585541
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n1000_new_C2_active_reference_r2",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "db522758f74979158d95a388c67aaa5f3623de109422e1ce690217cb63d77f0e",
+        "sum": 3281.823757171631
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "b06a7e49d8a475c8f10b1f97f9f5ec8e8ea9dd380a34240616d4f773795e4757",
+        "sum": 7494.459910392761
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n1000_new_C3_adaptive_budget_r2",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "db522758f74979158d95a388c67aaa5f3623de109422e1ce690217cb63d77f0e",
+        "sum": 3281.823757171631
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "b06a7e49d8a475c8f10b1f97f9f5ec8e8ea9dd380a34240616d4f773795e4757",
+        "sum": 7494.459910392761
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n3000_old_C2_active_reference_r1",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "04b6354783c371eebac8e9398f7b606fddb3c132bd8dc142fd295567132476be",
+        "sum": 2487.3444538116455
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "00737ec371a545f855c086e45b56bfa2edc740a7ee844edff424be0afab7ef0b",
+        "sum": 2506.9598869383335
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "acb7f92d775c886f880afb8e46fefbd4ac1f762b97b2edf7b80bab9fcf3fd0a6",
+        "sum": 4322.3048929572105
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "c46931f25837e1730387b564df60abbfb43dd21b549547b26d4de091b827789c",
+        "sum": 6833.662879526615
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "841f62298bdae2123d98958b0bf888d47a40b6e28daee74a2338b7b8b85d7ad1",
+        "sum": 3308.504448890686
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "0ab9b0e61ed764392acd349cd55b2115f3b3ac1a0a1f5a6aa831ee497d56b589",
+        "sum": 7586.281053781509
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n3000_old_C3_adaptive_budget_r1",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "04b6354783c371eebac8e9398f7b606fddb3c132bd8dc142fd295567132476be",
+        "sum": 2487.3444538116455
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "00737ec371a545f855c086e45b56bfa2edc740a7ee844edff424be0afab7ef0b",
+        "sum": 2506.9598869383335
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "acb7f92d775c886f880afb8e46fefbd4ac1f762b97b2edf7b80bab9fcf3fd0a6",
+        "sum": 4322.3048929572105
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "c46931f25837e1730387b564df60abbfb43dd21b549547b26d4de091b827789c",
+        "sum": 6833.662879526615
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "841f62298bdae2123d98958b0bf888d47a40b6e28daee74a2338b7b8b85d7ad1",
+        "sum": 3308.504448890686
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "0ab9b0e61ed764392acd349cd55b2115f3b3ac1a0a1f5a6aa831ee497d56b589",
+        "sum": 7586.281053781509
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n3000_new_C2_active_reference_r1",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "04b6354783c371eebac8e9398f7b606fddb3c132bd8dc142fd295567132476be",
+        "sum": 2487.3444538116455
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "00737ec371a545f855c086e45b56bfa2edc740a7ee844edff424be0afab7ef0b",
+        "sum": 2506.9598869383335
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "acb7f92d775c886f880afb8e46fefbd4ac1f762b97b2edf7b80bab9fcf3fd0a6",
+        "sum": 4322.3048929572105
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "c46931f25837e1730387b564df60abbfb43dd21b549547b26d4de091b827789c",
+        "sum": 6833.662879526615
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "d0403d1eed68fe3bbc5b66f2c378deed2e75733d1bd30bfae40c0ce569841462",
+        "sum": 3306.163432121277
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "17bac31e2d9ec5535e3cceb43ebfea9ad004f93113ec65ec2121df53472f3fff",
+        "sum": 7754.439651250839
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n3000_new_C3_adaptive_budget_r1",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "04b6354783c371eebac8e9398f7b606fddb3c132bd8dc142fd295567132476be",
+        "sum": 2487.3444538116455
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "00737ec371a545f855c086e45b56bfa2edc740a7ee844edff424be0afab7ef0b",
+        "sum": 2506.9598869383335
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "acb7f92d775c886f880afb8e46fefbd4ac1f762b97b2edf7b80bab9fcf3fd0a6",
+        "sum": 4322.3048929572105
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "c46931f25837e1730387b564df60abbfb43dd21b549547b26d4de091b827789c",
+        "sum": 6833.662879526615
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "d0403d1eed68fe3bbc5b66f2c378deed2e75733d1bd30bfae40c0ce569841462",
+        "sum": 3306.163432121277
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "17bac31e2d9ec5535e3cceb43ebfea9ad004f93113ec65ec2121df53472f3fff",
+        "sum": 7754.439651250839
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n3000_old_C2_active_reference_r2",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "04b6354783c371eebac8e9398f7b606fddb3c132bd8dc142fd295567132476be",
+        "sum": 2487.3444538116455
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "00737ec371a545f855c086e45b56bfa2edc740a7ee844edff424be0afab7ef0b",
+        "sum": 2506.9598869383335
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "acb7f92d775c886f880afb8e46fefbd4ac1f762b97b2edf7b80bab9fcf3fd0a6",
+        "sum": 4322.3048929572105
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "c46931f25837e1730387b564df60abbfb43dd21b549547b26d4de091b827789c",
+        "sum": 6833.662879526615
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "841f62298bdae2123d98958b0bf888d47a40b6e28daee74a2338b7b8b85d7ad1",
+        "sum": 3308.504448890686
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "0ab9b0e61ed764392acd349cd55b2115f3b3ac1a0a1f5a6aa831ee497d56b589",
+        "sum": 7586.281053781509
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n3000_old_C3_adaptive_budget_r2",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "04b6354783c371eebac8e9398f7b606fddb3c132bd8dc142fd295567132476be",
+        "sum": 2487.3444538116455
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "00737ec371a545f855c086e45b56bfa2edc740a7ee844edff424be0afab7ef0b",
+        "sum": 2506.9598869383335
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "acb7f92d775c886f880afb8e46fefbd4ac1f762b97b2edf7b80bab9fcf3fd0a6",
+        "sum": 4322.3048929572105
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "c46931f25837e1730387b564df60abbfb43dd21b549547b26d4de091b827789c",
+        "sum": 6833.662879526615
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "841f62298bdae2123d98958b0bf888d47a40b6e28daee74a2338b7b8b85d7ad1",
+        "sum": 3308.504448890686
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "0ab9b0e61ed764392acd349cd55b2115f3b3ac1a0a1f5a6aa831ee497d56b589",
+        "sum": 7586.281053781509
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n3000_new_C2_active_reference_r2",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "04b6354783c371eebac8e9398f7b606fddb3c132bd8dc142fd295567132476be",
+        "sum": 2487.3444538116455
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "00737ec371a545f855c086e45b56bfa2edc740a7ee844edff424be0afab7ef0b",
+        "sum": 2506.9598869383335
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "acb7f92d775c886f880afb8e46fefbd4ac1f762b97b2edf7b80bab9fcf3fd0a6",
+        "sum": 4322.3048929572105
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "c46931f25837e1730387b564df60abbfb43dd21b549547b26d4de091b827789c",
+        "sum": 6833.662879526615
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "d0403d1eed68fe3bbc5b66f2c378deed2e75733d1bd30bfae40c0ce569841462",
+        "sum": 3306.163432121277
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "17bac31e2d9ec5535e3cceb43ebfea9ad004f93113ec65ec2121df53472f3fff",
+        "sum": 7754.439651250839
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "n3000_new_C3_adaptive_budget_r2",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "04b6354783c371eebac8e9398f7b606fddb3c132bd8dc142fd295567132476be",
+        "sum": 2487.3444538116455
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "00737ec371a545f855c086e45b56bfa2edc740a7ee844edff424be0afab7ef0b",
+        "sum": 2506.9598869383335
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "acb7f92d775c886f880afb8e46fefbd4ac1f762b97b2edf7b80bab9fcf3fd0a6",
+        "sum": 4322.3048929572105
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "c46931f25837e1730387b564df60abbfb43dd21b549547b26d4de091b827789c",
+        "sum": 6833.662879526615
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "d0403d1eed68fe3bbc5b66f2c378deed2e75733d1bd30bfae40c0ce569841462",
+        "sum": 3306.163432121277
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "17bac31e2d9ec5535e3cceb43ebfea9ad004f93113ec65ec2121df53472f3fff",
+        "sum": 7754.439651250839
+      }
+    ],
+    "references": [],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "old_C2_active_reference_continuous",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "4d3c23cc7370ee86ae37399a2c2e40301698d91982799fba2f0fe4afbaa2cde8",
+        "sum": 3196.926824569702
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "0a55d5b2d0c2605364abe8ec6651bc9ea25253ce4d1006015cdfad15c02fa430",
+        "sum": 7785.055066585541
+      }
+    ],
+    "references": [
+      {
+        "situation": 1,
+        "reference": 0.3472222354676993
+      },
+      {
+        "situation": 2,
+        "reference": 0.17361111773384966
+      },
+      {
+        "situation": 3,
+        "reference": 0.17361111773384966
+      }
+    ],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "old_C2_active_reference_prefix",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      }
+    ],
+    "references": [
+      {
+        "situation": 1,
+        "reference": 0.3472222354676993
+      },
+      {
+        "situation": 2,
+        "reference": 0.17361111773384966
+      }
+    ],
+    "weather_numbers": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "run_id": "old_C2_active_reference_resume",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "db522758f74979158d95a388c67aaa5f3623de109422e1ce690217cb63d77f0e",
+        "sum": 3281.823757171631
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "b06a7e49d8a475c8f10b1f97f9f5ec8e8ea9dd380a34240616d4f773795e4757",
+        "sum": 7494.459910392761
+      }
+    ],
+    "references": [
+      {
+        "situation": 3,
+        "reference": 0.3472222354676993
+      }
+    ],
+    "weather_numbers": [
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "old_C3_adaptive_budget_continuous",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "4d3c23cc7370ee86ae37399a2c2e40301698d91982799fba2f0fe4afbaa2cde8",
+        "sum": 3196.926824569702
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "0a55d5b2d0c2605364abe8ec6651bc9ea25253ce4d1006015cdfad15c02fa430",
+        "sum": 7785.055066585541
+      }
+    ],
+    "references": [
+      {
+        "situation": 1,
+        "reference": 0.3472222354676993
+      },
+      {
+        "situation": 2,
+        "reference": 0.17361111773384966
+      },
+      {
+        "situation": 3,
+        "reference": 0.17361111773384966
+      }
+    ],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "old_C3_adaptive_budget_prefix",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      }
+    ],
+    "references": [
+      {
+        "situation": 1,
+        "reference": 0.3472222354676993
+      },
+      {
+        "situation": 2,
+        "reference": 0.17361111773384966
+      }
+    ],
+    "weather_numbers": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "run_id": "old_C3_adaptive_budget_resume",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "db522758f74979158d95a388c67aaa5f3623de109422e1ce690217cb63d77f0e",
+        "sum": 3281.823757171631
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "b06a7e49d8a475c8f10b1f97f9f5ec8e8ea9dd380a34240616d4f773795e4757",
+        "sum": 7494.459910392761
+      }
+    ],
+    "references": [
+      {
+        "situation": 3,
+        "reference": 0.3472222354676993
+      }
+    ],
+    "weather_numbers": [
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "new_C2_active_reference_continuous",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "db522758f74979158d95a388c67aaa5f3623de109422e1ce690217cb63d77f0e",
+        "sum": 3281.823757171631
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "b06a7e49d8a475c8f10b1f97f9f5ec8e8ea9dd380a34240616d4f773795e4757",
+        "sum": 7494.459910392761
+      }
+    ],
+    "references": [
+      {
+        "situation": 1,
+        "reference": 0.3472222354676993
+      },
+      {
+        "situation": 2,
+        "reference": 0.17361111773384966
+      },
+      {
+        "situation": 3,
+        "reference": 0.3472222354676993
+      }
+    ],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "new_C2_active_reference_prefix",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      }
+    ],
+    "references": [
+      {
+        "situation": 1,
+        "reference": 0.3472222354676993
+      },
+      {
+        "situation": 2,
+        "reference": 0.17361111773384966
+      }
+    ],
+    "weather_numbers": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "run_id": "new_C2_active_reference_resume",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "db522758f74979158d95a388c67aaa5f3623de109422e1ce690217cb63d77f0e",
+        "sum": 3281.823757171631
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "b06a7e49d8a475c8f10b1f97f9f5ec8e8ea9dd380a34240616d4f773795e4757",
+        "sum": 7494.459910392761
+      }
+    ],
+    "references": [
+      {
+        "situation": 3,
+        "reference": 0.3472222354676993
+      }
+    ],
+    "weather_numbers": [
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "new_C3_adaptive_budget_continuous",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "db522758f74979158d95a388c67aaa5f3623de109422e1ce690217cb63d77f0e",
+        "sum": 3281.823757171631
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "b06a7e49d8a475c8f10b1f97f9f5ec8e8ea9dd380a34240616d4f773795e4757",
+        "sum": 7494.459910392761
+      }
+    ],
+    "references": [
+      {
+        "situation": 1,
+        "reference": 0.3472222354676993
+      },
+      {
+        "situation": 2,
+        "reference": 0.17361111773384966
+      },
+      {
+        "situation": 3,
+        "reference": 0.3472222354676993
+      }
+    ],
+    "weather_numbers": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "run_id": "new_C3_adaptive_budget_prefix",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      }
+    ],
+    "references": [
+      {
+        "situation": 1,
+        "reference": 0.3472222354676993
+      },
+      {
+        "situation": 2,
+        "reference": 0.17361111773384966
+      }
+    ],
+    "weather_numbers": [
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "run_id": "new_C3_adaptive_budget_resume",
+    "checks": {
+      "exit_zero": true,
+      "completion": true,
+      "problem_empty": true,
+      "float32_concentration_format": true,
+      "finite_nonnegative": true,
+      "expected_fields": true,
+      "alloff_has_carryover": true,
+      "restart_checkpoint_loaded": true
+    },
+    "fields": [
+      {
+        "situation": 1,
+        "sg": 1,
+        "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+        "sum": 2486.843099594116
+      },
+      {
+        "situation": 1,
+        "sg": 2,
+        "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+        "sum": 2496.1719732284546
+      },
+      {
+        "situation": 2,
+        "sg": 1,
+        "sha256": "7fefbbf07d911f8aa84526aa82e9aac1a47df2a21bf5b2f60b3d886c40b812f4",
+        "sum": 4227.728449821472
+      },
+      {
+        "situation": 2,
+        "sg": 2,
+        "sha256": "5d7253612802050f2e1629374149e3f68bc34100dbb6f7322b5f631d452d8d35",
+        "sum": 6741.5565533638
+      },
+      {
+        "situation": 3,
+        "sg": 1,
+        "sha256": "db522758f74979158d95a388c67aaa5f3623de109422e1ce690217cb63d77f0e",
+        "sum": 3281.823757171631
+      },
+      {
+        "situation": 3,
+        "sg": 2,
+        "sha256": "b06a7e49d8a475c8f10b1f97f9f5ec8e8ea9dd380a34240616d4f773795e4757",
+        "sum": 7494.459910392761
+      }
+    ],
+    "references": [
+      {
+        "situation": 3,
+        "reference": 0.3472222354676993
+      }
+    ],
+    "weather_numbers": [
+      3,
+      4
+    ]
+  }
+]

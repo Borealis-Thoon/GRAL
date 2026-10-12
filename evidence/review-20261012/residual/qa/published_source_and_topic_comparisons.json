@@ -1,0 +1,49 @@
+{
+  "status": "pass",
+  "sources": [
+    {
+      "variant": "C2_active_reference",
+      "commit": "aa4d1be505297784c9c2f39e16c46830fc6f94fe",
+      "source_config_files": 85,
+      "byte_mismatches": 0
+    },
+    {
+      "variant": "C3_adaptive_budget",
+      "commit": "57b9bef45a1e55b48e7872c8535ad58459bf8bde",
+      "source_config_files": 85,
+      "byte_mismatches": 0
+    }
+  ],
+  "topic_only_comparisons": [
+    {
+      "topic": "F",
+      "base": "3cfbd25505c21034673d2c850c368e953d08ef7e",
+      "head": "003b00e60ebe9f0c5acc7377ed155c3271b4d8c9",
+      "files": 6,
+      "additions": 31,
+      "deletions": 4,
+      "merge_base": "3cfbd25505c21034673d2c850c368e953d08ef7e",
+      "status": "pass"
+    },
+    {
+      "topic": "C2",
+      "base": "33a92f9110096a5236bb74bc6290db2b3f6429ef",
+      "head": "aa4d1be505297784c9c2f39e16c46830fc6f94fe",
+      "files": 3,
+      "additions": 43,
+      "deletions": 1,
+      "merge_base": "33a92f9110096a5236bb74bc6290db2b3f6429ef",
+      "status": "pass"
+    },
+    {
+      "topic": "C3",
+      "base": "aa4d1be505297784c9c2f39e16c46830fc6f94fe",
+      "head": "57b9bef45a1e55b48e7872c8535ad58459bf8bde",
+      "files": 2,
+      "additions": 51,
+      "deletions": 2,
+      "merge_base": "aa4d1be505297784c9c2f39e16c46830fc6f94fe",
+      "status": "pass"
+    }
+  ]
+}

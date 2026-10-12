@@ -1,0 +1,26 @@
+Download and extract `F_reproduce.zip` for the source, inputs and reproduction scripts.
+
+This package contains the focused horizontal-concentration patch and its fresh numerical checks. The source is the same six-file candidate prepared against V2701 with the separate warning cleanup in PR #59. The F-only source change has 31 added and 4 removed lines, totalling 1777 added-plus-removed source-body characters. The full F-only patch contains 4989 characters. With the warning cleanup included, the combined source bodies total 2241 characters, with 34 lines added and 7 removed.
+
+Both particle loops accumulate normal horizontal concentration in `Conz3dDouble`. After tracking, the completed sums move to the existing float `Conz3d` array before volume correction, and the double cells are cleared. The normal central field also feeds odour output. The odour neighbour arrays, residual checkpoint storage and output writers retain their existing types and implementation.
+
+The additional numeric payload is `8E` bytes, where `E = (NXL + 2) * (NYL + 2) * NS * SourceGroups.Count`. The two normal buffers therefore hold `12E` bytes instead of `4E`. Jagged-array headers and references add to managed allocation. The allocation fixture measures these arrays on the tested runtime; it does not measure total model memory or production peak memory.
+
+The fresh suite passed 120 component checks and 648 checks across 60 Main runs. All three strict Release rebuilds had 0 warnings and 0 errors. All 28 required single-worker repeat pairs had identical stored outputs, and all 34 controlled protected-payload comparisons matched. Two-worker cases check valid outputs and record repetition results without requiring bitwise identity.
+
+The original 36-run matrix covers stationary and transient cases with 100, 1000 and 3000 particles, plus multiple slices, receptors, deposition and odour. The additional 24 runs exercise six new conditions twice for each variant. They use prescribed 2.5 m/s wind with stability class 2, or 0.5 m/s wind with stability class 6, and 10 or 40 m horizontal grids over the same 200 m field. These cases extend coverage at modest cost; they are not a full factorial design or a study of individual weather and resolution effects.
+
+Each transient case has three successive situations that integrate for 30 seconds each. Hour labels index the synthetic inputs and do not represent three hours of physical integration. Wind and stability class are prescribed, so the class-2 cases do not resolve daytime radiation or a heat budget. Their relative L1 output differences range from 0.0000152225% to 0.0018212145%. These are baseline-to-candidate storage differences, not errors against a true atmospheric concentration or a convergence result.
+
+The 24 constructed arithmetic cases use blocks extracted from both production particle loops. Every candidate output matches the exact sum rounded once to float. Double addition still depends on update order, and the final float conversion and volume correction still round.
+
+Use a verified Python executable and .NET 10 SDK. The reproduction scripts use only the Python standard library. Run from the package root, replacing `python` and `dotnet` with verified executable paths if needed:
+
+```text
+python -X utf8 -B reproduce/revalidate.py --check-only
+python -X utf8 -B reproduce/extend_revalidate.py --dotnet dotnet --run-dir ../F-review-check-01
+```
+
+Choose a new isolated run directory. The extended runner reruns the frozen 36-run suite before the additional cases, checks source and input hashes, and records results in the new run directory. The whole suite has a 15-minute limit. Source, input and build copies stay separate from the packaged originals.
+
+The figures distinguish the exact arithmetic reference, actual synthetic output differences and buffer memory cost. Full captions are in `FIGURE_CAPTIONS.md`. The source and evidence commits linked by the PR fix the exact revision being reviewed.

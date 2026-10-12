@@ -1,0 +1,21 @@
+{
+  "one_worker": {
+    "configured_max_degree": 1,
+    "max_concurrent_rows": 1,
+    "visited_rows": 32,
+    "final_k": 55
+  },
+  "already_cancelled": {
+    "visited_rows": 0,
+    "elapsed_s": 1e-06,
+    "no_grid_index_read": true
+  },
+  "cancel_during_planning": {
+    "visited_rows": 3,
+    "max_concurrent_rows": 1,
+    "final_k": 10,
+    "elapsed_s": 0.0466493
+  },
+  "checks_passed": 11,
+  "scope": "Actual extracted PlanResidual with only test row-entry/exit witnesses. No production-source instrumentation."
+}

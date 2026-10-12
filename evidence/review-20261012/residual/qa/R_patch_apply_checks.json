@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "line_ending_setting": "git -c core.autocrlf=false",
+  "checks": [
+    {
+      "patch": "C2_revision_only",
+      "apply_check_exit": 0,
+      "apply_exit": 0,
+      "files_compared": 85,
+      "mismatches": []
+    },
+    {
+      "patch": "C3_revision_with_C2_fix",
+      "apply_check_exit": 0,
+      "apply_exit": 0,
+      "files_compared": 85,
+      "mismatches": []
+    },
+    {
+      "patch": "C2_topic_vs_C1",
+      "apply_check_exit": 0,
+      "apply_exit": 0,
+      "files_compared": 85,
+      "mismatches": []
+    },
+    {
+      "patch": "C3_topic_vs_revised_C2",
+      "apply_check_exit": 0,
+      "apply_exit": 0,
+      "files_compared": 85,
+      "mismatches": []
+    }
+  ]
+}

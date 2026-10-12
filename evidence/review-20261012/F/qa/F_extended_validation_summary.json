@@ -1,0 +1,2743 @@
+{
+  "status": "pass",
+  "prior_rerun": {
+    "main_runs": 36,
+    "main_checks_passed": 288,
+    "helper_checks_passed": 120,
+    "strict_builds": {
+      "warning_free_baseline": {
+        "warnings": 0,
+        "errors": 0
+      },
+      "patchF_minimal": {
+        "warnings": 0,
+        "errors": 0
+      },
+      "precision_fixture": {
+        "warnings": 0,
+        "errors": 0
+      }
+    },
+    "single_worker_repeat_pairs": 16,
+    "multiworker_repeat_pairs": 2,
+    "concentration_payloads": 264,
+    "elapsed_s": 17.417525900003966
+  },
+  "additional": {
+    "main_runs": 24,
+    "main_checks_passed": 360,
+    "conditions": 6,
+    "single_worker_repeat_pairs": 12,
+    "concentration_payloads": 96,
+    "float_values_checked": 17400,
+    "checkpoint_payloads": 12,
+    "protected_payload_pairs_equal": 6,
+    "actual_meteorology_checked_runs": 24,
+    "domain_extent_m": [
+      0,
+      200,
+      0,
+      200
+    ],
+    "resolutions_m": [
+      10,
+      40
+    ]
+  },
+  "total_main_runs": 60,
+  "total_main_checks_passed": 648,
+  "helper_checks_passed": 120,
+  "elapsed_s": 25.223876500007464,
+  "conditions": [
+    {
+      "id": "day_stationary_10m_n100",
+      "mode": "stationary",
+      "budget": 100,
+      "slices": 1,
+      "workers": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "dx": 10,
+      "dy": 10,
+      "nx": 20,
+      "ny": 20,
+      "wind_speed": 2.5,
+      "stability": 2,
+      "directions": [
+        9
+      ],
+      "domain_extent_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "situation_duration_s": 30,
+      "weather_situations": 1
+    },
+    {
+      "id": "day_transient_10m_n1000",
+      "mode": "transient",
+      "budget": 1000,
+      "slices": 1,
+      "workers": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "dx": 10,
+      "dy": 10,
+      "nx": 20,
+      "ny": 20,
+      "wind_speed": 2.5,
+      "stability": 2,
+      "directions": [
+        9,
+        18,
+        27
+      ],
+      "domain_extent_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "situation_duration_s": 30,
+      "weather_situations": 3
+    },
+    {
+      "id": "day_stationary_40m_n3000",
+      "mode": "stationary",
+      "budget": 3000,
+      "slices": 1,
+      "workers": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "dx": 40,
+      "dy": 40,
+      "nx": 5,
+      "ny": 5,
+      "wind_speed": 2.5,
+      "stability": 2,
+      "directions": [
+        18
+      ],
+      "domain_extent_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "situation_duration_s": 30,
+      "weather_situations": 1
+    },
+    {
+      "id": "stable_transient_40m_n100",
+      "mode": "transient",
+      "budget": 100,
+      "slices": 1,
+      "workers": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "dx": 40,
+      "dy": 40,
+      "nx": 5,
+      "ny": 5,
+      "wind_speed": 0.5,
+      "stability": 6,
+      "directions": [
+        27,
+        18,
+        9
+      ],
+      "domain_extent_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "situation_duration_s": 30,
+      "weather_situations": 3
+    },
+    {
+      "id": "stable_stationary_10m_n1000",
+      "mode": "stationary",
+      "budget": 1000,
+      "slices": 1,
+      "workers": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "dx": 10,
+      "dy": 10,
+      "nx": 20,
+      "ny": 20,
+      "wind_speed": 0.5,
+      "stability": 6,
+      "directions": [
+        27
+      ],
+      "domain_extent_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "situation_duration_s": 30,
+      "weather_situations": 1
+    },
+    {
+      "id": "stable_transient_40m_n3000",
+      "mode": "transient",
+      "budget": 3000,
+      "slices": 1,
+      "workers": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "dx": 40,
+      "dy": 40,
+      "nx": 5,
+      "ny": 5,
+      "wind_speed": 0.5,
+      "stability": 6,
+      "directions": [
+        18,
+        27,
+        9
+      ],
+      "domain_extent_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "situation_duration_s": 30,
+      "weather_situations": 3
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "day_stationary_10m_n100_warning_free_baseline_r1",
+      "case": {
+        "id": "day_stationary_10m_n100",
+        "mode": "stationary",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 10,
+        "dy": 10,
+        "nx": 20,
+        "ny": 20,
+        "wind_speed": 2.5,
+        "stability": 2,
+        "directions": [
+          9
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 1
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.2803033999953186,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "concentration_payloads": 2,
+      "float_values_checked": 800,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "00617e43462f768222ed04efa72dc4b47f863114048f1bbeacfbb959bbc581f8",
+          "sum": 10419.271049499512
+        },
+        "00001-102.con": {
+          "sha256": "583782b53c1e020a84b11c3c36b09d42d5b58de8afd5e7a1fd51c9c9b8a596c4",
+          "sum": 11056.867225646973
+        }
+      },
+      "other_payloads": {}
+    },
+    {
+      "run_id": "day_stationary_10m_n100_warning_free_baseline_r2",
+      "case": {
+        "id": "day_stationary_10m_n100",
+        "mode": "stationary",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 10,
+        "dy": 10,
+        "nx": 20,
+        "ny": 20,
+        "wind_speed": 2.5,
+        "stability": 2,
+        "directions": [
+          9
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 1
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.2709098999912385,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "concentration_payloads": 2,
+      "float_values_checked": 800,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "00617e43462f768222ed04efa72dc4b47f863114048f1bbeacfbb959bbc581f8",
+          "sum": 10419.271049499512
+        },
+        "00001-102.con": {
+          "sha256": "583782b53c1e020a84b11c3c36b09d42d5b58de8afd5e7a1fd51c9c9b8a596c4",
+          "sum": 11056.867225646973
+        }
+      },
+      "other_payloads": {}
+    },
+    {
+      "run_id": "day_stationary_10m_n100_patchF_minimal_r1",
+      "case": {
+        "id": "day_stationary_10m_n100",
+        "mode": "stationary",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 10,
+        "dy": 10,
+        "nx": 20,
+        "ny": 20,
+        "wind_speed": 2.5,
+        "stability": 2,
+        "directions": [
+          9
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 1
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.2751144999929238,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "concentration_payloads": 2,
+      "float_values_checked": 800,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "1c55bfcc465832a6a4c3f07b6fec6f6493e28743fddf93c78af4288c01f19879",
+          "sum": 10419.272453308105
+        },
+        "00001-102.con": {
+          "sha256": "539e2d521c235c1a85214c551a848980722d15d3e34cc2580068d2c718e19aa5",
+          "sum": 11056.866611480713
+        }
+      },
+      "other_payloads": {}
+    },
+    {
+      "run_id": "day_stationary_10m_n100_patchF_minimal_r2",
+      "case": {
+        "id": "day_stationary_10m_n100",
+        "mode": "stationary",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 10,
+        "dy": 10,
+        "nx": 20,
+        "ny": 20,
+        "wind_speed": 2.5,
+        "stability": 2,
+        "directions": [
+          9
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 1
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.2768374000006588,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "concentration_payloads": 2,
+      "float_values_checked": 800,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "1c55bfcc465832a6a4c3f07b6fec6f6493e28743fddf93c78af4288c01f19879",
+          "sum": 10419.272453308105
+        },
+        "00001-102.con": {
+          "sha256": "539e2d521c235c1a85214c551a848980722d15d3e34cc2580068d2c718e19aa5",
+          "sum": 11056.866611480713
+        }
+      },
+      "other_payloads": {}
+    },
+    {
+      "run_id": "day_transient_10m_n1000_warning_free_baseline_r1",
+      "case": {
+        "id": "day_transient_10m_n1000",
+        "mode": "transient",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 10,
+        "dy": 10,
+        "nx": 20,
+        "ny": 20,
+        "wind_speed": 2.5,
+        "stability": 2,
+        "directions": [
+          9,
+          18,
+          27
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 3
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.3266470999951707,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ],
+        [
+          2.5,
+          180,
+          2
+        ],
+        [
+          2.5,
+          270,
+          2
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "concentration_payloads": 6,
+      "float_values_checked": 2400,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "4e918e58ac297a4c5a1453c83fcf0d509c526a179c2a44f167c490a4f596ff4e",
+          "sum": 6807.804365634918
+        },
+        "00001-102.con": {
+          "sha256": "42aef9db8fa764e714b7857e003d38997c9e052913089a831344ad5975103cbc",
+          "sum": 6915.661699295044
+        },
+        "00002-101.con": {
+          "sha256": "15752a17b863d356332b9cbb1b7f51f1961bfc56e33da14a69e404a7dddf9b60",
+          "sum": 6229.0648230314255
+        },
+        "00002-102.con": {
+          "sha256": "5f41727fc364b923f8603db3d9e38a16cb4ffe5b19d74885c510c4edb0cde94e",
+          "sum": 13573.996317386627
+        },
+        "00003-101.con": {
+          "sha256": "5514215d061a9b63bc3456f0798c8707c4b248f61770c7820a0b11d11c293019",
+          "sum": 2857.033404827118
+        },
+        "00003-102.con": {
+          "sha256": "30c1923193828ef9681a3be0726166aa9320746d78d155ebc7bb69f9bb26bec3",
+          "sum": 5285.456532716751
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "0492b005a58e04b09f56b7906409f23d3cfb4ccc994928a1d7af8e5e80c2cc44"
+      }
+    },
+    {
+      "run_id": "day_transient_10m_n1000_warning_free_baseline_r2",
+      "case": {
+        "id": "day_transient_10m_n1000",
+        "mode": "transient",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 10,
+        "dy": 10,
+        "nx": 20,
+        "ny": 20,
+        "wind_speed": 2.5,
+        "stability": 2,
+        "directions": [
+          9,
+          18,
+          27
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 3
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.31735520000802353,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ],
+        [
+          2.5,
+          180,
+          2
+        ],
+        [
+          2.5,
+          270,
+          2
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "concentration_payloads": 6,
+      "float_values_checked": 2400,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "4e918e58ac297a4c5a1453c83fcf0d509c526a179c2a44f167c490a4f596ff4e",
+          "sum": 6807.804365634918
+        },
+        "00001-102.con": {
+          "sha256": "42aef9db8fa764e714b7857e003d38997c9e052913089a831344ad5975103cbc",
+          "sum": 6915.661699295044
+        },
+        "00002-101.con": {
+          "sha256": "15752a17b863d356332b9cbb1b7f51f1961bfc56e33da14a69e404a7dddf9b60",
+          "sum": 6229.0648230314255
+        },
+        "00002-102.con": {
+          "sha256": "5f41727fc364b923f8603db3d9e38a16cb4ffe5b19d74885c510c4edb0cde94e",
+          "sum": 13573.996317386627
+        },
+        "00003-101.con": {
+          "sha256": "5514215d061a9b63bc3456f0798c8707c4b248f61770c7820a0b11d11c293019",
+          "sum": 2857.033404827118
+        },
+        "00003-102.con": {
+          "sha256": "30c1923193828ef9681a3be0726166aa9320746d78d155ebc7bb69f9bb26bec3",
+          "sum": 5285.456532716751
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "0492b005a58e04b09f56b7906409f23d3cfb4ccc994928a1d7af8e5e80c2cc44"
+      }
+    },
+    {
+      "run_id": "day_transient_10m_n1000_patchF_minimal_r1",
+      "case": {
+        "id": "day_transient_10m_n1000",
+        "mode": "transient",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 10,
+        "dy": 10,
+        "nx": 20,
+        "ny": 20,
+        "wind_speed": 2.5,
+        "stability": 2,
+        "directions": [
+          9,
+          18,
+          27
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 3
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.32053389999782667,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ],
+        [
+          2.5,
+          180,
+          2
+        ],
+        [
+          2.5,
+          270,
+          2
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "concentration_payloads": 6,
+      "float_values_checked": 2400,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "202b559d0742b4241a4dfc53d0c8fb105b9a6a4f907a47df56f8df37816c7d93",
+          "sum": 6807.805002689362
+        },
+        "00001-102.con": {
+          "sha256": "750f3763605a7f3d7194e77b9fe913be5bf085780ab3585991715d3d4c71c2db",
+          "sum": 6915.663240909576
+        },
+        "00002-101.con": {
+          "sha256": "d1d2bec6b910ad523bba38a2ccafebbc05ff9f721584dd0602a4aed2461469a6",
+          "sum": 6229.064922213554
+        },
+        "00002-102.con": {
+          "sha256": "b24353bbb7d15bef53b3ab23ce00b4915ee9db4138a2513d6dc788eb1a0a5bb4",
+          "sum": 13573.996320486069
+        },
+        "00003-101.con": {
+          "sha256": "df927f75bdad19a2ba5c8be0a892bc9598a6a751a26ee74f24a2c005eada3228",
+          "sum": 2857.0334305763245
+        },
+        "00003-102.con": {
+          "sha256": "a411968c4f4313f5b85fb89d66c155cd404df59831fe688955ceb8f58fbe88c4",
+          "sum": 5285.45640873909
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "0492b005a58e04b09f56b7906409f23d3cfb4ccc994928a1d7af8e5e80c2cc44"
+      }
+    },
+    {
+      "run_id": "day_transient_10m_n1000_patchF_minimal_r2",
+      "case": {
+        "id": "day_transient_10m_n1000",
+        "mode": "transient",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 10,
+        "dy": 10,
+        "nx": 20,
+        "ny": 20,
+        "wind_speed": 2.5,
+        "stability": 2,
+        "directions": [
+          9,
+          18,
+          27
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 3
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.3321479000005638,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ],
+        [
+          2.5,
+          180,
+          2
+        ],
+        [
+          2.5,
+          270,
+          2
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "concentration_payloads": 6,
+      "float_values_checked": 2400,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "202b559d0742b4241a4dfc53d0c8fb105b9a6a4f907a47df56f8df37816c7d93",
+          "sum": 6807.805002689362
+        },
+        "00001-102.con": {
+          "sha256": "750f3763605a7f3d7194e77b9fe913be5bf085780ab3585991715d3d4c71c2db",
+          "sum": 6915.663240909576
+        },
+        "00002-101.con": {
+          "sha256": "d1d2bec6b910ad523bba38a2ccafebbc05ff9f721584dd0602a4aed2461469a6",
+          "sum": 6229.064922213554
+        },
+        "00002-102.con": {
+          "sha256": "b24353bbb7d15bef53b3ab23ce00b4915ee9db4138a2513d6dc788eb1a0a5bb4",
+          "sum": 13573.996320486069
+        },
+        "00003-101.con": {
+          "sha256": "df927f75bdad19a2ba5c8be0a892bc9598a6a751a26ee74f24a2c005eada3228",
+          "sum": 2857.0334305763245
+        },
+        "00003-102.con": {
+          "sha256": "a411968c4f4313f5b85fb89d66c155cd404df59831fe688955ceb8f58fbe88c4",
+          "sum": 5285.45640873909
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "0492b005a58e04b09f56b7906409f23d3cfb4ccc994928a1d7af8e5e80c2cc44"
+      }
+    },
+    {
+      "run_id": "day_stationary_40m_n3000_warning_free_baseline_r1",
+      "case": {
+        "id": "day_stationary_40m_n3000",
+        "mode": "stationary",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 40,
+        "dy": 40,
+        "nx": 5,
+        "ny": 5,
+        "wind_speed": 2.5,
+        "stability": 2,
+        "directions": [
+          18
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 1
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.2955472000030568,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          2.5,
+          180,
+          2
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "concentration_payloads": 2,
+      "float_values_checked": 50,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "8e5e6b8df5838c06cc0cb223f8bdf6581ccf01178aafac4e85842b5f59c6801c",
+          "sum": 907.2831468582153
+        },
+        "00001-102.con": {
+          "sha256": "a2e210784850f427b6f9959300822febd52f7a95351306bb41ff69b8c37374e4",
+          "sum": 846.8158434033394
+        }
+      },
+      "other_payloads": {}
+    },
+    {
+      "run_id": "day_stationary_40m_n3000_warning_free_baseline_r2",
+      "case": {
+        "id": "day_stationary_40m_n3000",
+        "mode": "stationary",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 40,
+        "dy": 40,
+        "nx": 5,
+        "ny": 5,
+        "wind_speed": 2.5,
+        "stability": 2,
+        "directions": [
+          18
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 1
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.2888212999969255,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          2.5,
+          180,
+          2
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "concentration_payloads": 2,
+      "float_values_checked": 50,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "8e5e6b8df5838c06cc0cb223f8bdf6581ccf01178aafac4e85842b5f59c6801c",
+          "sum": 907.2831468582153
+        },
+        "00001-102.con": {
+          "sha256": "a2e210784850f427b6f9959300822febd52f7a95351306bb41ff69b8c37374e4",
+          "sum": 846.8158434033394
+        }
+      },
+      "other_payloads": {}
+    },
+    {
+      "run_id": "day_stationary_40m_n3000_patchF_minimal_r1",
+      "case": {
+        "id": "day_stationary_40m_n3000",
+        "mode": "stationary",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 40,
+        "dy": 40,
+        "nx": 5,
+        "ny": 5,
+        "wind_speed": 2.5,
+        "stability": 2,
+        "directions": [
+          18
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 1
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.28801129999919794,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          2.5,
+          180,
+          2
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "concentration_payloads": 2,
+      "float_values_checked": 50,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "aa200dc1b41db91f2e150d32eb970d6cab601233ec81d1434cbf232ba41e7f3f",
+          "sum": 907.2863912582397
+        },
+        "00001-102.con": {
+          "sha256": "6b7aca99e1a216142f5eea2c006b4edc70b1f78c1fbba4529dd5d114cb014b6e",
+          "sum": 846.8149428367615
+        }
+      },
+      "other_payloads": {}
+    },
+    {
+      "run_id": "day_stationary_40m_n3000_patchF_minimal_r2",
+      "case": {
+        "id": "day_stationary_40m_n3000",
+        "mode": "stationary",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 40,
+        "dy": 40,
+        "nx": 5,
+        "ny": 5,
+        "wind_speed": 2.5,
+        "stability": 2,
+        "directions": [
+          18
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 1
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.29645460000028834,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          2.5,
+          180,
+          2
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "concentration_payloads": 2,
+      "float_values_checked": 50,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "aa200dc1b41db91f2e150d32eb970d6cab601233ec81d1434cbf232ba41e7f3f",
+          "sum": 907.2863912582397
+        },
+        "00001-102.con": {
+          "sha256": "6b7aca99e1a216142f5eea2c006b4edc70b1f78c1fbba4529dd5d114cb014b6e",
+          "sum": 846.8149428367615
+        }
+      },
+      "other_payloads": {}
+    },
+    {
+      "run_id": "stable_transient_40m_n100_warning_free_baseline_r1",
+      "case": {
+        "id": "stable_transient_40m_n100",
+        "mode": "transient",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 40,
+        "dy": 40,
+        "nx": 5,
+        "ny": 5,
+        "wind_speed": 0.5,
+        "stability": 6,
+        "directions": [
+          27,
+          18,
+          9
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 3
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.32304049999220297,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          0.5,
+          270,
+          6
+        ],
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          0.5,
+          90,
+          6
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "concentration_payloads": 6,
+      "float_values_checked": 150,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "f2c87afa20aea37c18ac5fceac81d4c3ac6368871126c6a6c8b883a5ce904480",
+          "sum": 631.8880920410156
+        },
+        "00001-102.con": {
+          "sha256": "54d256e9d9f2849a2280a115f37188529b744dc72271a05d5b4cd204df2bacab",
+          "sum": 593.9003295898438
+        },
+        "00002-101.con": {
+          "sha256": "ff787e2f3f0fbf9a926c8dd5ddc677c1a0c7f2f6d0d8853f95a1da51c39f4363",
+          "sum": 1249.7922973632812
+        },
+        "00002-102.con": {
+          "sha256": "12f08b9ebc0308f09d7736d4aa5302765a2c089dbf4c1b57952de90df860c8a0",
+          "sum": 1839.5322201251984
+        },
+        "00003-101.con": {
+          "sha256": "6c1ca28f9d060367623b71752b53b83b5f62d06c61d485651ea063fb41e079a3",
+          "sum": 1297.4789428710938
+        },
+        "00003-102.con": {
+          "sha256": "525af67acd358328b8e6dd129394f4059b790e695aa339316eaf880510747a13",
+          "sum": 2593.355058670044
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "a602d60fff94f768b277553193b54698759361803aafd75cd84d1ac2b26b3a25"
+      }
+    },
+    {
+      "run_id": "stable_transient_40m_n100_warning_free_baseline_r2",
+      "case": {
+        "id": "stable_transient_40m_n100",
+        "mode": "transient",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 40,
+        "dy": 40,
+        "nx": 5,
+        "ny": 5,
+        "wind_speed": 0.5,
+        "stability": 6,
+        "directions": [
+          27,
+          18,
+          9
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 3
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.3114667999907397,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          0.5,
+          270,
+          6
+        ],
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          0.5,
+          90,
+          6
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "concentration_payloads": 6,
+      "float_values_checked": 150,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "f2c87afa20aea37c18ac5fceac81d4c3ac6368871126c6a6c8b883a5ce904480",
+          "sum": 631.8880920410156
+        },
+        "00001-102.con": {
+          "sha256": "54d256e9d9f2849a2280a115f37188529b744dc72271a05d5b4cd204df2bacab",
+          "sum": 593.9003295898438
+        },
+        "00002-101.con": {
+          "sha256": "ff787e2f3f0fbf9a926c8dd5ddc677c1a0c7f2f6d0d8853f95a1da51c39f4363",
+          "sum": 1249.7922973632812
+        },
+        "00002-102.con": {
+          "sha256": "12f08b9ebc0308f09d7736d4aa5302765a2c089dbf4c1b57952de90df860c8a0",
+          "sum": 1839.5322201251984
+        },
+        "00003-101.con": {
+          "sha256": "6c1ca28f9d060367623b71752b53b83b5f62d06c61d485651ea063fb41e079a3",
+          "sum": 1297.4789428710938
+        },
+        "00003-102.con": {
+          "sha256": "525af67acd358328b8e6dd129394f4059b790e695aa339316eaf880510747a13",
+          "sum": 2593.355058670044
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "a602d60fff94f768b277553193b54698759361803aafd75cd84d1ac2b26b3a25"
+      }
+    },
+    {
+      "run_id": "stable_transient_40m_n100_patchF_minimal_r1",
+      "case": {
+        "id": "stable_transient_40m_n100",
+        "mode": "transient",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 40,
+        "dy": 40,
+        "nx": 5,
+        "ny": 5,
+        "wind_speed": 0.5,
+        "stability": 6,
+        "directions": [
+          27,
+          18,
+          9
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 3
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.3170092000073055,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          0.5,
+          270,
+          6
+        ],
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          0.5,
+          90,
+          6
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "concentration_payloads": 6,
+      "float_values_checked": 150,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "7cd438b29cf404d5ca6416adee97d88493173fd9960237a56cfbdb5def84371d",
+          "sum": 631.8881530761719
+        },
+        "00001-102.con": {
+          "sha256": "cd0c1b3882cf2e694c42f550564b6b12f10ec4bf8f1372f670b3fe0b59c76dd0",
+          "sum": 593.900390625
+        },
+        "00002-101.con": {
+          "sha256": "d66c8ef4dd9bb435bd2d6af47cd31a8266edf8f0fd3ec29652cb0804a06c5fa1",
+          "sum": 1249.7921142578125
+        },
+        "00002-102.con": {
+          "sha256": "b8b26a3e39ee2ac3d8982ef4743f480503657fbca9a2246e7f058364cf9b65ad",
+          "sum": 1839.5299007892609
+        },
+        "00003-101.con": {
+          "sha256": "7ec04d822c9ea286d42900b7d4b5095a960acd572cce956b0795b4ab48ebfd1d",
+          "sum": 1297.4788818359375
+        },
+        "00003-102.con": {
+          "sha256": "dfca15444513fd1351f201ddf1c7a12ce1cdfb4b695135df4b9267c9f5a454f0",
+          "sum": 2593.354570388794
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "a602d60fff94f768b277553193b54698759361803aafd75cd84d1ac2b26b3a25"
+      }
+    },
+    {
+      "run_id": "stable_transient_40m_n100_patchF_minimal_r2",
+      "case": {
+        "id": "stable_transient_40m_n100",
+        "mode": "transient",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 40,
+        "dy": 40,
+        "nx": 5,
+        "ny": 5,
+        "wind_speed": 0.5,
+        "stability": 6,
+        "directions": [
+          27,
+          18,
+          9
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 3
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.3197440999938408,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          0.5,
+          270,
+          6
+        ],
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          0.5,
+          90,
+          6
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "concentration_payloads": 6,
+      "float_values_checked": 150,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "7cd438b29cf404d5ca6416adee97d88493173fd9960237a56cfbdb5def84371d",
+          "sum": 631.8881530761719
+        },
+        "00001-102.con": {
+          "sha256": "cd0c1b3882cf2e694c42f550564b6b12f10ec4bf8f1372f670b3fe0b59c76dd0",
+          "sum": 593.900390625
+        },
+        "00002-101.con": {
+          "sha256": "d66c8ef4dd9bb435bd2d6af47cd31a8266edf8f0fd3ec29652cb0804a06c5fa1",
+          "sum": 1249.7921142578125
+        },
+        "00002-102.con": {
+          "sha256": "b8b26a3e39ee2ac3d8982ef4743f480503657fbca9a2246e7f058364cf9b65ad",
+          "sum": 1839.5299007892609
+        },
+        "00003-101.con": {
+          "sha256": "7ec04d822c9ea286d42900b7d4b5095a960acd572cce956b0795b4ab48ebfd1d",
+          "sum": 1297.4788818359375
+        },
+        "00003-102.con": {
+          "sha256": "dfca15444513fd1351f201ddf1c7a12ce1cdfb4b695135df4b9267c9f5a454f0",
+          "sum": 2593.354570388794
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "a602d60fff94f768b277553193b54698759361803aafd75cd84d1ac2b26b3a25"
+      }
+    },
+    {
+      "run_id": "stable_stationary_10m_n1000_warning_free_baseline_r1",
+      "case": {
+        "id": "stable_stationary_10m_n1000",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 10,
+        "dy": 10,
+        "nx": 20,
+        "ny": 20,
+        "wind_speed": 0.5,
+        "stability": 6,
+        "directions": [
+          27
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 1
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.32884840000770055,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          0.5,
+          270,
+          6
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "concentration_payloads": 2,
+      "float_values_checked": 800,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "74849220cf25021a92c37bdbd08b046b1203564671ae61a5ef8890006c09c4a6",
+          "sum": 180275.71703863144
+        },
+        "00001-102.con": {
+          "sha256": "78ca3dd68679df402c0de46465217e799cd318918c86ee1c4105e8793698c5e9",
+          "sum": 177314.89425563812
+        }
+      },
+      "other_payloads": {}
+    },
+    {
+      "run_id": "stable_stationary_10m_n1000_warning_free_baseline_r2",
+      "case": {
+        "id": "stable_stationary_10m_n1000",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 10,
+        "dy": 10,
+        "nx": 20,
+        "ny": 20,
+        "wind_speed": 0.5,
+        "stability": 6,
+        "directions": [
+          27
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 1
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.3246766999945976,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          0.5,
+          270,
+          6
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "concentration_payloads": 2,
+      "float_values_checked": 800,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "74849220cf25021a92c37bdbd08b046b1203564671ae61a5ef8890006c09c4a6",
+          "sum": 180275.71703863144
+        },
+        "00001-102.con": {
+          "sha256": "78ca3dd68679df402c0de46465217e799cd318918c86ee1c4105e8793698c5e9",
+          "sum": 177314.89425563812
+        }
+      },
+      "other_payloads": {}
+    },
+    {
+      "run_id": "stable_stationary_10m_n1000_patchF_minimal_r1",
+      "case": {
+        "id": "stable_stationary_10m_n1000",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 10,
+        "dy": 10,
+        "nx": 20,
+        "ny": 20,
+        "wind_speed": 0.5,
+        "stability": 6,
+        "directions": [
+          27
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 1
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.3195869000046514,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          0.5,
+          270,
+          6
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "concentration_payloads": 2,
+      "float_values_checked": 800,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "bccfdfa058dca9d3200ef569e6acae5dc5a83ed14bc7f8fc1bf44801f562bd2f",
+          "sum": 180276.32325410843
+        },
+        "00001-102.con": {
+          "sha256": "8af3a43682d2540a461f944c2643b981f6148f8666ed7d2a297166284e31e725",
+          "sum": 177315.38150787354
+        }
+      },
+      "other_payloads": {}
+    },
+    {
+      "run_id": "stable_stationary_10m_n1000_patchF_minimal_r2",
+      "case": {
+        "id": "stable_stationary_10m_n1000",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 10,
+        "dy": 10,
+        "nx": 20,
+        "ny": 20,
+        "wind_speed": 0.5,
+        "stability": 6,
+        "directions": [
+          27
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 1
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.3186502000025939,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          0.5,
+          270,
+          6
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "concentration_payloads": 2,
+      "float_values_checked": 800,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "bccfdfa058dca9d3200ef569e6acae5dc5a83ed14bc7f8fc1bf44801f562bd2f",
+          "sum": 180276.32325410843
+        },
+        "00001-102.con": {
+          "sha256": "8af3a43682d2540a461f944c2643b981f6148f8666ed7d2a297166284e31e725",
+          "sum": 177315.38150787354
+        }
+      },
+      "other_payloads": {}
+    },
+    {
+      "run_id": "stable_transient_40m_n3000_warning_free_baseline_r1",
+      "case": {
+        "id": "stable_transient_40m_n3000",
+        "mode": "transient",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 40,
+        "dy": 40,
+        "nx": 5,
+        "ny": 5,
+        "wind_speed": 0.5,
+        "stability": 6,
+        "directions": [
+          18,
+          27,
+          9
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 3
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.3356041999941226,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          0.5,
+          270,
+          6
+        ],
+        [
+          0.5,
+          90,
+          6
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "concentration_payloads": 6,
+      "float_values_checked": 150,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "4e65dd0e345001bc138237cd3434198cf1d3300456c839fa2b3ecb41cccfba1f",
+          "sum": 625.2214050292969
+        },
+        "00001-102.con": {
+          "sha256": "a76f53d004601e761ef055eac3b0c67112e36efb0ba4480e141cbb1a1fd66432",
+          "sum": 630.7594604492188
+        },
+        "00002-101.con": {
+          "sha256": "c630bf753747acbe60d1725a59d1ab239219d0adf8e7bcf268aafa1458488be0",
+          "sum": 1063.6581268310547
+        },
+        "00002-102.con": {
+          "sha256": "a32fd1fe2b316363ca5d434425d0961f2d8faa607e722fc7c47eeece157524b7",
+          "sum": 1688.0974124670029
+        },
+        "00003-101.con": {
+          "sha256": "50abfa52ff3c3e2dcdd621cbba816155632842d24b39326f7222781448b5335f",
+          "sum": 1121.988296508789
+        },
+        "00003-102.con": {
+          "sha256": "f82796ee3290a47e5649c895c0b17526e594df1d1aa76fff0173795ac1163358",
+          "sum": 2408.3640345335007
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "cf4fe5c939fad3d380ea30be74748cbc86678bbc538eb824d21ab3569e261d67"
+      }
+    },
+    {
+      "run_id": "stable_transient_40m_n3000_warning_free_baseline_r2",
+      "case": {
+        "id": "stable_transient_40m_n3000",
+        "mode": "transient",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 40,
+        "dy": 40,
+        "nx": 5,
+        "ny": 5,
+        "wind_speed": 0.5,
+        "stability": 6,
+        "directions": [
+          18,
+          27,
+          9
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 3
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.32795189999160357,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          0.5,
+          270,
+          6
+        ],
+        [
+          0.5,
+          90,
+          6
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "concentration_payloads": 6,
+      "float_values_checked": 150,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "4e65dd0e345001bc138237cd3434198cf1d3300456c839fa2b3ecb41cccfba1f",
+          "sum": 625.2214050292969
+        },
+        "00001-102.con": {
+          "sha256": "a76f53d004601e761ef055eac3b0c67112e36efb0ba4480e141cbb1a1fd66432",
+          "sum": 630.7594604492188
+        },
+        "00002-101.con": {
+          "sha256": "c630bf753747acbe60d1725a59d1ab239219d0adf8e7bcf268aafa1458488be0",
+          "sum": 1063.6581268310547
+        },
+        "00002-102.con": {
+          "sha256": "a32fd1fe2b316363ca5d434425d0961f2d8faa607e722fc7c47eeece157524b7",
+          "sum": 1688.0974124670029
+        },
+        "00003-101.con": {
+          "sha256": "50abfa52ff3c3e2dcdd621cbba816155632842d24b39326f7222781448b5335f",
+          "sum": 1121.988296508789
+        },
+        "00003-102.con": {
+          "sha256": "f82796ee3290a47e5649c895c0b17526e594df1d1aa76fff0173795ac1163358",
+          "sum": 2408.3640345335007
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "cf4fe5c939fad3d380ea30be74748cbc86678bbc538eb824d21ab3569e261d67"
+      }
+    },
+    {
+      "run_id": "stable_transient_40m_n3000_patchF_minimal_r1",
+      "case": {
+        "id": "stable_transient_40m_n3000",
+        "mode": "transient",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 40,
+        "dy": 40,
+        "nx": 5,
+        "ny": 5,
+        "wind_speed": 0.5,
+        "stability": 6,
+        "directions": [
+          18,
+          27,
+          9
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 3
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.3246343000064371,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          0.5,
+          270,
+          6
+        ],
+        [
+          0.5,
+          90,
+          6
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "concentration_payloads": 6,
+      "float_values_checked": 150,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "ce6132b2a219a8401960730086bdb06abbd53f7c695219a789914809213bfe29",
+          "sum": 625.2213134765625
+        },
+        "00001-102.con": {
+          "sha256": "016576f4790e546edb6e395f7dc9131c584a743eee07e9bf7129504de98c4e81",
+          "sum": 630.7418823242188
+        },
+        "00002-101.con": {
+          "sha256": "e662d31121d7c8e45ebb7572b76b676ceb8f8ed77ec59eb17c064cbc0660040d",
+          "sum": 1063.6580200195312
+        },
+        "00002-102.con": {
+          "sha256": "5192625ec041ab39b6a3408dc209092ead837b0f8a658715b59652bee7e45b5d",
+          "sum": 1688.003175623715
+        },
+        "00003-101.con": {
+          "sha256": "d2c77724e5d19fdce7ab8f53221034c7fcb13ef296ad4ff4796ab7ee75627311",
+          "sum": 1121.9869384765625
+        },
+        "00003-102.con": {
+          "sha256": "b981a248b3a34ff833db47647f7d4d49ee141886070c1f6bca556b8cea0a11bf",
+          "sum": 2408.3415888547897
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "cf4fe5c939fad3d380ea30be74748cbc86678bbc538eb824d21ab3569e261d67"
+      }
+    },
+    {
+      "run_id": "stable_transient_40m_n3000_patchF_minimal_r2",
+      "case": {
+        "id": "stable_transient_40m_n3000",
+        "mode": "transient",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false,
+        "dx": 40,
+        "dy": 40,
+        "nx": 5,
+        "ny": 5,
+        "wind_speed": 0.5,
+        "stability": 6,
+        "directions": [
+          18,
+          27,
+          9
+        ],
+        "domain_extent_m": [
+          0,
+          200,
+          0,
+          200
+        ],
+        "situation_duration_s": 30,
+        "weather_situations": 3
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.341676500000176,
+      "checks_passed": 15,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true,
+        "concentration_count": true,
+        "domain_extent_200m": true,
+        "declared_flowfield_resolution": true,
+        "declared_concentration_cells": true,
+        "output_horizontal_resolution": true,
+        "output_dynamic_grid_cells": true,
+        "actual_meteorology_sequence": true,
+        "within_60_second_main_limit": true
+      },
+      "actual_weather": [
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          0.5,
+          270,
+          6
+        ],
+        [
+          0.5,
+          90,
+          6
+        ]
+      ],
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "concentration_payloads": 6,
+      "float_values_checked": 150,
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "ce6132b2a219a8401960730086bdb06abbd53f7c695219a789914809213bfe29",
+          "sum": 625.2213134765625
+        },
+        "00001-102.con": {
+          "sha256": "016576f4790e546edb6e395f7dc9131c584a743eee07e9bf7129504de98c4e81",
+          "sum": 630.7418823242188
+        },
+        "00002-101.con": {
+          "sha256": "e662d31121d7c8e45ebb7572b76b676ceb8f8ed77ec59eb17c064cbc0660040d",
+          "sum": 1063.6580200195312
+        },
+        "00002-102.con": {
+          "sha256": "5192625ec041ab39b6a3408dc209092ead837b0f8a658715b59652bee7e45b5d",
+          "sum": 1688.003175623715
+        },
+        "00003-101.con": {
+          "sha256": "d2c77724e5d19fdce7ab8f53221034c7fcb13ef296ad4ff4796ab7ee75627311",
+          "sum": 1121.9869384765625
+        },
+        "00003-102.con": {
+          "sha256": "b981a248b3a34ff833db47647f7d4d49ee141886070c1f6bca556b8cea0a11bf",
+          "sum": 2408.3415888547897
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "cf4fe5c939fad3d380ea30be74748cbc86678bbc538eb824d21ab3569e261d67"
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "case": "day_stationary_10m_n100",
+      "mode": "stationary",
+      "budget": 100,
+      "resolution_m": 10,
+      "wind_speed_m_s": 2.5,
+      "stability_class": 2,
+      "repeat": 1,
+      "cells": 800,
+      "changed_cells": 25,
+      "relative_l1": 1.5222455335109947e-07,
+      "max_absolute_difference": 0.000732421875,
+      "max_ulp": 6,
+      "baseline_sum": 21476.138275146484,
+      "candidate_sum": 21476.13906478882,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 0
+    },
+    {
+      "case": "day_stationary_10m_n100",
+      "mode": "stationary",
+      "budget": 100,
+      "resolution_m": 10,
+      "wind_speed_m_s": 2.5,
+      "stability_class": 2,
+      "repeat": 2,
+      "cells": 800,
+      "changed_cells": 25,
+      "relative_l1": 1.5222455335109947e-07,
+      "max_absolute_difference": 0.000732421875,
+      "max_ulp": 6,
+      "baseline_sum": 21476.138275146484,
+      "candidate_sum": 21476.13906478882,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 0
+    },
+    {
+      "case": "day_transient_10m_n1000",
+      "mode": "transient",
+      "budget": 1000,
+      "resolution_m": 10,
+      "wind_speed_m_s": 2.5,
+      "stability_class": 2,
+      "repeat": 1,
+      "cells": 2400,
+      "changed_cells": 116,
+      "relative_l1": 2.1735109645791133e-07,
+      "max_absolute_difference": 0.001220703125,
+      "max_ulp": 10,
+      "baseline_sum": 41669.017142891884,
+      "candidate_sum": 41669.019325613976,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 1
+    },
+    {
+      "case": "day_transient_10m_n1000",
+      "mode": "transient",
+      "budget": 1000,
+      "resolution_m": 10,
+      "wind_speed_m_s": 2.5,
+      "stability_class": 2,
+      "repeat": 2,
+      "cells": 2400,
+      "changed_cells": 116,
+      "relative_l1": 2.1735109645791133e-07,
+      "max_absolute_difference": 0.001220703125,
+      "max_ulp": 10,
+      "baseline_sum": 41669.017142891884,
+      "candidate_sum": 41669.019325613976,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 1
+    },
+    {
+      "case": "day_stationary_40m_n3000",
+      "mode": "stationary",
+      "budget": 3000,
+      "resolution_m": 40,
+      "wind_speed_m_s": 2.5,
+      "stability_class": 2,
+      "repeat": 1,
+      "cells": 50,
+      "changed_cells": 9,
+      "relative_l1": 3.163387263872486e-06,
+      "max_absolute_difference": 0.00341796875,
+      "max_ulp": 86,
+      "baseline_sum": 1754.0989902615547,
+      "candidate_sum": 1754.1013340950012,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 0
+    },
+    {
+      "case": "day_stationary_40m_n3000",
+      "mode": "stationary",
+      "budget": 3000,
+      "resolution_m": 40,
+      "wind_speed_m_s": 2.5,
+      "stability_class": 2,
+      "repeat": 2,
+      "cells": 50,
+      "changed_cells": 9,
+      "relative_l1": 3.163387263872486e-06,
+      "max_absolute_difference": 0.00341796875,
+      "max_ulp": 86,
+      "baseline_sum": 1754.0989902615547,
+      "candidate_sum": 1754.1013340950012,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 0
+    },
+    {
+      "case": "stable_transient_40m_n100",
+      "mode": "transient",
+      "budget": 100,
+      "resolution_m": 40,
+      "wind_speed_m_s": 0.5,
+      "stability_class": 6,
+      "repeat": 1,
+      "cells": 150,
+      "changed_cells": 7,
+      "relative_l1": 3.8677170934090225e-07,
+      "max_absolute_difference": 0.0023193359375,
+      "max_ulp": 19,
+      "baseline_sum": 8205.946940660477,
+      "candidate_sum": 8205.944010972977,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 1
+    },
+    {
+      "case": "stable_transient_40m_n100",
+      "mode": "transient",
+      "budget": 100,
+      "resolution_m": 40,
+      "wind_speed_m_s": 0.5,
+      "stability_class": 6,
+      "repeat": 2,
+      "cells": 150,
+      "changed_cells": 7,
+      "relative_l1": 3.8677170934090225e-07,
+      "max_absolute_difference": 0.0023193359375,
+      "max_ulp": 19,
+      "baseline_sum": 8205.946940660477,
+      "candidate_sum": 8205.944010972977,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 1
+    },
+    {
+      "case": "stable_stationary_10m_n1000",
+      "mode": "stationary",
+      "budget": 1000,
+      "resolution_m": 10,
+      "wind_speed_m_s": 0.5,
+      "stability_class": 6,
+      "repeat": 1,
+      "cells": 800,
+      "changed_cells": 184,
+      "relative_l1": 3.633674553031836e-06,
+      "max_absolute_difference": 0.1884765625,
+      "max_ulp": 193,
+      "baseline_sum": 357590.61129426956,
+      "candidate_sum": 357591.70476198196,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 0
+    },
+    {
+      "case": "stable_stationary_10m_n1000",
+      "mode": "stationary",
+      "budget": 1000,
+      "resolution_m": 10,
+      "wind_speed_m_s": 0.5,
+      "stability_class": 6,
+      "repeat": 2,
+      "cells": 800,
+      "changed_cells": 184,
+      "relative_l1": 3.633674553031836e-06,
+      "max_absolute_difference": 0.1884765625,
+      "max_ulp": 193,
+      "baseline_sum": 357590.61129426956,
+      "candidate_sum": 357591.70476198196,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 0
+    },
+    {
+      "case": "stable_transient_40m_n3000",
+      "mode": "transient",
+      "budget": 3000,
+      "resolution_m": 40,
+      "wind_speed_m_s": 0.5,
+      "stability_class": 6,
+      "repeat": 1,
+      "cells": 150,
+      "changed_cells": 11,
+      "relative_l1": 1.8212144744997415e-05,
+      "max_absolute_difference": 0.09423828125,
+      "max_ulp": 772,
+      "baseline_sum": 7538.088735818863,
+      "candidate_sum": 7537.95291877538,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 1
+    },
+    {
+      "case": "stable_transient_40m_n3000",
+      "mode": "transient",
+      "budget": 3000,
+      "resolution_m": 40,
+      "wind_speed_m_s": 0.5,
+      "stability_class": 6,
+      "repeat": 2,
+      "cells": 150,
+      "changed_cells": 11,
+      "relative_l1": 1.8212144744997415e-05,
+      "max_absolute_difference": 0.09423828125,
+      "max_ulp": 772,
+      "baseline_sum": 7538.088735818863,
+      "candidate_sum": 7537.95291877538,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 1
+    }
+  ],
+  "repeat_results": [
+    {
+      "case": "day_stationary_10m_n100",
+      "variant": "warning_free_baseline",
+      "same_concentration_payloads": true,
+      "same_other_payloads": true
+    },
+    {
+      "case": "day_stationary_10m_n100",
+      "variant": "patchF_minimal",
+      "same_concentration_payloads": true,
+      "same_other_payloads": true
+    },
+    {
+      "case": "day_transient_10m_n1000",
+      "variant": "warning_free_baseline",
+      "same_concentration_payloads": true,
+      "same_other_payloads": true
+    },
+    {
+      "case": "day_transient_10m_n1000",
+      "variant": "patchF_minimal",
+      "same_concentration_payloads": true,
+      "same_other_payloads": true
+    },
+    {
+      "case": "day_stationary_40m_n3000",
+      "variant": "warning_free_baseline",
+      "same_concentration_payloads": true,
+      "same_other_payloads": true
+    },
+    {
+      "case": "day_stationary_40m_n3000",
+      "variant": "patchF_minimal",
+      "same_concentration_payloads": true,
+      "same_other_payloads": true
+    },
+    {
+      "case": "stable_transient_40m_n100",
+      "variant": "warning_free_baseline",
+      "same_concentration_payloads": true,
+      "same_other_payloads": true
+    },
+    {
+      "case": "stable_transient_40m_n100",
+      "variant": "patchF_minimal",
+      "same_concentration_payloads": true,
+      "same_other_payloads": true
+    },
+    {
+      "case": "stable_stationary_10m_n1000",
+      "variant": "warning_free_baseline",
+      "same_concentration_payloads": true,
+      "same_other_payloads": true
+    },
+    {
+      "case": "stable_stationary_10m_n1000",
+      "variant": "patchF_minimal",
+      "same_concentration_payloads": true,
+      "same_other_payloads": true
+    },
+    {
+      "case": "stable_transient_40m_n3000",
+      "variant": "warning_free_baseline",
+      "same_concentration_payloads": true,
+      "same_other_payloads": true
+    },
+    {
+      "case": "stable_transient_40m_n3000",
+      "variant": "patchF_minimal",
+      "same_concentration_payloads": true,
+      "same_other_payloads": true
+    }
+  ],
+  "limits": [
+    "The added weather cases specify wind and stability class; they are not a radiation-resolving daytime model.",
+    "Three transient situations each integrate for 30 seconds; hourly fixture labels do not represent three hours of physical integration.",
+    "Output differences quantify numerical storage changes; there is no independent true atmospheric concentration reference.",
+    "Single-worker fixed-seed repeatability applies to these controlled cases only.",
+    "Cases balance cost and coverage; they are not a full factorial design and do not isolate individual meteorology, resolution or particle-budget effects.",
+    "No production-domain throughput or total peak-memory claim."
+  ]
+}

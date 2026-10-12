@@ -1,0 +1,800 @@
+{
+  "status": "pass",
+  "strict_builds": {
+    "old_C2_active_reference": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "old_C3_adaptive_budget": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "new_C2_active_reference": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "new_C3_adaptive_budget": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "actual_dll_fixture": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "worker_cancel_fixture": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "old_C2_active_reference_reference_witness": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "old_C3_adaptive_budget_reference_witness": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "new_C2_active_reference_reference_witness": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "new_C3_adaptive_budget_reference_witness": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "actual_main_runs": 36,
+  "actual_main_checks": 288,
+  "repeat_pairs": [
+    {
+      "budget": 100,
+      "variant": "old_C2_active_reference",
+      "identical": true
+    },
+    {
+      "budget": 100,
+      "variant": "old_C3_adaptive_budget",
+      "identical": true
+    },
+    {
+      "budget": 100,
+      "variant": "new_C2_active_reference",
+      "identical": true
+    },
+    {
+      "budget": 100,
+      "variant": "new_C3_adaptive_budget",
+      "identical": true
+    },
+    {
+      "budget": 1000,
+      "variant": "old_C2_active_reference",
+      "identical": true
+    },
+    {
+      "budget": 1000,
+      "variant": "old_C3_adaptive_budget",
+      "identical": true
+    },
+    {
+      "budget": 1000,
+      "variant": "new_C2_active_reference",
+      "identical": true
+    },
+    {
+      "budget": 1000,
+      "variant": "new_C3_adaptive_budget",
+      "identical": true
+    },
+    {
+      "budget": 3000,
+      "variant": "old_C2_active_reference",
+      "identical": true
+    },
+    {
+      "budget": 3000,
+      "variant": "old_C3_adaptive_budget",
+      "identical": true
+    },
+    {
+      "budget": 3000,
+      "variant": "new_C2_active_reference",
+      "identical": true
+    },
+    {
+      "budget": 3000,
+      "variant": "new_C3_adaptive_budget",
+      "identical": true
+    }
+  ],
+  "component_check_count": 83,
+  "worker_cancellation": {
+    "one_worker": {
+      "configured_max_degree": 1,
+      "max_concurrent_rows": 1,
+      "visited_rows": 32,
+      "final_k": 55
+    },
+    "already_cancelled": {
+      "visited_rows": 0,
+      "elapsed_s": 1e-06,
+      "no_grid_index_read": true
+    },
+    "cancel_during_planning": {
+      "visited_rows": 3,
+      "max_concurrent_rows": 1,
+      "final_k": 10,
+      "elapsed_s": 0.0466493
+    },
+    "checks_passed": 11,
+    "scope": "Actual extracted PlanResidual with only test row-entry/exit witnesses. No production-source instrumentation."
+  },
+  "components": {
+    "C2_active_reference": {
+      "reference_example": {
+        "nominal_reference": 25.999999675000005,
+        "active_reference": 0.9999999875000001,
+        "continuous_all_off": 25.999999675000005,
+        "restart_all_off": 25.999999675000005,
+        "old_continuous_all_off": 0.9999999875000001,
+        "old_restart_all_off": 25.999999675000005,
+        "residual_mass": 99.99999875,
+        "k10_old_continuous": 11,
+        "k10_new_all_off": 1
+      },
+      "status": "pass",
+      "checks_passed": 10,
+      "checks": [
+        {
+          "name": "one active source",
+          "pass": true
+        },
+        {
+          "name": "positive magnitude leaves policy unchanged",
+          "pass": true
+        },
+        {
+          "name": "all off uses nominal after active",
+          "pass": true
+        },
+        {
+          "name": "fresh restart and continuous references match",
+          "pass": true
+        },
+        {
+          "name": "all off repeated idempotently",
+          "pass": true
+        },
+        {
+          "name": "later all-off situation same nominal",
+          "pass": true
+        },
+        {
+          "name": "four source classes summed",
+          "pass": true
+        },
+        {
+          "name": "inactive deposition-only excluded",
+          "pass": true
+        },
+        {
+          "name": "no time series uses all nominal sources",
+          "pass": true
+        },
+        {
+          "name": "nonpositive factors inactive fallback",
+          "pass": true
+        }
+      ],
+      "scope": "Calls actual frozen GRAL DLL methods through reflection. Main restart is tested separately. Floating-point mass splitting still rounds."
+    },
+    "C3_adaptive_budget": {
+      "reference_example": {
+        "nominal_reference": 25.999999675000005,
+        "active_reference": 0.9999999875000001,
+        "continuous_all_off": 25.999999675000005,
+        "restart_all_off": 25.999999675000005,
+        "old_continuous_all_off": 0.9999999875000001,
+        "old_restart_all_off": 25.999999675000005,
+        "residual_mass": 99.99999875,
+        "k10_old_continuous": 11,
+        "k10_new_all_off": 1
+      },
+      "boundary_sweep": {
+        "cases": 210000,
+        "mismatches": 0,
+        "old_product_disagreements": 21012,
+        "examples": [
+          {
+            "mass": 0.0395068203909151,
+            "reference": 0.000790136407818302,
+            "target": 5,
+            "new_count": 5,
+            "old_product_count": 6
+          },
+          {
+            "mass": 2.3462850330824426e-13,
+            "reference": 2.606983370091603e-15,
+            "target": 9,
+            "new_count": 9,
+            "old_product_count": 10
+          },
+          {
+            "mass": 1.8069552720641533e-05,
+            "reference": 1.5057960600534612e-07,
+            "target": 12,
+            "new_count": 12,
+            "old_product_count": 13
+          },
+          {
+            "mass": 1217161205.963342,
+            "reference": 8694008.614023872,
+            "target": 15,
+            "new_count": 15,
+            "old_product_count": 14
+          },
+          {
+            "mass": 385771459218.48065,
+            "reference": 1837006948.6594317,
+            "target": 22,
+            "new_count": 22,
+            "old_product_count": 21
+          },
+          {
+            "mass": 56936.602632590155,
+            "reference": 218.98693320226982,
+            "target": 27,
+            "new_count": 27,
+            "old_product_count": 26
+          },
+          {
+            "mass": 1539644257.0607386,
+            "reference": 5309118.127795651,
+            "target": 30,
+            "new_count": 30,
+            "old_product_count": 29
+          },
+          {
+            "mass": 185004155005073.34,
+            "reference": 544129867661.98047,
+            "target": 34,
+            "new_count": 34,
+            "old_product_count": 35
+          }
+        ]
+      },
+      "feasible_target": {
+        "entries": 100,
+        "budget": 200,
+        "initial_count": 1100,
+        "final_count": 200,
+        "final_k": 55,
+        "within_target": true
+      },
+      "entry_lower_bound": {
+        "entries": 300,
+        "budget": 200,
+        "initial_count": 300,
+        "final_count": 300,
+        "final_k": 113.90625,
+        "within_target": false
+      },
+      "six_pass_limit": {
+        "entries": 1000,
+        "budget": 1001,
+        "initial_count": 100999,
+        "final_count": 1167,
+        "final_k": 5982.616524791632,
+        "within_target": false
+      },
+      "long_total": 3000000000,
+      "mass_rounding": {
+        "concentration": 100,
+        "count": 11,
+        "reconstruction": 99.99999904632568,
+        "relative_error": -9.5367431640625e-09,
+        "subnormal_lost": true
+      },
+      "status": "pass",
+      "checks_passed": 62,
+      "checks": [
+        {
+          "name": "one active source",
+          "pass": true
+        },
+        {
+          "name": "positive magnitude leaves policy unchanged",
+          "pass": true
+        },
+        {
+          "name": "all off uses nominal after active",
+          "pass": true
+        },
+        {
+          "name": "fresh restart and continuous references match",
+          "pass": true
+        },
+        {
+          "name": "all off repeated idempotently",
+          "pass": true
+        },
+        {
+          "name": "later all-off situation same nominal",
+          "pass": true
+        },
+        {
+          "name": "four source classes summed",
+          "pass": true
+        },
+        {
+          "name": "inactive deposition-only excluded",
+          "pass": true
+        },
+        {
+          "name": "no time series uses all nominal sources",
+          "pass": true
+        },
+        {
+          "name": "nonpositive factors inactive fallback",
+          "pass": true
+        },
+        {
+          "name": "safe split 0",
+          "pass": true
+        },
+        {
+          "name": "safe split 1",
+          "pass": true
+        },
+        {
+          "name": "safe split 2",
+          "pass": true
+        },
+        {
+          "name": "safe split 3",
+          "pass": true
+        },
+        {
+          "name": "safe split 4",
+          "pass": true
+        },
+        {
+          "name": "safe split 5",
+          "pass": true
+        },
+        {
+          "name": "safe split 6",
+          "pass": true
+        },
+        {
+          "name": "safe split 7",
+          "pass": true
+        },
+        {
+          "name": "safe split 8",
+          "pass": true
+        },
+        {
+          "name": "safe split 9",
+          "pass": true
+        },
+        {
+          "name": "bounded invalid reference 0",
+          "pass": true
+        },
+        {
+          "name": "bounded invalid reference -1",
+          "pass": true
+        },
+        {
+          "name": "bounded invalid reference NaN",
+          "pass": true
+        },
+        {
+          "name": "bounded invalid reference \u221e",
+          "pass": true
+        },
+        {
+          "name": "bounded K 10 mass 0",
+          "pass": true
+        },
+        {
+          "name": "bounded K 10 mass 1",
+          "pass": true
+        },
+        {
+          "name": "bounded K 10 mass 10",
+          "pass": true
+        },
+        {
+          "name": "bounded K 10 mass 1E+300",
+          "pass": true
+        },
+        {
+          "name": "bounded K 10 mass \u221e",
+          "pass": true
+        },
+        {
+          "name": "bounded K 55 mass 0",
+          "pass": true
+        },
+        {
+          "name": "bounded K 55 mass 1",
+          "pass": true
+        },
+        {
+          "name": "bounded K 55 mass 10",
+          "pass": true
+        },
+        {
+          "name": "bounded K 55 mass 1E+300",
+          "pass": true
+        },
+        {
+          "name": "bounded K 55 mass \u221e",
+          "pass": true
+        },
+        {
+          "name": "bounded K 1E+200 mass 0",
+          "pass": true
+        },
+        {
+          "name": "bounded K 1E+200 mass 1",
+          "pass": true
+        },
+        {
+          "name": "bounded K 1E+200 mass 10",
+          "pass": true
+        },
+        {
+          "name": "bounded K 1E+200 mass 1E+300",
+          "pass": true
+        },
+        {
+          "name": "bounded K 1E+200 mass \u221e",
+          "pass": true
+        },
+        {
+          "name": "bounded K 1.7976931348623157E+308 mass 0",
+          "pass": true
+        },
+        {
+          "name": "bounded K 1.7976931348623157E+308 mass 1",
+          "pass": true
+        },
+        {
+          "name": "bounded K 1.7976931348623157E+308 mass 10",
+          "pass": true
+        },
+        {
+          "name": "bounded K 1.7976931348623157E+308 mass 1E+300",
+          "pass": true
+        },
+        {
+          "name": "bounded K 1.7976931348623157E+308 mass \u221e",
+          "pass": true
+        },
+        {
+          "name": "bounded K \u221e mass 0",
+          "pass": true
+        },
+        {
+          "name": "bounded K \u221e mass 1",
+          "pass": true
+        },
+        {
+          "name": "bounded K \u221e mass 10",
+          "pass": true
+        },
+        {
+          "name": "bounded K \u221e mass 1E+300",
+          "pass": true
+        },
+        {
+          "name": "bounded K \u221e mass \u221e",
+          "pass": true
+        },
+        {
+          "name": "K10 nested-floor boundary compatibility",
+          "pass": true
+        },
+        {
+          "name": "product denominator rounding reproduced",
+          "pass": true
+        },
+        {
+          "name": "feasible factor 55",
+          "pass": true
+        },
+        {
+          "name": "feasible final count200",
+          "pass": true
+        },
+        {
+          "name": "minimum one per eligible entry",
+          "pass": true
+        },
+        {
+          "name": "six finite adjustments",
+          "pass": true
+        },
+        {
+          "name": "six-pass target remains soft",
+          "pass": true
+        },
+        {
+          "name": "planner threshold excludes low entry",
+          "pass": true
+        },
+        {
+          "name": "total uses long above Int32",
+          "pass": true
+        },
+        {
+          "name": "two-worker planner same count policy",
+          "pass": true
+        },
+        {
+          "name": "pre-cancellation reads no grid or changes factor",
+          "pass": true
+        },
+        {
+          "name": "ordinary split float mass rounding bounded",
+          "pass": true
+        },
+        {
+          "name": "remaining subnormal underflow documented",
+          "pass": true
+        }
+      ],
+      "scope": "Calls actual frozen GRAL DLL methods through reflection. Main restart is tested separately. Floating-point mass splitting still rounds."
+    }
+  },
+  "restart": [
+    {
+      "variant": "old_C2_active_reference",
+      "continuous_all_off_reference": 0.17361111773384966,
+      "resume_all_off_reference": 0.3472222354676993,
+      "reference_equal": false,
+      "prefix_checkpoint_sha256": "91cd04cfd995f5550375ccccbc79b76fc484043ad8f1a6e125861380d2b544f9",
+      "prefix_checkpoint_zip_sha256": "6599df4198110129112bfd056ccd5c0e7f3e3d1f4b381c837720795ef57ad82d",
+      "prefix_checkpoint_evidence": "qa/checkpoint_evidence/old_C2_active_reference/Transient_Concentrations2.tmp",
+      "prefix_checkpoint_situation": 2,
+      "resume_weather_numbers": [
+        3,
+        4
+      ],
+      "scope": "Only a Console.WriteLine at the end of SetResidualParticleMass; production source remains unchanged.",
+      "full_output_bitwise_required": false
+    },
+    {
+      "variant": "old_C3_adaptive_budget",
+      "continuous_all_off_reference": 0.17361111773384966,
+      "resume_all_off_reference": 0.3472222354676993,
+      "reference_equal": false,
+      "prefix_checkpoint_sha256": "91cd04cfd995f5550375ccccbc79b76fc484043ad8f1a6e125861380d2b544f9",
+      "prefix_checkpoint_zip_sha256": "1c4de69002752f7239c4039d9fafec0e51312cc6635ad64ef9b06dd6d26174f9",
+      "prefix_checkpoint_evidence": "qa/checkpoint_evidence/old_C3_adaptive_budget/Transient_Concentrations2.tmp",
+      "prefix_checkpoint_situation": 2,
+      "resume_weather_numbers": [
+        3,
+        4
+      ],
+      "scope": "Only a Console.WriteLine at the end of SetResidualParticleMass; production source remains unchanged.",
+      "full_output_bitwise_required": false
+    },
+    {
+      "variant": "new_C2_active_reference",
+      "continuous_all_off_reference": 0.3472222354676993,
+      "resume_all_off_reference": 0.3472222354676993,
+      "reference_equal": true,
+      "prefix_checkpoint_sha256": "91cd04cfd995f5550375ccccbc79b76fc484043ad8f1a6e125861380d2b544f9",
+      "prefix_checkpoint_zip_sha256": "79bb4cb8ac0445b44c461449b20701690b4bc6119a7e7d4fb62c2fb45774ec64",
+      "prefix_checkpoint_evidence": "qa/checkpoint_evidence/new_C2_active_reference/Transient_Concentrations2.tmp",
+      "prefix_checkpoint_situation": 2,
+      "resume_weather_numbers": [
+        3,
+        4
+      ],
+      "scope": "Only a Console.WriteLine at the end of SetResidualParticleMass; production source remains unchanged.",
+      "full_output_bitwise_required": false
+    },
+    {
+      "variant": "new_C3_adaptive_budget",
+      "continuous_all_off_reference": 0.3472222354676993,
+      "resume_all_off_reference": 0.3472222354676993,
+      "reference_equal": true,
+      "prefix_checkpoint_sha256": "91cd04cfd995f5550375ccccbc79b76fc484043ad8f1a6e125861380d2b544f9",
+      "prefix_checkpoint_zip_sha256": "48e4b68b12ece6950436e9114b5d8731439aa2567ea4c4d203c16a8ffe4f050e",
+      "prefix_checkpoint_evidence": "qa/checkpoint_evidence/new_C3_adaptive_budget/Transient_Concentrations2.tmp",
+      "prefix_checkpoint_situation": 2,
+      "resume_weather_numbers": [
+        3,
+        4
+      ],
+      "scope": "Only a Console.WriteLine at the end of SetResidualParticleMass; production source remains unchanged.",
+      "full_output_bitwise_required": false
+    }
+  ],
+  "effects": [
+    {
+      "budget": 100,
+      "policy": "C2_active_reference",
+      "situation": 1,
+      "old_sum": 4858.0022621154785,
+      "new_sum": 4858.0022621154785,
+      "relative_l1_percent": 0.0,
+      "payloads_identical": true
+    },
+    {
+      "budget": 100,
+      "policy": "C2_active_reference",
+      "situation": 2,
+      "old_sum": 11204.427951812744,
+      "new_sum": 11204.427951812744,
+      "relative_l1_percent": 0.0,
+      "payloads_identical": true
+    },
+    {
+      "budget": 100,
+      "policy": "C2_active_reference",
+      "situation": 3,
+      "old_sum": 10938.519613265991,
+      "new_sum": 9926.494052886963,
+      "relative_l1_percent": 26.518745910205084,
+      "payloads_identical": false
+    },
+    {
+      "budget": 100,
+      "policy": "C3_adaptive_budget",
+      "situation": 1,
+      "old_sum": 4858.0022621154785,
+      "new_sum": 4858.0022621154785,
+      "relative_l1_percent": 0.0,
+      "payloads_identical": true
+    },
+    {
+      "budget": 100,
+      "policy": "C3_adaptive_budget",
+      "situation": 2,
+      "old_sum": 11204.427951812744,
+      "new_sum": 11204.427951812744,
+      "relative_l1_percent": 0.0,
+      "payloads_identical": true
+    },
+    {
+      "budget": 100,
+      "policy": "C3_adaptive_budget",
+      "situation": 3,
+      "old_sum": 10938.519613265991,
+      "new_sum": 9926.494052886963,
+      "relative_l1_percent": 26.518745910205084,
+      "payloads_identical": false
+    },
+    {
+      "budget": 1000,
+      "policy": "C2_active_reference",
+      "situation": 1,
+      "old_sum": 4983.015072822571,
+      "new_sum": 4983.015072822571,
+      "relative_l1_percent": 0.0,
+      "payloads_identical": true
+    },
+    {
+      "budget": 1000,
+      "policy": "C2_active_reference",
+      "situation": 2,
+      "old_sum": 10969.285003185272,
+      "new_sum": 10969.285003185272,
+      "relative_l1_percent": 0.0,
+      "payloads_identical": true
+    },
+    {
+      "budget": 1000,
+      "policy": "C2_active_reference",
+      "situation": 3,
+      "old_sum": 10981.981891155243,
+      "new_sum": 10776.283667564392,
+      "relative_l1_percent": 14.306378369483822,
+      "payloads_identical": false
+    },
+    {
+      "budget": 1000,
+      "policy": "C3_adaptive_budget",
+      "situation": 1,
+      "old_sum": 4983.015072822571,
+      "new_sum": 4983.015072822571,
+      "relative_l1_percent": 0.0,
+      "payloads_identical": true
+    },
+    {
+      "budget": 1000,
+      "policy": "C3_adaptive_budget",
+      "situation": 2,
+      "old_sum": 10969.285003185272,
+      "new_sum": 10969.285003185272,
+      "relative_l1_percent": 0.0,
+      "payloads_identical": true
+    },
+    {
+      "budget": 1000,
+      "policy": "C3_adaptive_budget",
+      "situation": 3,
+      "old_sum": 10981.981891155243,
+      "new_sum": 10776.283667564392,
+      "relative_l1_percent": 14.306378369483822,
+      "payloads_identical": false
+    },
+    {
+      "budget": 3000,
+      "policy": "C2_active_reference",
+      "situation": 1,
+      "old_sum": 4994.304340749979,
+      "new_sum": 4994.304340749979,
+      "relative_l1_percent": 0.0,
+      "payloads_identical": true
+    },
+    {
+      "budget": 3000,
+      "policy": "C2_active_reference",
+      "situation": 2,
+      "old_sum": 11155.967772483826,
+      "new_sum": 11155.967772483826,
+      "relative_l1_percent": 0.0,
+      "payloads_identical": true
+    },
+    {
+      "budget": 3000,
+      "policy": "C2_active_reference",
+      "situation": 3,
+      "old_sum": 10894.785502672195,
+      "new_sum": 11060.603083372116,
+      "relative_l1_percent": 7.252020277925069,
+      "payloads_identical": false
+    },
+    {
+      "budget": 3000,
+      "policy": "C3_adaptive_budget",
+      "situation": 1,
+      "old_sum": 4994.304340749979,
+      "new_sum": 4994.304340749979,
+      "relative_l1_percent": 0.0,
+      "payloads_identical": true
+    },
+    {
+      "budget": 3000,
+      "policy": "C3_adaptive_budget",
+      "situation": 2,
+      "old_sum": 11155.967772483826,
+      "new_sum": 11155.967772483826,
+      "relative_l1_percent": 0.0,
+      "payloads_identical": true
+    },
+    {
+      "budget": 3000,
+      "policy": "C3_adaptive_budget",
+      "situation": 3,
+      "old_sum": 10894.785502672195,
+      "new_sum": 11060.603083372116,
+      "relative_l1_percent": 7.252020277925069,
+      "payloads_identical": false
+    }
+  ],
+  "elapsed_s": 26.653594500006875,
+  "limitations": [
+    "Main reference witness is in separate test copies only.",
+    "Restart equality is limited to reference mass; original engine state can change full output.",
+    "Actual field differences have no physical truth oracle.",
+    "All-off policy deliberately returns to existing nominal reference.",
+    "No remote changes."
+  ]
+}

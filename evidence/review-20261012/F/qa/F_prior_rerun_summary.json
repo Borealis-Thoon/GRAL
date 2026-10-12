@@ -1,0 +1,3117 @@
+{
+  "status": "pass",
+  "strict_builds": {
+    "warning_free_baseline": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "patchF_minimal": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "precision_fixture": {
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "main_runs": 36,
+  "main_checks_passed": 288,
+  "conditions": 9,
+  "single_worker_repeat_pairs": 16,
+  "multiworker_repeat_pairs": 2,
+  "concentration_payloads": 264,
+  "checkpoint_payloads": 16,
+  "transient_reported_fresh_mass_checked_runs": 16,
+  "protected_payload_pairs_equal": 28,
+  "frozen_source_files_per_variant": 85,
+  "helper_checks_passed": 120,
+  "elapsed_s": 17.417525900003966,
+  "comparisons": [
+    {
+      "case": "stationary_n100",
+      "mode": "stationary",
+      "budget": 100,
+      "workers": 1,
+      "repeat": 1,
+      "cells": 200,
+      "changed_cells": 28,
+      "relative_l1": 3.1879201996796437e-06,
+      "max_absolute_difference": 0.06689453125,
+      "max_ulp": 137,
+      "baseline_sum": 44727.48777008057,
+      "candidate_sum": 44727.37275505066,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 0,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": null
+    },
+    {
+      "case": "stationary_n100",
+      "mode": "stationary",
+      "budget": 100,
+      "workers": 1,
+      "repeat": 2,
+      "cells": 200,
+      "changed_cells": 28,
+      "relative_l1": 3.1879201996796437e-06,
+      "max_absolute_difference": 0.06689453125,
+      "max_ulp": 137,
+      "baseline_sum": 44727.48777008057,
+      "candidate_sum": 44727.37275505066,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 0,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": null
+    },
+    {
+      "case": "stationary_n1000",
+      "mode": "stationary",
+      "budget": 1000,
+      "workers": 1,
+      "repeat": 1,
+      "cells": 200,
+      "changed_cells": 36,
+      "relative_l1": 1.3947769305524885e-05,
+      "max_absolute_difference": 0.14208984375,
+      "max_ulp": 291,
+      "baseline_sum": 42481.32781326771,
+      "candidate_sum": 42481.01965820789,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 0,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": null
+    },
+    {
+      "case": "stationary_n1000",
+      "mode": "stationary",
+      "budget": 1000,
+      "workers": 1,
+      "repeat": 2,
+      "cells": 200,
+      "changed_cells": 36,
+      "relative_l1": 1.3947769305524885e-05,
+      "max_absolute_difference": 0.14208984375,
+      "max_ulp": 291,
+      "baseline_sum": 42481.32781326771,
+      "candidate_sum": 42481.01965820789,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 0,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": null
+    },
+    {
+      "case": "stationary_n3000",
+      "mode": "stationary",
+      "budget": 3000,
+      "workers": 1,
+      "repeat": 1,
+      "cells": 200,
+      "changed_cells": 38,
+      "relative_l1": 8.627018595778849e-05,
+      "max_absolute_difference": 1.48828125,
+      "max_ulp": 3048,
+      "baseline_sum": 42194.320012152195,
+      "candidate_sum": 42192.03150245547,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 0,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": null
+    },
+    {
+      "case": "stationary_n3000",
+      "mode": "stationary",
+      "budget": 3000,
+      "workers": 1,
+      "repeat": 2,
+      "cells": 200,
+      "changed_cells": 38,
+      "relative_l1": 8.627018595778849e-05,
+      "max_absolute_difference": 1.48828125,
+      "max_ulp": 3048,
+      "baseline_sum": 42194.320012152195,
+      "candidate_sum": 42192.03150245547,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 0,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": null
+    },
+    {
+      "case": "transient_n100",
+      "mode": "transient",
+      "budget": 100,
+      "workers": 1,
+      "repeat": 1,
+      "cells": 600,
+      "changed_cells": 20,
+      "relative_l1": 3.704803460392562e-07,
+      "max_absolute_difference": 0.002197265625,
+      "max_ulp": 11,
+      "baseline_sum": 28150.97328567505,
+      "candidate_sum": 28150.97576522827,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 1,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": true
+    },
+    {
+      "case": "transient_n100",
+      "mode": "transient",
+      "budget": 100,
+      "workers": 1,
+      "repeat": 2,
+      "cells": 600,
+      "changed_cells": 20,
+      "relative_l1": 3.704803460392562e-07,
+      "max_absolute_difference": 0.002197265625,
+      "max_ulp": 11,
+      "baseline_sum": 28150.97328567505,
+      "candidate_sum": 28150.97576522827,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 1,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": true
+    },
+    {
+      "case": "transient_n1000",
+      "mode": "transient",
+      "budget": 1000,
+      "workers": 1,
+      "repeat": 1,
+      "cells": 600,
+      "changed_cells": 30,
+      "relative_l1": 3.3428605821565645e-06,
+      "max_absolute_difference": 0.0283203125,
+      "max_ulp": 198,
+      "baseline_sum": 27796.96428990364,
+      "candidate_sum": 27796.876083493233,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 1,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": true
+    },
+    {
+      "case": "transient_n1000",
+      "mode": "transient",
+      "budget": 1000,
+      "workers": 1,
+      "repeat": 2,
+      "cells": 600,
+      "changed_cells": 30,
+      "relative_l1": 3.3428605821565645e-06,
+      "max_absolute_difference": 0.0283203125,
+      "max_ulp": 198,
+      "baseline_sum": 27796.96428990364,
+      "candidate_sum": 27796.876083493233,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 1,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": true
+    },
+    {
+      "case": "transient_n3000",
+      "mode": "transient",
+      "budget": 3000,
+      "workers": 1,
+      "repeat": 1,
+      "cells": 600,
+      "changed_cells": 24,
+      "relative_l1": 1.3414946523718765e-05,
+      "max_absolute_difference": 0.11767578125,
+      "max_ulp": 964,
+      "baseline_sum": 27604.769409805536,
+      "candidate_sum": 27604.860032707453,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 1,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": true
+    },
+    {
+      "case": "transient_n3000",
+      "mode": "transient",
+      "budget": 3000,
+      "workers": 1,
+      "repeat": 2,
+      "cells": 600,
+      "changed_cells": 24,
+      "relative_l1": 1.3414946523718765e-05,
+      "max_absolute_difference": 0.11767578125,
+      "max_ulp": 964,
+      "baseline_sum": 27604.769409805536,
+      "candidate_sum": 27604.860032707453,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 1,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": true
+    },
+    {
+      "case": "stationary_multislice_receptors",
+      "mode": "stationary",
+      "budget": 1000,
+      "workers": 1,
+      "repeat": 1,
+      "cells": 1800,
+      "changed_cells": 187,
+      "relative_l1": 6.3779523488628455e-06,
+      "max_absolute_difference": 0.14208984375,
+      "max_ulp": 291,
+      "baseline_sum": 95830.2191092968,
+      "candidate_sum": 95829.90725708008,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 2,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": null
+    },
+    {
+      "case": "stationary_multislice_receptors",
+      "mode": "stationary",
+      "budget": 1000,
+      "workers": 1,
+      "repeat": 2,
+      "cells": 1800,
+      "changed_cells": 187,
+      "relative_l1": 6.3779523488628455e-06,
+      "max_absolute_difference": 0.14208984375,
+      "max_ulp": 291,
+      "baseline_sum": 95830.2191092968,
+      "candidate_sum": 95829.90725708008,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 2,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": null
+    },
+    {
+      "case": "transient_deposition_receptors",
+      "mode": "transient",
+      "budget": 1000,
+      "workers": 1,
+      "repeat": 1,
+      "cells": 600,
+      "changed_cells": 31,
+      "relative_l1": 2.069793303097435e-06,
+      "max_absolute_difference": 0.0137939453125,
+      "max_ulp": 113,
+      "baseline_sum": 23514.854296922684,
+      "candidate_sum": 23514.812126278877,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 9,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": true
+    },
+    {
+      "case": "transient_deposition_receptors",
+      "mode": "transient",
+      "budget": 1000,
+      "workers": 1,
+      "repeat": 2,
+      "cells": 600,
+      "changed_cells": 31,
+      "relative_l1": 2.069793303097435e-06,
+      "max_absolute_difference": 0.0137939453125,
+      "max_ulp": 113,
+      "baseline_sum": 23514.854296922684,
+      "candidate_sum": 23514.812126278877,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 9,
+      "odour_payloads_equal": true,
+      "fresh_mass_equal": true
+    },
+    {
+      "case": "stationary_odour_two_workers",
+      "mode": "stationary",
+      "budget": 1000,
+      "workers": 2,
+      "repeat": 1,
+      "cells": 1800,
+      "changed_cells": 187,
+      "relative_l1": 6.37204108847039e-06,
+      "max_absolute_difference": 0.14208984375,
+      "max_ulp": 291,
+      "baseline_sum": 95830.21829867363,
+      "candidate_sum": 95829.90725708008,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 0,
+      "odour_payloads_equal": false,
+      "fresh_mass_equal": null
+    },
+    {
+      "case": "stationary_odour_two_workers",
+      "mode": "stationary",
+      "budget": 1000,
+      "workers": 2,
+      "repeat": 2,
+      "cells": 1800,
+      "changed_cells": 186,
+      "relative_l1": 6.376180964333275e-06,
+      "max_absolute_difference": 0.14208984375,
+      "max_ulp": 291,
+      "baseline_sum": 95830.21881747246,
+      "candidate_sum": 95829.90725708008,
+      "nonzero_support_difference": 0,
+      "protected_payloads_equal": true,
+      "protected_payload_count": 0,
+      "odour_payloads_equal": false,
+      "fresh_mass_equal": null
+    }
+  ],
+  "repeat_results": [
+    {
+      "case": "stationary_n100",
+      "variant": "warning_free_baseline",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "stationary_n100",
+      "variant": "patchF_minimal",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "stationary_n1000",
+      "variant": "warning_free_baseline",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "stationary_n1000",
+      "variant": "patchF_minimal",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "stationary_n3000",
+      "variant": "warning_free_baseline",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "stationary_n3000",
+      "variant": "patchF_minimal",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "transient_n100",
+      "variant": "warning_free_baseline",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "transient_n100",
+      "variant": "patchF_minimal",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "transient_n1000",
+      "variant": "warning_free_baseline",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "transient_n1000",
+      "variant": "patchF_minimal",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "transient_n3000",
+      "variant": "warning_free_baseline",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "transient_n3000",
+      "variant": "patchF_minimal",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "stationary_multislice_receptors",
+      "variant": "warning_free_baseline",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "stationary_multislice_receptors",
+      "variant": "patchF_minimal",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "transient_deposition_receptors",
+      "variant": "warning_free_baseline",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "transient_deposition_receptors",
+      "variant": "patchF_minimal",
+      "workers": 1,
+      "same_concentration_payloads": true,
+      "same_other_payloads": true,
+      "required_bitwise": true
+    },
+    {
+      "case": "stationary_odour_two_workers",
+      "variant": "warning_free_baseline",
+      "workers": 2,
+      "same_concentration_payloads": false,
+      "same_other_payloads": false,
+      "required_bitwise": false
+    },
+    {
+      "case": "stationary_odour_two_workers",
+      "variant": "patchF_minimal",
+      "workers": 2,
+      "same_concentration_payloads": true,
+      "same_other_payloads": false,
+      "required_bitwise": false
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "stationary_n100_warning_free_baseline_r1",
+      "case": {
+        "id": "stationary_n100",
+        "mode": "stationary",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.5065857000008691,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "5483d8270f3913d224c22cf0d38017dea83efce06cb3231a289962bca7ea82cd",
+          "sum": 21208.90242767334
+        },
+        "00001-102.con": {
+          "sha256": "7465b6cc4b8fda15a89b4ada2b831c8e502cf7f3e72bf3e2de089df11e03f65f",
+          "sum": 23518.585342407227
+        }
+      },
+      "other_payloads": {},
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_n100_warning_free_baseline_r2",
+      "case": {
+        "id": "stationary_n100",
+        "mode": "stationary",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.28412830000161193,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "5483d8270f3913d224c22cf0d38017dea83efce06cb3231a289962bca7ea82cd",
+          "sum": 21208.90242767334
+        },
+        "00001-102.con": {
+          "sha256": "7465b6cc4b8fda15a89b4ada2b831c8e502cf7f3e72bf3e2de089df11e03f65f",
+          "sum": 23518.585342407227
+        }
+      },
+      "other_payloads": {},
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_n100_patchF_minimal_r1",
+      "case": {
+        "id": "stationary_n100",
+        "mode": "stationary",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.284580299994559,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "ae612c4a658d14608fa5298d7a3e926ee2341b89f576e2a764a178330ea43967",
+          "sum": 21208.90814971924
+        },
+        "00001-102.con": {
+          "sha256": "0d4728c7b3b20725e8ac23fbcde428f4991a2bb31e81f15244be2a4440a5c394",
+          "sum": 23518.46460533142
+        }
+      },
+      "other_payloads": {},
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_n100_patchF_minimal_r2",
+      "case": {
+        "id": "stationary_n100",
+        "mode": "stationary",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.28252269999939017,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "ae612c4a658d14608fa5298d7a3e926ee2341b89f576e2a764a178330ea43967",
+          "sum": 21208.90814971924
+        },
+        "00001-102.con": {
+          "sha256": "0d4728c7b3b20725e8ac23fbcde428f4991a2bb31e81f15244be2a4440a5c394",
+          "sum": 23518.46460533142
+        }
+      },
+      "other_payloads": {},
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_n1000_warning_free_baseline_r1",
+      "case": {
+        "id": "stationary_n1000",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.3186332999903243,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "a8972dfcf977027fa4cc82b74036c06b6a8b139495371be364dc214412c2e939",
+          "sum": 21534.076753139496
+        },
+        "00001-102.con": {
+          "sha256": "be27e54c3b7bbb015ce761e960bd95447c7629249ee97e309b6c427665337107",
+          "sum": 20947.251060128212
+        }
+      },
+      "other_payloads": {},
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_n1000_warning_free_baseline_r2",
+      "case": {
+        "id": "stationary_n1000",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.32744809999712743,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "a8972dfcf977027fa4cc82b74036c06b6a8b139495371be364dc214412c2e939",
+          "sum": 21534.076753139496
+        },
+        "00001-102.con": {
+          "sha256": "be27e54c3b7bbb015ce761e960bd95447c7629249ee97e309b6c427665337107",
+          "sum": 20947.251060128212
+        }
+      },
+      "other_payloads": {},
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_n1000_patchF_minimal_r1",
+      "case": {
+        "id": "stationary_n1000",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.3121512000070652,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "ddb608eb109d3675740897f9a770fdab62368d7c17dc2ba2ba6698e6a0fa3011",
+          "sum": 21533.83207845688
+        },
+        "00001-102.con": {
+          "sha256": "3663374f11856517bac3ab78a27d20274a9b72b8f54ad2676f0bd8d01fd39a71",
+          "sum": 20947.187579751015
+        }
+      },
+      "other_payloads": {},
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_n1000_patchF_minimal_r2",
+      "case": {
+        "id": "stationary_n1000",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.31712530000368133,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "ddb608eb109d3675740897f9a770fdab62368d7c17dc2ba2ba6698e6a0fa3011",
+          "sum": 21533.83207845688
+        },
+        "00001-102.con": {
+          "sha256": "3663374f11856517bac3ab78a27d20274a9b72b8f54ad2676f0bd8d01fd39a71",
+          "sum": 20947.187579751015
+        }
+      },
+      "other_payloads": {},
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_n3000_warning_free_baseline_r1",
+      "case": {
+        "id": "stationary_n3000",
+        "mode": "stationary",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.397609099993133,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "63e2dcd0742c77bc66e2f35e48873e75e600447d89e747c4869d7a2704748267",
+          "sum": 21705.730552315712
+        },
+        "00001-102.con": {
+          "sha256": "05eb85e7def952d7ce196255dea2d2ad158ab896d79f80aa784bdd3918298902",
+          "sum": 20488.589459836483
+        }
+      },
+      "other_payloads": {},
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_n3000_warning_free_baseline_r2",
+      "case": {
+        "id": "stationary_n3000",
+        "mode": "stationary",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.3947804999916116,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "63e2dcd0742c77bc66e2f35e48873e75e600447d89e747c4869d7a2704748267",
+          "sum": 21705.730552315712
+        },
+        "00001-102.con": {
+          "sha256": "05eb85e7def952d7ce196255dea2d2ad158ab896d79f80aa784bdd3918298902",
+          "sum": 20488.589459836483
+        }
+      },
+      "other_payloads": {},
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_n3000_patchF_minimal_r1",
+      "case": {
+        "id": "stationary_n3000",
+        "mode": "stationary",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.3931520000041928,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "a62c7da01885c0796744fb16d15a848daa3bddfe46e54e57852e1031fee52605",
+          "sum": 21705.73184144497
+        },
+        "00001-102.con": {
+          "sha256": "476a3cdb7cb602bca30122d080df9d0f4f6e352d593668389b5ace1c698fee16",
+          "sum": 20486.299661010504
+        }
+      },
+      "other_payloads": {},
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_n3000_patchF_minimal_r2",
+      "case": {
+        "id": "stationary_n3000",
+        "mode": "stationary",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.3932236999971792,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "a62c7da01885c0796744fb16d15a848daa3bddfe46e54e57852e1031fee52605",
+          "sum": 21705.73184144497
+        },
+        "00001-102.con": {
+          "sha256": "476a3cdb7cb602bca30122d080df9d0f4f6e352d593668389b5ace1c698fee16",
+          "sum": 20486.299661010504
+        }
+      },
+      "other_payloads": {},
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "transient_n100_warning_free_baseline_r1",
+      "case": {
+        "id": "transient_n100",
+        "mode": "transient",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.3197210000071209,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "5c365c9b1cd66e5e84ec1096f756e04f7362996b0358644d1f4a3dd93ce257d3",
+          "sum": 2552.7532691955566
+        },
+        "00001-102.con": {
+          "sha256": "b8c386476b5a4ef25803e7011667d5bbdd0abea1f8f50d2b7f4e87810d9a8ab2",
+          "sum": 2305.248992919922
+        },
+        "00002-101.con": {
+          "sha256": "41cf28fd83ae3298505b404b70f2476363c86d855ad0920fb4e51b4f77d22052",
+          "sum": 4090.06494140625
+        },
+        "00002-102.con": {
+          "sha256": "1106af15d8e2818b94b65647c7f526f7f83e8b35f35b08898f7db72884a9a743",
+          "sum": 5669.043651580811
+        },
+        "00003-101.con": {
+          "sha256": "4e3f592f18f60f3e20c5e0ed476e7ccbe225e26dc480bc732f8daa89a84675be",
+          "sum": 4661.350284576416
+        },
+        "00003-102.con": {
+          "sha256": "949d96cd51f2a811208d1d9d4ef96e4cc79e9bde4f0344d65a0aab52e116ece2",
+          "sum": 8872.512145996094
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "dcdbac62693a610d0014028b6a98ba6f99ca9e716c00523ff6db61fca5a94c8d"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "transient_n100_warning_free_baseline_r2",
+      "case": {
+        "id": "transient_n100",
+        "mode": "transient",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.31369310000445694,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "5c365c9b1cd66e5e84ec1096f756e04f7362996b0358644d1f4a3dd93ce257d3",
+          "sum": 2552.7532691955566
+        },
+        "00001-102.con": {
+          "sha256": "b8c386476b5a4ef25803e7011667d5bbdd0abea1f8f50d2b7f4e87810d9a8ab2",
+          "sum": 2305.248992919922
+        },
+        "00002-101.con": {
+          "sha256": "41cf28fd83ae3298505b404b70f2476363c86d855ad0920fb4e51b4f77d22052",
+          "sum": 4090.06494140625
+        },
+        "00002-102.con": {
+          "sha256": "1106af15d8e2818b94b65647c7f526f7f83e8b35f35b08898f7db72884a9a743",
+          "sum": 5669.043651580811
+        },
+        "00003-101.con": {
+          "sha256": "4e3f592f18f60f3e20c5e0ed476e7ccbe225e26dc480bc732f8daa89a84675be",
+          "sum": 4661.350284576416
+        },
+        "00003-102.con": {
+          "sha256": "949d96cd51f2a811208d1d9d4ef96e4cc79e9bde4f0344d65a0aab52e116ece2",
+          "sum": 8872.512145996094
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "dcdbac62693a610d0014028b6a98ba6f99ca9e716c00523ff6db61fca5a94c8d"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "transient_n100_patchF_minimal_r1",
+      "case": {
+        "id": "transient_n100",
+        "mode": "transient",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.3188635999977123,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "f688dd21e2c0e9afa80a5d3ef9248ac3569b467b00165e77eb410e735ada7481",
+          "sum": 2552.7556114196777
+        },
+        "00001-102.con": {
+          "sha256": "c6a86c93ef3adc489c1f074238857d26af6c539c2e3ab91cdddbd72081191bec",
+          "sum": 2305.2478637695312
+        },
+        "00002-101.con": {
+          "sha256": "2c4a9d4a1377156895f640bfd8bc75430ce137d5ea80bbd0e06ed3fea6740417",
+          "sum": 4090.064971923828
+        },
+        "00002-102.con": {
+          "sha256": "322445f562a372fb690585b2884fce5b713424f47897fefd635e78257000b060",
+          "sum": 5669.041332244873
+        },
+        "00003-101.con": {
+          "sha256": "48f05b77b00b28db4010e1d8124fdc1f468477447fd327f75cb6ce28e5466087",
+          "sum": 4661.350727081299
+        },
+        "00003-102.con": {
+          "sha256": "06112eed52e06c78889383418c010c84a02f4bb18644078cf52daf575b35f739",
+          "sum": 8872.515258789062
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "dcdbac62693a610d0014028b6a98ba6f99ca9e716c00523ff6db61fca5a94c8d"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "transient_n100_patchF_minimal_r2",
+      "case": {
+        "id": "transient_n100",
+        "mode": "transient",
+        "budget": 100,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.31643830001121387,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "f688dd21e2c0e9afa80a5d3ef9248ac3569b467b00165e77eb410e735ada7481",
+          "sum": 2552.7556114196777
+        },
+        "00001-102.con": {
+          "sha256": "c6a86c93ef3adc489c1f074238857d26af6c539c2e3ab91cdddbd72081191bec",
+          "sum": 2305.2478637695312
+        },
+        "00002-101.con": {
+          "sha256": "2c4a9d4a1377156895f640bfd8bc75430ce137d5ea80bbd0e06ed3fea6740417",
+          "sum": 4090.064971923828
+        },
+        "00002-102.con": {
+          "sha256": "322445f562a372fb690585b2884fce5b713424f47897fefd635e78257000b060",
+          "sum": 5669.041332244873
+        },
+        "00003-101.con": {
+          "sha256": "48f05b77b00b28db4010e1d8124fdc1f468477447fd327f75cb6ce28e5466087",
+          "sum": 4661.350727081299
+        },
+        "00003-102.con": {
+          "sha256": "06112eed52e06c78889383418c010c84a02f4bb18644078cf52daf575b35f739",
+          "sum": 8872.515258789062
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "dcdbac62693a610d0014028b6a98ba6f99ca9e716c00523ff6db61fca5a94c8d"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "transient_n1000_warning_free_baseline_r1",
+      "case": {
+        "id": "transient_n1000",
+        "mode": "transient",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.31639829999767244,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+          "sum": 2486.843099594116
+        },
+        "00001-102.con": {
+          "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+          "sum": 2496.1719732284546
+        },
+        "00002-101.con": {
+          "sha256": "5216276258159cacc4fabb3e2535797403618ff64ee0337bec13364b08cc1edf",
+          "sum": 3816.041182279587
+        },
+        "00002-102.con": {
+          "sha256": "3a113c6ba129a9a747ca3e17554d1179b381f984edd48d6434911d4ec3edb18b",
+          "sum": 5748.255254268646
+        },
+        "00003-101.con": {
+          "sha256": "12c3185c4ab3078d0d3f32bcf268ab0c359f8ad6218eafc650170f6af7f081be",
+          "sum": 4399.140663146973
+        },
+        "00003-102.con": {
+          "sha256": "0899e743a97a35cad3327ae02981dca89c99e2f2a0bd878bb7c2c90df8c5bd1f",
+          "sum": 8850.512117385864
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "0c5641d3e73b21548849a56172ab42bfc4c1355ecaa08765dbdda3b821469827"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "transient_n1000_warning_free_baseline_r2",
+      "case": {
+        "id": "transient_n1000",
+        "mode": "transient",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.31795830000191927,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "9ab7c4275b8eb41850cc2dfa2549cb2980fc89c472cab5d85cec242f3e189eff",
+          "sum": 2486.843099594116
+        },
+        "00001-102.con": {
+          "sha256": "b3bd014567da587ba37abf18cef0a694075209a0ab20d435b7366b264fe736e0",
+          "sum": 2496.1719732284546
+        },
+        "00002-101.con": {
+          "sha256": "5216276258159cacc4fabb3e2535797403618ff64ee0337bec13364b08cc1edf",
+          "sum": 3816.041182279587
+        },
+        "00002-102.con": {
+          "sha256": "3a113c6ba129a9a747ca3e17554d1179b381f984edd48d6434911d4ec3edb18b",
+          "sum": 5748.255254268646
+        },
+        "00003-101.con": {
+          "sha256": "12c3185c4ab3078d0d3f32bcf268ab0c359f8ad6218eafc650170f6af7f081be",
+          "sum": 4399.140663146973
+        },
+        "00003-102.con": {
+          "sha256": "0899e743a97a35cad3327ae02981dca89c99e2f2a0bd878bb7c2c90df8c5bd1f",
+          "sum": 8850.512117385864
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "0c5641d3e73b21548849a56172ab42bfc4c1355ecaa08765dbdda3b821469827"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "transient_n1000_patchF_minimal_r1",
+      "case": {
+        "id": "transient_n1000",
+        "mode": "transient",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.32401349999418017,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "4a3f78e21febd62776560fc3b4c679b937d5e4e3bf9af16ed1c3328ad07806e4",
+          "sum": 2486.8230876922607
+        },
+        "00001-102.con": {
+          "sha256": "f044cded8066e15227a156b21fb3eaef01d71a61055fb47598a3722e84a75340",
+          "sum": 2496.144082069397
+        },
+        "00002-101.con": {
+          "sha256": "da1fb02eaaeca519e222a428ebd8af8b0e311772c4bf12e542e04e878b86ac81",
+          "sum": 3816.0409801006317
+        },
+        "00002-102.con": {
+          "sha256": "3bce38d79fff77baab871ea228ba11c82d198b117a2446c4dda96c811268d765",
+          "sum": 5748.216071486473
+        },
+        "00003-101.con": {
+          "sha256": "3d1acc4aef75cf070599eda086938a3ed68a0b0097d4387cbdcfcbee46f2da2e",
+          "sum": 4399.141696929932
+        },
+        "00003-102.con": {
+          "sha256": "c8c15aa4ed9fb488b614b92ef89b32c7f1068e4f94a2317689cec06cd7ab2a2f",
+          "sum": 8850.510165214539
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "0c5641d3e73b21548849a56172ab42bfc4c1355ecaa08765dbdda3b821469827"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "transient_n1000_patchF_minimal_r2",
+      "case": {
+        "id": "transient_n1000",
+        "mode": "transient",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.31494320000638254,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "4a3f78e21febd62776560fc3b4c679b937d5e4e3bf9af16ed1c3328ad07806e4",
+          "sum": 2486.8230876922607
+        },
+        "00001-102.con": {
+          "sha256": "f044cded8066e15227a156b21fb3eaef01d71a61055fb47598a3722e84a75340",
+          "sum": 2496.144082069397
+        },
+        "00002-101.con": {
+          "sha256": "da1fb02eaaeca519e222a428ebd8af8b0e311772c4bf12e542e04e878b86ac81",
+          "sum": 3816.0409801006317
+        },
+        "00002-102.con": {
+          "sha256": "3bce38d79fff77baab871ea228ba11c82d198b117a2446c4dda96c811268d765",
+          "sum": 5748.216071486473
+        },
+        "00003-101.con": {
+          "sha256": "3d1acc4aef75cf070599eda086938a3ed68a0b0097d4387cbdcfcbee46f2da2e",
+          "sum": 4399.141696929932
+        },
+        "00003-102.con": {
+          "sha256": "c8c15aa4ed9fb488b614b92ef89b32c7f1068e4f94a2317689cec06cd7ab2a2f",
+          "sum": 8850.510165214539
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "0c5641d3e73b21548849a56172ab42bfc4c1355ecaa08765dbdda3b821469827"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "transient_n3000_warning_free_baseline_r1",
+      "case": {
+        "id": "transient_n3000",
+        "mode": "transient",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.34382409999670926,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "04b6354783c371eebac8e9398f7b606fddb3c132bd8dc142fd295567132476be",
+          "sum": 2487.3444538116455
+        },
+        "00001-102.con": {
+          "sha256": "00737ec371a545f855c086e45b56bfa2edc740a7ee844edff424be0afab7ef0b",
+          "sum": 2506.9598869383335
+        },
+        "00002-101.con": {
+          "sha256": "7616c80ab8975fbab05dff1aaff9a2259c20f385d442de936c2bfb28f2c2f560",
+          "sum": 3790.452032804489
+        },
+        "00002-102.con": {
+          "sha256": "14f73c931d6ce641e28124f03047fbeb76ed226807c8571309ccbf86eabe57bb",
+          "sum": 5689.659681558609
+        },
+        "00003-101.con": {
+          "sha256": "f598695cabf1899675d1d23a55c49bfdf869b7fba4c6eeb2664f5af605b6159c",
+          "sum": 4390.168758392334
+        },
+        "00003-102.con": {
+          "sha256": "aed891443d9af33432675b8b13741d1c24eb24eb1763debc166e61b6d6c93c1f",
+          "sum": 8740.184596300125
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "7b84d806949d21c8fc2650473eab13434bef3554b4bc094a3957e4bf12df411b"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "transient_n3000_warning_free_baseline_r2",
+      "case": {
+        "id": "transient_n3000",
+        "mode": "transient",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.3387718000012683,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "04b6354783c371eebac8e9398f7b606fddb3c132bd8dc142fd295567132476be",
+          "sum": 2487.3444538116455
+        },
+        "00001-102.con": {
+          "sha256": "00737ec371a545f855c086e45b56bfa2edc740a7ee844edff424be0afab7ef0b",
+          "sum": 2506.9598869383335
+        },
+        "00002-101.con": {
+          "sha256": "7616c80ab8975fbab05dff1aaff9a2259c20f385d442de936c2bfb28f2c2f560",
+          "sum": 3790.452032804489
+        },
+        "00002-102.con": {
+          "sha256": "14f73c931d6ce641e28124f03047fbeb76ed226807c8571309ccbf86eabe57bb",
+          "sum": 5689.659681558609
+        },
+        "00003-101.con": {
+          "sha256": "f598695cabf1899675d1d23a55c49bfdf869b7fba4c6eeb2664f5af605b6159c",
+          "sum": 4390.168758392334
+        },
+        "00003-102.con": {
+          "sha256": "aed891443d9af33432675b8b13741d1c24eb24eb1763debc166e61b6d6c93c1f",
+          "sum": 8740.184596300125
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "7b84d806949d21c8fc2650473eab13434bef3554b4bc094a3957e4bf12df411b"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "transient_n3000_patchF_minimal_r1",
+      "case": {
+        "id": "transient_n3000",
+        "mode": "transient",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.33370730000024196,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "c1148ff35876d8f92e745d2c780597efdfc77579f7c39c675f3d1005d4f0698c",
+          "sum": 2487.308901786804
+        },
+        "00001-102.con": {
+          "sha256": "1bde9ab3a071e515557b6c708bcab1b9cb943307274e7c6d83a0fe0216dc4213",
+          "sum": 2507.078173071146
+        },
+        "00002-101.con": {
+          "sha256": "63da8868a88ab03653092ce09e01c6a9306fea30a4b2f7f59ae2910d58e75160",
+          "sum": 3790.4618289470673
+        },
+        "00002-102.con": {
+          "sha256": "f602d69f56b2082724ab57eb770451b72150240326d587f8375416eda324fc76",
+          "sum": 5689.756849527359
+        },
+        "00003-101.con": {
+          "sha256": "28cc4a9d0362d9ad2e7f5258a5156d58a819752f4482ae3ad292336fce1854d1",
+          "sum": 4390.16801071167
+        },
+        "00003-102.con": {
+          "sha256": "8209d48552f193779d82eeccde988cbde15af5dcc0bb328fdedefed646bd71ba",
+          "sum": 8740.086268663406
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "7b84d806949d21c8fc2650473eab13434bef3554b4bc094a3957e4bf12df411b"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "transient_n3000_patchF_minimal_r2",
+      "case": {
+        "id": "transient_n3000",
+        "mode": "transient",
+        "budget": 3000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": false,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.33145990000048187,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 0,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "c1148ff35876d8f92e745d2c780597efdfc77579f7c39c675f3d1005d4f0698c",
+          "sum": 2487.308901786804
+        },
+        "00001-102.con": {
+          "sha256": "1bde9ab3a071e515557b6c708bcab1b9cb943307274e7c6d83a0fe0216dc4213",
+          "sum": 2507.078173071146
+        },
+        "00002-101.con": {
+          "sha256": "63da8868a88ab03653092ce09e01c6a9306fea30a4b2f7f59ae2910d58e75160",
+          "sum": 3790.4618289470673
+        },
+        "00002-102.con": {
+          "sha256": "f602d69f56b2082724ab57eb770451b72150240326d587f8375416eda324fc76",
+          "sum": 5689.756849527359
+        },
+        "00003-101.con": {
+          "sha256": "28cc4a9d0362d9ad2e7f5258a5156d58a819752f4482ae3ad292336fce1854d1",
+          "sum": 4390.16801071167
+        },
+        "00003-102.con": {
+          "sha256": "8209d48552f193779d82eeccde988cbde15af5dcc0bb328fdedefed646bd71ba",
+          "sum": 8740.086268663406
+        }
+      },
+      "other_payloads": {
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "7b84d806949d21c8fc2650473eab13434bef3554b4bc094a3957e4bf12df411b"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "stationary_multislice_receptors_warning_free_baseline_r1",
+      "case": {
+        "id": "stationary_multislice_receptors",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 9,
+        "workers": 1,
+        "receptors": true,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.330410499998834,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 2,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "a8972dfcf977027fa4cc82b74036c06b6a8b139495371be364dc214412c2e939",
+          "sum": 21534.076753139496
+        },
+        "00001-102.con": {
+          "sha256": "be27e54c3b7bbb015ce761e960bd95447c7629249ee97e309b6c427665337107",
+          "sum": 20947.251060128212
+        },
+        "00001-201.con": {
+          "sha256": "b0fddf8fa41341858c86083d91f3b3e456ab745d151cba2512446f9ec59483bc",
+          "sum": 11351.87110877037
+        },
+        "00001-202.con": {
+          "sha256": "b33d86331a41b2b14d198ae6fb885a6c1231718840ee9faf7dddefbbe0e239e1",
+          "sum": 10515.979503273964
+        },
+        "00001-301.con": {
+          "sha256": "3f56a09974138ef1b209c27aef4dddaf71c9552f5fb993d42833a7534a038771",
+          "sum": 6425.845225095749
+        },
+        "00001-302.con": {
+          "sha256": "1964e98b12e7b809bb91fb83eb9b1825a5cea325f4c04846110dab1ee618327e",
+          "sum": 5981.304036855698
+        },
+        "00001-401.con": {
+          "sha256": "b2d1cec2bc808352a2920ae96270d363d99141376aa4da2c1caf2dd98348667f",
+          "sum": 4183.561283826828
+        },
+        "00001-402.con": {
+          "sha256": "098dcb6235925e8f419510b89a720b52bb110cbbcd0faeb0af3925808f1ba7dd",
+          "sum": 3661.761370420456
+        },
+        "00001-501.con": {
+          "sha256": "7b1eb63431c67b383a539b07516f129b490faca898cda806bc3abe5399a11531",
+          "sum": 2646.3949214220047
+        },
+        "00001-502.con": {
+          "sha256": "24618feee65d64ddc6be58d30ef439dfba6a7791e899065476a72dc7dcf811ed",
+          "sum": 2205.6141681671143
+        },
+        "00001-601.con": {
+          "sha256": "9d7ed38b93b11a45b83fe423933898faf3dbab78846fa3b241f05b56536ddfca",
+          "sum": 1543.0886360406876
+        },
+        "00001-602.con": {
+          "sha256": "ad1331c28067373473581b0ed069bcbcbf06a5a28343d9f7a4aac2768f25468e",
+          "sum": 1290.2845735549927
+        },
+        "00001-701.con": {
+          "sha256": "eeb857f10da2b465f29a10d9f48bd45c5679c339e7776c0d4a0f0f3be0693ce2",
+          "sum": 997.7031097412109
+        },
+        "00001-702.con": {
+          "sha256": "0bfeab5094ac70f722d9c469da56794a8d1896b3f54bdb5aab9ae1a4b087419a",
+          "sum": 764.9015908241272
+        },
+        "00001-801.con": {
+          "sha256": "0f448e28f7d3e815c827eaeeb1436c24a2614d76b890b70ee7979650be527f9b",
+          "sum": 552.5314857959747
+        },
+        "00001-802.con": {
+          "sha256": "1fc8ecb08c6d7e8fbe6adb485c9d87ebe2a62cabc0a1524f50c9cd14ecf92574",
+          "sum": 542.9045150279999
+        },
+        "00001-901.con": {
+          "sha256": "9fe6564a57527f0b422fb71b68728fc45a30193a9e83025ab6b334d718fa691f",
+          "sum": 328.50537490844727
+        },
+        "00001-902.con": {
+          "sha256": "a63ff4a38bc987b8e2182c4b782138316951a8cd95af155bfe707329db4f1c84",
+          "sum": 356.6403923034668
+        }
+      },
+      "other_payloads": {
+        "ReceptorConcentrations.dat": "6037902e855325b61137d7220becdd93678add95ff304954e04a08a178bf9f25",
+        "Receptor_Timeseries_Transient.txt": "2bb90ed6d02009517c062bddecc99b651ac4770264883c683992a89e17a9843a"
+      },
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_multislice_receptors_warning_free_baseline_r2",
+      "case": {
+        "id": "stationary_multislice_receptors",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 9,
+        "workers": 1,
+        "receptors": true,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.33814979999442585,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 2,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "a8972dfcf977027fa4cc82b74036c06b6a8b139495371be364dc214412c2e939",
+          "sum": 21534.076753139496
+        },
+        "00001-102.con": {
+          "sha256": "be27e54c3b7bbb015ce761e960bd95447c7629249ee97e309b6c427665337107",
+          "sum": 20947.251060128212
+        },
+        "00001-201.con": {
+          "sha256": "b0fddf8fa41341858c86083d91f3b3e456ab745d151cba2512446f9ec59483bc",
+          "sum": 11351.87110877037
+        },
+        "00001-202.con": {
+          "sha256": "b33d86331a41b2b14d198ae6fb885a6c1231718840ee9faf7dddefbbe0e239e1",
+          "sum": 10515.979503273964
+        },
+        "00001-301.con": {
+          "sha256": "3f56a09974138ef1b209c27aef4dddaf71c9552f5fb993d42833a7534a038771",
+          "sum": 6425.845225095749
+        },
+        "00001-302.con": {
+          "sha256": "1964e98b12e7b809bb91fb83eb9b1825a5cea325f4c04846110dab1ee618327e",
+          "sum": 5981.304036855698
+        },
+        "00001-401.con": {
+          "sha256": "b2d1cec2bc808352a2920ae96270d363d99141376aa4da2c1caf2dd98348667f",
+          "sum": 4183.561283826828
+        },
+        "00001-402.con": {
+          "sha256": "098dcb6235925e8f419510b89a720b52bb110cbbcd0faeb0af3925808f1ba7dd",
+          "sum": 3661.761370420456
+        },
+        "00001-501.con": {
+          "sha256": "7b1eb63431c67b383a539b07516f129b490faca898cda806bc3abe5399a11531",
+          "sum": 2646.3949214220047
+        },
+        "00001-502.con": {
+          "sha256": "24618feee65d64ddc6be58d30ef439dfba6a7791e899065476a72dc7dcf811ed",
+          "sum": 2205.6141681671143
+        },
+        "00001-601.con": {
+          "sha256": "9d7ed38b93b11a45b83fe423933898faf3dbab78846fa3b241f05b56536ddfca",
+          "sum": 1543.0886360406876
+        },
+        "00001-602.con": {
+          "sha256": "ad1331c28067373473581b0ed069bcbcbf06a5a28343d9f7a4aac2768f25468e",
+          "sum": 1290.2845735549927
+        },
+        "00001-701.con": {
+          "sha256": "eeb857f10da2b465f29a10d9f48bd45c5679c339e7776c0d4a0f0f3be0693ce2",
+          "sum": 997.7031097412109
+        },
+        "00001-702.con": {
+          "sha256": "0bfeab5094ac70f722d9c469da56794a8d1896b3f54bdb5aab9ae1a4b087419a",
+          "sum": 764.9015908241272
+        },
+        "00001-801.con": {
+          "sha256": "0f448e28f7d3e815c827eaeeb1436c24a2614d76b890b70ee7979650be527f9b",
+          "sum": 552.5314857959747
+        },
+        "00001-802.con": {
+          "sha256": "1fc8ecb08c6d7e8fbe6adb485c9d87ebe2a62cabc0a1524f50c9cd14ecf92574",
+          "sum": 542.9045150279999
+        },
+        "00001-901.con": {
+          "sha256": "9fe6564a57527f0b422fb71b68728fc45a30193a9e83025ab6b334d718fa691f",
+          "sum": 328.50537490844727
+        },
+        "00001-902.con": {
+          "sha256": "a63ff4a38bc987b8e2182c4b782138316951a8cd95af155bfe707329db4f1c84",
+          "sum": 356.6403923034668
+        }
+      },
+      "other_payloads": {
+        "ReceptorConcentrations.dat": "6037902e855325b61137d7220becdd93678add95ff304954e04a08a178bf9f25",
+        "Receptor_Timeseries_Transient.txt": "2bb90ed6d02009517c062bddecc99b651ac4770264883c683992a89e17a9843a"
+      },
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_multislice_receptors_patchF_minimal_r1",
+      "case": {
+        "id": "stationary_multislice_receptors",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 9,
+        "workers": 1,
+        "receptors": true,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.34376139999949373,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 2,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "ddb608eb109d3675740897f9a770fdab62368d7c17dc2ba2ba6698e6a0fa3011",
+          "sum": 21533.83207845688
+        },
+        "00001-102.con": {
+          "sha256": "3663374f11856517bac3ab78a27d20274a9b72b8f54ad2676f0bd8d01fd39a71",
+          "sum": 20947.187579751015
+        },
+        "00001-201.con": {
+          "sha256": "c40a21f815c519ff98ffa08ae446b24f867be2841948c2ee87bf1f6c8bc1e21a",
+          "sum": 11351.871157169342
+        },
+        "00001-202.con": {
+          "sha256": "16eb094941feec432a3473ddb51540dfb4b3c690796b6a1c3bf75d456ee36ab5",
+          "sum": 10515.977363228798
+        },
+        "00001-301.con": {
+          "sha256": "4568b2be3c62e15fd713dcb8d3f6e24b8b828a960572f45f187d7fea2a7a7941",
+          "sum": 6425.845054388046
+        },
+        "00001-302.con": {
+          "sha256": "786d38ffc21d1931052cc157ea6091fc8798f00388f255a1857af38b691e0efb",
+          "sum": 5981.302341461182
+        },
+        "00001-401.con": {
+          "sha256": "96af8012e2b9a9313a5dfdee4d2e67f48e9b7eec407f81cfacea12926d18a686",
+          "sum": 4183.561829805374
+        },
+        "00001-402.con": {
+          "sha256": "e37d7498929e277cb0b185a3315466b0d28f61fdefc3563aad1bc8e9f56c8264",
+          "sum": 3661.7609889507294
+        },
+        "00001-501.con": {
+          "sha256": "cd13efa540cf9f365bb78fdb3e38b77dcdaca1eff35cf7dfccde22d506cd2eb4",
+          "sum": 2646.3950423002243
+        },
+        "00001-502.con": {
+          "sha256": "576e967d90329b1f4431c33fc1e6f0d0695e9677cbe336f20bdd0a9b02a8d667",
+          "sum": 2205.6142749786377
+        },
+        "00001-601.con": {
+          "sha256": "6681844f245d3008e27a3dbb4294f10b171ea718acf89a21edfeb254a6dffb61",
+          "sum": 1543.088643670082
+        },
+        "00001-602.con": {
+          "sha256": "fc6003450fa167fe65a4767b56f9a09d0180c1877ea8858b4eae6ee912caf56c",
+          "sum": 1290.2844905853271
+        },
+        "00001-701.con": {
+          "sha256": "c32661838bdbb1195c8afa057c4cc19cb5b20c3620611faf56778c2b244dd328",
+          "sum": 997.7030634880066
+        },
+        "00001-702.con": {
+          "sha256": "7e0833a4f700209441a48ed2f61ca07c1809cba5ddadd43775f28573f0c70fe4",
+          "sum": 764.9015798568726
+        },
+        "00001-801.con": {
+          "sha256": "473c3c63b0be02a7d8d68aba512dd5da4f9d63bfe780aef822b2a48f9274306f",
+          "sum": 552.5314743518829
+        },
+        "00001-802.con": {
+          "sha256": "332a1b62cde24449e50abd194d47b1d42fb32ffd6251eb1ced1598784cd9a740",
+          "sum": 542.9045126438141
+        },
+        "00001-901.con": {
+          "sha256": "7c175797b21d26a49e39f6846b7ef4beb84301d84dda80e0c6199b8c306cc95b",
+          "sum": 328.50537490844727
+        },
+        "00001-902.con": {
+          "sha256": "9be0ce8021e6ea3f9bb2a553551c4ecf1a80b51005da8d269daa39ab7ebd78a6",
+          "sum": 356.6404070854187
+        }
+      },
+      "other_payloads": {
+        "ReceptorConcentrations.dat": "6037902e855325b61137d7220becdd93678add95ff304954e04a08a178bf9f25",
+        "Receptor_Timeseries_Transient.txt": "2bb90ed6d02009517c062bddecc99b651ac4770264883c683992a89e17a9843a"
+      },
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_multislice_receptors_patchF_minimal_r2",
+      "case": {
+        "id": "stationary_multislice_receptors",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 9,
+        "workers": 1,
+        "receptors": true,
+        "deposition": false,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.33559440000681207,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 0,
+        "receptors": 2,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "ddb608eb109d3675740897f9a770fdab62368d7c17dc2ba2ba6698e6a0fa3011",
+          "sum": 21533.83207845688
+        },
+        "00001-102.con": {
+          "sha256": "3663374f11856517bac3ab78a27d20274a9b72b8f54ad2676f0bd8d01fd39a71",
+          "sum": 20947.187579751015
+        },
+        "00001-201.con": {
+          "sha256": "c40a21f815c519ff98ffa08ae446b24f867be2841948c2ee87bf1f6c8bc1e21a",
+          "sum": 11351.871157169342
+        },
+        "00001-202.con": {
+          "sha256": "16eb094941feec432a3473ddb51540dfb4b3c690796b6a1c3bf75d456ee36ab5",
+          "sum": 10515.977363228798
+        },
+        "00001-301.con": {
+          "sha256": "4568b2be3c62e15fd713dcb8d3f6e24b8b828a960572f45f187d7fea2a7a7941",
+          "sum": 6425.845054388046
+        },
+        "00001-302.con": {
+          "sha256": "786d38ffc21d1931052cc157ea6091fc8798f00388f255a1857af38b691e0efb",
+          "sum": 5981.302341461182
+        },
+        "00001-401.con": {
+          "sha256": "96af8012e2b9a9313a5dfdee4d2e67f48e9b7eec407f81cfacea12926d18a686",
+          "sum": 4183.561829805374
+        },
+        "00001-402.con": {
+          "sha256": "e37d7498929e277cb0b185a3315466b0d28f61fdefc3563aad1bc8e9f56c8264",
+          "sum": 3661.7609889507294
+        },
+        "00001-501.con": {
+          "sha256": "cd13efa540cf9f365bb78fdb3e38b77dcdaca1eff35cf7dfccde22d506cd2eb4",
+          "sum": 2646.3950423002243
+        },
+        "00001-502.con": {
+          "sha256": "576e967d90329b1f4431c33fc1e6f0d0695e9677cbe336f20bdd0a9b02a8d667",
+          "sum": 2205.6142749786377
+        },
+        "00001-601.con": {
+          "sha256": "6681844f245d3008e27a3dbb4294f10b171ea718acf89a21edfeb254a6dffb61",
+          "sum": 1543.088643670082
+        },
+        "00001-602.con": {
+          "sha256": "fc6003450fa167fe65a4767b56f9a09d0180c1877ea8858b4eae6ee912caf56c",
+          "sum": 1290.2844905853271
+        },
+        "00001-701.con": {
+          "sha256": "c32661838bdbb1195c8afa057c4cc19cb5b20c3620611faf56778c2b244dd328",
+          "sum": 997.7030634880066
+        },
+        "00001-702.con": {
+          "sha256": "7e0833a4f700209441a48ed2f61ca07c1809cba5ddadd43775f28573f0c70fe4",
+          "sum": 764.9015798568726
+        },
+        "00001-801.con": {
+          "sha256": "473c3c63b0be02a7d8d68aba512dd5da4f9d63bfe780aef822b2a48f9274306f",
+          "sum": 552.5314743518829
+        },
+        "00001-802.con": {
+          "sha256": "332a1b62cde24449e50abd194d47b1d42fb32ffd6251eb1ced1598784cd9a740",
+          "sum": 542.9045126438141
+        },
+        "00001-901.con": {
+          "sha256": "7c175797b21d26a49e39f6846b7ef4beb84301d84dda80e0c6199b8c306cc95b",
+          "sum": 328.50537490844727
+        },
+        "00001-902.con": {
+          "sha256": "9be0ce8021e6ea3f9bb2a553551c4ecf1a80b51005da8d269daa39ab7ebd78a6",
+          "sum": 356.6404070854187
+        }
+      },
+      "other_payloads": {
+        "ReceptorConcentrations.dat": "6037902e855325b61137d7220becdd93678add95ff304954e04a08a178bf9f25",
+        "Receptor_Timeseries_Transient.txt": "2bb90ed6d02009517c062bddecc99b651ac4770264883c683992a89e17a9843a"
+      },
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "transient_deposition_receptors_warning_free_baseline_r1",
+      "case": {
+        "id": "transient_deposition_receptors",
+        "mode": "transient",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": true,
+        "deposition": true,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.3488957999943523,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 6,
+        "odour": 0,
+        "receptors": 2,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "b9c6614222429e7f752db64a2f47f055a6c674f09696ebd9d4af0b09df82562c",
+          "sum": 2297.5969066619873
+        },
+        "00001-102.con": {
+          "sha256": "fc38b5a635670783286d5b2f31be6c9b2bc14b7d58ca6288c240587dcc9c9549",
+          "sum": 2332.1163396835327
+        },
+        "00002-101.con": {
+          "sha256": "5df2c22d64544bc1341237dbd531133c1c130a8c688004afaf23f8651cdee37e",
+          "sum": 3422.530745267868
+        },
+        "00002-102.con": {
+          "sha256": "53d7513a0bfb577e22fa8289301d8f7260bead2645c578c8afdfd74af011bb04",
+          "sum": 5175.67218542099
+        },
+        "00003-101.con": {
+          "sha256": "0007768dcdc4acf1e8e1dacdac1b1a4c79b166368fa935553930fdc438bf3355",
+          "sum": 3894.4590225219727
+        },
+        "00003-102.con": {
+          "sha256": "bdb870b3277f7ff6668972c705634c3a998218e19124c68d4ba7a6c668667046",
+          "sum": 6392.479097366333
+        }
+      },
+      "other_payloads": {
+        "00001-01.dep": "c49814da6e9996aec346d4e0ccdf04d136b066013eb7d21701e6b5e3b74c3416",
+        "00001-02.dep": "10f1244792ad914c371b5d4d041d11d138f2288e041468fb1e66912d38a3a08c",
+        "00002-01.dep": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00002-02.dep": "463efb894f33fc0fdbdcfcd9c7ad46fe959c0e5d501e16849e7c3ad3f11dc371",
+        "00003-01.dep": "3ec4b6442769d34db3abb808f943ae74f621d3019aee5eecd870bd9c78e746d7",
+        "00003-02.dep": "7200e39317f017f4e7e8fc3b0073f02769833114fd62c1d2424208d3cd824aae",
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "f952026d86c7392042159acbb3adc5a230fcc8cc6eff23af59d2656232d64cfb",
+        "ReceptorConcentrations.dat": "615f791cf6933b45184dad6fe6b46ab9670cadb18a4bf03347a4097cbaa21b4f",
+        "Receptor_Timeseries_Transient.txt": "6572b790e1d7db9f1611031b93f3d43ce84a9dcceacba6419b76aaef2aae4bc2"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "transient_deposition_receptors_warning_free_baseline_r2",
+      "case": {
+        "id": "transient_deposition_receptors",
+        "mode": "transient",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": true,
+        "deposition": true,
+        "odour": false
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.3442117000086,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 6,
+        "odour": 0,
+        "receptors": 2,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "b9c6614222429e7f752db64a2f47f055a6c674f09696ebd9d4af0b09df82562c",
+          "sum": 2297.5969066619873
+        },
+        "00001-102.con": {
+          "sha256": "fc38b5a635670783286d5b2f31be6c9b2bc14b7d58ca6288c240587dcc9c9549",
+          "sum": 2332.1163396835327
+        },
+        "00002-101.con": {
+          "sha256": "5df2c22d64544bc1341237dbd531133c1c130a8c688004afaf23f8651cdee37e",
+          "sum": 3422.530745267868
+        },
+        "00002-102.con": {
+          "sha256": "53d7513a0bfb577e22fa8289301d8f7260bead2645c578c8afdfd74af011bb04",
+          "sum": 5175.67218542099
+        },
+        "00003-101.con": {
+          "sha256": "0007768dcdc4acf1e8e1dacdac1b1a4c79b166368fa935553930fdc438bf3355",
+          "sum": 3894.4590225219727
+        },
+        "00003-102.con": {
+          "sha256": "bdb870b3277f7ff6668972c705634c3a998218e19124c68d4ba7a6c668667046",
+          "sum": 6392.479097366333
+        }
+      },
+      "other_payloads": {
+        "00001-01.dep": "c49814da6e9996aec346d4e0ccdf04d136b066013eb7d21701e6b5e3b74c3416",
+        "00001-02.dep": "10f1244792ad914c371b5d4d041d11d138f2288e041468fb1e66912d38a3a08c",
+        "00002-01.dep": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00002-02.dep": "463efb894f33fc0fdbdcfcd9c7ad46fe959c0e5d501e16849e7c3ad3f11dc371",
+        "00003-01.dep": "3ec4b6442769d34db3abb808f943ae74f621d3019aee5eecd870bd9c78e746d7",
+        "00003-02.dep": "7200e39317f017f4e7e8fc3b0073f02769833114fd62c1d2424208d3cd824aae",
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "f952026d86c7392042159acbb3adc5a230fcc8cc6eff23af59d2656232d64cfb",
+        "ReceptorConcentrations.dat": "615f791cf6933b45184dad6fe6b46ab9670cadb18a4bf03347a4097cbaa21b4f",
+        "Receptor_Timeseries_Transient.txt": "6572b790e1d7db9f1611031b93f3d43ce84a9dcceacba6419b76aaef2aae4bc2"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "transient_deposition_receptors_patchF_minimal_r1",
+      "case": {
+        "id": "transient_deposition_receptors",
+        "mode": "transient",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": true,
+        "deposition": true,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.3604117000068072,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 6,
+        "odour": 0,
+        "receptors": 2,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "93137b6e209fce62e2090efc286d0f9e8d03db98cf457bc0c50f425b4ff3c37c",
+          "sum": 2297.589879989624
+        },
+        "00001-102.con": {
+          "sha256": "e389d7694d62db929afc595126e028b89aa0f2a28663c46a972d3c665dd09eed",
+          "sum": 2332.1014490127563
+        },
+        "00002-101.con": {
+          "sha256": "63b384e9f1ed28d92255aa209fd0ada82dfe7ee342b4a0ed0151edd75dbeea2c",
+          "sum": 3422.5309398174286
+        },
+        "00002-102.con": {
+          "sha256": "5d7935e967babe68bc6d99adcd21534542cc7165dccdb211333d05b2bb749a4d",
+          "sum": 5175.653998732567
+        },
+        "00003-101.con": {
+          "sha256": "f9a038c3f08813035b5dc61a7bee3b3a160b1d110457e774e928ec0dd3e0ee0d",
+          "sum": 3894.459201812744
+        },
+        "00003-102.con": {
+          "sha256": "64dc72a326aa57502ae6e9d63d170b559fa4f43cb008b28811cc87399ffa055b",
+          "sum": 6392.476656913757
+        }
+      },
+      "other_payloads": {
+        "00001-01.dep": "c49814da6e9996aec346d4e0ccdf04d136b066013eb7d21701e6b5e3b74c3416",
+        "00001-02.dep": "10f1244792ad914c371b5d4d041d11d138f2288e041468fb1e66912d38a3a08c",
+        "00002-01.dep": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00002-02.dep": "463efb894f33fc0fdbdcfcd9c7ad46fe959c0e5d501e16849e7c3ad3f11dc371",
+        "00003-01.dep": "3ec4b6442769d34db3abb808f943ae74f621d3019aee5eecd870bd9c78e746d7",
+        "00003-02.dep": "7200e39317f017f4e7e8fc3b0073f02769833114fd62c1d2424208d3cd824aae",
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "f952026d86c7392042159acbb3adc5a230fcc8cc6eff23af59d2656232d64cfb",
+        "ReceptorConcentrations.dat": "615f791cf6933b45184dad6fe6b46ab9670cadb18a4bf03347a4097cbaa21b4f",
+        "Receptor_Timeseries_Transient.txt": "6572b790e1d7db9f1611031b93f3d43ce84a9dcceacba6419b76aaef2aae4bc2"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "transient_deposition_receptors_patchF_minimal_r2",
+      "case": {
+        "id": "transient_deposition_receptors",
+        "mode": "transient",
+        "budget": 1000,
+        "slices": 1,
+        "workers": 1,
+        "receptors": true,
+        "deposition": true,
+        "odour": false
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.34627049999835435,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 6,
+        "odour": 0,
+        "receptors": 2,
+        "checkpoints": 1
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "93137b6e209fce62e2090efc286d0f9e8d03db98cf457bc0c50f425b4ff3c37c",
+          "sum": 2297.589879989624
+        },
+        "00001-102.con": {
+          "sha256": "e389d7694d62db929afc595126e028b89aa0f2a28663c46a972d3c665dd09eed",
+          "sum": 2332.1014490127563
+        },
+        "00002-101.con": {
+          "sha256": "63b384e9f1ed28d92255aa209fd0ada82dfe7ee342b4a0ed0151edd75dbeea2c",
+          "sum": 3422.5309398174286
+        },
+        "00002-102.con": {
+          "sha256": "5d7935e967babe68bc6d99adcd21534542cc7165dccdb211333d05b2bb749a4d",
+          "sum": 5175.653998732567
+        },
+        "00003-101.con": {
+          "sha256": "f9a038c3f08813035b5dc61a7bee3b3a160b1d110457e774e928ec0dd3e0ee0d",
+          "sum": 3894.459201812744
+        },
+        "00003-102.con": {
+          "sha256": "64dc72a326aa57502ae6e9d63d170b559fa4f43cb008b28811cc87399ffa055b",
+          "sum": 6392.476656913757
+        }
+      },
+      "other_payloads": {
+        "00001-01.dep": "c49814da6e9996aec346d4e0ccdf04d136b066013eb7d21701e6b5e3b74c3416",
+        "00001-02.dep": "10f1244792ad914c371b5d4d041d11d138f2288e041468fb1e66912d38a3a08c",
+        "00002-01.dep": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00002-02.dep": "463efb894f33fc0fdbdcfcd9c7ad46fe959c0e5d501e16849e7c3ad3f11dc371",
+        "00003-01.dep": "3ec4b6442769d34db3abb808f943ae74f621d3019aee5eecd870bd9c78e746d7",
+        "00003-02.dep": "7200e39317f017f4e7e8fc3b0073f02769833114fd62c1d2424208d3cd824aae",
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "f952026d86c7392042159acbb3adc5a230fcc8cc6eff23af59d2656232d64cfb",
+        "ReceptorConcentrations.dat": "615f791cf6933b45184dad6fe6b46ab9670cadb18a4bf03347a4097cbaa21b4f",
+        "Receptor_Timeseries_Transient.txt": "6572b790e1d7db9f1611031b93f3d43ce84a9dcceacba6419b76aaef2aae4bc2"
+      },
+      "fresh_mass_text": [
+        "8.33e-003",
+        "1.67e-002"
+      ]
+    },
+    {
+      "run_id": "stationary_odour_two_workers_warning_free_baseline_r1",
+      "case": {
+        "id": "stationary_odour_two_workers",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 9,
+        "workers": 2,
+        "receptors": false,
+        "deposition": false,
+        "odour": true
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.37462539999978617,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 18,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "69e88a39bb1b5e08467dedd531a6d378b394977d415f9fe26612efaee7e740b1",
+          "sum": 21534.077241420746
+        },
+        "00001-102.con": {
+          "sha256": "65ce1262844e0ad33fccb3f38dd19497d276b9adcebdfe584101f42442022c11",
+          "sum": 20947.24980890751
+        },
+        "00001-201.con": {
+          "sha256": "e6ed5eb8e5872c147a9468510d48800cb88f1717fa28d1fda83c949a526d0c25",
+          "sum": 11351.871230840683
+        },
+        "00001-202.con": {
+          "sha256": "2c36876a1fef705bc99fd2d06717ae7fe878a06d6d1d9765e3de76080becf99e",
+          "sum": 10515.979259133339
+        },
+        "00001-301.con": {
+          "sha256": "7a5be26064ce95fd2cd87f508f84f86af3f1788e41d3d1777b915cb2d91f8047",
+          "sum": 6425.845286130905
+        },
+        "00001-302.con": {
+          "sha256": "6ef1d9d1fe2f04b62188015ab071c74878b560fcd0aa959042c3b0aade6a7553",
+          "sum": 5981.30399107933
+        },
+        "00001-401.con": {
+          "sha256": "bb70ac06bbaee276cd55a3835f71eb675c9805bd2378725f51f1ce47f5797f69",
+          "sum": 4183.561344861984
+        },
+        "00001-402.con": {
+          "sha256": "098dcb6235925e8f419510b89a720b52bb110cbbcd0faeb0af3925808f1ba7dd",
+          "sum": 3661.761370420456
+        },
+        "00001-501.con": {
+          "sha256": "7b1eb63431c67b383a539b07516f129b490faca898cda806bc3abe5399a11531",
+          "sum": 2646.3949214220047
+        },
+        "00001-502.con": {
+          "sha256": "24618feee65d64ddc6be58d30ef439dfba6a7791e899065476a72dc7dcf811ed",
+          "sum": 2205.6141681671143
+        },
+        "00001-601.con": {
+          "sha256": "0be1139712822c597805eb57617e7fb7947b3b84f7c447531b22a56340e05073",
+          "sum": 1543.088634133339
+        },
+        "00001-602.con": {
+          "sha256": "ad1331c28067373473581b0ed069bcbcbf06a5a28343d9f7a4aac2768f25468e",
+          "sum": 1290.2845735549927
+        },
+        "00001-701.con": {
+          "sha256": "eeb857f10da2b465f29a10d9f48bd45c5679c339e7776c0d4a0f0f3be0693ce2",
+          "sum": 997.7031097412109
+        },
+        "00001-702.con": {
+          "sha256": "0bfeab5094ac70f722d9c469da56794a8d1896b3f54bdb5aab9ae1a4b087419a",
+          "sum": 764.9015908241272
+        },
+        "00001-801.con": {
+          "sha256": "0f448e28f7d3e815c827eaeeb1436c24a2614d76b890b70ee7979650be527f9b",
+          "sum": 552.5314857959747
+        },
+        "00001-802.con": {
+          "sha256": "1fc8ecb08c6d7e8fbe6adb485c9d87ebe2a62cabc0a1524f50c9cd14ecf92574",
+          "sum": 542.9045150279999
+        },
+        "00001-901.con": {
+          "sha256": "9fe6564a57527f0b422fb71b68728fc45a30193a9e83025ab6b334d718fa691f",
+          "sum": 328.50537490844727
+        },
+        "00001-902.con": {
+          "sha256": "a63ff4a38bc987b8e2182c4b782138316951a8cd95af155bfe707329db4f1c84",
+          "sum": 356.6403923034668
+        }
+      },
+      "other_payloads": {
+        "00001-101.odr": "14ab8b9584ec5c1a71d2014709d7b2f76822b5084a26f8ac611ef50f39c86c18",
+        "00001-102.odr": "e7797934cc261a2def91984993fa652f8234dc8d43bb1a6ea1569016fd9f4e8f",
+        "00001-201.odr": "c387713b9fd8906ffa7416d84de93fcbd935e8499fe26a75cda00e122283cd7e",
+        "00001-202.odr": "8694e4ad541001a7b29ea18cde4211e17f88b6d3a022558f3a65d1249c27ba2b",
+        "00001-301.odr": "e0fba1dd04cbea50772440de1784361d633cf36e94b5a54b71d7e7e4fb933ca1",
+        "00001-302.odr": "25ebca42b904897fc64de6a3b5c4fe028d26c00265ccb9b39564522adae178b3",
+        "00001-401.odr": "16b8b5575a18f813ba479f8c50c62889576ede3c02184449940559842f56567a",
+        "00001-402.odr": "a077029c9fa0ccdaf2fa999aa66e819c0fef04f685639b0bfc006dd0658431c0",
+        "00001-501.odr": "0bdde6a0bb4a1d2da9d14bc08b70eae7383086b5f6da352968f48cc024c1baf5",
+        "00001-502.odr": "7adfdf605b6229a0e4510e626d41e64a9e9d6e17f4007848d6529f35e11286cc",
+        "00001-601.odr": "7cc6ef1f28c2078a26b4c0e0e8f54efd5ee83d5183ef643fe8ac1d947cef9aa4",
+        "00001-602.odr": "bba245f7d971ca6b77ce3eed78eb94521d7f6fa75ade112830dc889093a2915a",
+        "00001-701.odr": "a9ab9f767bae9b73729a7672e864973f6f65529a17734597b8dca0bdf173441e",
+        "00001-702.odr": "055ceab72d3d7279b43adcdc196da9693a30fc9cde95fd221c93acfe1c9265c0",
+        "00001-801.odr": "70af564d13039d321269cd8742a456b6e008f88b01912c4d8fb184a3e1b87a94",
+        "00001-802.odr": "c7461aaf580f78e6534477d0a286385167289a39dd81a2d717b9099eabc00776",
+        "00001-901.odr": "763bb6f08731034ea3f28bd2ea66ef1096915e86e8c499262d549881d27b228c",
+        "00001-902.odr": "c5cad2be93f1c5e3a11bac067fbb13adb50aef94857099146c454ee99c507a77"
+      },
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_odour_two_workers_warning_free_baseline_r2",
+      "case": {
+        "id": "stationary_odour_two_workers",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 9,
+        "workers": 2,
+        "receptors": false,
+        "deposition": false,
+        "odour": true
+      },
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.3839032999967458,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 18,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "ecb33c3c0f3b208ad7a7528af3523de67a4547be196c2e343e4f9a2bd07a4890",
+          "sum": 21534.07748556137
+        },
+        "00001-102.con": {
+          "sha256": "72bac18a48aa1cdfebf35d33df4c95648cbd5016178017c91957b3a8fcb401d0",
+          "sum": 20947.249839425087
+        },
+        "00001-201.con": {
+          "sha256": "e6ed5eb8e5872c147a9468510d48800cb88f1717fa28d1fda83c949a526d0c25",
+          "sum": 11351.871230840683
+        },
+        "00001-202.con": {
+          "sha256": "2b4bbb4026c86cdee27751a4453c3c021b04994461a39e40b3d4d01e6fe150af",
+          "sum": 10515.979503273964
+        },
+        "00001-301.con": {
+          "sha256": "3f56a09974138ef1b209c27aef4dddaf71c9552f5fb993d42833a7534a038771",
+          "sum": 6425.845225095749
+        },
+        "00001-302.con": {
+          "sha256": "b5f1765cf94faf023da0efbb167b9b6ee1401f2e8ea8fffe10149f0189b24b7c",
+          "sum": 5981.304113149643
+        },
+        "00001-401.con": {
+          "sha256": "b2d1cec2bc808352a2920ae96270d363d99141376aa4da2c1caf2dd98348667f",
+          "sum": 4183.561283826828
+        },
+        "00001-402.con": {
+          "sha256": "098dcb6235925e8f419510b89a720b52bb110cbbcd0faeb0af3925808f1ba7dd",
+          "sum": 3661.761370420456
+        },
+        "00001-501.con": {
+          "sha256": "7b1eb63431c67b383a539b07516f129b490faca898cda806bc3abe5399a11531",
+          "sum": 2646.3949214220047
+        },
+        "00001-502.con": {
+          "sha256": "24618feee65d64ddc6be58d30ef439dfba6a7791e899065476a72dc7dcf811ed",
+          "sum": 2205.6141681671143
+        },
+        "00001-601.con": {
+          "sha256": "0be1139712822c597805eb57617e7fb7947b3b84f7c447531b22a56340e05073",
+          "sum": 1543.088634133339
+        },
+        "00001-602.con": {
+          "sha256": "ad1331c28067373473581b0ed069bcbcbf06a5a28343d9f7a4aac2768f25468e",
+          "sum": 1290.2845735549927
+        },
+        "00001-701.con": {
+          "sha256": "eeb857f10da2b465f29a10d9f48bd45c5679c339e7776c0d4a0f0f3be0693ce2",
+          "sum": 997.7031097412109
+        },
+        "00001-702.con": {
+          "sha256": "0bfeab5094ac70f722d9c469da56794a8d1896b3f54bdb5aab9ae1a4b087419a",
+          "sum": 764.9015908241272
+        },
+        "00001-801.con": {
+          "sha256": "0f448e28f7d3e815c827eaeeb1436c24a2614d76b890b70ee7979650be527f9b",
+          "sum": 552.5314857959747
+        },
+        "00001-802.con": {
+          "sha256": "1fc8ecb08c6d7e8fbe6adb485c9d87ebe2a62cabc0a1524f50c9cd14ecf92574",
+          "sum": 542.9045150279999
+        },
+        "00001-901.con": {
+          "sha256": "9fe6564a57527f0b422fb71b68728fc45a30193a9e83025ab6b334d718fa691f",
+          "sum": 328.50537490844727
+        },
+        "00001-902.con": {
+          "sha256": "a63ff4a38bc987b8e2182c4b782138316951a8cd95af155bfe707329db4f1c84",
+          "sum": 356.6403923034668
+        }
+      },
+      "other_payloads": {
+        "00001-101.odr": "0af5ab9f52288637f952a21be817fd826621aefe14b58bb6ac51be867882d434",
+        "00001-102.odr": "3a0f7e5e15a51f9af9298820a58e72e47e27998ed93459e3fdd893ee49c21e09",
+        "00001-201.odr": "1cb972f7e5b14f8c022a8ec0214af02bf69cccd30341c4409507169c3034d7cc",
+        "00001-202.odr": "3b74ecf12358f5667ce25778e46db13fa681762f3cf1d48b796ad52489bfc547",
+        "00001-301.odr": "5cfb716d52c6ca3af992a63fbdd3ffda77159983085e7ca32c2b06288b8f57dd",
+        "00001-302.odr": "eebb720fb2f03aaeff0061e1a1881a7e9bee99acfd601a2cd323c445dd73e686",
+        "00001-401.odr": "16b8b5575a18f813ba479f8c50c62889576ede3c02184449940559842f56567a",
+        "00001-402.odr": "63a2dc404be21c679e912cb453529dac1c661f992fc8f8fc218e85b2916bf20a",
+        "00001-501.odr": "9f8c904c01f5ff8fbbdd61ad180eb7bcdbb0bd35a1c1ae2a648a9509c580a4f7",
+        "00001-502.odr": "b272d8505a69bea20c0ef4159163066b944ad66e2306dc056e0f5231cf82805a",
+        "00001-601.odr": "07eaf5284d8de668dbf09cedba398c99303c10558619314efe55b3910e139dee",
+        "00001-602.odr": "bba245f7d971ca6b77ce3eed78eb94521d7f6fa75ade112830dc889093a2915a",
+        "00001-701.odr": "a9ab9f767bae9b73729a7672e864973f6f65529a17734597b8dca0bdf173441e",
+        "00001-702.odr": "055ceab72d3d7279b43adcdc196da9693a30fc9cde95fd221c93acfe1c9265c0",
+        "00001-801.odr": "70af564d13039d321269cd8742a456b6e008f88b01912c4d8fb184a3e1b87a94",
+        "00001-802.odr": "c7461aaf580f78e6534477d0a286385167289a39dd81a2d717b9099eabc00776",
+        "00001-901.odr": "763bb6f08731034ea3f28bd2ea66ef1096915e86e8c499262d549881d27b228c",
+        "00001-902.odr": "c5cad2be93f1c5e3a11bac067fbb13adb50aef94857099146c454ee99c507a77"
+      },
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_odour_two_workers_patchF_minimal_r1",
+      "case": {
+        "id": "stationary_odour_two_workers",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 9,
+        "workers": 2,
+        "receptors": false,
+        "deposition": false,
+        "odour": true
+      },
+      "variant": "patchF_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.37366719999408815,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 18,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "ddb608eb109d3675740897f9a770fdab62368d7c17dc2ba2ba6698e6a0fa3011",
+          "sum": 21533.83207845688
+        },
+        "00001-102.con": {
+          "sha256": "3663374f11856517bac3ab78a27d20274a9b72b8f54ad2676f0bd8d01fd39a71",
+          "sum": 20947.187579751015
+        },
+        "00001-201.con": {
+          "sha256": "c40a21f815c519ff98ffa08ae446b24f867be2841948c2ee87bf1f6c8bc1e21a",
+          "sum": 11351.871157169342
+        },
+        "00001-202.con": {
+          "sha256": "16eb094941feec432a3473ddb51540dfb4b3c690796b6a1c3bf75d456ee36ab5",
+          "sum": 10515.977363228798
+        },
+        "00001-301.con": {
+          "sha256": "4568b2be3c62e15fd713dcb8d3f6e24b8b828a960572f45f187d7fea2a7a7941",
+          "sum": 6425.845054388046
+        },
+        "00001-302.con": {
+          "sha256": "786d38ffc21d1931052cc157ea6091fc8798f00388f255a1857af38b691e0efb",
+          "sum": 5981.302341461182
+        },
+        "00001-401.con": {
+          "sha256": "96af8012e2b9a9313a5dfdee4d2e67f48e9b7eec407f81cfacea12926d18a686",
+          "sum": 4183.561829805374
+        },
+        "00001-402.con": {
+          "sha256": "e37d7498929e277cb0b185a3315466b0d28f61fdefc3563aad1bc8e9f56c8264",
+          "sum": 3661.7609889507294
+        },
+        "00001-501.con": {
+          "sha256": "cd13efa540cf9f365bb78fdb3e38b77dcdaca1eff35cf7dfccde22d506cd2eb4",
+          "sum": 2646.3950423002243
+        },
+        "00001-502.con": {
+          "sha256": "576e967d90329b1f4431c33fc1e6f0d0695e9677cbe336f20bdd0a9b02a8d667",
+          "sum": 2205.6142749786377
+        },
+        "00001-601.con": {
+          "sha256": "6681844f245d3008e27a3dbb4294f10b171ea718acf89a21edfeb254a6dffb61",
+          "sum": 1543.088643670082
+        },
+        "00001-602.con": {
+          "sha256": "fc6003450fa167fe65a4767b56f9a09d0180c1877ea8858b4eae6ee912caf56c",
+          "sum": 1290.2844905853271
+        },
+        "00001-701.con": {
+          "sha256": "c32661838bdbb1195c8afa057c4cc19cb5b20c3620611faf56778c2b244dd328",
+          "sum": 997.7030634880066
+        },
+        "00001-702.con": {
+          "sha256": "7e0833a4f700209441a48ed2f61ca07c1809cba5ddadd43775f28573f0c70fe4",
+          "sum": 764.9015798568726
+        },
+        "00001-801.con": {
+          "sha256": "473c3c63b0be02a7d8d68aba512dd5da4f9d63bfe780aef822b2a48f9274306f",
+          "sum": 552.5314743518829
+        },
+        "00001-802.con": {
+          "sha256": "332a1b62cde24449e50abd194d47b1d42fb32ffd6251eb1ced1598784cd9a740",
+          "sum": 542.9045126438141
+        },
+        "00001-901.con": {
+          "sha256": "7c175797b21d26a49e39f6846b7ef4beb84301d84dda80e0c6199b8c306cc95b",
+          "sum": 328.50537490844727
+        },
+        "00001-902.con": {
+          "sha256": "9be0ce8021e6ea3f9bb2a553551c4ecf1a80b51005da8d269daa39ab7ebd78a6",
+          "sum": 356.6404070854187
+        }
+      },
+      "other_payloads": {
+        "00001-101.odr": "14ab8b9584ec5c1a71d2014709d7b2f76822b5084a26f8ac611ef50f39c86c18",
+        "00001-102.odr": "e7797934cc261a2def91984993fa652f8234dc8d43bb1a6ea1569016fd9f4e8f",
+        "00001-201.odr": "2ba91a4b97ad2099886839dfbfd8870024869d2497a01ee647a94b68e9144f8c",
+        "00001-202.odr": "19f649dd0bfc3e824ce32b431f18034e3272952178d795aeead1149fd6a048f8",
+        "00001-301.odr": "84f4246bbecec5acc1c339e83c4d40ddb8f2d8817e689c1b395958644491c496",
+        "00001-302.odr": "bf62cf9b7da738ec699e2a4d0b1be908f0c5c0fd2997348f63d92fc8303a3cab",
+        "00001-401.odr": "f989afca96470ab05379d1475db0e4cf458be055b05ec787b04b89f8e7453ccd",
+        "00001-402.odr": "a077029c9fa0ccdaf2fa999aa66e819c0fef04f685639b0bfc006dd0658431c0",
+        "00001-501.odr": "0bdde6a0bb4a1d2da9d14bc08b70eae7383086b5f6da352968f48cc024c1baf5",
+        "00001-502.odr": "7adfdf605b6229a0e4510e626d41e64a9e9d6e17f4007848d6529f35e11286cc",
+        "00001-601.odr": "7cc6ef1f28c2078a26b4c0e0e8f54efd5ee83d5183ef643fe8ac1d947cef9aa4",
+        "00001-602.odr": "bba245f7d971ca6b77ce3eed78eb94521d7f6fa75ade112830dc889093a2915a",
+        "00001-701.odr": "a9ab9f767bae9b73729a7672e864973f6f65529a17734597b8dca0bdf173441e",
+        "00001-702.odr": "055ceab72d3d7279b43adcdc196da9693a30fc9cde95fd221c93acfe1c9265c0",
+        "00001-801.odr": "70af564d13039d321269cd8742a456b6e008f88b01912c4d8fb184a3e1b87a94",
+        "00001-802.odr": "c7461aaf580f78e6534477d0a286385167289a39dd81a2d717b9099eabc00776",
+        "00001-901.odr": "763bb6f08731034ea3f28bd2ea66ef1096915e86e8c499262d549881d27b228c",
+        "00001-902.odr": "c5cad2be93f1c5e3a11bac067fbb13adb50aef94857099146c454ee99c507a77"
+      },
+      "fresh_mass_text": []
+    },
+    {
+      "run_id": "stationary_odour_two_workers_patchF_minimal_r2",
+      "case": {
+        "id": "stationary_odour_two_workers",
+        "mode": "stationary",
+        "budget": 1000,
+        "slices": 9,
+        "workers": 2,
+        "receptors": false,
+        "deposition": false,
+        "odour": true
+      },
+      "variant": "patchF_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.38155039999401197,
+      "checks_passed": 8,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "concentration_count": true,
+        "float32_format": true,
+        "finite_nonnegative": true,
+        "configured_allocation": true,
+        "expected_auxiliary_outputs": true
+      },
+      "counts": {
+        "deposition": 0,
+        "odour": 18,
+        "receptors": 0,
+        "checkpoints": 0
+      },
+      "field_payloads": {
+        "00001-101.con": {
+          "sha256": "ddb608eb109d3675740897f9a770fdab62368d7c17dc2ba2ba6698e6a0fa3011",
+          "sum": 21533.83207845688
+        },
+        "00001-102.con": {
+          "sha256": "3663374f11856517bac3ab78a27d20274a9b72b8f54ad2676f0bd8d01fd39a71",
+          "sum": 20947.187579751015
+        },
+        "00001-201.con": {
+          "sha256": "c40a21f815c519ff98ffa08ae446b24f867be2841948c2ee87bf1f6c8bc1e21a",
+          "sum": 11351.871157169342
+        },
+        "00001-202.con": {
+          "sha256": "16eb094941feec432a3473ddb51540dfb4b3c690796b6a1c3bf75d456ee36ab5",
+          "sum": 10515.977363228798
+        },
+        "00001-301.con": {
+          "sha256": "4568b2be3c62e15fd713dcb8d3f6e24b8b828a960572f45f187d7fea2a7a7941",
+          "sum": 6425.845054388046
+        },
+        "00001-302.con": {
+          "sha256": "786d38ffc21d1931052cc157ea6091fc8798f00388f255a1857af38b691e0efb",
+          "sum": 5981.302341461182
+        },
+        "00001-401.con": {
+          "sha256": "96af8012e2b9a9313a5dfdee4d2e67f48e9b7eec407f81cfacea12926d18a686",
+          "sum": 4183.561829805374
+        },
+        "00001-402.con": {
+          "sha256": "e37d7498929e277cb0b185a3315466b0d28f61fdefc3563aad1bc8e9f56c8264",
+          "sum": 3661.7609889507294
+        },
+        "00001-501.con": {
+          "sha256": "cd13efa540cf9f365bb78fdb3e38b77dcdaca1eff35cf7dfccde22d506cd2eb4",
+          "sum": 2646.3950423002243
+        },
+        "00001-502.con": {
+          "sha256": "576e967d90329b1f4431c33fc1e6f0d0695e9677cbe336f20bdd0a9b02a8d667",
+          "sum": 2205.6142749786377
+        },
+        "00001-601.con": {
+          "sha256": "6681844f245d3008e27a3dbb4294f10b171ea718acf89a21edfeb254a6dffb61",
+          "sum": 1543.088643670082
+        },
+        "00001-602.con": {
+          "sha256": "fc6003450fa167fe65a4767b56f9a09d0180c1877ea8858b4eae6ee912caf56c",
+          "sum": 1290.2844905853271
+        },
+        "00001-701.con": {
+          "sha256": "c32661838bdbb1195c8afa057c4cc19cb5b20c3620611faf56778c2b244dd328",
+          "sum": 997.7030634880066
+        },
+        "00001-702.con": {
+          "sha256": "7e0833a4f700209441a48ed2f61ca07c1809cba5ddadd43775f28573f0c70fe4",
+          "sum": 764.9015798568726
+        },
+        "00001-801.con": {
+          "sha256": "473c3c63b0be02a7d8d68aba512dd5da4f9d63bfe780aef822b2a48f9274306f",
+          "sum": 552.5314743518829
+        },
+        "00001-802.con": {
+          "sha256": "332a1b62cde24449e50abd194d47b1d42fb32ffd6251eb1ced1598784cd9a740",
+          "sum": 542.9045126438141
+        },
+        "00001-901.con": {
+          "sha256": "7c175797b21d26a49e39f6846b7ef4beb84301d84dda80e0c6199b8c306cc95b",
+          "sum": 328.50537490844727
+        },
+        "00001-902.con": {
+          "sha256": "9be0ce8021e6ea3f9bb2a553551c4ecf1a80b51005da8d269daa39ab7ebd78a6",
+          "sum": 356.6404070854187
+        }
+      },
+      "other_payloads": {
+        "00001-101.odr": "14ab8b9584ec5c1a71d2014709d7b2f76822b5084a26f8ac611ef50f39c86c18",
+        "00001-102.odr": "e7797934cc261a2def91984993fa652f8234dc8d43bb1a6ea1569016fd9f4e8f",
+        "00001-201.odr": "ffa21fe59035699fe5f8bf7c0a296e8f882ca568f848a1b36cc0b5e32bcbf4bf",
+        "00001-202.odr": "07ec773d5d42b25f5a7824cd9c0d789bd0fd5b8887a53e3da74ab04135c72d71",
+        "00001-301.odr": "e750e92a654b18079a92050381bf0d86f767504ddf3e19edfe7ab30a6522d820",
+        "00001-302.odr": "faa3414b197659bb99c14ca928f8c7beaa4b0c5c1a652889fa492223f24e2010",
+        "00001-401.odr": "16b8b5575a18f813ba479f8c50c62889576ede3c02184449940559842f56567a",
+        "00001-402.odr": "a077029c9fa0ccdaf2fa999aa66e819c0fef04f685639b0bfc006dd0658431c0",
+        "00001-501.odr": "0bdde6a0bb4a1d2da9d14bc08b70eae7383086b5f6da352968f48cc024c1baf5",
+        "00001-502.odr": "7adfdf605b6229a0e4510e626d41e64a9e9d6e17f4007848d6529f35e11286cc",
+        "00001-601.odr": "7cc6ef1f28c2078a26b4c0e0e8f54efd5ee83d5183ef643fe8ac1d947cef9aa4",
+        "00001-602.odr": "bba245f7d971ca6b77ce3eed78eb94521d7f6fa75ade112830dc889093a2915a",
+        "00001-701.odr": "a9ab9f767bae9b73729a7672e864973f6f65529a17734597b8dca0bdf173441e",
+        "00001-702.odr": "055ceab72d3d7279b43adcdc196da9693a30fc9cde95fd221c93acfe1c9265c0",
+        "00001-801.odr": "70af564d13039d321269cd8742a456b6e008f88b01912c4d8fb184a3e1b87a94",
+        "00001-802.odr": "c7461aaf580f78e6534477d0a286385167289a39dd81a2d717b9099eabc00776",
+        "00001-901.odr": "763bb6f08731034ea3f28bd2ea66ef1096915e86e8c499262d549881d27b228c",
+        "00001-902.odr": "c5cad2be93f1c5e3a11bac067fbb13adb50aef94857099146c454ee99c507a77"
+      },
+      "fresh_mass_text": []
+    }
+  ],
+  "limits": [
+    "Synthetic numerical and compatibility validation only; no true atmospheric concentration reference.",
+    "Two-worker ordering can vary; bitwise reproducibility is required only with one worker.",
+    "No production-domain peak memory or throughput claim.",
+    "The stored float output range and final rounding remain unchanged.",
+    "Fresh-emission totals are reported and checked only in transient Main runs; stationary Main does not report this diagnostic.",
+    "Managed memory measurements cover the same jagged concentration-array shape in the compiled fixture, not total process peak memory."
+  ]
+}

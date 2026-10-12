@@ -1,0 +1,25 @@
+This package reviews the active-source residual reference in PR #62 and the soft particle target in PR #63. The revised source pair is in `sources/`; the preceding draft pair is in `old_sources/`. `residual_reproduce.zip` contains the source pairs, synthetic inputs, fixtures and runner needed to reproduce the checks.
+
+The active-source reference sums basic rates from currently active groups and keeps the original particle-count and grid scaling. A positive temporal factor determines activity; its magnitude does not weight the rate. Original source-particle allocation stays unchanged. When all groups are inactive, the revised reference always returns to `Program.ParticleMassMean`. It therefore does not retain a value from the previous active situation, and it needs no new checkpoint field.
+
+The checkpoint tests compare the reference in continuous and resumed all-off runs. The preceding drafts retained 0.17361111773384966 in the continuous run and used 0.3472222354676993 after restart. Both revised policies use 0.3472222354676993 in both cases. These values use the model's internal reference scaling. The witnesses print the reference from separate test copies after `SetResidualParticleMass()`; production sources remain uninstrumented. The tests establish reference agreement and do not establish bitwise equality of complete restarted runs.
+
+The all-off fallback deliberately changes residual sampling. In the fixed-seed Main cases, active situations 1 and 2 had identical concentration payloads before and after the revision for all three particle budgets. In all-off situation 3, relative L1 output differences were 26.518745910205084%, 14.306378369483822% and 7.252020277925069% for budgets of 100, 1000 and 3000. C2 and C3 produced the same differences in these cases. These differences measure the change from the retained reference to the nominal fallback. Atmospheric accuracy was not evaluated.
+
+The planner starts with `K = 10` and uses `Floor(Floor(mass / reference) / K) + 1`, with at least one particle per eligible entry and at most 100,000 per entry. At most six planning passes adjust the factor toward `TAUS * TPS`. The entry minimum and finite pass limit can leave the total above that target. The fresh compiled tests include a feasible case that finishes at its target of 200, a 300-entry case that cannot fit a target of 200, and a six-pass case that finishes at 1167 for a target of 1001.
+
+At `K = 10`, all 210,000 deliberately selected finite positive threshold cases match the preceding nested-floor calculation. The previous product-denominator expression differs in 21,012 of these selected cases. The sample was constructed near thresholds and is not a population-frequency estimate. The revised planner keeps the configured worker limit and cancellation checks. The actual extracted planner passed 11 runtime checks, including one-worker traversal and cancellation before and during planning. Source review checked the guard in Main after planning.
+
+The complete fresh suite passed 36 Main runs with 288 checks, 72 actual-DLL component checks and 11 extracted planner checks, for 83 component/runtime checks. All ten strict Release builds had 0 warnings and 0 errors. All 12 controlled fixed-seed repeat pairs had identical concentration payloads. The tests use 100, 1000 and 3000 particles on small synthetic fields. The suite took about 26.65 seconds on the test host; that is a suite duration, not a production performance measurement.
+
+Split concentration is stored as equal float shares. Ordinary division rounds, and very small shares can underflow. The compiled example reconstructs 99.99999904632568 from a concentration of 100 split into 11 shares; it does not show exact mass conservation. Count guards bound the integer conversion and do not repair malformed physical inputs. The synthetic Main fields have no independent true concentration reference.
+
+The active-reference topic has 43 added and 1 removed line in three source files, totalling 2100 added-plus-removed source-body characters against the seed/split-guard foundation. The planner topic has 51 added and 2 removed lines in two source files, totalling 2509 source-body characters against the revised active-reference source. These counts exclude diff symbols, headers, context and line terminators.
+
+Use a verified Python executable and .NET 10 SDK. From the package root, replace `python` and `dotnet` with verified executable paths if needed, and choose a new isolated run directory:
+
+```text
+python -X utf8 -B reproduce/review_drafts.py --old-source-root old_sources --new-source-root sources --inputs-root inputs/synthetic_templates --run-dir ../residual-review-check-01 --dotnet dotnet
+```
+
+The runner builds and runs copies in that new directory. It gives each model or fixture process a 60-second limit and each build a 180-second limit. Results, logs and checkpoint witnesses are recorded under the run directory. The packaged source pairs stay unchanged. The figures and their full captions are listed in `FIGURE_CAPTIONS.md`.
