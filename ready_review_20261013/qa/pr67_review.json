@@ -1,0 +1,453 @@
+{
+  "status": "pass",
+  "pull_request": 67,
+  "upstream_commit": "324dd08161bb2a4a4d02a43f33e2a7f4ebd0eff7",
+  "original_head": "5a333595fea7a7956956db20c712f32213b1a2e7",
+  "reviewed_head": "4b8f5e98f63d4a6d0768a1114b357874ec16ead3",
+  "merge_status": "clean; history-preserving merge of upstream; no semantic change to storage guard",
+  "working_tree_clean": true,
+  "implementation_fixes": [],
+  "confirmed_implementation_defects": [],
+  "reviewed_behaviors": [
+    "Both public storage entry methods validate finite offsets, relative height and mass before indexing.",
+    "Non-finite float increments are rejected before accessing the destination. Prospective totals are checked and assigned under the original leaf-array lock.",
+    "Finite signed masses, signed zero and subnormal contributions retain baseline behavior. This patch deliberately does not impose a new nonnegative-mass policy.",
+    "A rejected call leaves every destination cell unchanged and increments the long counter once. Valid writes in another source group remain usable.",
+    "Already non-finite cells remain non-finite; the guard rejects additions to them without replacing or repairing their contents.",
+    "The counter is drained after both blocking tracking drivers complete, once per completed weather situation. Cancellation exits before that normal completion report.",
+    "Finite invalid indices, malformed grid geometry and other concentration/deposition/receptor sums remain outside this change."
+  ],
+  "strict_release_builds": [
+    {
+      "name": "current PR67 engine",
+      "warnings": 0,
+      "errors": 0,
+      "log": "logs/pr67_build.log"
+    },
+    {
+      "name": "additional storage fixture",
+      "warnings": 0,
+      "errors": 0,
+      "log": "logs/pr67_fixture_build.log"
+    }
+  ],
+  "additional_actual_dll_checks": {
+    "status": "pass",
+    "checks": 16314,
+    "groups": {
+      "finite_signed_mass_bitwise": 8080,
+      "finite_signed_mass_no_rejection": 8080,
+      "invalid_input_preserves_all_cells": 30,
+      "invalid_input_count_once": 30,
+      "derived_nonfinite_preserves_all_cells": 12,
+      "derived_nonfinite_count_once": 12,
+      "signed_total_overflow_preserves_all_cells": 4,
+      "signed_total_overflow_count_once": 4,
+      "preexisting_nonfinite_preserved_not_repaired": 8,
+      "preexisting_nonfinite_write_count": 8,
+      "other_source_group_unaffected": 8,
+      "reflected_call_noop_before_addressing": 2,
+      "same_cell_parallel_finite_sum": 6,
+      "same_cell_parallel_invalid_count": 6,
+      "same_cell_signed_exact_sum": 6,
+      "same_cell_signed_not_rejected": 6,
+      "same_cell_overflow_one_survives": 6,
+      "same_cell_overflow_rejected_count": 6
+    },
+    "finite_bitwise_pairs": 8080,
+    "invalid_write_cases": 46,
+    "parallel_workers": [
+      1,
+      2,
+      8
+    ],
+    "scope": "Actual baseline and candidate DLL storage methods. Finite signed mass preservation, non-finite write rejection, destination overflow, and concurrent same-cell writes. Existing non-finite cells remain unchanged; finite invalid domain indices and malformed grid dimensions remain outside this patch. No Main fault injection or performance claim.",
+    "dlls": [
+      {
+        "path": "${REVIEW_JOB}\\work\\pr66\\.review_validation\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+        "sha256": "d0dc4366c06d63733db59ef22e456441dd236c9c0433dacdd5c042dca0b0205a"
+      },
+      {
+        "path": "${REVIEW_JOB}\\work\\pr67\\src\\bin\\Release\\net10.0\\GRAL.dll",
+        "sha256": "801e1dc383bfdf54b82fd3cec22d393f7d0a8e36fda0519a2223035c897560a1"
+      }
+    ]
+  },
+  "source_diff": {
+    "files": 2,
+    "added_lines": 52,
+    "removed_lines": 4,
+    "added_removed_characters_excluding_cr_lf": 2998
+  },
+  "source_manifest": [
+    {
+      "path": "src/.vscode/launch.json",
+      "sha256": "7873a45afe3acd3d7cfd7bea17a301d85db5f7b50bb46edfd979d05969064dff"
+    },
+    {
+      "path": "src/.vscode/tasks.json",
+      "sha256": "d482b72b3ab8876dc37627f27aa61efcfa3809a4885ecb8e7abe63631c8e8f1b"
+    },
+    {
+      "path": "src/Anfangko.cs",
+      "sha256": "73a27c20e6ec317d1638ef57cbc6294931d4b28e63f7bb0d680597a16b971c06"
+    },
+    {
+      "path": "src/CleanUp.cs",
+      "sha256": "fc83294f774cb563632dfd4c0ffcb62d9b89dab8c2cc0925288408ccb3e7992f"
+    },
+    {
+      "path": "src/Constants.cs",
+      "sha256": "563fb2b6ddef4f487cceccbd6162b0c91140aa19e5166aa8e70ac3b7c26838d0"
+    },
+    {
+      "path": "src/DepositionComputation.cs",
+      "sha256": "dedfe8b7b898b5717effe7afae1ebe9db9d0048d791e73881ad1898b7c4f3f42"
+    },
+    {
+      "path": "src/DiagnosticFlowfield.cs",
+      "sha256": "d398cf748173dd22403422431fa4c5aa701659d83dcd3beab019cf9a8d67e293"
+    },
+    {
+      "path": "src/FilterArray.cs",
+      "sha256": "15ee08b60501943170614dd566c5a37d817b543b44e2ad91ad088cac0a4b06c4"
+    },
+    {
+      "path": "src/GFFRead.cs",
+      "sha256": "0e279dfa9045dba899604092121899b0d273cd41c736ca5c4494b4be3c9b0c31"
+    },
+    {
+      "path": "src/GFFWrite.cs",
+      "sha256": "0d68acf5a4100638b4c52578066cfe52f5a4b3876aa503b677b19a62e231ced5"
+    },
+    {
+      "path": "src/GRAL.csproj",
+      "sha256": "340dbdf0eb5cfe39ef85f00d726a81cdd819031d5d17908c7e6712e8bdbbba7b"
+    },
+    {
+      "path": "src/GRALONLINE.cs",
+      "sha256": "04dfc0d15e0d74d2c30e702b05c65397f95510205157e69fc1d61c0b25616d8c"
+    },
+    {
+      "path": "src/GetTransientTimeSeriesIndex.cs",
+      "sha256": "c0d1f0f07ac7d83f95885814c22c49b8f130b7777f31616f9e4c8aed20df99e9"
+    },
+    {
+      "path": "src/InitAdaptiveRoughness.cs",
+      "sha256": "8f231cd36331aa7713a017e2792888d44f361f95a7c512c3caee9b3f14803e10"
+    },
+    {
+      "path": "src/InputMettimeSeries.cs",
+      "sha256": "122582c1271cdb426506360b5ea74a6182ec5b79ced01d7ed7ea03a2286b7da1"
+    },
+    {
+      "path": "src/Input_eki.cs",
+      "sha256": "a67e02d31635df3ff916f6bb00c845c3fed49e804b68961c3aa45fd7fe7ae593"
+    },
+    {
+      "path": "src/Input_pgt.cs",
+      "sha256": "0c4a863541ba612c73dc3ad178e85cab8129b2d6a13c638539d250a4f1a06318"
+    },
+    {
+      "path": "src/Input_rez.cs",
+      "sha256": "6ab65fd6e926e7a993dab884aa77ef0a1a7c455f9c276cf4373c64ad78d258f5"
+    },
+    {
+      "path": "src/Input_sonic.cs",
+      "sha256": "6f8378bb4d97dd345d6f89e830b12d9d9d551d5b68d821509c0ad73590958066"
+    },
+    {
+      "path": "src/Input_wind.cs",
+      "sha256": "bce2bf2e7ed3d1432eb3cd290f16da9e8422bca92031f01376862f63b1a725ab"
+    },
+    {
+      "path": "src/Input_zr.cs",
+      "sha256": "73988e0508defd9551c2e1dee037ac931c9fdb8864de6503aaa7b54182c2ae7a"
+    },
+    {
+      "path": "src/Intstand.cs",
+      "sha256": "22a0ddf145dd4472062d570460547731b3ed94b7773c4f16fecb4f607aa1d5b5"
+    },
+    {
+      "path": "src/Intwind.cs",
+      "sha256": "f72f164162dca20f2ffd261d67141995216a122d60c267054b049b14ad73422c"
+    },
+    {
+      "path": "src/LoadAndDefineTransientPresets.cs",
+      "sha256": "143aabffa32e39e6589c3a5d31242f05fa405ecfd7d495d37f84a73b02e8b8e5"
+    },
+    {
+      "path": "src/MicroscaleFlat.cs",
+      "sha256": "1629d00f4ca1c654689a4fe2c6bf33bed4cbe8b6a634b0e17f1b0f86d7d70cde"
+    },
+    {
+      "path": "src/MicroscaleTerrain.cs",
+      "sha256": "d7fcb48ca1624ef5c25f99a6ee38722ee52f15f691e23d622314db915512dad9"
+    },
+    {
+      "path": "src/MicroscaleTerrainSearchRefPoint.cs",
+      "sha256": "366cf657a59c8fc84fd32599aaf7638bdbd7df814e91012c6e6cd1e30e01a4d5"
+    },
+    {
+      "path": "src/NestedGridBounds.cs",
+      "sha256": "8960a9a1acaf9cbc6935a4c197d6d4a86941722ffc864b5fd105d68faeaddfdd"
+    },
+    {
+      "path": "src/Point.cs",
+      "sha256": "9e39caad5ea3304d490428bd2fa4c08263668dcd77a9b3138ef332ad85d26051"
+    },
+    {
+      "path": "src/PointSourceHeight.cs",
+      "sha256": "6ac0e5d032eaeae8a95e22568a80a874bcab5473ea915db84b2ce39cd577bccf"
+    },
+    {
+      "path": "src/PrognosticFlowfield.cs",
+      "sha256": "383f6b234f429804c43dd3cbbe4e1395218aa391a2c9cd96b47bfa92a7519aa4"
+    },
+    {
+      "path": "src/Program.cs",
+      "sha256": "d9f72d56a6fd4d353ec5f04fafee892d397dab476820e713b9a122aa27f0126d"
+    },
+    {
+      "path": "src/ProgramDeclarations.cs",
+      "sha256": "5112cfd604761b96402cf49894503e8b76dfe7fb7ebf6d6b65f0948172f7c7f9"
+    },
+    {
+      "path": "src/ProgramFunctions.cs",
+      "sha256": "96ccd7ac7854ffd0ea1156307c10d1650bb0f0d972ac17842d9ad8cb064eebdd"
+    },
+    {
+      "path": "src/Properties/launchSettings.json",
+      "sha256": "def819b2310caf9ceffe0608117de350e878949e2b058840bd4be2160f3684ee"
+    },
+    {
+      "path": "src/ReadAreaSources.cs",
+      "sha256": "7db05860cea1728a8d9827845cad2b3dcec8aaf37b436b07d1f10577c9f938c5"
+    },
+    {
+      "path": "src/ReadBuildings.cs",
+      "sha256": "6f1589c05b7c2f4a47d545c870adfbbc7babd3967f28e8781426a469f2685231"
+    },
+    {
+      "path": "src/ReadEmissionTimeSeries.cs",
+      "sha256": "2403b70c51644af672f06db90e760bf546f1cd8115272b9f1af7d349733ef457"
+    },
+    {
+      "path": "src/ReadGeometryAndDomains.cs",
+      "sha256": "8f7d1e996dd907c8dac538c9f72e1cec12f53b28b3e57b417b445dc2522a9c99"
+    },
+    {
+      "path": "src/ReadGgeomAsc.cs",
+      "sha256": "48f87eb94ca92e32beb193045987e98d7786af4721ccd871d714300b0f3cf283"
+    },
+    {
+      "path": "src/ReadInDat.cs",
+      "sha256": "dea0cb272782630912ab403ba4c035ff2300c0651de980fc3f7698208ebd10ae"
+    },
+    {
+      "path": "src/ReadLandUseFile.cs",
+      "sha256": "1107dfb3e3b9beb4f662de5ec911dedd3bb23201358b2c401a06af2bfb854bda"
+    },
+    {
+      "path": "src/ReadLinieSources.cs",
+      "sha256": "49db4957da7c476522603a668cbd373073e7754bb3158cb64d2dcec016b6d6b5"
+    },
+    {
+      "path": "src/ReadMax_Proc.cs",
+      "sha256": "67c70d903a8597424838bfa3581c925fd4793642cf63b0a792fc6a5bbde0daa3"
+    },
+    {
+      "path": "src/ReadPointSources.cs",
+      "sha256": "0dc368a586f2096ee3a6d443b804f3a1e0bc98ae15489b6437a7ea948ac598af"
+    },
+    {
+      "path": "src/ReadPollutant.cs",
+      "sha256": "32f80cbb268c9beaa1ea6e52c7e27f37d32fe8faff75ef5858de5eff3c18fd6f"
+    },
+    {
+      "path": "src/ReadPrecipitation.cs",
+      "sha256": "c03aa6be2a39d6a3219dbc05a699c9c9ca38a096362daa811ce84d15cf5cbab3"
+    },
+    {
+      "path": "src/ReadReceptors.cs",
+      "sha256": "b2658cc5d1968435b411751d0fdc799af2e0a032beab170b6ca56cfba769592c"
+    },
+    {
+      "path": "src/ReadSourceTimeSeries.cs",
+      "sha256": "35a2cf898ee5a2f889770fc63f1011d5973921725a39d85dec6f7680732c7f64"
+    },
+    {
+      "path": "src/ReadTransientFiles.cs",
+      "sha256": "a28a30a172096719ee38aadeb070ba1549b9b30d83c35af7622eec0ce2c15b12"
+    },
+    {
+      "path": "src/ReadTunnelPortalsOptional.cs",
+      "sha256": "5bf7fa7cd8a642a378d33f3b4df4e657ed1c6abaeebf3a08340734eec4636657"
+    },
+    {
+      "path": "src/ReadTunnelportals.cs",
+      "sha256": "5b5be0a763d4a4f330bcb98b6748ab3e1b714ae8d0bc5f8df93a220175686251"
+    },
+    {
+      "path": "src/ReadVegetation.cs",
+      "sha256": "103c343ab4226636b3c6118e1a6430f7a58766e97246d0326da8299c1c89ecc4"
+    },
+    {
+      "path": "src/Read_DispersionClasses.cs",
+      "sha256": "909d820eb1cb7030409c54335297e07311adf35196efaf4cf4affa8eee06cd67"
+    },
+    {
+      "path": "src/ReducePrognosticSubDomainSize.cs",
+      "sha256": "e5494670bd1cf22a07f67da430cbd98e18dd664a179ef5062934c838f74fe258"
+    },
+    {
+      "path": "src/SourceData.cs",
+      "sha256": "c3dd390cb79a12a13787d2d9ee1228a74a8b70883305795b20234af64c612f43"
+    },
+    {
+      "path": "src/TKE-prognostic-microscale.cs",
+      "sha256": "0f302869fbb0a29ecc72088dbe20211d7f563a463444ca7d31d64f2e2cec7668"
+    },
+    {
+      "path": "src/TeilchenAufteilung.cs",
+      "sha256": "17faaa29d29e128bfb70bdcb9f954da9a3f8ec5fc2491a462fc285b9d8c3a18b"
+    },
+    {
+      "path": "src/TerrainArray.cs",
+      "sha256": "0ea00484259131ec2606e55b3d8a026c9c6d5572d10454570c01cf5869446846"
+    },
+    {
+      "path": "src/TimeSeriesColumn.cs",
+      "sha256": "8420f09938e71ffb5fac099325d9cb44c0915b39af055bba157b6dbb8f2e4317"
+    },
+    {
+      "path": "src/TransientDeposition.cs",
+      "sha256": "7bf7234c929659f04d8db9c19013c93334f23239a333a78dbfcfde02def25de2"
+    },
+    {
+      "path": "src/Transient_Concentration.cs",
+      "sha256": "f95532dacb6cbb7314719dcf879a7cf66eef5651cf86c5ac90b4098dbed4a63f"
+    },
+    {
+      "path": "src/U-prognostic-microscale_0.cs",
+      "sha256": "61c82126a96d187a0c8f9292a429007d5d75b63751c67975e2d6ae6328fe307b"
+    },
+    {
+      "path": "src/U-prognostic-microscale_1.cs",
+      "sha256": "aee21a535050f5e76f863a087521f057329c793e1d2c83e6083281e30ae80e67"
+    },
+    {
+      "path": "src/U-prognostic-microscale_1_Vec512.cs",
+      "sha256": "2fd9d8b83f6365cb9d63e4856e3404e70a9c10e9de395a3f71de4db2dda89970"
+    },
+    {
+      "path": "src/U-prognostic-microscale_2.cs",
+      "sha256": "fe2138c48bc33b2ce9f5f1c81845bd7f1e1e99af3fc368dea4204012b54e5aec"
+    },
+    {
+      "path": "src/V-prognostic-microscale_0.cs",
+      "sha256": "f1712cf17341e55195b006e84a6f42875d5c4f2bc6e517299dd8698e71109985"
+    },
+    {
+      "path": "src/V-prognostic-microscale_1.cs",
+      "sha256": "5f61a42cb6802434391083ff7c25aa28d5d44f1aca8d4dfb861626b90e22f854"
+    },
+    {
+      "path": "src/V-prognostic-microscale_1_Vec512.cs",
+      "sha256": "1d2d9c63fc0520a203924011e031346c46f4bca5086f7ff7e028c7429892995e"
+    },
+    {
+      "path": "src/V-prognostic-microscale_2.cs",
+      "sha256": "bef0110aa6be52c99955ffcd4abbb0bcd505ddeba4fc9b9311f7bc3799eff30c"
+    },
+    {
+      "path": "src/W-prognostic-microscale_0.cs",
+      "sha256": "7dd0acbf07241ccced4cbb10e149b9d0b1d3b15ed28fade818e4727822dff12a"
+    },
+    {
+      "path": "src/W-prognostic-microscale_1.cs",
+      "sha256": "3de29b1b707293b5cc500aa6d2d0f265d71aa020a657d59585d9a0674fdf1522"
+    },
+    {
+      "path": "src/W-prognostic-microscale_1_Vec512.cs",
+      "sha256": "dd2242d1d25d598ae5d981e8fd4f323cfb48c66ac46ed75bebd42502fc07918d"
+    },
+    {
+      "path": "src/W-prognostic-microscale_2.cs",
+      "sha256": "f8686f6d2d48dc5ed320f14b3c474f10df0a97a4efa298c46f8f275c9dc80785"
+    },
+    {
+      "path": "src/WindData.cs",
+      "sha256": "3e067cd445d44b530269575f91acc61ee8830903a14ea4ba7df895f9bbd4e602"
+    },
+    {
+      "path": "src/Windfield_Reader.cs",
+      "sha256": "2dd0f8a4eda83c2b5b9007788aea35332636227d3123bd2819664549f642e538"
+    },
+    {
+      "path": "src/Windfield_Reader_SOUNDPLAN.cs",
+      "sha256": "e8eb04bc1c186003f52f2bf333859af150c97d264fdf41c545d70922a3bf3ebf"
+    },
+    {
+      "path": "src/Write2DConcentrations.cs",
+      "sha256": "60e7e08ff94ed3af71f9b4e4242bf09c8bb3e03c17c9fb0d44ecd7e5d905199d"
+    },
+    {
+      "path": "src/Write3DConcentrations.cs",
+      "sha256": "bac3a9bf691400604dead8e15138e5fdd09f76fc946e2a2892ba5635abff7340"
+    },
+    {
+      "path": "src/WriteGeometries.cs",
+      "sha256": "732ef88b835a1d01638ee881e6be281f32a2a84b962ed5c4cb57c1d634dbc2c0"
+    },
+    {
+      "path": "src/WriteLogFiles.cs",
+      "sha256": "ffd86e7d1fa372f2bd717c1b2d2d29fd7600da5d7130aa30d82f7d3a69d90a90"
+    },
+    {
+      "path": "src/WriteReceptorConcentrations.cs",
+      "sha256": "0ce2fc4f194ec8ea1d541f3f7181f6a21bc68db56c7c4557359a0de452984af0"
+    },
+    {
+      "path": "src/WriteTransientConcentrations.cs",
+      "sha256": "fbce567ce84cb280743bdb46ad21bccacc5eb8039fda1149221941fbf3b1097d"
+    },
+    {
+      "path": "src/Zeitschleife.cs",
+      "sha256": "5dbedd77e55dd4346059edb9da915ab7c7a502dc6574a452cbb9af7dd1cd8ddd"
+    },
+    {
+      "path": "src/Zeitschleife_nonsteadystate.cs",
+      "sha256": "768a31dd8786f2f14821a69ef26c95273becfdf395a2060467b2aa28f1b656a8"
+    },
+    {
+      "path": "src/aenderungen_GRAL.txt",
+      "sha256": "d8dff258f49f065f26e65364e8216f16cd0fc4cef096f0a9decef70d58524168"
+    },
+    {
+      "path": "src/global.json",
+      "sha256": "1247806ae61c9f97e8c532dd66387ba4940263524ca8dc1d2788627036a9594c"
+    },
+    {
+      "path": "src/runtimeconfig.template.json",
+      "sha256": "227ae77fcbae754fbe973addd98082e0b800246efdc53ffde6f9db70d202c663"
+    }
+  ],
+  "fixture_files": [
+    {
+      "path": "work\\pr67_fixture\\StorageReview.cs",
+      "sha256": "ad81c1d3c60112c7c79b6bff7fa1a30ad2dd031f02f15b11e98bcc2a5fcac522"
+    },
+    {
+      "path": "work\\pr67_fixture\\StorageReview.csproj",
+      "sha256": "dc8890f742aa7682a8f458eb30fb8f9004e358444f15b27038d1de5e1c05ea4d"
+    }
+  ],
+  "scope": "No full Main fault injection or performance claim. Root owns the latest normal-condition Main matrix and publication. No remote push or PR editing performed by this reviewer.",
+  "humanizer": {
+    "skill": "humanize-kit:humanizer",
+    "mode": "Embedded",
+    "applied_to": "English review notes and local merge commit message",
+    "fidelity": "Technical claims, hashes, counts and limits preserved."
+  }
+}

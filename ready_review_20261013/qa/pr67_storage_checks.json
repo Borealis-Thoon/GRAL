@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "checks": 16314,
+  "groups": {
+    "finite_signed_mass_bitwise": 8080,
+    "finite_signed_mass_no_rejection": 8080,
+    "invalid_input_preserves_all_cells": 30,
+    "invalid_input_count_once": 30,
+    "derived_nonfinite_preserves_all_cells": 12,
+    "derived_nonfinite_count_once": 12,
+    "signed_total_overflow_preserves_all_cells": 4,
+    "signed_total_overflow_count_once": 4,
+    "preexisting_nonfinite_preserved_not_repaired": 8,
+    "preexisting_nonfinite_write_count": 8,
+    "other_source_group_unaffected": 8,
+    "reflected_call_noop_before_addressing": 2,
+    "same_cell_parallel_finite_sum": 6,
+    "same_cell_parallel_invalid_count": 6,
+    "same_cell_signed_exact_sum": 6,
+    "same_cell_signed_not_rejected": 6,
+    "same_cell_overflow_one_survives": 6,
+    "same_cell_overflow_rejected_count": 6
+  },
+  "finite_bitwise_pairs": 8080,
+  "invalid_write_cases": 46,
+  "parallel_workers": [
+    1,
+    2,
+    8
+  ],
+  "scope": "Actual baseline and candidate DLL storage methods. Finite signed mass preservation, non-finite write rejection, destination overflow, and concurrent same-cell writes. Existing non-finite cells remain unchanged; finite invalid domain indices and malformed grid dimensions remain outside this patch. No Main fault injection or performance claim.",
+  "dlls": [
+    {
+      "path": "${REVIEW_JOB}\\work\\pr66\\.review_validation\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "sha256": "d0dc4366c06d63733db59ef22e456441dd236c9c0433dacdd5c042dca0b0205a"
+    },
+    {
+      "path": "${REVIEW_JOB}\\work\\pr67\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "sha256": "801e1dc383bfdf54b82fd3cec22d393f7d0a8e36fda0519a2223035c897560a1"
+    }
+  ]
+}

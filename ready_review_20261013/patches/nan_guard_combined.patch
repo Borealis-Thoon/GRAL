@@ -1,0 +1,380 @@
+diff --git a/src/Program.cs b/src/Program.cs
+index 4793f10..28d6e91 100644
+--- a/src/Program.cs
++++ b/src/Program.cs
+@@ -727,6 +727,20 @@ namespace GRAL_2001
+                     {
+                         goto FinishGral;
+                     }
++                    long nonFiniteParticles = Interlocked.Exchange(ref NonFiniteParticleCount, 0);
++                    if (nonFiniteParticles > 0)
++                    {
++                        Info = $"Rejected {nonFiniteParticles} non-finite particle states in weather situation {IWET}.";
++                        Console.WriteLine(Info);
++                        ProgramWriters.LogfileGralCoreWrite(Info);
++                    }
++                    long nonFiniteResidualWrites = Interlocked.Exchange(ref TransientConcentration.NonFiniteResidualWriteCount, 0);
++                    if (nonFiniteResidualWrites > 0)
++                    {
++                        Info = $"Skipped {nonFiniteResidualWrites} non-finite residual writes in weather situation {IWET}.";
++                        Console.WriteLine(Info);
++                        ProgramWriters.LogfileGralCoreWrite(Info);
++                    }
+                     // Wait until conz4d file is written
+                     if (ThreadWriteConz4dFile != null) // if Thread has been started -> wait until GFF--WriteThread has been finished
+                     {
+diff --git a/src/ProgramFunctions.cs b/src/ProgramFunctions.cs
+index 862a986..199a1c3 100644
+--- a/src/ProgramFunctions.cs
++++ b/src/ProgramFunctions.cs
+@@ -23,6 +23,19 @@ namespace GRAL_2001
+ {
+     partial class Program
+     {
++        internal static long NonFiniteParticleCount;
++
++        [MethodImpl(MethodImplOptions.AggressiveInlining)]
++        internal static bool ParticleStateIsFinite(double x, double y, float z, double mass, float dt)
++        {
++            if (double.IsFinite(x) && double.IsFinite(y) && float.IsFinite(z) &&
++                double.IsFinite(mass) && float.IsFinite(dt))
++            {
++                return true;
++            }
++            Interlocked.Increment(ref NonFiniteParticleCount);
++            return false;
++        }
+         /// <summary>
+         /// Generate the vertical grid for GRAL calculations for flat terrain
+         /// </summary>
+diff --git a/src/Transient_Concentration.cs b/src/Transient_Concentration.cs
+index cb638a4..5c76ca8 100644
+--- a/src/Transient_Concentration.cs
++++ b/src/Transient_Concentration.cs
+@@ -10,12 +10,15 @@
+ ///</remarks>
+ #endregion
+ 
++using System;
+ using System.Runtime.CompilerServices;
++using System.Threading;
+ 
+ namespace GRAL_2001
+ {
+     internal class TransientConcentration
+     {
++        internal static long NonFiniteResidualWriteCount;
+ 
+         /// <summary>
+         ///Store the particle concentration in the transient grid
+@@ -33,14 +36,33 @@ namespace GRAL_2001
+         {
+             if (reflexion_flag == 0)
+             {
+-                int IndexK3d = BinarySearchTransient(zcoord_nteil - AHint);
++                float height = zcoord_nteil - AHint;
++                if (!double.IsFinite(xsi) || !double.IsFinite(eta) ||
++                    !float.IsFinite(height) || !double.IsFinite(masse))
++                {
++                    Interlocked.Increment(ref NonFiniteResidualWriteCount);
++                    return;
++                }
++                int IndexK3d = BinarySearchTransient(height);
+                 int IndexI3d = (int)(xsi / Program.DXK) + 1;
+                 int IndexJ3d = (int)(eta / Program.DYK) + 1;
+ 
++                float concentration = (float)(masse * Program.GridVolume * Program.TAUS / (Area_cart * Program.DZK_Trans[IndexK3d]));
++                if (!float.IsFinite(concentration))
++                {
++                    Interlocked.Increment(ref NonFiniteResidualWriteCount);
++                    return;
++                }
+                 float[] conz5d_L = Program.Conz5d[IndexI3d][IndexJ3d][IndexK3d];
+                 lock (conz5d_L.SyncRoot)
+                 {
+-                    conz5d_L[SG_nteil] += (float)(masse * Program.GridVolume * Program.TAUS / (Area_cart * Program.DZK_Trans[IndexK3d]));
++                    float total = conz5d_L[SG_nteil] + concentration;
++                    if (!float.IsFinite(total))
++                    {
++                        Interlocked.Increment(ref NonFiniteResidualWriteCount);
++                        return;
++                    }
++                    conz5d_L[SG_nteil] = total;
+                 }
+             }
+         }
+@@ -61,14 +83,33 @@ namespace GRAL_2001
+         {
+             if (reflexion_flag == 0)
+             {
+-                int IndexK3d = BinarySearchTransient(zcoord_nteil - AHint);
++                float height = zcoord_nteil - AHint;
++                if (!double.IsFinite(xsi) || !double.IsFinite(eta) ||
++                    !float.IsFinite(height) || !double.IsFinite(mass_real))
++                {
++                    Interlocked.Increment(ref NonFiniteResidualWriteCount);
++                    return;
++                }
++                int IndexK3d = BinarySearchTransient(height);
+                 int IndexI3d = (int)(xsi / Program.DXK) + 1;
+                 int IndexJ3d = (int)(eta / Program.DYK) + 1;
+ 
++                float concentration = (float)(mass_real * Program.TAUS / (Area_cart * Program.DZK_Trans[IndexK3d]));
++                if (!float.IsFinite(concentration))
++                {
++                    Interlocked.Increment(ref NonFiniteResidualWriteCount);
++                    return;
++                }
+                 float[] conz5d_L = Program.Conz5d[IndexI3d][IndexJ3d][IndexK3d];
+                 lock (conz5d_L.SyncRoot)
+                 {
+-                    conz5d_L[SG_nteil] += (float)(mass_real * Program.TAUS / (Area_cart * Program.DZK_Trans[IndexK3d]));
++                    float total = conz5d_L[SG_nteil] + concentration;
++                    if (!float.IsFinite(total))
++                    {
++                        Interlocked.Increment(ref NonFiniteResidualWriteCount);
++                        return;
++                    }
++                    conz5d_L[SG_nteil] = total;
+                 }
+             }
+         }
+diff --git a/src/Zeitschleife.cs b/src/Zeitschleife.cs
+index 7554172..b35abd5 100644
+--- a/src/Zeitschleife.cs
++++ b/src/Zeitschleife.cs
+@@ -154,6 +154,11 @@ namespace GRAL_2001
+ 
+             double decay_rate = Program.DecayRate[Program.ParticleSG[nteil]]; // decay rate for real source group number of this source
+ 
++            if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, 0.1F))
++            {
++                goto REMOVE_PARTICLE;
++            }
++
+             //for transient simulations dispersion time needs to be equally distributed from zero to TAUS
+             float tgesamt = Program.DispTimeSum;
+             if (ISTATIONAER == Consts.TransientMode)
+@@ -177,6 +182,11 @@ namespace GRAL_2001
+                         goto REMOVE_PARTICLE;
+                     }
+                 }
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, 0.1F))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 //try
+                 if (Deposition_type < Consts.DepoOnly) // compute concentrations for this particle
+                 {
+@@ -543,6 +553,11 @@ namespace GRAL_2001
+         MOVE_FORWARD:
+             while (timestep_number <= Max_Loops)
+             {
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 ++timestep_number;
+                 double xcoord_nteil_Prev = xcoord_nteil;
+                 double ycoord_nteil_Prev = ycoord_nteil;
+@@ -682,6 +697,11 @@ namespace GRAL_2001
+                      */
+                 }
+ 
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 float dummyterm = curt - Program.Pow2(skew) / varw - varw2;
+                 if (dummyterm == 0)
+                 {
+@@ -873,6 +893,11 @@ namespace GRAL_2001
+                     zcoord_nteil -= vsed * idt;
+                 }
+ 
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 //control dispersion time of particles
+                 auszeit += idt;
+                 if (ISTATIONAER == Consts.TransientMode)
+@@ -1111,6 +1136,11 @@ namespace GRAL_2001
+                     Math.Clamp(idt, 0.05F, 0.5F);
+ 
+                     //idt = (float)Math.Min(Program.GralDx / (tunpa + 0.05F) * 0.5F, 0.5);
++                    if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                    {
++                        goto REMOVE_PARTICLE;
++                    }
++
+                     float tunpao = tunpa;
+ 
+                     //dispersion time of each particle
+@@ -1224,6 +1254,11 @@ namespace GRAL_2001
+                     ycoord_nteil = ytun + yneu * tuncos + Program.yturb[nteil];
+                      */
+ 
++                    if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                    {
++                        goto REMOVE_PARTICLE;
++                    }
++
+                     //coordinate transformation towards model grid
+                     xsi = xcoord_nteil - IKOOAGRAL;
+                     eta = ycoord_nteil - JKOOAGRAL;
+@@ -1518,6 +1553,11 @@ namespace GRAL_2001
+                 int back = 1;
+                 while (back == 1)
+                 {
++                    if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                    {
++                        goto REMOVE_PARTICLE;
++                    }
++
+                     //coordinate transformation towards model grid
+                     xsi = xcoord_nteil - IKOOAGRAL;
+                     eta = ycoord_nteil - JKOOAGRAL;
+@@ -1952,6 +1992,12 @@ namespace GRAL_2001
+ 
+             MOVE_TO_CONCENTRATIONCALCULATION:
+ 
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
++
+                 //coordinate indices
+                 int iko = (int)(xsi * ConcGridXRez) + 1;
+                 int jko = (int)(eta * ConcGridYRez) + 1;
+@@ -2013,6 +2059,11 @@ namespace GRAL_2001
+                     masse *= Math.Exp(-decay_rate * idt);
+                 }
+ 
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 // compute Wet deposition
+                 if (Program.WetDeposition == true && Program.WetDepoRW != 0)
+                 {
+@@ -2024,6 +2075,11 @@ namespace GRAL_2001
+                         epsilonW_Masse = masse;
+                         ex = true;
+                     }
++                    if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, epsilonW_Masse, idt))
++                    {
++                        goto REMOVE_PARTICLE;
++                    }
++
+                     masse -= epsilonW_Masse;
+ 
+                     if (!Program.WetDopoDropDrift) // default deposition on the position of the particle
+diff --git a/src/Zeitschleife_nonsteadystate.cs b/src/Zeitschleife_nonsteadystate.cs
+index 8b6fb24..3eb60f6 100644
+--- a/src/Zeitschleife_nonsteadystate.cs
++++ b/src/Zeitschleife_nonsteadystate.cs
+@@ -41,6 +41,12 @@ namespace GRAL_2001
+             double Vol_ratio = Program.DXK * Program.DYK * Program.DZK_Trans[k] / Program.GridVolume; // volume of this transient grid cell
+             double masse = TransConcentration * Vol_ratio / Program.TAUS;     //mass related to the concentration grid
+             
++            if (!double.IsFinite(masse))
++            {
++                Interlocked.Increment(ref Program.NonFiniteParticleCount);
++                return;
++            }
++
+             // Split summed transient particles; limit the count before converting to Int32.
+             int transParticlesSplit = (int)Math.Min(100000,
+                 Math.Floor(Math.Floor(masse / Program.ParticleMassMean) / 10) + 1);
+@@ -184,6 +190,12 @@ namespace GRAL_2001
+             //decay rate
+             double decay_rate = Program.DecayRate[Program.SourceGroups[SG]]; // decay rate for real source group number of this source
+ 
++            if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, 0.1F) ||
++                !Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, mass_real, 0.1F))
++            {
++                goto REMOVE_PARTICLE;
++            }
++
+             //cell-indices of particles moving in the microscale flow field
+             double xsi = xcoord_nteil - IKOOAGRAL;
+             double eta = ycoord_nteil - JKOOAGRAL;
+@@ -313,6 +325,11 @@ namespace GRAL_2001
+             //for (int izeit = 1; izeit <= 100000000; izeit++)
+             while (timestep_number <= Max_Loops)
+             {
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 ++timestep_number;
+                 double xcoord_nteil_Prev = xcoord_nteil;
+                 double ycoord_nteil_Prev = ycoord_nteil;
+@@ -434,6 +451,11 @@ namespace GRAL_2001
+ 
+                 Math.Clamp(idt, 0.1F, 4F);
+ 
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 //control dispersion time of particles
+                 auszeit += idt;
+                 if (auszeit >= Program.DispTimeSum)
+@@ -620,6 +642,11 @@ namespace GRAL_2001
+                 int back = 1;
+                 while (back == 1)
+                 {
++                    if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                    {
++                        goto REMOVE_PARTICLE;
++                    }
++
+                     //coordinate transformation towards model grid
+                     xsi = xcoord_nteil - IKOOAGRAL;
+                     eta = ycoord_nteil - JKOOAGRAL;
+@@ -984,6 +1011,11 @@ namespace GRAL_2001
+                     }
+                 }
+ 
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 //coordinate indices
+                 int iko = (int)(xsi * ConcGridXRez) + 1;
+                 int jko = (int)(eta * ConcGridYRez) + 1;
+@@ -1055,6 +1087,11 @@ namespace GRAL_2001
+                     masse *= Math.Exp(-decay_rate * idt);
+                 }
+ 
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 // compute Wet deposition
+                 if (Program.WetDeposition == true && Program.WetDepoRW != 0)
+                 {
+@@ -1067,6 +1104,11 @@ namespace GRAL_2001
+                         ex = true; // masse <= 0!
+                     }
+ 
++                    if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, epsilonW_Masse, idt))
++                    {
++                        goto REMOVE_PARTICLE;
++                    }
++
+                     masse -= epsilonW_Masse;
+ 
+                     if (!Program.WetDopoDropDrift) // default deposition on the position of the particle

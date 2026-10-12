@@ -1,0 +1,115 @@
+{
+  "guard_block_count": 18,
+  "source_blocks": [
+    {
+      "file": "Zeitschleife.cs",
+      "line": 157,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, 0.1F))\n            {\n                goto REMOVE_PARTICLE;\n            }",
+      "sha256": "a3d952c6612f926108bb7cd83358bfbdb4a82d438be7a4a36df6db210dd32631"
+    },
+    {
+      "file": "Zeitschleife.cs",
+      "line": 185,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, 0.1F))\n                {\n                    goto REMOVE_PARTICLE;\n                }",
+      "sha256": "b031112b18ee01a064adbba397dc3f169704c1a1578ae528ecbcb7f17cdb1808"
+    },
+    {
+      "file": "Zeitschleife.cs",
+      "line": 556,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                {\n                    goto REMOVE_PARTICLE;\n                }",
+      "sha256": "4398dcdd763849ce24b057ba8f7b3730106f6b6e3f4ea8bc2bc856ef6b120933"
+    },
+    {
+      "file": "Zeitschleife.cs",
+      "line": 700,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                {\n                    goto REMOVE_PARTICLE;\n                }",
+      "sha256": "4398dcdd763849ce24b057ba8f7b3730106f6b6e3f4ea8bc2bc856ef6b120933"
+    },
+    {
+      "file": "Zeitschleife.cs",
+      "line": 896,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                {\n                    goto REMOVE_PARTICLE;\n                }",
+      "sha256": "4398dcdd763849ce24b057ba8f7b3730106f6b6e3f4ea8bc2bc856ef6b120933"
+    },
+    {
+      "file": "Zeitschleife.cs",
+      "line": 1139,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                    {\n                        goto REMOVE_PARTICLE;\n                    }",
+      "sha256": "292080ce2b4e0d64ef783a4bb94277358f3d50691b14a383d51372509ad3ebc2"
+    },
+    {
+      "file": "Zeitschleife.cs",
+      "line": 1257,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                    {\n                        goto REMOVE_PARTICLE;\n                    }",
+      "sha256": "292080ce2b4e0d64ef783a4bb94277358f3d50691b14a383d51372509ad3ebc2"
+    },
+    {
+      "file": "Zeitschleife.cs",
+      "line": 1556,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                    {\n                        goto REMOVE_PARTICLE;\n                    }",
+      "sha256": "292080ce2b4e0d64ef783a4bb94277358f3d50691b14a383d51372509ad3ebc2"
+    },
+    {
+      "file": "Zeitschleife.cs",
+      "line": 1995,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                {\n                    goto REMOVE_PARTICLE;\n                }",
+      "sha256": "4398dcdd763849ce24b057ba8f7b3730106f6b6e3f4ea8bc2bc856ef6b120933"
+    },
+    {
+      "file": "Zeitschleife.cs",
+      "line": 2062,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                {\n                    goto REMOVE_PARTICLE;\n                }",
+      "sha256": "4398dcdd763849ce24b057ba8f7b3730106f6b6e3f4ea8bc2bc856ef6b120933"
+    },
+    {
+      "file": "Zeitschleife.cs",
+      "line": 2078,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, epsilonW_Masse, idt))\n                    {\n                        goto REMOVE_PARTICLE;\n                    }",
+      "sha256": "d37c9a52639ed8068bb438b17e5a20ff49068a3a126c9865e6cbef40aedd7ca1"
+    },
+    {
+      "file": "Zeitschleife_nonsteadystate.cs",
+      "line": 193,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, 0.1F) ||\n                !Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, mass_real, 0.1F))\n            {\n                goto REMOVE_PARTICLE;\n            }",
+      "sha256": "3bca284702630bb32f431590dd864fc5698f1cf410815d2c8aff4f0776dabba2"
+    },
+    {
+      "file": "Zeitschleife_nonsteadystate.cs",
+      "line": 328,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                {\n                    goto REMOVE_PARTICLE;\n                }",
+      "sha256": "4398dcdd763849ce24b057ba8f7b3730106f6b6e3f4ea8bc2bc856ef6b120933"
+    },
+    {
+      "file": "Zeitschleife_nonsteadystate.cs",
+      "line": 454,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                {\n                    goto REMOVE_PARTICLE;\n                }",
+      "sha256": "4398dcdd763849ce24b057ba8f7b3730106f6b6e3f4ea8bc2bc856ef6b120933"
+    },
+    {
+      "file": "Zeitschleife_nonsteadystate.cs",
+      "line": 645,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                    {\n                        goto REMOVE_PARTICLE;\n                    }",
+      "sha256": "292080ce2b4e0d64ef783a4bb94277358f3d50691b14a383d51372509ad3ebc2"
+    },
+    {
+      "file": "Zeitschleife_nonsteadystate.cs",
+      "line": 1014,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                {\n                    goto REMOVE_PARTICLE;\n                }",
+      "sha256": "4398dcdd763849ce24b057ba8f7b3730106f6b6e3f4ea8bc2bc856ef6b120933"
+    },
+    {
+      "file": "Zeitschleife_nonsteadystate.cs",
+      "line": 1090,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                {\n                    goto REMOVE_PARTICLE;\n                }",
+      "sha256": "4398dcdd763849ce24b057ba8f7b3730106f6b6e3f4ea8bc2bc856ef6b120933"
+    },
+    {
+      "file": "Zeitschleife_nonsteadystate.cs",
+      "line": 1107,
+      "code": "if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, epsilonW_Masse, idt))\n                    {\n                        goto REMOVE_PARTICLE;\n                    }",
+      "sha256": "d37c9a52639ed8068bb438b17e5a20ff49068a3a126c9865e6cbef40aedd7ca1"
+    }
+  ],
+  "receptor_cleanup_sha256": "b46793701b08eb7c1dc4ee93a51430bf3da791746726c0ccca4d8e0638957559",
+  "scope": "Actual production branch and receptor exit blocks compiled with a fixture facade bound to the candidate DLL helper. This is component control-flow validation, not a full tracking run."
+}

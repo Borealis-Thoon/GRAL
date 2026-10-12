@@ -1,0 +1,109 @@
+{
+  "status": "pass",
+  "review_type": "Independent source and merge cross-review",
+  "upstream": "324dd08161bb2a4a4d02a43f33e2a7f4ebd0eff7",
+  "heads": {
+    "66": "cf09cb2b0af9f5a96ee97de4f060f1c4d5161437",
+    "67": "4b8f5e98f63d4a6d0768a1114b357874ec16ead3",
+    "combined": "4690ee84e859e626066969f543bb7b36a47ded91"
+  },
+  "confirmed_findings": [],
+  "checks": [
+    {
+      "name": "pr66_original_patch_preserved",
+      "pass": true,
+      "detail": "Ordered added and deleted lines match the original PR exactly; only context and line positions changed after upstream merges."
+    },
+    {
+      "name": "pr67_original_patch_preserved",
+      "pass": true,
+      "detail": "Ordered added and deleted lines match the original PR exactly; only context and line positions changed after upstream merges."
+    },
+    {
+      "name": "combined_scope_union",
+      "pass": true,
+      "detail": [
+        "src/Program.cs",
+        "src/ProgramFunctions.cs",
+        "src/Transient_Concentration.cs",
+        "src/Zeitschleife.cs",
+        "src/Zeitschleife_nonsteadystate.cs"
+      ]
+    },
+    {
+      "name": "combined_exact_file_src/ProgramFunctions.cs",
+      "pass": true,
+      "detail": "Combined source matches the corresponding reviewed PR byte-for-byte after line-ending normalization."
+    },
+    {
+      "name": "combined_exact_file_src/Transient_Concentration.cs",
+      "pass": true,
+      "detail": "Combined source matches the corresponding reviewed PR byte-for-byte after line-ending normalization."
+    },
+    {
+      "name": "combined_exact_file_src/Zeitschleife.cs",
+      "pass": true,
+      "detail": "Combined source matches the corresponding reviewed PR byte-for-byte after line-ending normalization."
+    },
+    {
+      "name": "combined_exact_file_src/Zeitschleife_nonsteadystate.cs",
+      "pass": true,
+      "detail": "Combined source matches the corresponding reviewed PR byte-for-byte after line-ending normalization."
+    },
+    {
+      "name": "both_log_blocks_exact",
+      "pass": true,
+      "detail": "Removing either seven-line counter/report block yields the other PR Program.cs exactly."
+    },
+    {
+      "name": "counter_exchange_once_each",
+      "pass": true,
+      "detail": "Each counter is exchanged independently once per completed weather situation."
+    },
+    {
+      "name": "report_after_workers_before_output",
+      "pass": true,
+      "detail": "Both reports remain after synchronous particle work and before concentration transfer/output."
+    },
+    {
+      "name": "residual_guard_before_split_conversion",
+      "pass": true,
+      "detail": "The non-finite mass rejection precedes the upstream bounded Int32 conversion."
+    },
+    {
+      "name": "residual_seeds_preserved",
+      "pass": true,
+      "detail": "Upstream seed mixer, particle identity and fixed-point exclusions are unchanged."
+    },
+    {
+      "name": "storage_locks_preserved",
+      "pass": true,
+      "detail": "Each residual store checks its proposed total under the original cell lock before assignment."
+    },
+    {
+      "name": "unrelated_upstream_files_preserved",
+      "pass": true,
+      "detail": {
+        "unchanged_tracked_files": 93
+      }
+    }
+  ],
+  "review_conclusions": [
+    "The original guard changes retain their exact added and deleted lines after merging the upstream seed and split-bound work.",
+    "The combined source contains both guards without changing either standalone implementation.",
+    "Normal finite-state arithmetic remains unchanged by these source edits. Runtime verification is recorded separately by the main reviewer."
+  ],
+  "retained_scope_limits": [
+    "The particle guard rejects non-finite state fields at selected boundaries. It does not validate every physical parameter or prevent every overflow of finite operands.",
+    "The residual store rejects a non-finite proposed update and retains the prior cell value. It does not repair an already non-finite stored cell.",
+    "Counters are rejection/write-event counts, not estimates of corrected concentration cells or physical accuracy.",
+    "Rejected particle paths preserve earlier accumulated contributions; the code does not roll back a whole trajectory."
+  ],
+  "new_runtime_tests": 0,
+  "implementation_changes": 0,
+  "humanize": {
+    "skill": "humanize-kit:humanizer",
+    "mode": "Embedded",
+    "completed": true
+  }
+}

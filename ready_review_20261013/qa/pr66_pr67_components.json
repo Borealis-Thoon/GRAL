@@ -1,0 +1,491 @@
+{
+  "status": "pass",
+  "checks_passed": 1917,
+  "helper_checks": 62,
+  "production_guard_sites": 18,
+  "production_branch_checks": 1341,
+  "actual_driver_cases": 20,
+  "actual_driver_checks": 49,
+  "wet_arithmetic_cases": 14,
+  "wet_arithmetic_checks": 36,
+  "wet_arithmetic_records": [
+    {
+      "driver": "new",
+      "coefficient": "0",
+      "baseline_reaches_write": false,
+      "baseline_remaining_mass_finite": true,
+      "candidate_reaches_write": false,
+      "candidate_rejected_states": 0
+    },
+    {
+      "driver": "new",
+      "coefficient": "0.02",
+      "baseline_reaches_write": true,
+      "baseline_remaining_mass_finite": true,
+      "candidate_reaches_write": true,
+      "candidate_rejected_states": 0
+    },
+    {
+      "driver": "new",
+      "coefficient": "1",
+      "baseline_reaches_write": true,
+      "baseline_remaining_mass_finite": true,
+      "candidate_reaches_write": true,
+      "candidate_rejected_states": 0
+    },
+    {
+      "driver": "new",
+      "coefficient": "NaN",
+      "baseline_reaches_write": true,
+      "baseline_remaining_mass_finite": false,
+      "candidate_reaches_write": false,
+      "candidate_rejected_states": 1
+    },
+    {
+      "driver": "new",
+      "coefficient": "positive_inf",
+      "baseline_reaches_write": true,
+      "baseline_remaining_mass_finite": true,
+      "candidate_reaches_write": true,
+      "candidate_rejected_states": 0
+    },
+    {
+      "driver": "new",
+      "coefficient": "negative_inf",
+      "baseline_reaches_write": true,
+      "baseline_remaining_mass_finite": false,
+      "candidate_reaches_write": false,
+      "candidate_rejected_states": 1
+    },
+    {
+      "driver": "residual",
+      "coefficient": "0",
+      "baseline_reaches_write": false,
+      "baseline_remaining_mass_finite": true,
+      "candidate_reaches_write": false,
+      "candidate_rejected_states": 0
+    },
+    {
+      "driver": "residual",
+      "coefficient": "0.02",
+      "baseline_reaches_write": true,
+      "baseline_remaining_mass_finite": true,
+      "candidate_reaches_write": true,
+      "candidate_rejected_states": 0
+    },
+    {
+      "driver": "residual",
+      "coefficient": "1",
+      "baseline_reaches_write": true,
+      "baseline_remaining_mass_finite": true,
+      "candidate_reaches_write": true,
+      "candidate_rejected_states": 0
+    },
+    {
+      "driver": "residual",
+      "coefficient": "NaN",
+      "baseline_reaches_write": true,
+      "baseline_remaining_mass_finite": false,
+      "candidate_reaches_write": false,
+      "candidate_rejected_states": 1
+    },
+    {
+      "driver": "residual",
+      "coefficient": "positive_inf",
+      "baseline_reaches_write": true,
+      "baseline_remaining_mass_finite": true,
+      "candidate_reaches_write": true,
+      "candidate_rejected_states": 0
+    },
+    {
+      "driver": "residual",
+      "coefficient": "negative_inf",
+      "baseline_reaches_write": true,
+      "baseline_remaining_mass_finite": false,
+      "candidate_reaches_write": false,
+      "candidate_rejected_states": 1
+    }
+  ],
+  "normal_storage_cases": 56,
+  "normal_storage_checks": 112,
+  "faulty_storage_cases": 32,
+  "faulty_storage_checks": 98,
+  "baseline_fault_cases_with_nonfinite_storage": 12,
+  "baseline_fault_cases_with_exceptions": 8,
+  "parallel_workers": [
+    1,
+    2
+  ],
+  "parallel_checks": 13,
+  "report_cases": 8,
+  "report_checks": 38,
+  "expiry_fault_cases": 16,
+  "expiry_normal_pairs": 40,
+  "expiry_checks": 164,
+  "expiry_records": [
+    {
+      "source_type": 0,
+      "case_name": "NaN_z",
+      "baseline_storage_calls": 1,
+      "candidate_storage_calls": 0
+    },
+    {
+      "source_type": 0,
+      "case_name": "positive_inf_z",
+      "baseline_storage_calls": 1,
+      "candidate_storage_calls": 0
+    },
+    {
+      "source_type": 0,
+      "case_name": "negative_inf_z",
+      "baseline_storage_calls": 1,
+      "candidate_storage_calls": 0
+    },
+    {
+      "source_type": 1,
+      "case_name": "NaN_z",
+      "baseline_storage_calls": 1,
+      "candidate_storage_calls": 0
+    },
+    {
+      "source_type": 1,
+      "case_name": "positive_inf_z",
+      "baseline_storage_calls": 1,
+      "candidate_storage_calls": 0
+    },
+    {
+      "source_type": 1,
+      "case_name": "negative_inf_z",
+      "baseline_storage_calls": 1,
+      "candidate_storage_calls": 0
+    },
+    {
+      "source_type": 2,
+      "case_name": "NaN_z",
+      "baseline_storage_calls": 1,
+      "candidate_storage_calls": 0
+    },
+    {
+      "source_type": 2,
+      "case_name": "positive_inf_z",
+      "baseline_storage_calls": 1,
+      "candidate_storage_calls": 0
+    },
+    {
+      "source_type": 2,
+      "case_name": "negative_inf_z",
+      "baseline_storage_calls": 1,
+      "candidate_storage_calls": 0
+    },
+    {
+      "source_type": 3,
+      "case_name": "NaN_z",
+      "baseline_storage_calls": 1,
+      "candidate_storage_calls": 0
+    },
+    {
+      "source_type": 3,
+      "case_name": "positive_inf_z",
+      "baseline_storage_calls": 1,
+      "candidate_storage_calls": 0
+    },
+    {
+      "source_type": 3,
+      "case_name": "negative_inf_z",
+      "baseline_storage_calls": 1,
+      "candidate_storage_calls": 0
+    }
+  ],
+  "rng_endpoint_checks": 4,
+  "fault_records": [
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "x_NaN",
+      "baseline_nonfinite": false,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "y_NaN",
+      "baseline_nonfinite": false,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "z_NaN",
+      "baseline_nonfinite": false,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "mass_NaN",
+      "baseline_nonfinite": true,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "x_positive_inf",
+      "baseline_nonfinite": false,
+      "baseline_exception": "IndexOutOfRangeException",
+      "baseline_grid_changed": false,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "y_positive_inf",
+      "baseline_nonfinite": false,
+      "baseline_exception": "IndexOutOfRangeException",
+      "baseline_grid_changed": false,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "z_positive_inf",
+      "baseline_nonfinite": false,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "mass_positive_inf",
+      "baseline_nonfinite": true,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "x_negative_inf",
+      "baseline_nonfinite": false,
+      "baseline_exception": "IndexOutOfRangeException",
+      "baseline_grid_changed": false,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "y_negative_inf",
+      "baseline_nonfinite": false,
+      "baseline_exception": "IndexOutOfRangeException",
+      "baseline_grid_changed": false,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "z_negative_inf",
+      "baseline_nonfinite": false,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "mass_negative_inf",
+      "baseline_nonfinite": true,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "relative_height_overflow",
+      "baseline_nonfinite": false,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "float_increment_overflow",
+      "baseline_nonfinite": true,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "zero_storage_volume",
+      "baseline_nonfinite": true,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleife",
+      "fault": "finite_sum_overflow",
+      "baseline_nonfinite": true,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "x_NaN",
+      "baseline_nonfinite": false,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "y_NaN",
+      "baseline_nonfinite": false,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "z_NaN",
+      "baseline_nonfinite": false,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "mass_NaN",
+      "baseline_nonfinite": true,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "x_positive_inf",
+      "baseline_nonfinite": false,
+      "baseline_exception": "IndexOutOfRangeException",
+      "baseline_grid_changed": false,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "y_positive_inf",
+      "baseline_nonfinite": false,
+      "baseline_exception": "IndexOutOfRangeException",
+      "baseline_grid_changed": false,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "z_positive_inf",
+      "baseline_nonfinite": false,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "mass_positive_inf",
+      "baseline_nonfinite": true,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "x_negative_inf",
+      "baseline_nonfinite": false,
+      "baseline_exception": "IndexOutOfRangeException",
+      "baseline_grid_changed": false,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "y_negative_inf",
+      "baseline_nonfinite": false,
+      "baseline_exception": "IndexOutOfRangeException",
+      "baseline_grid_changed": false,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "z_negative_inf",
+      "baseline_nonfinite": false,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "mass_negative_inf",
+      "baseline_nonfinite": true,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "relative_height_overflow",
+      "baseline_nonfinite": false,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "float_increment_overflow",
+      "baseline_nonfinite": true,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "zero_storage_volume",
+      "baseline_nonfinite": true,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    },
+    {
+      "method": "Conz5dZeitschleifeTransient",
+      "fault": "finite_sum_overflow",
+      "baseline_nonfinite": true,
+      "baseline_exception": null,
+      "baseline_grid_changed": true,
+      "candidate_cell_unchanged": true,
+      "candidate_rejected_writes": 1
+    }
+  ],
+  "scope": "Actual baseline/candidate DLL helper, initial particle drivers and both storage methods; extracted production guards and receptor-exit code for mid-step control flow. No full Main fault injection in this fixture."
+}

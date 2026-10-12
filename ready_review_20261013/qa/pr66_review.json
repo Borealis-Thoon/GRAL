@@ -1,0 +1,95 @@
+{
+  "status": "pass",
+  "pr": 66,
+  "upstream": "324dd08161bb2a4a4d02a43f33e2a7f4ebd0eff7",
+  "old_head": "47c8f8f84c2c3c855523459e189e731c8c42bd3a",
+  "new_head": "cf09cb2b0af9f5a96ee97de4f060f1c4d5161437",
+  "merge_parents": [
+    "47c8f8f84c2c3c855523459e189e731c8c42bd3a",
+    "324dd08161bb2a4a4d02a43f33e2a7f4ebd0eff7"
+  ],
+  "files_vs_upstream": [
+    "src/Program.cs",
+    "src/ProgramFunctions.cs",
+    "src/Zeitschleife.cs",
+    "src/Zeitschleife_nonsteadystate.cs"
+  ],
+  "topic_diff": {
+    "added_lines": 118,
+    "removed_lines": 0,
+    "added_characters_excluding_newlines": 4528,
+    "removed_characters_excluding_newlines": 0
+  },
+  "conflict": {
+    "file": "src/Zeitschleife_nonsteadystate.cs",
+    "resolution": "Keep the finite-mass rejection before the upstream bounded split calculation. Keep upstream residual seeds and split-index argument unchanged.",
+    "confirmed_checks": [
+      "finite rejection precedes integer conversion",
+      "MixSeed body identical to upstream",
+      "ResidualSeeds body identical to upstream",
+      "full source manifest matches tested build"
+    ]
+  },
+  "implementation_findings": [],
+  "reviewed_paths": [
+    "initial new and residual particle state; emission modulation",
+    "time-step and post-movement checks before indices or expiry storage",
+    "post-decay and wet-deposition increment checks",
+    "shared receptor cleanup preserves prior finite contribution",
+    "one rejection increment per rejected state via short-circuit exit",
+    "weather-situation Exchange/report reset",
+    "finite zero and negative values retain upstream behavior",
+    "current seed and bounded-split merge compatibility"
+  ],
+  "limits": [
+    "The guards test non-finite state; they do not validate every finite physical input or prevent every downstream arithmetic overflow.",
+    "Discarded remaining particle mass is not reconstructed. Prior valid deposits and receptor contributions remain.",
+    "Extracted mid-step tests exercise actual source blocks with fixture facades, not full Main fault injection.",
+    "Main validation is run by the root agent independently."
+  ],
+  "current_common_fixture": {
+    "path": "${REVIEW_JOB}\\work\\pr66\\.review_validation\\qa\\nan_guard_component_current_both.json",
+    "checks": 1917,
+    "state_head": "cf09cb2b0af9f5a96ee97de4f060f1c4d5161437",
+    "storage_head": "4b8f5e98f63d4a6d0768a1114b357874ec16ead3",
+    "actual_driver_cases": 20,
+    "guard_sites": 18,
+    "decay_wet_cases": 14
+  },
+  "state_boundary_fixture": {
+    "status": "pass",
+    "checks": 98325,
+    "helper_cases": 98304,
+    "bit_pattern_records": [
+      {
+        "workers": 1,
+        "states": 32768,
+        "rejected": 6015
+      },
+      {
+        "workers": 2,
+        "states": 32768,
+        "rejected": 6015
+      },
+      {
+        "workers": 8,
+        "states": 32768,
+        "rejected": 6015
+      }
+    ],
+    "residual_entry_cases": 18,
+    "scope": "Actual merged #66 helper and residual Calculate method. Independent IEEE exponent-bit oracle; component-only tests."
+  },
+  "strict_build": {
+    "source": "${REVIEW_JOB}\\work\\pr66\\.review_validation\\source\\nan_guard_state\\src\\GRAL.csproj",
+    "warnings": 0,
+    "errors": 0,
+    "source_files_sha_verified": 88
+  },
+  "humanizer": {
+    "skill": "humanize-kit:humanizer",
+    "mode": "Embedded",
+    "scope": "commit and review prose",
+    "fidelity": "Technical meaning and identifiers checked after style pass"
+  }
+}

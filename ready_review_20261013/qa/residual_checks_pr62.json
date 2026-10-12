@@ -1,0 +1,58 @@
+{
+  "reference_example": {
+    "nominal_reference": 25.999999675000005,
+    "active_reference": 0.9999999875000001,
+    "continuous_all_off": 25.999999675000005,
+    "restart_all_off": 25.999999675000005,
+    "old_continuous_all_off": 0.9999999875000001,
+    "old_restart_all_off": 25.999999675000005,
+    "residual_mass": 99.99999875,
+    "k10_old_continuous": 11,
+    "k10_new_all_off": 1
+  },
+  "status": "pass",
+  "checks_passed": 10,
+  "checks": [
+    {
+      "name": "one active source",
+      "pass": true
+    },
+    {
+      "name": "positive magnitude leaves policy unchanged",
+      "pass": true
+    },
+    {
+      "name": "all off uses nominal after active",
+      "pass": true
+    },
+    {
+      "name": "fresh restart and continuous references match",
+      "pass": true
+    },
+    {
+      "name": "all off repeated idempotently",
+      "pass": true
+    },
+    {
+      "name": "later all-off situation same nominal",
+      "pass": true
+    },
+    {
+      "name": "four source classes summed",
+      "pass": true
+    },
+    {
+      "name": "inactive deposition-only excluded",
+      "pass": true
+    },
+    {
+      "name": "no time series uses all nominal sources",
+      "pass": true
+    },
+    {
+      "name": "nonpositive factors inactive fallback",
+      "pass": true
+    }
+  ],
+  "scope": "Calls actual frozen GRAL DLL methods through reflection. Main restart is tested separately. Floating-point mass splitting still rounds."
+}

@@ -1,0 +1,19 @@
+{
+  "blocks": [
+    {
+      "variant": "nan_guard_state",
+      "file": "Program.cs",
+      "line": 730,
+      "sha256": "1ba309b3fc713065e45550b6377bef1efd3ace09b97edd6dec09e9a4013e5fad",
+      "production_block": "                    long nonFiniteParticles = Interlocked.Exchange(ref NonFiniteParticleCount, 0);\n                    if (nonFiniteParticles > 0)\n                    {\n                        Info = $\"Rejected {nonFiniteParticles} non-finite particle states in weather situation {IWET}.\";\n                        Console.WriteLine(Info);\n                        ProgramWriters.LogfileGralCoreWrite(Info);\n                    }\n"
+    },
+    {
+      "variant": "nan_guard_storage",
+      "file": "Program.cs",
+      "line": 730,
+      "sha256": "44c2cb1fc168b7afd35d7db0ef474a145f20b5de258d8218817db002dd18342a",
+      "production_block": "                    long nonFiniteResidualWrites = Interlocked.Exchange(ref TransientConcentration.NonFiniteResidualWriteCount, 0);\n                    if (nonFiniteResidualWrites > 0)\n                    {\n                        Info = $\"Skipped {nonFiniteResidualWrites} non-finite residual writes in weather situation {IWET}.\";\n                        Console.WriteLine(Info);\n                        ProgramWriters.LogfileGralCoreWrite(Info);\n                    }\n"
+    }
+  ],
+  "scope": "Production Program.cs Exchange/report blocks compiled in test-only storage facades; the DLL counter increment is separately exercised."
+}

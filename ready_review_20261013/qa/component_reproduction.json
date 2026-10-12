@@ -1,0 +1,51 @@
+{
+  "status": "pass",
+  "builds": {
+    "warning_free_baseline_build": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "nan_guard_state_build": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "nan_guard_storage_build": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "pr62_build": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "pr63_build": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "nan_guard_build": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "state_boundaries_build": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "storage_build": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "residual_build": {
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "check_counts": {
+    "common": 1917,
+    "state_boundaries": 98325,
+    "storage": 16314,
+    "pr62": 10,
+    "pr63": 62
+  },
+  "extracted_blocks_match": true,
+  "elapsed_s": 12.468999999997322,
+  "scope": "Component tests only. Mid-step guard paths use freshly extracted production blocks and fixture facades; initial entry and storage tests call actual DLL methods."
+}
