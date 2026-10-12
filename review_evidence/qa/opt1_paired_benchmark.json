@@ -1,0 +1,563 @@
+{
+  "status": "pass",
+  "conditions": 18,
+  "oracle_checks": 36,
+  "paired_rounds": 7,
+  "synthetic_consecutive_repeat_fraction": 0.5,
+  "scope": "Synthetic paired height sequences with exactly 50% consecutive repeats. NKK=39 matches the two synthetic terrain test grids. These sequences are not a replay of actual Main heights. Compiled production DLL searches with a fresh value-type cache per particle; preparation is included. This measures lookup cost, not full-model runtime.",
+  "runtime": "10.0.12",
+  "stopwatch_frequency": 10000000,
+  "dlls": [
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "sha256": "bce79353b3ccb56131a2512e660f6c9dab3b501abfd70d7194e3852877da7b5b"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\tests\\opt1\\vertical_build\\Gral.dll",
+      "sha256": "8475469428964f33db284a4d303a0b74f7701bca3d659a0e79039d08935e523f"
+    }
+  ],
+  "records": [
+    {
+      "nkk": 1,
+      "lookups_per_particle": 8,
+      "workload": "paired_same_layer",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 1048576,
+      "total_lookups": 8388608,
+      "baseline_ns_per_lookup": 1.482987403869629,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 1.1688709259033203,
+      "baseline_over_candidate": 1.2687349569616124,
+      "candidate_runtime_percent_change": -21.181331489847445,
+      "baseline_rounds_ms": [
+        12.3985,
+        12.3766,
+        12.55,
+        12.8104,
+        12.9652,
+        12.3192,
+        12.4402
+      ],
+      "candidate_rounds_ms": [
+        9.8052,
+        10.0218,
+        9.7165,
+        9.8452,
+        9.7358,
+        9.794,
+        9.807
+      ]
+    },
+    {
+      "nkk": 1,
+      "lookups_per_particle": 8,
+      "workload": "paired_large_jumps",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 1048576,
+      "total_lookups": 8388608,
+      "baseline_ns_per_lookup": 1.4877915382385254,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 1.1845946311950684,
+      "baseline_over_candidate": 1.255949925028429,
+      "candidate_runtime_percent_change": -20.378991226313058,
+      "baseline_rounds_ms": [
+        13.8266,
+        12.74,
+        11.988,
+        11.7409,
+        12.6636,
+        12.4805,
+        12.0974
+      ],
+      "candidate_rounds_ms": [
+        10.0478,
+        9.9371,
+        10.9406,
+        9.8686,
+        9.7224,
+        10.1212,
+        9.8755
+      ]
+    },
+    {
+      "nkk": 1,
+      "lookups_per_particle": 64,
+      "workload": "paired_same_layer",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 262144,
+      "total_lookups": 16777216,
+      "baseline_ns_per_lookup": 1.6120314598083496,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 1.1880815029144287,
+      "baseline_over_candidate": 1.3568357523065113,
+      "candidate_runtime_percent_change": -26.29911186375501,
+      "baseline_rounds_ms": [
+        27.0454,
+        28.7081,
+        27.7386,
+        25.9796,
+        26.8407,
+        26.5744,
+        27.498
+      ],
+      "candidate_rounds_ms": [
+        19.7811,
+        21.677,
+        19.8472,
+        20.0028,
+        20.1445,
+        19.7544,
+        19.9327
+      ]
+    },
+    {
+      "nkk": 1,
+      "lookups_per_particle": 64,
+      "workload": "paired_large_jumps",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 262144,
+      "total_lookups": 16777216,
+      "baseline_ns_per_lookup": 1.5295624732971191,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 1.193070411682129,
+      "baseline_over_candidate": 1.2820387282428407,
+      "candidate_runtime_percent_change": -21.99923621881551,
+      "baseline_rounds_ms": [
+        26.2278,
+        25.1394,
+        25.9643,
+        25.6618,
+        24.6012,
+        26.0157,
+        25.5722
+      ],
+      "candidate_rounds_ms": [
+        20.4309,
+        20.1467,
+        20.0164,
+        19.9741,
+        20.2241,
+        19.8909,
+        20.0031
+      ]
+    },
+    {
+      "nkk": 1,
+      "lookups_per_particle": 256,
+      "workload": "paired_same_layer",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 65536,
+      "total_lookups": 16777216,
+      "baseline_ns_per_lookup": 1.5061140060424805,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 1.0909557342529297,
+      "baseline_over_candidate": 1.3805454783862932,
+      "candidate_runtime_percent_change": -27.56486362413133,
+      "baseline_rounds_ms": [
+        25.5091,
+        26.1562,
+        25.0514,
+        25.1079,
+        24.6028,
+        25.2684,
+        25.3033
+      ],
+      "candidate_rounds_ms": [
+        18.4668,
+        18.3773,
+        18.6281,
+        18.0401,
+        18.2481,
+        18.0685,
+        18.3032
+      ]
+    },
+    {
+      "nkk": 1,
+      "lookups_per_particle": 256,
+      "workload": "paired_large_jumps",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 65536,
+      "total_lookups": 16777216,
+      "baseline_ns_per_lookup": 1.4500856399536133,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 1.0995149612426758,
+      "baseline_over_candidate": 1.318841208231238,
+      "candidate_runtime_percent_change": -24.175860311405607,
+      "baseline_rounds_ms": [
+        23.8281,
+        24.3284,
+        25.1482,
+        24.4212,
+        23.1375,
+        24.4695,
+        24.2976
+      ],
+      "candidate_rounds_ms": [
+        18.4334,
+        18.7028,
+        18.4065,
+        18.5447,
+        18.4468,
+        18.4225,
+        18.5103
+      ]
+    },
+    {
+      "nkk": 39,
+      "lookups_per_particle": 8,
+      "workload": "paired_same_layer",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 1048576,
+      "total_lookups": 8388608,
+      "baseline_ns_per_lookup": 2.44138240814209,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 1.5971899032592773,
+      "baseline_over_candidate": 1.5285486110074489,
+      "candidate_runtime_percent_change": -34.578462680299616,
+      "baseline_rounds_ms": [
+        20.0741,
+        21.0674,
+        21.7083,
+        18.5729,
+        20.4798,
+        18.6723,
+        21.1906
+      ],
+      "candidate_rounds_ms": [
+        13.3982,
+        13.5143,
+        13.4229,
+        13.1518,
+        13.242,
+        13.2597,
+        13.411
+      ]
+    },
+    {
+      "nkk": 39,
+      "lookups_per_particle": 8,
+      "workload": "paired_large_jumps",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 1048576,
+      "total_lookups": 8388608,
+      "baseline_ns_per_lookup": 2.3397445678710938,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 1.5665769577026367,
+      "baseline_over_candidate": 1.4935395011186021,
+      "candidate_runtime_percent_change": -33.04495801744517,
+      "baseline_rounds_ms": [
+        19.6272,
+        19.6272,
+        19.1851,
+        19.6813,
+        20.3057,
+        18.2262,
+        20.5404
+      ],
+      "candidate_rounds_ms": [
+        12.8894,
+        13.9616,
+        13.1414,
+        12.926,
+        13.4246,
+        12.9565,
+        13.2565
+      ]
+    },
+    {
+      "nkk": 39,
+      "lookups_per_particle": 64,
+      "workload": "paired_same_layer",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 131072,
+      "total_lookups": 8388608,
+      "baseline_ns_per_lookup": 2.337062358856201,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 1.5959382057189941,
+      "baseline_over_candidate": 1.4643814844969636,
+      "candidate_runtime_percent_change": -31.711783398878836,
+      "baseline_rounds_ms": [
+        17.9466,
+        19.1798,
+        19.8278,
+        19.7403,
+        19.6047,
+        18.7834,
+        20.0888
+      ],
+      "candidate_rounds_ms": [
+        13.2527,
+        13.275,
+        13.3877,
+        13.4112,
+        13.3408,
+        13.5983,
+        13.5891
+      ]
+    },
+    {
+      "nkk": 39,
+      "lookups_per_particle": 64,
+      "workload": "paired_large_jumps",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 131072,
+      "total_lookups": 8388608,
+      "baseline_ns_per_lookup": 2.5197625160217285,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 1.5907645225524902,
+      "baseline_over_candidate": 1.5839946643885403,
+      "candidate_runtime_percent_change": -36.868474213830524,
+      "baseline_rounds_ms": [
+        22.1856,
+        21.2391,
+        19.9652,
+        21.1373,
+        20.488,
+        21.5258,
+        20.792
+      ],
+      "candidate_rounds_ms": [
+        13.3126,
+        13.324,
+        13.6052,
+        13.0418,
+        13.3576,
+        14.072,
+        13.3443
+      ]
+    },
+    {
+      "nkk": 39,
+      "lookups_per_particle": 256,
+      "workload": "paired_same_layer",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 32768,
+      "total_lookups": 8388608,
+      "baseline_ns_per_lookup": 2.359938621520996,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 2.055633068084717,
+      "baseline_over_candidate": 1.1480349572892443,
+      "candidate_runtime_percent_change": -12.89463847327319,
+      "baseline_rounds_ms": [
+        19.7966,
+        21.7323,
+        19.9045,
+        22.7316,
+        19.7537,
+        19.7185,
+        17.843
+      ],
+      "candidate_rounds_ms": [
+        17.6311,
+        17.2439,
+        17.5915,
+        20.4442,
+        14.7728,
+        13.756,
+        13.3212
+      ]
+    },
+    {
+      "nkk": 39,
+      "lookups_per_particle": 256,
+      "workload": "paired_large_jumps",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 32768,
+      "total_lookups": 8388608,
+      "baseline_ns_per_lookup": 2.6590585708618164,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 1.682746410369873,
+      "baseline_over_candidate": 1.580189715143916,
+      "candidate_runtime_percent_change": -36.71645939621085,
+      "baseline_rounds_ms": [
+        21.6322,
+        22.1629,
+        22.7682,
+        22.5761,
+        21.6035,
+        22.3058,
+        23.4001
+      ],
+      "candidate_rounds_ms": [
+        13.9868,
+        14.1159,
+        15.8685,
+        13.8023,
+        14.4856,
+        14.0773,
+        14.9459
+      ]
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 8,
+      "workload": "paired_same_layer",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 1048576,
+      "total_lookups": 8388608,
+      "baseline_ns_per_lookup": 3.478574752807617,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 2.194833755493164,
+      "baseline_over_candidate": 1.584892133220361,
+      "candidate_runtime_percent_change": -36.9042233828186,
+      "baseline_rounds_ms": [
+        29.1804,
+        27.9711,
+        31.0101,
+        32.7389,
+        26.7409,
+        27.0683,
+        33.562
+      ],
+      "candidate_rounds_ms": [
+        18.4116,
+        18.0521,
+        18.3068,
+        18.72,
+        17.7703,
+        18.4602,
+        18.7273
+      ]
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 8,
+      "workload": "paired_large_jumps",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 1048576,
+      "total_lookups": 8388608,
+      "baseline_ns_per_lookup": 2.998840808868408,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 1.9628524780273435,
+      "baseline_over_candidate": 1.5277973471965796,
+      "candidate_runtime_percent_change": -34.54629294683993,
+      "baseline_rounds_ms": [
+        26.5391,
+        26.0485,
+        23.4405,
+        27.2967,
+        24.864,
+        24.4007,
+        25.1561
+      ],
+      "candidate_rounds_ms": [
+        17.0819,
+        16.3974,
+        18.3999,
+        16.1658,
+        16.1759,
+        16.9349,
+        16.4656
+      ]
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 64,
+      "workload": "paired_same_layer",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 131072,
+      "total_lookups": 8388608,
+      "baseline_ns_per_lookup": 3.449416160583496,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 2.203094959259033,
+      "baseline_over_candidate": 1.5657137909950274,
+      "candidate_runtime_percent_change": -36.13136668072077,
+      "baseline_rounds_ms": [
+        28.3785,
+        28.9358,
+        27.8236,
+        36.7604,
+        29.5317,
+        27.9822,
+        30.6155
+      ],
+      "candidate_rounds_ms": [
+        19.9492,
+        18.896,
+        18.6995,
+        18.3161,
+        18.1302,
+        18.4809,
+        18.2816
+      ]
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 64,
+      "workload": "paired_large_jumps",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 65536,
+      "total_lookups": 4194304,
+      "baseline_ns_per_lookup": 3.057265281677246,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 1.9540071487426758,
+      "baseline_over_candidate": 1.5646131507985894,
+      "candidate_runtime_percent_change": -36.08643775686067,
+      "baseline_rounds_ms": [
+        12.5996,
+        12.8746,
+        12.8231,
+        12.0212,
+        13.8193,
+        12.3156,
+        12.8979
+      ],
+      "candidate_rounds_ms": [
+        7.9892,
+        8.0859,
+        8.1957,
+        7.941,
+        8.3836,
+        8.9573,
+        8.2026
+      ]
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 256,
+      "workload": "paired_same_layer",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 32768,
+      "total_lookups": 8388608,
+      "baseline_ns_per_lookup": 3.2401442527770996,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 2.0882606506347656,
+      "baseline_over_candidate": 1.5515995341827646,
+      "candidate_runtime_percent_change": -35.55038023862871,
+      "baseline_rounds_ms": [
+        29.4286,
+        26.8722,
+        27.1803,
+        26.0119,
+        26.4823,
+        27.5769,
+        27.3233
+      ],
+      "candidate_rounds_ms": [
+        21.2534,
+        17.229,
+        17.3438,
+        17.5864,
+        18.1537,
+        17.2269,
+        17.5176
+      ]
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 256,
+      "workload": "paired_large_jumps",
+      "synthetic_consecutive_repeat_fraction": 0.5,
+      "particle_repetitions": 32768,
+      "total_lookups": 8388608,
+      "baseline_ns_per_lookup": 2.9600977897644043,
+      "candidate_ns_per_lookup_including_per_particle_preparation": 1.9419312477111814,
+      "baseline_over_candidate": 1.524306173688314,
+      "candidate_runtime_percent_change": -34.39638195649811,
+      "baseline_rounds_ms": [
+        29.8004,
+        26.7303,
+        24.4951,
+        24.8311,
+        25.0145,
+        24.7432,
+        23.5168
+      ],
+      "candidate_rounds_ms": [
+        16.3998,
+        15.7566,
+        16.2901,
+        16.5492,
+        16.5176,
+        15.6976,
+        15.9712
+      ]
+    }
+  ],
+  "sink": 685271104
+}

@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "changes": [
+    {
+      "path": "reproduce/validate_main.py",
+      "original_sha256": "e9b86bca121183c87455b2ac37117a8a59d27ae0a892fd1049abd127759be463",
+      "public_sha256": "f647a346500666646fb323e883ac01557c4337e3373e3452a4f173a635e40fc6",
+      "change_scope": "Package-relative execution/plot dependency path or case-preserved DLL filename only; no GRAL implementation changes."
+    },
+    {
+      "path": "reproduce/count_topic_changes.py",
+      "original_sha256": "7a64cf98f41a86d4994015c12231242076a71ae078ba3487b56dff5198a45128",
+      "public_sha256": "d83dd1935bea2533f33609c48a68a6513873a4d6212a896adfb5c52af7ec5cbf",
+      "change_scope": "Package-relative execution/plot dependency path or case-preserved DLL filename only; no GRAL implementation changes."
+    },
+    {
+      "path": "reproduce/plot_nan_guard.py",
+      "original_sha256": "35c9bd56c9f2d34de9c92bec5715bc2a7495633a5bad81ba4c8167f3e7f0aa5e",
+      "public_sha256": "e242735b6721ec2873b54a3fd505ad45828ed306449943902ea9cf05989c89a3",
+      "change_scope": "Package-relative execution/plot dependency path or case-preserved DLL filename only; no GRAL implementation changes."
+    },
+    {
+      "path": "reproduce/plot_opt1.py",
+      "original_sha256": "06e8d9235341b6fab0c622089e922c1b0a29bf5bfad047653b9a50a6ebbc24cf",
+      "public_sha256": "56861882e692253b9bc8604d466ae56bc6547a16bcbb8fbda677da1a4c172e9a",
+      "change_scope": "Package-relative execution/plot dependency path or case-preserved DLL filename only; no GRAL implementation changes."
+    }
+  ],
+  "source_files_modified": 0
+}

@@ -1,0 +1,21 @@
+{
+  "status": "strict_build_and_component_checks_pass",
+  "fields": [
+    "float[] Levels",
+    "int Count",
+    "float Height",
+    "int Index"
+  ],
+  "first_call_marker": "Index=0",
+  "reuse_condition": "Index>0 && finite(Height) && Height==previous Height && same HOKART array/NKK",
+  "same_layer_inference": false,
+  "profile_validation_scan": false,
+  "source_files": 3,
+  "correctness_expectations_changed": false,
+  "previous_candidate": "superseded opt1_vertical_rejected_v1",
+  "benchmarked_conditions": 45,
+  "benchmarked_rounds": 7,
+  "source_postcheck": "pass",
+  "source_postcheck_files": 170,
+  "mismatches": []
+}

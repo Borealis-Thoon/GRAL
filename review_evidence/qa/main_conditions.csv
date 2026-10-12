@@ -1,0 +1,19 @@
+case,mode,source_type,actual_particle_budget,domain_width_m,resolution_m,slices,workers,situation_duration_s,weather_situations,weather_deg_speed_sc,hot_stack,synthetic_terrain,buildings,deposition,receptors,odour
+point_n100_20m,stationary,point,100,200,20,1,1,30,1,90/1/4,False,False,False,False,False,False
+point_hot_n1000_10m,stationary,point,1000,200,10,9,1,30,1,180/2.5/2,True,False,False,False,False,False
+point_n3000_40m,stationary,point,3000,200,40,1,1,30,1,270/0.5/6,False,False,False,False,False,False
+portal_n100_40m,stationary,portal,100,200,40,1,1,30,1,360/2.5/2,False,False,False,False,False,False
+portal_n1000_20m,stationary,portal,1000,200,20,1,1,30,1,270/1/4,False,False,False,False,False,False
+line_n3000_10m,stationary,line,3000,200,10,1,1,30,1,90/0.5/6,False,False,False,False,False,False
+line_n100_20m,stationary,line,100,200,20,1,1,30,1,180/1/4,False,False,False,False,False,False
+area_n1000_40m,stationary,area,1000,200,40,1,1,30,1,360/2.5/2,False,False,False,False,False,False
+area_n3000_20m,stationary,area,3000,200,20,1,1,30,1,270/0.5/6,False,False,False,False,False,False
+mixed_n100_10m,stationary,mixed,100,200,10,1,1,30,1,90/1/4,False,False,False,False,False,False
+mixed_transient_n100_40m,transient,mixed,100,200,40,1,1,30,3,270/0.5/6 | 180/0.5/6 | 90/0.5/6,False,False,False,False,False,False
+mixed_transient_n1000_20m,transient,mixed,1000,200,20,1,1,30,3,90/2.5/2 | 180/0.5/6 | 270/1/4,False,False,False,False,False,False
+mixed_transient_n3000_10m,transient,mixed,3000,200,10,1,1,30,3,360/1/4 | 270/2.5/2 | 180/0.5/6,False,False,False,False,False,False
+mixed_deposition_receptors,stationary,mixed,1000,200,20,1,1,30,1,180/2.5/2,False,False,False,True,True,False
+mixed_odour_9slices,stationary,mixed,1000,200,20,9,1,30,1,270/1/4,False,False,False,False,False,True
+flat_buildings_n1000,stationary,point,1000,200,20,9,1,30,1,90/1/4,False,False,True,False,False,False
+terrain_hot_n100,stationary,point,100,200,20,9,1,30,1,90/2.5/2,True,True,False,False,False,False
+terrain_stable_building_n1000,transient,point,1000,200,20,9,1,30,3,180/0.5/6 | 270/0.5/6 | 90/0.5/6,False,True,True,False,False,False

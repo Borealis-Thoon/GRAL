@@ -1,0 +1,3473 @@
+{
+  "status": "pass",
+  "source_files_per_variant": 85,
+  "baseline_commit": "3cfbd25505c21034673d2c850c368e953d08ef7e",
+  "variants": [
+    "warning_free_baseline",
+    "opt1_vertical_profile"
+  ],
+  "strict_builds": {
+    "warning_free_baseline": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "opt1_vertical_profile": {
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "conditions": 2,
+  "main_runs": 8,
+  "main_checks_passed": 140,
+  "single_worker_repeat_pairs": 4,
+  "baseline_candidate_pairs": 4,
+  "compared_payload_pairs": 146,
+  "actual_restart_pairs": 0,
+  "checkpoint_read_runs": 0,
+  "concentration_payloads": 288,
+  "checkpoint_payloads": 4,
+  "float_values_checked": 28800,
+  "elapsed_s": 6.266164800006663,
+  "conditions_detail": [
+    {
+      "id": "terrain_hot_n100",
+      "kind": "point",
+      "budget": 100,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "dx": 20,
+      "dy": 20,
+      "nx": 10,
+      "ny": 10,
+      "slices": 9,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "hot_stack": true,
+      "terrain": true,
+      "buildings": false,
+      "weather": [
+        [
+          9,
+          2.5,
+          2
+        ]
+      ],
+      "synthetic_terrain_recipe": {
+        "generation": "entirely_generated_by_this_fixture",
+        "coarse_domain_m": [
+          -100,
+          300,
+          -100,
+          300
+        ],
+        "coarse_cells": [
+          20,
+          20,
+          12
+        ],
+        "coarse_dx_m": 20,
+        "vertical_spacing_m": 10,
+        "terrain_equation_m": "0.02*(x+100) + 0.005*(y+100)",
+        "wind_field": "constant prescribed horizontal vector; zero vertical component; compact cm/s quantization",
+        "no_gramm_model_execution": true,
+        "formats_from": [
+          "ReadGeometryAndDomains.cs:ReadGRAMMGeb",
+          "ReadGgeomAsc.cs:ASCII branch",
+          "Windfield_Reader.cs:compact -1 format"
+        ]
+      },
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "point": 2
+      },
+      "fixed_seed": true,
+      "slice_heights_m": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22,
+        26,
+        30,
+        34
+      ],
+      "source_group_base_rates_kg_h": [
+        1.0,
+        1.0
+      ],
+      "emission_factors": [
+        [
+          1,
+          1
+        ]
+      ],
+      "interpretation": "Each weather situation integrates 30 seconds. Hour labels index inputs; no radiation-resolving meteorology is claimed."
+    },
+    {
+      "id": "terrain_stable_building_n1000",
+      "kind": "point",
+      "budget": 1000,
+      "mode": "transient",
+      "sources_per_kind": 2,
+      "dx": 20,
+      "dy": 20,
+      "nx": 10,
+      "ny": 10,
+      "slices": 9,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "hot_stack": false,
+      "terrain": true,
+      "buildings": true,
+      "weather": [
+        [
+          18,
+          0.5,
+          6
+        ],
+        [
+          27,
+          0.5,
+          6
+        ],
+        [
+          9,
+          0.5,
+          6
+        ]
+      ],
+      "synthetic_terrain_recipe": {
+        "generation": "entirely_generated_by_this_fixture",
+        "coarse_domain_m": [
+          -100,
+          300,
+          -100,
+          300
+        ],
+        "coarse_cells": [
+          20,
+          20,
+          12
+        ],
+        "coarse_dx_m": 20,
+        "vertical_spacing_m": 10,
+        "terrain_equation_m": "0.02*(x+100) + 0.005*(y+100)",
+        "wind_field": "constant prescribed horizontal vector; zero vertical component; compact cm/s quantization",
+        "no_gramm_model_execution": true,
+        "formats_from": [
+          "ReadGeometryAndDomains.cs:ReadGRAMMGeb",
+          "ReadGgeomAsc.cs:ASCII branch",
+          "Windfield_Reader.cs:compact -1 format"
+        ]
+      },
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "point": 2
+      },
+      "fixed_seed": true,
+      "slice_heights_m": [
+        2,
+        6,
+        10,
+        14,
+        18,
+        22,
+        26,
+        30,
+        34
+      ],
+      "source_group_base_rates_kg_h": [
+        1.0,
+        1.0
+      ],
+      "emission_factors": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0.5,
+          2
+        ]
+      ],
+      "interpretation": "Each weather situation integrates 30 seconds. Hour labels index inputs; no radiation-resolving meteorology is claimed."
+    }
+  ],
+  "comparisons": [
+    {
+      "case": "terrain_hot_n100",
+      "variant": "opt1_vertical_profile",
+      "repeat": 1,
+      "actual_particles": 100,
+      "payloads": 18,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "terrain_hot_n100",
+      "variant": "opt1_vertical_profile",
+      "repeat": 2,
+      "actual_particles": 100,
+      "payloads": 18,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "terrain_stable_building_n1000",
+      "variant": "opt1_vertical_profile",
+      "repeat": 1,
+      "actual_particles": 1000,
+      "payloads": 55,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "terrain_stable_building_n1000",
+      "variant": "opt1_vertical_profile",
+      "repeat": 2,
+      "actual_particles": 1000,
+      "payloads": 55,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    }
+  ],
+  "repeat_results": [
+    {
+      "case": "terrain_hot_n100",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 18
+    },
+    {
+      "case": "terrain_hot_n100",
+      "variant": "opt1_vertical_profile",
+      "payloads_equal": true,
+      "payloads": 18
+    },
+    {
+      "case": "terrain_stable_building_n1000",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 55
+    },
+    {
+      "case": "terrain_stable_building_n1000",
+      "variant": "opt1_vertical_profile",
+      "payloads_equal": true,
+      "payloads": 55
+    }
+  ],
+  "restart": [],
+  "runs": [
+    {
+      "run_id": "terrain_hot_n100_warning_free_baseline_r1",
+      "case": "terrain_hot_n100",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.5693599999940488,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ]
+      ],
+      "actual_weather_numbers": [
+        1,
+        2
+      ],
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 18,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 1800,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-102.con": "7637e73f567e1a29ce4fe7aa866d02e759e9a953a43c8fb6447b92dff812da46",
+        "00001.grz:00001-201.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-202.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-301.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-302.con": "4e916a101e2d8c569c2f4c0e93191c9ba17607380016d51f1612761567ab1888",
+        "00001.grz:00001-401.con": "463a6a47eef92d6fa9ee7058a0a7981684b7efa05f26cc0490052d2051f1dadf",
+        "00001.grz:00001-402.con": "4425c3bae2b53ca52ec298dd8ab5cd5e88ad57aa9de415e15e38ba257081e418",
+        "00001.grz:00001-501.con": "db23f700b90fe9255989251d43eb9eaf910edf92b445c0fb3f03e35089492b26",
+        "00001.grz:00001-502.con": "47209f9748919a2363068aca3173d5b7638b7f96c4a1dc2d23565e4808b7ff1e",
+        "00001.grz:00001-601.con": "5c10004230408c8ceb373aa050438803ac736b91a7ce8be34051011f7b2d72b4",
+        "00001.grz:00001-602.con": "562933725d3022add0bee441dba0603152f81b18566ef69596e84a5e3f1ee940",
+        "00001.grz:00001-701.con": "4e4525b93fd684469b38a885c89098a983781e2e045830ae667ff52ff5dbdff2",
+        "00001.grz:00001-702.con": "e8e167ff0538657460b9854b67c42181b7d14f93816e080fd227dafee318f558",
+        "00001.grz:00001-801.con": "f36c885c4c8d2b323dda72b654acd3f4f27cd1151dbd406c1d0c3477417e1bbc",
+        "00001.grz:00001-802.con": "0624fcdee23d006c51420a6543c7cad2f7bdf3f6278cebb87614153b7699468a",
+        "00001.grz:00001-901.con": "801ad73c28cddaa53c1bd4cf2ed18ab9ce9d105169520e73fcea959a39bef129",
+        "00001.grz:00001-902.con": "4e513321aecfdef203ba0023370c26683739776fbcd5bf4e82e10b2ee943f220"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "actual_particles_in_100_to_3000": true,
+        "actual_allocation_equals_configured_budget": true,
+        "actual_source_type_counts": true,
+        "actual_meteorology": true,
+        "actual_weather_sequence": true,
+        "dynamic_dense_v03_grid": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "within_60_second_main_limit": true,
+        "normal_guard_diagnostics_zero_or_unreported": true,
+        "actual_synthetic_terrain_wind_input_path": true
+      },
+      "checks_passed": 16,
+      "restart_loaded": false,
+      "actual_grid_headers": [
+        {
+          "name": "00001-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        }
+      ],
+      "normal_guard_diagnostics": {
+        "rejected_particle_states_reported": [],
+        "skipped_residual_writes_reported": [],
+        "zero_or_unreported": true
+      }
+    },
+    {
+      "run_id": "terrain_hot_n100_warning_free_baseline_r2",
+      "case": "terrain_hot_n100",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.3142271999968216,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ]
+      ],
+      "actual_weather_numbers": [
+        1,
+        2
+      ],
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 18,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 1800,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-102.con": "7637e73f567e1a29ce4fe7aa866d02e759e9a953a43c8fb6447b92dff812da46",
+        "00001.grz:00001-201.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-202.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-301.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-302.con": "4e916a101e2d8c569c2f4c0e93191c9ba17607380016d51f1612761567ab1888",
+        "00001.grz:00001-401.con": "463a6a47eef92d6fa9ee7058a0a7981684b7efa05f26cc0490052d2051f1dadf",
+        "00001.grz:00001-402.con": "4425c3bae2b53ca52ec298dd8ab5cd5e88ad57aa9de415e15e38ba257081e418",
+        "00001.grz:00001-501.con": "db23f700b90fe9255989251d43eb9eaf910edf92b445c0fb3f03e35089492b26",
+        "00001.grz:00001-502.con": "47209f9748919a2363068aca3173d5b7638b7f96c4a1dc2d23565e4808b7ff1e",
+        "00001.grz:00001-601.con": "5c10004230408c8ceb373aa050438803ac736b91a7ce8be34051011f7b2d72b4",
+        "00001.grz:00001-602.con": "562933725d3022add0bee441dba0603152f81b18566ef69596e84a5e3f1ee940",
+        "00001.grz:00001-701.con": "4e4525b93fd684469b38a885c89098a983781e2e045830ae667ff52ff5dbdff2",
+        "00001.grz:00001-702.con": "e8e167ff0538657460b9854b67c42181b7d14f93816e080fd227dafee318f558",
+        "00001.grz:00001-801.con": "f36c885c4c8d2b323dda72b654acd3f4f27cd1151dbd406c1d0c3477417e1bbc",
+        "00001.grz:00001-802.con": "0624fcdee23d006c51420a6543c7cad2f7bdf3f6278cebb87614153b7699468a",
+        "00001.grz:00001-901.con": "801ad73c28cddaa53c1bd4cf2ed18ab9ce9d105169520e73fcea959a39bef129",
+        "00001.grz:00001-902.con": "4e513321aecfdef203ba0023370c26683739776fbcd5bf4e82e10b2ee943f220"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "actual_particles_in_100_to_3000": true,
+        "actual_allocation_equals_configured_budget": true,
+        "actual_source_type_counts": true,
+        "actual_meteorology": true,
+        "actual_weather_sequence": true,
+        "dynamic_dense_v03_grid": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "within_60_second_main_limit": true,
+        "normal_guard_diagnostics_zero_or_unreported": true,
+        "actual_synthetic_terrain_wind_input_path": true
+      },
+      "checks_passed": 16,
+      "restart_loaded": false,
+      "actual_grid_headers": [
+        {
+          "name": "00001-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        }
+      ],
+      "normal_guard_diagnostics": {
+        "rejected_particle_states_reported": [],
+        "skipped_residual_writes_reported": [],
+        "zero_or_unreported": true
+      }
+    },
+    {
+      "run_id": "terrain_hot_n100_opt1_vertical_profile_r1",
+      "case": "terrain_hot_n100",
+      "variant": "opt1_vertical_profile",
+      "repeat": 1,
+      "elapsed_s": 0.5624133000092115,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ]
+      ],
+      "actual_weather_numbers": [
+        1,
+        2
+      ],
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 18,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 1800,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-102.con": "7637e73f567e1a29ce4fe7aa866d02e759e9a953a43c8fb6447b92dff812da46",
+        "00001.grz:00001-201.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-202.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-301.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-302.con": "4e916a101e2d8c569c2f4c0e93191c9ba17607380016d51f1612761567ab1888",
+        "00001.grz:00001-401.con": "463a6a47eef92d6fa9ee7058a0a7981684b7efa05f26cc0490052d2051f1dadf",
+        "00001.grz:00001-402.con": "4425c3bae2b53ca52ec298dd8ab5cd5e88ad57aa9de415e15e38ba257081e418",
+        "00001.grz:00001-501.con": "db23f700b90fe9255989251d43eb9eaf910edf92b445c0fb3f03e35089492b26",
+        "00001.grz:00001-502.con": "47209f9748919a2363068aca3173d5b7638b7f96c4a1dc2d23565e4808b7ff1e",
+        "00001.grz:00001-601.con": "5c10004230408c8ceb373aa050438803ac736b91a7ce8be34051011f7b2d72b4",
+        "00001.grz:00001-602.con": "562933725d3022add0bee441dba0603152f81b18566ef69596e84a5e3f1ee940",
+        "00001.grz:00001-701.con": "4e4525b93fd684469b38a885c89098a983781e2e045830ae667ff52ff5dbdff2",
+        "00001.grz:00001-702.con": "e8e167ff0538657460b9854b67c42181b7d14f93816e080fd227dafee318f558",
+        "00001.grz:00001-801.con": "f36c885c4c8d2b323dda72b654acd3f4f27cd1151dbd406c1d0c3477417e1bbc",
+        "00001.grz:00001-802.con": "0624fcdee23d006c51420a6543c7cad2f7bdf3f6278cebb87614153b7699468a",
+        "00001.grz:00001-901.con": "801ad73c28cddaa53c1bd4cf2ed18ab9ce9d105169520e73fcea959a39bef129",
+        "00001.grz:00001-902.con": "4e513321aecfdef203ba0023370c26683739776fbcd5bf4e82e10b2ee943f220"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "actual_particles_in_100_to_3000": true,
+        "actual_allocation_equals_configured_budget": true,
+        "actual_source_type_counts": true,
+        "actual_meteorology": true,
+        "actual_weather_sequence": true,
+        "dynamic_dense_v03_grid": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "within_60_second_main_limit": true,
+        "normal_guard_diagnostics_zero_or_unreported": true,
+        "actual_synthetic_terrain_wind_input_path": true
+      },
+      "checks_passed": 16,
+      "restart_loaded": false,
+      "actual_grid_headers": [
+        {
+          "name": "00001-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        }
+      ],
+      "normal_guard_diagnostics": {
+        "rejected_particle_states_reported": [],
+        "skipped_residual_writes_reported": [],
+        "zero_or_unreported": true
+      }
+    },
+    {
+      "run_id": "terrain_hot_n100_opt1_vertical_profile_r2",
+      "case": "terrain_hot_n100",
+      "variant": "opt1_vertical_profile",
+      "repeat": 2,
+      "elapsed_s": 0.32740360000752844,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ]
+      ],
+      "actual_weather_numbers": [
+        1,
+        2
+      ],
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 18,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 1800,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-102.con": "7637e73f567e1a29ce4fe7aa866d02e759e9a953a43c8fb6447b92dff812da46",
+        "00001.grz:00001-201.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-202.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-301.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955",
+        "00001.grz:00001-302.con": "4e916a101e2d8c569c2f4c0e93191c9ba17607380016d51f1612761567ab1888",
+        "00001.grz:00001-401.con": "463a6a47eef92d6fa9ee7058a0a7981684b7efa05f26cc0490052d2051f1dadf",
+        "00001.grz:00001-402.con": "4425c3bae2b53ca52ec298dd8ab5cd5e88ad57aa9de415e15e38ba257081e418",
+        "00001.grz:00001-501.con": "db23f700b90fe9255989251d43eb9eaf910edf92b445c0fb3f03e35089492b26",
+        "00001.grz:00001-502.con": "47209f9748919a2363068aca3173d5b7638b7f96c4a1dc2d23565e4808b7ff1e",
+        "00001.grz:00001-601.con": "5c10004230408c8ceb373aa050438803ac736b91a7ce8be34051011f7b2d72b4",
+        "00001.grz:00001-602.con": "562933725d3022add0bee441dba0603152f81b18566ef69596e84a5e3f1ee940",
+        "00001.grz:00001-701.con": "4e4525b93fd684469b38a885c89098a983781e2e045830ae667ff52ff5dbdff2",
+        "00001.grz:00001-702.con": "e8e167ff0538657460b9854b67c42181b7d14f93816e080fd227dafee318f558",
+        "00001.grz:00001-801.con": "f36c885c4c8d2b323dda72b654acd3f4f27cd1151dbd406c1d0c3477417e1bbc",
+        "00001.grz:00001-802.con": "0624fcdee23d006c51420a6543c7cad2f7bdf3f6278cebb87614153b7699468a",
+        "00001.grz:00001-901.con": "801ad73c28cddaa53c1bd4cf2ed18ab9ce9d105169520e73fcea959a39bef129",
+        "00001.grz:00001-902.con": "4e513321aecfdef203ba0023370c26683739776fbcd5bf4e82e10b2ee943f220"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "actual_particles_in_100_to_3000": true,
+        "actual_allocation_equals_configured_budget": true,
+        "actual_source_type_counts": true,
+        "actual_meteorology": true,
+        "actual_weather_sequence": true,
+        "dynamic_dense_v03_grid": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "within_60_second_main_limit": true,
+        "normal_guard_diagnostics_zero_or_unreported": true,
+        "actual_synthetic_terrain_wind_input_path": true
+      },
+      "checks_passed": 16,
+      "restart_loaded": false,
+      "actual_grid_headers": [
+        {
+          "name": "00001-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        }
+      ],
+      "normal_guard_diagnostics": {
+        "rejected_particle_states_reported": [],
+        "skipped_residual_writes_reported": [],
+        "zero_or_unreported": true
+      }
+    },
+    {
+      "run_id": "terrain_stable_building_n1000_warning_free_baseline_r1",
+      "case": "terrain_stable_building_n1000",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.4128855000017211,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          0.5,
+          270,
+          6
+        ],
+        [
+          0.5,
+          90,
+          6
+        ]
+      ],
+      "actual_weather_numbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 54,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 1,
+        "receptors": 0
+      },
+      "float_values_checked": 5400,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "6b6c2dccff4ac2dc6b150230832573bcef33565906d3769ca4eebe00d8ce8dc7",
+        "00001.grz:00001-102.con": "09572f7f8d524cd46e6019b70510d401d0f85ebc8e806ee1f4051627c3aae9c2",
+        "00001.grz:00001-201.con": "36fc9aaa0725bab6ae608e2f9683c151f497debd9bab3c24fd6920a6c031291a",
+        "00001.grz:00001-202.con": "cb5dc8c12575f9c559cd53159afd4ef52758c704b7b7fba7ca03301e6673b3ad",
+        "00001.grz:00001-301.con": "0fec708b3cce32d0244cc40152f762ad7751daab516c8aa81af1a4e95bc76ef4",
+        "00001.grz:00001-302.con": "cef154ea29ca523cdd0112aaeae3aa5e66f4bd4a546cd2a762c9f603f75e3ca0",
+        "00001.grz:00001-401.con": "c35ff78476186b2cd1ed449d1dec9bb83b4ae10bff0581a64709e6a5f9d772b3",
+        "00001.grz:00001-402.con": "84b4745a157b84d55d019c5250c4323f2052d9ec6776d1baa989a51bdce660d3",
+        "00001.grz:00001-501.con": "1479966c07e2a1b52228ffbe88efc8591d46638c1457b3758f66d941d150a895",
+        "00001.grz:00001-502.con": "a9478cd2db1b9aee305a912e467c044606e846dd1de23319dbb8a6688e1ac342",
+        "00001.grz:00001-601.con": "87a85e9935a0d422433f118ab2184e957db481dfc9fc648cd3d5a9a644030fa0",
+        "00001.grz:00001-602.con": "96d0a109bf621152127dbcc4ac905f9c78411a2d13ac427bc20a7a58401c6c5f",
+        "00001.grz:00001-701.con": "60fb8bb6450d5571705069944d1dff0024b3355bb72ecd175598e16542b609e6",
+        "00001.grz:00001-702.con": "081bd9a049335c062925edade92ee88e4c7324c563087e3272f13b614b02aab4",
+        "00001.grz:00001-801.con": "2ce9ebafb89d16720d9dd7a2fce27f5b58d1f039644763c4bed440d32c1b6d65",
+        "00001.grz:00001-802.con": "008457a6f459332932948b57660e1f7b90786ca4fcf2e9c14085c75340bf0b8a",
+        "00001.grz:00001-901.con": "079f6836dff5f0b58cf9eeaaabeae811c816723dcdece528ac274610c0c04a7d",
+        "00001.grz:00001-902.con": "efb9d3663cb0c3db76b69d4874b8617869fa5e45aae28154d648dd5f425e4888",
+        "00002.grz:00002-101.con": "33b419ba9125d1593a20ced35a883a3883f9789e3a3937fde26978baf3b618a0",
+        "00002.grz:00002-102.con": "3d7c984c4e9f5a76c5bdbbf3a243e40afd391df76b35cf429a5db973c49d7627",
+        "00002.grz:00002-201.con": "369d5f4d2ae7924367ea1195c34d000b9173634b19a1ac7a7cefab7671c0b10d",
+        "00002.grz:00002-202.con": "46847b468f329557c3394baf0f5a4bdf2bcfc574464555db79e1cb498edd701f",
+        "00002.grz:00002-301.con": "c855f4fb677d5c54a6f7cff09980ed03ce5a5ca0e2a953255ae8c69936031a42",
+        "00002.grz:00002-302.con": "974d8cd105de026eb5e7961515f72879211233b96601f837a6d3fd8c76cdeeb6",
+        "00002.grz:00002-401.con": "769e201786fb0b5ed7feb1ee13709403aa7d232353a61d56bfdfda20d2bc1342",
+        "00002.grz:00002-402.con": "bcf2758caced1f1ef99b344024eb6cbdc23139a470281381f34ccf0da209251b",
+        "00002.grz:00002-501.con": "bbb4e3e75bc150118f6ac7d804ba8e55d5dff70c8571142ee1fb21054785a1a3",
+        "00002.grz:00002-502.con": "e00efe72e2ff3fe9107e4af14a6ea96565c6a514573a181aaddec91437dfbab8",
+        "00002.grz:00002-601.con": "7874ca68bbf31632b94bd293d18f779553c24a1f7236bd7ac10b42351f564a1a",
+        "00002.grz:00002-602.con": "e9120a3eca02363f8bbd658f7b7d0902987ecc29b7b7ee6e7474efbcd88f2fe5",
+        "00002.grz:00002-701.con": "710f674fa3e1dd4d94fdcf4397bf7a4625dfc9b00ccfc0e8a99e58f7f2e5dbf2",
+        "00002.grz:00002-702.con": "e07590e5c20a2f8e53c9b4c164ca09f5659ecd04398f590d78de2a099459ec8e",
+        "00002.grz:00002-801.con": "cb634eb8fa5602c74fa860d6ecda90d006ea377ca064affa9684546905607a3d",
+        "00002.grz:00002-802.con": "60d674b7a85ce0c2bd4db43581ad9cdcaf0ff0c779d4dc06a51009bf8907cafb",
+        "00002.grz:00002-901.con": "aed93d99788722b6f228d76d95e44bf370f0aeba15dcf8e6a9a85f4b6ce26d83",
+        "00002.grz:00002-902.con": "68292a67533780cfbafcd6783ec22c04c2cfbde816f3111976a5ed3818e16b2c",
+        "00003.grz:00003-101.con": "fe8b23745874b580d883131190e1bf8482a258c545948d78f496418a97288bdb",
+        "00003.grz:00003-102.con": "40c4356bf4c2b720c05c7ab8e3c94143cc6110395301d82be5915ce272016271",
+        "00003.grz:00003-201.con": "2bd634eab11d0bdd2d01645ea53c5c9dd578732738178bb71dcc987eb2a12b35",
+        "00003.grz:00003-202.con": "19d6aa3fd44d321650148b08d5bec09b20b7cd33ff20c96041284d3c035a6c07",
+        "00003.grz:00003-301.con": "7262ace400b60f3b75da74ed9036606b479e68e810d44b4d968092eb786ac02d",
+        "00003.grz:00003-302.con": "2d39ac17905bfef0f2c871fbe70bde09e90949e1cade48407020c25fb1b8cdc8",
+        "00003.grz:00003-401.con": "d3e38a4178c9256ca0cd2b77da4fc265150a29394cec4a7818a2bfad42059425",
+        "00003.grz:00003-402.con": "dc545156a827353265996f98cc37f9f27134c3418979b92204caa36d02d5646a",
+        "00003.grz:00003-501.con": "f495297e90fc4bcbd7429e950f20f704b28dc208805d8b7b9c2a69a46a6e4924",
+        "00003.grz:00003-502.con": "661f43a10fd125044181eca487ebf48128b45b73c980defbda99811d5ac23bfa",
+        "00003.grz:00003-601.con": "336ba88c2d31f2de57c8248a4ec9d4cd4a991779017822f4251f775d36256b2d",
+        "00003.grz:00003-602.con": "66cb64779a462b061514f7c5b62c5d7053244a202458785bdba0f93cd4121ba2",
+        "00003.grz:00003-701.con": "5041a25111cac099da692ce2b4fddb185856c1331c8b6b183b5859c038c76b28",
+        "00003.grz:00003-702.con": "29fe845231319a8e2b6004f8abec9e66a5458dcf891813743f2374ad4a67d481",
+        "00003.grz:00003-801.con": "75280bae741d56b4a81b2a1b842096d7902b789dea5ff0222e2b93b1590a30a2",
+        "00003.grz:00003-802.con": "dc4c1067207a57eaa8b90b9bb11d72fe997a8cbd373869c548552daea56e5e58",
+        "00003.grz:00003-901.con": "fa3ceed4fa1ac34d07528980c56e0128ae15dd9d200bb64fa837d5ee3a16761c",
+        "00003.grz:00003-902.con": "0d5f9c1a1f5963ac5fc3f4a98ec4296f69dad0978bd2cd130fd92ab65b943030",
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "e4bd328e6a0912270de2dda795c7cc986997a084835410d1f4cb3ff8ccfef77a"
+      },
+      "fresh_mass_kg": [
+        0.0125,
+        0.025
+      ],
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "actual_particles_in_100_to_3000": true,
+        "actual_allocation_equals_configured_budget": true,
+        "actual_source_type_counts": true,
+        "actual_meteorology": true,
+        "actual_weather_sequence": true,
+        "dynamic_dense_v03_grid": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "within_60_second_main_limit": true,
+        "normal_guard_diagnostics_zero_or_unreported": true,
+        "actual_emission_schedule_read": true,
+        "cumulative_fresh_mass_matches_schedule": true,
+        "actual_synthetic_terrain_wind_input_path": true,
+        "actual_building_path": true
+      },
+      "checks_passed": 19,
+      "restart_loaded": false,
+      "actual_grid_headers": [
+        {
+          "name": "00001-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        }
+      ],
+      "normal_guard_diagnostics": {
+        "rejected_particle_states_reported": [],
+        "skipped_residual_writes_reported": [],
+        "zero_or_unreported": true
+      }
+    },
+    {
+      "run_id": "terrain_stable_building_n1000_warning_free_baseline_r2",
+      "case": "terrain_stable_building_n1000",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.42156940000131726,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          0.5,
+          270,
+          6
+        ],
+        [
+          0.5,
+          90,
+          6
+        ]
+      ],
+      "actual_weather_numbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 54,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 1,
+        "receptors": 0
+      },
+      "float_values_checked": 5400,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "6b6c2dccff4ac2dc6b150230832573bcef33565906d3769ca4eebe00d8ce8dc7",
+        "00001.grz:00001-102.con": "09572f7f8d524cd46e6019b70510d401d0f85ebc8e806ee1f4051627c3aae9c2",
+        "00001.grz:00001-201.con": "36fc9aaa0725bab6ae608e2f9683c151f497debd9bab3c24fd6920a6c031291a",
+        "00001.grz:00001-202.con": "cb5dc8c12575f9c559cd53159afd4ef52758c704b7b7fba7ca03301e6673b3ad",
+        "00001.grz:00001-301.con": "0fec708b3cce32d0244cc40152f762ad7751daab516c8aa81af1a4e95bc76ef4",
+        "00001.grz:00001-302.con": "cef154ea29ca523cdd0112aaeae3aa5e66f4bd4a546cd2a762c9f603f75e3ca0",
+        "00001.grz:00001-401.con": "c35ff78476186b2cd1ed449d1dec9bb83b4ae10bff0581a64709e6a5f9d772b3",
+        "00001.grz:00001-402.con": "84b4745a157b84d55d019c5250c4323f2052d9ec6776d1baa989a51bdce660d3",
+        "00001.grz:00001-501.con": "1479966c07e2a1b52228ffbe88efc8591d46638c1457b3758f66d941d150a895",
+        "00001.grz:00001-502.con": "a9478cd2db1b9aee305a912e467c044606e846dd1de23319dbb8a6688e1ac342",
+        "00001.grz:00001-601.con": "87a85e9935a0d422433f118ab2184e957db481dfc9fc648cd3d5a9a644030fa0",
+        "00001.grz:00001-602.con": "96d0a109bf621152127dbcc4ac905f9c78411a2d13ac427bc20a7a58401c6c5f",
+        "00001.grz:00001-701.con": "60fb8bb6450d5571705069944d1dff0024b3355bb72ecd175598e16542b609e6",
+        "00001.grz:00001-702.con": "081bd9a049335c062925edade92ee88e4c7324c563087e3272f13b614b02aab4",
+        "00001.grz:00001-801.con": "2ce9ebafb89d16720d9dd7a2fce27f5b58d1f039644763c4bed440d32c1b6d65",
+        "00001.grz:00001-802.con": "008457a6f459332932948b57660e1f7b90786ca4fcf2e9c14085c75340bf0b8a",
+        "00001.grz:00001-901.con": "079f6836dff5f0b58cf9eeaaabeae811c816723dcdece528ac274610c0c04a7d",
+        "00001.grz:00001-902.con": "efb9d3663cb0c3db76b69d4874b8617869fa5e45aae28154d648dd5f425e4888",
+        "00002.grz:00002-101.con": "33b419ba9125d1593a20ced35a883a3883f9789e3a3937fde26978baf3b618a0",
+        "00002.grz:00002-102.con": "3d7c984c4e9f5a76c5bdbbf3a243e40afd391df76b35cf429a5db973c49d7627",
+        "00002.grz:00002-201.con": "369d5f4d2ae7924367ea1195c34d000b9173634b19a1ac7a7cefab7671c0b10d",
+        "00002.grz:00002-202.con": "46847b468f329557c3394baf0f5a4bdf2bcfc574464555db79e1cb498edd701f",
+        "00002.grz:00002-301.con": "c855f4fb677d5c54a6f7cff09980ed03ce5a5ca0e2a953255ae8c69936031a42",
+        "00002.grz:00002-302.con": "974d8cd105de026eb5e7961515f72879211233b96601f837a6d3fd8c76cdeeb6",
+        "00002.grz:00002-401.con": "769e201786fb0b5ed7feb1ee13709403aa7d232353a61d56bfdfda20d2bc1342",
+        "00002.grz:00002-402.con": "bcf2758caced1f1ef99b344024eb6cbdc23139a470281381f34ccf0da209251b",
+        "00002.grz:00002-501.con": "bbb4e3e75bc150118f6ac7d804ba8e55d5dff70c8571142ee1fb21054785a1a3",
+        "00002.grz:00002-502.con": "e00efe72e2ff3fe9107e4af14a6ea96565c6a514573a181aaddec91437dfbab8",
+        "00002.grz:00002-601.con": "7874ca68bbf31632b94bd293d18f779553c24a1f7236bd7ac10b42351f564a1a",
+        "00002.grz:00002-602.con": "e9120a3eca02363f8bbd658f7b7d0902987ecc29b7b7ee6e7474efbcd88f2fe5",
+        "00002.grz:00002-701.con": "710f674fa3e1dd4d94fdcf4397bf7a4625dfc9b00ccfc0e8a99e58f7f2e5dbf2",
+        "00002.grz:00002-702.con": "e07590e5c20a2f8e53c9b4c164ca09f5659ecd04398f590d78de2a099459ec8e",
+        "00002.grz:00002-801.con": "cb634eb8fa5602c74fa860d6ecda90d006ea377ca064affa9684546905607a3d",
+        "00002.grz:00002-802.con": "60d674b7a85ce0c2bd4db43581ad9cdcaf0ff0c779d4dc06a51009bf8907cafb",
+        "00002.grz:00002-901.con": "aed93d99788722b6f228d76d95e44bf370f0aeba15dcf8e6a9a85f4b6ce26d83",
+        "00002.grz:00002-902.con": "68292a67533780cfbafcd6783ec22c04c2cfbde816f3111976a5ed3818e16b2c",
+        "00003.grz:00003-101.con": "fe8b23745874b580d883131190e1bf8482a258c545948d78f496418a97288bdb",
+        "00003.grz:00003-102.con": "40c4356bf4c2b720c05c7ab8e3c94143cc6110395301d82be5915ce272016271",
+        "00003.grz:00003-201.con": "2bd634eab11d0bdd2d01645ea53c5c9dd578732738178bb71dcc987eb2a12b35",
+        "00003.grz:00003-202.con": "19d6aa3fd44d321650148b08d5bec09b20b7cd33ff20c96041284d3c035a6c07",
+        "00003.grz:00003-301.con": "7262ace400b60f3b75da74ed9036606b479e68e810d44b4d968092eb786ac02d",
+        "00003.grz:00003-302.con": "2d39ac17905bfef0f2c871fbe70bde09e90949e1cade48407020c25fb1b8cdc8",
+        "00003.grz:00003-401.con": "d3e38a4178c9256ca0cd2b77da4fc265150a29394cec4a7818a2bfad42059425",
+        "00003.grz:00003-402.con": "dc545156a827353265996f98cc37f9f27134c3418979b92204caa36d02d5646a",
+        "00003.grz:00003-501.con": "f495297e90fc4bcbd7429e950f20f704b28dc208805d8b7b9c2a69a46a6e4924",
+        "00003.grz:00003-502.con": "661f43a10fd125044181eca487ebf48128b45b73c980defbda99811d5ac23bfa",
+        "00003.grz:00003-601.con": "336ba88c2d31f2de57c8248a4ec9d4cd4a991779017822f4251f775d36256b2d",
+        "00003.grz:00003-602.con": "66cb64779a462b061514f7c5b62c5d7053244a202458785bdba0f93cd4121ba2",
+        "00003.grz:00003-701.con": "5041a25111cac099da692ce2b4fddb185856c1331c8b6b183b5859c038c76b28",
+        "00003.grz:00003-702.con": "29fe845231319a8e2b6004f8abec9e66a5458dcf891813743f2374ad4a67d481",
+        "00003.grz:00003-801.con": "75280bae741d56b4a81b2a1b842096d7902b789dea5ff0222e2b93b1590a30a2",
+        "00003.grz:00003-802.con": "dc4c1067207a57eaa8b90b9bb11d72fe997a8cbd373869c548552daea56e5e58",
+        "00003.grz:00003-901.con": "fa3ceed4fa1ac34d07528980c56e0128ae15dd9d200bb64fa837d5ee3a16761c",
+        "00003.grz:00003-902.con": "0d5f9c1a1f5963ac5fc3f4a98ec4296f69dad0978bd2cd130fd92ab65b943030",
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "e4bd328e6a0912270de2dda795c7cc986997a084835410d1f4cb3ff8ccfef77a"
+      },
+      "fresh_mass_kg": [
+        0.0125,
+        0.025
+      ],
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "actual_particles_in_100_to_3000": true,
+        "actual_allocation_equals_configured_budget": true,
+        "actual_source_type_counts": true,
+        "actual_meteorology": true,
+        "actual_weather_sequence": true,
+        "dynamic_dense_v03_grid": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "within_60_second_main_limit": true,
+        "normal_guard_diagnostics_zero_or_unreported": true,
+        "actual_emission_schedule_read": true,
+        "cumulative_fresh_mass_matches_schedule": true,
+        "actual_synthetic_terrain_wind_input_path": true,
+        "actual_building_path": true
+      },
+      "checks_passed": 19,
+      "restart_loaded": false,
+      "actual_grid_headers": [
+        {
+          "name": "00001-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        }
+      ],
+      "normal_guard_diagnostics": {
+        "rejected_particle_states_reported": [],
+        "skipped_residual_writes_reported": [],
+        "zero_or_unreported": true
+      }
+    },
+    {
+      "run_id": "terrain_stable_building_n1000_opt1_vertical_profile_r1",
+      "case": "terrain_stable_building_n1000",
+      "variant": "opt1_vertical_profile",
+      "repeat": 1,
+      "elapsed_s": 0.4095130999921821,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          0.5,
+          270,
+          6
+        ],
+        [
+          0.5,
+          90,
+          6
+        ]
+      ],
+      "actual_weather_numbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 54,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 1,
+        "receptors": 0
+      },
+      "float_values_checked": 5400,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "6b6c2dccff4ac2dc6b150230832573bcef33565906d3769ca4eebe00d8ce8dc7",
+        "00001.grz:00001-102.con": "09572f7f8d524cd46e6019b70510d401d0f85ebc8e806ee1f4051627c3aae9c2",
+        "00001.grz:00001-201.con": "36fc9aaa0725bab6ae608e2f9683c151f497debd9bab3c24fd6920a6c031291a",
+        "00001.grz:00001-202.con": "cb5dc8c12575f9c559cd53159afd4ef52758c704b7b7fba7ca03301e6673b3ad",
+        "00001.grz:00001-301.con": "0fec708b3cce32d0244cc40152f762ad7751daab516c8aa81af1a4e95bc76ef4",
+        "00001.grz:00001-302.con": "cef154ea29ca523cdd0112aaeae3aa5e66f4bd4a546cd2a762c9f603f75e3ca0",
+        "00001.grz:00001-401.con": "c35ff78476186b2cd1ed449d1dec9bb83b4ae10bff0581a64709e6a5f9d772b3",
+        "00001.grz:00001-402.con": "84b4745a157b84d55d019c5250c4323f2052d9ec6776d1baa989a51bdce660d3",
+        "00001.grz:00001-501.con": "1479966c07e2a1b52228ffbe88efc8591d46638c1457b3758f66d941d150a895",
+        "00001.grz:00001-502.con": "a9478cd2db1b9aee305a912e467c044606e846dd1de23319dbb8a6688e1ac342",
+        "00001.grz:00001-601.con": "87a85e9935a0d422433f118ab2184e957db481dfc9fc648cd3d5a9a644030fa0",
+        "00001.grz:00001-602.con": "96d0a109bf621152127dbcc4ac905f9c78411a2d13ac427bc20a7a58401c6c5f",
+        "00001.grz:00001-701.con": "60fb8bb6450d5571705069944d1dff0024b3355bb72ecd175598e16542b609e6",
+        "00001.grz:00001-702.con": "081bd9a049335c062925edade92ee88e4c7324c563087e3272f13b614b02aab4",
+        "00001.grz:00001-801.con": "2ce9ebafb89d16720d9dd7a2fce27f5b58d1f039644763c4bed440d32c1b6d65",
+        "00001.grz:00001-802.con": "008457a6f459332932948b57660e1f7b90786ca4fcf2e9c14085c75340bf0b8a",
+        "00001.grz:00001-901.con": "079f6836dff5f0b58cf9eeaaabeae811c816723dcdece528ac274610c0c04a7d",
+        "00001.grz:00001-902.con": "efb9d3663cb0c3db76b69d4874b8617869fa5e45aae28154d648dd5f425e4888",
+        "00002.grz:00002-101.con": "33b419ba9125d1593a20ced35a883a3883f9789e3a3937fde26978baf3b618a0",
+        "00002.grz:00002-102.con": "3d7c984c4e9f5a76c5bdbbf3a243e40afd391df76b35cf429a5db973c49d7627",
+        "00002.grz:00002-201.con": "369d5f4d2ae7924367ea1195c34d000b9173634b19a1ac7a7cefab7671c0b10d",
+        "00002.grz:00002-202.con": "46847b468f329557c3394baf0f5a4bdf2bcfc574464555db79e1cb498edd701f",
+        "00002.grz:00002-301.con": "c855f4fb677d5c54a6f7cff09980ed03ce5a5ca0e2a953255ae8c69936031a42",
+        "00002.grz:00002-302.con": "974d8cd105de026eb5e7961515f72879211233b96601f837a6d3fd8c76cdeeb6",
+        "00002.grz:00002-401.con": "769e201786fb0b5ed7feb1ee13709403aa7d232353a61d56bfdfda20d2bc1342",
+        "00002.grz:00002-402.con": "bcf2758caced1f1ef99b344024eb6cbdc23139a470281381f34ccf0da209251b",
+        "00002.grz:00002-501.con": "bbb4e3e75bc150118f6ac7d804ba8e55d5dff70c8571142ee1fb21054785a1a3",
+        "00002.grz:00002-502.con": "e00efe72e2ff3fe9107e4af14a6ea96565c6a514573a181aaddec91437dfbab8",
+        "00002.grz:00002-601.con": "7874ca68bbf31632b94bd293d18f779553c24a1f7236bd7ac10b42351f564a1a",
+        "00002.grz:00002-602.con": "e9120a3eca02363f8bbd658f7b7d0902987ecc29b7b7ee6e7474efbcd88f2fe5",
+        "00002.grz:00002-701.con": "710f674fa3e1dd4d94fdcf4397bf7a4625dfc9b00ccfc0e8a99e58f7f2e5dbf2",
+        "00002.grz:00002-702.con": "e07590e5c20a2f8e53c9b4c164ca09f5659ecd04398f590d78de2a099459ec8e",
+        "00002.grz:00002-801.con": "cb634eb8fa5602c74fa860d6ecda90d006ea377ca064affa9684546905607a3d",
+        "00002.grz:00002-802.con": "60d674b7a85ce0c2bd4db43581ad9cdcaf0ff0c779d4dc06a51009bf8907cafb",
+        "00002.grz:00002-901.con": "aed93d99788722b6f228d76d95e44bf370f0aeba15dcf8e6a9a85f4b6ce26d83",
+        "00002.grz:00002-902.con": "68292a67533780cfbafcd6783ec22c04c2cfbde816f3111976a5ed3818e16b2c",
+        "00003.grz:00003-101.con": "fe8b23745874b580d883131190e1bf8482a258c545948d78f496418a97288bdb",
+        "00003.grz:00003-102.con": "40c4356bf4c2b720c05c7ab8e3c94143cc6110395301d82be5915ce272016271",
+        "00003.grz:00003-201.con": "2bd634eab11d0bdd2d01645ea53c5c9dd578732738178bb71dcc987eb2a12b35",
+        "00003.grz:00003-202.con": "19d6aa3fd44d321650148b08d5bec09b20b7cd33ff20c96041284d3c035a6c07",
+        "00003.grz:00003-301.con": "7262ace400b60f3b75da74ed9036606b479e68e810d44b4d968092eb786ac02d",
+        "00003.grz:00003-302.con": "2d39ac17905bfef0f2c871fbe70bde09e90949e1cade48407020c25fb1b8cdc8",
+        "00003.grz:00003-401.con": "d3e38a4178c9256ca0cd2b77da4fc265150a29394cec4a7818a2bfad42059425",
+        "00003.grz:00003-402.con": "dc545156a827353265996f98cc37f9f27134c3418979b92204caa36d02d5646a",
+        "00003.grz:00003-501.con": "f495297e90fc4bcbd7429e950f20f704b28dc208805d8b7b9c2a69a46a6e4924",
+        "00003.grz:00003-502.con": "661f43a10fd125044181eca487ebf48128b45b73c980defbda99811d5ac23bfa",
+        "00003.grz:00003-601.con": "336ba88c2d31f2de57c8248a4ec9d4cd4a991779017822f4251f775d36256b2d",
+        "00003.grz:00003-602.con": "66cb64779a462b061514f7c5b62c5d7053244a202458785bdba0f93cd4121ba2",
+        "00003.grz:00003-701.con": "5041a25111cac099da692ce2b4fddb185856c1331c8b6b183b5859c038c76b28",
+        "00003.grz:00003-702.con": "29fe845231319a8e2b6004f8abec9e66a5458dcf891813743f2374ad4a67d481",
+        "00003.grz:00003-801.con": "75280bae741d56b4a81b2a1b842096d7902b789dea5ff0222e2b93b1590a30a2",
+        "00003.grz:00003-802.con": "dc4c1067207a57eaa8b90b9bb11d72fe997a8cbd373869c548552daea56e5e58",
+        "00003.grz:00003-901.con": "fa3ceed4fa1ac34d07528980c56e0128ae15dd9d200bb64fa837d5ee3a16761c",
+        "00003.grz:00003-902.con": "0d5f9c1a1f5963ac5fc3f4a98ec4296f69dad0978bd2cd130fd92ab65b943030",
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "e4bd328e6a0912270de2dda795c7cc986997a084835410d1f4cb3ff8ccfef77a"
+      },
+      "fresh_mass_kg": [
+        0.0125,
+        0.025
+      ],
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "actual_particles_in_100_to_3000": true,
+        "actual_allocation_equals_configured_budget": true,
+        "actual_source_type_counts": true,
+        "actual_meteorology": true,
+        "actual_weather_sequence": true,
+        "dynamic_dense_v03_grid": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "within_60_second_main_limit": true,
+        "normal_guard_diagnostics_zero_or_unreported": true,
+        "actual_emission_schedule_read": true,
+        "cumulative_fresh_mass_matches_schedule": true,
+        "actual_synthetic_terrain_wind_input_path": true,
+        "actual_building_path": true
+      },
+      "checks_passed": 19,
+      "restart_loaded": false,
+      "actual_grid_headers": [
+        {
+          "name": "00001-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        }
+      ],
+      "normal_guard_diagnostics": {
+        "rejected_particle_states_reported": [],
+        "skipped_residual_writes_reported": [],
+        "zero_or_unreported": true
+      }
+    },
+    {
+      "run_id": "terrain_stable_building_n1000_opt1_vertical_profile_r2",
+      "case": "terrain_stable_building_n1000",
+      "variant": "opt1_vertical_profile",
+      "repeat": 2,
+      "elapsed_s": 0.4155814000114333,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          0.5,
+          270,
+          6
+        ],
+        [
+          0.5,
+          90,
+          6
+        ]
+      ],
+      "actual_weather_numbers": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 54,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 1,
+        "receptors": 0
+      },
+      "float_values_checked": 5400,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "6b6c2dccff4ac2dc6b150230832573bcef33565906d3769ca4eebe00d8ce8dc7",
+        "00001.grz:00001-102.con": "09572f7f8d524cd46e6019b70510d401d0f85ebc8e806ee1f4051627c3aae9c2",
+        "00001.grz:00001-201.con": "36fc9aaa0725bab6ae608e2f9683c151f497debd9bab3c24fd6920a6c031291a",
+        "00001.grz:00001-202.con": "cb5dc8c12575f9c559cd53159afd4ef52758c704b7b7fba7ca03301e6673b3ad",
+        "00001.grz:00001-301.con": "0fec708b3cce32d0244cc40152f762ad7751daab516c8aa81af1a4e95bc76ef4",
+        "00001.grz:00001-302.con": "cef154ea29ca523cdd0112aaeae3aa5e66f4bd4a546cd2a762c9f603f75e3ca0",
+        "00001.grz:00001-401.con": "c35ff78476186b2cd1ed449d1dec9bb83b4ae10bff0581a64709e6a5f9d772b3",
+        "00001.grz:00001-402.con": "84b4745a157b84d55d019c5250c4323f2052d9ec6776d1baa989a51bdce660d3",
+        "00001.grz:00001-501.con": "1479966c07e2a1b52228ffbe88efc8591d46638c1457b3758f66d941d150a895",
+        "00001.grz:00001-502.con": "a9478cd2db1b9aee305a912e467c044606e846dd1de23319dbb8a6688e1ac342",
+        "00001.grz:00001-601.con": "87a85e9935a0d422433f118ab2184e957db481dfc9fc648cd3d5a9a644030fa0",
+        "00001.grz:00001-602.con": "96d0a109bf621152127dbcc4ac905f9c78411a2d13ac427bc20a7a58401c6c5f",
+        "00001.grz:00001-701.con": "60fb8bb6450d5571705069944d1dff0024b3355bb72ecd175598e16542b609e6",
+        "00001.grz:00001-702.con": "081bd9a049335c062925edade92ee88e4c7324c563087e3272f13b614b02aab4",
+        "00001.grz:00001-801.con": "2ce9ebafb89d16720d9dd7a2fce27f5b58d1f039644763c4bed440d32c1b6d65",
+        "00001.grz:00001-802.con": "008457a6f459332932948b57660e1f7b90786ca4fcf2e9c14085c75340bf0b8a",
+        "00001.grz:00001-901.con": "079f6836dff5f0b58cf9eeaaabeae811c816723dcdece528ac274610c0c04a7d",
+        "00001.grz:00001-902.con": "efb9d3663cb0c3db76b69d4874b8617869fa5e45aae28154d648dd5f425e4888",
+        "00002.grz:00002-101.con": "33b419ba9125d1593a20ced35a883a3883f9789e3a3937fde26978baf3b618a0",
+        "00002.grz:00002-102.con": "3d7c984c4e9f5a76c5bdbbf3a243e40afd391df76b35cf429a5db973c49d7627",
+        "00002.grz:00002-201.con": "369d5f4d2ae7924367ea1195c34d000b9173634b19a1ac7a7cefab7671c0b10d",
+        "00002.grz:00002-202.con": "46847b468f329557c3394baf0f5a4bdf2bcfc574464555db79e1cb498edd701f",
+        "00002.grz:00002-301.con": "c855f4fb677d5c54a6f7cff09980ed03ce5a5ca0e2a953255ae8c69936031a42",
+        "00002.grz:00002-302.con": "974d8cd105de026eb5e7961515f72879211233b96601f837a6d3fd8c76cdeeb6",
+        "00002.grz:00002-401.con": "769e201786fb0b5ed7feb1ee13709403aa7d232353a61d56bfdfda20d2bc1342",
+        "00002.grz:00002-402.con": "bcf2758caced1f1ef99b344024eb6cbdc23139a470281381f34ccf0da209251b",
+        "00002.grz:00002-501.con": "bbb4e3e75bc150118f6ac7d804ba8e55d5dff70c8571142ee1fb21054785a1a3",
+        "00002.grz:00002-502.con": "e00efe72e2ff3fe9107e4af14a6ea96565c6a514573a181aaddec91437dfbab8",
+        "00002.grz:00002-601.con": "7874ca68bbf31632b94bd293d18f779553c24a1f7236bd7ac10b42351f564a1a",
+        "00002.grz:00002-602.con": "e9120a3eca02363f8bbd658f7b7d0902987ecc29b7b7ee6e7474efbcd88f2fe5",
+        "00002.grz:00002-701.con": "710f674fa3e1dd4d94fdcf4397bf7a4625dfc9b00ccfc0e8a99e58f7f2e5dbf2",
+        "00002.grz:00002-702.con": "e07590e5c20a2f8e53c9b4c164ca09f5659ecd04398f590d78de2a099459ec8e",
+        "00002.grz:00002-801.con": "cb634eb8fa5602c74fa860d6ecda90d006ea377ca064affa9684546905607a3d",
+        "00002.grz:00002-802.con": "60d674b7a85ce0c2bd4db43581ad9cdcaf0ff0c779d4dc06a51009bf8907cafb",
+        "00002.grz:00002-901.con": "aed93d99788722b6f228d76d95e44bf370f0aeba15dcf8e6a9a85f4b6ce26d83",
+        "00002.grz:00002-902.con": "68292a67533780cfbafcd6783ec22c04c2cfbde816f3111976a5ed3818e16b2c",
+        "00003.grz:00003-101.con": "fe8b23745874b580d883131190e1bf8482a258c545948d78f496418a97288bdb",
+        "00003.grz:00003-102.con": "40c4356bf4c2b720c05c7ab8e3c94143cc6110395301d82be5915ce272016271",
+        "00003.grz:00003-201.con": "2bd634eab11d0bdd2d01645ea53c5c9dd578732738178bb71dcc987eb2a12b35",
+        "00003.grz:00003-202.con": "19d6aa3fd44d321650148b08d5bec09b20b7cd33ff20c96041284d3c035a6c07",
+        "00003.grz:00003-301.con": "7262ace400b60f3b75da74ed9036606b479e68e810d44b4d968092eb786ac02d",
+        "00003.grz:00003-302.con": "2d39ac17905bfef0f2c871fbe70bde09e90949e1cade48407020c25fb1b8cdc8",
+        "00003.grz:00003-401.con": "d3e38a4178c9256ca0cd2b77da4fc265150a29394cec4a7818a2bfad42059425",
+        "00003.grz:00003-402.con": "dc545156a827353265996f98cc37f9f27134c3418979b92204caa36d02d5646a",
+        "00003.grz:00003-501.con": "f495297e90fc4bcbd7429e950f20f704b28dc208805d8b7b9c2a69a46a6e4924",
+        "00003.grz:00003-502.con": "661f43a10fd125044181eca487ebf48128b45b73c980defbda99811d5ac23bfa",
+        "00003.grz:00003-601.con": "336ba88c2d31f2de57c8248a4ec9d4cd4a991779017822f4251f775d36256b2d",
+        "00003.grz:00003-602.con": "66cb64779a462b061514f7c5b62c5d7053244a202458785bdba0f93cd4121ba2",
+        "00003.grz:00003-701.con": "5041a25111cac099da692ce2b4fddb185856c1331c8b6b183b5859c038c76b28",
+        "00003.grz:00003-702.con": "29fe845231319a8e2b6004f8abec9e66a5458dcf891813743f2374ad4a67d481",
+        "00003.grz:00003-801.con": "75280bae741d56b4a81b2a1b842096d7902b789dea5ff0222e2b93b1590a30a2",
+        "00003.grz:00003-802.con": "dc4c1067207a57eaa8b90b9bb11d72fe997a8cbd373869c548552daea56e5e58",
+        "00003.grz:00003-901.con": "fa3ceed4fa1ac34d07528980c56e0128ae15dd9d200bb64fa837d5ee3a16761c",
+        "00003.grz:00003-902.con": "0d5f9c1a1f5963ac5fc3f4a98ec4296f69dad0978bd2cd130fd92ab65b943030",
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "e4bd328e6a0912270de2dda795c7cc986997a084835410d1f4cb3ff8ccfef77a"
+      },
+      "fresh_mass_kg": [
+        0.0125,
+        0.025
+      ],
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "actual_particles_in_100_to_3000": true,
+        "actual_allocation_equals_configured_budget": true,
+        "actual_source_type_counts": true,
+        "actual_meteorology": true,
+        "actual_weather_sequence": true,
+        "dynamic_dense_v03_grid": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "within_60_second_main_limit": true,
+        "normal_guard_diagnostics_zero_or_unreported": true,
+        "actual_emission_schedule_read": true,
+        "cumulative_fresh_mass_matches_schedule": true,
+        "actual_synthetic_terrain_wind_input_path": true,
+        "actual_building_path": true
+      },
+      "checks_passed": 19,
+      "restart_loaded": false,
+      "actual_grid_headers": [
+        {
+          "name": "00001-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00001-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00002-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-101.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-102.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-201.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-202.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-301.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-302.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-401.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-402.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-501.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-502.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-601.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-602.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-701.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-702.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-801.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-802.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-901.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        },
+        {
+          "name": "00003-902.con",
+          "kind": "concentration",
+          "nx": 10,
+          "ny": 10,
+          "dx_m": 20.0,
+          "dy_m": 20.0
+        }
+      ],
+      "normal_guard_diagnostics": {
+        "rejected_particle_states_reported": [],
+        "skipped_residual_writes_reported": [],
+        "zero_or_unreported": true
+      }
+    }
+  ],
+  "limits": [
+    "Fixed-seed byte equality is required only for these controlled single-worker cases.",
+    "Hourly labels index 30-second situations; they do not assert hourly physical integration.",
+    "This balanced coverage is not a full factorial sensitivity design.",
+    "Terrain geometry and prescribed winds are wholly synthetic and not a GRAMM model validation.",
+    "No physical truth oracle or production-domain speedup claim.",
+    "Checkpoint tests require baseline/candidate resumed payload equality; continuous/resumed engine-state equality is not asserted.",
+    "Only the Main suite is counted here; worker-owned injected-NaN and optimization component checks are separate."
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "status": "pass",
+  "conditions": 18,
+  "oracle_checks": 36,
+  "faster_or_equal_conditions": 18,
+  "slower_conditions": 0,
+  "minimum_baseline_over_candidate": 1.1480349572892443,
+  "maximum_baseline_over_candidate": 1.584892133220361,
+  "records": [
+    {
+      "nkk": 1,
+      "lookups_per_particle": 8,
+      "workload": "paired_same_layer",
+      "baseline_over_candidate": 1.2687349569616124,
+      "candidate_runtime_percent_change": -21.181331489847445
+    },
+    {
+      "nkk": 1,
+      "lookups_per_particle": 8,
+      "workload": "paired_large_jumps",
+      "baseline_over_candidate": 1.255949925028429,
+      "candidate_runtime_percent_change": -20.378991226313058
+    },
+    {
+      "nkk": 1,
+      "lookups_per_particle": 64,
+      "workload": "paired_same_layer",
+      "baseline_over_candidate": 1.3568357523065113,
+      "candidate_runtime_percent_change": -26.29911186375501
+    },
+    {
+      "nkk": 1,
+      "lookups_per_particle": 64,
+      "workload": "paired_large_jumps",
+      "baseline_over_candidate": 1.2820387282428407,
+      "candidate_runtime_percent_change": -21.99923621881551
+    },
+    {
+      "nkk": 1,
+      "lookups_per_particle": 256,
+      "workload": "paired_same_layer",
+      "baseline_over_candidate": 1.3805454783862932,
+      "candidate_runtime_percent_change": -27.56486362413133
+    },
+    {
+      "nkk": 1,
+      "lookups_per_particle": 256,
+      "workload": "paired_large_jumps",
+      "baseline_over_candidate": 1.318841208231238,
+      "candidate_runtime_percent_change": -24.175860311405607
+    },
+    {
+      "nkk": 39,
+      "lookups_per_particle": 8,
+      "workload": "paired_same_layer",
+      "baseline_over_candidate": 1.5285486110074489,
+      "candidate_runtime_percent_change": -34.578462680299616
+    },
+    {
+      "nkk": 39,
+      "lookups_per_particle": 8,
+      "workload": "paired_large_jumps",
+      "baseline_over_candidate": 1.4935395011186021,
+      "candidate_runtime_percent_change": -33.04495801744517
+    },
+    {
+      "nkk": 39,
+      "lookups_per_particle": 64,
+      "workload": "paired_same_layer",
+      "baseline_over_candidate": 1.4643814844969636,
+      "candidate_runtime_percent_change": -31.711783398878836
+    },
+    {
+      "nkk": 39,
+      "lookups_per_particle": 64,
+      "workload": "paired_large_jumps",
+      "baseline_over_candidate": 1.5839946643885403,
+      "candidate_runtime_percent_change": -36.868474213830524
+    },
+    {
+      "nkk": 39,
+      "lookups_per_particle": 256,
+      "workload": "paired_same_layer",
+      "baseline_over_candidate": 1.1480349572892443,
+      "candidate_runtime_percent_change": -12.89463847327319
+    },
+    {
+      "nkk": 39,
+      "lookups_per_particle": 256,
+      "workload": "paired_large_jumps",
+      "baseline_over_candidate": 1.580189715143916,
+      "candidate_runtime_percent_change": -36.71645939621085
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 8,
+      "workload": "paired_same_layer",
+      "baseline_over_candidate": 1.584892133220361,
+      "candidate_runtime_percent_change": -36.9042233828186
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 8,
+      "workload": "paired_large_jumps",
+      "baseline_over_candidate": 1.5277973471965796,
+      "candidate_runtime_percent_change": -34.54629294683993
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 64,
+      "workload": "paired_same_layer",
+      "baseline_over_candidate": 1.5657137909950274,
+      "candidate_runtime_percent_change": -36.13136668072077
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 64,
+      "workload": "paired_large_jumps",
+      "baseline_over_candidate": 1.5646131507985894,
+      "candidate_runtime_percent_change": -36.08643775686067
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 256,
+      "workload": "paired_same_layer",
+      "baseline_over_candidate": 1.5515995341827646,
+      "candidate_runtime_percent_change": -35.55038023862871
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 256,
+      "workload": "paired_large_jumps",
+      "baseline_over_candidate": 1.524306173688314,
+      "candidate_runtime_percent_change": -34.39638195649811
+    }
+  ],
+  "scope": "Synthetic paired height sequences with exactly 50% consecutive repeats. NKK=39 matches the two synthetic terrain test grids. These sequences are not a replay of actual Main heights. Compiled production DLL searches with a fresh value-type cache per particle; preparation is included. This measures lookup cost, not full-model runtime."
+}

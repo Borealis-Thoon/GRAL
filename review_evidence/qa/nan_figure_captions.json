@@ -1,0 +1,9 @@
+{
+  "captions": {
+    "nan_residual_storage": "Across two actual residual storage methods, 32 injected calls produced 12 non-finite cell values, 8 indexing exceptions and 12 wrong-coordinate writes in the baseline. The patch preserved all 32 destination grids. In 56 finite calls, baseline and patched float32 storage payloads were bit-identical.",
+    "nan_early_expiry": "The guard runs after vertical motion and sedimentation, before the transient expiry branch. It prevented storage calls in all 16 injected expiry cases; 40 finite baseline/candidate pairs kept identical float32 storage payloads. Earlier valid receptor contributions are retained. The untracked remainder is discarded without redistribution.",
+    "nan_validation_scope": "Component checks used actual DLL methods and compiled production blocks. The separate synthetic Main suite ran 18 conditions across baseline and two independent patches, for 120 executions and 760 identical payload pairs. Six executions read existing checkpoints. Counts include the shared baseline."
+  },
+  "source": "reproduce/plot_nan_guard.py",
+  "scope": "Final caption literals copied without rendering a new figure."
+}

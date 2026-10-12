@@ -1,0 +1,138 @@
+{
+  "status": "pass",
+  "checks_passed": 32,
+  "checks": [
+    {
+      "check": "valid_dense_v03",
+      "pass_status": true
+    },
+    {
+      "check": "reject_nan",
+      "pass_status": true
+    },
+    {
+      "check": "reject_infinity",
+      "pass_status": true
+    },
+    {
+      "check": "reject_negative",
+      "pass_status": true
+    },
+    {
+      "check": "reject_all_zero",
+      "pass_status": true
+    },
+    {
+      "check": "reject_wrong_header",
+      "pass_status": true
+    },
+    {
+      "check": "reject_wrong_origin",
+      "pass_status": true
+    },
+    {
+      "check": "reject_wrong_resolution",
+      "pass_status": true
+    },
+    {
+      "check": "reject_wrong_payload_width",
+      "pass_status": true
+    },
+    {
+      "check": "reject_missing_source_group",
+      "pass_status": true
+    },
+    {
+      "check": "valid_utf16_receptor",
+      "pass_status": true
+    },
+    {
+      "check": "valid_utf8_receptor",
+      "pass_status": true
+    },
+    {
+      "check": "reject_nan_receptor",
+      "pass_status": true
+    },
+    {
+      "check": "owned_pid_watchdog_terminates_timed_out_child",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_point_n100_20m",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_point_hot_n1000_10m",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_point_n3000_40m",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_portal_n100_40m",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_portal_n1000_20m",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_line_n3000_10m",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_line_n100_20m",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_area_n1000_40m",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_area_n3000_20m",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_mixed_n100_10m",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_mixed_transient_n100_40m",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_mixed_transient_n1000_20m",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_mixed_transient_n3000_10m",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_mixed_deposition_receptors",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_mixed_odour_9slices",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_flat_buildings_n1000",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_terrain_hot_n100",
+      "pass_status": true
+    },
+    {
+      "check": "input_manifest_and_protocol_terrain_stable_building_n1000",
+      "pass_status": true
+    }
+  ],
+  "main_model_execution": false,
+  "limits": [
+    "Harness protocol checks complement real Main regression; they do not validate physical model equations."
+  ]
+}

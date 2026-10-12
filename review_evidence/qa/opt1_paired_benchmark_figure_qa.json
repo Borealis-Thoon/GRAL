@@ -1,0 +1,83 @@
+{
+  "status": "pass",
+  "files": [
+    {
+      "path": "release\\figures\\opt1_slice_stack_allocation.png",
+      "sha256": "535eb03b63c5165af5cde6652595f9d7557f245379b4f7efe606a1b36e41d89a",
+      "size": 166151
+    },
+    {
+      "path": "release\\figures\\opt1_slice_stack_allocation.svg",
+      "sha256": "f483fe30ce6a430c8c0892ebe61a84d4de9b3535c5c2b326cee264a35fcdb4d4",
+      "size": 22034
+    },
+    {
+      "path": "release\\figures\\opt1_vertical_lookup_tradeoffs.png",
+      "sha256": "3b3a1faa4c9f428d1c306c6e7c02d13256e6206e8c6da84de20b94972d03f9e4",
+      "size": 360446
+    },
+    {
+      "path": "release\\figures\\opt1_vertical_lookup_tradeoffs.svg",
+      "sha256": "af5a284a04ac11d11f551a1589f151d0761cae5ec23e321ed837f5eea5c124c1",
+      "size": 50000
+    }
+  ],
+  "canvas_checks": [
+    {
+      "figure": "opt1_slice_stack_allocation",
+      "canvas_pixels": [
+        2250,
+        1320
+      ],
+      "text_within_canvas": true,
+      "outside_text": []
+    },
+    {
+      "figure": "opt1_vertical_lookup_tradeoffs",
+      "canvas_pixels": [
+        2250,
+        1740
+      ],
+      "text_within_canvas": true,
+      "outside_text": []
+    }
+  ],
+  "input_hashes": [
+    {
+      "path": "qa\\opt1_benchmark.json",
+      "sha256": "be09df49490a6ef73e2b816496369e03f5a2b3074632bb47e32839260225f214"
+    },
+    {
+      "path": "qa\\opt1_paired_benchmark.json",
+      "sha256": "7a1a68195f184ac99d4c6cc8ae996c812ffb578211394df89fe1656da9689dcc"
+    },
+    {
+      "path": "qa\\opt1_actual_cache_hits.json",
+      "sha256": "f6eb087bbaa3c9d5f0d52bbdfe6241a4c155debb03d9f5598df7951af2d8cb4e"
+    },
+    {
+      "path": "qa\\opt1_paired_benchmark_captions.json",
+      "sha256": "8de8517e8bea3996b17c1734c8e9fb08e46e1a7e79e48affedf80f61705a59ac"
+    },
+    {
+      "path": "qa\\opt1_paired_benchmark_caption_audit.json",
+      "sha256": "765db15d65fc957398f047553052f6b7078570ba3e86f8423e073f466384052a"
+    }
+  ],
+  "paired_scope": "Synthetic height pairs, not a Main height trace replay",
+  "slower_original_conditions_shown": 29,
+  "full_model_speedup_claim": false,
+  "visual_inspection": "pass: both final PNGs inspected at original resolution with view_image",
+  "layout_findings": {
+    "clipped_text": false,
+    "overlapping_labels": false,
+    "limits_legible": true,
+    "slowdown_cells_shown": 29,
+    "constant_height_first_miss_explicit": true,
+    "paired_denominator": "50% of all lookups, including initial misses",
+    "synthetic_pairs_separate_from_actual_main_counters": true
+  },
+  "caption_workflow": "humanize-kit:humanizer Embedded; actual draft/audit/final saved in opt1_paired_benchmark_caption_audit.json",
+  "measured_dll_vs_final_lf_proof": "qa/opt1_line_endings_validation.json",
+  "all_measured_vs_final_method_bodies_equal": 646
+}

@@ -1,0 +1,266 @@
+{
+  "status": "pass_with_documented_scope_limits",
+  "reviewer": "opt1_audit",
+  "review_kind": "independent_read_only_combined_source_review",
+  "source_edits": false,
+  "builds_run": false,
+  "models_run": false,
+  "benchmarks_run": false,
+  "topics": [
+    "nan_guard_state",
+    "nan_guard_storage",
+    "opt1_stack",
+    "opt1_vertical"
+  ],
+  "source_integrity": {
+    "status": "pass_with_documented_line_endings",
+    "checks": {
+      "same_85_file_inventory": true,
+      "expected_6_changed_files": true,
+      "ProgramFunctions.cs_exact_topic_bytes": true,
+      "Transient_Concentration.cs_exact_topic_bytes": true,
+      "Zeitschleife.cs_nan_guard_source_restored_after_opt1_inverse": true,
+      "Zeitschleife_nonsteadystate.cs_nan_guard_source_restored_after_opt1_inverse": true,
+      "one_state_report_block": true,
+      "one_storage_report_block": true,
+      "state_report_preserved_after_removing_storage": true,
+      "storage_report_preserved_after_removing_state": true,
+      "baseline_program_restored_after_removing_both": true,
+      "Intwind_cs_normalized_topic_text_equal": true,
+      "Intwind.cs_exact_topic_bytes": true
+    },
+    "source_files": 85,
+    "unchanged_files": 79,
+    "changed_sha256": {
+      "Intwind.cs": "fb1f04cee6f530bea6385c919958121a8e74dfa4246f37d93a5395d24131d734",
+      "Program.cs": "3e27102d60a94f7584b7795472befc04d9fdc5b1941c87a20a0ae49d1ff61cad",
+      "ProgramFunctions.cs": "fcf95d9d963791a08c387455cf7ce25bde69be564b56e435053fd4d721992273",
+      "Transient_Concentration.cs": "f37e30fb67cb0d8d605e2e1ecd8f2a4a987fe275ac4dadb6ebcc550f907ff85c",
+      "Zeitschleife.cs": "9a2c47452f1bf64ce41e296363735a45d736693d0e09e79aa772f82e7f21f83f",
+      "Zeitschleife_nonsteadystate.cs": "cf2ca398e8aeee995bab850be2d9a8ee625f564a1c2f1e630e405c7a8eeb3097"
+    },
+    "final_vertical_sha256": {
+      "Intwind.cs": "fb1f04cee6f530bea6385c919958121a8e74dfa4246f37d93a5395d24131d734",
+      "Zeitschleife.cs": "2942e8209faaaaee134e251aa6afc8686f6f65c39ea0d8f655ee9e7001d88a7a",
+      "Zeitschleife_nonsteadystate.cs": "3b3887ad104707ea44d9803d381e5c68f2637359ccc356d66018576b6b119004"
+    },
+    "prepublication_final_vertical_sha256": {
+      "Intwind.cs": "439aeac32ad5c141b888a9b6dfa7145b27a6014127148b916abe7c4fcfe2a7bf",
+      "Zeitschleife.cs": "7520870eae8a16382dbea618d4d3d6d59b01c3fef917272af1a88dedb55b8def",
+      "Zeitschleife_nonsteadystate.cs": "9b5f4d38aa4909dae3bca945227d00853ef6fd666a60de8e5f2680de2e34894a"
+    },
+    "prepublication_formatting_difference": {
+      "file": "src/Intwind.cs",
+      "topic": "CRLF, 11056 bytes",
+      "combined": "LF, 10810 bytes",
+      "normalized_text_equal": true,
+      "reason": "Combined reconstruction follows the baseline file line endings. The 246 source lines are identical after line-ending normalization."
+    },
+    "current_85_source_hashes_match_final_manifests": true,
+    "combined_runtime_source_bytes_unchanged": true
+  },
+  "source_findings": [],
+  "checks": [
+    {
+      "topic": "integration",
+      "detail": "Reviewed the actual six-file combined diff. Inverse removal of OPT1 declaration/call wiring restores each driver to the exact normalized NaN-state topic source. Removing either counter-report block restores Program to the opposite topic; removing both restores baseline. ProgramFunctions and Transient_Concentration match the individual topic bytes. Intwind differs by line endings only."
+    },
+    {
+      "topic": "state checks plus wind state",
+      "detail": "Initial finite-state checks precede terrain wind state setup. Main-loop state checks precede interpolation. New goto paths terminate via existing cleanup without consuming an uninitialised WindSearch or kko. Cache state is not read by cleanup."
+    },
+    {
+      "topic": "expiry path",
+      "evidence": "combined src/Zeitschleife.cs:897-907",
+      "detail": "The finite-state check after vertical motion/sedimentation and before auszeit/expiry branch survives integration, preventing the previously identified state-only transient-expiry bypass."
+    },
+    {
+      "topic": "state and storage diagnostics",
+      "evidence": "combined src/Program.cs:730-743",
+      "detail": "Both independent Interlocked.Exchange counters and both console/log reports survive. They are read and reset only after both particle phases have returned. They count different events and are not combined into physical particle count or lost mass."
+    },
+    {
+      "topic": "storage arithmetic and locks",
+      "detail": "Both storage functions retain the original concentration expression order, reject nonfinite relative height/location/mass before index conversion, reject nonfinite float increment, and check total under the existing cell lock before assignment. Earlier valid cell contributions are preserved."
+    },
+    {
+      "topic": "combined stack safety",
+      "detail": "NaN exits may occur before complete kko writes, but existing REMOVE_PARTICLE does not read kko. Normal/odour concentration consumers remain after complete writes."
+    },
+    {
+      "topic": "normal calculations",
+      "detail": "For finite states and representable finite storage increments/totals, the new checks do not change arithmetic values, RNG draws or explicit worker order. Storage overflow rejection and invalid-state removal intentionally change fault paths."
+    },
+    {
+      "topic": "grid and metadata",
+      "detail": "Exact-height cache is per terrain particle, uses final public source, and does not change HOKART/NKK. NaN guard checks and residual storage use different state and introduce no cache invalidation requirement."
+    }
+  ],
+  "reviewed_reproducer": {
+    "path": "reproduce/integrate_candidates.py",
+    "detail": "The integration script verifies an 85-file baseline manifest, rejects overlapping replacements, composes insertions by topic order, preserves baseline byte content outside changed files, and writes an integration manifest. This reviewer inspected it but did not execute it."
+  },
+  "runtime_validation_verdict": "Source integration passes; current final public LF OPT1 and unchanged combined-source runtime records were read. Final suites record 320 Main runs/5056 checks and separate test-only routing profile records 8 Main runs/140 checks. No reviewer execution or timing rerun.",
+  "limits": [
+    "The independent NaN-state/storage review and its extracted fault fixtures remain separate; the combined source was reviewed for retention and interaction, not by executing combined full-Main fault injection.",
+    "The guard is not general physical input validation. Finite zero/negative time or mass, invalid finite indices, and every possible output overflow are not repaired.",
+    "Storage rejection preserves an already nonfinite existing cell rather than repairing it. Rejected mass/increments are not redistributed.",
+    "Cancellation can bypass success-only report/reset blocks; incomplete-situation diagnostics may be absent.",
+    "Cache timing remains workload-dependent; routing instrumentation is excluded from public production source and is not used as a timing measurement."
+  ],
+  "recorded_final_runtime_evidence": {
+    "evidence_read_by_reviewer": true,
+    "executed_by_this_reviewer": false,
+    "final_aggregate": {
+      "path": "qa/main_final_suites_summary.json",
+      "sha256": "0fcfd2eb642fe29bfabffaece2fc1547dc71d3e616f65381bfdd53a1309ac509",
+      "reported_status": "pass",
+      "main_runs": 320,
+      "main_checks": 5056,
+      "compared_payload_pairs": 1900,
+      "actual_checkpoint_read_runs": 16,
+      "strict_build_executions": 8,
+      "final_source_excludes_superseded_vertical_v1": true,
+      "public_opt1_source_lf_verified": true
+    },
+    "opt1_final": {
+      "path": "qa/main_opt1_final_result.json",
+      "sha256": "b5b78d6f292c6eac9a2263c0f09bbc86d5d36ee864d003056392190d7ead6cde",
+      "reported_status": "pass",
+      "final_source_external_manifest_matches": true,
+      "main_runs": 120,
+      "main_checks": 1896,
+      "compared_payload_pairs": 760,
+      "actual_checkpoint_read_runs": 6,
+      "source_manifest_sha256": "e98648e13fb8cfc9bc8f130057cb0af39f3e95ea98f219735f109dee15f44a94",
+      "strict_builds": {
+        "warning_free_baseline": {
+          "warnings": 0,
+          "errors": 0
+        },
+        "opt1_stack": {
+          "warnings": 0,
+          "errors": 0
+        },
+        "opt1_vertical": {
+          "warnings": 0,
+          "errors": 0
+        }
+      },
+      "validation_summary_path": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\qa\\main_validation_summary.json",
+      "validation_summary_sha256": "59d8527961bc1a6c88da7759a815654734643f7679f52d6abfe3f1aeae302d97",
+      "public_lf_source_matches": true
+    },
+    "combined_final": {
+      "path": "qa/main_combined_result.json",
+      "sha256": "1fc559a9cc7cb52a0f36dc44640f5f76bd727319dd3506d41aa1160fe97af8de",
+      "reported_status": "pass",
+      "final_source_external_manifest_matches": true,
+      "main_runs": 80,
+      "main_checks": 1264,
+      "compared_payload_pairs": 380,
+      "actual_checkpoint_read_runs": 4,
+      "source_manifest_sha256": "13b13ad61eec8eddea7153a6ee9c2961245de4f9e1729026612d58fdf3f0e6bc",
+      "strict_builds": {
+        "warning_free_baseline": {
+          "warnings": 0,
+          "errors": 0
+        },
+        "combined_candidate": {
+          "warnings": 0,
+          "errors": 0
+        }
+      },
+      "source_bytes_unchanged_verified": true
+    },
+    "separate_test_only_profile": {
+      "path": "work/main_opt1_profile_run01/qa/main_validation_summary.json",
+      "sha256": "3c3a10675a17f940772e8a13ecd07f704b4effbced2f9b1e510c1f41ba3ba8d6",
+      "reported_status": "pass",
+      "main_runs": 8,
+      "main_checks": 140,
+      "compared_payload_pairs": 146,
+      "routing_path": "qa/opt1_actual_cache_hits.json",
+      "instrumented_source_excluded_from_public_candidates": true,
+      "not_a_timing_benchmark": true
+    },
+    "distinct_reported_totals_with_profile": {
+      "main_runs": 328,
+      "main_checks": 5196,
+      "compared_payload_pairs": 2046,
+      "actual_checkpoint_read_runs": 16
+    },
+    "limits": [
+      "Shared baseline executions are counted as executed; validation is not a per-patch independent factorial design.",
+      "Superseded, preliminary and harness-debug runs are preserved but excluded from final counts.",
+      "Main elapsed times are watchdog evidence, not optimization benchmarks.",
+      "Terrain path is exercised, but terrain reflection occurrence counts are not instrumented in these ordinary source runs.",
+      "All terrain and prescribed wind input are entirely synthetic; no GRAMM solver run or production-domain scientific truth is asserted."
+    ]
+  },
+  "superseded_evidence": {
+    "path": "qa/main_individual_suites_summary.json",
+    "main_runs": 240,
+    "main_checks": 3672,
+    "reason": "Includes superseded vertical cache v1. Not evidence for final exact-height B and excluded from final totals.",
+    "prepublication_exact_height_main": {
+      "path": "work/main_opt1_final_run04",
+      "reason": "Same C# text/IL before line-ending publication normalization; final public-source Main evidence is run05."
+    }
+  },
+  "publication_normalization_review": {
+    "evidence_read_by_reviewer": true,
+    "executed_by_this_reviewer": false,
+    "validation_path": "qa/opt1_line_endings_validation.json",
+    "validation_sha256": "25224de20a43df3428a6bdc041cb76584612f3c35aa5f3fc02842011031a1263",
+    "method_il_path": "qa/opt1_line_endings_il_comparison.json",
+    "method_il_sha256": "1ff789f47b8d4a7307ec2ef1f2de38035f72cf839df74a0d3ea3486053c16b86",
+    "source_records": [
+      {
+        "file": "src/Intwind.cs",
+        "prepublication_sha256": "439aeac32ad5c141b888a9b6dfa7145b27a6014127148b916abe7c4fcfe2a7bf",
+        "final_lf_sha256": "fb1f04cee6f530bea6385c919958121a8e74dfa4246f37d93a5395d24131d734",
+        "prepublication_crlf_count": 246,
+        "final_crlf_count": 0,
+        "normalized_source_bytes_equal": true,
+        "actual_sha256": "fb1f04cee6f530bea6385c919958121a8e74dfa4246f37d93a5395d24131d734",
+        "independent_normalized_byte_comparison": true,
+        "archive_path": "work/main_opt1_final_run04/source/opt1_vertical/src/Intwind.cs"
+      },
+      {
+        "file": "src/Zeitschleife.cs",
+        "prepublication_sha256": "7520870eae8a16382dbea618d4d3d6d59b01c3fef917272af1a88dedb55b8def",
+        "final_lf_sha256": "2942e8209faaaaee134e251aa6afc8686f6f65c39ea0d8f655ee9e7001d88a7a",
+        "prepublication_crlf_count": 2426,
+        "final_crlf_count": 0,
+        "normalized_source_bytes_equal": true,
+        "actual_sha256": "2942e8209faaaaee134e251aa6afc8686f6f65c39ea0d8f655ee9e7001d88a7a",
+        "independent_normalized_byte_comparison": true,
+        "archive_path": "work/main_opt1_final_run04/source/opt1_vertical/src/Zeitschleife.cs"
+      },
+      {
+        "file": "src/Zeitschleife_nonsteadystate.cs",
+        "prepublication_sha256": "9b5f4d38aa4909dae3bca945227d00853ef6fd666a60de8e5f2680de2e34894a",
+        "final_lf_sha256": "3b3887ad104707ea44d9803d381e5c68f2637359ccc356d66018576b6b119004",
+        "prepublication_crlf_count": 1310,
+        "final_crlf_count": 0,
+        "normalized_source_bytes_equal": true,
+        "actual_sha256": "3b3887ad104707ea44d9803d381e5c68f2637359ccc356d66018576b6b119004",
+        "independent_normalized_byte_comparison": true,
+        "archive_path": "work/main_opt1_final_run04/source/opt1_vertical/src/Zeitschleife_nonsteadystate.cs"
+      }
+    ],
+    "source_changes_beyond_line_endings": false,
+    "recorded_strict_build": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "old_measured_prepublication_dll_sha256": "8475469428964f33db284a4d303a0b74f7701bca3d659a0e79039d08935e523f",
+    "final_lf_dll_sha256": "82de9490ea5e96bcf6e906e739eaa5a248eb54def0d39a2b806df3daddceb565",
+    "recorded_all_646_method_IL_tokens_headers_and_exception_handlers_equal": true,
+    "recorded_fresh_component_checks": 1593341,
+    "benchmark_source_provenance": "Original timing/profiling records retain their measured prepublication CRLF DLL/source hashes. Final LF source applicability is supported by source equality, recorded 646-method IL/metadata equivalence, and fresh component and Main checks; this reviewer did not rerun timing.",
+    "public_source_commit": "7c23fe92803a019c1535af7f02fcc6b2e940f2ee",
+    "public_remote_verification": "Root GitHub source-85 verification accepted; this reviewer independently matched all 85 current local source hashes against final Main and combined topic manifests."
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "status": "strict_build_and_component_checks_pass",
+  "variant": "opt1_vertical",
+  "files": [
+    {
+      "file": "src/Intwind.cs",
+      "preimage_sha256": "b86e06ca1aeeaa59cd220b5f52fc1fdb5f3fea27edd40fa9ea968509d3b8f2ae",
+      "candidate_sha256": "fb1f04cee6f530bea6385c919958121a8e74dfa4246f37d93a5395d24131d734",
+      "added_lines": 46,
+      "removed_lines": 1,
+      "added_body_characters": 1708,
+      "removed_body_characters": 56
+    },
+    {
+      "file": "src/Zeitschleife.cs",
+      "preimage_sha256": "c82d079904a088016c6e574905e133eaf100c7b126a307deae683883e2e87a82",
+      "candidate_sha256": "2942e8209faaaaee134e251aa6afc8686f6f65c39ea0d8f655ee9e7001d88a7a",
+      "added_lines": 5,
+      "removed_lines": 4,
+      "added_body_characters": 605,
+      "removed_body_characters": 444
+    },
+    {
+      "file": "src/Zeitschleife_nonsteadystate.cs",
+      "preimage_sha256": "a1f98f8f70f43fc2de4a54c2be2bff700bba66a611c4b9d28d411120cd8ff5c1",
+      "candidate_sha256": "3b3887ad104707ea44d9803d381e5c68f2637359ccc356d66018576b6b119004",
+      "added_lines": 4,
+      "removed_lines": 3,
+      "added_body_characters": 560,
+      "removed_body_characters": 389
+    }
+  ],
+  "total_added_lines": 55,
+  "total_removed_lines": 8,
+  "body_changed_characters": 3762,
+  "unified_diff_characters": 6830,
+  "scope": "Exact finite height cache. Same normalized C# source as measured CRLF DLL, now LF to match #59.",
+  "component_checks": 1593341,
+  "main_revalidation": "pending root final LF-source run",
+  "line_endings": "LF"
+}

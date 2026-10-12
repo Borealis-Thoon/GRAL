@@ -1,0 +1,68 @@
+{
+  "nan_guard_state": {
+    "changed_files": [
+      {
+        "file": "src/Program.cs",
+        "sha256": "f1ec7863aa5ee80e56adfadd4eec3aa518ca3617f6620347084df85d1a95249f",
+        "added_lines": 7,
+        "deleted_lines": 0,
+        "added_body_characters": 421,
+        "deleted_body_characters": 0
+      },
+      {
+        "file": "src/ProgramFunctions.cs",
+        "sha256": "fcf95d9d963791a08c387455cf7ce25bde69be564b56e435053fd4d721992273",
+        "added_lines": 13,
+        "deleted_lines": 0,
+        "added_body_characters": 511,
+        "deleted_body_characters": 0
+      },
+      {
+        "file": "src/Zeitschleife.cs",
+        "sha256": "81fb9df2a9f6cc39487dd4ffe36b473a2cdf0f2ef7e756ed6e58b5286adad8fd",
+        "added_lines": 56,
+        "deleted_lines": 0,
+        "added_body_characters": 2039,
+        "deleted_body_characters": 0
+      },
+      {
+        "file": "src/Zeitschleife_nonsteadystate.cs",
+        "sha256": "41742b339ea4dd76de95d65e577023e1916e4d33d81ca622ccbf1a01ea81ec70",
+        "added_lines": 42,
+        "deleted_lines": 0,
+        "added_body_characters": 1557,
+        "deleted_body_characters": 0
+      }
+    ],
+    "file_count": 4,
+    "added_lines": 118,
+    "deleted_lines": 0,
+    "changed_body_characters": 4528,
+    "lf_unified_patch_characters": 10922
+  },
+  "nan_guard_storage": {
+    "changed_files": [
+      {
+        "file": "src/Program.cs",
+        "sha256": "dcfb4c266b683e8a20a31acd8fb4f9ee7983744722f020c5d1d283e5dc275a97",
+        "added_lines": 7,
+        "deleted_lines": 0,
+        "added_body_characters": 463,
+        "deleted_body_characters": 0
+      },
+      {
+        "file": "src/Transient_Concentration.cs",
+        "sha256": "f37e30fb67cb0d8d605e2e1ecd8f2a4a987fe275ac4dadb6ebcc550f907ff85c",
+        "added_lines": 45,
+        "deleted_lines": 4,
+        "added_body_characters": 2128,
+        "deleted_body_characters": 407
+      }
+    ],
+    "file_count": 2,
+    "added_lines": 52,
+    "deleted_lines": 4,
+    "changed_body_characters": 2998,
+    "lf_unified_patch_characters": 4604
+  }
+}

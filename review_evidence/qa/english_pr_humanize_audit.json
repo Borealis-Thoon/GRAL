@@ -1,0 +1,244 @@
+{
+  "workflow": "humanize-kit:humanizer Embedded draft-audit-final",
+  "status": "pass_four_local_pr_bodies_ready_root_runtime_and_render_gates_separate",
+  "titles": {
+    "nan_guard_state": "Reject non-finite particle states at tracking boundaries",
+    "nan_guard_storage": "Guard residual concentration writes against non-finite values",
+    "opt1_stack": "Use bounded stack storage for particle slice indices",
+    "opt1_vertical": "Reuse the vertical index for repeated finite heights"
+  },
+  "draft_contents": {
+    "pr_body_nan_guard_state.md": "<!-- Title: Reject non-finite particle states at tracking boundaries -->\n\n`Zeitschleife.Calculate()` and the residual `ParticleDriver()` derive grid indices and concentration contributions from the particle coordinates, mass and time step. On the selected paths, an intermediate NaN or infinity can reach later indexing or accumulation without a finite-state check. The early transient-expiry path can also store a state before the normal tracking loop checks it. Invalid remainder data can then affect subsequent residual tracking or shared fields.\n\nAdd `Program.ParticleStateIsFinite()` in `ProgramFunctions.cs` and call it at the selected boundaries in both drivers. It checks x/y, z, concentration-related mass and time step. The residual initializer also checks its initial real mass, and the unsplit transient-entry calculation rejects a non-finite mass before deriving a split count. The checks after decay and wet-loss clamping screen their resulting mass values. A failed tracked state follows the existing `REMOVE_PARTICLE` path. Contributions that were valid before the rejection, including receptor contributions, remain; the untracked remainder is discarded without zero replacement, redistribution or replay.\n\n```mermaid\nflowchart LR\n  subgraph Before[\"Before: selected tracking paths\"]\n    direction TB\n    B1[\"Intermediate particle state\"] --> B2[\"Later indexing or accumulation\"]\n    B2 --> B3[\"Non-finite values can propagate or fail\"]\n  end\n  subgraph After[\"After: finite checks at these boundaries\"]\n    direction TB\n    A1[\"Check coordinates, mass and time step\"] -->|finite| A2[\"Continue existing tracking\"]\n    A1 -->|non-finite| A3[\"Use REMOVE_PARTICLE; discard remainder\"]\n    A3 --> A4[\"Increment rejected-state counter\"]\n  end\n  B1 -.-> A1\n```\n\n`NonFiniteParticleCount` is a long counter incremented with `Interlocked`. One rejected state or unsplit transient entry is counted when it first fails a checked boundary; this is not the number of originally emitted particles. `Program.cs` exchanges and resets the counter and reports nonzero values for a completed weather situation. The separate residual-write guard uses its own counter and is not part of this PR.\n\nThe shared NaNGuard component suite passed 1917 checks. Relevant state evidence includes 20 actual initial-driver cases and extracted production-branch checks. In the extracted expiry tests, none of 16 injected candidate fault cases reached storage, and 40 normal pairs matched. These are selected branch tests, not full Main fault injection or a measured real-run failure rate.\n\nThe Main suite ran 120 projects across the baseline and both NaNGuard variants. This candidate accounts for 40: 36 normal runs and four checkpoint prefix/resume runs. Its 36 normal baseline comparisons and two resumed-output comparisons matched, with no rejection report in normal runs. All three suite variants passed strict Release builds with zero warnings and errors. The controlled runs use fixed seeds, one worker and actual allocations of 100, 1000 or 3000 particles.\n\nThis does not validate every model global, coordinate range or index. Finite zero, negative values and subnormals remain accepted. RNG endpoint arithmetic and ignored Clamp return values are unchanged; already polluted arrays or checkpoints are not healed, and previous contributions are not rolled back. No atmospheric-accuracy or full-model speedup claim is made.\n\nThe change adds 118 lines in four files, with 4646 added source-body characters excluding line terminators. It targets V2701 with the [warning cleanup in PR #59](https://github.com/GralDispersionModel/GRAL/pull/59) as a prerequisite. The [state-only comparison](https://github.com/Borealis-Thoon/GRAL/compare/3cfbd25505c21034673d2c850c368e953d08ef7e...47c8f8f84c2c3c855523459e189e731c8c42bd3a) excludes that cleanup. Public evidence links will be added after approval of the separate evidence bundle.\n\n- [x] AI-assisted code and automated review.\n- [ ] Author has reviewed every changed line and confirmed its correctness.\n- [x] Local Release build with `TreatWarningsAsErrors=true`: zero warnings and errors.\n- [x] No new nullable-reference warnings.\n",
+    "pr_body_nan_guard_storage.md": "<!-- Title: Guard residual concentration writes against non-finite values -->\n\n`TransientConcentration.Conz5dZeitschleife()` and `Conz5dZeitschleifeTransient()` convert offsets and relative height to residual-grid indices, compute a float increment, and add it to `Conz5d`. A non-finite coordinate or mass can reach those operations. Even with finite inputs, conversion to float or addition to a large float cell can overflow. One bad write can therefore make a residual cell non-finite and carry that value into later weather situations.\n\nIn `Transient_Concentration.cs`, check x/y offsets, `zcoord_nteil - AHint` and the mass argument before indexing. Check the computed float increment before entering the existing leaf-array lock. Inside that lock, compute the prospective float total and assign it only if it is finite. A rejected call returns without changing the destination. The valid calculation, float precision, locking and storage layout remain; this guards the write boundary rather than changing the stored mass formula.\n\n```mermaid\nflowchart LR\n  subgraph Before[\"Before: residual storage\"]\n    direction TB\n    B1[\"Offsets, height and mass\"] --> B2[\"Float increment and cell addition\"]\n    B2 --> B3[\"A bad write can pollute the cell\"]\n  end\n  subgraph After[\"After: guarded residual write\"]\n    direction TB\n    A1[\"Check inputs and float increment\"] -->|finite| A2[\"Lock leaf; check prospective total\"]\n    A2 -->|finite| A3[\"Assign the same float calculation\"]\n    A1 -->|non-finite| A4[\"Skip write; keep destination unchanged\"]\n    A2 -->|non-finite| A4\n  end\n  B1 -.-> A1\n```\n\n`NonFiniteResidualWriteCount` is a separate long counter, incremented once per rejected storage call. It is not a count of particle states or originally emitted particles. `Program.cs` reports and resets nonzero counts for completed weather situations. The rejected remainder is not replaced, redistributed or replayed, and earlier valid contributions stay in place.\n\nThe actual-DLL storage tests cover 32 injected fault cases across the two methods and 56 normal cases. All 32 candidate fault calls left the destination unchanged and counted the rejected write; normal results matched the baseline. In those selected baseline cases, 12 writes produced non-finite storage and eight calls threw indexing exceptions. The shared component suite passed 1917 checks, including these storage tests and separate state/branch tests; 1917 is not a storage-only count. Parallel storage and counter checks include one and two workers.\n\nThe Main suite ran 120 projects across the baseline and both NaNGuard variants. This storage candidate accounts for 40: 36 normal runs and four checkpoint prefix/resume runs. Its 36 normal baseline comparisons and two resumed-output comparisons matched, and normal runs produced no skipped-write report. All three suite variants passed strict Release builds with zero warnings and errors. These are controlled fixed-seed, one-worker runs with 100, 1000 or 3000 particles; they do not inject faults into a complete Main run.\n\nA finite-input requirement still leaves the existing domain, cell-size and source-index preconditions in place. If a destination is already NaN or infinity, rejecting a new addition preserves that polluted value rather than healing it. Other shared concentration, receptor and deposition sums are outside this patch. No mass-balance repair, checkpoint recovery or atmospheric-accuracy improvement is claimed.\n\nThe change has 52 added and four removed lines in two files, totalling 3054 added-plus-removed source-body characters excluding line terminators. It targets V2701 with the [warning cleanup in PR #59](https://github.com/GralDispersionModel/GRAL/pull/59) as a prerequisite. The [storage-only comparison](https://github.com/Borealis-Thoon/GRAL/compare/3cfbd25505c21034673d2c850c368e953d08ef7e...5a333595fea7a7956956db20c712f32213b1a2e7) excludes that cleanup. Public evidence links will be added after approval of the separate evidence bundle.\n\n- [x] AI-assisted code and automated review.\n- [ ] Author has reviewed every changed line and confirmed its correctness.\n- [x] Local Release build with `TreatWarningsAsErrors=true`: zero warnings and errors.\n- [x] No new nullable-reference warnings.\n",
+    "pr_body_opt1_stack.md": "<!-- Title: Use bounded stack storage for particle slice indices -->\n\n`Zeitschleife.Calculate()` creates `Span<int> kko = new int[Program.NS]` for each newly emitted particle. `kko` holds the concentration-slice indices, so even a small slice count creates a heap array on every call. With many particle calls, those short-lived arrays add allocation and garbage-collection work.\n\nReplace that one declaration in `Zeitschleife.cs` with bounded stack storage for valid `NS <= 512`, retaining the existing heap allocation above 512. The kko buffer therefore uses at most 2048 bytes of stack payload. This bound applies only to kko, not the method's total stack use. The source audit checked that every kko read follows its slice-index write; stack storage does not depend on the array's previous zero initialization. Slice calculations, tracking logic and RNG call order remain unchanged.\n\n```mermaid\nflowchart LR\n  subgraph Before[\"Before: each particle call\"]\n    direction TB\n    B1[\"Allocate int array of length NS\"] --> B2[\"Write and read slice indices\"]\n    B2 --> B3[\"Heap array becomes short-lived garbage\"]\n  end\n  subgraph After[\"After: one bounded declaration\"]\n    direction TB\n    A1[\"Choose storage from NS\"] -->|NS at most 512| A2[\"Stack payload at most 2048 bytes\"]\n    A1 -->|NS above 512| A3[\"Keep existing heap array\"]\n    A2 --> A4[\"Same slice writes before reads\"]\n    A3 --> A4\n  end\n  B1 -.-> A1\n```\n\nThe allocation benchmark calls the actual production method and then exits through the initial out-of-domain removal path. Its measured heap allocation per call was:\n\n| NS | Baseline bytes | Candidate bytes |\n|---:|---:|---:|\n| 1 | 32 | 0 |\n| 9 | 64 | 0 |\n| 512 | 2072 | 0 |\n| 513 | 2080 | 2080 |\n\nEach condition used 4096 calls. These measurements isolate entry allocation and early exit; they do not time full particle tracking or establish a full-model speedup. The large-NS fallback preserves allocation size, while the extra branch can still have a timing cost. Four component entry checks cover these declaration boundaries; they are not full NS=512/513 Main runs.\n\nThis stack candidate passed 40 actual Main executions: 36 normal runs and four checkpoint prefix/resume runs. Its 36 normal baseline comparisons and two resumed-output comparisons matched in controlled fixed-seed, one-worker cases with actual allocations of 100, 1000 or 3000 particles. The recorded shared OPT1 suite has 120 runs across the baseline, stack candidate and the vertical-search candidate at that test revision; 120 is not a stack-only count. All three variants passed strict Release builds with zero warnings and errors. Normal full-tracking regression and the source audit support read-before-write correctness separately from the early-exit allocation test.\n\nNo allocation result is presented as atmospheric accuracy or production throughput. Timing can affect TickCount-based seeds and multithreaded arrival order even when RNG calls and scheduling code stay unchanged. This one-line patch is independent of the separate vertical-search optimisation and the NaNGuard proposals.\n\nThe edit replaces one line in one file. Added and removed source bodies total 145 characters; the LF unified diff contains 583 characters. It targets V2701 with the [warning cleanup in PR #59](https://github.com/GralDispersionModel/GRAL/pull/59) as a prerequisite. The [stack-only comparison](https://github.com/Borealis-Thoon/GRAL/compare/3cfbd25505c21034673d2c850c368e953d08ef7e...b4ffec5e2ab55d3ec3717ed37d04938837e00120) excludes that cleanup. Public evidence links will be added after approval of the separate evidence bundle.\n\n- [x] AI-assisted code and automated review.\n- [ ] Author has reviewed every changed line and confirmed its correctness.\n- [x] Local Release build with `TreatWarningsAsErrors=true`: zero warnings and errors.\n- [x] No new nullable-reference warnings.\n"
+  },
+  "source_scope": "Only the three owned PR prose files and this audit file are edited.",
+  "remote_actions": 0,
+  "publication_links": "Only approved source topic comparisons and PR59 prerequisite;no new public evidence URLs.",
+  "final_files": [
+    {
+      "path": "release/pr_body_nan_guard_state.md",
+      "sha256": "1bef8d0fac30c33392b9a1edb9dc9883c5d030201968f0a62cb333fccf883a75",
+      "characters": 4824,
+      "mermaid_blocks": 1,
+      "public_evidence_URLs": 0
+    },
+    {
+      "path": "release/pr_body_nan_guard_storage.md",
+      "sha256": "8447795f4802cfe410758676ce331aede66d9a7765de61df2d4ebff4f192e800",
+      "characters": 4947,
+      "mermaid_blocks": 1,
+      "public_evidence_URLs": 0
+    },
+    {
+      "path": "release/pr_body_opt1_stack.md",
+      "sha256": "9503ea0fe486295ef022cf28168a8b5c127c47f225d71b719268caca267f3f15",
+      "characters": 4515,
+      "mermaid_blocks": 1,
+      "public_evidence_URLs": 0
+    },
+    {
+      "path": "release/pr_body_opt1_vertical.md",
+      "sha256": "ef61f44a8d502df7a2a4a538893ff422699e6b5f7c68f1ecf65b21cc3abef7b8",
+      "characters": 5797,
+      "mermaid_blocks": 1,
+      "public_evidence_URLs": 0
+    }
+  ],
+  "evidence_sources": [
+    "inputs/Contributing.md",
+    "patch/nan_guard_state.diff",
+    "patch/nan_guard_storage.diff",
+    "patch/opt1_stack.diff",
+    "qa/nan_guard_patch_stats.json",
+    "qa/nan_guard_component_summary.json",
+    "qa/nan_guard_scope_and_limits.json",
+    "qa/main_nan_result.json",
+    "qa/main_opt1_result.json",
+    "qa/opt1_stack_change.json",
+    "qa/opt1_benchmark_stack.csv",
+    "qa/independent_nan_guard_review.json",
+    "qa/independent_opt1_review.json"
+  ],
+  "fidelity_checks": [
+    "120 Main is each shared three-variant suite;each candidate has40 runs,36 normal pairs and2 resumed-output pairs.",
+    "1917 is combined NaN component suite;state expiry16 candidate fault branches+40 normalpairs andstorage32 fault+56 normalcases scoped accurately.",
+    "Expiry baseline reached storage only in the twelve non-finite-height rows;no16-to-zero baseline claim.",
+    "Rejected states and skipped storage calls use distinct long counters;neither is original emitted-particle count.",
+    "Valid prior contributions retained;untracked remainder not replaced,redistributed or replayed;already poisoned data not healed.",
+    "Finite-only scope preserves zero,negativefinite andsubnormal values;not full physical-input validation.",
+    "Stack<=512 bounds only kko payload at2048bytes;heapfallback>512;all reads followwrites.",
+    "Stack allocation benchmark actualCalculate entry/early-exit only;four boundary entrychecks not fullNS512/513Main.",
+    "One/two worker component checks separated from one-worker fixed-seed Main equality.",
+    "No new public evidence URLs;only root-approved sourcecompares andPR59link.",
+    "AIassistance andautomatedreview disclosed;humanline-review remainsunchecked."
+  ],
+  "style_audit": [
+    "Concrete existing methods start each explanation.",
+    "Conditions,calculationimpact andsmallcodechange precede testcounts.",
+    "Removed two unnecessary contrast constructions.",
+    "Kept numericfields,sourceidentifiers,approvedURLs andMermaidcode unchanged through the final prose edit.",
+    "No authorship score,atmosphericaccuracy orfull-modelspeedup claim."
+  ],
+  "main_source_observed": {
+    "nan_result_summary_sha256": "adf5a2b029c11fef599788ee454357e11ec7388d6c40fda32f2457d77fd6326f",
+    "opt1_result_summary_sha256": "527ba35b9b200b82afd695147a149e66d6d3b0dd1c70256aa544e5723368bd9f"
+  },
+  "limits": [
+    "Mermaid source prepared and semantically checked;actual GitHub rendering is root validation.",
+    "Vertical-search fourth PR is outside this assignment and remains pending its current performance reimplementation."
+  ],
+  "source_edits": 0,
+  "publication_revision": {
+    "workflow": "Embedded draft-audit-final; local sentence revisions only",
+    "drafts_before_revision": {
+      "nan_guard_state": "<!-- Title: Reject non-finite particle states at tracking boundaries -->\n\n`Zeitschleife.Calculate()` and the residual `ParticleDriver()` derive grid indices and concentration contributions from the particle coordinates, mass and time step. On the selected paths, an intermediate NaN or infinity can reach later indexing or accumulation without a finite-state check. The early transient-expiry path can also store a state before the normal tracking loop checks it. Invalid remainder data can then affect subsequent residual tracking or shared fields.\n\nAdd `Program.ParticleStateIsFinite()` in `ProgramFunctions.cs` and call it at the selected boundaries in both drivers. It checks x/y, z, concentration-related mass and time step. The residual initializer also checks its initial real mass, and the unsplit transient-entry calculation rejects a non-finite mass before deriving a split count. The checks after decay and wet-loss clamping screen their resulting mass values. A failed tracked state follows the existing `REMOVE_PARTICLE` path. Contributions that were valid before the rejection, including receptor contributions, remain; the untracked remainder is discarded without zero replacement, redistribution or replay.\n\n```mermaid\nflowchart LR\n  subgraph Before[\"Before: selected tracking paths\"]\n    direction TB\n    B1[\"Intermediate particle state\"] --> B2[\"Later indexing or accumulation\"]\n    B2 --> B3[\"Non-finite values can propagate or fail\"]\n  end\n  subgraph After[\"After: finite checks at these boundaries\"]\n    direction TB\n    A1[\"Check coordinates, mass and time step\"] -->|finite| A2[\"Continue existing tracking\"]\n    A1 -->|non-finite| A3[\"Use REMOVE_PARTICLE; discard remainder\"]\n    A3 --> A4[\"Increment rejected-state counter\"]\n  end\n  B1 -.-> A1\n```\n\n`NonFiniteParticleCount` is a long counter incremented with `Interlocked`. One rejected state or unsplit transient entry is counted when it first fails a checked boundary; this is not the number of originally emitted particles. `Program.cs` exchanges and resets the counter and reports nonzero values after particle tracking finishes for the weather situation. The separate residual-write guard uses its own counter and is not part of this PR.\n\nThe shared NaNGuard component suite passed 1917 checks. Relevant state evidence includes 20 actual initial-driver cases and extracted production-branch checks. In the extracted expiry tests, none of 16 injected candidate fault cases reached storage, and 40 normal pairs matched. These are selected branch tests, not full Main fault injection or a measured real-run failure rate.\n\nThe Main suite ran 120 projects across the baseline and both NaNGuard variants. This candidate accounts for 40: 36 normal runs and four checkpoint prefix/resume runs. Its 36 normal baseline comparisons and two resumed-output comparisons matched, with no rejection report in normal runs. All three suite variants passed strict Release builds with zero warnings and errors. The controlled runs use fixed seeds, one worker and actual allocations of 100, 1000 or 3000 particles.\n\nExisting global-value, domain and index preconditions remain. Finite zero, negative values and subnormals remain accepted. RNG endpoint arithmetic and ignored Clamp return values are unchanged; already polluted arrays or checkpoints are not healed, and previous contributions are not rolled back. No atmospheric-accuracy or full-model speedup claim is made.\n\nThe change adds 118 lines in four files, with 4646 added source-body characters excluding line terminators. It targets V2701 with the [warning cleanup in PR #59](https://github.com/GralDispersionModel/GRAL/pull/59) as a prerequisite. The [state-only comparison](https://github.com/Borealis-Thoon/GRAL/compare/3cfbd25505c21034673d2c850c368e953d08ef7e...47c8f8f84c2c3c855523459e189e731c8c42bd3a) excludes that cleanup. Public evidence links will be added after approval of the separate evidence bundle.\n\n- [x] AI-assisted code and automated review.\n- [ ] Author has reviewed every changed line and confirmed its correctness.\n- [x] Local Release build with `TreatWarningsAsErrors=true`: zero warnings and errors.\n- [x] No new nullable-reference warnings.\n",
+      "nan_guard_storage": "<!-- Title: Guard residual concentration writes against non-finite values -->\n\n`TransientConcentration.Conz5dZeitschleife()` and `Conz5dZeitschleifeTransient()` convert offsets and relative height to residual-grid indices, compute a float increment, and add it to `Conz5d`. A non-finite coordinate or mass can reach those operations. Even with finite inputs, conversion to float or addition to a large float cell can overflow. One bad write can therefore make a residual cell non-finite and carry that value into later weather situations.\n\nIn `Transient_Concentration.cs`, check x/y offsets, `zcoord_nteil - AHint` and the mass argument before indexing. Check the computed float increment before entering the existing leaf-array lock. Inside that lock, compute the prospective float total and assign it only if it is finite. A rejected call returns without changing the destination. The valid calculation, float precision, locking and storage layout remain; the existing mass-to-concentration formula remains in use.\n\n```mermaid\nflowchart LR\n  subgraph Before[\"Before: residual storage\"]\n    direction TB\n    B1[\"Offsets, height and mass\"] --> B2[\"Float increment and cell addition\"]\n    B2 --> B3[\"A bad write can pollute the cell\"]\n  end\n  subgraph After[\"After: guarded residual write\"]\n    direction TB\n    A1[\"Check inputs and float increment\"] -->|finite| A2[\"Lock leaf; check prospective total\"]\n    A2 -->|finite| A3[\"Assign the same float calculation\"]\n    A1 -->|non-finite| A4[\"Skip write; keep destination unchanged\"]\n    A2 -->|non-finite| A4\n  end\n  B1 -.-> A1\n```\n\n`NonFiniteResidualWriteCount` is a separate long counter, incremented once per rejected storage call. It is not a count of particle states or originally emitted particles. `Program.cs` reports and resets nonzero counts after particle tracking finishes for the weather situation. The rejected remainder is not replaced, redistributed or replayed, and earlier valid contributions stay in place.\n\nThe actual-DLL storage tests cover 32 injected fault cases across the two methods and 56 normal cases. All 32 candidate fault calls left the destination unchanged and counted the rejected write; normal results matched the baseline. In those selected baseline cases, 12 writes produced non-finite storage and eight calls threw indexing exceptions. The shared component suite passed 1917 checks, including these storage tests and separate state/branch tests; 1917 is not a storage-only count. Parallel storage and counter checks include one and two workers.\n\nThe Main suite ran 120 projects across the baseline and both NaNGuard variants. This storage candidate accounts for 40: 36 normal runs and four checkpoint prefix/resume runs. Its 36 normal baseline comparisons and two resumed-output comparisons matched, and normal runs produced no skipped-write report. All three suite variants passed strict Release builds with zero warnings and errors. These are controlled fixed-seed, one-worker runs with 100, 1000 or 3000 particles; they do not inject faults into a complete Main run.\n\nA finite-input requirement still leaves the existing domain, cell-size and source-index preconditions in place. If a destination is already NaN or infinity, rejecting a new addition preserves that polluted value rather than healing it. Other shared concentration, receptor and deposition sums are outside this patch. No mass-balance repair, checkpoint recovery or atmospheric-accuracy improvement is claimed.\n\nThe change has 52 added and four removed lines in two files, totalling 3054 added-plus-removed source-body characters excluding line terminators. It targets V2701 with the [warning cleanup in PR #59](https://github.com/GralDispersionModel/GRAL/pull/59) as a prerequisite. The [storage-only comparison](https://github.com/Borealis-Thoon/GRAL/compare/3cfbd25505c21034673d2c850c368e953d08ef7e...5a333595fea7a7956956db20c712f32213b1a2e7) excludes that cleanup. Public evidence links will be added after approval of the separate evidence bundle.\n\n- [x] AI-assisted code and automated review.\n- [ ] Author has reviewed every changed line and confirmed its correctness.\n- [x] Local Release build with `TreatWarningsAsErrors=true`: zero warnings and errors.\n- [x] No new nullable-reference warnings.\n",
+      "opt1_stack": "<!-- Title: Use bounded stack storage for particle slice indices -->\n\n`Zeitschleife.Calculate()` creates `Span<int> kko = new int[Program.NS]` for each newly emitted particle. `kko` holds the concentration-slice indices, so even a small slice count creates a heap array on every call. With many particle calls, those short-lived arrays add allocation and garbage-collection work.\n\nReplace that one declaration in `Zeitschleife.cs` with bounded stack storage for valid `NS <= 512`, retaining the existing heap allocation above 512. The kko buffer therefore uses at most 2048 bytes of stack payload. This bound applies only to kko, not the method's total stack use. The source audit checked that every kko read follows its slice-index write; stack storage does not depend on the array's previous zero initialization. Slice calculations, tracking logic and RNG call order remain unchanged.\n\n```mermaid\nflowchart LR\n  subgraph Before[\"Before: each particle call\"]\n    direction TB\n    B1[\"Allocate int array of length NS\"] --> B2[\"Write and read slice indices\"]\n    B2 --> B3[\"Heap array becomes short-lived garbage\"]\n  end\n  subgraph After[\"After: one bounded declaration\"]\n    direction TB\n    A1[\"Choose storage from NS\"] -->|NS at most 512| A2[\"Stack payload at most 2048 bytes\"]\n    A1 -->|NS above 512| A3[\"Keep existing heap array\"]\n    A2 --> A4[\"Same slice writes before reads\"]\n    A3 --> A4\n  end\n  B1 -.-> A1\n```\n\nThe allocation benchmark calls the actual production method and then exits through the initial out-of-domain removal path. Its measured heap allocation per call was:\n\n| NS | Baseline bytes | Candidate bytes |\n|---:|---:|---:|\n| 1 | 32 | 0 |\n| 9 | 64 | 0 |\n| 512 | 2072 | 0 |\n| 513 | 2080 | 2080 |\n\nEach condition used 4096 calls. These measurements isolate entry allocation and early exit; they do not time full particle tracking or establish a full-model speedup. The large-NS fallback preserves allocation size, while the extra branch can still have a timing cost. Four component entry checks cover these declaration boundaries; they are not full NS=512/513 Main runs.\n\nThis stack candidate passed 40 actual Main executions: 36 normal runs and four checkpoint prefix/resume runs. Its 36 normal baseline comparisons and two resumed-output comparisons matched in controlled fixed-seed, one-worker cases with actual allocations of 100, 1000 or 3000 particles. The recorded shared OPT1 suite has 120 runs across the baseline, stack candidate and the vertical-search candidate; 120 is not a stack-only count. All three variants passed strict Release builds with zero warnings and errors. Normal full-tracking regression and the source audit support read-before-write correctness separately from the early-exit allocation test.\n\nNo allocation result is presented as atmospheric accuracy or production throughput. Timing can affect TickCount-based seeds and multithreaded arrival order even when RNG calls and scheduling code stay unchanged. This one-line patch is independent of the separate vertical-search optimisation and the NaNGuard proposals.\n\nThe edit replaces one line in one file. Added and removed source bodies total 145 characters; the LF unified diff contains 583 characters. It targets V2701 with the [warning cleanup in PR #59](https://github.com/GralDispersionModel/GRAL/pull/59) as a prerequisite. The [stack-only comparison](https://github.com/Borealis-Thoon/GRAL/compare/3cfbd25505c21034673d2c850c368e953d08ef7e...b4ffec5e2ab55d3ec3717ed37d04938837e00120) excludes that cleanup. Public evidence links will be added after approval of the separate evidence bundle.\n\n- [x] AI-assisted code and automated review.\n- [ ] Author has reviewed every changed line and confirmed its correctness.\n- [x] Local Release build with `TreatWarningsAsErrors=true`: zero warnings and errors.\n- [x] No new nullable-reference warnings.\n"
+    },
+    "source_files_changed": 0,
+    "remote_actions": 0,
+    "evidence": {
+      "qa/topic_diff_character_counts.json": "a968309907d5a83406e204acff866994e1bf81904b932aa2938d098df722643d",
+      "qa/main_final_suites_summary.json": "bd7fa9b51767e979240fadbb99ad79cfcd207708589a169a072277197ec8a123"
+    },
+    "checks": {
+      "state_topic_characters": 4528,
+      "storage_topic_characters": 2998,
+      "stack_topic_characters": 145,
+      "full_PR_body_characters": {
+        "state": 4992,
+        "storage": 3462,
+        "stack": 609
+      },
+      "baseline_storage_fault_categories": "12 non-finite writes + 8 indexing exceptions + 12 calls writing finite values to unintended cells",
+      "combined_suite_scope": "80 runs / 1264 checks / 380 matched payload pairs; shared across all proposals",
+      "code_fences_unchanged": true,
+      "URLs_unchanged": true,
+      "human_line_review_unchecked": true,
+      "new_public_evidence_URLs": 0
+    },
+    "remaining_style_tells": [],
+    "audit_notes": [
+      "New evidence was added without changing source code or patch files.",
+      "Draft additions were read for claim scope, attribution, plain technical voice, repeated framing and unsupported causal claims.",
+      "Final wording retains the shared-suite scope and selected fault-case categories; no speed or accuracy claim was added."
+    ],
+    "independent_review_corrections": [
+      "Storage: the 12 unintended-cell calls refer to finite output values after non-finite position injection, not finite input offsets.",
+      "State causal diagram: helper increments the rejection counter before the driver follows REMOVE_PARTICLE."
+    ]
+  },
+  "vertical_embedded": {
+    "stage": "final_saved_source_link_verified",
+    "draft": "<!-- Title: Reuse the vertical index for repeated finite heights -->\n\n`Zeitschleife.IntWindCalculate()` and the building/terrain checks in both particle drivers call `BinarySearch()` to locate the particle's height in `Program.HOKART`. Successive calls can use exactly the same adjusted height. With the vertical grid fixed during tracking, they repeat a search whose result cannot change. The cost grows with the number of repeated lookups; this is a search-cost issue, not a layer-selection defect.\n\nKeep one local `WindSearch` value in each particle driver and pass it by reference to the internal interpolation and search overloads in `Intwind.cs`. It stores the grid reference, `NKK`, last height and returned index. The first query calls the original search. A later query reuses its positive index only for the same finite height; every changed or non-finite height calls the original `BinarySearch()`. A changed grid reference or `NKK` resets the state. This adds no per-particle array allocation and makes no same-layer inference. The original public six-argument `IntWindCalculate()` remains and delegates with a default state, so its search stays uncached. Wind arithmetic and RNG calls remain unchanged.\n\n```mermaid\nflowchart LR\n  subgraph Before[\"Before: successive height lookups\"]\n    direction TB\n    B1[\"Request vertical index\"] --> B2[\"Run original BinarySearch every time\"]\n    B2 --> B3[\"Repeated height repeats search work\"]\n  end\n  subgraph After[\"After: local state for each particle\"]\n    direction TB\n    A1[\"Check grid identity, count and height\"] -->|same finite height; index positive| A2[\"Reuse previous index\"]\n    A1 -->|first, changed or non-finite height| A3[\"Run original BinarySearch; store result\"]\n    A2 --> A4[\"Continue unchanged wind and geometry calculations\"]\n    A3 --> A4\n  end\n  B1 -.-> A1\n```\n\nPerformance depends on the lookup sequence. The actual-DLL benchmark includes a fresh state for each synthetic particle and reports medians from seven rounds. Across 45 conditions, all 15 repeated-height conditions were 1.735 to 5.408 times faster. Of the 30 changed-height conditions, 29 took 4.326% to 28.135% longer and one was 1.051 times faster. The bookkeeping can therefore cost more than it saves when heights keep changing.\n\nA separate 18-condition benchmark used synthetic sequences with exactly 50% consecutive repeated heights, including state preparation. All conditions were 1.148 to 1.585 times faster, with 36 checksum comparisons matching. These sequences were not a replay of actual Main heights. Test-only counters in four candidate runs of two synthetic terrain projects recorded 444724 hits from 889446 calls, about 50%, with `NKK=39`; four baseline runs gave 146 matching payload pairs. Those counters support use of the path in these projects but alter timing. Neither the lookup benchmarks nor the hit counts establish a whole-model speedup or a production hit-rate distribution.\n\nThe shared OPT1 component suite passed 1593341 checks across 35 profiles, including four separate stack-entry checks. The search and interpolation cases compare the actual compiled DLLs, including repeated heights, boundary values, signed zero and non-finite queries, plus grid-reference and count invalidation. In-place profile changes were tested with a fresh particle state. The contract is an immutable `HOKART` within one particle; arbitrary in-place edits while its state is live are not detected.\n\nThis vertical candidate passed 40 Main executions: 36 normal runs and four checkpoint prefix/resume runs. Its 36 normal baseline comparisons and two resumed-output comparisons matched in controlled fixed-seed, one-worker cases with actual allocations of 100, 1000 or 3000 particles. The shared final OPT1 suite contains 120 runs across the baseline, stack and vertical variants, and all three strict Release builds passed with zero warnings and errors. A separate suite of the baseline and all four patches together passed 80 runs and 1264 checks, with all 380 compared payload pairs matching. The equality checks do not guarantee clock-seeded or multiworker shared-sum results, and this patch makes no atmospheric-accuracy claim.\n\nThe topic changes three files with 55 added and eight removed lines: 3762 added-plus-removed source-body characters, including indentation and excluding all CR/LF characters. It targets V2701 with the [warning cleanup in PR #59](https://github.com/GralDispersionModel/GRAL/pull/59) as a prerequisite. The [vertical-only comparison](https://github.com/Borealis-Thoon/GRAL/compare/3cfbd25505c21034673d2c850c368e953d08ef7e...[VERTICAL_SOURCE_COMMIT]) excludes that cleanup. This Draft is for evaluating exact-height reuse with the changed-height overhead stated above. Public evidence links will be added after approval of the separate evidence bundle.\n\n- [x] AI-assisted code and automated review.\n- [ ] Author has reviewed every changed line and confirmed its correctness.\n- [x] Local Release build with `TreatWarningsAsErrors=true`: zero warnings and errors.\n- [x] No new nullable-reference warnings.\n",
+    "source_edits": 0,
+    "remote_actions": 0,
+    "evidence_sha256": {
+      "patch/opt1_vertical.diff": "7dfd5d5f907e309e5e24d4268194e0e5ae323cd1e7963236ceb29994a8435aa4",
+      "qa/topic_diff_character_counts.json": "a968309907d5a83406e204acff866994e1bf81904b932aa2938d098df722643d",
+      "qa/opt1_correctness.json": "f7671b73e8ebea37318e698b6175bc9d3f27ec641b54af6d05a0d844f8bf7b1e",
+      "qa/opt1_benchmark_summary.json": "243042b94cc49008b5fa183eaa36aef51cd50ded92016c2cbfc8575e2010ab83",
+      "qa/opt1_benchmark_lookup.csv": "fc8c10be25f16f679cb5dbc6c3847e3b8006fa7898e302509a483bd201f39b94",
+      "qa/opt1_paired_benchmark_summary.json": "b1e3b4512098fdc254703669d7e8af23452c3159b8c83bb77d41727615a8efbc",
+      "qa/opt1_paired_benchmark.json": "7a1a68195f184ac99d4c6cc8ae996c812ffb578211394df89fe1656da9689dcc",
+      "qa/opt1_paired_benchmark_provenance.json": "9981d57bcff9008c9c01786aa2cdaa401d13408168c23297a984334ba7cf2307",
+      "qa/opt1_actual_cache_hits.json": "f6eb087bbaa3c9d5f0d52bbdfe6241a4c155debb03d9f5598df7951af2d8cb4e",
+      "qa/independent_opt1_final_review.json": "48b3a6315260bb0a22180a8f7e560aa61b5d83a1047165ba3506bbf9f7a6ea68",
+      "qa/main_final_suites_summary.json": "bd7fa9b51767e979240fadbb99ad79cfcd207708589a169a072277197ec8a123",
+      "qa/opt1_line_endings_validation.json": "25224de20a43df3428a6bdc041cb76584612f3c35aa5f3fc02842011031a1263"
+    },
+    "source_compare_placeholder": null,
+    "human_line_review_unchecked": true,
+    "tell_audit": [
+      {
+        "pattern": "§1 staged contrast",
+        "span": "this is a search-cost issue, not a layer-selection defect",
+        "action": "State the repeated lookup cost and preserved layer selection directly."
+      },
+      {
+        "pattern": "§25 document narration",
+        "span": "This Draft is for evaluating exact-height reuse with the changed-height overhead stated above.",
+        "action": "Remove repeated publication narration; keep measured workload conditions and costs."
+      }
+    ],
+    "remaining_style_tells": [],
+    "fidelity": {
+      "code_fences_preserved": true,
+      "URLs_preserved": true,
+      "shared_component_scope_preserved": true,
+      "initial_45_condition_overhead_visible": true,
+      "synthetic_paired18_not_actual_height_trace": true,
+      "profile_counters_not_runtime_evidence": true,
+      "fixed_seed_one_worker_scope": true,
+      "immutable_profile_contract": true,
+      "human_line_review_unchecked": true,
+      "new_public_evidence_URLs": 0,
+      "terrain_only_state_preparation_explicit": true,
+      "source_URL_placeholder_resolved": true
+    },
+    "limits": [
+      "GitHub Mermaid rendering is checked by root, not the prose editor.",
+      "Final LF Main run05 is a root publication gate; no fresh Main execution by the prose editor is claimed."
+    ],
+    "independent_prose_review": {
+      "reviewer": "opt1_audit",
+      "status": "pass_after_local_terrain_scope_clarification",
+      "source_and_numbers": "matched source diff and final QA",
+      "resolved_findings": [
+        "Clarified terrain branch in the opening and Consts.TerrainAvailable-only state initialization; default state keeps the existing search."
+      ],
+      "unresolved_findings": [],
+      "executed_new_tests": false
+    },
+    "approved_source_commit": "7c23fe92803a019c1535af7f02fcc6b2e940f2ee",
+    "source_comparison": "https://github.com/Borealis-Thoon/GRAL/compare/3cfbd25505c21034673d2c850c368e953d08ef7e...7c23fe92803a019c1535af7f02fcc6b2e940f2ee",
+    "publication_source_checks": {
+      "normalization_only": true,
+      "strict_build_warnings": 0,
+      "strict_build_errors": 0,
+      "component_checks_rerun": 1593341,
+      "compiled_methods_equal": 646,
+      "benchmark_provenance_preserved": true,
+      "full_PR_added_lines": 58,
+      "full_PR_removed_lines": 11,
+      "full_PR_files": 3,
+      "full_PR_body_characters": 4226,
+      "latest_LF_Main_revalidation": "Root run05 still pending at this prose handoff; prior Main counts describe the same code and identical compiled methods."
+    },
+    "final_local_audit": "Plain technical phrasing retained; all counts and the LF/benchmark applicability statement checked against final QA. No new performance/accuracy claim or author-review completion was added."
+  },
+  "mermaid_layout_revision": {
+    "scope": "Explicit parent-requested Mermaid layout and colours only; prose, inner labels and numerical claims unchanged.",
+    "files": [
+      {
+        "path": "release/pr_body_nan_guard_state.md",
+        "labels_and_prose_preserved": true,
+        "sha256": "1bef8d0fac30c33392b9a1edb9dc9883c5d030201968f0a62cb333fccf883a75"
+      },
+      {
+        "path": "release/pr_body_nan_guard_storage.md",
+        "labels_and_prose_preserved": true,
+        "sha256": "8447795f4802cfe410758676ce331aede66d9a7765de61df2d4ebff4f192e800"
+      },
+      {
+        "path": "release/pr_body_opt1_stack.md",
+        "labels_and_prose_preserved": true,
+        "sha256": "9503ea0fe486295ef022cf28168a8b5c127c47f225d71b719268caca267f3f15"
+      },
+      {
+        "path": "release/pr_body_opt1_vertical.md",
+        "labels_and_prose_preserved": true,
+        "sha256": "2f211af29f18abcb65b88ca9fa322e3c84bf2b3da2273b9115eaa913d823ab20"
+      }
+    ],
+    "GitHub_render_verification": "Root preview pending; not claimed by prose editor.",
+    "calculated_text_contrast_ratios": {
+      "fff0e7": 14.296,
+      "e8f5ef": 14.197,
+      "fffaf5": 15.338,
+      "f4fbf8": 15.153
+    },
+    "accessibility_scope": "Calculated #222 text/fill contrast; before/after labels retain information independent of colour. Actual GitHub rendering remains root verification."
+  }
+}

@@ -1,0 +1,2237 @@
+{
+  "status": "verified_review_snapshot_not_published",
+  "data_files": 557,
+  "total_files_including_manifest": 558,
+  "source_files": 425,
+  "variant_files": 85,
+  "files": {
+    "Contributing.md": {
+      "size": 3511,
+      "sha256": "a98280817692c5c5a29ad518017fe8903eddbacfcee3fe6f2eaf2d97bf5d8a83"
+    },
+    "figures/nan_early_expiry.png": {
+      "size": 191409,
+      "sha256": "64a7b433835976fe63e4501511c9fa594e77ac0c7b3ab6dd5a912bbbf64e375d"
+    },
+    "figures/nan_early_expiry.svg": {
+      "size": 11787,
+      "sha256": "8b28406ae07c6b0c057f15c9ac77f754a9c7f65e2a6f3f7b7173870b8d30bbe8"
+    },
+    "figures/nan_residual_storage.png": {
+      "size": 144089,
+      "sha256": "16d268214d518a4fdecc1c10858fc63c1148f404a0477c5c2201943fdcd06ca0"
+    },
+    "figures/nan_residual_storage.svg": {
+      "size": 9166,
+      "sha256": "afc5b11c33ae8709845c53d07d88395881bb11fffd7447685516babcdc7ff700"
+    },
+    "figures/nan_validation_scope.png": {
+      "size": 226125,
+      "sha256": "0684a5bddd5647e2b920d226878ce8b737238f2b35fdcd839de18ac7b0feaa47"
+    },
+    "figures/nan_validation_scope.svg": {
+      "size": 9058,
+      "sha256": "b055af060d956c0975ee9f00f0a52020b06e0f6e62ef02a54596fe80e16146ca"
+    },
+    "figures/opt1_slice_stack_allocation.png": {
+      "size": 166151,
+      "sha256": "535eb03b63c5165af5cde6652595f9d7557f245379b4f7efe606a1b36e41d89a"
+    },
+    "figures/opt1_slice_stack_allocation.svg": {
+      "size": 22034,
+      "sha256": "f483fe30ce6a430c8c0892ebe61a84d4de9b3535c5c2b326cee264a35fcdb4d4"
+    },
+    "figures/opt1_vertical_lookup_tradeoffs.png": {
+      "size": 360446,
+      "sha256": "3b3a1faa4c9f428d1c306c6e7c02d13256e6206e8c6da84de20b94972d03f9e4"
+    },
+    "figures/opt1_vertical_lookup_tradeoffs.svg": {
+      "size": 50000,
+      "sha256": "af5a284a04ac11d11f551a1589f151d0761cae5ec23e321ed837f5eea5c124c1"
+    },
+    "inputs/baseline_source_manifest.json": {
+      "size": 17750,
+      "sha256": "bd8c3196a715b1cfe13f69c3f4dc08b695426b3d58e1838c0fbed7b96f14e73c"
+    },
+    "inputs/template/cadastre.dat": {
+      "size": 55,
+      "sha256": "55970886fdccedc9197e376fd8a4ebd8acba5e5679292be9b0d386561ea96382"
+    },
+    "inputs/template/emissions_timeseries.txt": {
+      "size": 68,
+      "sha256": "9635c0e80fc2a50aed325d488f51ab47fb8c95b077cd8bd9a81f22f46d66ea14"
+    },
+    "inputs/template/fixture_spec.json": {
+      "size": 778,
+      "sha256": "7256874d8733722015cd5e38af16826ebdf64fcfbb871df138c175a842d20df7"
+    },
+    "inputs/template/GRAL.geb": {
+      "size": 36,
+      "sha256": "141c49d6ca7e227edc4214cd10e10f9b29d751b12adbd8d1d351cff7947c1260"
+    },
+    "inputs/template/GRAL_Trans_Conc_Threshold.txt": {
+      "size": 6,
+      "sha256": "81b757d439f94af4fb4bfd44c6c0d090aa7149c69b8ab73c1cd3e7ac8fdccb7d"
+    },
+    "inputs/template/in.dat": {
+      "size": 103,
+      "sha256": "07f46aa7ef545b326a976d8fcd84f28f4bd64fbdc6b60b7556769e493f9de6a3"
+    },
+    "inputs/template/input_manifest.json": {
+      "size": 1316,
+      "sha256": "3d92ad0927f142fe13d17fb9bf6174fc017cd151584bb9c1a4778128dcc2d351"
+    },
+    "inputs/template/KeepAndReadTransientTempFiles.dat": {
+      "size": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    "inputs/template/Max_Proc.txt": {
+      "size": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    "inputs/template/meteopgt.all": {
+      "size": 57,
+      "sha256": "271522299e2c101cbc01c34cb1b92b364814c56956e7a421f937a078feb6e0b5"
+    },
+    "inputs/template/mettimeseries.dat": {
+      "size": 63,
+      "sha256": "94657f08f1075f12f1a32f0a6198cb55e2e54963a5a217aaa879b105a73ac714"
+    },
+    "inputs/template/micro_vert_layers.txt": {
+      "size": 3,
+      "sha256": "673650f936cb3b0a2f93ce09d81be10748b1b203c19e8176b4eefc1964a0cf3a"
+    },
+    "License.md": {
+      "size": 34916,
+      "sha256": "33bc26d4498c183b703d1760ee45b8774d21d6e0178ca393dc715271840c7a21"
+    },
+    "PR_drafts/pr_body_nan_guard_state.md": {
+      "size": 4824,
+      "sha256": "1bef8d0fac30c33392b9a1edb9dc9883c5d030201968f0a62cb333fccf883a75"
+    },
+    "PR_drafts/pr_body_nan_guard_storage.md": {
+      "size": 4947,
+      "sha256": "8447795f4802cfe410758676ce331aede66d9a7765de61df2d4ebff4f192e800"
+    },
+    "PR_drafts/pr_body_opt1_stack.md": {
+      "size": 4515,
+      "sha256": "9503ea0fe486295ef022cf28168a8b5c127c47f225d71b719268caca267f3f15"
+    },
+    "PR_drafts/pr_body_opt1_vertical.md": {
+      "size": 5797,
+      "sha256": "ef61f44a8d502df7a2a4a538893ff422699e6b5f7c68f1ecf65b21cc3abef7b8"
+    },
+    "qa/combined_integration_manifest.json": {
+      "size": 50831,
+      "sha256": "8b6eb4f1f3b425a65ab46ce8dff491eb02cdf7161cae5d5bdc3166bcbc0d9b6e"
+    },
+    "qa/combined_integration_plan.json": {
+      "size": 41866,
+      "sha256": "0948aae3d1274cb6ebd22465d5803d3064d7dfcafac61683fc9526aa6f66bb8d"
+    },
+    "qa/combined_main_output_comparison.csv": {
+      "size": 2267,
+      "sha256": "b7cfec8c2b5a1e1af3870cc1805b659e17727efdc69b91a32ee1457fae29536d"
+    },
+    "qa/combined_main_process_ownership.json": {
+      "size": 57127,
+      "sha256": "e315faf17bbb69c28938112c03151a216dacab72b8c4bffcf18ee28fad4578e4"
+    },
+    "qa/combined_main_source_manifest.json": {
+      "size": 19209,
+      "sha256": "13b13ad61eec8eddea7153a6ee9c2961245de4f9e1729026612d58fdf3f0e6bc"
+    },
+    "qa/combined_main_validation_summary.json": {
+      "size": 422160,
+      "sha256": "ed0f6c3923109c6c2f5b6e62fb177beb4dfb1f90b9dbd9d0ad6353123a891565"
+    },
+    "qa/combined_scope.json": {
+      "size": 225,
+      "sha256": "15d7496439a764face8de830151b870092ac444a00ab219118fa38bcc4db98fe"
+    },
+    "qa/english_package_readme_audit.json": {
+      "size": 28062,
+      "sha256": "e4f50c81674d8752f5ec2d6e58ba4978b81d3e034db5d92f1d6ad9e67915180e"
+    },
+    "qa/english_pr_humanize_audit.json": {
+      "size": 42176,
+      "sha256": "55ec8168a1e9e48d59ed1607ed858d12fdc2dc516ba93ea464e3c26ad4f93071"
+    },
+    "qa/independent_combined_review.json": {
+      "size": 14930,
+      "sha256": "54e110ccae32ebfea8210bd400684c4da8ca84dc938723ce7afdf89694059a35"
+    },
+    "qa/independent_nan_guard_review.json": {
+      "size": 11624,
+      "sha256": "c84281c1bbaa09a0a3ae5ad298d757bd96a934b46f39529d0f74d48fb6e59916"
+    },
+    "qa/independent_opt1_final_review.json": {
+      "size": 14606,
+      "sha256": "1a7a9092afef0eff6b914b35e5d06e1c64557bd57ba41a48bd5b26314f332554"
+    },
+    "qa/license_source.json": {
+      "size": 280,
+      "sha256": "051ababafc79eaf663e504c2d808e7ca223d561fcd9802037e3829052403b9d5"
+    },
+    "qa/main_combined_result.json": {
+      "size": 2624,
+      "sha256": "1fc559a9cc7cb52a0f36dc44640f5f76bd727319dd3506d41aa1160fe97af8de"
+    },
+    "qa/main_conditions.csv": {
+      "size": 2146,
+      "sha256": "4578d6eb507a63d06d868b6ed04b5622d047e576e4cd874c9570e017696d6e16"
+    },
+    "qa/main_final_suites_summary.json": {
+      "size": 4889,
+      "sha256": "0fcfd2eb642fe29bfabffaece2fc1547dc71d3e616f65381bfdd53a1309ac509"
+    },
+    "qa/main_harness_checks.json": {
+      "size": 3343,
+      "sha256": "5da0bf7627d83315ceb4d658fac71b9b930d11d181db8cb1d2e527f570889e4b"
+    },
+    "qa/main_nan_result.json": {
+      "size": 3028,
+      "sha256": "54e92d19b3bcc6763db78338410ef9dc414534367521b61aeb838e4610f15b54"
+    },
+    "qa/main_opt1_final_result.json": {
+      "size": 3476,
+      "sha256": "b5b78d6f292c6eac9a2263c0f09bbc86d5d36ee864d003056392190d7ead6cde"
+    },
+    "qa/nan_figure_captions.json": {
+      "size": 1180,
+      "sha256": "7208104c7affd1c8f072ed1f8857e4cef454c08929c5bb63948ed8e2e42ed489"
+    },
+    "qa/nan_guard_component_summary.json": {
+      "size": 14819,
+      "sha256": "3e7d3e3faa58b2f7ef9532b3221e26e02525d444e02bd6183fb1798d38cab02c"
+    },
+    "qa/nan_guard_expiry_blocks.json": {
+      "size": 4774,
+      "sha256": "2d362e974eaea76bcf043bbf8ca9ba9d8534e1daf0f28e686a48bf3e15e8d7e5"
+    },
+    "qa/nan_guard_expiry_fault_cases.csv": {
+      "size": 298,
+      "sha256": "4dff2f55d0dcafce88a03d807949e36880e2e33006b1478265c710757d844d8e"
+    },
+    "qa/nan_guard_extracted_blocks.json": {
+      "size": 6804,
+      "sha256": "244aeeba622477896e1e54b2fbcd32f6478fdc70ce3c30f21aef1450a7679007"
+    },
+    "qa/nan_guard_fixture_reproduction.json": {
+      "size": 1132,
+      "sha256": "8e975ee03b8312ec1d3366307a79cdccc61fb0db8bc0d51a57dc92255a1d1cbd"
+    },
+    "qa/nan_guard_patch_stats.json": {
+      "size": 2132,
+      "sha256": "7e55ffc5ac19783d0f736aac343494a87c939f79c7da33de216e61b14856cf97"
+    },
+    "qa/nan_guard_report_blocks.json": {
+      "size": 1523,
+      "sha256": "06c08341fa16d17f56ca62d3c700ebcc642d0a6ae1f02a57d62619afe6ae44d3"
+    },
+    "qa/nan_guard_rng_expression.json": {
+      "size": 340,
+      "sha256": "d91bb7701724c6b9d9d188a1154e8fa036c8e628bf87e1ac8640d0c1c66ed11c"
+    },
+    "qa/nan_guard_scope_and_limits.json": {
+      "size": 2813,
+      "sha256": "7e15712a202e09c9b0870a841020922148df911ce81aa2aff1362eb452c329c6"
+    },
+    "qa/nan_guard_state_source_manifest.json": {
+      "size": 15486,
+      "sha256": "c650ea325dad60a368c26ed35dfab0907ef3c5fbf9d0edf4dcb5887668b75ff5"
+    },
+    "qa/nan_guard_storage_fault_cases.csv": {
+      "size": 2191,
+      "sha256": "502c401afc5ac0eeb5c23049f0393845d0f79905d4b716fe0cd5ee58710b2f7f"
+    },
+    "qa/nan_guard_storage_source_manifest.json": {
+      "size": 14953,
+      "sha256": "650bf4a489daa7dd45cb6fe42b2b412bcb790800ff5b1f6d5c6e5cf0971dd18c"
+    },
+    "qa/nan_guard_wet_blocks.json": {
+      "size": 4669,
+      "sha256": "3278f476381739b430895f47986dfce6c43fdc13a35ae1d6420da3e8ac09392f"
+    },
+    "qa/nan_guard_wet_cases.csv": {
+      "size": 508,
+      "sha256": "174e7318da814e4c406cedac7ef8f97a3ebb8e463e03df36d9976cd54bc29d36"
+    },
+    "qa/nan_main_output_comparison.csv": {
+      "size": 4261,
+      "sha256": "de8859a49e0604615b79c8a8e08e4cc474164b34b7b730e5d2a5c84ff7454363"
+    },
+    "qa/nan_main_process_ownership.json": {
+      "size": 83173,
+      "sha256": "a58f70e26dfffacb2f58756da5ad822c8e7ea3032e12f346a258e56fb8a513b8"
+    },
+    "qa/nan_main_source_manifest.json": {
+      "size": 28271,
+      "sha256": "7d01606f953fa52e86af54ff680b36ae6dc8d3bfdad135d9eb589994697f07c5"
+    },
+    "qa/nan_main_validation_summary.json": {
+      "size": 625929,
+      "sha256": "adf5a2b029c11fef599788ee454357e11ec7388d6c40fda32f2457d77fd6326f"
+    },
+    "qa/opt1_actual_cache_hits.json": {
+      "size": 2041,
+      "sha256": "f6eb087bbaa3c9d5f0d52bbdfe6241a4c155debb03d9f5598df7951af2d8cb4e"
+    },
+    "qa/opt1_benchmark.json": {
+      "size": 36400,
+      "sha256": "be09df49490a6ef73e2b816496369e03f5a2b3074632bb47e32839260225f214"
+    },
+    "qa/opt1_benchmark_lookup.csv": {
+      "size": 4209,
+      "sha256": "fc8c10be25f16f679cb5dbc6c3847e3b8006fa7898e302509a483bd201f39b94"
+    },
+    "qa/opt1_benchmark_plan.json": {
+      "size": 495,
+      "sha256": "ff31cfd9454f2b5391102380a467ae36f40b074131690739f5ee27e64811e4d6"
+    },
+    "qa/opt1_benchmark_preparation.csv": {
+      "size": 196,
+      "sha256": "678cedb19d296ba9cbfed2dceb59d9bf2c952c4e1bc4e909dc824e7b6154263d"
+    },
+    "qa/opt1_benchmark_provenance.json": {
+      "size": 933,
+      "sha256": "39545e246ee19cbc1c82ee058b015342ffb1e60680a0dfeb7bd4fc2d76564422"
+    },
+    "qa/opt1_benchmark_stack.csv": {
+      "size": 294,
+      "sha256": "a526574ffe198387eca8ccddfa2469ff21623958c0f7e24529b2d606fb51b564"
+    },
+    "qa/opt1_benchmark_summary.json": {
+      "size": 8425,
+      "sha256": "243042b94cc49008b5fa183eaa36aef51cd50ded92016c2cbfc8575e2010ab83"
+    },
+    "qa/opt1_correctness.json": {
+      "size": 1787,
+      "sha256": "db9070c02abe9defaa40a4132473708b33ba3be2dfa5d8b237dfa13bdaed28ef"
+    },
+    "qa/opt1_exact_revision_spec.json": {
+      "size": 649,
+      "sha256": "0c7ac9e89d2fe1fac2cf505edbbf2ffa454fa41f28359bdaec9a0ff238b35d99"
+    },
+    "qa/opt1_line_endings_il_comparison.json": {
+      "size": 446,
+      "sha256": "1ff789f47b8d4a7307ec2ef1f2de38035f72cf839df74a0d3ea3486053c16b86"
+    },
+    "qa/opt1_line_endings_validation.json": {
+      "size": 2507,
+      "sha256": "25224de20a43df3428a6bdc041cb76584612f3c35aa5f3fc02842011031a1263"
+    },
+    "qa/opt1_main_output_comparison.csv": {
+      "size": 3937,
+      "sha256": "670e000f8d9cdbc787a48104a3ef23742e2296daac814e25d35ecc3fa46e0aaa"
+    },
+    "qa/opt1_main_process_ownership.json": {
+      "size": 86097,
+      "sha256": "fc1f6997306a89b2b31adaa9bca058e3a6c5decec149c74db900868d8e7a49e4"
+    },
+    "qa/opt1_main_source_manifest.json": {
+      "size": 28174,
+      "sha256": "e98648e13fb8cfc9bc8f130057cb0af39f3e95ea98f219735f109dee15f44a94"
+    },
+    "qa/opt1_main_validation_summary.json": {
+      "size": 624691,
+      "sha256": "59d8527961bc1a6c88da7759a815654734643f7679f52d6abfe3f1aeae302d97"
+    },
+    "qa/opt1_paired_benchmark.csv": {
+      "size": 2405,
+      "sha256": "567d0311eb49eeefeac5c09bfc7e1ed8b541119b559619abe641cecfd3d2dcc9"
+    },
+    "qa/opt1_paired_benchmark.json": {
+      "size": 15872,
+      "sha256": "7a1a68195f184ac99d4c6cc8ae996c812ffb578211394df89fe1656da9689dcc"
+    },
+    "qa/opt1_paired_benchmark_caption_audit.json": {
+      "size": 4057,
+      "sha256": "765db15d65fc957398f047553052f6b7078570ba3e86f8423e073f466384052a"
+    },
+    "qa/opt1_paired_benchmark_captions.json": {
+      "size": 1281,
+      "sha256": "8de8517e8bea3996b17c1734c8e9fb08e46e1a7e79e48affedf80f61705a59ac"
+    },
+    "qa/opt1_paired_benchmark_figure_qa.json": {
+      "size": 2863,
+      "sha256": "edb3e827a0923d701501425bf876e22163745bb1c0fbe66255fa8b327ac8e43a"
+    },
+    "qa/opt1_paired_benchmark_provenance.json": {
+      "size": 1026,
+      "sha256": "9981d57bcff9008c9c01786aa2cdaa401d13408168c23297a984334ba7cf2307"
+    },
+    "qa/opt1_paired_benchmark_summary.json": {
+      "size": 4662,
+      "sha256": "b1e3b4512098fdc254703669d7e8af23452c3159b8c83bb77d41727615a8efbc"
+    },
+    "qa/opt1_profile_scope.json": {
+      "size": 157,
+      "sha256": "ebde1eb8bed271d3f24198ba646067f2ef2c0228ec709976110ae70578ea150f"
+    },
+    "qa/opt1_profile_source_manifest.json": {
+      "size": 16699,
+      "sha256": "1fbb9cb835493626d4c038bfceb426d025e11b940d4b2d66917ea0064865a88a"
+    },
+    "qa/opt1_source_manifest.json": {
+      "size": 41270,
+      "sha256": "af19cab7beb5fcb5cdf257425bfe916593135addebecfc40090e0aba65b7b209"
+    },
+    "qa/opt1_stack_change.json": {
+      "size": 722,
+      "sha256": "f30c9dd7976d4e7dbbabdb05eef77ffa77c9ce9fc0aeab9bd83b576eb666f18f"
+    },
+    "qa/opt1_vertical_change.json": {
+      "size": 1585,
+      "sha256": "ee612a0ac93f64e0f977e67ee8db5fdfbb7db9c670dbbbc83783c0f591f325bd"
+    },
+    "qa/package_portable_adaptations.json": {
+      "size": 1633,
+      "sha256": "400bd72860444d65e5eceec5451ae5ab6f9af61283c8a9ddfd64e78e778973fd"
+    },
+    "qa/package_structural_validation.json": {
+      "size": 1136,
+      "sha256": "e31d56b8f8e1aa086a89653b5dcb726c7cbebb1c1170a86e1e3ac54bfcbac82c"
+    },
+    "qa/profile_main_output_comparison.csv": {
+      "size": 397,
+      "sha256": "28d438e3d465fdf97ce4ca24f973618c48b7444f5f3c33436a022b8308179fb9"
+    },
+    "qa/profile_main_process_ownership.json": {
+      "size": 7142,
+      "sha256": "0f46b380bd2ca832c54e5c4597cd34632a93587ce72ee5759bb739679c13c948"
+    },
+    "qa/profile_main_source_manifest.json": {
+      "size": 19071,
+      "sha256": "7160a01b9788592c0e5700adb18c61ad7dc8f80ee7de1c39cd8b5ae4dedebe93"
+    },
+    "qa/profile_main_validation_summary.json": {
+      "size": 107822,
+      "sha256": "3c3a10675a17f940772e8a13ecd07f704b4effbced2f9b1e510c1f41ba3ba8d6"
+    },
+    "qa/pull_request_creation_readback.json": {
+      "size": 4973,
+      "sha256": "a9e6c1bb34f4ea175e0ccd352605ad57a30758e3cf9148a9aa2463a6f3693851"
+    },
+    "qa/source_publication_receipt.json": {
+      "size": 3969,
+      "sha256": "98da15b6a02bb50bd50470a523627c88eab06e049292c52a791c5664875abd90"
+    },
+    "qa/topic_diff_character_counts.json": {
+      "size": 2889,
+      "sha256": "a968309907d5a83406e204acff866994e1bf81904b932aa2938d098df722643d"
+    },
+    "README.md": {
+      "size": 12369,
+      "sha256": "5b43e7a69a68c6c308ad3949676406c3962182425fd1f559a698ca529d21d7d7"
+    },
+    "reproduce/count_topic_changes.py": {
+      "size": 1564,
+      "sha256": "d83dd1935bea2533f33609c48a68a6513873a4d6212a896adfb5c52af7ec5cbf"
+    },
+    "reproduce/integrate_candidates.py": {
+      "size": 4291,
+      "sha256": "e74da0cff28f0b32acbe83a48b4f6cde191fd07d3cb20a40891e837dccef237b"
+    },
+    "reproduce/main_inputs.py": {
+      "size": 7963,
+      "sha256": "220a2d2878dcc0a71e09b42178ee879b5845b8e8e02aed12e5930bf736ba3358"
+    },
+    "reproduce/nan_guard_extract_expiry_fixture.py": {
+      "size": 3640,
+      "sha256": "303affef548293f4cedd3d1a53aeec9cdb59856653602d7f6fa2b6c96fc4d4fd"
+    },
+    "reproduce/nan_guard_extract_fixture.py": {
+      "size": 2500,
+      "sha256": "a2ed74b0865cc5152d96d968cc2a969e2bee0e72cfc10078dc8a959d8c65ac61"
+    },
+    "reproduce/nan_guard_extract_report_fixture.py": {
+      "size": 1975,
+      "sha256": "4582e2ac31f6a4a96e9a45bc285e7193be871d9dac4a85da5afe9664b3a22cea"
+    },
+    "reproduce/nan_guard_extract_wet_fixture.py": {
+      "size": 1893,
+      "sha256": "ad967cd76da20c09c2f3bec2c955b930dc6afc456501893240b00f23e06d07b5"
+    },
+    "reproduce/nan_guard_fixture.py": {
+      "size": 3482,
+      "sha256": "0d064907eb8d22c6e0d5cc67d753e055228e52bbbf46b39ceb550cec38460323"
+    },
+    "reproduce/opt1_fixture.benchmark.cs": {
+      "size": 8822,
+      "sha256": "c377372d89e44620006a12ae02370d81dc5570091a86da6412b50352fe58b432"
+    },
+    "reproduce/opt1_fixture.cs": {
+      "size": 14715,
+      "sha256": "580b73cc4152c70cd2d78320f634216cefc639d9c29e773163ad05dfe6c1fdd7"
+    },
+    "reproduce/opt1_fixture.paired.cs": {
+      "size": 6417,
+      "sha256": "169805a2dbb8ffe143363cef924c2b99324db27207aba2811bb54e5d34b6e471"
+    },
+    "reproduce/plot_nan_guard.py": {
+      "size": 12367,
+      "sha256": "e242735b6721ec2873b54a3fd505ad45828ed306449943902ea9cf05989c89a3"
+    },
+    "reproduce/plot_opt1.py": {
+      "size": 9123,
+      "sha256": "56861882e692253b9bc8604d466ae56bc6547a16bcbb8fbda677da1a4c172e9a"
+    },
+    "reproduce/profile_opt1_hits.py": {
+      "size": 3809,
+      "sha256": "59ca7c16a394486141700738979ba5b63f69e083ec794c0b690986b7cbe40e12"
+    },
+    "reproduce/run_public_checks.py": {
+      "size": 9185,
+      "sha256": "c5e40187f10bea4eb8bed712908da4e90b5ed107bccc8437d327cdbb8cf3861b"
+    },
+    "reproduce/validate_main.py": {
+      "size": 23099,
+      "sha256": "f647a346500666646fb323e883ac01557c4337e3373e3452a4f173a635e40fc6"
+    },
+    "source/nan_guard_state/src/aenderungen_GRAL.txt": {
+      "size": 43052,
+      "sha256": "b620b746d627ec0b4d49bcfd69807f45cc702d116d9500ae9836c63e82fca29e"
+    },
+    "source/nan_guard_state/src/Anfangko.cs": {
+      "size": 36837,
+      "sha256": "80f4e619ea9f38d46adfa81bac39bd962a49d388ff440b9545c4e3270f7de9bd"
+    },
+    "source/nan_guard_state/src/CleanUp.cs": {
+      "size": 6744,
+      "sha256": "5b741559e87a02ed46aad1c10e51f0f7cdda4daa11e62778a985ede0de7b4045"
+    },
+    "source/nan_guard_state/src/Constants.cs": {
+      "size": 4711,
+      "sha256": "aef744b91db8cd8f002f104236df702ad0bb510879a6a9834498a18d2ab6f87c"
+    },
+    "source/nan_guard_state/src/DepositionComputation.cs": {
+      "size": 15044,
+      "sha256": "ae5e3e36f65e5dff29ccf5ad4b4c85de2717337a711340fd6dab462228c2dcc8"
+    },
+    "source/nan_guard_state/src/DiagnosticFlowfield.cs": {
+      "size": 21991,
+      "sha256": "478b8a7520fd02d54033fb954862514ffb5c249653c93c1498584d986751c0a8"
+    },
+    "source/nan_guard_state/src/FilterArray.cs": {
+      "size": 6319,
+      "sha256": "bf56698b9a2ba4cd45ee2daa5967ba3f84eb50e5fc7ba356fdc97f37b00fd410"
+    },
+    "source/nan_guard_state/src/GetTransientTimeSeriesIndex.cs": {
+      "size": 2688,
+      "sha256": "9cb502247ad69ee45a5ef6ea1958c6c1ff1390113854d736ae82a29d8a198d5e"
+    },
+    "source/nan_guard_state/src/GFFRead.cs": {
+      "size": 15837,
+      "sha256": "e5c7a33e80356a8b75e3f4ac5a8c56229944d065083663015f4fabbca3a17346"
+    },
+    "source/nan_guard_state/src/GFFWrite.cs": {
+      "size": 29056,
+      "sha256": "5e2cab8b008539f657e8734bf948102c1a89348d543895b039e3fea83c9569cc"
+    },
+    "source/nan_guard_state/src/global.json": {
+      "size": 99,
+      "sha256": "e599d73baa15b297c2110577460f44f6ac6cd0386c8e2a007bb2282721e0f06f"
+    },
+    "source/nan_guard_state/src/GRAL.csproj": {
+      "size": 1232,
+      "sha256": "db06fd5367d67932a42808b32700e487bc42c7d31a9e32c95831eb115911ae5a"
+    },
+    "source/nan_guard_state/src/GRALONLINE.cs": {
+      "size": 12383,
+      "sha256": "3a4d74f5106b7f3b37dbbb83b33ca1e325ad3c1e0ce2234bf0fff1c3f4251848"
+    },
+    "source/nan_guard_state/src/InitAdaptiveRoughness.cs": {
+      "size": 8208,
+      "sha256": "e28035b7179d86ef61226cc46d2d8e6f3c3b64e51160fe9e34e312e4375b757d"
+    },
+    "source/nan_guard_state/src/Input_eki.cs": {
+      "size": 7834,
+      "sha256": "b14119e2da64025adb4dad0097d4f4f7c1092dca5a790f00a66d9bd78396c23a"
+    },
+    "source/nan_guard_state/src/Input_pgt.cs": {
+      "size": 19275,
+      "sha256": "b614bd897d59c28322d6e3c4f979338625b670251711df8340cfe1b8ffa2f752"
+    },
+    "source/nan_guard_state/src/Input_rez.cs": {
+      "size": 16195,
+      "sha256": "1eb64d7bc5e15756b54266ab61930cbeb846ad3f28a1337a5aeae0596cf3e43a"
+    },
+    "source/nan_guard_state/src/Input_sonic.cs": {
+      "size": 6220,
+      "sha256": "d32eeda2b4e6b711dd2aa50b3776ccc5794661156f9520d2d81fea9f97d1c179"
+    },
+    "source/nan_guard_state/src/Input_wind.cs": {
+      "size": 3749,
+      "sha256": "826ea36a51c415f724e2520ada6ab3884f445f49e1155d387a9fc473614f768e"
+    },
+    "source/nan_guard_state/src/Input_zr.cs": {
+      "size": 7301,
+      "sha256": "efc749b31f5616fe9a7e2c643801e69eba2e71c35eccedcd484698d008cf9ba2"
+    },
+    "source/nan_guard_state/src/InputMettimeSeries.cs": {
+      "size": 7825,
+      "sha256": "4725d8beb6713b7480f6f2b19e2084c1a68e5c8375b8ccef519fce4d4c7e64e6"
+    },
+    "source/nan_guard_state/src/Intstand.cs": {
+      "size": 3943,
+      "sha256": "f82bda4b7b3dcb0544bc97ea50ffc26f010911773dc40404975a4d4fb8310887"
+    },
+    "source/nan_guard_state/src/Intwind.cs": {
+      "size": 9113,
+      "sha256": "b86e06ca1aeeaa59cd220b5f52fc1fdb5f3fea27edd40fa9ea968509d3b8f2ae"
+    },
+    "source/nan_guard_state/src/LoadAndDefineTransientPresets.cs": {
+      "size": 5364,
+      "sha256": "8b3b9e6b74ac6bf4c8d9631925d1670f3f9f286c780c67ddcdde0589f1f28e9c"
+    },
+    "source/nan_guard_state/src/MicroscaleFlat.cs": {
+      "size": 22931,
+      "sha256": "52e359e036f43440801953eaab32eed123cde92d2355740915c9c3780b965105"
+    },
+    "source/nan_guard_state/src/MicroscaleTerrain.cs": {
+      "size": 55973,
+      "sha256": "8c67199d882764c30fb6d042dfd4650ee8e11569417f44b104e91d9a7df07b80"
+    },
+    "source/nan_guard_state/src/MicroscaleTerrainSearchRefPoint.cs": {
+      "size": 3671,
+      "sha256": "d287c90fcbe2fef1d7e5f4797017d0a74c1bf4619cbd57de37a9a022585d594d"
+    },
+    "source/nan_guard_state/src/NestedGridBounds.cs": {
+      "size": 1801,
+      "sha256": "4f2446d13029912917984a6495dc76555b09252fba76023892dc7fd10c7de3d4"
+    },
+    "source/nan_guard_state/src/Point.cs": {
+      "size": 1514,
+      "sha256": "2aec9cba79f7af515bd942a626c1c7b96a29b746066c7e80000ab3209f80638b"
+    },
+    "source/nan_guard_state/src/PointSourceHeight.cs": {
+      "size": 2939,
+      "sha256": "7e4246b8bd2be84db0ba100b81f9a4b2086397d3d88ef5680cf334de8b6ea220"
+    },
+    "source/nan_guard_state/src/PrognosticFlowfield.cs": {
+      "size": 89705,
+      "sha256": "0e9bcd7b8941fe8a84f07b48956f0a5d4026badd9bfbabd3b71ab3606215d936"
+    },
+    "source/nan_guard_state/src/Program.cs": {
+      "size": 40999,
+      "sha256": "f1ec7863aa5ee80e56adfadd4eec3aa518ca3617f6620347084df85d1a95249f"
+    },
+    "source/nan_guard_state/src/ProgramDeclarations.cs": {
+      "size": 59162,
+      "sha256": "4dee6791763f2d3c6e347de2c05d6466dc0abc7fd7307a5511d90559297b596f"
+    },
+    "source/nan_guard_state/src/ProgramFunctions.cs": {
+      "size": 70639,
+      "sha256": "fcf95d9d963791a08c387455cf7ce25bde69be564b56e435053fd4d721992273"
+    },
+    "source/nan_guard_state/src/Read_DispersionClasses.cs": {
+      "size": 21746,
+      "sha256": "8ae8e95c38a22630b936d66b551b1137b133c24ddab4d4274651f4e9eb148b67"
+    },
+    "source/nan_guard_state/src/ReadAreaSources.cs": {
+      "size": 9854,
+      "sha256": "42c3c71c684cf83e6e2b7f06d771b05c6ee28534a32d601d7dd86d8583d647f5"
+    },
+    "source/nan_guard_state/src/ReadBuildings.cs": {
+      "size": 15079,
+      "sha256": "63b55839dd4e8f539ae397006d2fc2bdfee78b9c60fa96ebe1c9a1f50df6b1d0"
+    },
+    "source/nan_guard_state/src/ReadEmissionTimeSeries.cs": {
+      "size": 5554,
+      "sha256": "a5a85ccd1e62ca85a106155f9d2b284c35a1078641b144ac34fd6b1f5804d7ad"
+    },
+    "source/nan_guard_state/src/ReadGeometryAndDomains.cs": {
+      "size": 23185,
+      "sha256": "9a094e4db024265e2a75fdda1b060e352505d6f999ce461e88865f10dd34a022"
+    },
+    "source/nan_guard_state/src/ReadGgeomAsc.cs": {
+      "size": 21649,
+      "sha256": "8ec6e5f3b027e2d6f3bc356ca6bc99af8c220a7eeb5d8943c224fadd96909200"
+    },
+    "source/nan_guard_state/src/ReadInDat.cs": {
+      "size": 16944,
+      "sha256": "242f2efceb6396fdce3a736d25380cb43827a870277efcbd5b1e3c1de4a66940"
+    },
+    "source/nan_guard_state/src/ReadLandUseFile.cs": {
+      "size": 3614,
+      "sha256": "328f80fdf712d5d4ae4cec234f01e843f4704e8649c2de2a7adac6b27ae0786d"
+    },
+    "source/nan_guard_state/src/ReadLinieSources.cs": {
+      "size": 10963,
+      "sha256": "f2cbb81dd68a34ae18be00045b92f81babe26fad36da9f68ae245c75497fb00b"
+    },
+    "source/nan_guard_state/src/ReadMax_Proc.cs": {
+      "size": 3757,
+      "sha256": "afabc0843df13783a8eb796bac1826d73dbef31550d374bfebc65b3572c2b020"
+    },
+    "source/nan_guard_state/src/ReadPointSources.cs": {
+      "size": 11633,
+      "sha256": "ed01b3b5ebf5624d571e428d4fef5e6a421df619d2d5d0afdbea9c284a827c0f"
+    },
+    "source/nan_guard_state/src/ReadPollutant.cs": {
+      "size": 6694,
+      "sha256": "b333eef9bdfefd8929c04801889c8ba129650e057486b486a63225d13dc5d787"
+    },
+    "source/nan_guard_state/src/ReadPrecipitation.cs": {
+      "size": 4585,
+      "sha256": "8cb47ad75b5c4bbfbc993c8cb21171ea71e7a854ed341f76ffb708bf8ff931fb"
+    },
+    "source/nan_guard_state/src/ReadReceptors.cs": {
+      "size": 4498,
+      "sha256": "4de4bf9f1a1eb17f9fbec45926374572bfc544c6c83c59ec4d966891a6783dea"
+    },
+    "source/nan_guard_state/src/ReadSourceTimeSeries.cs": {
+      "size": 3735,
+      "sha256": "7ab8b0458a37d6f161823f13510759f4f0b795af8b6c7013072def928676fb7e"
+    },
+    "source/nan_guard_state/src/ReadTransientFiles.cs": {
+      "size": 19318,
+      "sha256": "67395ce30b9030d6d5b3350b387869fa3a5b116e0df5e1985b7fa3d1c8c97f6a"
+    },
+    "source/nan_guard_state/src/ReadTunnelportals.cs": {
+      "size": 11247,
+      "sha256": "4e7f6287d51a4b1fb0d46c211e1f74ccc11ba03fa93aac2f7b930f9ba41f92be"
+    },
+    "source/nan_guard_state/src/ReadTunnelPortalsOptional.cs": {
+      "size": 6984,
+      "sha256": "e3345a18acf478999abcbe1b8c8b4d308fa93a984fd7165ce659c9b834366336"
+    },
+    "source/nan_guard_state/src/ReadVegetation.cs": {
+      "size": 15378,
+      "sha256": "eb6b193b7309ff960daf8e5e12317e85ddbb770ae8f482adaa27e1b13ba3e3e7"
+    },
+    "source/nan_guard_state/src/ReducePrognosticSubDomainSize.cs": {
+      "size": 12202,
+      "sha256": "f5f5e0d1c6376c42ae48ef8e9eba54ca4a88ca2520b27f28f5d733bb243620fd"
+    },
+    "source/nan_guard_state/src/runtimeconfig.template.json": {
+      "size": 233,
+      "sha256": "0c8fd652dbe1c3ef6ee8faaf13360286df354be5e34e5cedc5d6f753343a2f9f"
+    },
+    "source/nan_guard_state/src/SourceData.cs": {
+      "size": 4163,
+      "sha256": "7de7925165dca2bde939154ad8c3fb57bbaa56b3f7a480aba2f63c50b809ea30"
+    },
+    "source/nan_guard_state/src/TeilchenAufteilung.cs": {
+      "size": 8452,
+      "sha256": "e06e73ac04d956370150baa77ddb3a8ddd0642666b6d3666a9c9d8a33e18d9a7"
+    },
+    "source/nan_guard_state/src/TerrainArray.cs": {
+      "size": 3589,
+      "sha256": "8adb83ca40f130b14ec631ff71e6b5b3da9d8b96118761b720b26b0ea22db4a9"
+    },
+    "source/nan_guard_state/src/TimeSeriesColumn.cs": {
+      "size": 923,
+      "sha256": "b4be25245efd9861a9ce3fce803befd85f7d9ab6062b0923897c1359e431c18b"
+    },
+    "source/nan_guard_state/src/TKE-prognostic-microscale.cs": {
+      "size": 20579,
+      "sha256": "0ca881c486e987f4e9fffcc18ec6b25b184a8300a45117472ccbbb85c6abb82a"
+    },
+    "source/nan_guard_state/src/Transient_Concentration.cs": {
+      "size": 5042,
+      "sha256": "610fca65b1f46b843eb85e587227af5739d64aea598a1e47e9a489e48d2698c8"
+    },
+    "source/nan_guard_state/src/TransientDeposition.cs": {
+      "size": 1336,
+      "sha256": "004fead168ebbca739c4b8788ec3c8c6208df00fde03a5d72b7f8e2827cf8d62"
+    },
+    "source/nan_guard_state/src/U-prognostic-microscale_0.cs": {
+      "size": 10117,
+      "sha256": "51eeb19c90f798328cfa3945f864bc76618e6faa2dac2da6f249949eacb85184"
+    },
+    "source/nan_guard_state/src/U-prognostic-microscale_1.cs": {
+      "size": 29058,
+      "sha256": "5934355b73d52b2fc1e084142c2defb7216e3a2c86522d9249a9d850d47d51cc"
+    },
+    "source/nan_guard_state/src/U-prognostic-microscale_1_Vec512.cs": {
+      "size": 33860,
+      "sha256": "8dc2f7bee656f3bb486c02e9075ac5be598456391ff490f339476cfab17e62c0"
+    },
+    "source/nan_guard_state/src/U-prognostic-microscale_2.cs": {
+      "size": 14740,
+      "sha256": "78b96f81e2d60585bd677f288109a47bb37f21624bd7af671469416460f757dc"
+    },
+    "source/nan_guard_state/src/V-prognostic-microscale_0.cs": {
+      "size": 10559,
+      "sha256": "8912158147dc55c468389bc7079e312f675738f2326a436f4ebbc45c3f2895c8"
+    },
+    "source/nan_guard_state/src/V-prognostic-microscale_1.cs": {
+      "size": 29005,
+      "sha256": "06b662e4ca021626a36eedbb9d2658bf4a5bffa9b82077304a33eb98e27bb8cf"
+    },
+    "source/nan_guard_state/src/V-prognostic-microscale_1_Vec512.cs": {
+      "size": 33739,
+      "sha256": "f40f68c0da01b5e503dc207edce50ddf556214e23a41bbde8e6da3bf37d86b84"
+    },
+    "source/nan_guard_state/src/V-prognostic-microscale_2.cs": {
+      "size": 14805,
+      "sha256": "5a7e5fb6b875b069e5d48f0569e06110a68be591187ed9dcf73c7e6f0829b885"
+    },
+    "source/nan_guard_state/src/W-prognostic-microscale_0.cs": {
+      "size": 6647,
+      "sha256": "1b2efe7a8fdbf36948665eeda3912fe9203c0f8a77210197cea3863885e567cc"
+    },
+    "source/nan_guard_state/src/W-prognostic-microscale_1.cs": {
+      "size": 23949,
+      "sha256": "6c60470e842f0bb17d5cc0ce8707b50322d896a4ceacd6629b2d0ce34ae3ce9e"
+    },
+    "source/nan_guard_state/src/W-prognostic-microscale_1_Vec512.cs": {
+      "size": 28860,
+      "sha256": "8c05de62ec39b2e7c909abe624b8a78d3f693becfc097ed3c7a54e8f1386670a"
+    },
+    "source/nan_guard_state/src/W-prognostic-microscale_2.cs": {
+      "size": 11325,
+      "sha256": "9726e7285a9dfae8e6853ab1a5ed2f9db876f15118766f81cc584fb0ba971c81"
+    },
+    "source/nan_guard_state/src/WindData.cs": {
+      "size": 1148,
+      "sha256": "6b007fed08c2fc9d19445ca7b23fe6703d9715020a807c46414436846dd41b63"
+    },
+    "source/nan_guard_state/src/Windfield_Reader.cs": {
+      "size": 4818,
+      "sha256": "cf7997dd101b18b706a9fa26cf5bd972802cb6c3b89c89e37c26f7b8e54cac61"
+    },
+    "source/nan_guard_state/src/Windfield_Reader_SOUNDPLAN.cs": {
+      "size": 2052,
+      "sha256": "4f1efac9d101efd16a90ffcf1091529833357833382393443ce751ad5533c0e9"
+    },
+    "source/nan_guard_state/src/Write2DConcentrations.cs": {
+      "size": 38579,
+      "sha256": "bb61dda4fb4d665f0d1d8986f660010907ac99555bdc9de1c3a6a47d7c326f87"
+    },
+    "source/nan_guard_state/src/Write3DConcentrations.cs": {
+      "size": 19550,
+      "sha256": "2b3e5bf36b0912e6de6824195a99d6e4ce19fd2a2d559fe531df7c169f50534a"
+    },
+    "source/nan_guard_state/src/WriteGeometries.cs": {
+      "size": 7764,
+      "sha256": "29ac04203366245d83375342248a65c3c5f79e6f2aced47364ed91023a59b676"
+    },
+    "source/nan_guard_state/src/WriteLogFiles.cs": {
+      "size": 15889,
+      "sha256": "69172835b613ba5bfe0105032e676b61540b8ddeddbb2c2b744377a930dbc03e"
+    },
+    "source/nan_guard_state/src/WriteReceptorConcentrations.cs": {
+      "size": 26607,
+      "sha256": "7e3a00669ce002ed51c430fa8a387d39dd48f64d268a40b3bf936fa8c1b35831"
+    },
+    "source/nan_guard_state/src/WriteTransientConcentrations.cs": {
+      "size": 7224,
+      "sha256": "921e7c50791c7f15bfe77366a26f3eb8489587556608663897fe4416c2c9e7ed"
+    },
+    "source/nan_guard_state/src/Zeitschleife.cs": {
+      "size": 123190,
+      "sha256": "81fb9df2a9f6cc39487dd4ffe36b473a2cdf0f2ef7e756ed6e58b5286adad8fd"
+    },
+    "source/nan_guard_state/src/Zeitschleife_nonsteadystate.cs": {
+      "size": 66590,
+      "sha256": "41742b339ea4dd76de95d65e577023e1916e4d33d81ca622ccbf1a01ea81ec70"
+    },
+    "source/nan_guard_storage/src/aenderungen_GRAL.txt": {
+      "size": 43052,
+      "sha256": "b620b746d627ec0b4d49bcfd69807f45cc702d116d9500ae9836c63e82fca29e"
+    },
+    "source/nan_guard_storage/src/Anfangko.cs": {
+      "size": 36837,
+      "sha256": "80f4e619ea9f38d46adfa81bac39bd962a49d388ff440b9545c4e3270f7de9bd"
+    },
+    "source/nan_guard_storage/src/CleanUp.cs": {
+      "size": 6744,
+      "sha256": "5b741559e87a02ed46aad1c10e51f0f7cdda4daa11e62778a985ede0de7b4045"
+    },
+    "source/nan_guard_storage/src/Constants.cs": {
+      "size": 4711,
+      "sha256": "aef744b91db8cd8f002f104236df702ad0bb510879a6a9834498a18d2ab6f87c"
+    },
+    "source/nan_guard_storage/src/DepositionComputation.cs": {
+      "size": 15044,
+      "sha256": "ae5e3e36f65e5dff29ccf5ad4b4c85de2717337a711340fd6dab462228c2dcc8"
+    },
+    "source/nan_guard_storage/src/DiagnosticFlowfield.cs": {
+      "size": 21991,
+      "sha256": "478b8a7520fd02d54033fb954862514ffb5c249653c93c1498584d986751c0a8"
+    },
+    "source/nan_guard_storage/src/FilterArray.cs": {
+      "size": 6319,
+      "sha256": "bf56698b9a2ba4cd45ee2daa5967ba3f84eb50e5fc7ba356fdc97f37b00fd410"
+    },
+    "source/nan_guard_storage/src/GetTransientTimeSeriesIndex.cs": {
+      "size": 2688,
+      "sha256": "9cb502247ad69ee45a5ef6ea1958c6c1ff1390113854d736ae82a29d8a198d5e"
+    },
+    "source/nan_guard_storage/src/GFFRead.cs": {
+      "size": 15837,
+      "sha256": "e5c7a33e80356a8b75e3f4ac5a8c56229944d065083663015f4fabbca3a17346"
+    },
+    "source/nan_guard_storage/src/GFFWrite.cs": {
+      "size": 29056,
+      "sha256": "5e2cab8b008539f657e8734bf948102c1a89348d543895b039e3fea83c9569cc"
+    },
+    "source/nan_guard_storage/src/global.json": {
+      "size": 99,
+      "sha256": "e599d73baa15b297c2110577460f44f6ac6cd0386c8e2a007bb2282721e0f06f"
+    },
+    "source/nan_guard_storage/src/GRAL.csproj": {
+      "size": 1232,
+      "sha256": "db06fd5367d67932a42808b32700e487bc42c7d31a9e32c95831eb115911ae5a"
+    },
+    "source/nan_guard_storage/src/GRALONLINE.cs": {
+      "size": 12383,
+      "sha256": "3a4d74f5106b7f3b37dbbb83b33ca1e325ad3c1e0ce2234bf0fff1c3f4251848"
+    },
+    "source/nan_guard_storage/src/InitAdaptiveRoughness.cs": {
+      "size": 8208,
+      "sha256": "e28035b7179d86ef61226cc46d2d8e6f3c3b64e51160fe9e34e312e4375b757d"
+    },
+    "source/nan_guard_storage/src/Input_eki.cs": {
+      "size": 7834,
+      "sha256": "b14119e2da64025adb4dad0097d4f4f7c1092dca5a790f00a66d9bd78396c23a"
+    },
+    "source/nan_guard_storage/src/Input_pgt.cs": {
+      "size": 19275,
+      "sha256": "b614bd897d59c28322d6e3c4f979338625b670251711df8340cfe1b8ffa2f752"
+    },
+    "source/nan_guard_storage/src/Input_rez.cs": {
+      "size": 16195,
+      "sha256": "1eb64d7bc5e15756b54266ab61930cbeb846ad3f28a1337a5aeae0596cf3e43a"
+    },
+    "source/nan_guard_storage/src/Input_sonic.cs": {
+      "size": 6220,
+      "sha256": "d32eeda2b4e6b711dd2aa50b3776ccc5794661156f9520d2d81fea9f97d1c179"
+    },
+    "source/nan_guard_storage/src/Input_wind.cs": {
+      "size": 3749,
+      "sha256": "826ea36a51c415f724e2520ada6ab3884f445f49e1155d387a9fc473614f768e"
+    },
+    "source/nan_guard_storage/src/Input_zr.cs": {
+      "size": 7301,
+      "sha256": "efc749b31f5616fe9a7e2c643801e69eba2e71c35eccedcd484698d008cf9ba2"
+    },
+    "source/nan_guard_storage/src/InputMettimeSeries.cs": {
+      "size": 7825,
+      "sha256": "4725d8beb6713b7480f6f2b19e2084c1a68e5c8375b8ccef519fce4d4c7e64e6"
+    },
+    "source/nan_guard_storage/src/Intstand.cs": {
+      "size": 3943,
+      "sha256": "f82bda4b7b3dcb0544bc97ea50ffc26f010911773dc40404975a4d4fb8310887"
+    },
+    "source/nan_guard_storage/src/Intwind.cs": {
+      "size": 9113,
+      "sha256": "b86e06ca1aeeaa59cd220b5f52fc1fdb5f3fea27edd40fa9ea968509d3b8f2ae"
+    },
+    "source/nan_guard_storage/src/LoadAndDefineTransientPresets.cs": {
+      "size": 5364,
+      "sha256": "8b3b9e6b74ac6bf4c8d9631925d1670f3f9f286c780c67ddcdde0589f1f28e9c"
+    },
+    "source/nan_guard_storage/src/MicroscaleFlat.cs": {
+      "size": 22931,
+      "sha256": "52e359e036f43440801953eaab32eed123cde92d2355740915c9c3780b965105"
+    },
+    "source/nan_guard_storage/src/MicroscaleTerrain.cs": {
+      "size": 55973,
+      "sha256": "8c67199d882764c30fb6d042dfd4650ee8e11569417f44b104e91d9a7df07b80"
+    },
+    "source/nan_guard_storage/src/MicroscaleTerrainSearchRefPoint.cs": {
+      "size": 3671,
+      "sha256": "d287c90fcbe2fef1d7e5f4797017d0a74c1bf4619cbd57de37a9a022585d594d"
+    },
+    "source/nan_guard_storage/src/NestedGridBounds.cs": {
+      "size": 1801,
+      "sha256": "4f2446d13029912917984a6495dc76555b09252fba76023892dc7fd10c7de3d4"
+    },
+    "source/nan_guard_storage/src/Point.cs": {
+      "size": 1514,
+      "sha256": "2aec9cba79f7af515bd942a626c1c7b96a29b746066c7e80000ab3209f80638b"
+    },
+    "source/nan_guard_storage/src/PointSourceHeight.cs": {
+      "size": 2939,
+      "sha256": "7e4246b8bd2be84db0ba100b81f9a4b2086397d3d88ef5680cf334de8b6ea220"
+    },
+    "source/nan_guard_storage/src/PrognosticFlowfield.cs": {
+      "size": 89705,
+      "sha256": "0e9bcd7b8941fe8a84f07b48956f0a5d4026badd9bfbabd3b71ab3606215d936"
+    },
+    "source/nan_guard_storage/src/Program.cs": {
+      "size": 41041,
+      "sha256": "dcfb4c266b683e8a20a31acd8fb4f9ee7983744722f020c5d1d283e5dc275a97"
+    },
+    "source/nan_guard_storage/src/ProgramDeclarations.cs": {
+      "size": 59162,
+      "sha256": "4dee6791763f2d3c6e347de2c05d6466dc0abc7fd7307a5511d90559297b596f"
+    },
+    "source/nan_guard_storage/src/ProgramFunctions.cs": {
+      "size": 70115,
+      "sha256": "a8367c52494aec8bd8bd5ad7c6c1858b98a6d480c8f4bbd3e8b21ad919bb388a"
+    },
+    "source/nan_guard_storage/src/Read_DispersionClasses.cs": {
+      "size": 21746,
+      "sha256": "8ae8e95c38a22630b936d66b551b1137b133c24ddab4d4274651f4e9eb148b67"
+    },
+    "source/nan_guard_storage/src/ReadAreaSources.cs": {
+      "size": 9854,
+      "sha256": "42c3c71c684cf83e6e2b7f06d771b05c6ee28534a32d601d7dd86d8583d647f5"
+    },
+    "source/nan_guard_storage/src/ReadBuildings.cs": {
+      "size": 15079,
+      "sha256": "63b55839dd4e8f539ae397006d2fc2bdfee78b9c60fa96ebe1c9a1f50df6b1d0"
+    },
+    "source/nan_guard_storage/src/ReadEmissionTimeSeries.cs": {
+      "size": 5554,
+      "sha256": "a5a85ccd1e62ca85a106155f9d2b284c35a1078641b144ac34fd6b1f5804d7ad"
+    },
+    "source/nan_guard_storage/src/ReadGeometryAndDomains.cs": {
+      "size": 23185,
+      "sha256": "9a094e4db024265e2a75fdda1b060e352505d6f999ce461e88865f10dd34a022"
+    },
+    "source/nan_guard_storage/src/ReadGgeomAsc.cs": {
+      "size": 21649,
+      "sha256": "8ec6e5f3b027e2d6f3bc356ca6bc99af8c220a7eeb5d8943c224fadd96909200"
+    },
+    "source/nan_guard_storage/src/ReadInDat.cs": {
+      "size": 16944,
+      "sha256": "242f2efceb6396fdce3a736d25380cb43827a870277efcbd5b1e3c1de4a66940"
+    },
+    "source/nan_guard_storage/src/ReadLandUseFile.cs": {
+      "size": 3614,
+      "sha256": "328f80fdf712d5d4ae4cec234f01e843f4704e8649c2de2a7adac6b27ae0786d"
+    },
+    "source/nan_guard_storage/src/ReadLinieSources.cs": {
+      "size": 10963,
+      "sha256": "f2cbb81dd68a34ae18be00045b92f81babe26fad36da9f68ae245c75497fb00b"
+    },
+    "source/nan_guard_storage/src/ReadMax_Proc.cs": {
+      "size": 3757,
+      "sha256": "afabc0843df13783a8eb796bac1826d73dbef31550d374bfebc65b3572c2b020"
+    },
+    "source/nan_guard_storage/src/ReadPointSources.cs": {
+      "size": 11633,
+      "sha256": "ed01b3b5ebf5624d571e428d4fef5e6a421df619d2d5d0afdbea9c284a827c0f"
+    },
+    "source/nan_guard_storage/src/ReadPollutant.cs": {
+      "size": 6694,
+      "sha256": "b333eef9bdfefd8929c04801889c8ba129650e057486b486a63225d13dc5d787"
+    },
+    "source/nan_guard_storage/src/ReadPrecipitation.cs": {
+      "size": 4585,
+      "sha256": "8cb47ad75b5c4bbfbc993c8cb21171ea71e7a854ed341f76ffb708bf8ff931fb"
+    },
+    "source/nan_guard_storage/src/ReadReceptors.cs": {
+      "size": 4498,
+      "sha256": "4de4bf9f1a1eb17f9fbec45926374572bfc544c6c83c59ec4d966891a6783dea"
+    },
+    "source/nan_guard_storage/src/ReadSourceTimeSeries.cs": {
+      "size": 3735,
+      "sha256": "7ab8b0458a37d6f161823f13510759f4f0b795af8b6c7013072def928676fb7e"
+    },
+    "source/nan_guard_storage/src/ReadTransientFiles.cs": {
+      "size": 19318,
+      "sha256": "67395ce30b9030d6d5b3350b387869fa3a5b116e0df5e1985b7fa3d1c8c97f6a"
+    },
+    "source/nan_guard_storage/src/ReadTunnelportals.cs": {
+      "size": 11247,
+      "sha256": "4e7f6287d51a4b1fb0d46c211e1f74ccc11ba03fa93aac2f7b930f9ba41f92be"
+    },
+    "source/nan_guard_storage/src/ReadTunnelPortalsOptional.cs": {
+      "size": 6984,
+      "sha256": "e3345a18acf478999abcbe1b8c8b4d308fa93a984fd7165ce659c9b834366336"
+    },
+    "source/nan_guard_storage/src/ReadVegetation.cs": {
+      "size": 15378,
+      "sha256": "eb6b193b7309ff960daf8e5e12317e85ddbb770ae8f482adaa27e1b13ba3e3e7"
+    },
+    "source/nan_guard_storage/src/ReducePrognosticSubDomainSize.cs": {
+      "size": 12202,
+      "sha256": "f5f5e0d1c6376c42ae48ef8e9eba54ca4a88ca2520b27f28f5d733bb243620fd"
+    },
+    "source/nan_guard_storage/src/runtimeconfig.template.json": {
+      "size": 233,
+      "sha256": "0c8fd652dbe1c3ef6ee8faaf13360286df354be5e34e5cedc5d6f753343a2f9f"
+    },
+    "source/nan_guard_storage/src/SourceData.cs": {
+      "size": 4163,
+      "sha256": "7de7925165dca2bde939154ad8c3fb57bbaa56b3f7a480aba2f63c50b809ea30"
+    },
+    "source/nan_guard_storage/src/TeilchenAufteilung.cs": {
+      "size": 8452,
+      "sha256": "e06e73ac04d956370150baa77ddb3a8ddd0642666b6d3666a9c9d8a33e18d9a7"
+    },
+    "source/nan_guard_storage/src/TerrainArray.cs": {
+      "size": 3589,
+      "sha256": "8adb83ca40f130b14ec631ff71e6b5b3da9d8b96118761b720b26b0ea22db4a9"
+    },
+    "source/nan_guard_storage/src/TimeSeriesColumn.cs": {
+      "size": 923,
+      "sha256": "b4be25245efd9861a9ce3fce803befd85f7d9ab6062b0923897c1359e431c18b"
+    },
+    "source/nan_guard_storage/src/TKE-prognostic-microscale.cs": {
+      "size": 20579,
+      "sha256": "0ca881c486e987f4e9fffcc18ec6b25b184a8300a45117472ccbbb85c6abb82a"
+    },
+    "source/nan_guard_storage/src/Transient_Concentration.cs": {
+      "size": 6804,
+      "sha256": "f37e30fb67cb0d8d605e2e1ecd8f2a4a987fe275ac4dadb6ebcc550f907ff85c"
+    },
+    "source/nan_guard_storage/src/TransientDeposition.cs": {
+      "size": 1336,
+      "sha256": "004fead168ebbca739c4b8788ec3c8c6208df00fde03a5d72b7f8e2827cf8d62"
+    },
+    "source/nan_guard_storage/src/U-prognostic-microscale_0.cs": {
+      "size": 10117,
+      "sha256": "51eeb19c90f798328cfa3945f864bc76618e6faa2dac2da6f249949eacb85184"
+    },
+    "source/nan_guard_storage/src/U-prognostic-microscale_1.cs": {
+      "size": 29058,
+      "sha256": "5934355b73d52b2fc1e084142c2defb7216e3a2c86522d9249a9d850d47d51cc"
+    },
+    "source/nan_guard_storage/src/U-prognostic-microscale_1_Vec512.cs": {
+      "size": 33860,
+      "sha256": "8dc2f7bee656f3bb486c02e9075ac5be598456391ff490f339476cfab17e62c0"
+    },
+    "source/nan_guard_storage/src/U-prognostic-microscale_2.cs": {
+      "size": 14740,
+      "sha256": "78b96f81e2d60585bd677f288109a47bb37f21624bd7af671469416460f757dc"
+    },
+    "source/nan_guard_storage/src/V-prognostic-microscale_0.cs": {
+      "size": 10559,
+      "sha256": "8912158147dc55c468389bc7079e312f675738f2326a436f4ebbc45c3f2895c8"
+    },
+    "source/nan_guard_storage/src/V-prognostic-microscale_1.cs": {
+      "size": 29005,
+      "sha256": "06b662e4ca021626a36eedbb9d2658bf4a5bffa9b82077304a33eb98e27bb8cf"
+    },
+    "source/nan_guard_storage/src/V-prognostic-microscale_1_Vec512.cs": {
+      "size": 33739,
+      "sha256": "f40f68c0da01b5e503dc207edce50ddf556214e23a41bbde8e6da3bf37d86b84"
+    },
+    "source/nan_guard_storage/src/V-prognostic-microscale_2.cs": {
+      "size": 14805,
+      "sha256": "5a7e5fb6b875b069e5d48f0569e06110a68be591187ed9dcf73c7e6f0829b885"
+    },
+    "source/nan_guard_storage/src/W-prognostic-microscale_0.cs": {
+      "size": 6647,
+      "sha256": "1b2efe7a8fdbf36948665eeda3912fe9203c0f8a77210197cea3863885e567cc"
+    },
+    "source/nan_guard_storage/src/W-prognostic-microscale_1.cs": {
+      "size": 23949,
+      "sha256": "6c60470e842f0bb17d5cc0ce8707b50322d896a4ceacd6629b2d0ce34ae3ce9e"
+    },
+    "source/nan_guard_storage/src/W-prognostic-microscale_1_Vec512.cs": {
+      "size": 28860,
+      "sha256": "8c05de62ec39b2e7c909abe624b8a78d3f693becfc097ed3c7a54e8f1386670a"
+    },
+    "source/nan_guard_storage/src/W-prognostic-microscale_2.cs": {
+      "size": 11325,
+      "sha256": "9726e7285a9dfae8e6853ab1a5ed2f9db876f15118766f81cc584fb0ba971c81"
+    },
+    "source/nan_guard_storage/src/WindData.cs": {
+      "size": 1148,
+      "sha256": "6b007fed08c2fc9d19445ca7b23fe6703d9715020a807c46414436846dd41b63"
+    },
+    "source/nan_guard_storage/src/Windfield_Reader.cs": {
+      "size": 4818,
+      "sha256": "cf7997dd101b18b706a9fa26cf5bd972802cb6c3b89c89e37c26f7b8e54cac61"
+    },
+    "source/nan_guard_storage/src/Windfield_Reader_SOUNDPLAN.cs": {
+      "size": 2052,
+      "sha256": "4f1efac9d101efd16a90ffcf1091529833357833382393443ce751ad5533c0e9"
+    },
+    "source/nan_guard_storage/src/Write2DConcentrations.cs": {
+      "size": 38579,
+      "sha256": "bb61dda4fb4d665f0d1d8986f660010907ac99555bdc9de1c3a6a47d7c326f87"
+    },
+    "source/nan_guard_storage/src/Write3DConcentrations.cs": {
+      "size": 19550,
+      "sha256": "2b3e5bf36b0912e6de6824195a99d6e4ce19fd2a2d559fe531df7c169f50534a"
+    },
+    "source/nan_guard_storage/src/WriteGeometries.cs": {
+      "size": 7764,
+      "sha256": "29ac04203366245d83375342248a65c3c5f79e6f2aced47364ed91023a59b676"
+    },
+    "source/nan_guard_storage/src/WriteLogFiles.cs": {
+      "size": 15889,
+      "sha256": "69172835b613ba5bfe0105032e676b61540b8ddeddbb2c2b744377a930dbc03e"
+    },
+    "source/nan_guard_storage/src/WriteReceptorConcentrations.cs": {
+      "size": 26607,
+      "sha256": "7e3a00669ce002ed51c430fa8a387d39dd48f64d268a40b3bf936fa8c1b35831"
+    },
+    "source/nan_guard_storage/src/WriteTransientConcentrations.cs": {
+      "size": 7224,
+      "sha256": "921e7c50791c7f15bfe77366a26f3eb8489587556608663897fe4416c2c9e7ed"
+    },
+    "source/nan_guard_storage/src/Zeitschleife.cs": {
+      "size": 121095,
+      "sha256": "c82d079904a088016c6e574905e133eaf100c7b126a307deae683883e2e87a82"
+    },
+    "source/nan_guard_storage/src/Zeitschleife_nonsteadystate.cs": {
+      "size": 64991,
+      "sha256": "a1f98f8f70f43fc2de4a54c2be2bff700bba66a611c4b9d28d411120cd8ff5c1"
+    },
+    "source/opt1_stack/src/aenderungen_GRAL.txt": {
+      "size": 43052,
+      "sha256": "b620b746d627ec0b4d49bcfd69807f45cc702d116d9500ae9836c63e82fca29e"
+    },
+    "source/opt1_stack/src/Anfangko.cs": {
+      "size": 36837,
+      "sha256": "80f4e619ea9f38d46adfa81bac39bd962a49d388ff440b9545c4e3270f7de9bd"
+    },
+    "source/opt1_stack/src/CleanUp.cs": {
+      "size": 6744,
+      "sha256": "5b741559e87a02ed46aad1c10e51f0f7cdda4daa11e62778a985ede0de7b4045"
+    },
+    "source/opt1_stack/src/Constants.cs": {
+      "size": 4711,
+      "sha256": "aef744b91db8cd8f002f104236df702ad0bb510879a6a9834498a18d2ab6f87c"
+    },
+    "source/opt1_stack/src/DepositionComputation.cs": {
+      "size": 15044,
+      "sha256": "ae5e3e36f65e5dff29ccf5ad4b4c85de2717337a711340fd6dab462228c2dcc8"
+    },
+    "source/opt1_stack/src/DiagnosticFlowfield.cs": {
+      "size": 21991,
+      "sha256": "478b8a7520fd02d54033fb954862514ffb5c249653c93c1498584d986751c0a8"
+    },
+    "source/opt1_stack/src/FilterArray.cs": {
+      "size": 6319,
+      "sha256": "bf56698b9a2ba4cd45ee2daa5967ba3f84eb50e5fc7ba356fdc97f37b00fd410"
+    },
+    "source/opt1_stack/src/GetTransientTimeSeriesIndex.cs": {
+      "size": 2688,
+      "sha256": "9cb502247ad69ee45a5ef6ea1958c6c1ff1390113854d736ae82a29d8a198d5e"
+    },
+    "source/opt1_stack/src/GFFRead.cs": {
+      "size": 15837,
+      "sha256": "e5c7a33e80356a8b75e3f4ac5a8c56229944d065083663015f4fabbca3a17346"
+    },
+    "source/opt1_stack/src/GFFWrite.cs": {
+      "size": 29056,
+      "sha256": "5e2cab8b008539f657e8734bf948102c1a89348d543895b039e3fea83c9569cc"
+    },
+    "source/opt1_stack/src/global.json": {
+      "size": 99,
+      "sha256": "e599d73baa15b297c2110577460f44f6ac6cd0386c8e2a007bb2282721e0f06f"
+    },
+    "source/opt1_stack/src/GRAL.csproj": {
+      "size": 1232,
+      "sha256": "db06fd5367d67932a42808b32700e487bc42c7d31a9e32c95831eb115911ae5a"
+    },
+    "source/opt1_stack/src/GRALONLINE.cs": {
+      "size": 12383,
+      "sha256": "3a4d74f5106b7f3b37dbbb83b33ca1e325ad3c1e0ce2234bf0fff1c3f4251848"
+    },
+    "source/opt1_stack/src/InitAdaptiveRoughness.cs": {
+      "size": 8208,
+      "sha256": "e28035b7179d86ef61226cc46d2d8e6f3c3b64e51160fe9e34e312e4375b757d"
+    },
+    "source/opt1_stack/src/Input_eki.cs": {
+      "size": 7834,
+      "sha256": "b14119e2da64025adb4dad0097d4f4f7c1092dca5a790f00a66d9bd78396c23a"
+    },
+    "source/opt1_stack/src/Input_pgt.cs": {
+      "size": 19275,
+      "sha256": "b614bd897d59c28322d6e3c4f979338625b670251711df8340cfe1b8ffa2f752"
+    },
+    "source/opt1_stack/src/Input_rez.cs": {
+      "size": 16195,
+      "sha256": "1eb64d7bc5e15756b54266ab61930cbeb846ad3f28a1337a5aeae0596cf3e43a"
+    },
+    "source/opt1_stack/src/Input_sonic.cs": {
+      "size": 6220,
+      "sha256": "d32eeda2b4e6b711dd2aa50b3776ccc5794661156f9520d2d81fea9f97d1c179"
+    },
+    "source/opt1_stack/src/Input_wind.cs": {
+      "size": 3749,
+      "sha256": "826ea36a51c415f724e2520ada6ab3884f445f49e1155d387a9fc473614f768e"
+    },
+    "source/opt1_stack/src/Input_zr.cs": {
+      "size": 7301,
+      "sha256": "efc749b31f5616fe9a7e2c643801e69eba2e71c35eccedcd484698d008cf9ba2"
+    },
+    "source/opt1_stack/src/InputMettimeSeries.cs": {
+      "size": 7825,
+      "sha256": "4725d8beb6713b7480f6f2b19e2084c1a68e5c8375b8ccef519fce4d4c7e64e6"
+    },
+    "source/opt1_stack/src/Intstand.cs": {
+      "size": 3943,
+      "sha256": "f82bda4b7b3dcb0544bc97ea50ffc26f010911773dc40404975a4d4fb8310887"
+    },
+    "source/opt1_stack/src/Intwind.cs": {
+      "size": 9113,
+      "sha256": "b86e06ca1aeeaa59cd220b5f52fc1fdb5f3fea27edd40fa9ea968509d3b8f2ae"
+    },
+    "source/opt1_stack/src/LoadAndDefineTransientPresets.cs": {
+      "size": 5364,
+      "sha256": "8b3b9e6b74ac6bf4c8d9631925d1670f3f9f286c780c67ddcdde0589f1f28e9c"
+    },
+    "source/opt1_stack/src/MicroscaleFlat.cs": {
+      "size": 22931,
+      "sha256": "52e359e036f43440801953eaab32eed123cde92d2355740915c9c3780b965105"
+    },
+    "source/opt1_stack/src/MicroscaleTerrain.cs": {
+      "size": 55973,
+      "sha256": "8c67199d882764c30fb6d042dfd4650ee8e11569417f44b104e91d9a7df07b80"
+    },
+    "source/opt1_stack/src/MicroscaleTerrainSearchRefPoint.cs": {
+      "size": 3671,
+      "sha256": "d287c90fcbe2fef1d7e5f4797017d0a74c1bf4619cbd57de37a9a022585d594d"
+    },
+    "source/opt1_stack/src/NestedGridBounds.cs": {
+      "size": 1801,
+      "sha256": "4f2446d13029912917984a6495dc76555b09252fba76023892dc7fd10c7de3d4"
+    },
+    "source/opt1_stack/src/Point.cs": {
+      "size": 1514,
+      "sha256": "2aec9cba79f7af515bd942a626c1c7b96a29b746066c7e80000ab3209f80638b"
+    },
+    "source/opt1_stack/src/PointSourceHeight.cs": {
+      "size": 2939,
+      "sha256": "7e4246b8bd2be84db0ba100b81f9a4b2086397d3d88ef5680cf334de8b6ea220"
+    },
+    "source/opt1_stack/src/PrognosticFlowfield.cs": {
+      "size": 89705,
+      "sha256": "0e9bcd7b8941fe8a84f07b48956f0a5d4026badd9bfbabd3b71ab3606215d936"
+    },
+    "source/opt1_stack/src/Program.cs": {
+      "size": 40571,
+      "sha256": "b19a49c86ad5025f1fe8380433bc37c25c1420ed4981d1c5a8f76b184ff36e94"
+    },
+    "source/opt1_stack/src/ProgramDeclarations.cs": {
+      "size": 59162,
+      "sha256": "4dee6791763f2d3c6e347de2c05d6466dc0abc7fd7307a5511d90559297b596f"
+    },
+    "source/opt1_stack/src/ProgramFunctions.cs": {
+      "size": 70115,
+      "sha256": "a8367c52494aec8bd8bd5ad7c6c1858b98a6d480c8f4bbd3e8b21ad919bb388a"
+    },
+    "source/opt1_stack/src/Read_DispersionClasses.cs": {
+      "size": 21746,
+      "sha256": "8ae8e95c38a22630b936d66b551b1137b133c24ddab4d4274651f4e9eb148b67"
+    },
+    "source/opt1_stack/src/ReadAreaSources.cs": {
+      "size": 9854,
+      "sha256": "42c3c71c684cf83e6e2b7f06d771b05c6ee28534a32d601d7dd86d8583d647f5"
+    },
+    "source/opt1_stack/src/ReadBuildings.cs": {
+      "size": 15079,
+      "sha256": "63b55839dd4e8f539ae397006d2fc2bdfee78b9c60fa96ebe1c9a1f50df6b1d0"
+    },
+    "source/opt1_stack/src/ReadEmissionTimeSeries.cs": {
+      "size": 5554,
+      "sha256": "a5a85ccd1e62ca85a106155f9d2b284c35a1078641b144ac34fd6b1f5804d7ad"
+    },
+    "source/opt1_stack/src/ReadGeometryAndDomains.cs": {
+      "size": 23185,
+      "sha256": "9a094e4db024265e2a75fdda1b060e352505d6f999ce461e88865f10dd34a022"
+    },
+    "source/opt1_stack/src/ReadGgeomAsc.cs": {
+      "size": 21649,
+      "sha256": "8ec6e5f3b027e2d6f3bc356ca6bc99af8c220a7eeb5d8943c224fadd96909200"
+    },
+    "source/opt1_stack/src/ReadInDat.cs": {
+      "size": 16944,
+      "sha256": "242f2efceb6396fdce3a736d25380cb43827a870277efcbd5b1e3c1de4a66940"
+    },
+    "source/opt1_stack/src/ReadLandUseFile.cs": {
+      "size": 3614,
+      "sha256": "328f80fdf712d5d4ae4cec234f01e843f4704e8649c2de2a7adac6b27ae0786d"
+    },
+    "source/opt1_stack/src/ReadLinieSources.cs": {
+      "size": 10963,
+      "sha256": "f2cbb81dd68a34ae18be00045b92f81babe26fad36da9f68ae245c75497fb00b"
+    },
+    "source/opt1_stack/src/ReadMax_Proc.cs": {
+      "size": 3757,
+      "sha256": "afabc0843df13783a8eb796bac1826d73dbef31550d374bfebc65b3572c2b020"
+    },
+    "source/opt1_stack/src/ReadPointSources.cs": {
+      "size": 11633,
+      "sha256": "ed01b3b5ebf5624d571e428d4fef5e6a421df619d2d5d0afdbea9c284a827c0f"
+    },
+    "source/opt1_stack/src/ReadPollutant.cs": {
+      "size": 6694,
+      "sha256": "b333eef9bdfefd8929c04801889c8ba129650e057486b486a63225d13dc5d787"
+    },
+    "source/opt1_stack/src/ReadPrecipitation.cs": {
+      "size": 4585,
+      "sha256": "8cb47ad75b5c4bbfbc993c8cb21171ea71e7a854ed341f76ffb708bf8ff931fb"
+    },
+    "source/opt1_stack/src/ReadReceptors.cs": {
+      "size": 4498,
+      "sha256": "4de4bf9f1a1eb17f9fbec45926374572bfc544c6c83c59ec4d966891a6783dea"
+    },
+    "source/opt1_stack/src/ReadSourceTimeSeries.cs": {
+      "size": 3735,
+      "sha256": "7ab8b0458a37d6f161823f13510759f4f0b795af8b6c7013072def928676fb7e"
+    },
+    "source/opt1_stack/src/ReadTransientFiles.cs": {
+      "size": 19318,
+      "sha256": "67395ce30b9030d6d5b3350b387869fa3a5b116e0df5e1985b7fa3d1c8c97f6a"
+    },
+    "source/opt1_stack/src/ReadTunnelportals.cs": {
+      "size": 11247,
+      "sha256": "4e7f6287d51a4b1fb0d46c211e1f74ccc11ba03fa93aac2f7b930f9ba41f92be"
+    },
+    "source/opt1_stack/src/ReadTunnelPortalsOptional.cs": {
+      "size": 6984,
+      "sha256": "e3345a18acf478999abcbe1b8c8b4d308fa93a984fd7165ce659c9b834366336"
+    },
+    "source/opt1_stack/src/ReadVegetation.cs": {
+      "size": 15378,
+      "sha256": "eb6b193b7309ff960daf8e5e12317e85ddbb770ae8f482adaa27e1b13ba3e3e7"
+    },
+    "source/opt1_stack/src/ReducePrognosticSubDomainSize.cs": {
+      "size": 12202,
+      "sha256": "f5f5e0d1c6376c42ae48ef8e9eba54ca4a88ca2520b27f28f5d733bb243620fd"
+    },
+    "source/opt1_stack/src/runtimeconfig.template.json": {
+      "size": 233,
+      "sha256": "0c8fd652dbe1c3ef6ee8faaf13360286df354be5e34e5cedc5d6f753343a2f9f"
+    },
+    "source/opt1_stack/src/SourceData.cs": {
+      "size": 4163,
+      "sha256": "7de7925165dca2bde939154ad8c3fb57bbaa56b3f7a480aba2f63c50b809ea30"
+    },
+    "source/opt1_stack/src/TeilchenAufteilung.cs": {
+      "size": 8452,
+      "sha256": "e06e73ac04d956370150baa77ddb3a8ddd0642666b6d3666a9c9d8a33e18d9a7"
+    },
+    "source/opt1_stack/src/TerrainArray.cs": {
+      "size": 3589,
+      "sha256": "8adb83ca40f130b14ec631ff71e6b5b3da9d8b96118761b720b26b0ea22db4a9"
+    },
+    "source/opt1_stack/src/TimeSeriesColumn.cs": {
+      "size": 923,
+      "sha256": "b4be25245efd9861a9ce3fce803befd85f7d9ab6062b0923897c1359e431c18b"
+    },
+    "source/opt1_stack/src/TKE-prognostic-microscale.cs": {
+      "size": 20579,
+      "sha256": "0ca881c486e987f4e9fffcc18ec6b25b184a8300a45117472ccbbb85c6abb82a"
+    },
+    "source/opt1_stack/src/Transient_Concentration.cs": {
+      "size": 5042,
+      "sha256": "610fca65b1f46b843eb85e587227af5739d64aea598a1e47e9a489e48d2698c8"
+    },
+    "source/opt1_stack/src/TransientDeposition.cs": {
+      "size": 1336,
+      "sha256": "004fead168ebbca739c4b8788ec3c8c6208df00fde03a5d72b7f8e2827cf8d62"
+    },
+    "source/opt1_stack/src/U-prognostic-microscale_0.cs": {
+      "size": 10117,
+      "sha256": "51eeb19c90f798328cfa3945f864bc76618e6faa2dac2da6f249949eacb85184"
+    },
+    "source/opt1_stack/src/U-prognostic-microscale_1.cs": {
+      "size": 29058,
+      "sha256": "5934355b73d52b2fc1e084142c2defb7216e3a2c86522d9249a9d850d47d51cc"
+    },
+    "source/opt1_stack/src/U-prognostic-microscale_1_Vec512.cs": {
+      "size": 33860,
+      "sha256": "8dc2f7bee656f3bb486c02e9075ac5be598456391ff490f339476cfab17e62c0"
+    },
+    "source/opt1_stack/src/U-prognostic-microscale_2.cs": {
+      "size": 14740,
+      "sha256": "78b96f81e2d60585bd677f288109a47bb37f21624bd7af671469416460f757dc"
+    },
+    "source/opt1_stack/src/V-prognostic-microscale_0.cs": {
+      "size": 10559,
+      "sha256": "8912158147dc55c468389bc7079e312f675738f2326a436f4ebbc45c3f2895c8"
+    },
+    "source/opt1_stack/src/V-prognostic-microscale_1.cs": {
+      "size": 29005,
+      "sha256": "06b662e4ca021626a36eedbb9d2658bf4a5bffa9b82077304a33eb98e27bb8cf"
+    },
+    "source/opt1_stack/src/V-prognostic-microscale_1_Vec512.cs": {
+      "size": 33739,
+      "sha256": "f40f68c0da01b5e503dc207edce50ddf556214e23a41bbde8e6da3bf37d86b84"
+    },
+    "source/opt1_stack/src/V-prognostic-microscale_2.cs": {
+      "size": 14805,
+      "sha256": "5a7e5fb6b875b069e5d48f0569e06110a68be591187ed9dcf73c7e6f0829b885"
+    },
+    "source/opt1_stack/src/W-prognostic-microscale_0.cs": {
+      "size": 6647,
+      "sha256": "1b2efe7a8fdbf36948665eeda3912fe9203c0f8a77210197cea3863885e567cc"
+    },
+    "source/opt1_stack/src/W-prognostic-microscale_1.cs": {
+      "size": 23949,
+      "sha256": "6c60470e842f0bb17d5cc0ce8707b50322d896a4ceacd6629b2d0ce34ae3ce9e"
+    },
+    "source/opt1_stack/src/W-prognostic-microscale_1_Vec512.cs": {
+      "size": 28860,
+      "sha256": "8c05de62ec39b2e7c909abe624b8a78d3f693becfc097ed3c7a54e8f1386670a"
+    },
+    "source/opt1_stack/src/W-prognostic-microscale_2.cs": {
+      "size": 11325,
+      "sha256": "9726e7285a9dfae8e6853ab1a5ed2f9db876f15118766f81cc584fb0ba971c81"
+    },
+    "source/opt1_stack/src/WindData.cs": {
+      "size": 1148,
+      "sha256": "6b007fed08c2fc9d19445ca7b23fe6703d9715020a807c46414436846dd41b63"
+    },
+    "source/opt1_stack/src/Windfield_Reader.cs": {
+      "size": 4818,
+      "sha256": "cf7997dd101b18b706a9fa26cf5bd972802cb6c3b89c89e37c26f7b8e54cac61"
+    },
+    "source/opt1_stack/src/Windfield_Reader_SOUNDPLAN.cs": {
+      "size": 2052,
+      "sha256": "4f1efac9d101efd16a90ffcf1091529833357833382393443ce751ad5533c0e9"
+    },
+    "source/opt1_stack/src/Write2DConcentrations.cs": {
+      "size": 38579,
+      "sha256": "bb61dda4fb4d665f0d1d8986f660010907ac99555bdc9de1c3a6a47d7c326f87"
+    },
+    "source/opt1_stack/src/Write3DConcentrations.cs": {
+      "size": 19550,
+      "sha256": "2b3e5bf36b0912e6de6824195a99d6e4ce19fd2a2d559fe531df7c169f50534a"
+    },
+    "source/opt1_stack/src/WriteGeometries.cs": {
+      "size": 7764,
+      "sha256": "29ac04203366245d83375342248a65c3c5f79e6f2aced47364ed91023a59b676"
+    },
+    "source/opt1_stack/src/WriteLogFiles.cs": {
+      "size": 15889,
+      "sha256": "69172835b613ba5bfe0105032e676b61540b8ddeddbb2c2b744377a930dbc03e"
+    },
+    "source/opt1_stack/src/WriteReceptorConcentrations.cs": {
+      "size": 26607,
+      "sha256": "7e3a00669ce002ed51c430fa8a387d39dd48f64d268a40b3bf936fa8c1b35831"
+    },
+    "source/opt1_stack/src/WriteTransientConcentrations.cs": {
+      "size": 7224,
+      "sha256": "921e7c50791c7f15bfe77366a26f3eb8489587556608663897fe4416c2c9e7ed"
+    },
+    "source/opt1_stack/src/Zeitschleife.cs": {
+      "size": 121144,
+      "sha256": "3488f2f276dd315308a13b05f9316115eda19ebebaf2cf10c957a57afdfa6a10"
+    },
+    "source/opt1_stack/src/Zeitschleife_nonsteadystate.cs": {
+      "size": 64991,
+      "sha256": "a1f98f8f70f43fc2de4a54c2be2bff700bba66a611c4b9d28d411120cd8ff5c1"
+    },
+    "source/opt1_vertical/src/aenderungen_GRAL.txt": {
+      "size": 43052,
+      "sha256": "b620b746d627ec0b4d49bcfd69807f45cc702d116d9500ae9836c63e82fca29e"
+    },
+    "source/opt1_vertical/src/Anfangko.cs": {
+      "size": 36837,
+      "sha256": "80f4e619ea9f38d46adfa81bac39bd962a49d388ff440b9545c4e3270f7de9bd"
+    },
+    "source/opt1_vertical/src/CleanUp.cs": {
+      "size": 6744,
+      "sha256": "5b741559e87a02ed46aad1c10e51f0f7cdda4daa11e62778a985ede0de7b4045"
+    },
+    "source/opt1_vertical/src/Constants.cs": {
+      "size": 4711,
+      "sha256": "aef744b91db8cd8f002f104236df702ad0bb510879a6a9834498a18d2ab6f87c"
+    },
+    "source/opt1_vertical/src/DepositionComputation.cs": {
+      "size": 15044,
+      "sha256": "ae5e3e36f65e5dff29ccf5ad4b4c85de2717337a711340fd6dab462228c2dcc8"
+    },
+    "source/opt1_vertical/src/DiagnosticFlowfield.cs": {
+      "size": 21991,
+      "sha256": "478b8a7520fd02d54033fb954862514ffb5c249653c93c1498584d986751c0a8"
+    },
+    "source/opt1_vertical/src/FilterArray.cs": {
+      "size": 6319,
+      "sha256": "bf56698b9a2ba4cd45ee2daa5967ba3f84eb50e5fc7ba356fdc97f37b00fd410"
+    },
+    "source/opt1_vertical/src/GetTransientTimeSeriesIndex.cs": {
+      "size": 2688,
+      "sha256": "9cb502247ad69ee45a5ef6ea1958c6c1ff1390113854d736ae82a29d8a198d5e"
+    },
+    "source/opt1_vertical/src/GFFRead.cs": {
+      "size": 15837,
+      "sha256": "e5c7a33e80356a8b75e3f4ac5a8c56229944d065083663015f4fabbca3a17346"
+    },
+    "source/opt1_vertical/src/GFFWrite.cs": {
+      "size": 29056,
+      "sha256": "5e2cab8b008539f657e8734bf948102c1a89348d543895b039e3fea83c9569cc"
+    },
+    "source/opt1_vertical/src/global.json": {
+      "size": 99,
+      "sha256": "e599d73baa15b297c2110577460f44f6ac6cd0386c8e2a007bb2282721e0f06f"
+    },
+    "source/opt1_vertical/src/GRAL.csproj": {
+      "size": 1232,
+      "sha256": "db06fd5367d67932a42808b32700e487bc42c7d31a9e32c95831eb115911ae5a"
+    },
+    "source/opt1_vertical/src/GRALONLINE.cs": {
+      "size": 12383,
+      "sha256": "3a4d74f5106b7f3b37dbbb83b33ca1e325ad3c1e0ce2234bf0fff1c3f4251848"
+    },
+    "source/opt1_vertical/src/InitAdaptiveRoughness.cs": {
+      "size": 8208,
+      "sha256": "e28035b7179d86ef61226cc46d2d8e6f3c3b64e51160fe9e34e312e4375b757d"
+    },
+    "source/opt1_vertical/src/Input_eki.cs": {
+      "size": 7834,
+      "sha256": "b14119e2da64025adb4dad0097d4f4f7c1092dca5a790f00a66d9bd78396c23a"
+    },
+    "source/opt1_vertical/src/Input_pgt.cs": {
+      "size": 19275,
+      "sha256": "b614bd897d59c28322d6e3c4f979338625b670251711df8340cfe1b8ffa2f752"
+    },
+    "source/opt1_vertical/src/Input_rez.cs": {
+      "size": 16195,
+      "sha256": "1eb64d7bc5e15756b54266ab61930cbeb846ad3f28a1337a5aeae0596cf3e43a"
+    },
+    "source/opt1_vertical/src/Input_sonic.cs": {
+      "size": 6220,
+      "sha256": "d32eeda2b4e6b711dd2aa50b3776ccc5794661156f9520d2d81fea9f97d1c179"
+    },
+    "source/opt1_vertical/src/Input_wind.cs": {
+      "size": 3749,
+      "sha256": "826ea36a51c415f724e2520ada6ab3884f445f49e1155d387a9fc473614f768e"
+    },
+    "source/opt1_vertical/src/Input_zr.cs": {
+      "size": 7301,
+      "sha256": "efc749b31f5616fe9a7e2c643801e69eba2e71c35eccedcd484698d008cf9ba2"
+    },
+    "source/opt1_vertical/src/InputMettimeSeries.cs": {
+      "size": 7825,
+      "sha256": "4725d8beb6713b7480f6f2b19e2084c1a68e5c8375b8ccef519fce4d4c7e64e6"
+    },
+    "source/opt1_vertical/src/Intstand.cs": {
+      "size": 3943,
+      "sha256": "f82bda4b7b3dcb0544bc97ea50ffc26f010911773dc40404975a4d4fb8310887"
+    },
+    "source/opt1_vertical/src/Intwind.cs": {
+      "size": 10810,
+      "sha256": "fb1f04cee6f530bea6385c919958121a8e74dfa4246f37d93a5395d24131d734"
+    },
+    "source/opt1_vertical/src/LoadAndDefineTransientPresets.cs": {
+      "size": 5364,
+      "sha256": "8b3b9e6b74ac6bf4c8d9631925d1670f3f9f286c780c67ddcdde0589f1f28e9c"
+    },
+    "source/opt1_vertical/src/MicroscaleFlat.cs": {
+      "size": 22931,
+      "sha256": "52e359e036f43440801953eaab32eed123cde92d2355740915c9c3780b965105"
+    },
+    "source/opt1_vertical/src/MicroscaleTerrain.cs": {
+      "size": 55973,
+      "sha256": "8c67199d882764c30fb6d042dfd4650ee8e11569417f44b104e91d9a7df07b80"
+    },
+    "source/opt1_vertical/src/MicroscaleTerrainSearchRefPoint.cs": {
+      "size": 3671,
+      "sha256": "d287c90fcbe2fef1d7e5f4797017d0a74c1bf4619cbd57de37a9a022585d594d"
+    },
+    "source/opt1_vertical/src/NestedGridBounds.cs": {
+      "size": 1801,
+      "sha256": "4f2446d13029912917984a6495dc76555b09252fba76023892dc7fd10c7de3d4"
+    },
+    "source/opt1_vertical/src/Point.cs": {
+      "size": 1514,
+      "sha256": "2aec9cba79f7af515bd942a626c1c7b96a29b746066c7e80000ab3209f80638b"
+    },
+    "source/opt1_vertical/src/PointSourceHeight.cs": {
+      "size": 2939,
+      "sha256": "7e4246b8bd2be84db0ba100b81f9a4b2086397d3d88ef5680cf334de8b6ea220"
+    },
+    "source/opt1_vertical/src/PrognosticFlowfield.cs": {
+      "size": 89705,
+      "sha256": "0e9bcd7b8941fe8a84f07b48956f0a5d4026badd9bfbabd3b71ab3606215d936"
+    },
+    "source/opt1_vertical/src/Program.cs": {
+      "size": 40571,
+      "sha256": "b19a49c86ad5025f1fe8380433bc37c25c1420ed4981d1c5a8f76b184ff36e94"
+    },
+    "source/opt1_vertical/src/ProgramDeclarations.cs": {
+      "size": 59162,
+      "sha256": "4dee6791763f2d3c6e347de2c05d6466dc0abc7fd7307a5511d90559297b596f"
+    },
+    "source/opt1_vertical/src/ProgramFunctions.cs": {
+      "size": 70115,
+      "sha256": "a8367c52494aec8bd8bd5ad7c6c1858b98a6d480c8f4bbd3e8b21ad919bb388a"
+    },
+    "source/opt1_vertical/src/Read_DispersionClasses.cs": {
+      "size": 21746,
+      "sha256": "8ae8e95c38a22630b936d66b551b1137b133c24ddab4d4274651f4e9eb148b67"
+    },
+    "source/opt1_vertical/src/ReadAreaSources.cs": {
+      "size": 9854,
+      "sha256": "42c3c71c684cf83e6e2b7f06d771b05c6ee28534a32d601d7dd86d8583d647f5"
+    },
+    "source/opt1_vertical/src/ReadBuildings.cs": {
+      "size": 15079,
+      "sha256": "63b55839dd4e8f539ae397006d2fc2bdfee78b9c60fa96ebe1c9a1f50df6b1d0"
+    },
+    "source/opt1_vertical/src/ReadEmissionTimeSeries.cs": {
+      "size": 5554,
+      "sha256": "a5a85ccd1e62ca85a106155f9d2b284c35a1078641b144ac34fd6b1f5804d7ad"
+    },
+    "source/opt1_vertical/src/ReadGeometryAndDomains.cs": {
+      "size": 23185,
+      "sha256": "9a094e4db024265e2a75fdda1b060e352505d6f999ce461e88865f10dd34a022"
+    },
+    "source/opt1_vertical/src/ReadGgeomAsc.cs": {
+      "size": 21649,
+      "sha256": "8ec6e5f3b027e2d6f3bc356ca6bc99af8c220a7eeb5d8943c224fadd96909200"
+    },
+    "source/opt1_vertical/src/ReadInDat.cs": {
+      "size": 16944,
+      "sha256": "242f2efceb6396fdce3a736d25380cb43827a870277efcbd5b1e3c1de4a66940"
+    },
+    "source/opt1_vertical/src/ReadLandUseFile.cs": {
+      "size": 3614,
+      "sha256": "328f80fdf712d5d4ae4cec234f01e843f4704e8649c2de2a7adac6b27ae0786d"
+    },
+    "source/opt1_vertical/src/ReadLinieSources.cs": {
+      "size": 10963,
+      "sha256": "f2cbb81dd68a34ae18be00045b92f81babe26fad36da9f68ae245c75497fb00b"
+    },
+    "source/opt1_vertical/src/ReadMax_Proc.cs": {
+      "size": 3757,
+      "sha256": "afabc0843df13783a8eb796bac1826d73dbef31550d374bfebc65b3572c2b020"
+    },
+    "source/opt1_vertical/src/ReadPointSources.cs": {
+      "size": 11633,
+      "sha256": "ed01b3b5ebf5624d571e428d4fef5e6a421df619d2d5d0afdbea9c284a827c0f"
+    },
+    "source/opt1_vertical/src/ReadPollutant.cs": {
+      "size": 6694,
+      "sha256": "b333eef9bdfefd8929c04801889c8ba129650e057486b486a63225d13dc5d787"
+    },
+    "source/opt1_vertical/src/ReadPrecipitation.cs": {
+      "size": 4585,
+      "sha256": "8cb47ad75b5c4bbfbc993c8cb21171ea71e7a854ed341f76ffb708bf8ff931fb"
+    },
+    "source/opt1_vertical/src/ReadReceptors.cs": {
+      "size": 4498,
+      "sha256": "4de4bf9f1a1eb17f9fbec45926374572bfc544c6c83c59ec4d966891a6783dea"
+    },
+    "source/opt1_vertical/src/ReadSourceTimeSeries.cs": {
+      "size": 3735,
+      "sha256": "7ab8b0458a37d6f161823f13510759f4f0b795af8b6c7013072def928676fb7e"
+    },
+    "source/opt1_vertical/src/ReadTransientFiles.cs": {
+      "size": 19318,
+      "sha256": "67395ce30b9030d6d5b3350b387869fa3a5b116e0df5e1985b7fa3d1c8c97f6a"
+    },
+    "source/opt1_vertical/src/ReadTunnelportals.cs": {
+      "size": 11247,
+      "sha256": "4e7f6287d51a4b1fb0d46c211e1f74ccc11ba03fa93aac2f7b930f9ba41f92be"
+    },
+    "source/opt1_vertical/src/ReadTunnelPortalsOptional.cs": {
+      "size": 6984,
+      "sha256": "e3345a18acf478999abcbe1b8c8b4d308fa93a984fd7165ce659c9b834366336"
+    },
+    "source/opt1_vertical/src/ReadVegetation.cs": {
+      "size": 15378,
+      "sha256": "eb6b193b7309ff960daf8e5e12317e85ddbb770ae8f482adaa27e1b13ba3e3e7"
+    },
+    "source/opt1_vertical/src/ReducePrognosticSubDomainSize.cs": {
+      "size": 12202,
+      "sha256": "f5f5e0d1c6376c42ae48ef8e9eba54ca4a88ca2520b27f28f5d733bb243620fd"
+    },
+    "source/opt1_vertical/src/runtimeconfig.template.json": {
+      "size": 233,
+      "sha256": "0c8fd652dbe1c3ef6ee8faaf13360286df354be5e34e5cedc5d6f753343a2f9f"
+    },
+    "source/opt1_vertical/src/SourceData.cs": {
+      "size": 4163,
+      "sha256": "7de7925165dca2bde939154ad8c3fb57bbaa56b3f7a480aba2f63c50b809ea30"
+    },
+    "source/opt1_vertical/src/TeilchenAufteilung.cs": {
+      "size": 8452,
+      "sha256": "e06e73ac04d956370150baa77ddb3a8ddd0642666b6d3666a9c9d8a33e18d9a7"
+    },
+    "source/opt1_vertical/src/TerrainArray.cs": {
+      "size": 3589,
+      "sha256": "8adb83ca40f130b14ec631ff71e6b5b3da9d8b96118761b720b26b0ea22db4a9"
+    },
+    "source/opt1_vertical/src/TimeSeriesColumn.cs": {
+      "size": 923,
+      "sha256": "b4be25245efd9861a9ce3fce803befd85f7d9ab6062b0923897c1359e431c18b"
+    },
+    "source/opt1_vertical/src/TKE-prognostic-microscale.cs": {
+      "size": 20579,
+      "sha256": "0ca881c486e987f4e9fffcc18ec6b25b184a8300a45117472ccbbb85c6abb82a"
+    },
+    "source/opt1_vertical/src/Transient_Concentration.cs": {
+      "size": 5042,
+      "sha256": "610fca65b1f46b843eb85e587227af5739d64aea598a1e47e9a489e48d2698c8"
+    },
+    "source/opt1_vertical/src/TransientDeposition.cs": {
+      "size": 1336,
+      "sha256": "004fead168ebbca739c4b8788ec3c8c6208df00fde03a5d72b7f8e2827cf8d62"
+    },
+    "source/opt1_vertical/src/U-prognostic-microscale_0.cs": {
+      "size": 10117,
+      "sha256": "51eeb19c90f798328cfa3945f864bc76618e6faa2dac2da6f249949eacb85184"
+    },
+    "source/opt1_vertical/src/U-prognostic-microscale_1.cs": {
+      "size": 29058,
+      "sha256": "5934355b73d52b2fc1e084142c2defb7216e3a2c86522d9249a9d850d47d51cc"
+    },
+    "source/opt1_vertical/src/U-prognostic-microscale_1_Vec512.cs": {
+      "size": 33860,
+      "sha256": "8dc2f7bee656f3bb486c02e9075ac5be598456391ff490f339476cfab17e62c0"
+    },
+    "source/opt1_vertical/src/U-prognostic-microscale_2.cs": {
+      "size": 14740,
+      "sha256": "78b96f81e2d60585bd677f288109a47bb37f21624bd7af671469416460f757dc"
+    },
+    "source/opt1_vertical/src/V-prognostic-microscale_0.cs": {
+      "size": 10559,
+      "sha256": "8912158147dc55c468389bc7079e312f675738f2326a436f4ebbc45c3f2895c8"
+    },
+    "source/opt1_vertical/src/V-prognostic-microscale_1.cs": {
+      "size": 29005,
+      "sha256": "06b662e4ca021626a36eedbb9d2658bf4a5bffa9b82077304a33eb98e27bb8cf"
+    },
+    "source/opt1_vertical/src/V-prognostic-microscale_1_Vec512.cs": {
+      "size": 33739,
+      "sha256": "f40f68c0da01b5e503dc207edce50ddf556214e23a41bbde8e6da3bf37d86b84"
+    },
+    "source/opt1_vertical/src/V-prognostic-microscale_2.cs": {
+      "size": 14805,
+      "sha256": "5a7e5fb6b875b069e5d48f0569e06110a68be591187ed9dcf73c7e6f0829b885"
+    },
+    "source/opt1_vertical/src/W-prognostic-microscale_0.cs": {
+      "size": 6647,
+      "sha256": "1b2efe7a8fdbf36948665eeda3912fe9203c0f8a77210197cea3863885e567cc"
+    },
+    "source/opt1_vertical/src/W-prognostic-microscale_1.cs": {
+      "size": 23949,
+      "sha256": "6c60470e842f0bb17d5cc0ce8707b50322d896a4ceacd6629b2d0ce34ae3ce9e"
+    },
+    "source/opt1_vertical/src/W-prognostic-microscale_1_Vec512.cs": {
+      "size": 28860,
+      "sha256": "8c05de62ec39b2e7c909abe624b8a78d3f693becfc097ed3c7a54e8f1386670a"
+    },
+    "source/opt1_vertical/src/W-prognostic-microscale_2.cs": {
+      "size": 11325,
+      "sha256": "9726e7285a9dfae8e6853ab1a5ed2f9db876f15118766f81cc584fb0ba971c81"
+    },
+    "source/opt1_vertical/src/WindData.cs": {
+      "size": 1148,
+      "sha256": "6b007fed08c2fc9d19445ca7b23fe6703d9715020a807c46414436846dd41b63"
+    },
+    "source/opt1_vertical/src/Windfield_Reader.cs": {
+      "size": 4818,
+      "sha256": "cf7997dd101b18b706a9fa26cf5bd972802cb6c3b89c89e37c26f7b8e54cac61"
+    },
+    "source/opt1_vertical/src/Windfield_Reader_SOUNDPLAN.cs": {
+      "size": 2052,
+      "sha256": "4f1efac9d101efd16a90ffcf1091529833357833382393443ce751ad5533c0e9"
+    },
+    "source/opt1_vertical/src/Write2DConcentrations.cs": {
+      "size": 38579,
+      "sha256": "bb61dda4fb4d665f0d1d8986f660010907ac99555bdc9de1c3a6a47d7c326f87"
+    },
+    "source/opt1_vertical/src/Write3DConcentrations.cs": {
+      "size": 19550,
+      "sha256": "2b3e5bf36b0912e6de6824195a99d6e4ce19fd2a2d559fe531df7c169f50534a"
+    },
+    "source/opt1_vertical/src/WriteGeometries.cs": {
+      "size": 7764,
+      "sha256": "29ac04203366245d83375342248a65c3c5f79e6f2aced47364ed91023a59b676"
+    },
+    "source/opt1_vertical/src/WriteLogFiles.cs": {
+      "size": 15889,
+      "sha256": "69172835b613ba5bfe0105032e676b61540b8ddeddbb2c2b744377a930dbc03e"
+    },
+    "source/opt1_vertical/src/WriteReceptorConcentrations.cs": {
+      "size": 26607,
+      "sha256": "7e3a00669ce002ed51c430fa8a387d39dd48f64d268a40b3bf936fa8c1b35831"
+    },
+    "source/opt1_vertical/src/WriteTransientConcentrations.cs": {
+      "size": 7224,
+      "sha256": "921e7c50791c7f15bfe77366a26f3eb8489587556608663897fe4416c2c9e7ed"
+    },
+    "source/opt1_vertical/src/Zeitschleife.cs": {
+      "size": 121257,
+      "sha256": "2942e8209faaaaee134e251aa6afc8686f6f65c39ea0d8f655ee9e7001d88a7a"
+    },
+    "source/opt1_vertical/src/Zeitschleife_nonsteadystate.cs": {
+      "size": 65163,
+      "sha256": "3b3887ad104707ea44d9803d381e5c68f2637359ccc356d66018576b6b119004"
+    },
+    "source/warning_free_baseline/src/aenderungen_GRAL.txt": {
+      "size": 43052,
+      "sha256": "b620b746d627ec0b4d49bcfd69807f45cc702d116d9500ae9836c63e82fca29e"
+    },
+    "source/warning_free_baseline/src/Anfangko.cs": {
+      "size": 36837,
+      "sha256": "80f4e619ea9f38d46adfa81bac39bd962a49d388ff440b9545c4e3270f7de9bd"
+    },
+    "source/warning_free_baseline/src/CleanUp.cs": {
+      "size": 6744,
+      "sha256": "5b741559e87a02ed46aad1c10e51f0f7cdda4daa11e62778a985ede0de7b4045"
+    },
+    "source/warning_free_baseline/src/Constants.cs": {
+      "size": 4711,
+      "sha256": "aef744b91db8cd8f002f104236df702ad0bb510879a6a9834498a18d2ab6f87c"
+    },
+    "source/warning_free_baseline/src/DepositionComputation.cs": {
+      "size": 15044,
+      "sha256": "ae5e3e36f65e5dff29ccf5ad4b4c85de2717337a711340fd6dab462228c2dcc8"
+    },
+    "source/warning_free_baseline/src/DiagnosticFlowfield.cs": {
+      "size": 21991,
+      "sha256": "478b8a7520fd02d54033fb954862514ffb5c249653c93c1498584d986751c0a8"
+    },
+    "source/warning_free_baseline/src/FilterArray.cs": {
+      "size": 6319,
+      "sha256": "bf56698b9a2ba4cd45ee2daa5967ba3f84eb50e5fc7ba356fdc97f37b00fd410"
+    },
+    "source/warning_free_baseline/src/GetTransientTimeSeriesIndex.cs": {
+      "size": 2688,
+      "sha256": "9cb502247ad69ee45a5ef6ea1958c6c1ff1390113854d736ae82a29d8a198d5e"
+    },
+    "source/warning_free_baseline/src/GFFRead.cs": {
+      "size": 15837,
+      "sha256": "e5c7a33e80356a8b75e3f4ac5a8c56229944d065083663015f4fabbca3a17346"
+    },
+    "source/warning_free_baseline/src/GFFWrite.cs": {
+      "size": 29056,
+      "sha256": "5e2cab8b008539f657e8734bf948102c1a89348d543895b039e3fea83c9569cc"
+    },
+    "source/warning_free_baseline/src/global.json": {
+      "size": 99,
+      "sha256": "e599d73baa15b297c2110577460f44f6ac6cd0386c8e2a007bb2282721e0f06f"
+    },
+    "source/warning_free_baseline/src/GRAL.csproj": {
+      "size": 1232,
+      "sha256": "db06fd5367d67932a42808b32700e487bc42c7d31a9e32c95831eb115911ae5a"
+    },
+    "source/warning_free_baseline/src/GRALONLINE.cs": {
+      "size": 12383,
+      "sha256": "3a4d74f5106b7f3b37dbbb83b33ca1e325ad3c1e0ce2234bf0fff1c3f4251848"
+    },
+    "source/warning_free_baseline/src/InitAdaptiveRoughness.cs": {
+      "size": 8208,
+      "sha256": "e28035b7179d86ef61226cc46d2d8e6f3c3b64e51160fe9e34e312e4375b757d"
+    },
+    "source/warning_free_baseline/src/Input_eki.cs": {
+      "size": 7834,
+      "sha256": "b14119e2da64025adb4dad0097d4f4f7c1092dca5a790f00a66d9bd78396c23a"
+    },
+    "source/warning_free_baseline/src/Input_pgt.cs": {
+      "size": 19275,
+      "sha256": "b614bd897d59c28322d6e3c4f979338625b670251711df8340cfe1b8ffa2f752"
+    },
+    "source/warning_free_baseline/src/Input_rez.cs": {
+      "size": 16195,
+      "sha256": "1eb64d7bc5e15756b54266ab61930cbeb846ad3f28a1337a5aeae0596cf3e43a"
+    },
+    "source/warning_free_baseline/src/Input_sonic.cs": {
+      "size": 6220,
+      "sha256": "d32eeda2b4e6b711dd2aa50b3776ccc5794661156f9520d2d81fea9f97d1c179"
+    },
+    "source/warning_free_baseline/src/Input_wind.cs": {
+      "size": 3749,
+      "sha256": "826ea36a51c415f724e2520ada6ab3884f445f49e1155d387a9fc473614f768e"
+    },
+    "source/warning_free_baseline/src/Input_zr.cs": {
+      "size": 7301,
+      "sha256": "efc749b31f5616fe9a7e2c643801e69eba2e71c35eccedcd484698d008cf9ba2"
+    },
+    "source/warning_free_baseline/src/InputMettimeSeries.cs": {
+      "size": 7825,
+      "sha256": "4725d8beb6713b7480f6f2b19e2084c1a68e5c8375b8ccef519fce4d4c7e64e6"
+    },
+    "source/warning_free_baseline/src/Intstand.cs": {
+      "size": 3943,
+      "sha256": "f82bda4b7b3dcb0544bc97ea50ffc26f010911773dc40404975a4d4fb8310887"
+    },
+    "source/warning_free_baseline/src/Intwind.cs": {
+      "size": 9113,
+      "sha256": "b86e06ca1aeeaa59cd220b5f52fc1fdb5f3fea27edd40fa9ea968509d3b8f2ae"
+    },
+    "source/warning_free_baseline/src/LoadAndDefineTransientPresets.cs": {
+      "size": 5364,
+      "sha256": "8b3b9e6b74ac6bf4c8d9631925d1670f3f9f286c780c67ddcdde0589f1f28e9c"
+    },
+    "source/warning_free_baseline/src/MicroscaleFlat.cs": {
+      "size": 22931,
+      "sha256": "52e359e036f43440801953eaab32eed123cde92d2355740915c9c3780b965105"
+    },
+    "source/warning_free_baseline/src/MicroscaleTerrain.cs": {
+      "size": 55973,
+      "sha256": "8c67199d882764c30fb6d042dfd4650ee8e11569417f44b104e91d9a7df07b80"
+    },
+    "source/warning_free_baseline/src/MicroscaleTerrainSearchRefPoint.cs": {
+      "size": 3671,
+      "sha256": "d287c90fcbe2fef1d7e5f4797017d0a74c1bf4619cbd57de37a9a022585d594d"
+    },
+    "source/warning_free_baseline/src/NestedGridBounds.cs": {
+      "size": 1801,
+      "sha256": "4f2446d13029912917984a6495dc76555b09252fba76023892dc7fd10c7de3d4"
+    },
+    "source/warning_free_baseline/src/Point.cs": {
+      "size": 1514,
+      "sha256": "2aec9cba79f7af515bd942a626c1c7b96a29b746066c7e80000ab3209f80638b"
+    },
+    "source/warning_free_baseline/src/PointSourceHeight.cs": {
+      "size": 2939,
+      "sha256": "7e4246b8bd2be84db0ba100b81f9a4b2086397d3d88ef5680cf334de8b6ea220"
+    },
+    "source/warning_free_baseline/src/PrognosticFlowfield.cs": {
+      "size": 89705,
+      "sha256": "0e9bcd7b8941fe8a84f07b48956f0a5d4026badd9bfbabd3b71ab3606215d936"
+    },
+    "source/warning_free_baseline/src/Program.cs": {
+      "size": 40571,
+      "sha256": "b19a49c86ad5025f1fe8380433bc37c25c1420ed4981d1c5a8f76b184ff36e94"
+    },
+    "source/warning_free_baseline/src/ProgramDeclarations.cs": {
+      "size": 59162,
+      "sha256": "4dee6791763f2d3c6e347de2c05d6466dc0abc7fd7307a5511d90559297b596f"
+    },
+    "source/warning_free_baseline/src/ProgramFunctions.cs": {
+      "size": 70115,
+      "sha256": "a8367c52494aec8bd8bd5ad7c6c1858b98a6d480c8f4bbd3e8b21ad919bb388a"
+    },
+    "source/warning_free_baseline/src/Read_DispersionClasses.cs": {
+      "size": 21746,
+      "sha256": "8ae8e95c38a22630b936d66b551b1137b133c24ddab4d4274651f4e9eb148b67"
+    },
+    "source/warning_free_baseline/src/ReadAreaSources.cs": {
+      "size": 9854,
+      "sha256": "42c3c71c684cf83e6e2b7f06d771b05c6ee28534a32d601d7dd86d8583d647f5"
+    },
+    "source/warning_free_baseline/src/ReadBuildings.cs": {
+      "size": 15079,
+      "sha256": "63b55839dd4e8f539ae397006d2fc2bdfee78b9c60fa96ebe1c9a1f50df6b1d0"
+    },
+    "source/warning_free_baseline/src/ReadEmissionTimeSeries.cs": {
+      "size": 5554,
+      "sha256": "a5a85ccd1e62ca85a106155f9d2b284c35a1078641b144ac34fd6b1f5804d7ad"
+    },
+    "source/warning_free_baseline/src/ReadGeometryAndDomains.cs": {
+      "size": 23185,
+      "sha256": "9a094e4db024265e2a75fdda1b060e352505d6f999ce461e88865f10dd34a022"
+    },
+    "source/warning_free_baseline/src/ReadGgeomAsc.cs": {
+      "size": 21649,
+      "sha256": "8ec6e5f3b027e2d6f3bc356ca6bc99af8c220a7eeb5d8943c224fadd96909200"
+    },
+    "source/warning_free_baseline/src/ReadInDat.cs": {
+      "size": 16944,
+      "sha256": "242f2efceb6396fdce3a736d25380cb43827a870277efcbd5b1e3c1de4a66940"
+    },
+    "source/warning_free_baseline/src/ReadLandUseFile.cs": {
+      "size": 3614,
+      "sha256": "328f80fdf712d5d4ae4cec234f01e843f4704e8649c2de2a7adac6b27ae0786d"
+    },
+    "source/warning_free_baseline/src/ReadLinieSources.cs": {
+      "size": 10963,
+      "sha256": "f2cbb81dd68a34ae18be00045b92f81babe26fad36da9f68ae245c75497fb00b"
+    },
+    "source/warning_free_baseline/src/ReadMax_Proc.cs": {
+      "size": 3757,
+      "sha256": "afabc0843df13783a8eb796bac1826d73dbef31550d374bfebc65b3572c2b020"
+    },
+    "source/warning_free_baseline/src/ReadPointSources.cs": {
+      "size": 11633,
+      "sha256": "ed01b3b5ebf5624d571e428d4fef5e6a421df619d2d5d0afdbea9c284a827c0f"
+    },
+    "source/warning_free_baseline/src/ReadPollutant.cs": {
+      "size": 6694,
+      "sha256": "b333eef9bdfefd8929c04801889c8ba129650e057486b486a63225d13dc5d787"
+    },
+    "source/warning_free_baseline/src/ReadPrecipitation.cs": {
+      "size": 4585,
+      "sha256": "8cb47ad75b5c4bbfbc993c8cb21171ea71e7a854ed341f76ffb708bf8ff931fb"
+    },
+    "source/warning_free_baseline/src/ReadReceptors.cs": {
+      "size": 4498,
+      "sha256": "4de4bf9f1a1eb17f9fbec45926374572bfc544c6c83c59ec4d966891a6783dea"
+    },
+    "source/warning_free_baseline/src/ReadSourceTimeSeries.cs": {
+      "size": 3735,
+      "sha256": "7ab8b0458a37d6f161823f13510759f4f0b795af8b6c7013072def928676fb7e"
+    },
+    "source/warning_free_baseline/src/ReadTransientFiles.cs": {
+      "size": 19318,
+      "sha256": "67395ce30b9030d6d5b3350b387869fa3a5b116e0df5e1985b7fa3d1c8c97f6a"
+    },
+    "source/warning_free_baseline/src/ReadTunnelportals.cs": {
+      "size": 11247,
+      "sha256": "4e7f6287d51a4b1fb0d46c211e1f74ccc11ba03fa93aac2f7b930f9ba41f92be"
+    },
+    "source/warning_free_baseline/src/ReadTunnelPortalsOptional.cs": {
+      "size": 6984,
+      "sha256": "e3345a18acf478999abcbe1b8c8b4d308fa93a984fd7165ce659c9b834366336"
+    },
+    "source/warning_free_baseline/src/ReadVegetation.cs": {
+      "size": 15378,
+      "sha256": "eb6b193b7309ff960daf8e5e12317e85ddbb770ae8f482adaa27e1b13ba3e3e7"
+    },
+    "source/warning_free_baseline/src/ReducePrognosticSubDomainSize.cs": {
+      "size": 12202,
+      "sha256": "f5f5e0d1c6376c42ae48ef8e9eba54ca4a88ca2520b27f28f5d733bb243620fd"
+    },
+    "source/warning_free_baseline/src/runtimeconfig.template.json": {
+      "size": 233,
+      "sha256": "0c8fd652dbe1c3ef6ee8faaf13360286df354be5e34e5cedc5d6f753343a2f9f"
+    },
+    "source/warning_free_baseline/src/SourceData.cs": {
+      "size": 4163,
+      "sha256": "7de7925165dca2bde939154ad8c3fb57bbaa56b3f7a480aba2f63c50b809ea30"
+    },
+    "source/warning_free_baseline/src/TeilchenAufteilung.cs": {
+      "size": 8452,
+      "sha256": "e06e73ac04d956370150baa77ddb3a8ddd0642666b6d3666a9c9d8a33e18d9a7"
+    },
+    "source/warning_free_baseline/src/TerrainArray.cs": {
+      "size": 3589,
+      "sha256": "8adb83ca40f130b14ec631ff71e6b5b3da9d8b96118761b720b26b0ea22db4a9"
+    },
+    "source/warning_free_baseline/src/TimeSeriesColumn.cs": {
+      "size": 923,
+      "sha256": "b4be25245efd9861a9ce3fce803befd85f7d9ab6062b0923897c1359e431c18b"
+    },
+    "source/warning_free_baseline/src/TKE-prognostic-microscale.cs": {
+      "size": 20579,
+      "sha256": "0ca881c486e987f4e9fffcc18ec6b25b184a8300a45117472ccbbb85c6abb82a"
+    },
+    "source/warning_free_baseline/src/Transient_Concentration.cs": {
+      "size": 5042,
+      "sha256": "610fca65b1f46b843eb85e587227af5739d64aea598a1e47e9a489e48d2698c8"
+    },
+    "source/warning_free_baseline/src/TransientDeposition.cs": {
+      "size": 1336,
+      "sha256": "004fead168ebbca739c4b8788ec3c8c6208df00fde03a5d72b7f8e2827cf8d62"
+    },
+    "source/warning_free_baseline/src/U-prognostic-microscale_0.cs": {
+      "size": 10117,
+      "sha256": "51eeb19c90f798328cfa3945f864bc76618e6faa2dac2da6f249949eacb85184"
+    },
+    "source/warning_free_baseline/src/U-prognostic-microscale_1.cs": {
+      "size": 29058,
+      "sha256": "5934355b73d52b2fc1e084142c2defb7216e3a2c86522d9249a9d850d47d51cc"
+    },
+    "source/warning_free_baseline/src/U-prognostic-microscale_1_Vec512.cs": {
+      "size": 33860,
+      "sha256": "8dc2f7bee656f3bb486c02e9075ac5be598456391ff490f339476cfab17e62c0"
+    },
+    "source/warning_free_baseline/src/U-prognostic-microscale_2.cs": {
+      "size": 14740,
+      "sha256": "78b96f81e2d60585bd677f288109a47bb37f21624bd7af671469416460f757dc"
+    },
+    "source/warning_free_baseline/src/V-prognostic-microscale_0.cs": {
+      "size": 10559,
+      "sha256": "8912158147dc55c468389bc7079e312f675738f2326a436f4ebbc45c3f2895c8"
+    },
+    "source/warning_free_baseline/src/V-prognostic-microscale_1.cs": {
+      "size": 29005,
+      "sha256": "06b662e4ca021626a36eedbb9d2658bf4a5bffa9b82077304a33eb98e27bb8cf"
+    },
+    "source/warning_free_baseline/src/V-prognostic-microscale_1_Vec512.cs": {
+      "size": 33739,
+      "sha256": "f40f68c0da01b5e503dc207edce50ddf556214e23a41bbde8e6da3bf37d86b84"
+    },
+    "source/warning_free_baseline/src/V-prognostic-microscale_2.cs": {
+      "size": 14805,
+      "sha256": "5a7e5fb6b875b069e5d48f0569e06110a68be591187ed9dcf73c7e6f0829b885"
+    },
+    "source/warning_free_baseline/src/W-prognostic-microscale_0.cs": {
+      "size": 6647,
+      "sha256": "1b2efe7a8fdbf36948665eeda3912fe9203c0f8a77210197cea3863885e567cc"
+    },
+    "source/warning_free_baseline/src/W-prognostic-microscale_1.cs": {
+      "size": 23949,
+      "sha256": "6c60470e842f0bb17d5cc0ce8707b50322d896a4ceacd6629b2d0ce34ae3ce9e"
+    },
+    "source/warning_free_baseline/src/W-prognostic-microscale_1_Vec512.cs": {
+      "size": 28860,
+      "sha256": "8c05de62ec39b2e7c909abe624b8a78d3f693becfc097ed3c7a54e8f1386670a"
+    },
+    "source/warning_free_baseline/src/W-prognostic-microscale_2.cs": {
+      "size": 11325,
+      "sha256": "9726e7285a9dfae8e6853ab1a5ed2f9db876f15118766f81cc584fb0ba971c81"
+    },
+    "source/warning_free_baseline/src/WindData.cs": {
+      "size": 1148,
+      "sha256": "6b007fed08c2fc9d19445ca7b23fe6703d9715020a807c46414436846dd41b63"
+    },
+    "source/warning_free_baseline/src/Windfield_Reader.cs": {
+      "size": 4818,
+      "sha256": "cf7997dd101b18b706a9fa26cf5bd972802cb6c3b89c89e37c26f7b8e54cac61"
+    },
+    "source/warning_free_baseline/src/Windfield_Reader_SOUNDPLAN.cs": {
+      "size": 2052,
+      "sha256": "4f1efac9d101efd16a90ffcf1091529833357833382393443ce751ad5533c0e9"
+    },
+    "source/warning_free_baseline/src/Write2DConcentrations.cs": {
+      "size": 38579,
+      "sha256": "bb61dda4fb4d665f0d1d8986f660010907ac99555bdc9de1c3a6a47d7c326f87"
+    },
+    "source/warning_free_baseline/src/Write3DConcentrations.cs": {
+      "size": 19550,
+      "sha256": "2b3e5bf36b0912e6de6824195a99d6e4ce19fd2a2d559fe531df7c169f50534a"
+    },
+    "source/warning_free_baseline/src/WriteGeometries.cs": {
+      "size": 7764,
+      "sha256": "29ac04203366245d83375342248a65c3c5f79e6f2aced47364ed91023a59b676"
+    },
+    "source/warning_free_baseline/src/WriteLogFiles.cs": {
+      "size": 15889,
+      "sha256": "69172835b613ba5bfe0105032e676b61540b8ddeddbb2c2b744377a930dbc03e"
+    },
+    "source/warning_free_baseline/src/WriteReceptorConcentrations.cs": {
+      "size": 26607,
+      "sha256": "7e3a00669ce002ed51c430fa8a387d39dd48f64d268a40b3bf936fa8c1b35831"
+    },
+    "source/warning_free_baseline/src/WriteTransientConcentrations.cs": {
+      "size": 7224,
+      "sha256": "921e7c50791c7f15bfe77366a26f3eb8489587556608663897fe4416c2c9e7ed"
+    },
+    "source/warning_free_baseline/src/Zeitschleife.cs": {
+      "size": 121095,
+      "sha256": "c82d079904a088016c6e574905e133eaf100c7b126a307deae683883e2e87a82"
+    },
+    "source/warning_free_baseline/src/Zeitschleife_nonsteadystate.cs": {
+      "size": 64991,
+      "sha256": "a1f98f8f70f43fc2de4a54c2be2bff700bba66a611c4b9d28d411120cd8ff5c1"
+    },
+    "tests/main_support/harness_checks.py": {
+      "size": 4263,
+      "sha256": "cac051007dd0ce2ad6b18ea2d626ccdbfdc5fc4e1dfc0c3f4f3ea62e9a1c1acc"
+    },
+    "tests/nan_guard/ExtractedParticleExit.cs": {
+      "size": 27625,
+      "sha256": "a24ff80e93957a08926841edda53ab03bf9a03fd644f5c966672a1f18f01a9db"
+    },
+    "tests/nan_guard/ExtractedReports.cs": {
+      "size": 1654,
+      "sha256": "8628ce4720f0ceafd12f4ed9f8a730d021350f412e6057ba112c499529feef09"
+    },
+    "tests/nan_guard/ExtractedRngEndpoint.cs": {
+      "size": 528,
+      "sha256": "2782607c5e672b0db4765a24671112a5d90e9aff3d8f84f523f6a0113de953f4"
+    },
+    "tests/nan_guard/ExtractedTransientExpiry.cs": {
+      "size": 5824,
+      "sha256": "715f1202eac59a62f7def5d94f91ac8ac84f923124e4aae1da8f771f22fac2a3"
+    },
+    "tests/nan_guard/ExtractedWetStep.cs": {
+      "size": 6012,
+      "sha256": "7f9bae713f9c3a7afe5bceba8beab846f759c398ccd2a21c0979ac356322245d"
+    },
+    "tests/nan_guard/NaNGuardFixture.cs": {
+      "size": 23094,
+      "sha256": "6be80b474abe64f3c7c211769063d075f67fa60d19e2b12464454f81254a67cc"
+    },
+    "tests/nan_guard/NaNGuardFixture.csproj": {
+      "size": 248,
+      "sha256": "46ecf58adb55c618b550eeb3bd354754bb8e978ab28a9efdec2d7b602ccd6d62"
+    },
+    "tests/opt1/benchmark/Opt1Benchmark.csproj": {
+      "size": 434,
+      "sha256": "bbe3e62a8954b6316bd62a43913cf5634a9008241e9b09c6019fdd9315a21d20"
+    },
+    "tests/opt1/fixture/Opt1Fixture.csproj": {
+      "size": 328,
+      "sha256": "899d3d515060fb9d67d479eb8e63c8b75e43d2eca72e22fb435b169b3e5901cf"
+    },
+    "tests/opt1/paired/Opt1PairedBenchmark.csproj": {
+      "size": 437,
+      "sha256": "7cec1d2a0742ae4e2254341deaf8afc860284a2e16729ed87bdf0339ca567dfe"
+    }
+  }
+}

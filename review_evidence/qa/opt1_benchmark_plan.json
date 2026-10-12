@@ -1,0 +1,32 @@
+{
+  "status": "executed",
+  "candidate": "exact_finite_height",
+  "vertical_nkk": [
+    1,
+    7,
+    8,
+    16,
+    162
+  ],
+  "lookups_per_particle": [
+    8,
+    64,
+    256
+  ],
+  "workloads": [
+    "same_height",
+    "same_layer",
+    "large_jumps"
+  ],
+  "paired_rounds": 7,
+  "stack_ns": [
+    1,
+    9,
+    512,
+    513
+  ],
+  "watchdog_seconds": 180,
+  "preparation_included": true,
+  "source_postcheck_files": 170,
+  "source_postcheck_mismatches": []
+}

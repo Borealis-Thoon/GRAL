@@ -1,0 +1,5 @@
+case,variant,repeat,actual_particles,payloads,payloads_equal,changed_payloads,max_absolute_concentration_difference,relative_l1
+terrain_hot_n100,opt1_vertical_profile,1,100,18,True,0,0,0
+terrain_hot_n100,opt1_vertical_profile,2,100,18,True,0,0,0
+terrain_stable_building_n1000,opt1_vertical_profile,1,1000,55,True,0,0,0
+terrain_stable_building_n1000,opt1_vertical_profile,2,1000,55,True,0,0,0

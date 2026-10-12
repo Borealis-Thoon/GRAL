@@ -1,0 +1,279 @@
+{
+  "status": "pass_with_documented_scope_limits",
+  "reviewer": "opt1_audit",
+  "review_kind": "independent_read_only_final_source_review",
+  "source_edits": false,
+  "builds_run": false,
+  "models_run": false,
+  "benchmarks_run": false,
+  "variant": "opt1_vertical",
+  "revision": "exact_finite_height",
+  "source_findings": [],
+  "supersedes": "The same-layer interval inference and per-particle full-profile validation of rejected v1 are not in this reviewed source.",
+  "change": {
+    "files": 3,
+    "added_lines": 55,
+    "removed_lines": 8,
+    "body_changed_characters": 3762,
+    "sha256": {
+      "Intwind.cs": "fb1f04cee6f530bea6385c919958121a8e74dfa4246f37d93a5395d24131d734",
+      "Zeitschleife.cs": "2942e8209faaaaee134e251aa6afc8686f6f65c39ea0d8f655ee9e7001d88a7a",
+      "Zeitschleife_nonsteadystate.cs": "3b3887ad104707ea44d9803d381e5c68f2637359ccc356d66018576b6b119004"
+    },
+    "line_endings": "LF"
+  },
+  "checks": [
+    {
+      "topic": "first query",
+      "evidence": "src/Intwind.cs:173-179;195-199",
+      "detail": "Initial Height=0 cannot produce a false hit because Index starts at 0 and reuse requires Index>0. The first query always calls the unchanged BinarySearch."
+    },
+    {
+      "topic": "exact finite height memo",
+      "evidence": "src/Intwind.cs:195-204",
+      "detail": "Only the same finite numeric Height reuses the previous positive Index. Changed height, NaN and either infinity call the original function. No same-layer or adjacent-layer inference remains."
+    },
+    {
+      "topic": "signed zero",
+      "detail": "Float == treats +0 and -0 as equal. The unchanged search uses ordered comparisons only, so both return the same layer for an immutable profile; the actual wind interpolation still uses the current f1 and preserves its sign."
+    },
+    {
+      "topic": "duplicate or nonmonotone levels",
+      "detail": "There is no profile scan or lower-bound inference. Memoisation repeats the original function value for an unchanged height and unchanged immutable input profile, so duplicate/nonmonotone/nonfinite profile behaviour is retained."
+    },
+    {
+      "topic": "metadata invalidation",
+      "evidence": "src/Intwind.cs:186-194",
+      "detail": "HOKART reference or NKK change replaces the state and resets Index to 0 before any cache reuse. A default state (Levels null) goes directly to the original function."
+    },
+    {
+      "topic": "grid immutability",
+      "evidence": "baseline Program.cs:127,187-193 and ProgramFunctions.cs:66,121,563-566,626-628",
+      "detail": "Current HOKART values and NKK are initialised before dispersion. No assignment during particle tracking was found. Arbitrary in-place mutation while the same state is live is outside the contract; a new particle uses a fresh state."
+    },
+    {
+      "topic": "public API and arithmetic",
+      "detail": "The original 6-argument IntWindCalculate method and tuple remain. It delegates with default state, leaving its binary search unchanged. The overload changes the lookup call only; terrain interpolation equations, casts and evaluation order remain, as do flat/building and deposition-call paths."
+    },
+    {
+      "topic": "driver wiring",
+      "detail": "Both drivers initialise local state only for terrain and reuse it in selected terrain interpolation/reflection searches. No cross-particle state, RNG edits, scheduling changes or lock changes are in the topic diff."
+    },
+    {
+      "topic": "stack topic unchanged",
+      "detail": "The earlier one-line stack topic remains separate. Its write-before-read proof remains valid. Full NS=512/513 tracking is not established by the four declaration-entry component assertions alone."
+    }
+  ],
+  "recorded_component_evidence": {
+    "path": "qa/opt1_correctness.json",
+    "reported_status": "pass",
+    "reported_checks": 1593341,
+    "profiles": 35,
+    "failures": [],
+    "executed_by_this_reviewer": false,
+    "final_dll_sha256": "82de9490ea5e96bcf6e906e739eaa5a248eb54def0d39a2b806df3daddceb565",
+    "fixture_reviewed": true,
+    "sha256": "db9070c02abe9defaa40a4132473708b33ba3be2dfa5d8b237dfa13bdaed28ef",
+    "prepublication_dll_sha256": "8475469428964f33db284a4d303a0b74f7701bca3d659a0e79039d08935e523f",
+    "checks_rerun_on_final_LF_DLL_recorded": true
+  },
+  "recorded_performance": {
+    "same_height_cases": 15,
+    "speedup_min": 1.7350935404165198,
+    "speedup_max": 5.407597220622672,
+    "changed_height_slower_cases": 29,
+    "slower_elapsed_percent_min": 4.325917364923426,
+    "slower_elapsed_percent_max": 28.13516500868467,
+    "other_faster_or_equal": [
+      {
+        "nkk": 8,
+        "lookups": 256,
+        "workload": "large_jumps",
+        "baseline_over_candidate": 1.0507509548021274
+      }
+    ]
+  },
+  "recorded_profile": {
+    "path": "qa/opt1_actual_cache_hits.json",
+    "reported_status": "pass",
+    "instrumented_main_runs": 4,
+    "baseline_main_runs": 4,
+    "total_main_runs": 8,
+    "weather_records": 8,
+    "nkk": 39,
+    "calls": 889446,
+    "hits": 444724,
+    "payload_pairs_equal": 146,
+    "scope": "Two synthetic terrain projects: hot N=100 and stable/building N=1000, each repeated twice. Test-only Interlocked counters inspect routing and alter timing. This is not a speed benchmark or a production hit-rate distribution.",
+    "instrumentation_core_reviewed": true
+  },
+  "publication_eligibility": "Suitable only for a focused Draft evaluation of exact-height reuse with explicit changed-height overhead and measured synthetic routing. Source correctness is supported; a general whole-model optimization claim is not supported.",
+  "limits": [
+    "Reviewer performed source/diff/fixture/data review only; did not rerun DLL tests, Main, timing or instrumentation.",
+    "Standalone lookup measurements include fresh state preparation and only the lookup workload. Whole-model speedup is not established.",
+    "Same-height 15 measured cases are faster; 29 changed-height cases take 4.3259% to 28.1352% longer; one changed-height case is slightly faster. All 45 conditions must remain visible.",
+    "The actual ~50% hit fraction supports cache use in two selected synthetic projects but does not establish a production workload distribution or a full-model speedup.",
+    "Fixed-seed one-worker invariance does not imply identical clock-seeded or multiworker shared-sum results.",
+    "No automatic detection of arbitrary in-place HOKART edits within a live particle is claimed."
+  ],
+  "recorded_final_runtime_evidence": {
+    "evidence_read_by_reviewer": true,
+    "executed_by_this_reviewer": false,
+    "final_aggregate": {
+      "path": "qa/main_final_suites_summary.json",
+      "sha256": "0fcfd2eb642fe29bfabffaece2fc1547dc71d3e616f65381bfdd53a1309ac509",
+      "reported_status": "pass",
+      "main_runs": 320,
+      "main_checks": 5056,
+      "compared_payload_pairs": 1900,
+      "actual_checkpoint_read_runs": 16,
+      "strict_build_executions": 8,
+      "final_source_excludes_superseded_vertical_v1": true,
+      "public_opt1_source_lf_verified": true
+    },
+    "opt1_final": {
+      "path": "qa/main_opt1_final_result.json",
+      "sha256": "b5b78d6f292c6eac9a2263c0f09bbc86d5d36ee864d003056392190d7ead6cde",
+      "reported_status": "pass",
+      "final_source_external_manifest_matches": true,
+      "main_runs": 120,
+      "main_checks": 1896,
+      "compared_payload_pairs": 760,
+      "actual_checkpoint_read_runs": 6,
+      "source_manifest_sha256": "e98648e13fb8cfc9bc8f130057cb0af39f3e95ea98f219735f109dee15f44a94",
+      "strict_builds": {
+        "warning_free_baseline": {
+          "warnings": 0,
+          "errors": 0
+        },
+        "opt1_stack": {
+          "warnings": 0,
+          "errors": 0
+        },
+        "opt1_vertical": {
+          "warnings": 0,
+          "errors": 0
+        }
+      },
+      "validation_summary_path": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\qa\\main_validation_summary.json",
+      "validation_summary_sha256": "59d8527961bc1a6c88da7759a815654734643f7679f52d6abfe3f1aeae302d97",
+      "public_lf_source_matches": true
+    },
+    "combined_final": {
+      "path": "qa/main_combined_result.json",
+      "sha256": "1fc559a9cc7cb52a0f36dc44640f5f76bd727319dd3506d41aa1160fe97af8de",
+      "reported_status": "pass",
+      "final_source_external_manifest_matches": true,
+      "main_runs": 80,
+      "main_checks": 1264,
+      "compared_payload_pairs": 380,
+      "actual_checkpoint_read_runs": 4,
+      "source_manifest_sha256": "13b13ad61eec8eddea7153a6ee9c2961245de4f9e1729026612d58fdf3f0e6bc",
+      "strict_builds": {
+        "warning_free_baseline": {
+          "warnings": 0,
+          "errors": 0
+        },
+        "combined_candidate": {
+          "warnings": 0,
+          "errors": 0
+        }
+      },
+      "source_bytes_unchanged_verified": true
+    },
+    "separate_test_only_profile": {
+      "path": "work/main_opt1_profile_run01/qa/main_validation_summary.json",
+      "sha256": "3c3a10675a17f940772e8a13ecd07f704b4effbced2f9b1e510c1f41ba3ba8d6",
+      "reported_status": "pass",
+      "main_runs": 8,
+      "main_checks": 140,
+      "compared_payload_pairs": 146,
+      "routing_path": "qa/opt1_actual_cache_hits.json",
+      "instrumented_source_excluded_from_public_candidates": true,
+      "not_a_timing_benchmark": true
+    },
+    "distinct_reported_totals_with_profile": {
+      "main_runs": 328,
+      "main_checks": 5196,
+      "compared_payload_pairs": 2046,
+      "actual_checkpoint_read_runs": 16
+    },
+    "limits": [
+      "Shared baseline executions are counted as executed; validation is not a per-patch independent factorial design.",
+      "Superseded, preliminary and harness-debug runs are preserved but excluded from final counts.",
+      "Main elapsed times are watchdog evidence, not optimization benchmarks.",
+      "Terrain path is exercised, but terrain reflection occurrence counts are not instrumented in these ordinary source runs.",
+      "All terrain and prescribed wind input are entirely synthetic; no GRAMM solver run or production-domain scientific truth is asserted."
+    ]
+  },
+  "superseded_evidence": {
+    "path": "qa/main_individual_suites_summary.json",
+    "main_runs": 240,
+    "main_checks": 3672,
+    "reason": "Includes superseded vertical cache v1. Not evidence for final exact-height B and excluded from final totals.",
+    "prepublication_exact_height_main": {
+      "path": "work/main_opt1_final_run04",
+      "reason": "Same C# text/IL before line-ending publication normalization; final public-source Main evidence is run05."
+    }
+  },
+  "publication_normalization_review": {
+    "evidence_read_by_reviewer": true,
+    "executed_by_this_reviewer": false,
+    "validation_path": "qa/opt1_line_endings_validation.json",
+    "validation_sha256": "25224de20a43df3428a6bdc041cb76584612f3c35aa5f3fc02842011031a1263",
+    "method_il_path": "qa/opt1_line_endings_il_comparison.json",
+    "method_il_sha256": "1ff789f47b8d4a7307ec2ef1f2de38035f72cf839df74a0d3ea3486053c16b86",
+    "source_records": [
+      {
+        "file": "src/Intwind.cs",
+        "prepublication_sha256": "439aeac32ad5c141b888a9b6dfa7145b27a6014127148b916abe7c4fcfe2a7bf",
+        "final_lf_sha256": "fb1f04cee6f530bea6385c919958121a8e74dfa4246f37d93a5395d24131d734",
+        "prepublication_crlf_count": 246,
+        "final_crlf_count": 0,
+        "normalized_source_bytes_equal": true,
+        "actual_sha256": "fb1f04cee6f530bea6385c919958121a8e74dfa4246f37d93a5395d24131d734",
+        "independent_normalized_byte_comparison": true,
+        "archive_path": "work/main_opt1_final_run04/source/opt1_vertical/src/Intwind.cs"
+      },
+      {
+        "file": "src/Zeitschleife.cs",
+        "prepublication_sha256": "7520870eae8a16382dbea618d4d3d6d59b01c3fef917272af1a88dedb55b8def",
+        "final_lf_sha256": "2942e8209faaaaee134e251aa6afc8686f6f65c39ea0d8f655ee9e7001d88a7a",
+        "prepublication_crlf_count": 2426,
+        "final_crlf_count": 0,
+        "normalized_source_bytes_equal": true,
+        "actual_sha256": "2942e8209faaaaee134e251aa6afc8686f6f65c39ea0d8f655ee9e7001d88a7a",
+        "independent_normalized_byte_comparison": true,
+        "archive_path": "work/main_opt1_final_run04/source/opt1_vertical/src/Zeitschleife.cs"
+      },
+      {
+        "file": "src/Zeitschleife_nonsteadystate.cs",
+        "prepublication_sha256": "9b5f4d38aa4909dae3bca945227d00853ef6fd666a60de8e5f2680de2e34894a",
+        "final_lf_sha256": "3b3887ad104707ea44d9803d381e5c68f2637359ccc356d66018576b6b119004",
+        "prepublication_crlf_count": 1310,
+        "final_crlf_count": 0,
+        "normalized_source_bytes_equal": true,
+        "actual_sha256": "3b3887ad104707ea44d9803d381e5c68f2637359ccc356d66018576b6b119004",
+        "independent_normalized_byte_comparison": true,
+        "archive_path": "work/main_opt1_final_run04/source/opt1_vertical/src/Zeitschleife_nonsteadystate.cs"
+      }
+    ],
+    "source_changes_beyond_line_endings": false,
+    "recorded_strict_build": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "old_measured_prepublication_dll_sha256": "8475469428964f33db284a4d303a0b74f7701bca3d659a0e79039d08935e523f",
+    "final_lf_dll_sha256": "82de9490ea5e96bcf6e906e739eaa5a248eb54def0d39a2b806df3daddceb565",
+    "recorded_all_646_method_IL_tokens_headers_and_exception_handlers_equal": true,
+    "recorded_fresh_component_checks": 1593341,
+    "benchmark_source_provenance": "Original timing/profiling records retain their measured prepublication CRLF DLL/source hashes. Final LF source applicability is supported by source equality, recorded 646-method IL/metadata equivalence, and fresh component and Main checks; this reviewer did not rerun timing.",
+    "public_source_commit": "7c23fe92803a019c1535af7f02fcc6b2e940f2ee",
+    "public_remote_verification": "Root GitHub source-85 verification accepted; this reviewer independently matched all 85 current local source hashes against final Main and combined topic manifests."
+  },
+  "prepublication_change_source_sha256": {
+    "Intwind.cs": "439aeac32ad5c141b888a9b6dfa7145b27a6014127148b916abe7c4fcfe2a7bf",
+    "Zeitschleife.cs": "7520870eae8a16382dbea618d4d3d6d59b01c3fef917272af1a88dedb55b8def",
+    "Zeitschleife_nonsteadystate.cs": "9b5f4d38aa4909dae3bca945227d00853ef6fd666a60de8e5f2680de2e34894a"
+  }
+}

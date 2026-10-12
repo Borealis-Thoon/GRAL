@@ -1,0 +1,50 @@
+{
+  "groups": [
+    1,
+    2
+  ],
+  "factors": [
+    {
+      "1": 1,
+      "2": 1
+    },
+    {
+      "1": 0,
+      "2": 1
+    },
+    {
+      "1": 0,
+      "2": 0
+    }
+  ],
+  "kinds": [
+    "AS"
+  ],
+  "rates": [
+    1,
+    1
+  ],
+  "ids": [
+    1,
+    2
+  ],
+  "duration": 30,
+  "steady": false,
+  "start": 1,
+  "temporal": true,
+  "configured_particles_per_situation": 100,
+  "fixed_seed": true,
+  "duration_s": 30,
+  "physical_field_extent_m": [
+    0,
+    200,
+    0,
+    200
+  ],
+  "concentration_cells": [
+    10,
+    10
+  ],
+  "source_groups": 2,
+  "interpretation": "Three synthetic weather situations integrate for 30 seconds each; hourly labels index the fixture and do not represent a 3-hour physical integration."
+}

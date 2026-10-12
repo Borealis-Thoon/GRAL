@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "source_files_verified": 425,
+  "json_files_parsed_before_receipt": 75,
+  "python_scripts_syntax_checked": 14,
+  "help_commands": [
+    {
+      "script": "validate_main.py",
+      "help_exit_code": 0
+    },
+    {
+      "script": "integrate_candidates.py",
+      "help_exit_code": 0
+    },
+    {
+      "script": "nan_guard_fixture.py",
+      "help_exit_code": 0
+    },
+    {
+      "script": "profile_opt1_hits.py",
+      "help_exit_code": 0
+    },
+    {
+      "script": "run_public_checks.py",
+      "help_exit_code": 0
+    }
+  ],
+  "public_inspect": {
+    "status": "pass",
+    "source_files_verified": 425,
+    "json_files_parsed": 75
+  },
+  "combined_hunk_reconstruction_files": 85,
+  "combined_hunks_match_tested_source": true,
+  "full_fresh_package_main_reproduction": false,
+  "portable_benchmark_executed_from_package": false,
+  "limits": [
+    "Structural package validation and exact source reconstruction passed. Previously completed model/fixture/benchmark runs are recorded separately; no complete fresh execution from this assembled package is claimed."
+  ]
+}

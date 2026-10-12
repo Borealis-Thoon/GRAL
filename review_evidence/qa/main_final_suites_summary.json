@@ -1,0 +1,117 @@
+{
+  "status": "pass",
+  "suites": [
+    {
+      "suite": "NaNGuard",
+      "status": "pass",
+      "source_files_per_variant": 85,
+      "conditions": 18,
+      "main_runs": 120,
+      "main_checks_passed": 1896,
+      "strict_builds": 3,
+      "actual_checkpoint_read_runs": 6,
+      "baseline_candidate_pairs": 72,
+      "compared_payload_pairs": 760,
+      "single_worker_repeat_pairs": 54,
+      "concentration_payloads": 1044,
+      "checkpoint_payloads": 30,
+      "float_values_checked": 193800,
+      "elapsed_s": 44.306947199991555,
+      "max_main_elapsed_s": 0.5258322000008775,
+      "summary_path": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_nan_run02\\qa\\main_validation_summary.json",
+      "summary_sha256": "adf5a2b029c11fef599788ee454357e11ec7388d6c40fda32f2457d77fd6326f",
+      "all_owned_processes_exited_zero": true,
+      "source_hashes_verified_before_and_after": true
+    },
+    {
+      "suite": "OPT1 final public LF",
+      "status": "pass",
+      "source_files_per_variant": 85,
+      "conditions": 18,
+      "main_runs": 120,
+      "main_checks_passed": 1896,
+      "strict_builds": 3,
+      "actual_checkpoint_read_runs": 6,
+      "baseline_candidate_pairs": 72,
+      "compared_payload_pairs": 760,
+      "single_worker_repeat_pairs": 54,
+      "concentration_payloads": 1044,
+      "checkpoint_payloads": 30,
+      "float_values_checked": 193800,
+      "elapsed_s": 46.39784290001262,
+      "max_main_elapsed_s": 0.540834100000211,
+      "summary_path": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\qa\\main_validation_summary.json",
+      "summary_sha256": "59d8527961bc1a6c88da7759a815654734643f7679f52d6abfe3f1aeae302d97",
+      "all_owned_processes_exited_zero": true,
+      "source_hashes_verified_before_and_after": true
+    },
+    {
+      "suite": "Four-topic combined",
+      "status": "pass",
+      "source_files_per_variant": 85,
+      "conditions": 18,
+      "main_runs": 80,
+      "main_checks_passed": 1264,
+      "strict_builds": 2,
+      "actual_checkpoint_read_runs": 4,
+      "baseline_candidate_pairs": 36,
+      "compared_payload_pairs": 380,
+      "single_worker_repeat_pairs": 36,
+      "concentration_payloads": 696,
+      "checkpoint_payloads": 20,
+      "float_values_checked": 129200,
+      "elapsed_s": 30.134448600001633,
+      "max_main_elapsed_s": 0.5263568000082159,
+      "summary_path": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_combined_run01\\qa\\main_validation_summary.json",
+      "summary_sha256": "ed0f6c3923109c6c2f5b6e62fb177beb4dfb1f90b9dbd9d0ad6353123a891565",
+      "all_owned_processes_exited_zero": true,
+      "source_hashes_verified_before_and_after": true
+    }
+  ],
+  "total_final_main_runs": 320,
+  "total_final_main_checks": 5056,
+  "total_strict_build_executions": 8,
+  "total_actual_checkpoint_read_runs": 16,
+  "total_baseline_candidate_pairs": 180,
+  "total_compared_payload_pairs": 1900,
+  "total_single_worker_repeat_pairs": 144,
+  "total_concentration_payloads": 2784,
+  "total_float_values_checked": 516800,
+  "source_changes_by_validation_agent": 0,
+  "excluded_runs": [
+    {
+      "path": "work/main_smoke_terrain01",
+      "reason": "Input protocol smoke, outside final suites"
+    },
+    {
+      "path": "work/main_opt1_run01",
+      "reason": "Harness UTF-16 receptor decoding debug"
+    },
+    {
+      "path": "work/main_opt1_run02",
+      "reason": "Harness checkpoint deletion on resume debug"
+    },
+    {
+      "path": "work/main_opt1_run03",
+      "reason": "Superseded first version of vertical cache; final exact-height source uses run04"
+    },
+    {
+      "path": "work/main_nan_run01",
+      "reason": "Superseded source before early residual-write state guard"
+    },
+    {
+      "path": "work/main_opt1_final_run04",
+      "reason": "Exact-height source before CRLF to LF publication normalization; same code/IL but final public source hashes use run05"
+    }
+  ],
+  "limits": [
+    "Shared baseline executions are counted as executed; validation is not a per-patch independent factorial design.",
+    "Superseded, preliminary and harness-debug runs are preserved but excluded from final counts.",
+    "Main elapsed times are watchdog evidence, not optimization benchmarks.",
+    "Terrain path is exercised, but terrain reflection occurrence counts are not instrumented in these ordinary source runs.",
+    "All terrain and prescribed wind input are entirely synthetic; no GRAMM solver run or production-domain scientific truth is asserted."
+  ],
+  "public_opt1_source_lf_verified": true,
+  "combined_runtime_source_bytes_unchanged": true,
+  "prepublication_summary_archive": "qa/main_final_suites_summary_prepublication_crlf.json"
+}

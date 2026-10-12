@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "normalization_only": true,
+  "source_records": [
+    {
+      "file": "src/Intwind.cs",
+      "prepublication_sha256": "439aeac32ad5c141b888a9b6dfa7145b27a6014127148b916abe7c4fcfe2a7bf",
+      "final_lf_sha256": "fb1f04cee6f530bea6385c919958121a8e74dfa4246f37d93a5395d24131d734",
+      "prepublication_crlf_count": 246,
+      "final_crlf_count": 0,
+      "normalized_source_bytes_equal": true
+    },
+    {
+      "file": "src/Zeitschleife.cs",
+      "prepublication_sha256": "7520870eae8a16382dbea618d4d3d6d59b01c3fef917272af1a88dedb55b8def",
+      "final_lf_sha256": "2942e8209faaaaee134e251aa6afc8686f6f65c39ea0d8f655ee9e7001d88a7a",
+      "prepublication_crlf_count": 2426,
+      "final_crlf_count": 0,
+      "normalized_source_bytes_equal": true
+    },
+    {
+      "file": "src/Zeitschleife_nonsteadystate.cs",
+      "prepublication_sha256": "9b5f4d38aa4909dae3bca945227d00853ef6fd666a60de8e5f2680de2e34894a",
+      "final_lf_sha256": "3b3887ad104707ea44d9803d381e5c68f2637359ccc356d66018576b6b119004",
+      "prepublication_crlf_count": 1310,
+      "final_crlf_count": 0,
+      "normalized_source_bytes_equal": true
+    }
+  ],
+  "old_dll_archive": "tests/opt1/vertical_crlf_prepublication/Gral.dll",
+  "old_dll_sha256": "8475469428964f33db284a4d303a0b74f7701bca3d659a0e79039d08935e523f",
+  "measurements_preserved": [
+    "qa/opt1_benchmark.json",
+    "qa/opt1_benchmark_provenance.json",
+    "qa/opt1_paired_benchmark.json",
+    "qa/opt1_paired_benchmark_provenance.json"
+  ],
+  "statement": "Existing benchmark source/DLL SHAs describe the prepublication CRLF build. They are retained unchanged; final-source applicability will be proved by identical method IL and fresh component checks.",
+  "strict_build": {
+    "warnings": 0,
+    "errors": 0
+  },
+  "new_dll_sha256": "82de9490ea5e96bcf6e906e739eaa5a248eb54def0d39a2b806df3daddceb565",
+  "method_count": 646,
+  "all_method_il_bytes_equal": true,
+  "method_il_comparison": "qa/opt1_line_endings_il_comparison.json",
+  "actual_dll_component_checks": 1593341,
+  "actual_dll_component_status": "pass",
+  "code_changes_beyond_line_endings": false,
+  "latest_main_revalidation": "root follow-up required",
+  "benchmark_reexecution_required": false,
+  "benchmark_applicability": "Measured prepublication DLL is preserved. All 646 compiled method bodies, metadata tokens, body headers and exception handlers match the final LF build; actual DLL component checks rerun passed."
+}

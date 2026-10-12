@@ -1,0 +1,45 @@
+{
+  "status": "pass",
+  "operations": [
+    {
+      "label": "nan_guard_extract_fixture",
+      "exit_code": 0,
+      "strict_build": false,
+      "zero_warning_error": null
+    },
+    {
+      "label": "nan_guard_extract_wet_fixture",
+      "exit_code": 0,
+      "strict_build": false,
+      "zero_warning_error": null
+    },
+    {
+      "label": "nan_guard_extract_report_fixture",
+      "exit_code": 0,
+      "strict_build": false,
+      "zero_warning_error": null
+    },
+    {
+      "label": "nan_guard_extract_expiry_fixture",
+      "exit_code": 0,
+      "strict_build": false,
+      "zero_warning_error": null
+    },
+    {
+      "label": "fixture_build",
+      "exit_code": 0,
+      "strict_build": true,
+      "zero_warning_error": true
+    },
+    {
+      "label": "component",
+      "exit_code": 0,
+      "strict_build": false,
+      "zero_warning_error": null
+    }
+  ],
+  "elapsed_seconds": 1.2189999999973224,
+  "main_runs": 0,
+  "source_sha_verified": 170,
+  "scope": "Component-only reproduction. Main normal-condition validation is performed by the separate common runner."
+}

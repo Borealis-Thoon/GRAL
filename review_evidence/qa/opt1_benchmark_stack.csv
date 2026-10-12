@@ -1,0 +1,5 @@
+ns,repetitions,baseline_bytes_per_entry,candidate_bytes_per_entry,baseline_median_ns_per_entry,candidate_median_ns_per_entry
+1,4096,32,0,44.82421875,36.3037109375
+9,4096,64,0,54.1748046875,37.890625
+512,4096,2072,0,557.470703125,59.0576171875
+513,4096,2080,2080,113.0859375,109.0576171875

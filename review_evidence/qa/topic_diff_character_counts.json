@@ -1,0 +1,102 @@
+{
+  "nan_guard_state": {
+    "files": [
+      {
+        "file": "src/Program.cs",
+        "added_lines": 7,
+        "deleted_lines": 0,
+        "changed_body_characters": 421
+      },
+      {
+        "file": "src/ProgramFunctions.cs",
+        "added_lines": 13,
+        "deleted_lines": 0,
+        "changed_body_characters": 511
+      },
+      {
+        "file": "src/Zeitschleife.cs",
+        "added_lines": 56,
+        "deleted_lines": 0,
+        "changed_body_characters": 2039
+      },
+      {
+        "file": "src/Zeitschleife_nonsteadystate.cs",
+        "added_lines": 42,
+        "deleted_lines": 0,
+        "changed_body_characters": 1557
+      }
+    ],
+    "file_count": 4,
+    "added_lines": 118,
+    "deleted_lines": 0,
+    "changed_body_characters": 4528,
+    "lf_unified_patch_characters": 10922,
+    "definition": "Added and removed line text, including indentation; excludes diff markers and all CR/LF characters."
+  },
+  "nan_guard_storage": {
+    "files": [
+      {
+        "file": "src/Program.cs",
+        "added_lines": 7,
+        "deleted_lines": 0,
+        "changed_body_characters": 463
+      },
+      {
+        "file": "src/Transient_Concentration.cs",
+        "added_lines": 45,
+        "deleted_lines": 4,
+        "changed_body_characters": 2535
+      }
+    ],
+    "file_count": 2,
+    "added_lines": 52,
+    "deleted_lines": 4,
+    "changed_body_characters": 2998,
+    "lf_unified_patch_characters": 4604,
+    "definition": "Added and removed line text, including indentation; excludes diff markers and all CR/LF characters."
+  },
+  "opt1_stack": {
+    "files": [
+      {
+        "file": "src/Zeitschleife.cs",
+        "added_lines": 1,
+        "deleted_lines": 1,
+        "changed_body_characters": 145
+      }
+    ],
+    "file_count": 1,
+    "added_lines": 1,
+    "deleted_lines": 1,
+    "changed_body_characters": 145,
+    "lf_unified_patch_characters": 583,
+    "definition": "Added and removed line text, including indentation; excludes diff markers and all CR/LF characters."
+  },
+  "opt1_vertical": {
+    "files": [
+      {
+        "file": "src/Intwind.cs",
+        "added_lines": 46,
+        "deleted_lines": 1,
+        "changed_body_characters": 1764
+      },
+      {
+        "file": "src/Zeitschleife.cs",
+        "added_lines": 5,
+        "deleted_lines": 4,
+        "changed_body_characters": 1049
+      },
+      {
+        "file": "src/Zeitschleife_nonsteadystate.cs",
+        "added_lines": 4,
+        "deleted_lines": 3,
+        "changed_body_characters": 949
+      }
+    ],
+    "file_count": 3,
+    "added_lines": 55,
+    "deleted_lines": 8,
+    "changed_body_characters": 3762,
+    "lf_unified_patch_characters": 6830,
+    "definition": "Added and removed line text, including indentation; excludes diff markers and all CR/LF characters."
+  }
+}

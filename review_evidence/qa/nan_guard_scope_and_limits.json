@@ -1,0 +1,48 @@
+{
+  "counter_definition": {
+    "state": "One rejected tracking state or unsplit transient-grid entry, counted when it first fails a checked boundary. This is not the number of originally emitted particles.",
+    "storage": "One rejected call to a residual storage method; this is distinct from the state counter and must not be summed into a particle count."
+  },
+  "state_checked_values": [
+    "x coordinate",
+    "y coordinate",
+    "z coordinate",
+    "concentration-related mass",
+    "time step",
+    "initial residual real mass",
+    "post-decay mass",
+    "clamped wet-loss mass"
+  ],
+  "storage_checked_values": [
+    "x offset",
+    "y offset",
+    "z minus surface height",
+    "mass parameter",
+    "computed float32 increment",
+    "locked float32 sum"
+  ],
+  "behavior_on_rejection": [
+    "Use the existing REMOVE_PARTICLE path for tracked states.",
+    "Preserve receptor contributions that were valid before the rejected state.",
+    "Skip a non-finite residual write and preserve its destination cell.",
+    "Discard the untracked remainder without zero replacement, redistribution or replay.",
+    "Report a nonzero long counter after both drivers finish a weather situation; no output for zero."
+  ],
+  "remaining_limits": [
+    "This is not an input-validation or mass-balance-repair framework.",
+    "Finite but out-of-domain coordinates, invalid cell sizes and source-group indices remain subject to the existing indexing preconditions.",
+    "The state guard does not generally validate AHint, all meteorological globals, dry-deposition Pd1, wet drift data or conversion factors.",
+    "Non-finite shared deposition/receptor/concentration sums caused by otherwise finite arithmetic are not repaired; only residual storage increment and sum overflow are checked by the storage patch.",
+    "Already polluted arrays are not recovered and earlier contributions are not rolled back.",
+    "Zero, negative finite values, signed zero and subnormals are accepted; this patch does not impose positivity or minimum time-step policies.",
+    "RNG arithmetic, Box-Muller endpoint expressions and ignored Clamp return values are unchanged. Endpoint component evidence does not measure real-run occurrence rate.",
+    "Injected component cases prove the selected rejection paths, not the frequency or field-science accuracy effect of NaN failures.",
+    "The extracted branch fixtures are separate from actual initial-driver and storage DLL calls; they are not full Main fault-injection runs."
+  ],
+  "reconstruction": {
+    "variants": 2,
+    "source_files_sha_verified_each": 85,
+    "method": "Apply exact LF unified diff to fresh warning-free baseline files, then verify every source byte SHA against the frozen manifest.",
+    "result": "pass"
+  }
+}

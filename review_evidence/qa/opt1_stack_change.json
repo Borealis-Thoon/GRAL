@@ -1,0 +1,22 @@
+{
+  "status": "strict_build_and_component_checks_pass",
+  "variant": "opt1_stack",
+  "files": [
+    {
+      "file": "src/Zeitschleife.cs",
+      "preimage_sha256": "c82d079904a088016c6e574905e133eaf100c7b126a307deae683883e2e87a82",
+      "candidate_sha256": "3488f2f276dd315308a13b05f9316115eda19ebebaf2cf10c957a57afdfa6a10",
+      "added_lines": 1,
+      "removed_lines": 1,
+      "added_body_characters": 97,
+      "removed_body_characters": 48
+    }
+  ],
+  "total_added_lines": 1,
+  "total_removed_lines": 1,
+  "body_changed_characters": 145,
+  "unified_diff_characters": 583,
+  "scope": "Bounded stack storage only",
+  "component_checks": 1593341,
+  "main_revalidation": "pending final source"
+}

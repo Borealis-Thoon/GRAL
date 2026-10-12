@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "watchdog_seconds": 180,
+  "start_utc": "2026-10-12T15:05:02.7306796Z",
+  "lock_path": "D:\\INU_Modeling_Work\\GRAMM_SLB\\OPT1_20261006\\jobs\\20261006_engine_opt\\tests\\TIMING.lock",
+  "lock_file_share": "None",
+  "source_preflight": "pass/170",
+  "dll_preflight": "pass/3",
+  "neighbor_processes_before": [],
+  "owned_pid": 53200,
+  "owned_descendants_terminated": [],
+  "exit_code": 0,
+  "timing_isolation": "global timing lock plus no active GRAL/GRAMM/dotnet processes before start",
+  "benchmark_dll_sha256": "f7f1d50c2659839f700becebcc3f53afc69c595e16b0376d5f683aa2a7708b86",
+  "fixture_source_sha256": "580b73cc4152c70cd2d78320f634216cefc639d9c29e773163ad05dfe6c1fdd7",
+  "benchmark_source_sha256": "169805a2dbb8ffe143363cef924c2b99324db27207aba2811bb54e5d34b6e471",
+  "postcheck_mismatches": [],
+  "source_postcheck": "pass/170",
+  "dll_postcheck": "pass/3",
+  "elapsed_seconds": 5.66168,
+  "neighbor_processes_after": [],
+  "end_utc": "2026-10-12T15:05:08.8069764Z"
+}

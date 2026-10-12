@@ -1,0 +1,231 @@
+{
+  "status": "pass_with_documented_scope_limits",
+  "review_kind": "independent_read_only_source_and_existing_fixture_review",
+  "reviewer": "nan_guard_audit",
+  "job": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1",
+  "source_variants": [
+    "warning_free_baseline",
+    "nan_guard_state",
+    "nan_guard_storage"
+  ],
+  "source_edits": false,
+  "builds_run": false,
+  "models_run": false,
+  "benchmarks_run": false,
+  "unresolved_source_findings": [],
+  "resolved_source_findings": [
+    {
+      "id": "NG-01",
+      "priority": "P2",
+      "status": "resolved",
+      "file": "nan_guard_state/src/Zeitschleife.cs",
+      "discovery_lines": [
+        875,
+        885,
+        893,
+        896,
+        923
+      ],
+      "problem": "수직 이동·침강으로 새 z가 비유한 값이 된 뒤 같은 단계에서 분산 시간이 종료되면, state 단독 소스가 이후 이동·농도 guard를 우회하여 잔류 격자 저장을 호출할 수 있었다.",
+      "minimal_fix": "침강 이후, auszeit 증가 및 세 상황 종료 저장 분기 이전에 기존 ParticleStateIsFinite 검사 1곳을 추가했다.",
+      "resolution_lines": [
+        896,
+        899
+      ],
+      "verification": "최종 source 위치를 직접 대조했다. 원본 종료 블록을 추출한 fixture가 수정 없는 baseline DLL 저장 함수에 연결되어 state 패치를 독립 검증한다. 결함 16조건은 저장 호출 0회, 정상 40쌍은 float 격자 비트 동일로 기록되었다.",
+      "test_evidence": [
+        "qa/nan_guard_expiry_blocks.json",
+        "tests/nan_guard/ExtractedTransientExpiry.cs",
+        "tests/nan_guard/NaNGuardFixture.cs",
+        "qa/nan_guard_component_summary.json"
+      ]
+    }
+  ],
+  "manual_checks": [
+    {
+      "item": "state helper",
+      "status": "pass",
+      "evidence": "nan_guard_state/src/ProgramFunctions.cs:26-37",
+      "detail": "double x/y/mass, float z/dt의 IsFinite만 검사한다. 유한한 0·음수·극소값을 별도 변경하지 않으며, 실패 때만 long counter에 Interlocked.Increment한다."
+    },
+    {
+      "item": "초기 신규 상태 및 배출 변조",
+      "status": "pass",
+      "evidence": "nan_guard_state/src/Zeitschleife.cs:157-189",
+      "detail": "초기 비유한 상태와 변조 후 비유한 질량을 EmissionPerSG 공유 합산과 좌표 인덱스 처리 전에 종료한다."
+    },
+    {
+      "item": "잔류 항목 및 driver 초기값",
+      "status": "pass",
+      "evidence": "nan_guard_state/src/Zeitschleife_nonsteadystate.cs:44-49,192-197",
+      "detail": "Calculate에서 비유한 masse는 분할 정수 변환 전에 1회 집계하고 반환한다. driver는 masse와 mass_real 모두 검사하며 OR 단락 평가로 실패한 호출이 중복 집계되지 않는다."
+    },
+    {
+      "item": "시간 단계 및 이동",
+      "status": "pass",
+      "detail": "루프 초기, dt 산출 뒤, 포털 dt 산출 뒤, 갱신 좌표의 인덱스 처리 전 guard를 확인했다. ClampIdt/Alpha/Gauss/Velz의 반환값 적용이나 난수 시퀀스 변경은 포함하지 않는다."
+    },
+    {
+      "item": "신규 상황 종료 저장 경계",
+      "status": "pass",
+      "evidence": "nan_guard_state/src/Zeitschleife.cs:896-928",
+      "detail": "발견한 누락을 보완한 추가 guard가 신규 입자의 세 빠른 저장 경로를 앞에서 보호한다."
+    },
+    {
+      "item": "decay 및 wet 증분",
+      "status": "pass",
+      "evidence": "nan_guard_state/src/Zeitschleife.cs:2056-2083; nan_guard_state/src/Zeitschleife_nonsteadystate.cs:1083-1111",
+      "detail": "decay 후 masse, 기존 전량침적 제한 적용 후 epsilonW_Masse를 공유 침적 쓰기와 질량 차감 전에 검사한다. NaN wet 계수에 따른 비유한 증분 유입은 차단된다."
+    },
+    {
+      "item": "wet 계수 해석",
+      "status": "pass",
+      "detail": "+Inf 계수는 기존 증분>질량 분기에서 유한 질량으로 제한되어 전량침적 경로를 유지한다. 따라서 비유한 계수 자체의 전면 거부라고 설명하지 않는다."
+    },
+    {
+      "item": "기존 수용체 기여",
+      "status": "pass",
+      "detail": "guard 실패는 기존 REMOVE_PARTICLE로 이동한다. 기존 양의 수용체 기여와 최대값 합산 코드는 변경하지 않았다. 추출된 실제 종료 코드 fixture가 선행 유효 기여 보존을 확인한다."
+    },
+    {
+      "item": "state 카운터 단위",
+      "status": "pass",
+      "detail": "계수는 실제 물리 입자 수 또는 손실 질량이 아니라 거부된 상태 수다. 분할 이전 잔류 항목은 1회 집계되므로 보고 문구 particle states가 적절하다."
+    },
+    {
+      "item": "storage 위치·상대 높이·질량",
+      "status": "pass",
+      "evidence": "nan_guard_storage/src/Transient_Concentration.cs:39-50,86-97",
+      "detail": "두 함수에서 상대 높이 float 연산 결과와 전달 질량을 검사하고, NaN/Inf 좌표는 정수 변환 전에 거부한다."
+    },
+    {
+      "item": "storage 증분 및 합산 오버플로",
+      "status": "pass",
+      "evidence": "nan_guard_storage/src/Transient_Concentration.cs:50-65,97-112",
+      "detail": "기존 산술 순서의 float 증분 및 lock 안 최종 float 합계를 검사한다. 오류 때 새 쓰기를 건너뛰며 이전 셀 값을 0으로 치환하지 않는다."
+    },
+    {
+      "item": "storage 동시성",
+      "status": "pass",
+      "detail": "기존 lock 범위를 유지하고, 합계 검사와 대입은 같은 lock 안에서 수행한다. long 거부 카운터를 Interlocked로 집계한다."
+    },
+    {
+      "item": "정상 유한 계산 보존",
+      "status": "pass",
+      "detail": "state helper는 유한 값에 대해 산술 상태를 변경하지 않는다. storage의 기존 float 증분과 덧셈 순서를 유지한다. 모든 유한 입력이 무조건 보존되는 것은 아니며, float 증분/합계 오버플로는 의도적으로 거부한다."
+    },
+    {
+      "item": "보고 위치와 초기화",
+      "status": "pass",
+      "evidence": "nan_guard_state/src/Program.cs:724-735; nan_guard_storage/src/Program.cs:724-735",
+      "detail": "두 병렬 입자 추적이 종료된 뒤, 성공 출력 이관 전에 long Interlocked.Exchange로 해당 상황 집계를 읽고 0으로 초기화한다. 0일 때 콘솔과 로그에 출력하지 않는다."
+    },
+    {
+      "item": "fixture 보호 범위",
+      "status": "pass",
+      "detail": "실제 DLL helper·초기 driver·두 storage 함수, 생산 구문에서 추출한 중간 guard/종료·wet·상황 종료·report를 구분했다. 이 fixture는 전체 Main에 중간 결함을 주입하는 시험이 아니다."
+    }
+  ],
+  "limits": [
+    "일반 입력 유효성 검증, 잘못된 AHint·격자 범위·정수 인덱스·물리 계수 전체의 복구는 범위 밖이다.",
+    "state helper는 유한한 음수·0 dt와 질량을 기존처럼 통과시킨다. positivity 검사나 시간 단계 Clamp를 대체하지 않는다.",
+    "state 이후 건식침적 확률·습식침적 단위 변환·수용체 곱·2D/3D/odour 출력 증분과 합계 전체의 오버플로를 보호하지 않는다.",
+    "storage는 이미 NaN/Inf인 기존 checkpoint 셀을 치유하지 않는다. 비유한 기존 합계를 발견하면 새 쓰기를 건너뛰고 기존 셀을 보존한다.",
+    "storage는 반사 flag!=0일 때 기존처럼 쓰기를 하지 않고 거부 카운터도 증가시키지 않는다.",
+    "거부된 입자의 남은 질량 또는 저장 증분을 다른 입자·셀에 재분배하지 않는다. 이미 쌓인 선행 기여를 되돌리지 않는다.",
+    "취소 경로는 성공 상황 보고 이전에 FinishGral로 이동하므로 미완료 상황의 카운터는 정상 완료 보고에 포함되지 않을 수 있다.",
+    "Box-Muller uint 끝점 원인 자체를 수정하지 않는다. 결함 산술을 유지한 채 그로부터 발생한 비유한 상태를 거부하는 방어다.",
+    "정상 Main 회귀와 실행 비용 검증은 별도 담당자의 최종 source 실행 결과로 판단해야 한다. 이 독립 검토자는 Main이나 benchmark를 실행하지 않았다."
+  ],
+  "evidence_files": [
+    "qa/nan_guard_component_summary.json",
+    "qa/nan_guard_extracted_blocks.json",
+    "qa/nan_guard_expiry_blocks.json",
+    "qa/nan_guard_wet_blocks.json",
+    "qa/nan_guard_report_blocks.json",
+    "qa/nan_guard_rng_expression.json",
+    "qa/nan_guard_state_source_manifest.json",
+    "qa/nan_guard_storage_source_manifest.json",
+    "tests/nan_guard/NaNGuardFixture.cs",
+    "tests/nan_guard/ExtractedParticleExit.cs",
+    "tests/nan_guard/ExtractedWetStep.cs",
+    "tests/nan_guard/ExtractedTransientExpiry.cs",
+    "tests/nan_guard/ExtractedReports.cs"
+  ],
+  "reviewed_at_utc": "2026-10-12T14:40:38.8310747Z",
+  "source_integrity": [
+    {
+      "variant": "nan_guard_state",
+      "full_source_file_count": 85,
+      "manifest_hashes_match": true,
+      "changed_files": [
+        {
+          "file": "src/Program.cs",
+          "sha256": "f1ec7863aa5ee80e56adfadd4eec3aa518ca3617f6620347084df85d1a95249f"
+        },
+        {
+          "file": "src/ProgramFunctions.cs",
+          "sha256": "fcf95d9d963791a08c387455cf7ce25bde69be564b56e435053fd4d721992273"
+        },
+        {
+          "file": "src/Zeitschleife.cs",
+          "sha256": "81fb9df2a9f6cc39487dd4ffe36b473a2cdf0f2ef7e756ed6e58b5286adad8fd"
+        },
+        {
+          "file": "src/Zeitschleife_nonsteadystate.cs",
+          "sha256": "41742b339ea4dd76de95d65e577023e1916e4d33d81ca622ccbf1a01ea81ec70"
+        }
+      ],
+      "added_lines": 118,
+      "deleted_lines": 0,
+      "changed_body_characters": 4646
+    },
+    {
+      "variant": "nan_guard_storage",
+      "full_source_file_count": 85,
+      "manifest_hashes_match": true,
+      "changed_files": [
+        {
+          "file": "src/Program.cs",
+          "sha256": "dcfb4c266b683e8a20a31acd8fb4f9ee7983744722f020c5d1d283e5dc275a97"
+        },
+        {
+          "file": "src/Transient_Concentration.cs",
+          "sha256": "f37e30fb67cb0d8d605e2e1ecd8f2a4a987fe275ac4dadb6ebcc550f907ff85c"
+        }
+      ],
+      "added_lines": 52,
+      "deleted_lines": 4,
+      "changed_body_characters": 3054
+    }
+  ],
+  "recorded_component_validation": {
+    "status": "pass",
+    "checks_passed": 1917,
+    "helper_checks": 62,
+    "production_guard_sites": 18,
+    "production_branch_checks": 1341,
+    "actual_driver_cases": 20,
+    "actual_driver_checks": 49,
+    "wet_arithmetic_cases": 14,
+    "wet_arithmetic_checks": 36,
+    "normal_storage_cases": 56,
+    "normal_storage_checks": 112,
+    "faulty_storage_cases": 32,
+    "faulty_storage_checks": 98,
+    "baseline_fault_cases_with_nonfinite_storage": 12,
+    "baseline_fault_cases_with_exceptions": 8,
+    "parallel_workers": [
+      1,
+      2
+    ],
+    "parallel_checks": 13,
+    "report_cases": 8,
+    "report_checks": 38,
+    "expiry_fault_cases": 16,
+    "expiry_normal_pairs": 40,
+    "expiry_checks": 164,
+    "rng_endpoint_checks": 4,
+    "scope": "Actual baseline/candidate DLL helper, initial particle drivers and both storage methods; extracted production guards and receptor-exit code for mid-step control flow. No full Main fault injection in this fixture."
+  }
+}

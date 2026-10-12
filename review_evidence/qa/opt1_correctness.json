@@ -1,0 +1,37 @@
+{
+  "status": "pass",
+  "checks": 1593341,
+  "groups": {
+    "search_all_hints": 1337728,
+    "search_sequence": 22414,
+    "search_same_height": 22414,
+    "unchanged_public_search": 22414,
+    "public_wind_tuple": 89656,
+    "cached_wind_tuple": 89656,
+    "array_replacement_invalidation": 3202,
+    "in_place_mutation_new_particle_state": 3190,
+    "count_change_invalidation": 2663,
+    "production_stack_declaration_entry": 4
+  },
+  "profiles": 35,
+  "tuple_values": 89656,
+  "matched_tuple_exceptions": 0,
+  "elapsed_seconds": 0.2529137,
+  "dlls": [
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "sha256": "bce79353b3ccb56131a2512e660f6c9dab3b501abfd70d7194e3852877da7b5b"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\tests\\opt1\\stack_build\\Gral.dll",
+      "sha256": "a25a24f3d64b86db27ee557f9dea8b4dc2ad085f112db997fa4af95ce88738f5"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\tests\\opt1\\vertical_build\\Gral.dll",
+      "sha256": "82de9490ea5e96bcf6e906e739eaa5a248eb54def0d39a2b806df3daddceb565"
+    }
+  ],
+  "failures": [],
+  "profile_contract": "HOKART is immutable within a particle; replacement or NKK change invalidates automatically. In-place changes tested after explicit new-particle state preparation. No arbitrary in-place-change detection is claimed.",
+  "stack_scope": "Actual Calculate entry reaches allocation then removes an out-of-domain particle; full tracking read-before-write is covered separately by Main runs and source audit. No allocation or timing benchmark was run in this correctness mode."
+}

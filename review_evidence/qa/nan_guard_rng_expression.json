@@ -1,0 +1,8 @@
+{
+  "source": "src/Zeitschleife.cs",
+  "expressions": [
+    "u1_rg = (u_rg + 1) * RNG_Const;",
+    "zahl1 = MathF.Sqrt(-2F * MathF.Log(u1_rg)) * MathF.Sin(Pi2F * (u_rg + 1) * RNG_Const);"
+  ],
+  "scope": "Unsigned maximum endpoint arithmetic of unchanged production expressions. No claim of natural occurrence rate or changed RNG."
+}

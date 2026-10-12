@@ -1,0 +1,33 @@
+{
+  "blocks": [
+    {
+      "variant": "warning_free_baseline",
+      "file": "Zeitschleife.cs",
+      "start_line": 2010,
+      "sha256": "343b29af5df23e4cee8ffa9c660eb6d210e56420a03aaf45734977ca1d6109bc",
+      "extracted_code": "                //decay rate\n                if (decay_rate > 0)\n                {\n                    masse *= Math.Exp(-decay_rate * idt);\n                }\n\n                // compute Wet deposition\n                if (Program.WetDeposition == true && Program.WetDepoRW != 0)\n                {\n                    double epsilonW_Masse = masse * Program.WetDepoRW * idt; // deposited mass\n                    bool ex = false;\n\n                    if (epsilonW_Masse > masse)\n                    {\n                        epsilonW_Masse = masse;\n                        ex = true;\n                    }\n                    masse -= epsilonW_Masse;"
+    },
+    {
+      "variant": "warning_free_baseline",
+      "file": "Zeitschleife_nonsteadystate.cs",
+      "start_line": 1051,
+      "sha256": "02e9d095db50b40c8461fcb41416df10dc1dceeaa17db332f9f4818013f6958e",
+      "extracted_code": "                //decay rate\n                if (decay_rate > 0)\n                {\n                    masse *= Math.Exp(-decay_rate * idt);\n                }\n\n                // compute Wet deposition\n                if (Program.WetDeposition == true && Program.WetDepoRW != 0)\n                {\n                    double epsilonW_Masse = masse * Program.WetDepoRW * idt; // deposited mass\n                    bool ex = false;\n\n                    if (epsilonW_Masse > masse)\n                    {\n                        epsilonW_Masse = masse;\n                        ex = true; // masse <= 0!\n                    }\n\n                    masse -= epsilonW_Masse;"
+    },
+    {
+      "variant": "nan_guard_state",
+      "file": "Zeitschleife.cs",
+      "start_line": 2056,
+      "sha256": "4b41df20a59324bfc6976ec212332747f33b68991ac74b5c37dc5ba5ee4cf137",
+      "extracted_code": "                //decay rate\n                if (decay_rate > 0)\n                {\n                    masse *= Math.Exp(-decay_rate * idt);\n                }\n\n                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                {\n                    goto REMOVE_PARTICLE;\n                }\n\n                // compute Wet deposition\n                if (Program.WetDeposition == true && Program.WetDepoRW != 0)\n                {\n                    double epsilonW_Masse = masse * Program.WetDepoRW * idt; // deposited mass\n                    bool ex = false;\n\n                    if (epsilonW_Masse > masse)\n                    {\n                        epsilonW_Masse = masse;\n                        ex = true;\n                    }\n                    if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, epsilonW_Masse, idt))\n                    {\n                        goto REMOVE_PARTICLE;\n                    }\n\n                    masse -= epsilonW_Masse;"
+    },
+    {
+      "variant": "nan_guard_state",
+      "file": "Zeitschleife_nonsteadystate.cs",
+      "start_line": 1083,
+      "sha256": "03a175aa57f5f461a994823c342f68adf09b7b4e951760e9b728ad8050a10239",
+      "extracted_code": "                //decay rate\n                if (decay_rate > 0)\n                {\n                    masse *= Math.Exp(-decay_rate * idt);\n                }\n\n                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))\n                {\n                    goto REMOVE_PARTICLE;\n                }\n\n                // compute Wet deposition\n                if (Program.WetDeposition == true && Program.WetDepoRW != 0)\n                {\n                    double epsilonW_Masse = masse * Program.WetDepoRW * idt; // deposited mass\n                    bool ex = false;\n\n                    if (epsilonW_Masse > masse)\n                    {\n                        epsilonW_Masse = masse;\n                        ex = true; // masse <= 0!\n                    }\n\n                    if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, epsilonW_Masse, idt))\n                    {\n                        goto REMOVE_PARTICLE;\n                    }\n\n                    masse -= epsilonW_Masse;"
+    }
+  ],
+  "scope": "Actual production decay and wet-loss arithmetic through the last statement preceding deposition writes, compiled with a fixture facade. No full Main deposition fault injection."
+}

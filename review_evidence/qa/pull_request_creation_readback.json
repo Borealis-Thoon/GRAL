@@ -1,0 +1,159 @@
+{
+  "status": "pass",
+  "PRs": [
+    {
+      "variant": "nan_guard_state",
+      "number": 66,
+      "url": "https://github.com/GralDispersionModel/GRAL/pull/66",
+      "title": "Reject non-finite particle states at tracking boundaries",
+      "draft": true,
+      "head": "47c8f8f84c2c3c855523459e189e731c8c42bd3a",
+      "base": "V2701",
+      "body_exact_match": true,
+      "maintainer_can_modify": false,
+      "changed_files": 4,
+      "additions": 121,
+      "deletions": 3
+    },
+    {
+      "variant": "nan_guard_storage",
+      "number": 67,
+      "url": "https://github.com/GralDispersionModel/GRAL/pull/67",
+      "title": "Guard residual concentration writes against non-finite values",
+      "draft": true,
+      "head": "5a333595fea7a7956956db20c712f32213b1a2e7",
+      "base": "V2701",
+      "body_exact_match": true,
+      "maintainer_can_modify": false,
+      "changed_files": 4,
+      "additions": 55,
+      "deletions": 7
+    },
+    {
+      "variant": "opt1_stack",
+      "number": 68,
+      "url": "https://github.com/GralDispersionModel/GRAL/pull/68",
+      "title": "Use bounded stack storage for particle slice indices",
+      "draft": true,
+      "head": "b4ffec5e2ab55d3ec3717ed37d04938837e00120",
+      "base": "V2701",
+      "body_exact_match": true,
+      "maintainer_can_modify": false,
+      "changed_files": 2,
+      "additions": 4,
+      "deletions": 4
+    },
+    {
+      "variant": "opt1_vertical",
+      "number": 69,
+      "url": "https://github.com/GralDispersionModel/GRAL/pull/69",
+      "title": "Reuse the vertical index for repeated finite heights",
+      "draft": true,
+      "head": "7c23fe92803a019c1535af7f02fcc6b2e940f2ee",
+      "base": "V2701",
+      "body_exact_match": true,
+      "maintainer_can_modify": false,
+      "changed_files": 3,
+      "additions": 58,
+      "deletions": 11
+    }
+  ],
+  "source_branches": {
+    "nan_guard_state": {
+      "variant": "nan_guard_state",
+      "branch": "codex/nonfinite-particle-state-20261012",
+      "commit": "47c8f8f84c2c3c855523459e189e731c8c42bd3a",
+      "tree": "d9ff8cba65d426f680127fe6537d46c368613955",
+      "parent": "3cfbd25505c21034673d2c850c368e953d08ef7e",
+      "files": [
+        {
+          "path": "src/Program.cs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "62bfb4566a94bc307039235d8af05b159b1db565"
+        },
+        {
+          "path": "src/ProgramFunctions.cs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "199a1c37149d31987225cbec19c6402af08ac023"
+        },
+        {
+          "path": "src/Zeitschleife.cs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "b35abd509e5986dab1aa1667124a9042c91280e2"
+        },
+        {
+          "path": "src/Zeitschleife_nonsteadystate.cs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "daefb146fdbe2c444e21af1a728304e9ec2ddc50"
+        }
+      ]
+    },
+    "nan_guard_storage": {
+      "variant": "nan_guard_storage",
+      "branch": "codex/nonfinite-residual-storage-20261012",
+      "commit": "5a333595fea7a7956956db20c712f32213b1a2e7",
+      "tree": "0f7b5431f842223a8b6ace11673c31adc133baea",
+      "parent": "3cfbd25505c21034673d2c850c368e953d08ef7e",
+      "files": [
+        {
+          "path": "src/Program.cs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "09e64af3874f8cdb2900b6e75648c789538ddd83"
+        },
+        {
+          "path": "src/Transient_Concentration.cs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "5c76ca8d86e9654c2316d9fc0aeced6c59f7dc7d"
+        }
+      ]
+    },
+    "opt1_stack": {
+      "variant": "opt1_stack",
+      "branch": "codex/particle-slice-stack-buffer-20261012",
+      "commit": "b4ffec5e2ab55d3ec3717ed37d04938837e00120",
+      "tree": "614dfec93e818da18719e13308674b9367dc049d",
+      "parent": "3cfbd25505c21034673d2c850c368e953d08ef7e",
+      "files": [
+        {
+          "path": "src/Zeitschleife.cs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "9811cdf5db0b486c85979554237604f2a2e16fd5"
+        }
+      ]
+    },
+    "opt1_vertical": {
+      "variant": "opt1_vertical",
+      "branch": "codex/vertical-search-reuse-20261012",
+      "commit": "7c23fe92803a019c1535af7f02fcc6b2e940f2ee",
+      "tree": "e538bd3c6fb1ed20e4ed89ab4b091cf0fdf2123f",
+      "parent": "3cfbd25505c21034673d2c850c368e953d08ef7e",
+      "files": [
+        {
+          "path": "src/Intwind.cs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "2c4873b653dd7f248921a5a7301f77ef5eb91fa3"
+        },
+        {
+          "path": "src/Zeitschleife.cs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "84bee73311df862ea5f21b4c95d692988e1a4dfe"
+        },
+        {
+          "path": "src/Zeitschleife_nonsteadystate.cs",
+          "mode": "100644",
+          "type": "blob",
+          "sha": "6943e91d78021259cc1cf31b587a9331e0cca033"
+        }
+      ]
+    }
+  }
+}

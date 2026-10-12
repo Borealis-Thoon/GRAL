@@ -1,0 +1,1619 @@
+[
+  {
+    "pid": 59328,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "build",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\GRAL.csproj",
+      "-c",
+      "Release",
+      "-t:Rebuild",
+      "-v:minimal",
+      "--nologo",
+      "/p:TreatWarningsAsErrors=true"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src",
+    "timeout_s": 180,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 1.3273091000010027
+  },
+  {
+    "pid": 59136,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "build",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\GRAL.csproj",
+      "-c",
+      "Release",
+      "-t:Rebuild",
+      "-v:minimal",
+      "--nologo",
+      "/p:TreatWarningsAsErrors=true"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src",
+    "timeout_s": 180,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 1.302389200005564
+  },
+  {
+    "pid": 53860,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "build",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\GRAL.csproj",
+      "-c",
+      "Release",
+      "-t:Rebuild",
+      "-v:minimal",
+      "--nologo",
+      "/p:TreatWarningsAsErrors=true"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src",
+    "timeout_s": 180,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 1.3549136999936309
+  },
+  {
+    "pid": 59644,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n100_20m_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n100_20m_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.5369990000035614
+  },
+  {
+    "pid": 31840,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n100_20m_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n100_20m_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2785884999902919
+  },
+  {
+    "pid": 29516,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n100_20m_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n100_20m_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.5322503999923356
+  },
+  {
+    "pid": 56884,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n100_20m_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n100_20m_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2758676000084961
+  },
+  {
+    "pid": 62004,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n100_20m_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n100_20m_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.5244355000031646
+  },
+  {
+    "pid": 61876,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n100_20m_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n100_20m_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2728754999989178
+  },
+  {
+    "pid": 30264,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_hot_n1000_10m_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_hot_n1000_10m_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.294136200012872
+  },
+  {
+    "pid": 61100,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_hot_n1000_10m_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_hot_n1000_10m_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.304472399991937
+  },
+  {
+    "pid": 13020,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_hot_n1000_10m_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_hot_n1000_10m_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2960752999933902
+  },
+  {
+    "pid": 25380,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_hot_n1000_10m_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_hot_n1000_10m_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.300927899996168
+  },
+  {
+    "pid": 52868,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_hot_n1000_10m_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_hot_n1000_10m_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.29724710001028143
+  },
+  {
+    "pid": 15924,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_hot_n1000_10m_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_hot_n1000_10m_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.30790759999945294
+  },
+  {
+    "pid": 41256,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n3000_40m_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n3000_40m_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.34748180001042783
+  },
+  {
+    "pid": 11848,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n3000_40m_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n3000_40m_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3479366999963531
+  },
+  {
+    "pid": 49560,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n3000_40m_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n3000_40m_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3579559000063455
+  },
+  {
+    "pid": 27156,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n3000_40m_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n3000_40m_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3425106000067899
+  },
+  {
+    "pid": 30508,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n3000_40m_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n3000_40m_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.35335469999699853
+  },
+  {
+    "pid": 48632,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n3000_40m_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\point_n3000_40m_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.36053740000352263
+  },
+  {
+    "pid": 62372,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n100_40m_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n100_40m_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.26999839999189135
+  },
+  {
+    "pid": 61624,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n100_40m_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n100_40m_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.27645900000061374
+  },
+  {
+    "pid": 3476,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n100_40m_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n100_40m_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.28265380000812
+  },
+  {
+    "pid": 20024,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n100_40m_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n100_40m_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2731768999947235
+  },
+  {
+    "pid": 47520,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n100_40m_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n100_40m_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2745708000002196
+  },
+  {
+    "pid": 45652,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n100_40m_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n100_40m_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.27655279998725746
+  },
+  {
+    "pid": 28656,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n1000_20m_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n1000_20m_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3030529999959981
+  },
+  {
+    "pid": 61704,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n1000_20m_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n1000_20m_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.30069150000053924
+  },
+  {
+    "pid": 20708,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n1000_20m_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n1000_20m_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.307030299998587
+  },
+  {
+    "pid": 54704,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n1000_20m_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n1000_20m_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3101009000092745
+  },
+  {
+    "pid": 60116,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n1000_20m_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n1000_20m_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.32258539999020286
+  },
+  {
+    "pid": 5112,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n1000_20m_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\portal_n1000_20m_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3200553999922704
+  },
+  {
+    "pid": 58496,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n3000_10m_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n3000_10m_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.348741500012693
+  },
+  {
+    "pid": 18912,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n3000_10m_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n3000_10m_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.35427850000269245
+  },
+  {
+    "pid": 28924,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n3000_10m_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n3000_10m_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3650272000086261
+  },
+  {
+    "pid": 53664,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n3000_10m_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n3000_10m_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3367938999872422
+  },
+  {
+    "pid": 51736,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n3000_10m_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n3000_10m_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.33623059999081306
+  },
+  {
+    "pid": 43540,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n3000_10m_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n3000_10m_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3464747999969404
+  },
+  {
+    "pid": 54144,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n100_20m_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n100_20m_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2861813999916194
+  },
+  {
+    "pid": 58068,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n100_20m_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n100_20m_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2829651000065496
+  },
+  {
+    "pid": 11032,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n100_20m_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n100_20m_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.28383600000233855
+  },
+  {
+    "pid": 50452,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n100_20m_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n100_20m_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2840668999997433
+  },
+  {
+    "pid": 60268,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n100_20m_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n100_20m_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.29076240000722464
+  },
+  {
+    "pid": 53984,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n100_20m_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\line_n100_20m_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2896545999974478
+  },
+  {
+    "pid": 61388,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n1000_40m_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n1000_40m_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3046524999954272
+  },
+  {
+    "pid": 55172,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n1000_40m_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n1000_40m_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2938517000002321
+  },
+  {
+    "pid": 4892,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n1000_40m_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n1000_40m_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2927920000074664
+  },
+  {
+    "pid": 24364,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n1000_40m_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n1000_40m_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2854226000054041
+  },
+  {
+    "pid": 60256,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n1000_40m_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n1000_40m_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2889398999977857
+  },
+  {
+    "pid": 1560,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n1000_40m_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n1000_40m_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2975954000139609
+  },
+  {
+    "pid": 62220,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n3000_20m_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n3000_20m_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3954429000004893
+  },
+  {
+    "pid": 57336,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n3000_20m_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n3000_20m_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3995730000024196
+  },
+  {
+    "pid": 38204,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n3000_20m_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n3000_20m_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.4051000999897951
+  },
+  {
+    "pid": 57552,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n3000_20m_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n3000_20m_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.4012379000050714
+  },
+  {
+    "pid": 56276,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n3000_20m_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n3000_20m_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.39301119999436196
+  },
+  {
+    "pid": 56108,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n3000_20m_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\area_n3000_20m_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.38651840000238735
+  },
+  {
+    "pid": 53840,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_n100_10m_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_n100_10m_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3039589999971213
+  },
+  {
+    "pid": 60872,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_n100_10m_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_n100_10m_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2961280000017723
+  },
+  {
+    "pid": 58548,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_n100_10m_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_n100_10m_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.29672289999143686
+  },
+  {
+    "pid": 36024,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_n100_10m_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_n100_10m_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.2991475999879185
+  },
+  {
+    "pid": 56008,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_n100_10m_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_n100_10m_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3012855999986641
+  },
+  {
+    "pid": 24832,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_n100_10m_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_n100_10m_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3034473000006983
+  },
+  {
+    "pid": 61988,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n100_40m_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n100_40m_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3471086999925319
+  },
+  {
+    "pid": 44188,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n100_40m_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n100_40m_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3402345000067726
+  },
+  {
+    "pid": 27340,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n100_40m_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n100_40m_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3365921999939019
+  },
+  {
+    "pid": 41216,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n100_40m_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n100_40m_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.33443679999618325
+  },
+  {
+    "pid": 60972,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n100_40m_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n100_40m_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3467479000100866
+  },
+  {
+    "pid": 57252,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n100_40m_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n100_40m_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.34495529999549035
+  },
+  {
+    "pid": 57032,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n1000_20m_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n1000_20m_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3417374000127893
+  },
+  {
+    "pid": 61480,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n1000_20m_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n1000_20m_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3435769000061555
+  },
+  {
+    "pid": 22828,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n1000_20m_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n1000_20m_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.34650390000024345
+  },
+  {
+    "pid": 59448,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n1000_20m_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n1000_20m_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.34462380000331905
+  },
+  {
+    "pid": 58112,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n1000_20m_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n1000_20m_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3454201999993529
+  },
+  {
+    "pid": 58716,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n1000_20m_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n1000_20m_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.33663229999365285
+  },
+  {
+    "pid": 59076,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n3000_10m_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n3000_10m_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.35860709998814855
+  },
+  {
+    "pid": 57860,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n3000_10m_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n3000_10m_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3652125999942655
+  },
+  {
+    "pid": 7700,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n3000_10m_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n3000_10m_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3582252000051085
+  },
+  {
+    "pid": 52504,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n3000_10m_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n3000_10m_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3687945999990916
+  },
+  {
+    "pid": 59088,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n3000_10m_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n3000_10m_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3770622000010917
+  },
+  {
+    "pid": 17684,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n3000_10m_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_transient_n3000_10m_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.38157840000349097
+  },
+  {
+    "pid": 27040,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_deposition_receptors_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_deposition_receptors_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.32976520000374876
+  },
+  {
+    "pid": 51900,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_deposition_receptors_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_deposition_receptors_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.318314600008307
+  },
+  {
+    "pid": 58768,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_deposition_receptors_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_deposition_receptors_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3190591000020504
+  },
+  {
+    "pid": 53944,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_deposition_receptors_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_deposition_receptors_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3209149000031175
+  },
+  {
+    "pid": 60588,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_deposition_receptors_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_deposition_receptors_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.32697080000070855
+  },
+  {
+    "pid": 60896,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_deposition_receptors_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_deposition_receptors_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.32429860001138877
+  },
+  {
+    "pid": 24108,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_odour_9slices_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_odour_9slices_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.4271530999976676
+  },
+  {
+    "pid": 56124,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_odour_9slices_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_odour_9slices_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3827014999988023
+  },
+  {
+    "pid": 27320,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_odour_9slices_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_odour_9slices_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.38884840000537224
+  },
+  {
+    "pid": 57644,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_odour_9slices_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_odour_9slices_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.37160990000120364
+  },
+  {
+    "pid": 2604,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_odour_9slices_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_odour_9slices_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.42231449999962933
+  },
+  {
+    "pid": 60784,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_odour_9slices_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\mixed_odour_9slices_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3752930000046035
+  },
+  {
+    "pid": 57532,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\flat_buildings_n1000_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\flat_buildings_n1000_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.33198529999936
+  },
+  {
+    "pid": 59256,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\flat_buildings_n1000_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\flat_buildings_n1000_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3403742000082275
+  },
+  {
+    "pid": 56636,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\flat_buildings_n1000_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\flat_buildings_n1000_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.33354579999286216
+  },
+  {
+    "pid": 39060,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\flat_buildings_n1000_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\flat_buildings_n1000_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3230836000002455
+  },
+  {
+    "pid": 19636,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\flat_buildings_n1000_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\flat_buildings_n1000_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3368874000007054
+  },
+  {
+    "pid": 25832,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\flat_buildings_n1000_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\flat_buildings_n1000_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3368407000089064
+  },
+  {
+    "pid": 30224,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_hot_n100_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_hot_n100_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.32587440000497736
+  },
+  {
+    "pid": 15772,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_hot_n100_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_hot_n100_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.33315540000330657
+  },
+  {
+    "pid": 42876,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_hot_n100_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_hot_n100_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.32975449999503326
+  },
+  {
+    "pid": 24000,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_hot_n100_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_hot_n100_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.32931980000284966
+  },
+  {
+    "pid": 60872,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_hot_n100_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_hot_n100_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3363085000019055
+  },
+  {
+    "pid": 62324,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_hot_n100_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_hot_n100_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.33848930000385735
+  },
+  {
+    "pid": 57148,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_stable_building_n1000_warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_stable_building_n1000_warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.4201805000047898
+  },
+  {
+    "pid": 55952,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_stable_building_n1000_warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_stable_building_n1000_warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.4118986999965273
+  },
+  {
+    "pid": 60832,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_stable_building_n1000_opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_stable_building_n1000_opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.413367000001017
+  },
+  {
+    "pid": 22304,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_stable_building_n1000_opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_stable_building_n1000_opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.4175127999915276
+  },
+  {
+    "pid": 53520,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_stable_building_n1000_opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_stable_building_n1000_opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.4193521999986842
+  },
+  {
+    "pid": 61864,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_stable_building_n1000_opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\virtual_runs\\terrain_stable_building_n1000_opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.4132375999906799
+  },
+  {
+    "pid": 52404,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3465730999887455
+  },
+  {
+    "pid": 60768,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\warning_free_baseline_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\warning_free_baseline_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3361596000031568
+  },
+  {
+    "pid": 41932,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.33372110000345856
+  },
+  {
+    "pid": 53092,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\warning_free_baseline_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\warning_free_baseline_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.34797940000134986
+  },
+  {
+    "pid": 14712,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3469307000050321
+  },
+  {
+    "pid": 36528,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_stack_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_stack_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3309536000015214
+  },
+  {
+    "pid": 27932,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.33851240000512917
+  },
+  {
+    "pid": 6148,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_stack\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_stack_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_stack_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.33979520000866614
+  },
+  {
+    "pid": 50372,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.351211000001058
+  },
+  {
+    "pid": 27760,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_vertical_r1"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_vertical_r1",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.33120649999182206
+  },
+  {
+    "pid": 56612,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3354067999898689
+  },
+  {
+    "pid": 16484,
+    "command": [
+      "C:\\Program Files\\dotnet\\dotnet.exe",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\source\\opt1_vertical\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_vertical_r2"
+    ],
+    "cwd": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_opt1_public_lf_run05\\restart\\opt1_vertical_r2",
+    "timeout_s": 60,
+    "timed_out": false,
+    "exit_code": 0,
+    "elapsed_s": 0.3339334000047529
+  }
+]

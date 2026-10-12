@@ -1,0 +1,62 @@
+{
+  "status": "pass",
+  "label": "Four-topic combined",
+  "final_source_external_manifest_matches": true,
+  "validation_summary_path": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_combined_run01\\qa\\main_validation_summary.json",
+  "summary_sha256": "ed0f6c3923109c6c2f5b6e62fb177beb4dfb1f90b9dbd9d0ad6353123a891565",
+  "source_manifest_path": "D:\\INU_Modeling_Work\\jobs\\20261012_231117_gral_nan_guard_opt1\\work\\main_combined_run01\\qa\\main_source_manifest.json",
+  "source_manifest_sha256": "13b13ad61eec8eddea7153a6ee9c2961245de4f9e1729026612d58fdf3f0e6bc",
+  "total_main_runs": 80,
+  "total_main_checks_passed": 1264,
+  "conditions": 18,
+  "baseline_candidate_pairs": 36,
+  "compared_payload_pairs": 380,
+  "single_worker_repeat_pairs": 36,
+  "actual_checkpoint_read_runs": 4,
+  "strict_builds": {
+    "warning_free_baseline": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "combined_candidate": {
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "by_variant": {
+    "warning_free_baseline": {
+      "main_runs": 40,
+      "main_checks_passed": 632,
+      "normal_main_runs": 36,
+      "restart_main_runs": 4,
+      "actual_checkpoint_read_runs": 2,
+      "concentration_payloads": 348,
+      "float_values_checked": 64600,
+      "max_main_elapsed_s": 0.5263568000082159,
+      "normal_rejected_state_reports": 0,
+      "normal_skipped_residual_reports": 0
+    },
+    "combined_candidate": {
+      "main_runs": 40,
+      "main_checks_passed": 632,
+      "normal_main_runs": 36,
+      "restart_main_runs": 4,
+      "actual_checkpoint_read_runs": 2,
+      "concentration_payloads": 348,
+      "float_values_checked": 64600,
+      "max_main_elapsed_s": 0.5185785000066971,
+      "normal_rejected_state_reports": 0,
+      "normal_skipped_residual_reports": 0
+    }
+  },
+  "all_owned_processes_exited_zero": true,
+  "limits": [
+    "Fixed-seed byte equality is required only for these controlled single-worker cases.",
+    "Hourly labels index 30-second situations; they do not assert hourly physical integration.",
+    "This balanced coverage is not a full factorial sensitivity design.",
+    "Terrain geometry and prescribed winds are wholly synthetic and not a GRAMM model validation.",
+    "No physical truth oracle or production-domain speedup claim.",
+    "Checkpoint tests require baseline/candidate resumed payload equality; continuous/resumed engine-state equality is not asserted.",
+    "Only the Main suite is counted here; worker-owned injected-NaN and optimization component checks are separate."
+  ]
+}
