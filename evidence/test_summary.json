@@ -1,0 +1,143 @@
+{
+  "status": "pass",
+  "candidate_strict_builds": 6,
+  "helper_strict_builds": 3,
+  "all_builds_zero_warnings_zero_errors": true,
+  "actual_project_runs": 28,
+  "concentration_payloads_identical_to_reference": 168,
+  "checkpoint_payloads_identical_to_reference": 28,
+  "per_run_checks": 252,
+  "ordinary_threshold_cases": 210000,
+  "ordinary_threshold_disagreements": 0,
+  "seed_helper_checks": 38,
+  "kernel_checks": 22,
+  "runtime_checks": 11,
+  "elapsed_s": 26.07191050000256,
+  "dotnet_sdk": "10.0.401",
+  "scope": "One fresh fixed-seed single-worker synthetic regression pass. No new clock-based spread analysis or production-domain accuracy claims.",
+  "runtime": "Microsoft.NETCore.App 10.0.12",
+  "platform": "Windows x64",
+  "python": "3.12.14",
+  "seed_draw_csv_sha256": "ab9835ba95aea0d3bd11ee064a190c3b0b8883a1cd50ed85a3db28acc3db8ff8",
+  "builds": {
+    "warning_free_baseline": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "seed_only": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "C1_safe_split_limit": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "C2_active_reference": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "C3_adaptive_budget": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "C1_standalone": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "kernel_fixture": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "seed_fixture": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    },
+    "runtime_fixture": {
+      "exit_code": 0,
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "runtime_planner": {
+    "one_worker": {
+      "configured_max_degree": 1,
+      "max_concurrent_rows": 1,
+      "visited_rows": 32,
+      "final_k": 55
+    },
+    "already_cancelled": {
+      "visited_rows": 0,
+      "elapsed_s": 8e-07,
+      "no_grid_index_read": true
+    },
+    "cancel_during_planning": {
+      "visited_rows": 3,
+      "max_concurrent_rows": 1,
+      "final_k": 10,
+      "elapsed_s": 0.0471535
+    },
+    "checks_passed": 11,
+    "scope": "Actual extracted PlanResidual with only test row-entry/exit witnesses. No production-source instrumentation."
+  },
+  "date": "2026-10-12",
+  "field": {
+    "domain_m": [
+      200,
+      200
+    ],
+    "horizontal_grid_cells": [
+      10,
+      10
+    ],
+    "sources": 2,
+    "source_groups": 2,
+    "situations": 3,
+    "seconds_per_situation": 30,
+    "configured_particles_per_situation": [
+      100,
+      1000,
+      3000
+    ],
+    "workers": 1,
+    "emission_factors": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "public_reproducer_self_test": {
+    "status": "pass",
+    "candidate_strict_builds": 6,
+    "helper_strict_builds": 3,
+    "all_builds_zero_warnings_zero_errors": true,
+    "actual_project_runs": 28,
+    "per_run_checks": 252,
+    "concentration_payloads_identical": 168,
+    "checkpoint_payloads_identical": 28,
+    "seed_helper_checks": 38,
+    "kernel_checks": 22,
+    "runtime_checks": 11,
+    "ordinary_threshold_cases": 210000,
+    "ordinary_threshold_disagreements": 0,
+    "elapsed_s": 23.246937000003527,
+    "scope": "Fixed-seed, single-worker synthetic regression against the recorded .NET 10.0.12 results. Differences on another runtime or platform need investigation; this is not a production-domain accuracy test."
+  },
+  "public_reproducer_check_only": "pass"
+}
