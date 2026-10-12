@@ -1,0 +1,86 @@
+{
+  "status": "pass",
+  "input_hashes": [
+    {
+      "name": "opt1_actual_cache_hits.json",
+      "sha256": "f6eb087bbaa3c9d5f0d52bbdfe6241a4c155debb03d9f5598df7951af2d8cb4e"
+    },
+    {
+      "name": "opt1_benchmark_summary.json",
+      "sha256": "243042b94cc49008b5fa183eaa36aef51cd50ded92016c2cbfc8575e2010ab83"
+    },
+    {
+      "name": "opt1_paired_benchmark_summary.json",
+      "sha256": "b1e3b4512098fdc254703669d7e8af23452c3159b8c83bb77d41727615a8efbc"
+    }
+  ],
+  "source_edits": 0,
+  "new_model_runs": 0,
+  "files": [
+    {
+      "path": "figures/opt1_stack_effect_summary.png",
+      "size": 182787,
+      "sha256": "1333c504d3209a9817ebce88397c42f06834123fccb8ffa97bfc4459d978e051"
+    },
+    {
+      "path": "figures/opt1_stack_effect_summary.svg",
+      "size": 9525,
+      "sha256": "b1f37ae5bce6ca653ceddc294edbe83c786484c7b32822d03b551dcbe51ead7c"
+    },
+    {
+      "path": "figures/opt1_vertical_effect_summary.png",
+      "size": 220723,
+      "sha256": "bd9673966cb996fefb614da638a1395f94b05f3859e25717516aee74ce73926c"
+    },
+    {
+      "path": "figures/opt1_vertical_effect_summary.svg",
+      "size": 12139,
+      "sha256": "52b39a6c986dc032e7cd318959570457c29ce9012f46f619d5d141faa6716cea"
+    }
+  ],
+  "figures": [
+    {
+      "name": "opt1_stack_effect_summary",
+      "pixels": [
+        2250,
+        1275
+      ],
+      "text_inside_canvas": true,
+      "outside_text": []
+    },
+    {
+      "name": "opt1_vertical_effect_summary",
+      "pixels": [
+        2250,
+        1425
+      ],
+      "text_inside_canvas": true,
+      "outside_text": []
+    }
+  ],
+  "derived_values": {
+    "calls": 889446,
+    "reused": 444724,
+    "original_searches": 444722,
+    "reuse_fraction": 0.5000011242953479,
+    "paired_elapsed_percent_range": [
+      63.0957766171814,
+      87.10536152672681
+    ],
+    "changed_slower_elapsed_percent_range": [
+      104.32591736492343,
+      128.13516500868468
+    ],
+    "changed_faster_exception_elapsed_percent": 95.1700301036905,
+    "ranges_are_confidence_intervals": false
+  },
+  "visual_review": {
+    "root": "pass",
+    "independent_reviewer": "opt1_audit",
+    "clipping_or_overlap": false,
+    "numeric_attribution": "pass",
+    "scope_labels": "pass"
+  },
+  "original_evidence_commit": "442b383534f477dd78ca5e6ba5114329632a82e4",
+  "png_reproduction_byte_identical": true
+}

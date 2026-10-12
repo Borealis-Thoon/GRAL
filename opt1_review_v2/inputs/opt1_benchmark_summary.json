@@ -1,0 +1,349 @@
+{
+  "status": "pass",
+  "candidate": "exact_finite_height",
+  "measured_conditions": 45,
+  "faster_or_equal_conditions": 16,
+  "slower_conditions": 29,
+  "ratios_by_nkk_and_lookups": [
+    {
+      "nkk": 1,
+      "lookups_per_particle": 8,
+      "same_height": 1.7350935404165198,
+      "same_layer": 0.858308395912145,
+      "large_jumps": 0.7804258885000246
+    },
+    {
+      "nkk": 1,
+      "lookups_per_particle": 64,
+      "same_height": 2.641742301709129,
+      "same_layer": 0.923734664231162,
+      "large_jumps": 0.8537080969571944
+    },
+    {
+      "nkk": 1,
+      "lookups_per_particle": 256,
+      "same_height": 2.429052912051858,
+      "same_layer": 0.9206270853668946,
+      "large_jumps": 0.855561339325645
+    },
+    {
+      "nkk": 7,
+      "lookups_per_particle": 8,
+      "same_height": 1.9587021453608107,
+      "same_layer": 0.8666591982453141,
+      "large_jumps": 0.896460797056102
+    },
+    {
+      "nkk": 7,
+      "lookups_per_particle": 64,
+      "same_height": 2.943890035748452,
+      "same_layer": 0.8919930962481972,
+      "large_jumps": 0.9224903485169154
+    },
+    {
+      "nkk": 7,
+      "lookups_per_particle": 256,
+      "same_height": 2.7269701862864797,
+      "same_layer": 0.8756661245055772,
+      "large_jumps": 0.9585345858997651
+    },
+    {
+      "nkk": 8,
+      "lookups_per_particle": 8,
+      "same_height": 1.968257205002719,
+      "same_layer": 0.8802186849063248,
+      "large_jumps": 0.9372356408182132
+    },
+    {
+      "nkk": 8,
+      "lookups_per_particle": 64,
+      "same_height": 2.9972308095099036,
+      "same_layer": 0.8906535642055013,
+      "large_jumps": 0.9424482794988649
+    },
+    {
+      "nkk": 8,
+      "lookups_per_particle": 256,
+      "same_height": 2.74938999394874,
+      "same_layer": 0.8824698974842522,
+      "large_jumps": 1.0507509548021274
+    },
+    {
+      "nkk": 16,
+      "lookups_per_particle": 8,
+      "same_height": 2.3165458278111277,
+      "same_layer": 0.9367551172757977,
+      "large_jumps": 0.9231009079282535
+    },
+    {
+      "nkk": 16,
+      "lookups_per_particle": 64,
+      "same_height": 3.3222727362185354,
+      "same_layer": 0.9177324883325154,
+      "large_jumps": 0.9558642102233005
+    },
+    {
+      "nkk": 16,
+      "lookups_per_particle": 256,
+      "same_height": 3.271196034038567,
+      "same_layer": 0.9477173438182612,
+      "large_jumps": 0.9254203068596827
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 8,
+      "same_height": 2.89199805751902,
+      "same_layer": 0.896569522883813,
+      "large_jumps": 0.9085576022366008
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 64,
+      "same_height": 5.28744846102215,
+      "same_layer": 0.9115468782055666,
+      "large_jumps": 0.8855024948592958
+    },
+    {
+      "nkk": 162,
+      "lookups_per_particle": 256,
+      "same_height": 5.407597220622672,
+      "same_layer": 0.884629434207322,
+      "large_jumps": 0.9302718909361146
+    }
+  ],
+  "worst_condition": {
+    "nkk": 1,
+    "lookups_per_particle": 8,
+    "workload": "large_jumps",
+    "particle_repetitions": 1048576,
+    "total_lookups": 8388608,
+    "baseline_ns_per_lookup": 1.5099048614501953,
+    "candidate_ns_per_lookup_including_per_particle_preparation": 1.9347190856933596,
+    "baseline_over_candidate": 0.7804258885000246,
+    "baseline_rounds_ms": [
+      13.083,
+      11.4445,
+      13.3808,
+      11.9455,
+      12.666,
+      12.1039,
+      12.6679
+    ],
+    "candidate_rounds_ms": [
+      13.9095,
+      16.2296,
+      16.4237,
+      14.8453,
+      16.3809,
+      15.153,
+      16.3447
+    ]
+  },
+  "best_condition": {
+    "nkk": 162,
+    "lookups_per_particle": 256,
+    "workload": "same_height",
+    "particle_repetitions": 32768,
+    "total_lookups": 8388608,
+    "baseline_ns_per_lookup": 3.3584237098693848,
+    "candidate_ns_per_lookup_including_per_particle_preparation": 0.6210565567016602,
+    "baseline_over_candidate": 5.407597220622672,
+    "baseline_rounds_ms": [
+      26.0645,
+      38.7264,
+      24.7531,
+      28.9816,
+      28.1725,
+      26.6075,
+      31.4983
+    ],
+    "candidate_rounds_ms": [
+      5.0684,
+      5.0966,
+      5.2269,
+      5.106,
+      5.8227,
+      6.8221,
+      5.2098
+    ]
+  },
+  "preparation": [
+    {
+      "nkk": 1,
+      "repetitions": 1048576,
+      "median_ns_per_preparation": 0.17499923706054688,
+      "rounds_ms": [
+        0.1988,
+        0.1836,
+        0.1834,
+        0.1895,
+        0.1835,
+        0.1835,
+        0.1835
+      ]
+    },
+    {
+      "nkk": 7,
+      "repetitions": 1048576,
+      "median_ns_per_preparation": 0.1773834228515625,
+      "rounds_ms": [
+        0.1861,
+        0.186,
+        0.186,
+        0.186,
+        0.186,
+        0.186,
+        0.1975
+      ]
+    },
+    {
+      "nkk": 8,
+      "repetitions": 1048576,
+      "median_ns_per_preparation": 0.17757415771484375,
+      "rounds_ms": [
+        0.1909,
+        0.1861,
+        0.1862,
+        0.1862,
+        0.186,
+        0.1896,
+        0.1842
+      ]
+    },
+    {
+      "nkk": 16,
+      "repetitions": 1048576,
+      "median_ns_per_preparation": 0.17824172973632812,
+      "rounds_ms": [
+        0.1903,
+        0.1879,
+        0.1869,
+        0.1899,
+        0.1869,
+        0.1869,
+        0.1868
+      ]
+    },
+    {
+      "nkk": 162,
+      "repetitions": 1048576,
+      "median_ns_per_preparation": 0.1800537109375,
+      "rounds_ms": [
+        0.2135,
+        0.2119,
+        0.1888,
+        0.1852,
+        0.1905,
+        0.1851,
+        0.1851
+      ]
+    }
+  ],
+  "production_entry_allocation": [
+    {
+      "ns": 1,
+      "repetitions": 4096,
+      "baseline_bytes_per_entry": 32,
+      "candidate_bytes_per_entry": 0,
+      "baseline_median_ns_per_entry": 44.82421875,
+      "candidate_median_ns_per_entry": 36.3037109375,
+      "baseline_rounds_ms": [
+        0.2141,
+        0.1788,
+        0.1796,
+        0.1961,
+        0.1773,
+        0.1838,
+        0.1836
+      ],
+      "candidate_rounds_ms": [
+        0.172,
+        0.4836,
+        0.1491,
+        0.1487,
+        0.1461,
+        0.1465,
+        0.1467
+      ]
+    },
+    {
+      "ns": 9,
+      "repetitions": 4096,
+      "baseline_bytes_per_entry": 64,
+      "candidate_bytes_per_entry": 0,
+      "baseline_median_ns_per_entry": 54.1748046875,
+      "candidate_median_ns_per_entry": 37.890625,
+      "baseline_rounds_ms": [
+        0.211,
+        0.4542,
+        0.2049,
+        0.2879,
+        0.2252,
+        0.1968,
+        0.2219
+      ],
+      "candidate_rounds_ms": [
+        0.1501,
+        0.1492,
+        0.1614,
+        0.1583,
+        0.1552,
+        0.1515,
+        0.1555
+      ]
+    },
+    {
+      "ns": 512,
+      "repetitions": 4096,
+      "baseline_bytes_per_entry": 2072,
+      "candidate_bytes_per_entry": 0,
+      "baseline_median_ns_per_entry": 557.470703125,
+      "candidate_median_ns_per_entry": 59.0576171875,
+      "baseline_rounds_ms": [
+        2.2834,
+        2.8051,
+        2.3305,
+        2.6553,
+        2.2287,
+        1.5287,
+        0.6223
+      ],
+      "candidate_rounds_ms": [
+        0.2424,
+        0.2419,
+        0.2411,
+        0.239,
+        0.243,
+        0.3154,
+        0.2382
+      ]
+    },
+    {
+      "ns": 513,
+      "repetitions": 4096,
+      "baseline_bytes_per_entry": 2080,
+      "candidate_bytes_per_entry": 2080,
+      "baseline_median_ns_per_entry": 113.0859375,
+      "candidate_median_ns_per_entry": 109.0576171875,
+      "baseline_rounds_ms": [
+        0.5791,
+        0.9977,
+        0.4632,
+        0.6147,
+        0.3947,
+        0.309,
+        0.463
+      ],
+      "candidate_rounds_ms": [
+        0.4132,
+        0.4635,
+        0.2787,
+        0.3457,
+        0.5728,
+        0.4467,
+        0.5608
+      ]
+    }
+  ],
+  "interpretation": "Per-particle preparation included. Reuse only for identical finite heights. Changed heights always run original BinarySearch plus cache bookkeeping, so speedup is workload-dependent. No whole-model speedup claimed. Standalone preparation-loop result is compiler-optimized and not additive to lookup timing. Stack allocation measured on initial out-of-domain removal path."
+}

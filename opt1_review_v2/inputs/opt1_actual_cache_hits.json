@@ -1,0 +1,79 @@
+{
+  "status": "pass",
+  "instrumented_main_runs": 4,
+  "total_main_runs": 8,
+  "payload_pairs_equal": 146,
+  "records": [
+    {
+      "run": "terrain_hot_n100_opt1_vertical_profile_r1",
+      "weather": 1,
+      "nkk": 39,
+      "calls": 20482,
+      "hits": 10241,
+      "hit_ratio": 0.5
+    },
+    {
+      "run": "terrain_hot_n100_opt1_vertical_profile_r2",
+      "weather": 1,
+      "nkk": 39,
+      "calls": 20482,
+      "hits": 10241,
+      "hit_ratio": 0.5
+    },
+    {
+      "run": "terrain_stable_building_n1000_opt1_vertical_profile_r1",
+      "weather": 1,
+      "nkk": 39,
+      "calls": 211062,
+      "hits": 105532,
+      "hit_ratio": 0.5000047379443008
+    },
+    {
+      "run": "terrain_stable_building_n1000_opt1_vertical_profile_r1",
+      "weather": 2,
+      "nkk": 39,
+      "calls": 2671,
+      "hits": 1334,
+      "hit_ratio": 0.49943841257955823
+    },
+    {
+      "run": "terrain_stable_building_n1000_opt1_vertical_profile_r1",
+      "weather": 3,
+      "nkk": 39,
+      "calls": 210508,
+      "hits": 105255,
+      "hit_ratio": 0.500004750413286
+    },
+    {
+      "run": "terrain_stable_building_n1000_opt1_vertical_profile_r2",
+      "weather": 1,
+      "nkk": 39,
+      "calls": 211062,
+      "hits": 105532,
+      "hit_ratio": 0.5000047379443008
+    },
+    {
+      "run": "terrain_stable_building_n1000_opt1_vertical_profile_r2",
+      "weather": 2,
+      "nkk": 39,
+      "calls": 2671,
+      "hits": 1334,
+      "hit_ratio": 0.49943841257955823
+    },
+    {
+      "run": "terrain_stable_building_n1000_opt1_vertical_profile_r2",
+      "weather": 3,
+      "nkk": 39,
+      "calls": 210508,
+      "hits": 105255,
+      "hit_ratio": 0.500004750413286
+    }
+  ],
+  "calls": 889446,
+  "hits": 444724,
+  "limits": [
+    "Test-only counters alter timing; no runtime speed claim.",
+    "These are two synthetic terrain projects, not a production workload distribution.",
+    "Cache hit fractions do not prove overall model speedup."
+  ]
+}
