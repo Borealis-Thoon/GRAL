@@ -1,0 +1,518 @@
+{
+  "source_heads": [
+    {
+      "pr": 59,
+      "head": "3cfbd25505c21034673d2c850c368e953d08ef7e",
+      "copied_files": 88,
+      "mismatches": []
+    },
+    {
+      "pr": 60,
+      "head": "a63176745a12189f8f30e5625cdfe207cae30e98",
+      "copied_files": 88,
+      "mismatches": []
+    },
+    {
+      "pr": 61,
+      "head": "ea82dfac6a862564f92e97a2a6564b2b698ec71d",
+      "copied_files": 88,
+      "mismatches": []
+    },
+    {
+      "pr": 62,
+      "head": "aa4d1be505297784c9c2f39e16c46830fc6f94fe",
+      "copied_files": 88,
+      "mismatches": []
+    },
+    {
+      "pr": 63,
+      "head": "57b9bef45a1e55b48e7872c8535ad58459bf8bde",
+      "copied_files": 88,
+      "mismatches": []
+    }
+  ],
+  "builds": [
+    {
+      "label": "build_pr59",
+      "exit_code": 0,
+      "elapsed_s": 2.237
+    },
+    {
+      "label": "build_pr60",
+      "exit_code": 0,
+      "elapsed_s": 1.609
+    },
+    {
+      "label": "build_pr61",
+      "exit_code": 0,
+      "elapsed_s": 1.568
+    },
+    {
+      "label": "build_pr62",
+      "exit_code": 0,
+      "elapsed_s": 1.534
+    },
+    {
+      "label": "build_pr63",
+      "exit_code": 0,
+      "elapsed_s": 1.511
+    },
+    {
+      "label": "build_reference_checks",
+      "exit_code": 0,
+      "elapsed_s": 0.958
+    },
+    {
+      "label": "build_seed_checks",
+      "exit_code": 0,
+      "elapsed_s": 0.95
+    }
+  ],
+  "components": [
+    {
+      "label": "checks_pr62",
+      "exit_code": 0,
+      "elapsed_s": 0.34,
+      "result": {
+        "reference_example": {
+          "nominal_reference": 25.999999675000005,
+          "active_reference": 0.9999999875000001,
+          "continuous_all_off": 25.999999675000005,
+          "restart_all_off": 25.999999675000005,
+          "old_continuous_all_off": 0.9999999875000001,
+          "old_restart_all_off": 25.999999675000005,
+          "residual_mass": 99.99999875,
+          "k10_old_continuous": 11,
+          "k10_new_all_off": 1
+        },
+        "status": "pass",
+        "checks_passed": 10,
+        "checks": [
+          {
+            "name": "one active source",
+            "pass": true
+          },
+          {
+            "name": "positive magnitude leaves policy unchanged",
+            "pass": true
+          },
+          {
+            "name": "all off uses nominal after active",
+            "pass": true
+          },
+          {
+            "name": "fresh restart and continuous references match",
+            "pass": true
+          },
+          {
+            "name": "all off repeated idempotently",
+            "pass": true
+          },
+          {
+            "name": "later all-off situation same nominal",
+            "pass": true
+          },
+          {
+            "name": "four source classes summed",
+            "pass": true
+          },
+          {
+            "name": "inactive deposition-only excluded",
+            "pass": true
+          },
+          {
+            "name": "no time series uses all nominal sources",
+            "pass": true
+          },
+          {
+            "name": "nonpositive factors inactive fallback",
+            "pass": true
+          }
+        ],
+        "scope": "Calls actual frozen GRAL DLL methods through reflection. Main restart is tested separately. Floating-point mass splitting still rounds."
+      }
+    },
+    {
+      "label": "checks_pr63",
+      "exit_code": 0,
+      "elapsed_s": 0.361,
+      "result": {
+        "reference_example": {
+          "nominal_reference": 25.999999675000005,
+          "active_reference": 0.9999999875000001,
+          "continuous_all_off": 25.999999675000005,
+          "restart_all_off": 25.999999675000005,
+          "old_continuous_all_off": 0.9999999875000001,
+          "old_restart_all_off": 25.999999675000005,
+          "residual_mass": 99.99999875,
+          "k10_old_continuous": 11,
+          "k10_new_all_off": 1
+        },
+        "boundary_sweep": {
+          "cases": 210000,
+          "mismatches": 0,
+          "old_product_disagreements": 21012,
+          "examples": [
+            {
+              "mass": 0.0395068203909151,
+              "reference": 0.000790136407818302,
+              "target": 5,
+              "new_count": 5,
+              "old_product_count": 6
+            },
+            {
+              "mass": 2.3462850330824426e-13,
+              "reference": 2.606983370091603e-15,
+              "target": 9,
+              "new_count": 9,
+              "old_product_count": 10
+            },
+            {
+              "mass": 1.8069552720641533e-05,
+              "reference": 1.5057960600534612e-07,
+              "target": 12,
+              "new_count": 12,
+              "old_product_count": 13
+            },
+            {
+              "mass": 1217161205.963342,
+              "reference": 8694008.614023872,
+              "target": 15,
+              "new_count": 15,
+              "old_product_count": 14
+            },
+            {
+              "mass": 385771459218.48065,
+              "reference": 1837006948.6594317,
+              "target": 22,
+              "new_count": 22,
+              "old_product_count": 21
+            },
+            {
+              "mass": 56936.602632590155,
+              "reference": 218.98693320226982,
+              "target": 27,
+              "new_count": 27,
+              "old_product_count": 26
+            },
+            {
+              "mass": 1539644257.0607386,
+              "reference": 5309118.127795651,
+              "target": 30,
+              "new_count": 30,
+              "old_product_count": 29
+            },
+            {
+              "mass": 185004155005073.34,
+              "reference": 544129867661.98047,
+              "target": 34,
+              "new_count": 34,
+              "old_product_count": 35
+            }
+          ]
+        },
+        "feasible_target": {
+          "entries": 100,
+          "budget": 200,
+          "initial_count": 1100,
+          "final_count": 200,
+          "final_k": 55,
+          "within_target": true
+        },
+        "entry_lower_bound": {
+          "entries": 300,
+          "budget": 200,
+          "initial_count": 300,
+          "final_count": 300,
+          "final_k": 113.90625,
+          "within_target": false
+        },
+        "six_pass_limit": {
+          "entries": 1000,
+          "budget": 1001,
+          "initial_count": 100999,
+          "final_count": 1167,
+          "final_k": 5982.616524791632,
+          "within_target": false
+        },
+        "long_total": 3000000000,
+        "mass_rounding": {
+          "concentration": 100,
+          "count": 11,
+          "reconstruction": 99.99999904632568,
+          "relative_error": -9.5367431640625e-09,
+          "subnormal_lost": true
+        },
+        "status": "pass",
+        "checks_passed": 62,
+        "checks": [
+          {
+            "name": "one active source",
+            "pass": true
+          },
+          {
+            "name": "positive magnitude leaves policy unchanged",
+            "pass": true
+          },
+          {
+            "name": "all off uses nominal after active",
+            "pass": true
+          },
+          {
+            "name": "fresh restart and continuous references match",
+            "pass": true
+          },
+          {
+            "name": "all off repeated idempotently",
+            "pass": true
+          },
+          {
+            "name": "later all-off situation same nominal",
+            "pass": true
+          },
+          {
+            "name": "four source classes summed",
+            "pass": true
+          },
+          {
+            "name": "inactive deposition-only excluded",
+            "pass": true
+          },
+          {
+            "name": "no time series uses all nominal sources",
+            "pass": true
+          },
+          {
+            "name": "nonpositive factors inactive fallback",
+            "pass": true
+          },
+          {
+            "name": "safe split 0",
+            "pass": true
+          },
+          {
+            "name": "safe split 1",
+            "pass": true
+          },
+          {
+            "name": "safe split 2",
+            "pass": true
+          },
+          {
+            "name": "safe split 3",
+            "pass": true
+          },
+          {
+            "name": "safe split 4",
+            "pass": true
+          },
+          {
+            "name": "safe split 5",
+            "pass": true
+          },
+          {
+            "name": "safe split 6",
+            "pass": true
+          },
+          {
+            "name": "safe split 7",
+            "pass": true
+          },
+          {
+            "name": "safe split 8",
+            "pass": true
+          },
+          {
+            "name": "safe split 9",
+            "pass": true
+          },
+          {
+            "name": "bounded invalid reference 0",
+            "pass": true
+          },
+          {
+            "name": "bounded invalid reference -1",
+            "pass": true
+          },
+          {
+            "name": "bounded invalid reference NaN",
+            "pass": true
+          },
+          {
+            "name": "bounded invalid reference ∞",
+            "pass": true
+          },
+          {
+            "name": "bounded K 10 mass 0",
+            "pass": true
+          },
+          {
+            "name": "bounded K 10 mass 1",
+            "pass": true
+          },
+          {
+            "name": "bounded K 10 mass 10",
+            "pass": true
+          },
+          {
+            "name": "bounded K 10 mass 1E+300",
+            "pass": true
+          },
+          {
+            "name": "bounded K 10 mass ∞",
+            "pass": true
+          },
+          {
+            "name": "bounded K 55 mass 0",
+            "pass": true
+          },
+          {
+            "name": "bounded K 55 mass 1",
+            "pass": true
+          },
+          {
+            "name": "bounded K 55 mass 10",
+            "pass": true
+          },
+          {
+            "name": "bounded K 55 mass 1E+300",
+            "pass": true
+          },
+          {
+            "name": "bounded K 55 mass ∞",
+            "pass": true
+          },
+          {
+            "name": "bounded K 1E+200 mass 0",
+            "pass": true
+          },
+          {
+            "name": "bounded K 1E+200 mass 1",
+            "pass": true
+          },
+          {
+            "name": "bounded K 1E+200 mass 10",
+            "pass": true
+          },
+          {
+            "name": "bounded K 1E+200 mass 1E+300",
+            "pass": true
+          },
+          {
+            "name": "bounded K 1E+200 mass ∞",
+            "pass": true
+          },
+          {
+            "name": "bounded K 1.7976931348623157E+308 mass 0",
+            "pass": true
+          },
+          {
+            "name": "bounded K 1.7976931348623157E+308 mass 1",
+            "pass": true
+          },
+          {
+            "name": "bounded K 1.7976931348623157E+308 mass 10",
+            "pass": true
+          },
+          {
+            "name": "bounded K 1.7976931348623157E+308 mass 1E+300",
+            "pass": true
+          },
+          {
+            "name": "bounded K 1.7976931348623157E+308 mass ∞",
+            "pass": true
+          },
+          {
+            "name": "bounded K ∞ mass 0",
+            "pass": true
+          },
+          {
+            "name": "bounded K ∞ mass 1",
+            "pass": true
+          },
+          {
+            "name": "bounded K ∞ mass 10",
+            "pass": true
+          },
+          {
+            "name": "bounded K ∞ mass 1E+300",
+            "pass": true
+          },
+          {
+            "name": "bounded K ∞ mass ∞",
+            "pass": true
+          },
+          {
+            "name": "K10 nested-floor boundary compatibility",
+            "pass": true
+          },
+          {
+            "name": "product denominator rounding reproduced",
+            "pass": true
+          },
+          {
+            "name": "feasible factor 55",
+            "pass": true
+          },
+          {
+            "name": "feasible final count200",
+            "pass": true
+          },
+          {
+            "name": "minimum one per eligible entry",
+            "pass": true
+          },
+          {
+            "name": "six finite adjustments",
+            "pass": true
+          },
+          {
+            "name": "six-pass target remains soft",
+            "pass": true
+          },
+          {
+            "name": "planner threshold excludes low entry",
+            "pass": true
+          },
+          {
+            "name": "total uses long above Int32",
+            "pass": true
+          },
+          {
+            "name": "two-worker planner same count policy",
+            "pass": true
+          },
+          {
+            "name": "pre-cancellation reads no grid or changes factor",
+            "pass": true
+          },
+          {
+            "name": "ordinary split float mass rounding bounded",
+            "pass": true
+          },
+          {
+            "name": "remaining subnormal underflow documented",
+            "pass": true
+          }
+        ],
+        "scope": "Calls actual frozen GRAL DLL methods through reflection. Main restart is tested separately. Floating-point mass splitting still rounds."
+      }
+    },
+    {
+      "label": "checks_pr60",
+      "exit_code": 0,
+      "elapsed_s": 0.439,
+      "result": {
+        "status": "pass",
+        "checks": 38,
+        "errors": [],
+        "engine_main_executed": false,
+        "concentration_simulation_run": false,
+        "helper": "compiled candidate A private ResidualSeeds via reflection",
+        "upstream": "exact fixed-seed expressions replayed with compiled upstream seed constructor"
+      }
+    }
+  ],
+  "engine_main_executed": false,
+  "status": "pass"
+}

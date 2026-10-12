@@ -1,0 +1,80 @@
+{
+  "upstream_repository": "https://github.com/GralDispersionModel/GRAL.git",
+  "fork_repository": "https://github.com/Borealis-Thoon/GRAL.git",
+  "baseline_commit": "5f3983090053188de6b505900d45343ee8fec434",
+  "source_heads": {
+    "69": {
+      "base": "5f3983090053188de6b505900d45343ee8fec434",
+      "head": "7c23fe92803a019c1535af7f02fcc6b2e940f2ee"
+    },
+    "68": {
+      "base": "5f3983090053188de6b505900d45343ee8fec434",
+      "head": "b4ffec5e2ab55d3ec3717ed37d04938837e00120"
+    },
+    "67": {
+      "base": "5f3983090053188de6b505900d45343ee8fec434",
+      "head": "5a333595fea7a7956956db20c712f32213b1a2e7"
+    },
+    "66": {
+      "base": "5f3983090053188de6b505900d45343ee8fec434",
+      "head": "47c8f8f84c2c3c855523459e189e731c8c42bd3a"
+    },
+    "65": {
+      "base": "5f3983090053188de6b505900d45343ee8fec434",
+      "head": "25e96a82e4535e7ca10c2ee3273a111c23025f58"
+    },
+    "64": {
+      "base": "5f3983090053188de6b505900d45343ee8fec434",
+      "head": "003b00e60ebe9f0c5acc7377ed155c3271b4d8c9"
+    },
+    "63": {
+      "base": "5f3983090053188de6b505900d45343ee8fec434",
+      "head": "57b9bef45a1e55b48e7872c8535ad58459bf8bde"
+    },
+    "62": {
+      "base": "5f3983090053188de6b505900d45343ee8fec434",
+      "head": "aa4d1be505297784c9c2f39e16c46830fc6f94fe"
+    },
+    "61": {
+      "base": "5f3983090053188de6b505900d45343ee8fec434",
+      "head": "ea82dfac6a862564f92e97a2a6564b2b698ec71d"
+    },
+    "60": {
+      "base": "5f3983090053188de6b505900d45343ee8fec434",
+      "head": "a63176745a12189f8f30e5625cdfe207cae30e98"
+    },
+    "59": {
+      "base": "5f3983090053188de6b505900d45343ee8fec434",
+      "head": "3cfbd25505c21034673d2c850c368e953d08ef7e"
+    }
+  },
+  "comparison": {
+    "reference": "pr59_65_reference",
+    "candidate": "pr59_69_combined"
+  },
+  "integration_source_manifest": "integration/source_manifest.json",
+  "final_record": "qa/integration_final.json",
+  "path_redaction": {
+    "${REVIEW_ROOT}": "Private local review workspace; published relative files are authoritative here.",
+    "${PRIOR_JOBS}": "Private parent directory of earlier recorded jobs.",
+    "${USER_HOME}": "Private user home directory."
+  },
+  "not_distributed": [
+    "raw model output",
+    "concentration/checkpoint binaries",
+    "DLLs",
+    "real research inputs"
+  ],
+  "patches": {
+    "pr59_65_reference": {
+      "path": "integration/patches/pr59_65_reference.patch",
+      "sha256": "84690debc95299fc808cbea1b0543e4cb21bbdbcd1ed61284e8c1075d899d219",
+      "bytes": 22022
+    },
+    "pr59_69_combined": {
+      "path": "integration/patches/pr59_69_combined.patch",
+      "sha256": "a63dd83bdf0cdd5d6babe78ec415b21d3c38ea9cb4987bd09237d5931f92996e",
+      "bytes": 44483
+    }
+  }
+}

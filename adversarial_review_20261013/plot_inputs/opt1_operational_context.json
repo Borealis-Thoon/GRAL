@@ -1,0 +1,56 @@
+{
+  "scope": "Existing application runs, full OPT1 engine plus launcher versus the preceding patched engine plus launcher; not an isolated test of PR #68 or #69.",
+  "conditions": {
+    "weather_situations": 36,
+    "new_particles_per_second": 8000,
+    "timing_pairs": 4,
+    "matching": "Same physical machine and same seed within each timing pair.",
+    "concentration_pairs": 6
+  },
+  "timing": [
+    {
+      "pair": "A",
+      "prior_time_normalized": 100.0,
+      "optimized_time_normalized": 55.00038768380927,
+      "speedup": 1.81816900227846,
+      "time_saved_percent": 44.99961231619073
+    },
+    {
+      "pair": "B",
+      "prior_time_normalized": 100.0,
+      "optimized_time_normalized": 57.14977797812424,
+      "speedup": 1.7497880750871497,
+      "time_saved_percent": 42.85022202187576
+    },
+    {
+      "pair": "C",
+      "prior_time_normalized": 100.0,
+      "optimized_time_normalized": 58.94833432181104,
+      "speedup": 1.696400774516876,
+      "time_saved_percent": 41.05166567818897
+    },
+    {
+      "pair": "D",
+      "prior_time_normalized": 100.0,
+      "optimized_time_normalized": 56.77064067229693,
+      "speedup": 1.7614738677557014,
+      "time_saved_percent": 43.22935932770308
+    }
+  ],
+  "concentration": {
+    "normalized_absolute_difference_percent_range": [
+      5.789391242119738e-05,
+      0.0003064781351412
+    ],
+    "hourly_top_one_percent_jaccard_min": 1.0,
+    "period_peak_location_same_fraction_min": 1.0,
+    "metric": "Area-weighted absolute concentration difference summed over the assessed land cells and times, divided by the reference concentration sum, in percent."
+  },
+  "provenance": {
+    "source_file": "engineering_summary.json",
+    "sha256": "311f615f795c2ead88351bc03ea2c5d2b183fcea9109263f3b33290ee512c5cf",
+    "timing_pointer": "/speed/factors filtered to opt1_ref containing (same machine)",
+    "concentration_pointer": "/q08_equivalence"
+  },
+  "attribution": "The full package includes optimizations absent from the current two PRs, including per-worker concentration buffering. Current #69 also omits the historical hinted-search algorithm. Historical NP8 combined stack storage and slice changes; its measured single-thread whole-model effect was within timing noise. These package results cannot be assigned to either PR."
+}

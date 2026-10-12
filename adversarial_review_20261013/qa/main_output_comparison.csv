@@ -1,0 +1,13 @@
+case,variant,repeat,actual_particles,payloads,payloads_equal,changed_payloads,max_absolute_concentration_difference,relative_l1
+point_hot_n1000_10m,pr59_69_combined,1,1000,18,True,0,0,0
+point_hot_n1000_10m,pr59_69_combined,2,1000,18,True,0,0,0
+mixed_transient_n100_40m,pr59_69_combined,1,100,7,True,0,0,0
+mixed_transient_n100_40m,pr59_69_combined,2,100,7,True,0,0,0
+mixed_transient_n1000_20m,pr59_69_combined,1,1000,7,True,0,0,0
+mixed_transient_n1000_20m,pr59_69_combined,2,1000,7,True,0,0,0
+mixed_transient_n3000_10m,pr59_69_combined,1,3000,7,True,0,0,0
+mixed_transient_n3000_10m,pr59_69_combined,2,3000,7,True,0,0,0
+mixed_deposition_receptors,pr59_69_combined,1,1000,6,True,0,0,0
+mixed_deposition_receptors,pr59_69_combined,2,1000,6,True,0,0,0
+terrain_stable_building_n1000,pr59_69_combined,1,1000,55,True,0,0,0
+terrain_stable_building_n1000,pr59_69_combined,2,1000,55,True,0,0,0

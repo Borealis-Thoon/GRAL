@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "figures": 5,
+  "formats": [
+    "png",
+    "svg"
+  ],
+  "checks": [
+    "Root visual inspection of all five figures.",
+    "Independent review of three current-PR figures and the historical precision figure.",
+    "Values checked against recorded JSON inputs.",
+    "Historical and isolated-PR effects labeled separately."
+  ],
+  "physical_accuracy_claim": false,
+  "whole_model_speedup_attributed_to_current_opt1_prs": false
+}

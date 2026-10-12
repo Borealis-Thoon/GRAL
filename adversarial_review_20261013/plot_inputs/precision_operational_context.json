@@ -1,0 +1,75 @@
+{
+  "metric": "For each situation, select whole-domain cells at or above the 99th percentile of positive concentrations in that configuration's 8k fresh-emission field. Divide the 30k concentration sum by the 8k sum over those same selected cells.",
+  "minimum_is_over": "six situation-wise ratios; minimum occurs in different situations for stock and patched",
+  "scope": {
+    "situations": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "period": "six nighttime situations",
+    "slice_height_m": 2,
+    "source_groups": 48,
+    "weather_fields": "h:00",
+    "particle_rates_per_second": [
+      8000,
+      30000
+    ],
+    "component": "fresh-emission concentration",
+    "selection": "each configuration uses its own 8k hotspot sets"
+  },
+  "stock_ratios": [
+    0.6927590502967385,
+    0.729163301057602,
+    0.6616492500157659,
+    0.5924170343446646,
+    0.7994940823150521,
+    0.9463176272813887
+  ],
+  "patched_ratios": [
+    1.001893962099215,
+    1.0009139482030447,
+    0.9995090822769757,
+    0.9991456876056485,
+    0.9980956261238031,
+    1.0010833148306115
+  ],
+  "stock_min": 0.5924170343446646,
+  "patched_min": 0.9980956261238031,
+  "attribution": "Historical F+S+late-NaNGuard bundle; motivation and convergence evidence, not a measured effect size for current PR #64.",
+  "code_differences": "R7b uses optional SourceGroupBuffer<double>, SyncRoot locking and adds nonzero buffered values to the float field before Clear(). Current #64 uses double-array leaves and overwrites each float cell from its double accumulator before resetting. Both accumulate contributions from both particle loops in double precision.",
+  "do_not_claim": [
+    "Absolute concentration accuracy was validated.",
+    "The historical six-situation effect size was reproduced on current PR #64.",
+    "All numbers are from an F-only run.",
+    "The stock and patched hotspot sets are identical."
+  ],
+  "source_provenance": [
+    {
+      "source_file": "b5_b7_cap_orig_f.json",
+      "sha256": "d2a96e6b6859ff76806cd038e722ac089bf0123302a4d67cddad43a3f85215e3",
+      "json_key": "B7.F30/F08.top1pct_domain_by_hour; B7.G30/G08 (R7 stock).top1pct_domain_by_hour"
+    },
+    {
+      "source_file": "b5_b7.py",
+      "sha256": "74e98eb7148d47ef1fc8863764163c55e3dbcfc9e074941c0c4464930c5ce510",
+      "lines": [
+        360,
+        397
+      ]
+    },
+    {
+      "source_file": "verify_b5_b7_cap_orig_f.json",
+      "sha256": "8da22561f42599adc85fd2b90e63a423fbabe5d4e3f2c6b077a6975e53dd69bc",
+      "json_key": "B7.F30/F08; B7.G30/G08"
+    },
+    {
+      "source_file": "b1_b14_integrity_cost_b1.json",
+      "sha256": "b77752f73ae452ca853f6a2f71e3736c304cd06f05f3a01fd5f95d858fdde6ad",
+      "json_key": "cases[tag=F08_h00_6 or F30_h00_6]"
+    }
+  ]
+}

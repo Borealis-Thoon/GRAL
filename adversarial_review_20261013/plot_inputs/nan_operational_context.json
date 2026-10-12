@@ -1,0 +1,59 @@
+{
+  "scope": "Historical application with a late guard before concentration accumulation, not current PR #66 or #67.",
+  "conditions": {
+    "situations": 6,
+    "particles_per_second": 2000,
+    "workers": 8
+  },
+  "per_situation": [
+    {
+      "situation": 1,
+      "removed": 2
+    },
+    {
+      "situation": 2,
+      "removed": 1
+    },
+    {
+      "situation": 3,
+      "removed": 2
+    },
+    {
+      "situation": 4,
+      "removed": 2
+    },
+    {
+      "situation": 5,
+      "removed": 2
+    },
+    {
+      "situation": 6,
+      "removed": 1
+    }
+  ],
+  "total_removed": 10,
+  "qualification": "The paired control also had no NaN fields in this small test; removal counts demonstrate that the guard was exercised, not that these ten removals prevented ten contaminated cells.",
+  "source_provenance": [
+    {
+      "source_file": "stdout.log",
+      "sha256": "307f8b211d7f217812efc92192128934acb04e4b087dc1b824537591bb5f6c5a",
+      "lines": [
+        161,
+        185,
+        209,
+        233,
+        257,
+        281
+      ]
+    },
+    {
+      "source_file": "test.json",
+      "sha256": "e3ea8a662bc9015c97a0e20bcd3f074ab95e7acf2ba732a7134d43689dab0100"
+    },
+    {
+      "source_file": "t1_compare.json",
+      "sha256": "d50842ef2fa1cee0a2c568d80ad7e5b1fcc9d3eb2c2de1815a1c6846ebcc4d0d",
+      "json_key": "T1d_r7b_alloff|T1g_r7b_N"
+    }
+  ]
+}

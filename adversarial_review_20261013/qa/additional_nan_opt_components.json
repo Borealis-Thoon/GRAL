@@ -1,0 +1,44 @@
+{
+  "status": "pass",
+  "checks": 11373,
+  "groups": {
+    "state_parallel_return": 8192,
+    "state_parallel_count": 1,
+    "storage_parallel_valid_sum": 2,
+    "storage_parallel_rejected_count": 2,
+    "storage_overflow_race_preserves_one": 2,
+    "storage_overflow_race_count": 2,
+    "prepolluted_storage_unchanged": 6,
+    "prepolluted_storage_count": 6,
+    "reflected_storage_noop": 2,
+    "independent_cache_parallel_sequences": 3024,
+    "default_cache_search": 126,
+    "same_height_grid_replacement": 1,
+    "count_change_cache_reset": 1,
+    "stack_actual_entry_boundary": 6
+  },
+  "maximum_parallel_workers": 8,
+  "scope": "Additional actual-DLL component checks only; no Main fault injection, speed measurement, negative-dimension contract or full NS=512/513 tracking claim.",
+  "dlls": [
+    {
+      "path": "${PRIOR_JOBS}/20261012_231117_gral_nan_guard_opt1\\source\\nan_guard_state\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "sha256": "dd424f24fc9a7c530557182779c045a6b2d8073d29a4462afebb99335dd01c8f"
+    },
+    {
+      "path": "${PRIOR_JOBS}/20261012_231117_gral_nan_guard_opt1\\source\\nan_guard_storage\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "sha256": "36312d64ddcec9ffeccef3064c2bd9a4c796c32c65aeaecedc9ae4fe2a97cbfa"
+    },
+    {
+      "path": "${PRIOR_JOBS}/20261012_231117_gral_nan_guard_opt1\\tests\\opt1\\stack_build\\Gral.dll",
+      "sha256": "a25a24f3d64b86db27ee557f9dea8b4dc2ad085f112db997fa4af95ce88738f5"
+    },
+    {
+      "path": "${PRIOR_JOBS}/20261012_231117_gral_nan_guard_opt1\\tests\\opt1\\vertical_build\\Gral.dll",
+      "sha256": "82de9490ea5e96bcf6e906e739eaa5a248eb54def0d39a2b806df3daddceb565"
+    },
+    {
+      "path": "${PRIOR_JOBS}/20261012_231117_gral_nan_guard_opt1\\source\\warning_free_baseline\\src\\bin\\Release\\net10.0\\GRAL.dll",
+      "sha256": "bce79353b3ccb56131a2512e660f6c9dab3b501abfd70d7194e3852877da7b5b"
+    }
+  ]
+}

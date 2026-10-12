@@ -1,0 +1,58 @@
+{
+  "status": "pass",
+  "history": [
+    "integration_apply.json",
+    "integration_resolution.json"
+  ],
+  "history_note": "Historical conflict records are retained. This record supersedes their pending resolution status.",
+  "resolved_conflicts": [
+    {
+      "file": "src/Zeitschleife_nonsteadystate.cs",
+      "rule": "Reject nonfinite mass before ResidualSplitCount(masse)."
+    },
+    {
+      "file": "src/Program.cs",
+      "rule": "Keep both independent exchange-and-report blocks."
+    }
+  ],
+  "reference_topics": [
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65
+  ],
+  "candidate_topics": [
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69
+  ],
+  "source_manifest": "integration_source_manifest.json",
+  "main_runs": 32,
+  "main_checks": 536,
+  "compared_payload_pairs": 200,
+  "checkpoint_reads": 4,
+  "strict_builds": {
+    "pr59_65_reference": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "pr59_69_combined": {
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "elapsed_s": 14.576188699997147,
+  "source_branch_changes": 0,
+  "scope": "Controlled fixed-seed one-worker synthetic conditions; not a physical accuracy or timing comparison."
+}
