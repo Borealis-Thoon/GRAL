@@ -1,0 +1,5528 @@
+{
+  "status": "pass",
+  "source_files_per_variant": 85,
+  "strict_builds": {
+    "warning_free_baseline": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "patchS_minimal": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "selection_fixture": {
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "conditions": 19,
+  "main_runs": 76,
+  "main_checks_passed": 916,
+  "single_worker_repeat_pairs": 38,
+  "baseline_candidate_pairs": 38,
+  "compared_payload_pairs": 162,
+  "concentration_payloads": 232,
+  "checkpoint_payloads": 4,
+  "emission_schedule_verified_runs": 4,
+  "float_values_checked": 52800,
+  "helper_checks_passed": 991352,
+  "helper_searches": 743036,
+  "particle_state_pairs": 24,
+  "particle_state_arrays_per_pair": 10,
+  "elapsed_s": 29.410427800001344,
+  "conditions_detail": [
+    {
+      "id": "point_n100",
+      "kind": "point",
+      "budget": 100,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "point": 2
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "point_n1000",
+      "kind": "point",
+      "budget": 1000,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "point": 2
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "point_n3000",
+      "kind": "point",
+      "budget": 3000,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "point": 2
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "portal_n100",
+      "kind": "portal",
+      "budget": 100,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "portal": 2
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "portal_n1000",
+      "kind": "portal",
+      "budget": 1000,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "portal": 2
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "portal_n3000",
+      "kind": "portal",
+      "budget": 3000,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "portal": 2
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "line_n100",
+      "kind": "line",
+      "budget": 100,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "line": 2
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "line_n1000",
+      "kind": "line",
+      "budget": 1000,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "line": 2
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "line_n3000",
+      "kind": "line",
+      "budget": 3000,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "line": 2
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "area_n100",
+      "kind": "area",
+      "budget": 100,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "area": 2
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "area_n1000",
+      "kind": "area",
+      "budget": 1000,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "area": 2
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "area_n3000",
+      "kind": "area",
+      "budget": 3000,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "area": 2
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "mixed_n100",
+      "kind": "mixed",
+      "budget": 100,
+      "mode": "stationary",
+      "sources_per_kind": 1,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "mixed_n1000",
+      "kind": "mixed",
+      "budget": 1000,
+      "mode": "stationary",
+      "sources_per_kind": 1,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "mixed_n3000",
+      "kind": "mixed",
+      "budget": 3000,
+      "mode": "stationary",
+      "sources_per_kind": 1,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "mixed_transient_schedule",
+      "kind": "mixed",
+      "budget": 1000,
+      "mode": "transient",
+      "sources_per_kind": 2,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          9,
+          2.5,
+          2
+        ],
+        [
+          18,
+          0.5,
+          6
+        ],
+        [
+          27,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "many_point_n3000",
+      "kind": "point",
+      "budget": 3000,
+      "mode": "stationary",
+      "sources_per_kind": 40,
+      "slices": 1,
+      "receptors": false,
+      "deposition": false,
+      "odour": false,
+      "weather": [
+        [
+          18,
+          0.5,
+          6
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "point": 40
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "mixed_deposition_receptors",
+      "kind": "mixed",
+      "budget": 1000,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "slices": 1,
+      "receptors": true,
+      "deposition": true,
+      "odour": false,
+      "weather": [
+        [
+          18,
+          2.5,
+          2
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "fixed_seed": true
+    },
+    {
+      "id": "mixed_odour_multislice",
+      "kind": "mixed",
+      "budget": 1000,
+      "mode": "stationary",
+      "sources_per_kind": 2,
+      "slices": 9,
+      "receptors": false,
+      "deposition": false,
+      "odour": true,
+      "weather": [
+        [
+          27,
+          1,
+          4
+        ]
+      ],
+      "domain_m": [
+        0,
+        200,
+        0,
+        200
+      ],
+      "resolution_m": 20,
+      "situation_duration_s": 30,
+      "workers": 1,
+      "source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "fixed_seed": true
+    }
+  ],
+  "comparisons": [
+    {
+      "case": "point_n100",
+      "repeat": 1,
+      "actual_particles": 100,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "point_n100",
+      "repeat": 2,
+      "actual_particles": 100,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "point_n1000",
+      "repeat": 1,
+      "actual_particles": 1000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "point_n1000",
+      "repeat": 2,
+      "actual_particles": 1000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "point_n3000",
+      "repeat": 1,
+      "actual_particles": 3000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "point_n3000",
+      "repeat": 2,
+      "actual_particles": 3000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "portal_n100",
+      "repeat": 1,
+      "actual_particles": 100,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "portal_n100",
+      "repeat": 2,
+      "actual_particles": 100,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "portal_n1000",
+      "repeat": 1,
+      "actual_particles": 1000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "portal_n1000",
+      "repeat": 2,
+      "actual_particles": 1000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "portal_n3000",
+      "repeat": 1,
+      "actual_particles": 3000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "portal_n3000",
+      "repeat": 2,
+      "actual_particles": 3000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "line_n100",
+      "repeat": 1,
+      "actual_particles": 100,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "line_n100",
+      "repeat": 2,
+      "actual_particles": 100,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "line_n1000",
+      "repeat": 1,
+      "actual_particles": 1000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "line_n1000",
+      "repeat": 2,
+      "actual_particles": 1000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "line_n3000",
+      "repeat": 1,
+      "actual_particles": 3000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "line_n3000",
+      "repeat": 2,
+      "actual_particles": 3000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "area_n100",
+      "repeat": 1,
+      "actual_particles": 100,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "area_n100",
+      "repeat": 2,
+      "actual_particles": 100,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "area_n1000",
+      "repeat": 1,
+      "actual_particles": 1000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "area_n1000",
+      "repeat": 2,
+      "actual_particles": 1000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "area_n3000",
+      "repeat": 1,
+      "actual_particles": 3000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "area_n3000",
+      "repeat": 2,
+      "actual_particles": 3000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "mixed_n100",
+      "repeat": 1,
+      "actual_particles": 100,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "mixed_n100",
+      "repeat": 2,
+      "actual_particles": 100,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "mixed_n1000",
+      "repeat": 1,
+      "actual_particles": 1000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "mixed_n1000",
+      "repeat": 2,
+      "actual_particles": 1000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "mixed_n3000",
+      "repeat": 1,
+      "actual_particles": 3000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "mixed_n3000",
+      "repeat": 2,
+      "actual_particles": 3000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "mixed_transient_schedule",
+      "repeat": 1,
+      "actual_particles": 1000,
+      "payloads": 7,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "mixed_transient_schedule",
+      "repeat": 2,
+      "actual_particles": 1000,
+      "payloads": 7,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "many_point_n3000",
+      "repeat": 1,
+      "actual_particles": 3000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "many_point_n3000",
+      "repeat": 2,
+      "actual_particles": 3000,
+      "payloads": 2,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "mixed_deposition_receptors",
+      "repeat": 1,
+      "actual_particles": 1000,
+      "payloads": 6,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "mixed_deposition_receptors",
+      "repeat": 2,
+      "actual_particles": 1000,
+      "payloads": 6,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "mixed_odour_multislice",
+      "repeat": 1,
+      "actual_particles": 1000,
+      "payloads": 36,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    },
+    {
+      "case": "mixed_odour_multislice",
+      "repeat": 2,
+      "actual_particles": 1000,
+      "payloads": 36,
+      "payloads_equal": true,
+      "changed_payloads": 0,
+      "max_absolute_concentration_difference": 0,
+      "relative_l1": 0
+    }
+  ],
+  "repeat_results": [
+    {
+      "case": "point_n100",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "point_n100",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "point_n1000",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "point_n1000",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "point_n3000",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "point_n3000",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "portal_n100",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "portal_n100",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "portal_n1000",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "portal_n1000",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "portal_n3000",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "portal_n3000",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "line_n100",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "line_n100",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "line_n1000",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "line_n1000",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "line_n3000",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "line_n3000",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "area_n100",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "area_n100",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "area_n1000",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "area_n1000",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "area_n3000",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "area_n3000",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "mixed_n100",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "mixed_n100",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "mixed_n1000",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "mixed_n1000",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "mixed_n3000",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "mixed_n3000",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "mixed_transient_schedule",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 7
+    },
+    {
+      "case": "mixed_transient_schedule",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 7
+    },
+    {
+      "case": "many_point_n3000",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "many_point_n3000",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 2
+    },
+    {
+      "case": "mixed_deposition_receptors",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 6
+    },
+    {
+      "case": "mixed_deposition_receptors",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 6
+    },
+    {
+      "case": "mixed_odour_multislice",
+      "variant": "warning_free_baseline",
+      "payloads_equal": true,
+      "payloads": 36
+    },
+    {
+      "case": "mixed_odour_multislice",
+      "variant": "patchS_minimal",
+      "payloads_equal": true,
+      "payloads": 36
+    }
+  ],
+  "runs": [
+    {
+      "run_id": "point_n100_warning_free_baseline_r1",
+      "case": "point_n100",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.2761954000015976,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "2ed16d4a510c3025565e8c1560c0f415de4be52dbd9ab0375c8f3ea1d5ac94fa",
+        "00001.grz:00001-102.con": "0ba270570a65b308588517834591c5bb1bd797939454ee2d125f11b5355dd378"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "point_n100_warning_free_baseline_r2",
+      "case": "point_n100",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.27578209999774117,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "2ed16d4a510c3025565e8c1560c0f415de4be52dbd9ab0375c8f3ea1d5ac94fa",
+        "00001.grz:00001-102.con": "0ba270570a65b308588517834591c5bb1bd797939454ee2d125f11b5355dd378"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "point_n100_patchS_minimal_r1",
+      "case": "point_n100",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.2725285999913467,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "2ed16d4a510c3025565e8c1560c0f415de4be52dbd9ab0375c8f3ea1d5ac94fa",
+        "00001.grz:00001-102.con": "0ba270570a65b308588517834591c5bb1bd797939454ee2d125f11b5355dd378"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "point_n100_patchS_minimal_r2",
+      "case": "point_n100",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.2701828999997815,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "2ed16d4a510c3025565e8c1560c0f415de4be52dbd9ab0375c8f3ea1d5ac94fa",
+        "00001.grz:00001-102.con": "0ba270570a65b308588517834591c5bb1bd797939454ee2d125f11b5355dd378"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "point_n1000_warning_free_baseline_r1",
+      "case": "point_n1000",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.29429210000671446,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "bba0d2029b9ffbc391c1b44000f0a813821f52359871d3e1b18759c210d89030",
+        "00001.grz:00001-102.con": "4a616e846c097d93cc1c6b09da80daa4399b058551d07b37e13147e0fd164240"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "point_n1000_warning_free_baseline_r2",
+      "case": "point_n1000",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.29630180000094697,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "bba0d2029b9ffbc391c1b44000f0a813821f52359871d3e1b18759c210d89030",
+        "00001.grz:00001-102.con": "4a616e846c097d93cc1c6b09da80daa4399b058551d07b37e13147e0fd164240"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "point_n1000_patchS_minimal_r1",
+      "case": "point_n1000",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.28495180000027176,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "bba0d2029b9ffbc391c1b44000f0a813821f52359871d3e1b18759c210d89030",
+        "00001.grz:00001-102.con": "4a616e846c097d93cc1c6b09da80daa4399b058551d07b37e13147e0fd164240"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "point_n1000_patchS_minimal_r2",
+      "case": "point_n1000",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.2920239999948535,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "bba0d2029b9ffbc391c1b44000f0a813821f52359871d3e1b18759c210d89030",
+        "00001.grz:00001-102.con": "4a616e846c097d93cc1c6b09da80daa4399b058551d07b37e13147e0fd164240"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "point_n3000_warning_free_baseline_r1",
+      "case": "point_n3000",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.31939869999769144,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "82d1e1f025a84f3e0606e7b6949229d4065486aa191738bf327a91183d846ca5",
+        "00001.grz:00001-102.con": "e88a5a3bc165e754bb7c994330b0277f8b7aeb830ab3a5a88dc054eaf1a0b5fd"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "point_n3000_warning_free_baseline_r2",
+      "case": "point_n3000",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.3223812999931397,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "82d1e1f025a84f3e0606e7b6949229d4065486aa191738bf327a91183d846ca5",
+        "00001.grz:00001-102.con": "e88a5a3bc165e754bb7c994330b0277f8b7aeb830ab3a5a88dc054eaf1a0b5fd"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "point_n3000_patchS_minimal_r1",
+      "case": "point_n3000",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.32507690000056755,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "82d1e1f025a84f3e0606e7b6949229d4065486aa191738bf327a91183d846ca5",
+        "00001.grz:00001-102.con": "e88a5a3bc165e754bb7c994330b0277f8b7aeb830ab3a5a88dc054eaf1a0b5fd"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "point_n3000_patchS_minimal_r2",
+      "case": "point_n3000",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.32210409999242984,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "82d1e1f025a84f3e0606e7b6949229d4065486aa191738bf327a91183d846ca5",
+        "00001.grz:00001-102.con": "e88a5a3bc165e754bb7c994330b0277f8b7aeb830ab3a5a88dc054eaf1a0b5fd"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "portal_n100_warning_free_baseline_r1",
+      "case": "portal_n100",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.26884879999852274,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "portal": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 2,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "7978eaf1da3a6cac5a9959c4c9415c6ddeca97cd9f727666ac1b6dcdee1ba56a",
+        "00001.grz:00001-102.con": "ec3cd93ae7e754dcf8bb0908417e7f960c5719f2562560e56863689027848028"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "portal_n100_warning_free_baseline_r2",
+      "case": "portal_n100",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.28546160001133103,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "portal": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 2,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "7978eaf1da3a6cac5a9959c4c9415c6ddeca97cd9f727666ac1b6dcdee1ba56a",
+        "00001.grz:00001-102.con": "ec3cd93ae7e754dcf8bb0908417e7f960c5719f2562560e56863689027848028"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "portal_n100_patchS_minimal_r1",
+      "case": "portal_n100",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.2763180000038119,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "portal": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 2,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "7978eaf1da3a6cac5a9959c4c9415c6ddeca97cd9f727666ac1b6dcdee1ba56a",
+        "00001.grz:00001-102.con": "ec3cd93ae7e754dcf8bb0908417e7f960c5719f2562560e56863689027848028"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "portal_n100_patchS_minimal_r2",
+      "case": "portal_n100",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.2759941999975126,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "portal": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 2,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "7978eaf1da3a6cac5a9959c4c9415c6ddeca97cd9f727666ac1b6dcdee1ba56a",
+        "00001.grz:00001-102.con": "ec3cd93ae7e754dcf8bb0908417e7f960c5719f2562560e56863689027848028"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "portal_n1000_warning_free_baseline_r1",
+      "case": "portal_n1000",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.2868026999931317,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "portal": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 2,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "951f99bf2bfbc854b24c81d07a98d47242486f7722e263383e03418372ef5428",
+        "00001.grz:00001-102.con": "7214a9c4b00ad985d529302db6250996db23b7822d62a3c3dc96e77ef193bc48"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "portal_n1000_warning_free_baseline_r2",
+      "case": "portal_n1000",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.29484980000415817,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "portal": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 2,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "951f99bf2bfbc854b24c81d07a98d47242486f7722e263383e03418372ef5428",
+        "00001.grz:00001-102.con": "7214a9c4b00ad985d529302db6250996db23b7822d62a3c3dc96e77ef193bc48"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "portal_n1000_patchS_minimal_r1",
+      "case": "portal_n1000",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.2927473000017926,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "portal": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 2,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "951f99bf2bfbc854b24c81d07a98d47242486f7722e263383e03418372ef5428",
+        "00001.grz:00001-102.con": "7214a9c4b00ad985d529302db6250996db23b7822d62a3c3dc96e77ef193bc48"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "portal_n1000_patchS_minimal_r2",
+      "case": "portal_n1000",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.28771810000762343,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "portal": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 2,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "951f99bf2bfbc854b24c81d07a98d47242486f7722e263383e03418372ef5428",
+        "00001.grz:00001-102.con": "7214a9c4b00ad985d529302db6250996db23b7822d62a3c3dc96e77ef193bc48"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "portal_n3000_warning_free_baseline_r1",
+      "case": "portal_n3000",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.31027060000633355,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "portal": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 2,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "bc70ca616166186e32fbf9bc6378c7502079775eaa63a859d8b8d8b9e1956bb2",
+        "00001.grz:00001-102.con": "4f4fc2f230b35e7d6bfced89be96d5a61f4c16e57ab30575741a8090b74d42f3"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "portal_n3000_warning_free_baseline_r2",
+      "case": "portal_n3000",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.3033086000068579,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "portal": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 2,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "bc70ca616166186e32fbf9bc6378c7502079775eaa63a859d8b8d8b9e1956bb2",
+        "00001.grz:00001-102.con": "4f4fc2f230b35e7d6bfced89be96d5a61f4c16e57ab30575741a8090b74d42f3"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "portal_n3000_patchS_minimal_r1",
+      "case": "portal_n3000",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.31067829999665264,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "portal": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 2,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "bc70ca616166186e32fbf9bc6378c7502079775eaa63a859d8b8d8b9e1956bb2",
+        "00001.grz:00001-102.con": "4f4fc2f230b35e7d6bfced89be96d5a61f4c16e57ab30575741a8090b74d42f3"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "portal_n3000_patchS_minimal_r2",
+      "case": "portal_n3000",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.3156057000014698,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "portal": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 2,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "bc70ca616166186e32fbf9bc6378c7502079775eaa63a859d8b8d8b9e1956bb2",
+        "00001.grz:00001-102.con": "4f4fc2f230b35e7d6bfced89be96d5a61f4c16e57ab30575741a8090b74d42f3"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "line_n100_warning_free_baseline_r1",
+      "case": "line_n100",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.2803782999981195,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "line": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 2,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "cf80dca2ff23e6a270bcc899dc5a069a0f00bea83ebd906e3b2bc77665089de0",
+        "00001.grz:00001-102.con": "8f57cf15e0c8a2e74b318a5b8443a5b9501bfd4c994945ee19ef770474f38c79"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "line_n100_warning_free_baseline_r2",
+      "case": "line_n100",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.27088670000375714,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "line": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 2,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "cf80dca2ff23e6a270bcc899dc5a069a0f00bea83ebd906e3b2bc77665089de0",
+        "00001.grz:00001-102.con": "8f57cf15e0c8a2e74b318a5b8443a5b9501bfd4c994945ee19ef770474f38c79"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "line_n100_patchS_minimal_r1",
+      "case": "line_n100",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.2732506000029389,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "line": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 2,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "cf80dca2ff23e6a270bcc899dc5a069a0f00bea83ebd906e3b2bc77665089de0",
+        "00001.grz:00001-102.con": "8f57cf15e0c8a2e74b318a5b8443a5b9501bfd4c994945ee19ef770474f38c79"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "line_n100_patchS_minimal_r2",
+      "case": "line_n100",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.27371219999622554,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "line": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 2,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "cf80dca2ff23e6a270bcc899dc5a069a0f00bea83ebd906e3b2bc77665089de0",
+        "00001.grz:00001-102.con": "8f57cf15e0c8a2e74b318a5b8443a5b9501bfd4c994945ee19ef770474f38c79"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "line_n1000_warning_free_baseline_r1",
+      "case": "line_n1000",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.2792729000066174,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "line": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 2,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "2cc567d516a9c10f4eef0d7f236de28dc11bc4266ffcdcaa7e6290f8d700b14f",
+        "00001.grz:00001-102.con": "f4eda9760dad82ed5a38079ebb021e25f33691a407a05b9a82de52bb51b0b558"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "line_n1000_warning_free_baseline_r2",
+      "case": "line_n1000",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.2796461000107229,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "line": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 2,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "2cc567d516a9c10f4eef0d7f236de28dc11bc4266ffcdcaa7e6290f8d700b14f",
+        "00001.grz:00001-102.con": "f4eda9760dad82ed5a38079ebb021e25f33691a407a05b9a82de52bb51b0b558"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "line_n1000_patchS_minimal_r1",
+      "case": "line_n1000",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.2845032000041101,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "line": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 2,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "2cc567d516a9c10f4eef0d7f236de28dc11bc4266ffcdcaa7e6290f8d700b14f",
+        "00001.grz:00001-102.con": "f4eda9760dad82ed5a38079ebb021e25f33691a407a05b9a82de52bb51b0b558"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "line_n1000_patchS_minimal_r2",
+      "case": "line_n1000",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.2898208000115119,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "line": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 2,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "2cc567d516a9c10f4eef0d7f236de28dc11bc4266ffcdcaa7e6290f8d700b14f",
+        "00001.grz:00001-102.con": "f4eda9760dad82ed5a38079ebb021e25f33691a407a05b9a82de52bb51b0b558"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "line_n3000_warning_free_baseline_r1",
+      "case": "line_n3000",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.3026462999987416,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "line": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 2,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "719cf23c9041befffd1f2470d36751657ef423751f5f6bd046a804aa8d8557c4",
+        "00001.grz:00001-102.con": "443002e4304d7b6ef5ad3f0a8151e79ab24d53cf9c067c415873661ff23046c3"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "line_n3000_warning_free_baseline_r2",
+      "case": "line_n3000",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.3034636000083992,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "line": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 2,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "719cf23c9041befffd1f2470d36751657ef423751f5f6bd046a804aa8d8557c4",
+        "00001.grz:00001-102.con": "443002e4304d7b6ef5ad3f0a8151e79ab24d53cf9c067c415873661ff23046c3"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "line_n3000_patchS_minimal_r1",
+      "case": "line_n3000",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.3042455999966478,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "line": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 2,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "719cf23c9041befffd1f2470d36751657ef423751f5f6bd046a804aa8d8557c4",
+        "00001.grz:00001-102.con": "443002e4304d7b6ef5ad3f0a8151e79ab24d53cf9c067c415873661ff23046c3"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "line_n3000_patchS_minimal_r2",
+      "case": "line_n3000",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.30511570000089705,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "line": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 2,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "719cf23c9041befffd1f2470d36751657ef423751f5f6bd046a804aa8d8557c4",
+        "00001.grz:00001-102.con": "443002e4304d7b6ef5ad3f0a8151e79ab24d53cf9c067c415873661ff23046c3"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "area_n100_warning_free_baseline_r1",
+      "case": "area_n100",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.273554300001706,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 0,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8c100170e90d7c5f701ba8059395261d23de1d6a6d31733c62ba8b10e736aa69",
+        "00001.grz:00001-102.con": "edb882330554b10ab6003182d5b185823d2bf7ba6a764da874c51d8bbfffb983"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "area_n100_warning_free_baseline_r2",
+      "case": "area_n100",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.2700049000122817,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 0,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8c100170e90d7c5f701ba8059395261d23de1d6a6d31733c62ba8b10e736aa69",
+        "00001.grz:00001-102.con": "edb882330554b10ab6003182d5b185823d2bf7ba6a764da874c51d8bbfffb983"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "area_n100_patchS_minimal_r1",
+      "case": "area_n100",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.27514280000468716,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 0,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8c100170e90d7c5f701ba8059395261d23de1d6a6d31733c62ba8b10e736aa69",
+        "00001.grz:00001-102.con": "edb882330554b10ab6003182d5b185823d2bf7ba6a764da874c51d8bbfffb983"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "area_n100_patchS_minimal_r2",
+      "case": "area_n100",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.2776425000047311,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 0,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8c100170e90d7c5f701ba8059395261d23de1d6a6d31733c62ba8b10e736aa69",
+        "00001.grz:00001-102.con": "edb882330554b10ab6003182d5b185823d2bf7ba6a764da874c51d8bbfffb983"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "area_n1000_warning_free_baseline_r1",
+      "case": "area_n1000",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.2898081000021193,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 0,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "deeace84d00197b51e867c59897cf54999a31f1cdb9641e09845ebe4d253d1c1",
+        "00001.grz:00001-102.con": "760f6ef659aca28f416789ebb816c3383cd53bd0d3aa146c9357a2f5051114e6"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "area_n1000_warning_free_baseline_r2",
+      "case": "area_n1000",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.28391719999490306,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 0,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "deeace84d00197b51e867c59897cf54999a31f1cdb9641e09845ebe4d253d1c1",
+        "00001.grz:00001-102.con": "760f6ef659aca28f416789ebb816c3383cd53bd0d3aa146c9357a2f5051114e6"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "area_n1000_patchS_minimal_r1",
+      "case": "area_n1000",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.28141450000111945,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 0,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "deeace84d00197b51e867c59897cf54999a31f1cdb9641e09845ebe4d253d1c1",
+        "00001.grz:00001-102.con": "760f6ef659aca28f416789ebb816c3383cd53bd0d3aa146c9357a2f5051114e6"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "area_n1000_patchS_minimal_r2",
+      "case": "area_n1000",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.28247340000234544,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 0,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "deeace84d00197b51e867c59897cf54999a31f1cdb9641e09845ebe4d253d1c1",
+        "00001.grz:00001-102.con": "760f6ef659aca28f416789ebb816c3383cd53bd0d3aa146c9357a2f5051114e6"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "area_n3000_warning_free_baseline_r1",
+      "case": "area_n3000",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.3089661999983946,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 0,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "6fac1e540a6b06b922836aa4eb1d8d7af8c1ade59031c0bc8efa1b98d8202d7f",
+        "00001.grz:00001-102.con": "e41d08031e922229a2287f0f5afbfad4f76a86a8fc35dedb04d381ebd1bfcbce"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "area_n3000_warning_free_baseline_r2",
+      "case": "area_n3000",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.3095906999951694,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 0,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "6fac1e540a6b06b922836aa4eb1d8d7af8c1ade59031c0bc8efa1b98d8202d7f",
+        "00001.grz:00001-102.con": "e41d08031e922229a2287f0f5afbfad4f76a86a8fc35dedb04d381ebd1bfcbce"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "area_n3000_patchS_minimal_r1",
+      "case": "area_n3000",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.3045620000048075,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 0,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "6fac1e540a6b06b922836aa4eb1d8d7af8c1ade59031c0bc8efa1b98d8202d7f",
+        "00001.grz:00001-102.con": "e41d08031e922229a2287f0f5afbfad4f76a86a8fc35dedb04d381ebd1bfcbce"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "area_n3000_patchS_minimal_r2",
+      "case": "area_n3000",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.31257719999121036,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 0,
+        "portal": 0,
+        "line": 0,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "6fac1e540a6b06b922836aa4eb1d8d7af8c1ade59031c0bc8efa1b98d8202d7f",
+        "00001.grz:00001-102.con": "e41d08031e922229a2287f0f5afbfad4f76a86a8fc35dedb04d381ebd1bfcbce"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_n100_warning_free_baseline_r1",
+      "case": "mixed_n100",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.2840543000056641,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "actual_source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "15d7d4ac7ea59f41240d83f2af7411f5bd5517c788abf6c809c34edb4d4f8079",
+        "00001.grz:00001-102.con": "d0cbcd713f0407c7e5854d4c9fef014bf7da97e60ae020cde52a938772b1ab52"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_n100_warning_free_baseline_r2",
+      "case": "mixed_n100",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.29159449999860954,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "actual_source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "15d7d4ac7ea59f41240d83f2af7411f5bd5517c788abf6c809c34edb4d4f8079",
+        "00001.grz:00001-102.con": "d0cbcd713f0407c7e5854d4c9fef014bf7da97e60ae020cde52a938772b1ab52"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_n100_patchS_minimal_r1",
+      "case": "mixed_n100",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.28979619999881834,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "actual_source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "15d7d4ac7ea59f41240d83f2af7411f5bd5517c788abf6c809c34edb4d4f8079",
+        "00001.grz:00001-102.con": "d0cbcd713f0407c7e5854d4c9fef014bf7da97e60ae020cde52a938772b1ab52"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_n100_patchS_minimal_r2",
+      "case": "mixed_n100",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.28467050001199823,
+      "actual_particles": 100,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "actual_source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "15d7d4ac7ea59f41240d83f2af7411f5bd5517c788abf6c809c34edb4d4f8079",
+        "00001.grz:00001-102.con": "d0cbcd713f0407c7e5854d4c9fef014bf7da97e60ae020cde52a938772b1ab52"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_n1000_warning_free_baseline_r1",
+      "case": "mixed_n1000",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.3024747000017669,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "actual_source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "e7feee10fd7f2089f5afbfc1aedcfb4946296186c43a85b06307ae36bde17303",
+        "00001.grz:00001-102.con": "548a0a2aae96a173012b74a02fa4aa869ff0b3eb6ee5ee42587ece3c32266aeb"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_n1000_warning_free_baseline_r2",
+      "case": "mixed_n1000",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.29744740000751335,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "actual_source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "e7feee10fd7f2089f5afbfc1aedcfb4946296186c43a85b06307ae36bde17303",
+        "00001.grz:00001-102.con": "548a0a2aae96a173012b74a02fa4aa869ff0b3eb6ee5ee42587ece3c32266aeb"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_n1000_patchS_minimal_r1",
+      "case": "mixed_n1000",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.2950607999955537,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "actual_source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "e7feee10fd7f2089f5afbfc1aedcfb4946296186c43a85b06307ae36bde17303",
+        "00001.grz:00001-102.con": "548a0a2aae96a173012b74a02fa4aa869ff0b3eb6ee5ee42587ece3c32266aeb"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_n1000_patchS_minimal_r2",
+      "case": "mixed_n1000",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.29631869999866467,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "actual_source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "e7feee10fd7f2089f5afbfc1aedcfb4946296186c43a85b06307ae36bde17303",
+        "00001.grz:00001-102.con": "548a0a2aae96a173012b74a02fa4aa869ff0b3eb6ee5ee42587ece3c32266aeb"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_n3000_warning_free_baseline_r1",
+      "case": "mixed_n3000",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.3221066999976756,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "actual_source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "1cd70caf3e6e5c4ccbea1940417831c9ae90adef69dd992e7a0fa915feba9fc3",
+        "00001.grz:00001-102.con": "63f2d910dad2078be637055e2eaab94a08c9ef8c0c7a7d25047a1bad99eddd48"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_n3000_warning_free_baseline_r2",
+      "case": "mixed_n3000",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.33991059999971185,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "actual_source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "1cd70caf3e6e5c4ccbea1940417831c9ae90adef69dd992e7a0fa915feba9fc3",
+        "00001.grz:00001-102.con": "63f2d910dad2078be637055e2eaab94a08c9ef8c0c7a7d25047a1bad99eddd48"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_n3000_patchS_minimal_r1",
+      "case": "mixed_n3000",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.3297737999964738,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "actual_source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "1cd70caf3e6e5c4ccbea1940417831c9ae90adef69dd992e7a0fa915feba9fc3",
+        "00001.grz:00001-102.con": "63f2d910dad2078be637055e2eaab94a08c9ef8c0c7a7d25047a1bad99eddd48"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_n3000_patchS_minimal_r2",
+      "case": "mixed_n3000",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.3235019999992801,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          1.0,
+          90,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "actual_source_counts": {
+        "point": 1,
+        "portal": 1,
+        "line": 1,
+        "area": 1
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "1cd70caf3e6e5c4ccbea1940417831c9ae90adef69dd992e7a0fa915feba9fc3",
+        "00001.grz:00001-102.con": "63f2d910dad2078be637055e2eaab94a08c9ef8c0c7a7d25047a1bad99eddd48"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_transient_schedule_warning_free_baseline_r1",
+      "case": "mixed_transient_schedule",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.33325320000585634,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ],
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          1.0,
+          270,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 6,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 1,
+        "receptors": 0
+      },
+      "float_values_checked": 600,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "324a6aa23d6ba39afa165f8bcb415fe814fa65ade0697229aa65c2352029c3f6",
+        "00001.grz:00001-102.con": "d71b30cb6a31f74da1790175e09c37a2f37db1ea6c4b3ff13424e1cb6e016b87",
+        "00002.grz:00002-101.con": "ffc411b966ce3338f5b78cd98ece56080d6b8f98ac25155a49f6dd812534ade2",
+        "00002.grz:00002-102.con": "38f000692c40f125d1cbb67105ce419af72678f6f7d00b16b65a6cab2bf80106",
+        "00003.grz:00003-101.con": "47ae3d08a634907176c19ce56d0684c7f438aab1962ccbdfb282b192b326a7ee",
+        "00003.grz:00003-102.con": "935ea2d5ea8139735552b5d99c78cc966f5f5760c60e63fd1e5dc2d27f6d1999",
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "cb6ca88925a58ff2f37a8ab78d7c8c741f5d5b7859e66c8563ee5af12b9fb225"
+      },
+      "fresh_mass_kg": [
+        0.05,
+        0.1
+      ],
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true,
+        "emission_schedule_read_and_cumulative_fresh_mass": true
+      },
+      "checks_passed": 13
+    },
+    {
+      "run_id": "mixed_transient_schedule_warning_free_baseline_r2",
+      "case": "mixed_transient_schedule",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.3332269999955315,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ],
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          1.0,
+          270,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 6,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 1,
+        "receptors": 0
+      },
+      "float_values_checked": 600,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "324a6aa23d6ba39afa165f8bcb415fe814fa65ade0697229aa65c2352029c3f6",
+        "00001.grz:00001-102.con": "d71b30cb6a31f74da1790175e09c37a2f37db1ea6c4b3ff13424e1cb6e016b87",
+        "00002.grz:00002-101.con": "ffc411b966ce3338f5b78cd98ece56080d6b8f98ac25155a49f6dd812534ade2",
+        "00002.grz:00002-102.con": "38f000692c40f125d1cbb67105ce419af72678f6f7d00b16b65a6cab2bf80106",
+        "00003.grz:00003-101.con": "47ae3d08a634907176c19ce56d0684c7f438aab1962ccbdfb282b192b326a7ee",
+        "00003.grz:00003-102.con": "935ea2d5ea8139735552b5d99c78cc966f5f5760c60e63fd1e5dc2d27f6d1999",
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "cb6ca88925a58ff2f37a8ab78d7c8c741f5d5b7859e66c8563ee5af12b9fb225"
+      },
+      "fresh_mass_kg": [
+        0.05,
+        0.1
+      ],
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true,
+        "emission_schedule_read_and_cumulative_fresh_mass": true
+      },
+      "checks_passed": 13
+    },
+    {
+      "run_id": "mixed_transient_schedule_patchS_minimal_r1",
+      "case": "mixed_transient_schedule",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.32973880000645295,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ],
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          1.0,
+          270,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 6,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 1,
+        "receptors": 0
+      },
+      "float_values_checked": 600,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "324a6aa23d6ba39afa165f8bcb415fe814fa65ade0697229aa65c2352029c3f6",
+        "00001.grz:00001-102.con": "d71b30cb6a31f74da1790175e09c37a2f37db1ea6c4b3ff13424e1cb6e016b87",
+        "00002.grz:00002-101.con": "ffc411b966ce3338f5b78cd98ece56080d6b8f98ac25155a49f6dd812534ade2",
+        "00002.grz:00002-102.con": "38f000692c40f125d1cbb67105ce419af72678f6f7d00b16b65a6cab2bf80106",
+        "00003.grz:00003-101.con": "47ae3d08a634907176c19ce56d0684c7f438aab1962ccbdfb282b192b326a7ee",
+        "00003.grz:00003-102.con": "935ea2d5ea8139735552b5d99c78cc966f5f5760c60e63fd1e5dc2d27f6d1999",
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "cb6ca88925a58ff2f37a8ab78d7c8c741f5d5b7859e66c8563ee5af12b9fb225"
+      },
+      "fresh_mass_kg": [
+        0.05,
+        0.1
+      ],
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true,
+        "emission_schedule_read_and_cumulative_fresh_mass": true
+      },
+      "checks_passed": 13
+    },
+    {
+      "run_id": "mixed_transient_schedule_patchS_minimal_r2",
+      "case": "mixed_transient_schedule",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.331217300001299,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          2.5,
+          90,
+          2
+        ],
+        [
+          0.5,
+          180,
+          6
+        ],
+        [
+          1.0,
+          270,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 6,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 1,
+        "receptors": 0
+      },
+      "float_values_checked": 600,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "324a6aa23d6ba39afa165f8bcb415fe814fa65ade0697229aa65c2352029c3f6",
+        "00001.grz:00001-102.con": "d71b30cb6a31f74da1790175e09c37a2f37db1ea6c4b3ff13424e1cb6e016b87",
+        "00002.grz:00002-101.con": "ffc411b966ce3338f5b78cd98ece56080d6b8f98ac25155a49f6dd812534ade2",
+        "00002.grz:00002-102.con": "38f000692c40f125d1cbb67105ce419af72678f6f7d00b16b65a6cab2bf80106",
+        "00003.grz:00003-101.con": "47ae3d08a634907176c19ce56d0684c7f438aab1962ccbdfb282b192b326a7ee",
+        "00003.grz:00003-102.con": "935ea2d5ea8139735552b5d99c78cc966f5f5760c60e63fd1e5dc2d27f6d1999",
+        "Transient_Concentrations1.tmp:Transient_Concentrations1.tmp": "cb6ca88925a58ff2f37a8ab78d7c8c741f5d5b7859e66c8563ee5af12b9fb225"
+      },
+      "fresh_mass_kg": [
+        0.05,
+        0.1
+      ],
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true,
+        "emission_schedule_read_and_cumulative_fresh_mass": true
+      },
+      "checks_passed": 13
+    },
+    {
+      "run_id": "many_point_n3000_warning_free_baseline_r1",
+      "case": "many_point_n3000",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.3452343000099063,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          0.5,
+          180,
+          6
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 40
+      },
+      "actual_source_counts": {
+        "point": 40,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "5fee3d830c9b97586e9552731bd41aadb7ef1078f59be0d7983147dfee005f19",
+        "00001.grz:00001-102.con": "bfd55cd0382832b841013819dc30628c7e05c2b6812e5e08b7dddfac3ce77721"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "many_point_n3000_warning_free_baseline_r2",
+      "case": "many_point_n3000",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.35352980000607204,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          0.5,
+          180,
+          6
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 40
+      },
+      "actual_source_counts": {
+        "point": 40,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "5fee3d830c9b97586e9552731bd41aadb7ef1078f59be0d7983147dfee005f19",
+        "00001.grz:00001-102.con": "bfd55cd0382832b841013819dc30628c7e05c2b6812e5e08b7dddfac3ce77721"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "many_point_n3000_patchS_minimal_r1",
+      "case": "many_point_n3000",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.34110609999333974,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          0.5,
+          180,
+          6
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 40
+      },
+      "actual_source_counts": {
+        "point": 40,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "5fee3d830c9b97586e9552731bd41aadb7ef1078f59be0d7983147dfee005f19",
+        "00001.grz:00001-102.con": "bfd55cd0382832b841013819dc30628c7e05c2b6812e5e08b7dddfac3ce77721"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "many_point_n3000_patchS_minimal_r2",
+      "case": "many_point_n3000",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.3417329000076279,
+      "actual_particles": 3000,
+      "actual_weather": [
+        [
+          0.5,
+          180,
+          6
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 40
+      },
+      "actual_source_counts": {
+        "point": 40,
+        "portal": 0,
+        "line": 0,
+        "area": 0
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 0,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 200,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "5fee3d830c9b97586e9552731bd41aadb7ef1078f59be0d7983147dfee005f19",
+        "00001.grz:00001-102.con": "bfd55cd0382832b841013819dc30628c7e05c2b6812e5e08b7dddfac3ce77721"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_deposition_receptors_warning_free_baseline_r1",
+      "case": "mixed_deposition_receptors",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.3130572000081884,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          2.5,
+          180,
+          2
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 2,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 2
+      },
+      "float_values_checked": 400,
+      "payload_sha256": {
+        "00001.grz:00001-01.dep": "6bf9974818a4b64d38b76e3833e1402682bde12018b47375fb66fe17f95e12b8",
+        "00001.grz:00001-02.dep": "8ef546026ee90b83d041c38da8fe6743a58066163bf0bee01637aae465f9b94d",
+        "00001.grz:00001-101.con": "8b96181af8647c31976503880f6be596be91ffa4eb9d137966210c6b38648694",
+        "00001.grz:00001-102.con": "1d769c33b87f5f54c0840b0143e3e23922e61924364ee383ae75cecaf831b07b",
+        "ReceptorConcentrations.dat": "22466d2c663ce60e2077a63c9ae61cfdb729964120f8b3fb742580bbe650a672",
+        "Receptor_Timeseries_Transient.txt": "169d42fa3fe13f8e7ef549b3fe03ee96ac7d0f263847b8838b642babca0fad60"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_deposition_receptors_warning_free_baseline_r2",
+      "case": "mixed_deposition_receptors",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.30642430001171306,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          2.5,
+          180,
+          2
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 2,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 2
+      },
+      "float_values_checked": 400,
+      "payload_sha256": {
+        "00001.grz:00001-01.dep": "6bf9974818a4b64d38b76e3833e1402682bde12018b47375fb66fe17f95e12b8",
+        "00001.grz:00001-02.dep": "8ef546026ee90b83d041c38da8fe6743a58066163bf0bee01637aae465f9b94d",
+        "00001.grz:00001-101.con": "8b96181af8647c31976503880f6be596be91ffa4eb9d137966210c6b38648694",
+        "00001.grz:00001-102.con": "1d769c33b87f5f54c0840b0143e3e23922e61924364ee383ae75cecaf831b07b",
+        "ReceptorConcentrations.dat": "22466d2c663ce60e2077a63c9ae61cfdb729964120f8b3fb742580bbe650a672",
+        "Receptor_Timeseries_Transient.txt": "169d42fa3fe13f8e7ef549b3fe03ee96ac7d0f263847b8838b642babca0fad60"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_deposition_receptors_patchS_minimal_r1",
+      "case": "mixed_deposition_receptors",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.30743889999575913,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          2.5,
+          180,
+          2
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 2,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 2
+      },
+      "float_values_checked": 400,
+      "payload_sha256": {
+        "00001.grz:00001-01.dep": "6bf9974818a4b64d38b76e3833e1402682bde12018b47375fb66fe17f95e12b8",
+        "00001.grz:00001-02.dep": "8ef546026ee90b83d041c38da8fe6743a58066163bf0bee01637aae465f9b94d",
+        "00001.grz:00001-101.con": "8b96181af8647c31976503880f6be596be91ffa4eb9d137966210c6b38648694",
+        "00001.grz:00001-102.con": "1d769c33b87f5f54c0840b0143e3e23922e61924364ee383ae75cecaf831b07b",
+        "ReceptorConcentrations.dat": "22466d2c663ce60e2077a63c9ae61cfdb729964120f8b3fb742580bbe650a672",
+        "Receptor_Timeseries_Transient.txt": "169d42fa3fe13f8e7ef549b3fe03ee96ac7d0f263847b8838b642babca0fad60"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_deposition_receptors_patchS_minimal_r2",
+      "case": "mixed_deposition_receptors",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.31207239998911973,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          2.5,
+          180,
+          2
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 2,
+        "deposition": 2,
+        "odour": 0,
+        "checkpoints": 0,
+        "receptors": 2
+      },
+      "float_values_checked": 400,
+      "payload_sha256": {
+        "00001.grz:00001-01.dep": "6bf9974818a4b64d38b76e3833e1402682bde12018b47375fb66fe17f95e12b8",
+        "00001.grz:00001-02.dep": "8ef546026ee90b83d041c38da8fe6743a58066163bf0bee01637aae465f9b94d",
+        "00001.grz:00001-101.con": "8b96181af8647c31976503880f6be596be91ffa4eb9d137966210c6b38648694",
+        "00001.grz:00001-102.con": "1d769c33b87f5f54c0840b0143e3e23922e61924364ee383ae75cecaf831b07b",
+        "ReceptorConcentrations.dat": "22466d2c663ce60e2077a63c9ae61cfdb729964120f8b3fb742580bbe650a672",
+        "Receptor_Timeseries_Transient.txt": "169d42fa3fe13f8e7ef549b3fe03ee96ac7d0f263847b8838b642babca0fad60"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_odour_multislice_warning_free_baseline_r1",
+      "case": "mixed_odour_multislice",
+      "variant": "warning_free_baseline",
+      "repeat": 1,
+      "elapsed_s": 0.3984524999978021,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          270,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 18,
+        "deposition": 0,
+        "odour": 18,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 9000,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "c84d0a4d5b5ae94ea01c60ecafedd2755fa4b69b62dfcc3983ed3a9f45c82eee",
+        "00001.grz:00001-101.odr": "b5c10c6f735bfb6b9dd6ddd984f7bef1e810c04e8993aca4c8f305e9d13df90e",
+        "00001.grz:00001-102.con": "c1d2cab23450bd51f8118c357500e8357be835914a52405a52e52889a18eb7ac",
+        "00001.grz:00001-102.odr": "cadd3acc2e93209389e7e87384d837cdd21e99d18b5757303b6ea14ed3a274aa",
+        "00001.grz:00001-201.con": "c59d9bd61a0aea518865a31685fe13b02b07c28ed47e6decc7414f15b2eb661f",
+        "00001.grz:00001-201.odr": "90197a49fd75593e1c59305c41fe91774e3e41c477225bf4d88536ca0914762e",
+        "00001.grz:00001-202.con": "3eff5fdb66d3758e84ee13ca09ac83f9e1716debb254576a3a1de2ec741e239b",
+        "00001.grz:00001-202.odr": "2f9780482848ca515c41e9d62f074344bb66ea2df5d73525497ad4f27f829be3",
+        "00001.grz:00001-301.con": "f47ae24b418b895e73f5a9242f1ec669281179fe1303b8cb1664a358c169ea86",
+        "00001.grz:00001-301.odr": "648aed2026675162528db5a897213445324e326b47c6add1ce0bcd6f63340a74",
+        "00001.grz:00001-302.con": "742c331421a1d8e67562d289f85fbac48bd09aec1dc16befbbe43a1860284138",
+        "00001.grz:00001-302.odr": "667e76938e8802866a482f213ef54fe0034402723506fd93aa89100133511ff6",
+        "00001.grz:00001-401.con": "553450318d4c6e0a1b52772a5637b8ad8a1d6694ce72a6cf25a86e3aead5539c",
+        "00001.grz:00001-401.odr": "8836432aeebd029745e9bd8696f9b90f3572a5baa80dfe95ac303a19901738e6",
+        "00001.grz:00001-402.con": "0b09a5f6d0d4dd1a6fcfdb9d68cfbceb021f043bb3e1c91df33ded0a7eb2c8a6",
+        "00001.grz:00001-402.odr": "29024eb2006e14ff67f221c99743a2f3144343ae89cdc4a6407342f1360021a7",
+        "00001.grz:00001-501.con": "b6ee930aa1217c2d3dcdd9980bb1916166b15be8f043342bfd74baa801ac5c2e",
+        "00001.grz:00001-501.odr": "6010eba418eaaa2cd230b767d9204c029a563de6fff646c9876fffaa1988b56b",
+        "00001.grz:00001-502.con": "666b97c60e2d9af0c6a3500f57636d93f348938f6d21bc8570cf3d2282686102",
+        "00001.grz:00001-502.odr": "4ad6845c01ca99403f2960d2fe5ae9177192f3ea1e0108d0ed9e9ee3891d0e9b",
+        "00001.grz:00001-601.con": "44931ba54faf44d018d29f569934564463f6e175bb7e51bae4f77614034bcec9",
+        "00001.grz:00001-601.odr": "b5d60042126126d8117e4e3cc811121837b25f1feaacb231375a783ef4403037",
+        "00001.grz:00001-602.con": "01ecc6f41fa37dc4670ee0fdbfd463192dfa709c3604d178474259aa3f893bce",
+        "00001.grz:00001-602.odr": "b165d3ae97a4943954c83ddbf6797666adfc7aad96534e0dba4701b1f81d5a24",
+        "00001.grz:00001-701.con": "9ed316edec119cab87be3bc00ebb61303e3383ffafab7ea58ea262e770b44c06",
+        "00001.grz:00001-701.odr": "c571bea57471f5b693d06081d76a6746a2effbeaa211a0234b5a37e1db939967",
+        "00001.grz:00001-702.con": "fb2e87826d844e9f17815c964d4b8b04c7fb604ff8557b7083e9e2f442b87a7b",
+        "00001.grz:00001-702.odr": "5997a76d2c9828e163dd22c6e98fd8e9a07b85a410dfdc0217c188ceeb9fff51",
+        "00001.grz:00001-801.con": "c4de5bdf5d60b317b5a0c6e2f85911fb22fc2d6ffa33d2e115351bb2acd7e49d",
+        "00001.grz:00001-801.odr": "bf5362428c1f8fcd345703c288f32c4c496e9999626926454f47e5dc1a825058",
+        "00001.grz:00001-802.con": "22966001287d35b96ed809014080f267d7a4ecd87b7d32b28bae9d37e2ec6d5f",
+        "00001.grz:00001-802.odr": "82fb70859e1a3eef1ced1a66b34718d4d4fe202b0311408987ebb366e55b36de",
+        "00001.grz:00001-901.con": "bc56ab02c8d730fffe1f0314500f844ef8150d543cf05ee2d80a09df89f755f7",
+        "00001.grz:00001-901.odr": "5dc7776005c977dac6a3a623cf3c909bf3d312d30c561a192809ebe08a769640",
+        "00001.grz:00001-902.con": "fe63212545f41641eff189c541e11ca9f9d6639aa4a6891b9b82c3022a4d67f6",
+        "00001.grz:00001-902.odr": "5813331245f544debfcd1eb159aca6f3a8e7ebff830b6119944e93ded589cf5b"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_odour_multislice_warning_free_baseline_r2",
+      "case": "mixed_odour_multislice",
+      "variant": "warning_free_baseline",
+      "repeat": 2,
+      "elapsed_s": 0.379417200005264,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          270,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 18,
+        "deposition": 0,
+        "odour": 18,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 9000,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "c84d0a4d5b5ae94ea01c60ecafedd2755fa4b69b62dfcc3983ed3a9f45c82eee",
+        "00001.grz:00001-101.odr": "b5c10c6f735bfb6b9dd6ddd984f7bef1e810c04e8993aca4c8f305e9d13df90e",
+        "00001.grz:00001-102.con": "c1d2cab23450bd51f8118c357500e8357be835914a52405a52e52889a18eb7ac",
+        "00001.grz:00001-102.odr": "cadd3acc2e93209389e7e87384d837cdd21e99d18b5757303b6ea14ed3a274aa",
+        "00001.grz:00001-201.con": "c59d9bd61a0aea518865a31685fe13b02b07c28ed47e6decc7414f15b2eb661f",
+        "00001.grz:00001-201.odr": "90197a49fd75593e1c59305c41fe91774e3e41c477225bf4d88536ca0914762e",
+        "00001.grz:00001-202.con": "3eff5fdb66d3758e84ee13ca09ac83f9e1716debb254576a3a1de2ec741e239b",
+        "00001.grz:00001-202.odr": "2f9780482848ca515c41e9d62f074344bb66ea2df5d73525497ad4f27f829be3",
+        "00001.grz:00001-301.con": "f47ae24b418b895e73f5a9242f1ec669281179fe1303b8cb1664a358c169ea86",
+        "00001.grz:00001-301.odr": "648aed2026675162528db5a897213445324e326b47c6add1ce0bcd6f63340a74",
+        "00001.grz:00001-302.con": "742c331421a1d8e67562d289f85fbac48bd09aec1dc16befbbe43a1860284138",
+        "00001.grz:00001-302.odr": "667e76938e8802866a482f213ef54fe0034402723506fd93aa89100133511ff6",
+        "00001.grz:00001-401.con": "553450318d4c6e0a1b52772a5637b8ad8a1d6694ce72a6cf25a86e3aead5539c",
+        "00001.grz:00001-401.odr": "8836432aeebd029745e9bd8696f9b90f3572a5baa80dfe95ac303a19901738e6",
+        "00001.grz:00001-402.con": "0b09a5f6d0d4dd1a6fcfdb9d68cfbceb021f043bb3e1c91df33ded0a7eb2c8a6",
+        "00001.grz:00001-402.odr": "29024eb2006e14ff67f221c99743a2f3144343ae89cdc4a6407342f1360021a7",
+        "00001.grz:00001-501.con": "b6ee930aa1217c2d3dcdd9980bb1916166b15be8f043342bfd74baa801ac5c2e",
+        "00001.grz:00001-501.odr": "6010eba418eaaa2cd230b767d9204c029a563de6fff646c9876fffaa1988b56b",
+        "00001.grz:00001-502.con": "666b97c60e2d9af0c6a3500f57636d93f348938f6d21bc8570cf3d2282686102",
+        "00001.grz:00001-502.odr": "4ad6845c01ca99403f2960d2fe5ae9177192f3ea1e0108d0ed9e9ee3891d0e9b",
+        "00001.grz:00001-601.con": "44931ba54faf44d018d29f569934564463f6e175bb7e51bae4f77614034bcec9",
+        "00001.grz:00001-601.odr": "b5d60042126126d8117e4e3cc811121837b25f1feaacb231375a783ef4403037",
+        "00001.grz:00001-602.con": "01ecc6f41fa37dc4670ee0fdbfd463192dfa709c3604d178474259aa3f893bce",
+        "00001.grz:00001-602.odr": "b165d3ae97a4943954c83ddbf6797666adfc7aad96534e0dba4701b1f81d5a24",
+        "00001.grz:00001-701.con": "9ed316edec119cab87be3bc00ebb61303e3383ffafab7ea58ea262e770b44c06",
+        "00001.grz:00001-701.odr": "c571bea57471f5b693d06081d76a6746a2effbeaa211a0234b5a37e1db939967",
+        "00001.grz:00001-702.con": "fb2e87826d844e9f17815c964d4b8b04c7fb604ff8557b7083e9e2f442b87a7b",
+        "00001.grz:00001-702.odr": "5997a76d2c9828e163dd22c6e98fd8e9a07b85a410dfdc0217c188ceeb9fff51",
+        "00001.grz:00001-801.con": "c4de5bdf5d60b317b5a0c6e2f85911fb22fc2d6ffa33d2e115351bb2acd7e49d",
+        "00001.grz:00001-801.odr": "bf5362428c1f8fcd345703c288f32c4c496e9999626926454f47e5dc1a825058",
+        "00001.grz:00001-802.con": "22966001287d35b96ed809014080f267d7a4ecd87b7d32b28bae9d37e2ec6d5f",
+        "00001.grz:00001-802.odr": "82fb70859e1a3eef1ced1a66b34718d4d4fe202b0311408987ebb366e55b36de",
+        "00001.grz:00001-901.con": "bc56ab02c8d730fffe1f0314500f844ef8150d543cf05ee2d80a09df89f755f7",
+        "00001.grz:00001-901.odr": "5dc7776005c977dac6a3a623cf3c909bf3d312d30c561a192809ebe08a769640",
+        "00001.grz:00001-902.con": "fe63212545f41641eff189c541e11ca9f9d6639aa4a6891b9b82c3022a4d67f6",
+        "00001.grz:00001-902.odr": "5813331245f544debfcd1eb159aca6f3a8e7ebff830b6119944e93ded589cf5b"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_odour_multislice_patchS_minimal_r1",
+      "case": "mixed_odour_multislice",
+      "variant": "patchS_minimal",
+      "repeat": 1,
+      "elapsed_s": 0.3644712000095751,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          270,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 18,
+        "deposition": 0,
+        "odour": 18,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 9000,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "c84d0a4d5b5ae94ea01c60ecafedd2755fa4b69b62dfcc3983ed3a9f45c82eee",
+        "00001.grz:00001-101.odr": "b5c10c6f735bfb6b9dd6ddd984f7bef1e810c04e8993aca4c8f305e9d13df90e",
+        "00001.grz:00001-102.con": "c1d2cab23450bd51f8118c357500e8357be835914a52405a52e52889a18eb7ac",
+        "00001.grz:00001-102.odr": "cadd3acc2e93209389e7e87384d837cdd21e99d18b5757303b6ea14ed3a274aa",
+        "00001.grz:00001-201.con": "c59d9bd61a0aea518865a31685fe13b02b07c28ed47e6decc7414f15b2eb661f",
+        "00001.grz:00001-201.odr": "90197a49fd75593e1c59305c41fe91774e3e41c477225bf4d88536ca0914762e",
+        "00001.grz:00001-202.con": "3eff5fdb66d3758e84ee13ca09ac83f9e1716debb254576a3a1de2ec741e239b",
+        "00001.grz:00001-202.odr": "2f9780482848ca515c41e9d62f074344bb66ea2df5d73525497ad4f27f829be3",
+        "00001.grz:00001-301.con": "f47ae24b418b895e73f5a9242f1ec669281179fe1303b8cb1664a358c169ea86",
+        "00001.grz:00001-301.odr": "648aed2026675162528db5a897213445324e326b47c6add1ce0bcd6f63340a74",
+        "00001.grz:00001-302.con": "742c331421a1d8e67562d289f85fbac48bd09aec1dc16befbbe43a1860284138",
+        "00001.grz:00001-302.odr": "667e76938e8802866a482f213ef54fe0034402723506fd93aa89100133511ff6",
+        "00001.grz:00001-401.con": "553450318d4c6e0a1b52772a5637b8ad8a1d6694ce72a6cf25a86e3aead5539c",
+        "00001.grz:00001-401.odr": "8836432aeebd029745e9bd8696f9b90f3572a5baa80dfe95ac303a19901738e6",
+        "00001.grz:00001-402.con": "0b09a5f6d0d4dd1a6fcfdb9d68cfbceb021f043bb3e1c91df33ded0a7eb2c8a6",
+        "00001.grz:00001-402.odr": "29024eb2006e14ff67f221c99743a2f3144343ae89cdc4a6407342f1360021a7",
+        "00001.grz:00001-501.con": "b6ee930aa1217c2d3dcdd9980bb1916166b15be8f043342bfd74baa801ac5c2e",
+        "00001.grz:00001-501.odr": "6010eba418eaaa2cd230b767d9204c029a563de6fff646c9876fffaa1988b56b",
+        "00001.grz:00001-502.con": "666b97c60e2d9af0c6a3500f57636d93f348938f6d21bc8570cf3d2282686102",
+        "00001.grz:00001-502.odr": "4ad6845c01ca99403f2960d2fe5ae9177192f3ea1e0108d0ed9e9ee3891d0e9b",
+        "00001.grz:00001-601.con": "44931ba54faf44d018d29f569934564463f6e175bb7e51bae4f77614034bcec9",
+        "00001.grz:00001-601.odr": "b5d60042126126d8117e4e3cc811121837b25f1feaacb231375a783ef4403037",
+        "00001.grz:00001-602.con": "01ecc6f41fa37dc4670ee0fdbfd463192dfa709c3604d178474259aa3f893bce",
+        "00001.grz:00001-602.odr": "b165d3ae97a4943954c83ddbf6797666adfc7aad96534e0dba4701b1f81d5a24",
+        "00001.grz:00001-701.con": "9ed316edec119cab87be3bc00ebb61303e3383ffafab7ea58ea262e770b44c06",
+        "00001.grz:00001-701.odr": "c571bea57471f5b693d06081d76a6746a2effbeaa211a0234b5a37e1db939967",
+        "00001.grz:00001-702.con": "fb2e87826d844e9f17815c964d4b8b04c7fb604ff8557b7083e9e2f442b87a7b",
+        "00001.grz:00001-702.odr": "5997a76d2c9828e163dd22c6e98fd8e9a07b85a410dfdc0217c188ceeb9fff51",
+        "00001.grz:00001-801.con": "c4de5bdf5d60b317b5a0c6e2f85911fb22fc2d6ffa33d2e115351bb2acd7e49d",
+        "00001.grz:00001-801.odr": "bf5362428c1f8fcd345703c288f32c4c496e9999626926454f47e5dc1a825058",
+        "00001.grz:00001-802.con": "22966001287d35b96ed809014080f267d7a4ecd87b7d32b28bae9d37e2ec6d5f",
+        "00001.grz:00001-802.odr": "82fb70859e1a3eef1ced1a66b34718d4d4fe202b0311408987ebb366e55b36de",
+        "00001.grz:00001-901.con": "bc56ab02c8d730fffe1f0314500f844ef8150d543cf05ee2d80a09df89f755f7",
+        "00001.grz:00001-901.odr": "5dc7776005c977dac6a3a623cf3c909bf3d312d30c561a192809ebe08a769640",
+        "00001.grz:00001-902.con": "fe63212545f41641eff189c541e11ca9f9d6639aa4a6891b9b82c3022a4d67f6",
+        "00001.grz:00001-902.odr": "5813331245f544debfcd1eb159aca6f3a8e7ebff830b6119944e93ded589cf5b"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    },
+    {
+      "run_id": "mixed_odour_multislice_patchS_minimal_r2",
+      "case": "mixed_odour_multislice",
+      "variant": "patchS_minimal",
+      "repeat": 2,
+      "elapsed_s": 0.3978988000017125,
+      "actual_particles": 1000,
+      "actual_weather": [
+        [
+          1.0,
+          270,
+          4
+        ]
+      ],
+      "source_counts_declared": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "actual_source_counts": {
+        "point": 2,
+        "portal": 2,
+        "line": 2,
+        "area": 2
+      },
+      "counts": {
+        "concentration": 18,
+        "deposition": 0,
+        "odour": 18,
+        "checkpoints": 0,
+        "receptors": 0
+      },
+      "float_values_checked": 9000,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "c84d0a4d5b5ae94ea01c60ecafedd2755fa4b69b62dfcc3983ed3a9f45c82eee",
+        "00001.grz:00001-101.odr": "b5c10c6f735bfb6b9dd6ddd984f7bef1e810c04e8993aca4c8f305e9d13df90e",
+        "00001.grz:00001-102.con": "c1d2cab23450bd51f8118c357500e8357be835914a52405a52e52889a18eb7ac",
+        "00001.grz:00001-102.odr": "cadd3acc2e93209389e7e87384d837cdd21e99d18b5757303b6ea14ed3a274aa",
+        "00001.grz:00001-201.con": "c59d9bd61a0aea518865a31685fe13b02b07c28ed47e6decc7414f15b2eb661f",
+        "00001.grz:00001-201.odr": "90197a49fd75593e1c59305c41fe91774e3e41c477225bf4d88536ca0914762e",
+        "00001.grz:00001-202.con": "3eff5fdb66d3758e84ee13ca09ac83f9e1716debb254576a3a1de2ec741e239b",
+        "00001.grz:00001-202.odr": "2f9780482848ca515c41e9d62f074344bb66ea2df5d73525497ad4f27f829be3",
+        "00001.grz:00001-301.con": "f47ae24b418b895e73f5a9242f1ec669281179fe1303b8cb1664a358c169ea86",
+        "00001.grz:00001-301.odr": "648aed2026675162528db5a897213445324e326b47c6add1ce0bcd6f63340a74",
+        "00001.grz:00001-302.con": "742c331421a1d8e67562d289f85fbac48bd09aec1dc16befbbe43a1860284138",
+        "00001.grz:00001-302.odr": "667e76938e8802866a482f213ef54fe0034402723506fd93aa89100133511ff6",
+        "00001.grz:00001-401.con": "553450318d4c6e0a1b52772a5637b8ad8a1d6694ce72a6cf25a86e3aead5539c",
+        "00001.grz:00001-401.odr": "8836432aeebd029745e9bd8696f9b90f3572a5baa80dfe95ac303a19901738e6",
+        "00001.grz:00001-402.con": "0b09a5f6d0d4dd1a6fcfdb9d68cfbceb021f043bb3e1c91df33ded0a7eb2c8a6",
+        "00001.grz:00001-402.odr": "29024eb2006e14ff67f221c99743a2f3144343ae89cdc4a6407342f1360021a7",
+        "00001.grz:00001-501.con": "b6ee930aa1217c2d3dcdd9980bb1916166b15be8f043342bfd74baa801ac5c2e",
+        "00001.grz:00001-501.odr": "6010eba418eaaa2cd230b767d9204c029a563de6fff646c9876fffaa1988b56b",
+        "00001.grz:00001-502.con": "666b97c60e2d9af0c6a3500f57636d93f348938f6d21bc8570cf3d2282686102",
+        "00001.grz:00001-502.odr": "4ad6845c01ca99403f2960d2fe5ae9177192f3ea1e0108d0ed9e9ee3891d0e9b",
+        "00001.grz:00001-601.con": "44931ba54faf44d018d29f569934564463f6e175bb7e51bae4f77614034bcec9",
+        "00001.grz:00001-601.odr": "b5d60042126126d8117e4e3cc811121837b25f1feaacb231375a783ef4403037",
+        "00001.grz:00001-602.con": "01ecc6f41fa37dc4670ee0fdbfd463192dfa709c3604d178474259aa3f893bce",
+        "00001.grz:00001-602.odr": "b165d3ae97a4943954c83ddbf6797666adfc7aad96534e0dba4701b1f81d5a24",
+        "00001.grz:00001-701.con": "9ed316edec119cab87be3bc00ebb61303e3383ffafab7ea58ea262e770b44c06",
+        "00001.grz:00001-701.odr": "c571bea57471f5b693d06081d76a6746a2effbeaa211a0234b5a37e1db939967",
+        "00001.grz:00001-702.con": "fb2e87826d844e9f17815c964d4b8b04c7fb604ff8557b7083e9e2f442b87a7b",
+        "00001.grz:00001-702.odr": "5997a76d2c9828e163dd22c6e98fd8e9a07b85a410dfdc0217c188ceeb9fff51",
+        "00001.grz:00001-801.con": "c4de5bdf5d60b317b5a0c6e2f85911fb22fc2d6ffa33d2e115351bb2acd7e49d",
+        "00001.grz:00001-801.odr": "bf5362428c1f8fcd345703c288f32c4c496e9999626926454f47e5dc1a825058",
+        "00001.grz:00001-802.con": "22966001287d35b96ed809014080f267d7a4ecd87b7d32b28bae9d37e2ec6d5f",
+        "00001.grz:00001-802.odr": "82fb70859e1a3eef1ced1a66b34718d4d4fe202b0311408987ebb366e55b36de",
+        "00001.grz:00001-901.con": "bc56ab02c8d730fffe1f0314500f844ef8150d543cf05ee2d80a09df89f755f7",
+        "00001.grz:00001-901.odr": "5dc7776005c977dac6a3a623cf3c909bf3d312d30c561a192809ebe08a769640",
+        "00001.grz:00001-902.con": "fe63212545f41641eff189c541e11ca9f9d6639aa4a6891b9b82c3022a4d67f6",
+        "00001.grz:00001-902.odr": "5813331245f544debfcd1eb159aca6f3a8e7ebff830b6119944e93ded589cf5b"
+      },
+      "fresh_mass_kg": null,
+      "checks": {
+        "exit_zero": true,
+        "completion_marker": true,
+        "empty_problem_report": true,
+        "particle_budget_100_to_3000": true,
+        "source_types_declared": true,
+        "actual_meteorology": true,
+        "dynamic_grid_200m_20m": true,
+        "finite_nonnegative_float_payloads": true,
+        "expected_concentration_count": true,
+        "expected_auxiliary_outputs": true,
+        "nonzero_output": true,
+        "main_within_60s": true
+      },
+      "checks_passed": 12
+    }
+  ],
+  "limits": [
+    "Fixed-seed bytewise equality is required for controlled one-worker Main cases only.",
+    "Unfixed TickCount seeds can change when execution timing changes.",
+    "Two-worker equality is covered only by the independent start-coordinate component fixture.",
+    "The lookup benchmark includes prefix construction but excludes dispersion, full initialization, meteorology and I/O.",
+    "No end-to-end or production-domain speedup claim.",
+    "Thirty seconds per synthetic weather situation, not one hour despite hourly labels.",
+    "Emission rates vary between transient situations; the existing allocator does not reassign source particle counts each situation.",
+    "Valid source count arrays are nonnegative; invalid negative count input is outside this patch."
+  ]
+}

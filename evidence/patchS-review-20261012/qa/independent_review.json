@@ -1,0 +1,271 @@
+{
+  "status": "pass",
+  "reviewed_at_utc": "2026-10-12T12:51:36.503355+00:00",
+  "review_type": "independent source and raw evidence audit",
+  "candidate": "patchS_minimal",
+  "final_run": "runs/run04",
+  "source_scope": {
+    "files_per_variant": 85,
+    "changed_files": [
+      "src/Anfangko.cs"
+    ],
+    "compiled_source_hash_mismatches": 0,
+    "metrics": {
+      "files_changed": 1,
+      "lines_added": 44,
+      "lines_deleted": 40,
+      "source_body_characters_excluding_newlines": 3842,
+      "new_source_sha256": "5f5684e42b73cbd781e6b9986a9810a412186c3c9b108c7c23036dde35fe835d",
+      "baseline_source_sha256": "80f4e619ea9f38d46adfa81bac39bd962a49d388ff440b9545c4e3270f7de9bd",
+      "normalized_unified_patch_characters": 6198,
+      "git_patch_characters": 6415,
+      "git_patch_bytes": 6415,
+      "git_patch_sha256": "d5fb703a49d927180f9494c96be6419cbbc70ea802082b33db7fe79df81b5740"
+    }
+  },
+  "source_findings": [],
+  "code_contracts": {
+    "nonnegative_count_contract_verified_in_ParticleManagement": true,
+    "empty_int_array_length1_count0_safe": true,
+    "same_double_addition_order": true,
+    "legacy_int_offset_expressions_retained": true,
+    "first_matching_duplicate_prefix": true,
+    "past_end_returns0": true,
+    "source_type_dispatch_unchanged": true,
+    "all_four_prefixes_rebuilt_each_Calculate": true,
+    "prefix_arrays_read_only_during_Parallel_For": true,
+    "RNG_body_and_call_sequence_unchanged": true,
+    "coordinates_mass_deposition_after_selection_unchanged": true,
+    "S_source_file_disjoint_from_F_and_R_changes": true
+  },
+  "raw_review": {
+    "actual_main_runs": 76,
+    "main_checks": 916,
+    "strict_builds": {
+      "warning_free_baseline": {
+        "warnings": 0,
+        "errors": 0
+      },
+      "patchS_minimal": {
+        "warnings": 0,
+        "errors": 0
+      },
+      "selection_fixture": {
+        "warnings": 0,
+        "errors": 0
+      }
+    },
+    "float_grid_payloads_redecoded": 312,
+    "float_values_redecoded": 52800,
+    "checkpoint_payload_sha_verified": 4,
+    "receptor_files_sha_verified": 8,
+    "actual_weather_sequences_verified": 76,
+    "actual_source_counts_verified_runs": 76,
+    "emission_schedule_read_and_cumulative_mass_verified_runs": 4,
+    "single_worker_repeat_pairs": 38,
+    "baseline_candidate_pairs": 38,
+    "compared_payload_pairs": 162,
+    "changed_payloads": 0,
+    "component_checks": 991352,
+    "helper_searches": 743036,
+    "helper_count_vectors": 256,
+    "helper_offsets": 6,
+    "particle_state_pairs": 24,
+    "particle_arrays_per_pair": 10
+  },
+  "lookup_benchmark": [
+    {
+      "sources": 16,
+      "queries": 1000,
+      "rounds": 7,
+      "batches_per_round": 40,
+      "candidate_includes_prefix_construction": true,
+      "old_median_ms_per_batch": 0.003485,
+      "new_median_ms_per_batch": 0.01176,
+      "ratio_old_over_new": 0.296343537414966,
+      "baseline_samples_ms": [
+        0.0034375000000000005,
+        0.003445,
+        0.0034775,
+        0.003485,
+        0.0036075000000000005,
+        0.0036999999999999997,
+        0.0175775
+      ],
+      "candidate_samples_ms": [
+        0.0116425,
+        0.0116525,
+        0.01169,
+        0.01176,
+        0.0117725,
+        0.01185,
+        0.02099
+      ]
+    },
+    {
+      "sources": 16,
+      "queries": 3000,
+      "rounds": 7,
+      "batches_per_round": 40,
+      "candidate_includes_prefix_construction": true,
+      "old_median_ms_per_batch": 0.008767500000000001,
+      "new_median_ms_per_batch": 0.0339025,
+      "ratio_old_over_new": 0.2586092471056707,
+      "baseline_samples_ms": [
+        0.008645,
+        0.0087525,
+        0.0087525,
+        0.008767500000000001,
+        0.008772499999999999,
+        0.008795,
+        0.0088075
+      ],
+      "candidate_samples_ms": [
+        0.0337175,
+        0.0337575,
+        0.03383,
+        0.0339025,
+        0.0339625,
+        0.034050000000000004,
+        0.0344225
+      ]
+    },
+    {
+      "sources": 256,
+      "queries": 1000,
+      "rounds": 7,
+      "batches_per_round": 40,
+      "candidate_includes_prefix_construction": true,
+      "old_median_ms_per_batch": 0.0755425,
+      "new_median_ms_per_batch": 0.02324,
+      "ratio_old_over_new": 3.250537865748709,
+      "baseline_samples_ms": [
+        0.0747775,
+        0.07479,
+        0.0751175,
+        0.0755425,
+        0.076135,
+        0.07698,
+        0.0770125
+      ],
+      "candidate_samples_ms": [
+        0.022735,
+        0.022775,
+        0.0230875,
+        0.02324,
+        0.02325,
+        0.023377500000000002,
+        0.0240375
+      ]
+    },
+    {
+      "sources": 256,
+      "queries": 3000,
+      "rounds": 7,
+      "batches_per_round": 40,
+      "candidate_includes_prefix_construction": true,
+      "old_median_ms_per_batch": 0.20629,
+      "new_median_ms_per_batch": 0.06048,
+      "ratio_old_over_new": 3.4108796296296298,
+      "baseline_samples_ms": [
+        0.2042175,
+        0.2051175,
+        0.20578249999999998,
+        0.20629,
+        0.2072575,
+        0.20966749999999998,
+        0.212455
+      ],
+      "candidate_samples_ms": [
+        0.0588175,
+        0.0595625,
+        0.060340000000000005,
+        0.06048,
+        0.060677499999999995,
+        0.062272499999999995,
+        0.06361
+      ]
+    },
+    {
+      "sources": 4096,
+      "queries": 1000,
+      "rounds": 7,
+      "batches_per_round": 40,
+      "candidate_includes_prefix_construction": true,
+      "old_median_ms_per_batch": 0.9291525,
+      "new_median_ms_per_batch": 0.0216325,
+      "ratio_old_over_new": 42.95169305443199,
+      "baseline_samples_ms": [
+        0.92721,
+        0.9282450000000001,
+        0.9286524999999999,
+        0.9291525,
+        0.9296099999999999,
+        0.9296374999999999,
+        0.94572
+      ],
+      "candidate_samples_ms": [
+        0.018535,
+        0.0188175,
+        0.020345,
+        0.0216325,
+        0.024165,
+        0.0321375,
+        0.040029999999999996
+      ]
+    },
+    {
+      "sources": 4096,
+      "queries": 3000,
+      "rounds": 7,
+      "batches_per_round": 40,
+      "candidate_includes_prefix_construction": true,
+      "old_median_ms_per_batch": 2.8412724999999996,
+      "new_median_ms_per_batch": 0.0679075,
+      "ratio_old_over_new": 41.84033427824614,
+      "baseline_samples_ms": [
+        2.83173,
+        2.8347325000000003,
+        2.8360475000000003,
+        2.8412724999999996,
+        2.8432825,
+        2.8436225,
+        2.8437175
+      ],
+      "candidate_samples_ms": [
+        0.06124,
+        0.062595,
+        0.06299,
+        0.0679075,
+        0.0690875,
+        0.06987,
+        0.0836025
+      ]
+    }
+  ],
+  "additional_numeric_memory_formula": "8 * (PS_Count + TS_Count + LS_Count + AS_Count + 4) bytes per Calculate, plus four array objects and captured references",
+  "limits": [
+    "Fixed-seed Main equality applies to the tested one-worker cases.",
+    "Two-worker equality covers start-coordinate particle state only.",
+    "Unfixed TickCount seeds can change when execution timing changes.",
+    "The benchmark uses the production candidate helpers and a fixture copy of the prior scan; it includes prefix construction but excludes geometry, dispersion, meteorology and I/O.",
+    "The 16-source lookup benchmark is slower; operation-count reduction alone does not establish a runtime improvement.",
+    "No production-domain or end-to-end speedup claim.",
+    "The patch retains existing Int32 offset behavior; it does not support totals overflowing the existing allocator.",
+    "Valid counts are nonnegative; invalid negative source counts are outside the contract.",
+    "Prefixes are rebuilt and allocated on every Calculate call.",
+    "Thirty seconds per synthetic situation; hourly input labels do not imply hourly integration.",
+    "F/R independence is established by unchanged interfaces and disjoint source scope; no combined production scientific run is claimed."
+  ],
+  "blocking_findings": [],
+  "recommended_disposition": "Ready for final prose and visual review; PR publication authorization remains controlled by the root agent.",
+  "evidence_sha256": {
+    "validation_summary.json": "f897e3969d00e350ff1db5f3bae6ef32ae8362e2476d428bad8fa94fd9f070ae",
+    "selection_fixture.json": "fb1763e81153ab20d4ea9440452fab0bbddc780e4dda1ceff87f648044a99f52",
+    "lookup_operation_counts.csv": "61b0d23bd7c7d61ba7380201da98be02f5cb5567f0ba77ca424902e104db7574",
+    "lookup_benchmark.csv": "008906f1e5e8e258fa135cf8aba0e107caf5ee25b891fbe309b50c18ac32560d",
+    "output_comparison.csv": "351487d630742e2afd16bc30456525ebf3ccc5c1d8d8c65ba19cea7594716d3b"
+  },
+  "benchmark_scope": "One source list and one prefix construction per batch; production Calculate builds four prefix arrays.",
+  "operation_count_scope": "Cumulative-bound comparisons only, with prefix additions reported separately; loop-control and CPU instruction counts are excluded."
+}

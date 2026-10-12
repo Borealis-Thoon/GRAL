@@ -1,0 +1,138 @@
+{
+  "source_first_match": {
+    "counts_without_sentinel": [
+      0,
+      3,
+      0,
+      2,
+      0
+    ],
+    "cumulative_without_sentinel": [
+      0.0,
+      3.0,
+      3.0,
+      5.0,
+      5.0
+    ],
+    "particles": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "linear_sources": [
+      2,
+      2,
+      2,
+      4,
+      4
+    ],
+    "binary_sources": [
+      2,
+      2,
+      2,
+      4,
+      4
+    ],
+    "mismatches": 0,
+    "data_scope": "illustrative lookup test with zero counts, independently computed from the source algorithms"
+  },
+  "source_lookup_cost": {
+    "operation_counts_source": "D:\\INU_Modeling_Work\\jobs\\20261012_patchS_review\\runs\\run04\\qa\\lookup_operation_counts.csv",
+    "timing_source": "D:\\INU_Modeling_Work\\jobs\\20261012_patchS_review\\runs\\run04\\qa\\lookup_benchmark.csv",
+    "input_sha256": {
+      "lookup_operation_counts.csv": "61b0d23bd7c7d61ba7380201da98be02f5cb5567f0ba77ca424902e104db7574",
+      "lookup_benchmark.csv": "008906f1e5e8e258fa135cf8aba0e107caf5ee25b891fbe309b50c18ac32560d"
+    },
+    "operation_oracle_cases_passed": 6,
+    "operation_cases": 6,
+    "timing_cases": 6,
+    "sources": [
+      16,
+      256,
+      4096
+    ],
+    "queries": [
+      1000,
+      3000
+    ],
+    "rounds": 7,
+    "batches_per_round": 40,
+    "candidate_includes_prefix_construction": true,
+    "data_scope": "lookup predicate counts and isolated C# helper timing; no end-to-end runtime claim",
+    "sample_median_checks_passed": 12,
+    "fixture_sha256": "fb1763e81153ab20d4ea9440452fab0bbddc780e4dda1ceff87f648044a99f52",
+    "small_source_slowdown_visible": true
+  },
+  "source_sha256": "5f5684e42b73cbd781e6b9986a9810a412186c3c9b108c7c23036dde35fe835d",
+  "validation_run": "run04",
+  "visual_review": {
+    "status": "pass",
+    "reviewed_pngs": [
+      "source_first_match.png",
+      "source_lookup_cost.png"
+    ],
+    "checks": [
+      "labels and axes readable",
+      "no clipping or overlapping values",
+      "small source slowdown shown",
+      "source indices and sentinel explained",
+      "illustrative test separated from model input",
+      "lookup timing separated from full model runtime"
+    ],
+    "final_source_first_match_png_sha256": "3f23a2a6fdabd493c93b9cdd37cc5e05115b2d619a092b5883c36b1458728466",
+    "final_source_lookup_cost_png_sha256": "b84dbbce78630452379e0986784d9b01385b7de44d291c3b72c33144a75a96bf"
+  },
+  "style_review": {
+    "skill": "humanize-kit:humanizer",
+    "mode": "Embedded",
+    "claims_and_units_preserved": true,
+    "unsupported_speedup_or_accuracy_claims": false,
+    "workflow": "draft, audit, final, supported facts checked",
+    "scope": "figure captions and English labels"
+  },
+  "files": {
+    "build_patchS_figures.py": {
+      "bytes": 14503,
+      "sha256": "bf09d5a052c92ca6bff859ea2f0215e18c594611428966b56fe26aaef8d33d2e"
+    },
+    "figure_captions.md": {
+      "bytes": 548,
+      "sha256": "b082ba8b273a5d0e81c362038ff6cfed537643931fde071f13f5a4221c2f771d"
+    },
+    "source_first_match.csv": {
+      "bytes": 282,
+      "sha256": "51efe8a7b2595e346e23cf8c891308f6541e8560d0a8abb549d2dff53f2d47b4"
+    },
+    "source_first_match.png": {
+      "bytes": 163232,
+      "sha256": "3f23a2a6fdabd493c93b9cdd37cc5e05115b2d619a092b5883c36b1458728466"
+    },
+    "source_first_match.svg": {
+      "bytes": 29648,
+      "sha256": "efb7f711323efa921198e7288854eea632ac54e90a61f866cdb65096cf1ea509"
+    },
+    "source_lookup_cost.csv": {
+      "bytes": 962,
+      "sha256": "92adb1156676548f7023141613123d128184d8a11dbe3fb0daa003670f74103e"
+    },
+    "source_lookup_cost.png": {
+      "bytes": 276378,
+      "sha256": "b84dbbce78630452379e0986784d9b01385b7de44d291c3b72c33144a75a96bf"
+    },
+    "source_lookup_cost.svg": {
+      "bytes": 64817,
+      "sha256": "0d84d9dc536eebc02b99845608d3434c95ccb6c09b3c910eeb11bb15a7585b78"
+    },
+    "source_lookup_cost_operations.csv": {
+      "bytes": 530,
+      "sha256": "f98fac0f988c9645ee068e1276080112b0304222f3113c4c4d96a7fcdd4b4cd3"
+    },
+    "source_lookup_cost_timing.csv": {
+      "bytes": 509,
+      "sha256": "008906f1e5e8e258fa135cf8aba0e107caf5ee25b891fbe309b50c18ac32560d"
+    }
+  },
+  "status": "pass"
+}

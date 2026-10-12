@@ -1,0 +1,11 @@
+record,source_index,particle_count,cumulative_particles,particle_id,linear_source,binary_source
+source,1,0,0,,,
+source,2,3,3,,,
+source,3,0,3,,,
+source,4,2,5,,,
+source,5,0,5,,,
+selection,,,,1,2,2
+selection,,,,2,2,2
+selection,,,,3,2,2
+selection,,,,4,4,4
+selection,,,,5,4,4
