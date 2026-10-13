@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "files": [
+    "worker_buffers_tradeoff.png",
+    "worker_buffers_tradeoff.svg"
+  ],
+  "checks": [
+    "All plotted values read from final performance JSON",
+    "Four synthetic conditions and all three modes shown",
+    "Five-run median and minimum-maximum labels",
+    "Buffer element payload and whole-process peak working set distinguished",
+    "Initial panel-text overlap corrected; final PNG inspected",
+    "No internal optimization project label or private research data"
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "status": "pass",
+  "conditions": [
+    {
+      "suite": "final_main",
+      "case": "one_worker",
+      "files": 12
+    },
+    {
+      "suite": "final_main",
+      "case": "four_workers",
+      "files": 12
+    },
+    {
+      "suite": "final_main",
+      "case": "twentyfour_workers",
+      "files": 12
+    },
+    {
+      "suite": "final_main",
+      "case": "mixed_groups",
+      "files": 15
+    },
+    {
+      "suite": "final_main",
+      "case": "mixed_groups_24",
+      "files": 15
+    },
+    {
+      "suite": "final_main",
+      "case": "pulse_stable",
+      "files": 12
+    },
+    {
+      "suite": "final_main",
+      "case": "large_source_off",
+      "files": 12
+    },
+    {
+      "suite": "final_main",
+      "case": "many_selected_few_allocated",
+      "files": 12
+    },
+    {
+      "suite": "final_main",
+      "case": "nine_slices_enabled",
+      "files": 12
+    },
+    {
+      "suite": "final_main",
+      "case": "nine_slices_budget_fallback",
+      "files": 12
+    },
+    {
+      "suite": "final_main",
+      "case": "decay",
+      "files": 13
+    },
+    {
+      "suite": "final_main",
+      "case": "odour",
+      "files": 13
+    },
+    {
+      "suite": "final_main",
+      "case": "terrain",
+      "files": 11
+    },
+    {
+      "suite": "final_main",
+      "case": "stationary_concentrated",
+      "files": 8
+    },
+    {
+      "suite": "performance",
+      "case": "concentrated_100k_w4",
+      "files": 8
+    },
+    {
+      "suite": "performance",
+      "case": "concentrated_100k_w24",
+      "files": 8
+    },
+    {
+      "suite": "performance",
+      "case": "concentrated_1m_w24",
+      "files": 8
+    },
+    {
+      "suite": "performance",
+      "case": "dense_grid_100k_w24",
+      "files": 8
+    }
+  ],
+  "condition_count": 18,
+  "source_reconstruction": {
+    "status": "pass",
+    "base": "891225b2f9dbbcda7f5ef6e9ef6db65e64845108",
+    "prerequisite_head": "003b00e60ebe9f0c5acc7377ed155c3271b4d8c9",
+    "source_files_checked": 171,
+    "normalization": "UTF-8 text without BOM, LF line endings",
+    "patches": {
+      "double_accumulation_prerequisite.patch": "dc3ee1d6092ca11f188a270eff1e8ab2fb442a1f5f303d1356879b0c667c575d",
+      "worker_accumulation.patch": "48c25254f7e1bee19d84f0146b7aac106c6f725896550673b855f385cc2ad99f"
+    }
+  },
+  "script_syntax": "pass",
+  "privacy_and_internal_name_scan": "pass",
+  "source_and_input_comparison": "Source hashes use documented text normalization; all 18 generated synthetic input folders matched byte-for-byte."
+}

@@ -1,0 +1,579 @@
+{
+  "status": "pass",
+  "builds": {
+    "f64": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "candidate": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "fixture": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "probe_f64": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "probe_candidate": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "driver_fixture": {
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "fixtures": [
+    {
+      "setting": "0",
+      "status": "pass",
+      "budget_bytes": 0,
+      "assertions": 7,
+      "tests": [
+        "off"
+      ]
+    },
+    {
+      "setting": "1",
+      "status": "pass",
+      "budget_bytes": 1048576,
+      "assertions": 1245,
+      "tests": [
+        "all four source kinds mapped; absent group retains residual sum",
+        "same-capacity group-map change",
+        "capacity fallback",
+        "smaller mapping after growth fallback",
+        "large required storage fallback",
+        "one-worker and non-fixed-seed driver fallback",
+        "no allocated groups fallback"
+      ]
+    },
+    {
+      "setting": "-1",
+      "status": "pass",
+      "budget_bytes": 0,
+      "assertions": 7,
+      "tests": [
+        "off"
+      ]
+    },
+    {
+      "setting": "invalid",
+      "status": "pass",
+      "budget_bytes": 0,
+      "assertions": 7,
+      "tests": [
+        "off"
+      ]
+    },
+    {
+      "setting": "999",
+      "status": "pass",
+      "budget_bytes": 268435456,
+      "assertions": 1245,
+      "tests": [
+        "all four source kinds mapped; absent group retains residual sum",
+        "same-capacity group-map change",
+        "capacity fallback",
+        "smaller mapping after growth fallback",
+        "large required storage fallback",
+        "one-worker and non-fixed-seed driver fallback",
+        "no allocated groups fallback"
+      ]
+    }
+  ],
+  "driver_probes": [
+    {
+      "variant": "f64",
+      "setting": "0",
+      "status": "pass",
+      "workers": 1,
+      "lower": 1,
+      "upper": 101,
+      "particles": 100,
+      "buffered": false,
+      "unbuffered_calls": 100,
+      "group_sums": [
+        1.150390625,
+        2.072265625,
+        3.091796875,
+        4.111328125,
+        5.130859375
+      ]
+    },
+    {
+      "variant": "f64",
+      "setting": "0",
+      "status": "pass",
+      "workers": 1,
+      "lower": 7,
+      "upper": 108,
+      "particles": 101,
+      "buffered": false,
+      "unbuffered_calls": 101,
+      "group_sums": [
+        1.248046875,
+        2.267578125,
+        3.2939453125,
+        4.208984375,
+        5.228515625
+      ]
+    },
+    {
+      "variant": "f64",
+      "setting": "0",
+      "status": "pass",
+      "workers": 1,
+      "lower": 1,
+      "upper": 3001,
+      "particles": 3000,
+      "buffered": false,
+      "unbuffered_calls": 3000,
+      "group_sums": [
+        880.49609375,
+        879.15234375,
+        880.73828125,
+        882.32421875,
+        883.91015625
+      ]
+    },
+    {
+      "variant": "f64",
+      "setting": "0",
+      "status": "pass",
+      "workers": 4,
+      "lower": 1,
+      "upper": 101,
+      "particles": 100,
+      "buffered": false,
+      "unbuffered_calls": 100,
+      "group_sums": [
+        1.150390625,
+        2.072265625,
+        3.091796875,
+        4.111328125,
+        5.130859375
+      ]
+    },
+    {
+      "variant": "f64",
+      "setting": "0",
+      "status": "pass",
+      "workers": 4,
+      "lower": 7,
+      "upper": 108,
+      "particles": 101,
+      "buffered": false,
+      "unbuffered_calls": 101,
+      "group_sums": [
+        1.248046875,
+        2.267578125,
+        3.2939453125,
+        4.208984375,
+        5.228515625
+      ]
+    },
+    {
+      "variant": "f64",
+      "setting": "0",
+      "status": "pass",
+      "workers": 4,
+      "lower": 1,
+      "upper": 3001,
+      "particles": 3000,
+      "buffered": false,
+      "unbuffered_calls": 3000,
+      "group_sums": [
+        880.49609375,
+        879.15234375,
+        880.73828125,
+        882.32421875,
+        883.91015625
+      ]
+    },
+    {
+      "variant": "f64",
+      "setting": "0",
+      "status": "pass",
+      "workers": 24,
+      "lower": 1,
+      "upper": 101,
+      "particles": 100,
+      "buffered": false,
+      "unbuffered_calls": 100,
+      "group_sums": [
+        1.150390625,
+        2.072265625,
+        3.091796875,
+        4.111328125,
+        5.130859375
+      ]
+    },
+    {
+      "variant": "f64",
+      "setting": "0",
+      "status": "pass",
+      "workers": 24,
+      "lower": 7,
+      "upper": 108,
+      "particles": 101,
+      "buffered": false,
+      "unbuffered_calls": 101,
+      "group_sums": [
+        1.248046875,
+        2.267578125,
+        3.2939453125,
+        4.208984375,
+        5.228515625
+      ]
+    },
+    {
+      "variant": "f64",
+      "setting": "0",
+      "status": "pass",
+      "workers": 24,
+      "lower": 1,
+      "upper": 3001,
+      "particles": 3000,
+      "buffered": false,
+      "unbuffered_calls": 3000,
+      "group_sums": [
+        880.49609375,
+        879.15234375,
+        880.73828125,
+        882.32421875,
+        883.91015625
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "0",
+      "status": "pass",
+      "workers": 1,
+      "lower": 1,
+      "upper": 101,
+      "particles": 100,
+      "buffered": false,
+      "unbuffered_calls": 100,
+      "group_sums": [
+        1.150390625,
+        2.072265625,
+        3.091796875,
+        4.111328125,
+        5.130859375
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "0",
+      "status": "pass",
+      "workers": 1,
+      "lower": 7,
+      "upper": 108,
+      "particles": 101,
+      "buffered": false,
+      "unbuffered_calls": 101,
+      "group_sums": [
+        1.248046875,
+        2.267578125,
+        3.2939453125,
+        4.208984375,
+        5.228515625
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "0",
+      "status": "pass",
+      "workers": 1,
+      "lower": 1,
+      "upper": 3001,
+      "particles": 3000,
+      "buffered": false,
+      "unbuffered_calls": 3000,
+      "group_sums": [
+        880.49609375,
+        879.15234375,
+        880.73828125,
+        882.32421875,
+        883.91015625
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "0",
+      "status": "pass",
+      "workers": 4,
+      "lower": 1,
+      "upper": 101,
+      "particles": 100,
+      "buffered": false,
+      "unbuffered_calls": 100,
+      "group_sums": [
+        1.150390625,
+        2.072265625,
+        3.091796875,
+        4.111328125,
+        5.130859375
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "0",
+      "status": "pass",
+      "workers": 4,
+      "lower": 7,
+      "upper": 108,
+      "particles": 101,
+      "buffered": false,
+      "unbuffered_calls": 101,
+      "group_sums": [
+        1.248046875,
+        2.267578125,
+        3.2939453125,
+        4.208984375,
+        5.228515625
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "0",
+      "status": "pass",
+      "workers": 4,
+      "lower": 1,
+      "upper": 3001,
+      "particles": 3000,
+      "buffered": false,
+      "unbuffered_calls": 3000,
+      "group_sums": [
+        880.49609375,
+        879.15234375,
+        880.73828125,
+        882.32421875,
+        883.91015625
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "0",
+      "status": "pass",
+      "workers": 24,
+      "lower": 1,
+      "upper": 101,
+      "particles": 100,
+      "buffered": false,
+      "unbuffered_calls": 100,
+      "group_sums": [
+        1.150390625,
+        2.072265625,
+        3.091796875,
+        4.111328125,
+        5.130859375
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "0",
+      "status": "pass",
+      "workers": 24,
+      "lower": 7,
+      "upper": 108,
+      "particles": 101,
+      "buffered": false,
+      "unbuffered_calls": 101,
+      "group_sums": [
+        1.248046875,
+        2.267578125,
+        3.2939453125,
+        4.208984375,
+        5.228515625
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "0",
+      "status": "pass",
+      "workers": 24,
+      "lower": 1,
+      "upper": 3001,
+      "particles": 3000,
+      "buffered": false,
+      "unbuffered_calls": 3000,
+      "group_sums": [
+        880.49609375,
+        879.15234375,
+        880.73828125,
+        882.32421875,
+        883.91015625
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "1",
+      "status": "pass",
+      "workers": 1,
+      "lower": 1,
+      "upper": 101,
+      "particles": 100,
+      "buffered": false,
+      "unbuffered_calls": 100,
+      "group_sums": [
+        1.150390625,
+        2.072265625,
+        3.091796875,
+        4.111328125,
+        5.130859375
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "1",
+      "status": "pass",
+      "workers": 1,
+      "lower": 7,
+      "upper": 108,
+      "particles": 101,
+      "buffered": false,
+      "unbuffered_calls": 101,
+      "group_sums": [
+        1.248046875,
+        2.267578125,
+        3.2939453125,
+        4.208984375,
+        5.228515625
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "1",
+      "status": "pass",
+      "workers": 1,
+      "lower": 1,
+      "upper": 3001,
+      "particles": 3000,
+      "buffered": false,
+      "unbuffered_calls": 3000,
+      "group_sums": [
+        880.49609375,
+        879.15234375,
+        880.73828125,
+        882.32421875,
+        883.91015625
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "1",
+      "status": "pass",
+      "workers": 4,
+      "lower": 1,
+      "upper": 101,
+      "particles": 100,
+      "buffered": true,
+      "unbuffered_calls": 0,
+      "group_sums": [
+        1.150390625,
+        2.072265625,
+        3.091796875,
+        4.111328125,
+        5.130859375
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "1",
+      "status": "pass",
+      "workers": 4,
+      "lower": 7,
+      "upper": 108,
+      "particles": 101,
+      "buffered": true,
+      "unbuffered_calls": 0,
+      "group_sums": [
+        1.248046875,
+        2.267578125,
+        3.2939453125,
+        4.208984375,
+        5.228515625
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "1",
+      "status": "pass",
+      "workers": 4,
+      "lower": 1,
+      "upper": 3001,
+      "particles": 3000,
+      "buffered": true,
+      "unbuffered_calls": 0,
+      "group_sums": [
+        880.49609375,
+        879.15234375,
+        880.73828125,
+        882.32421875,
+        883.91015625
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "1",
+      "status": "pass",
+      "workers": 24,
+      "lower": 1,
+      "upper": 101,
+      "particles": 100,
+      "buffered": true,
+      "unbuffered_calls": 0,
+      "group_sums": [
+        1.150390625,
+        2.072265625,
+        3.091796875,
+        4.111328125,
+        5.130859375
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "1",
+      "status": "pass",
+      "workers": 24,
+      "lower": 7,
+      "upper": 108,
+      "particles": 101,
+      "buffered": true,
+      "unbuffered_calls": 0,
+      "group_sums": [
+        1.248046875,
+        2.267578125,
+        3.2939453125,
+        4.208984375,
+        5.228515625
+      ]
+    },
+    {
+      "variant": "candidate",
+      "setting": "1",
+      "status": "pass",
+      "workers": 24,
+      "lower": 1,
+      "upper": 3001,
+      "particles": 3000,
+      "buffered": true,
+      "unbuffered_calls": 0,
+      "group_sums": [
+        880.49609375,
+        879.15234375,
+        880.73828125,
+        882.32421875,
+        883.91015625
+      ]
+    }
+  ],
+  "driver_probe_executions": 27,
+  "elapsed_s": 12.572972099999788,
+  "driver_scope": "Real ParallelParticleDriver with trajectory body replaced in separate diagnostic copies by exactly-once and dyadic-contribution probes. No timings are used as engine performance evidence."
+}

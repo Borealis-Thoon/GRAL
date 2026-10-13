@@ -1,0 +1,467 @@
+{
+  "status": "pass",
+  "files": 54,
+  "floats": 21600,
+  "headers_shapes_finite_nonnegative": "pass",
+  "paired": [
+    {
+      "variant": "off",
+      "repeat": 0,
+      "fields": [
+        {
+          "field": "Conz3dp",
+          "float_count": 600,
+          "changed": 3,
+          "relative_l1": 1.685410482790861e-07,
+          "max_absolute": 0.003662109375,
+          "max_relative": 1.0522994215580234e-06
+        },
+        {
+          "field": "Conz3dm",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "Q_cv0",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "DisConcVar",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "off",
+      "repeat": 1,
+      "fields": [
+        {
+          "field": "Conz3dp",
+          "float_count": 600,
+          "changed": 5,
+          "relative_l1": 9.087381125023906e-08,
+          "max_absolute": 0.00146484375,
+          "max_relative": 5.604384795939212e-07
+        },
+        {
+          "field": "Conz3dm",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "Q_cv0",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "DisConcVar",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "off",
+      "repeat": 2,
+      "fields": [
+        {
+          "field": "Conz3dp",
+          "float_count": 600,
+          "changed": 4,
+          "relative_l1": 9.559044941051765e-08,
+          "max_absolute": 0.001220703125,
+          "max_relative": 4.670320227044816e-07
+        },
+        {
+          "field": "Conz3dm",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "Q_cv0",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "DisConcVar",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "repeat": 0,
+      "fields": [
+        {
+          "field": "Conz3dp",
+          "float_count": 600,
+          "changed": 4,
+          "relative_l1": 4.30785888325276e-08,
+          "max_absolute": 0.000732421875,
+          "max_relative": 2.1045988431160465e-07
+        },
+        {
+          "field": "Conz3dm",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "Q_cv0",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "DisConcVar",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "repeat": 1,
+      "fields": [
+        {
+          "field": "Conz3dp",
+          "float_count": 600,
+          "changed": 3,
+          "relative_l1": 3.0500898585720375e-08,
+          "max_absolute": 0.00048828125,
+          "max_relative": 3.2600424180419226e-07
+        },
+        {
+          "field": "Conz3dm",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "Q_cv0",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "DisConcVar",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "repeat": 2,
+      "fields": [
+        {
+          "field": "Conz3dp",
+          "float_count": 600,
+          "changed": 4,
+          "relative_l1": 6.06873576849668e-08,
+          "max_absolute": 0.0009765625,
+          "max_relative": 4.4614505023258656e-07
+        },
+        {
+          "field": "Conz3dm",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "Q_cv0",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "DisConcVar",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        }
+      ]
+    }
+  ],
+  "repeats": [
+    {
+      "variant": "f64",
+      "repeat": 1,
+      "fields": [
+        {
+          "field": "Conz3dp",
+          "float_count": 600,
+          "changed": 3,
+          "relative_l1": 2.2639842306145893e-08,
+          "max_absolute": 0.000244140625,
+          "max_relative": 1.0662903088392588e-07
+        },
+        {
+          "field": "Conz3dm",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "Q_cv0",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "DisConcVar",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "f64",
+      "repeat": 2,
+      "fields": [
+        {
+          "field": "Conz3dp",
+          "float_count": 600,
+          "changed": 6,
+          "relative_l1": 7.829612130875454e-08,
+          "max_absolute": 0.001220703125,
+          "max_relative": 4.670320227044816e-07
+        },
+        {
+          "field": "Conz3dm",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "Q_cv0",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "DisConcVar",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "off",
+      "repeat": 1,
+      "fields": [
+        {
+          "field": "Conz3dp",
+          "float_count": 600,
+          "changed": 5,
+          "relative_l1": 2.568993637295133e-07,
+          "max_absolute": 0.003662109375,
+          "max_relative": 1.0522994215580234e-06
+        },
+        {
+          "field": "Conz3dm",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "Q_cv0",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "DisConcVar",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "off",
+      "repeat": 2,
+      "fields": [
+        {
+          "field": "Conz3dp",
+          "float_count": 600,
+          "changed": 3,
+          "relative_l1": 1.5627782591624003e-07,
+          "max_absolute": 0.003173828125,
+          "max_relative": 9.119929599755754e-07
+        },
+        {
+          "field": "Conz3dm",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "Q_cv0",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "DisConcVar",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "repeat": 1,
+      "fields": [
+        {
+          "field": "Conz3dp",
+          "float_count": 600,
+          "changed": 3,
+          "relative_l1": 7.043506621487627e-08,
+          "max_absolute": 0.0009765625,
+          "max_relative": 2.806131593962019e-07
+        },
+        {
+          "field": "Conz3dm",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "Q_cv0",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "DisConcVar",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "on",
+      "repeat": 2,
+      "fields": [
+        {
+          "field": "Conz3dp",
+          "float_count": 600,
+          "changed": 5,
+          "relative_l1": 1.462156508478458e-07,
+          "max_absolute": 0.00146484375,
+          "max_relative": 5.604384272453778e-07
+        },
+        {
+          "field": "Conz3dm",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "Q_cv0",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        },
+        {
+          "field": "DisConcVar",
+          "float_count": 600,
+          "changed": 0,
+          "relative_l1": 0.0,
+          "max_absolute": 0.0,
+          "max_relative": 0.0
+        }
+      ]
+    }
+  ],
+  "scope": "Four float fields per odour output cell. These fields retain the existing shared accumulation path; differences include parallel ordering already present in baseline repeats."
+}

@@ -1,0 +1,17 @@
+{
+  "time_utc": "2026-10-13T01:43:12.9637490Z",
+  "cpu": {
+    "Name": "AMD Ryzen 9 9950X3D 16-Core Processor          ",
+    "NumberOfCores": 16,
+    "NumberOfLogicalProcessors": 32,
+    "MaxClockSpeed": 4300,
+    "LoadPercentage": 2
+  },
+  "operating_system": "Microsoft Windows 11 Pro",
+  "os_version": "10.0.26300",
+  "total_visible_memory_bytes": 51156725760,
+  "free_physical_memory_bytes": 24176992256,
+  "dotnet_version": "10.0.401",
+  "phase": "after final component suite, immediately before final Main suite",
+  "concurrency": "exclusive GRAL test slot; other task render and benchmark jobs held"
+}

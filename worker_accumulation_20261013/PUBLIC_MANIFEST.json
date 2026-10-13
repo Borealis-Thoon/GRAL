@@ -1,0 +1,251 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "audit_odour.py",
+      "bytes": 2135,
+      "sha256": "a25b5fa58e6ced360f74ce7e946f668016e0e4b616469bdff96448300151aecc"
+    },
+    {
+      "path": "double_accumulation_prerequisite.patch",
+      "bytes": 4989,
+      "sha256": "dc3ee1d6092ca11f188a270eff1e8ab2fb442a1f5f303d1356879b0c667c575d"
+    },
+    {
+      "path": "field/template/in.dat",
+      "bytes": 103,
+      "sha256": "07f46aa7ef545b326a976d8fcd84f28f4bd64fbdc6b60b7556769e493f9de6a3"
+    },
+    {
+      "path": "field/template/micro_vert_layers.txt",
+      "bytes": 3,
+      "sha256": "673650f936cb3b0a2f93ce09d81be10748b1b203c19e8176b4eefc1964a0cf3a"
+    },
+    {
+      "path": "field_support.py",
+      "bytes": 6178,
+      "sha256": "2d9809a1c9a08ddcefbac7759cb1a2021e62484979254066261a9704de2c8c32"
+    },
+    {
+      "path": "fixture/Fixture.cs",
+      "bytes": 6717,
+      "sha256": "8b761709f1448ddc8724b028e19f06340d034c31878b3ebda108d16d466393cf"
+    },
+    {
+      "path": "fixture/Fixture.csproj",
+      "bytes": 146,
+      "sha256": "d40897ef432c987ff5e7de913a6f4df4048b32a1429b94e97b2f27c86791dd79"
+    },
+    {
+      "path": "prepare.py",
+      "bytes": 2265,
+      "sha256": "e611452a4dd06a3ff2fd9a0ba3a063c41287aeda6b566437f5dbdef42ca91d75"
+    },
+    {
+      "path": "prepare_driver_probe.py",
+      "bytes": 4979,
+      "sha256": "e82afcc905a2dd9edc206ba341090f7bc30fa8c76baec11a64b25d1d6281d4d4"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6740,
+      "sha256": "5d83f9637ef3e7550cecdcdba845d9d4d44ec36af60f83996b9ce649aa26211c"
+    },
+    {
+      "path": "render_figure.py",
+      "bytes": 2807,
+      "sha256": "722dbb33b88b742bd923a50daaa8402368f0d620781095a2d8e50deb796f7610"
+    },
+    {
+      "path": "results/build/build_candidate.log",
+      "bytes": 254,
+      "sha256": "70c7fe61fb8a1754396e9c2ff1b68b2afeaed857e00dbe5f01cbe109d37e5b67"
+    },
+    {
+      "path": "results/build/build_driver_fixture.log",
+      "bytes": 293,
+      "sha256": "a1d1a9ac79ea730735b3ab655194d9196a3f63d03974aefb2b35c3445f8bd125"
+    },
+    {
+      "path": "results/build/build_f64.log",
+      "bytes": 367,
+      "sha256": "b51f3e8b1fa992cffb1845b6c328b00884fb5f0993c9425f397f16d2eff102ca"
+    },
+    {
+      "path": "results/build/build_fixture.log",
+      "bytes": 261,
+      "sha256": "a8087d744c960665b208d00c693ce987d5eb5c4196b5afa1ac61766353e3a611"
+    },
+    {
+      "path": "results/build/build_probe_candidate.log",
+      "bytes": 276,
+      "sha256": "63310437fcf0ceb546b19ea55eb9052fed1a46c14318365e59550d8dc56420c7"
+    },
+    {
+      "path": "results/build/build_probe_f64.log",
+      "bytes": 264,
+      "sha256": "61c34e439944d357640eeb3ac880a53abcac1efea765ff16152409fc7c5e65a5"
+    },
+    {
+      "path": "results/component.json",
+      "bytes": 12497,
+      "sha256": "76f21e15b3d511af71858dc33b97392c8f203b3d4e1bceb46d9ef70b78e48895"
+    },
+    {
+      "path": "results/conditions.json",
+      "bytes": 9171,
+      "sha256": "a058ef42622ce743876067bf16c052338beae409a07c3dc3cceb4f6fbb511466"
+    },
+    {
+      "path": "results/environment.json",
+      "bytes": 627,
+      "sha256": "c792a2725ba557c0cb4265fb9fd526d72409fb0d24f729ea92ecef779dff8190"
+    },
+    {
+      "path": "results/inactive_particle_regression.json",
+      "bytes": 282,
+      "sha256": "ac402bd975201f0693b6899d97c068c20caf900edf2d1a66691e3f8f9006bc1a"
+    },
+    {
+      "path": "results/main.json",
+      "bytes": 708573,
+      "sha256": "d99df479d5d4aae31c9e3cfb098cfa75361a9633e75fe272b7727faa89ef9549"
+    },
+    {
+      "path": "results/odour.json",
+      "bytes": 11748,
+      "sha256": "3b1461a118535f7095ac893c0ccaaa9930d3489a9484fc5990fbb1ac07446f41"
+    },
+    {
+      "path": "results/paired_comparisons.csv",
+      "bytes": 7178,
+      "sha256": "9c22ee63a4d2cc33aabcc36dd1a512646f99d729b1fdc53fd65caf34a2bcec01"
+    },
+    {
+      "path": "results/patch_metrics.json",
+      "bytes": 1122,
+      "sha256": "8bb0cf2c9c18edfa2e2c58fac744ceb928a19d606f7bba252427bf023aafca7c"
+    },
+    {
+      "path": "results/performance.json",
+      "bytes": 199676,
+      "sha256": "010fb2d86158344d0e0aa0e08dacf5460bf4d29a7442365551a316330876a4df"
+    },
+    {
+      "path": "results/repeat_differences.csv",
+      "bytes": 7657,
+      "sha256": "4548aff0ed786b1daad5c4e09306542b0c8e8600e8db615f177d69e9c2680a77"
+    },
+    {
+      "path": "results/reproduction.json",
+      "bytes": 2609,
+      "sha256": "bab83fd390cd7e3906f7e05f81a9efb770e6423c004dd0d6d90e3e748762f322"
+    },
+    {
+      "path": "results/runs.csv",
+      "bytes": 29109,
+      "sha256": "184a96c4aab4d01c2f61300e63ef334d1362f9a062a065ffb8cad4a9bc46f8c4"
+    },
+    {
+      "path": "results/summaries.csv",
+      "bytes": 6464,
+      "sha256": "15112b6f153be14c20305a6b9c3121ad1b4d14a0b13659c1625a1604efdde51c"
+    },
+    {
+      "path": "results/visual_review.json",
+      "bytes": 526,
+      "sha256": "8d0293a8a633a60aceb9e43a4dd5640d6ab70432d2483d2c7c30e9f531b13159"
+    },
+    {
+      "path": "run_component.py",
+      "bytes": 3029,
+      "sha256": "9fb069a5b81cedb58bc34468520494dbe51360e0de4cd7899401ca329d3c26d0"
+    },
+    {
+      "path": "run_main.py",
+      "bytes": 9012,
+      "sha256": "02877ef33f589a5cf7698cd422a20a28938d5ee3158f415aec10db5272b54cdc"
+    },
+    {
+      "path": "run_performance.py",
+      "bytes": 962,
+      "sha256": "d025c8455076f999fcbf168ccc6b9c82095723ad046d8383539da8e94224c4ea"
+    },
+    {
+      "path": "source_manifest.json",
+      "bytes": 17264,
+      "sha256": "5258ef641e4946f73bb6c7e894b5585f0966c8b86463bb1c741df4707bfbfba6"
+    },
+    {
+      "path": "transient/template/emissions_timeseries.txt",
+      "bytes": 68,
+      "sha256": "9635c0e80fc2a50aed325d488f51ab47fb8c95b077cd8bd9a81f22f46d66ea14"
+    },
+    {
+      "path": "transient/template/GRAL.geb",
+      "bytes": 36,
+      "sha256": "141c49d6ca7e227edc4214cd10e10f9b29d751b12adbd8d1d351cff7947c1260"
+    },
+    {
+      "path": "transient/template/GRAL_Trans_Conc_Threshold.txt",
+      "bytes": 6,
+      "sha256": "81b757d439f94af4fb4bfd44c6c0d090aa7149c69b8ab73c1cd3e7ac8fdccb7d"
+    },
+    {
+      "path": "transient/template/in.dat",
+      "bytes": 103,
+      "sha256": "07f46aa7ef545b326a976d8fcd84f28f4bd64fbdc6b60b7556769e493f9de6a3"
+    },
+    {
+      "path": "transient/template/KeepAndReadTransientTempFiles.dat",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "transient/template/Max_Proc.txt",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "transient/template/meteopgt.all",
+      "bytes": 57,
+      "sha256": "271522299e2c101cbc01c34cb1b92b364814c56956e7a421f937a078feb6e0b5"
+    },
+    {
+      "path": "transient/template/mettimeseries.dat",
+      "bytes": 63,
+      "sha256": "94657f08f1075f12f1a32f0a6198cb55e2e54963a5a217aaa879b105a73ac714"
+    },
+    {
+      "path": "transient/template/micro_vert_layers.txt",
+      "bytes": 3,
+      "sha256": "673650f936cb3b0a2f93ce09d81be10748b1b203c19e8176b4eefc1964a0cf3a"
+    },
+    {
+      "path": "transient_support.py",
+      "bytes": 2999,
+      "sha256": "494880d1902ff056d4038d622e31b869a33a2c64361d69cf3de7bff5e654d18c"
+    },
+    {
+      "path": "worker_accumulation.patch",
+      "bytes": 11499,
+      "sha256": "48c25254f7e1bee19d84f0146b7aac106c6f725896550673b855f385cc2ad99f"
+    },
+    {
+      "path": "worker_buffers_tradeoff.png",
+      "bytes": 273227,
+      "sha256": "7973effd594351685b9bcac0a483e3e1f16407da42af6a65b952da4f4d1e4131"
+    },
+    {
+      "path": "worker_buffers_tradeoff.svg",
+      "bytes": 163535,
+      "sha256": "3a61af1272913341393d4b2c91d82d9e93ab70d9128e545344df4448b9a77b26"
+    }
+  ],
+  "source": "Synthetic validation and public engine source",
+  "raw_model_outputs_included": false
+}

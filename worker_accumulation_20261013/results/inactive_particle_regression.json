@@ -1,0 +1,7 @@
+{
+  "status": "expected_failure_reproduced",
+  "exit_code": 3762504530,
+  "exception": "IndexOutOfRangeException",
+  "trigger": "ParticleSource=0, ParticleSG=255, selected source groups 1 and 2",
+  "scope": "Earlier candidate only; final candidate must pass this fixture."
+}

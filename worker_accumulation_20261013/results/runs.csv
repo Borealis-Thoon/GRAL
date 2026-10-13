@@ -1,0 +1,187 @@
+suite,case,variant,repeat,nominal_particles,actual_particles,workers,wall_s,cpu_s,peak_working_set_bytes,sampled_peak_private_bytes,exit_code,buffers
+main,one_worker,f64,0,3000,3000,1,0.7118925999993735,0.4375,59076608,32395264,0,
+main,one_worker,off,0,3000,3000,1,0.4579590000003009,0.453125,58798080,33484800,0,
+main,one_worker,on,0,3000,3000,1,0.4600774000000456,0.453125,58712064,29749248,0,shared (driver); workers=1; groups=0; required=0; reserved=0; limit=268435456 bytes | shared (driver); workers=1; groups=0; required=0; reserved=0; limit=268435456 bytes | shared (driver); workers=1; groups=0; required=0; reserved=0; limit=268435456 bytes
+main,one_worker,off,1,3000,3000,1,0.45845809999991616,0.46875,58683392,34230272,0,
+main,one_worker,on,1,3000,3000,1,0.4563668000000689,0.453125,58638336,30109696,0,shared (driver); workers=1; groups=0; required=0; reserved=0; limit=268435456 bytes | shared (driver); workers=1; groups=0; required=0; reserved=0; limit=268435456 bytes | shared (driver); workers=1; groups=0; required=0; reserved=0; limit=268435456 bytes
+main,one_worker,f64,1,3000,3000,1,0.4672723000003316,0.4375,59060224,30289920,0,
+main,one_worker,on,2,3000,3000,1,0.4559044999996331,0.453125,58646528,33959936,0,shared (driver); workers=1; groups=0; required=0; reserved=0; limit=268435456 bytes | shared (driver); workers=1; groups=0; required=0; reserved=0; limit=268435456 bytes | shared (driver); workers=1; groups=0; required=0; reserved=0; limit=268435456 bytes
+main,one_worker,f64,2,3000,3000,1,0.4542640999998184,0.4375,59092992,30257152,0,
+main,one_worker,off,2,3000,3000,1,0.4593065999997634,0.484375,58753024,33943552,0,
+main,four_workers,off,0,3000,3000,4,0.35309719999986555,0.5,58699776,33140736,0,
+main,four_workers,on,0,3000,3000,4,0.3622843000002831,0.515625,58925056,32583680,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,four_workers,f64,0,3000,3000,4,0.3645291000002544,0.515625,59162624,31715328,0,
+main,four_workers,on,1,3000,3000,4,0.36757760000000417,0.5,58896384,31977472,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,four_workers,f64,1,3000,3000,4,0.35731510000005073,0.515625,59293696,33538048,0,
+main,four_workers,off,1,3000,3000,4,0.36391589999948337,0.5,58916864,34578432,0,
+main,four_workers,f64,2,3000,3000,4,0.3661802999995416,0.46875,59166720,34430976,0,
+main,four_workers,off,2,3000,3000,4,0.36711879999984376,0.421875,58953728,32362496,0,
+main,four_workers,on,2,3000,3000,4,0.3563040999997611,0.40625,58855424,32849920,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,twentyfour_workers,on,0,3000,3000,24,0.34419720000005327,0.53125,59883520,35590144,0,enabled; workers=24; groups=2; required=55296; reserved=55296; limit=268435456 bytes | enabled; workers=24; groups=2; required=55296; reserved=55296; limit=268435456 bytes | enabled; workers=24; groups=2; required=55296; reserved=55296; limit=268435456 bytes
+main,twentyfour_workers,f64,0,3000,3000,24,0.3754263999999239,0.703125,59830272,35622912,0,
+main,twentyfour_workers,off,0,3000,3000,24,0.36506400000052963,0.765625,59736064,35524608,0,
+main,twentyfour_workers,f64,1,3000,3000,24,0.36390750000009575,0.65625,59813888,30937088,0,
+main,twentyfour_workers,off,1,3000,3000,24,0.36659120000058465,0.6875,59441152,31055872,0,
+main,twentyfour_workers,on,1,3000,3000,24,0.33844570000019303,0.65625,59707392,34406400,0,enabled; workers=24; groups=2; required=55296; reserved=55296; limit=268435456 bytes | enabled; workers=24; groups=2; required=55296; reserved=55296; limit=268435456 bytes | enabled; workers=24; groups=2; required=55296; reserved=55296; limit=268435456 bytes
+main,twentyfour_workers,off,2,3000,3000,24,0.37623900000016874,0.71875,59551744,34390016,0,
+main,twentyfour_workers,on,2,3000,3000,24,0.3458418000000165,0.6875,59801600,35516416,0,enabled; workers=24; groups=2; required=55296; reserved=55296; limit=268435456 bytes | enabled; workers=24; groups=2; required=55296; reserved=55296; limit=268435456 bytes | enabled; workers=24; groups=2; required=55296; reserved=55296; limit=268435456 bytes
+main,twentyfour_workers,f64,2,3000,3000,24,0.36626979999982723,0.75,60018688,33574912,0,
+main,mixed_groups,f64,0,3000,3000,4,0.35549189999983355,0.40625,60116992,33738752,0,
+main,mixed_groups,off,0,3000,3000,4,0.35735829999975977,0.359375,59940864,30740480,0,
+main,mixed_groups,on,0,3000,3000,4,0.35729040000023815,0.375,59826176,33161216,0,enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes | enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes | enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes
+main,mixed_groups,off,1,3000,3000,4,0.3443833999999697,0.375,59498496,32882688,0,
+main,mixed_groups,on,1,3000,3000,4,0.3549022999995941,0.390625,59789312,31047680,0,enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes | enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes | enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes
+main,mixed_groups,f64,1,3000,3000,4,0.36531319999994594,0.4375,60100608,33411072,0,
+main,mixed_groups,on,2,3000,3000,4,0.3464469000000463,0.40625,59998208,33361920,0,enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes | enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes | enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes
+main,mixed_groups,f64,2,3000,3000,4,0.3660104999999021,0.375,60096512,32870400,0,
+main,mixed_groups,off,2,3000,3000,4,0.3559068999993542,0.40625,59576320,34324480,0,
+main,mixed_groups_24,off,0,3000,3000,24,0.3572764999998981,0.453125,60600320,34304000,0,
+main,mixed_groups_24,on,0,3000,3000,24,0.34898989999965124,0.3125,60719104,35041280,0,enabled; workers=24; groups=8; required=221184; reserved=221184; limit=268435456 bytes | enabled; workers=24; groups=8; required=221184; reserved=221184; limit=268435456 bytes | enabled; workers=24; groups=8; required=221184; reserved=221184; limit=268435456 bytes
+main,mixed_groups_24,f64,0,3000,3000,24,0.3475354000001971,0.34375,60637184,35860480,0,
+main,mixed_groups_24,on,1,3000,3000,24,0.3685476999999082,0.390625,60993536,34816000,0,enabled; workers=24; groups=8; required=221184; reserved=221184; limit=268435456 bytes | enabled; workers=24; groups=8; required=221184; reserved=221184; limit=268435456 bytes | enabled; workers=24; groups=8; required=221184; reserved=221184; limit=268435456 bytes
+main,mixed_groups_24,f64,1,3000,3000,24,0.3663598999992246,0.484375,60850176,34291712,0,
+main,mixed_groups_24,off,1,3000,3000,24,0.34868139999980485,0.390625,60518400,35553280,0,
+main,mixed_groups_24,f64,2,3000,3000,24,0.35796059999938734,0.6875,60940288,32124928,0,
+main,mixed_groups_24,off,2,3000,3000,24,0.3770641000000978,0.578125,60465152,36511744,0,
+main,mixed_groups_24,on,2,3000,3000,24,0.35769259999960923,0.375,60751872,34324480,0,enabled; workers=24; groups=8; required=221184; reserved=221184; limit=268435456 bytes | enabled; workers=24; groups=8; required=221184; reserved=221184; limit=268435456 bytes | enabled; workers=24; groups=8; required=221184; reserved=221184; limit=268435456 bytes
+main,pulse_stable,on,0,3000,3000,4,0.3357153999995717,0.328125,59547648,32739328,0,enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes | enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes | enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes
+main,pulse_stable,f64,0,3000,3000,4,0.335445400000026,0.328125,59871232,35487744,0,
+main,pulse_stable,off,0,3000,3000,4,0.33539509999991424,0.3125,59658240,34017280,0,
+main,pulse_stable,f64,1,3000,3000,4,0.3221997000000556,0.328125,59645952,30932992,0,
+main,pulse_stable,off,1,3000,3000,4,0.3348837999992611,0.359375,59731968,33882112,0,
+main,pulse_stable,on,1,3000,3000,4,0.3338277000002563,0.34375,59428864,32808960,0,enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes | enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes | enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes
+main,pulse_stable,off,2,3000,3000,4,0.33288330000050337,0.359375,59645952,33812480,0,
+main,pulse_stable,on,2,3000,3000,4,0.35679859999982,0.34375,59691008,30932992,0,enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes | enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes | enabled; workers=4; groups=8; required=36864; reserved=36864; limit=268435456 bytes
+main,pulse_stable,f64,2,3000,3000,4,0.3649569999997766,0.375,59895808,31334400,0,
+main,large_source_off,f64,0,3000,3000,4,0.35363890000007814,0.390625,58875904,32243712,0,
+main,large_source_off,off,0,3000,3000,4,0.34644570000000385,0.359375,58863616,32006144,0,
+main,large_source_off,on,0,3000,3000,4,0.3365230999997948,0.390625,58810368,32002048,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,large_source_off,off,1,3000,3000,4,0.3347370999999839,0.375,58822656,33226752,0,
+main,large_source_off,on,1,3000,3000,4,0.34430109999993874,0.328125,58806272,32329728,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,large_source_off,f64,1,3000,3000,4,0.33248079999975744,0.375,58933248,34279424,0,
+main,large_source_off,on,2,3000,3000,4,0.3344381999995676,0.421875,58789888,33935360,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,large_source_off,f64,2,3000,3000,4,0.33713239999997313,0.375,59138048,34476032,0,
+main,large_source_off,off,2,3000,3000,4,0.3373351999998704,0.421875,58716160,33202176,0,
+main,many_selected_few_allocated,off,0,3000,3000,4,0.36856129999978293,0.5,59420672,34193408,0,
+main,many_selected_few_allocated,on,0,3000,3000,4,0.35586699999930715,0.484375,59641856,34713600,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,many_selected_few_allocated,f64,0,3000,3000,4,0.35705739999957586,0.515625,59863040,32063488,0,
+main,many_selected_few_allocated,on,1,3000,3000,4,0.37570659999983036,0.546875,59600896,34275328,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,many_selected_few_allocated,f64,1,3000,3000,4,0.36510069999985717,0.515625,59752448,33677312,0,
+main,many_selected_few_allocated,off,1,3000,3000,4,0.3656489999993937,0.5,59375616,34283520,0,
+main,many_selected_few_allocated,f64,2,3000,3000,4,0.3860021999998935,0.5,59752448,30375936,0,
+main,many_selected_few_allocated,off,2,3000,3000,4,0.3649088000001939,0.5,59637760,32931840,0,
+main,many_selected_few_allocated,on,2,3000,3000,4,0.3752676000003703,0.515625,59461632,34828288,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,nine_slices_enabled,on,0,3000,3000,4,0.3657278000000588,0.421875,83922944,60801024,0,enabled; workers=4; groups=8; required=4064256; reserved=4064256; limit=268435456 bytes | enabled; workers=4; groups=8; required=4064256; reserved=4064256; limit=268435456 bytes | enabled; workers=4; groups=8; required=4064256; reserved=4064256; limit=268435456 bytes
+main,nine_slices_enabled,f64,0,3000,3000,4,0.3676962999998068,0.375,83357696,54865920,0,
+main,nine_slices_enabled,off,0,3000,3000,4,0.3631891999993968,0.4375,83107840,55386112,0,
+main,nine_slices_enabled,f64,1,3000,3000,4,0.3630964000003587,0.40625,83447808,56803328,0,
+main,nine_slices_enabled,off,1,3000,3000,4,0.3761395999999877,0.453125,83152896,54362112,0,
+main,nine_slices_enabled,on,1,3000,3000,4,0.37878530000034516,0.453125,85180416,61898752,0,enabled; workers=4; groups=8; required=4064256; reserved=4064256; limit=268435456 bytes | enabled; workers=4; groups=8; required=4064256; reserved=4064256; limit=268435456 bytes | enabled; workers=4; groups=8; required=4064256; reserved=4064256; limit=268435456 bytes
+main,nine_slices_enabled,off,2,3000,3000,4,0.3677222999995138,0.4375,82993152,55091200,0,
+main,nine_slices_enabled,on,2,3000,3000,4,0.3965987999999925,0.46875,83972096,62951424,0,enabled; workers=4; groups=8; required=4064256; reserved=4064256; limit=268435456 bytes | enabled; workers=4; groups=8; required=4064256; reserved=4064256; limit=268435456 bytes | enabled; workers=4; groups=8; required=4064256; reserved=4064256; limit=268435456 bytes
+main,nine_slices_enabled,f64,2,3000,3000,4,0.3672781000004761,0.421875,83202048,58404864,0,
+main,nine_slices_budget_fallback,f64,0,3000,3000,24,0.3757722999998805,0.375,84164608,60149760,0,
+main,nine_slices_budget_fallback,off,0,3000,3000,24,0.3871419999995851,0.40625,83816448,58613760,0,
+main,nine_slices_budget_fallback,on,0,3000,3000,24,0.37748890000057145,0.5,83763200,59568128,0,shared (budget or no groups); workers=24; groups=8; required=24385536; reserved=0; limit=1048576 bytes | shared (budget or no groups); workers=24; groups=8; required=24385536; reserved=0; limit=1048576 bytes | shared (budget or no groups); workers=24; groups=8; required=24385536; reserved=0; limit=1048576 bytes
+main,nine_slices_budget_fallback,off,1,3000,3000,24,0.35523190000003524,0.421875,83693568,57442304,0,
+main,nine_slices_budget_fallback,on,1,3000,3000,24,0.38000300000021525,0.578125,84197376,60006400,0,shared (budget or no groups); workers=24; groups=8; required=24385536; reserved=0; limit=1048576 bytes | shared (budget or no groups); workers=24; groups=8; required=24385536; reserved=0; limit=1048576 bytes | shared (budget or no groups); workers=24; groups=8; required=24385536; reserved=0; limit=1048576 bytes
+main,nine_slices_budget_fallback,f64,1,3000,3000,24,0.35589340000024094,0.5,83931136,57569280,0,
+main,nine_slices_budget_fallback,on,2,3000,3000,24,0.36335330000019894,0.390625,83922944,56107008,0,shared (budget or no groups); workers=24; groups=8; required=24385536; reserved=0; limit=1048576 bytes | shared (budget or no groups); workers=24; groups=8; required=24385536; reserved=0; limit=1048576 bytes | shared (budget or no groups); workers=24; groups=8; required=24385536; reserved=0; limit=1048576 bytes
+main,nine_slices_budget_fallback,f64,2,3000,3000,24,0.36571700000058627,0.359375,84271104,56311808,0,
+main,nine_slices_budget_fallback,off,2,3000,3000,24,0.36626239999986865,0.390625,83939328,56311808,0,
+main,decay,off,0,3000,3000,4,0.3548218999994788,0.5,58843136,33046528,0,
+main,decay,on,0,3000,3000,4,0.354406000000381,0.5,58900480,30138368,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,decay,f64,0,3000,3000,4,0.3556345999995756,0.515625,59101184,31526912,0,
+main,decay,on,1,3000,3000,4,0.36841110000023036,0.46875,59043840,32321536,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,decay,f64,1,3000,3000,4,0.35762460000023566,0.46875,59019264,30253056,0,
+main,decay,off,1,3000,3000,4,0.3535044000000198,0.5,58777600,29396992,0,
+main,decay,f64,2,3000,3000,4,0.3553009999995993,0.484375,58896384,30126080,0,
+main,decay,off,2,3000,3000,4,0.36646960000052786,0.5,58781696,30150656,0,
+main,decay,on,2,3000,3000,4,0.36561950000032084,0.5,58880000,30601216,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,odour,on,0,3000,3000,4,0.38666379999995115,0.5,58732544,30048256,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,odour,f64,0,3000,3000,4,0.3752645000004122,0.5,59002880,33562624,0,
+main,odour,off,0,3000,3000,4,0.3756708000000799,0.5,58912768,30474240,0,
+main,odour,f64,1,3000,3000,4,0.3869877999995879,0.484375,59219968,34627584,0,
+main,odour,off,1,3000,3000,4,0.38675359999979264,0.5625,59031552,33624064,0,
+main,odour,on,1,3000,3000,4,0.39638790000026347,0.546875,59109376,33284096,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,odour,off,2,3000,3000,4,0.3863552000002528,0.53125,58728448,30261248,0,
+main,odour,on,2,3000,3000,4,0.39879800000016985,0.578125,58986496,31858688,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes | enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,odour,f64,2,3000,3000,4,0.39836639999975887,0.53125,59256832,33341440,0,
+main,terrain,f64,0,3000,3000,4,0.3567297999998118,0.40625,59277312,33091584,0,
+main,terrain,off,0,3000,3000,4,0.3466210000005958,0.484375,58933248,32514048,0,
+main,terrain,on,0,3000,3000,4,0.34595050000007177,0.453125,58941440,28786688,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,terrain,off,1,3000,3000,4,0.35709899999983463,0.453125,58863616,33841152,0,
+main,terrain,on,1,3000,3000,4,0.35549489999993966,0.421875,58990592,32399360,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,terrain,f64,1,3000,3000,4,0.34407420000025013,0.359375,59424768,34631680,0,
+main,terrain,on,2,3000,3000,4,0.3459292999996251,0.421875,59170816,34668544,0,enabled; workers=4; groups=2; required=9216; reserved=9216; limit=268435456 bytes
+main,terrain,f64,2,3000,3000,4,0.34710199999972247,0.421875,59146240,32600064,0,
+main,terrain,off,2,3000,3000,4,0.35444969999934983,0.4375,58986496,32436224,0,
+main,stationary_concentrated,off,0,3000,3000,4,0.3261646999999357,0.40625,57032704,30724096,0,
+main,stationary_concentrated,on,0,3000,3000,4,0.3053425000007337,0.34375,57196544,30785536,0,enabled; workers=4; groups=2; required=30976; reserved=30976; limit=268435456 bytes
+main,stationary_concentrated,f64,0,3000,3000,4,0.3136801999999079,0.328125,57421824,31248384,0,
+main,stationary_concentrated,on,1,3000,3000,4,0.3241181000003053,0.40625,57044992,32419840,0,enabled; workers=4; groups=2; required=30976; reserved=30976; limit=268435456 bytes
+main,stationary_concentrated,f64,1,3000,3000,4,0.31409960000019055,0.390625,57466880,27975680,0,
+main,stationary_concentrated,off,1,3000,3000,4,0.31452160000026197,0.359375,56868864,33017856,0,
+main,stationary_concentrated,f64,2,3000,3000,4,0.31368839999959164,0.375,57221120,33030144,0,
+main,stationary_concentrated,off,2,3000,3000,4,0.30530329999965033,0.40625,57171968,30900224,0,
+main,stationary_concentrated,on,2,3000,3000,4,0.3073869999998351,0.40625,57036800,31121408,0,enabled; workers=4; groups=2; required=30976; reserved=30976; limit=268435456 bytes
+performance,concentrated_100k_w4,f64,0,100000,100000,4,1.163983699999335,3.828125,62566400,35053568,0,
+performance,concentrated_100k_w4,off,0,100000,100000,4,1.193514000000505,3.953125,61956096,36077568,0,
+performance,concentrated_100k_w4,on,0,100000,100000,4,1.1494124999999258,3.78125,62279680,34680832,0,enabled; workers=4; groups=2; required=30976; reserved=30976; limit=268435456 bytes
+performance,concentrated_100k_w4,off,1,100000,100000,4,1.1669089999995776,3.890625,62197760,36106240,0,
+performance,concentrated_100k_w4,on,1,100000,100000,4,1.1676430999996228,3.78125,62251008,36311040,0,enabled; workers=4; groups=2; required=30976; reserved=30976; limit=268435456 bytes
+performance,concentrated_100k_w4,f64,1,100000,100000,4,1.1806820000001608,3.90625,62287872,35303424,0,
+performance,concentrated_100k_w4,on,2,100000,100000,4,1.2015780000001541,3.953125,62308352,33918976,0,enabled; workers=4; groups=2; required=30976; reserved=30976; limit=268435456 bytes
+performance,concentrated_100k_w4,f64,2,100000,100000,4,1.1934355000003052,3.875,62283776,33587200,0,
+performance,concentrated_100k_w4,off,2,100000,100000,4,1.18338760000006,3.859375,62087168,37048320,0,
+performance,concentrated_100k_w4,f64,3,100000,100000,4,1.1844670000000406,3.859375,62435328,33689600,0,
+performance,concentrated_100k_w4,off,3,100000,100000,4,1.1981377000001885,3.890625,62201856,35209216,0,
+performance,concentrated_100k_w4,on,3,100000,100000,4,1.1552432999997109,3.734375,61992960,37257216,0,enabled; workers=4; groups=2; required=30976; reserved=30976; limit=268435456 bytes
+performance,concentrated_100k_w4,off,4,100000,100000,4,1.1780871999999363,3.84375,62210048,37593088,0,
+performance,concentrated_100k_w4,on,4,100000,100000,4,1.1517183999994813,3.75,62230528,36560896,0,enabled; workers=4; groups=2; required=30976; reserved=30976; limit=268435456 bytes
+performance,concentrated_100k_w4,f64,4,100000,100000,4,1.2098932999997487,3.953125,62296064,35962880,0,
+performance,concentrated_100k_w24,off,0,100000,100000,24,0.5226321000000098,5.484375,62656512,35979264,0,
+performance,concentrated_100k_w24,on,0,100000,100000,24,0.49806929999977,5.140625,62709760,35827712,0,enabled; workers=24; groups=2; required=185856; reserved=185856; limit=268435456 bytes
+performance,concentrated_100k_w24,f64,0,100000,100000,24,0.5191010999997161,5.875,63205376,36864000,0,
+performance,concentrated_100k_w24,on,1,100000,100000,24,0.5093823999995948,5.515625,62881792,36253696,0,enabled; workers=24; groups=2; required=185856; reserved=185856; limit=268435456 bytes
+performance,concentrated_100k_w24,f64,1,100000,100000,24,0.5321054000005461,5.84375,62902272,34529280,0,
+performance,concentrated_100k_w24,off,1,100000,100000,24,0.5308322000000771,6.21875,62885888,35860480,0,
+performance,concentrated_100k_w24,f64,2,100000,100000,24,0.5109390999996322,5.734375,63090688,36536320,0,
+performance,concentrated_100k_w24,off,2,100000,100000,24,0.5293795000006867,6.140625,62619648,35926016,0,
+performance,concentrated_100k_w24,on,2,100000,100000,24,0.5020837000001848,5.140625,62750720,35061760,0,enabled; workers=24; groups=2; required=185856; reserved=185856; limit=268435456 bytes
+performance,concentrated_100k_w24,off,3,100000,100000,24,0.5116307999996934,5.5625,62869504,36200448,0,
+performance,concentrated_100k_w24,on,3,100000,100000,24,0.48975029999928665,5.421875,62832640,35684352,0,enabled; workers=24; groups=2; required=185856; reserved=185856; limit=268435456 bytes
+performance,concentrated_100k_w24,f64,3,100000,100000,24,0.5323379999999815,5.578125,63070208,35233792,0,
+performance,concentrated_100k_w24,on,4,100000,100000,24,0.4915625999992699,5.15625,62717952,35008512,0,enabled; workers=24; groups=2; required=185856; reserved=185856; limit=268435456 bytes
+performance,concentrated_100k_w24,f64,4,100000,100000,24,0.5395507000002908,6.09375,62976000,34242560,0,
+performance,concentrated_100k_w24,off,4,100000,100000,24,0.5697824999997465,6.59375,62791680,35246080,0,
+performance,concentrated_1m_w24,on,0,1000000,1000000,24,2.417942099999891,50.6875,128552960,103567360,0,enabled; workers=24; groups=2; required=185856; reserved=185856; limit=268435456 bytes
+performance,concentrated_1m_w24,f64,0,1000000,1000000,24,2.9151044000000184,60.765625,128245760,103227392,0,
+performance,concentrated_1m_w24,off,0,1000000,1000000,24,2.968567599999915,60.734375,129044480,104599552,0,
+performance,concentrated_1m_w24,f64,1,1000000,1000000,24,2.8951665999993565,60.296875,128413696,104079360,0,
+performance,concentrated_1m_w24,off,1,1000000,1000000,24,2.8219355999999607,59.109375,128884736,103972864,0,
+performance,concentrated_1m_w24,on,1,1000000,1000000,24,2.421762399999352,50.90625,129507328,104923136,0,enabled; workers=24; groups=2; required=185856; reserved=185856; limit=268435456 bytes
+performance,concentrated_1m_w24,off,2,1000000,1000000,24,2.923844900000404,62.109375,129290240,104439808,0,
+performance,concentrated_1m_w24,on,2,1000000,1000000,24,2.4591803000002983,51.921875,129183744,104153088,0,enabled; workers=24; groups=2; required=185856; reserved=185856; limit=268435456 bytes
+performance,concentrated_1m_w24,f64,2,1000000,1000000,24,2.941740899999786,62.296875,128262144,103354368,0,
+performance,concentrated_1m_w24,on,3,1000000,1000000,24,2.528900000000249,54.15625,129429504,104730624,0,enabled; workers=24; groups=2; required=185856; reserved=185856; limit=268435456 bytes
+performance,concentrated_1m_w24,f64,3,1000000,1000000,24,3.1392374000006384,62.3125,128630784,105058304,0,
+performance,concentrated_1m_w24,off,3,1000000,1000000,24,2.8451820999998745,59.890625,129122304,104275968,0,
+performance,concentrated_1m_w24,f64,4,1000000,1000000,24,3.155519500000082,63.078125,128421888,104394752,0,
+performance,concentrated_1m_w24,off,4,1000000,1000000,24,2.790618099999847,59.3125,128978944,104103936,0,
+performance,concentrated_1m_w24,on,4,1000000,1000000,24,2.389023400000042,50.109375,128573440,104071168,0,enabled; workers=24; groups=2; required=185856; reserved=185856; limit=268435456 bytes
+performance,dense_grid_100k_w24,f64,0,100000,100000,24,0.7585094999994908,8.9375,88444928,70475776,0,
+performance,dense_grid_100k_w24,off,0,100000,100000,24,0.7581298000004608,9.28125,89505792,68165632,0,
+performance,dense_grid_100k_w24,on,0,100000,100000,24,0.6982288000008339,7.0625,295227392,274468864,0,enabled; workers=24; groups=8; required=205756416; reserved=205756416; limit=268435456 bytes
+performance,dense_grid_100k_w24,off,1,100000,100000,24,0.7480821000008291,8.640625,89165824,67911680,0,
+performance,dense_grid_100k_w24,on,1,100000,100000,24,0.6776949000004606,7.15625,295370752,273489920,0,enabled; workers=24; groups=8; required=205756416; reserved=205756416; limit=268435456 bytes
+performance,dense_grid_100k_w24,f64,1,100000,100000,24,0.7382496000000174,8.5,88276992,67100672,0,
+performance,dense_grid_100k_w24,on,2,100000,100000,24,0.6843527000000904,6.765625,294432768,273395712,0,enabled; workers=24; groups=8; required=205756416; reserved=205756416; limit=268435456 bytes
+performance,dense_grid_100k_w24,f64,2,100000,100000,24,0.7403763000002073,8.984375,88023040,66801664,0,
+performance,dense_grid_100k_w24,off,2,100000,100000,24,0.7485833000000639,8.953125,89133056,68915200,0,
+performance,dense_grid_100k_w24,f64,3,100000,100000,24,0.7778073999998014,8.765625,88367104,70094848,0,
+performance,dense_grid_100k_w24,off,3,100000,100000,24,0.7371284999999261,8.53125,89014272,67817472,0,
+performance,dense_grid_100k_w24,on,3,100000,100000,24,0.6978397000002587,7.21875,295112704,273375232,0,enabled; workers=24; groups=8; required=205756416; reserved=205756416; limit=268435456 bytes
+performance,dense_grid_100k_w24,off,4,100000,100000,24,0.7484951000005822,8.65625,87937024,70107136,0,
+performance,dense_grid_100k_w24,on,4,100000,100000,24,0.685828799999399,7.171875,295313408,273694720,0,enabled; workers=24; groups=8; required=205756416; reserved=205756416; limit=268435456 bytes
+performance,dense_grid_100k_w24,f64,4,100000,100000,24,0.740387599999849,8.71875,88539136,68349952,0,
