@@ -1,0 +1,215 @@
+{
+  "schema": 1,
+  "scope": "Generic application dimensions and aggregated engineering results. Research inputs, manuscript details and raw outputs are excluded.",
+  "cases": [
+    {
+      "case": "E01_8k",
+      "flow_and_counting_resolution_m": 500.0,
+      "interior_grid": [
+        114,
+        82
+      ],
+      "horizontal_slices": 9,
+      "new_particle_rate_per_second": 8000,
+      "threads": 22,
+      "recorded_new_particle_allocation_range": [
+        28799860,
+        28800101
+      ],
+      "recorded_residual_releases_range": [
+        0,
+        25854974
+      ],
+      "residual_count_definition": "total released in the situation, not simultaneous occupancy",
+      "historical_engine_sha256": "cf0338b18d79e8e1946e0cb6f21b3d87a0bccf7ae56bcfbdce2dff39d8401f5a",
+      "memory": {
+        "method": "launcher samples current process WorkingSet64 and PrivateMemorySize64 every approximately 2 seconds, retaining maxima; these are sampled peaks, not OS lifetime PeakWorkingSet64",
+        "sampled_peak_ws_bytes": 2328428544,
+        "sampled_peak_ws_gib": 2.16851806640625,
+        "sampled_peak_private_bytes": 2331099136,
+        "sampled_peak_private_gib": 2.1710052490234375,
+        "ten_minute_active_samples": 14,
+        "ten_minute_engine_counts": [
+          1
+        ],
+        "ten_minute_ws_range_gib": [
+          1.77,
+          2.1
+        ],
+        "ten_minute_private_max_gib": 2.12,
+        "machine_total_ram_gib": 31.47,
+        "warning": "Measured whole historical engine; no F-off paired production memory measurement. Historical SourceGroupBuffer lazily stores SG >100 whereas PR64 uses dense double leaves."
+      },
+      "current_PR64_memory_projection": {
+        "type": "formula, not measurement",
+        "extra_double_payload_bytes": 75769344,
+        "extra_double_payload_mib": 72.25927734375,
+        "formula": "8*(NXL+2)*(NYL+2)*NS*SourceGroups.Count",
+        "excludes": "array/reference overhead, GC retention and unchanged arrays",
+        "percent_of_historical_sampled_peak_ws_scale_only": 3.25409788482648,
+        "denominator_warning": "Scale comparison only; different memory representations prevent treating it as a measured overhead fraction."
+      }
+    },
+    {
+      "case": "E01_8k_250m",
+      "flow_and_counting_resolution_m": 250.0,
+      "interior_grid": [
+        228,
+        164
+      ],
+      "horizontal_slices": 9,
+      "new_particle_rate_per_second": 8000,
+      "threads": 22,
+      "recorded_new_particle_allocation_range": [
+        28799860,
+        28800101
+      ],
+      "recorded_residual_releases_range": [
+        0,
+        27885039
+      ],
+      "residual_count_definition": "total released in the situation, not simultaneous occupancy",
+      "historical_engine_sha256": "cf0338b18d79e8e1946e0cb6f21b3d87a0bccf7ae56bcfbdce2dff39d8401f5a",
+      "memory": {
+        "method": "launcher samples current process WorkingSet64 and PrivateMemorySize64 every approximately 2 seconds, retaining maxima; these are sampled peaks, not OS lifetime PeakWorkingSet64",
+        "sampled_peak_ws_bytes": 3644686336,
+        "sampled_peak_ws_gib": 3.394378662109375,
+        "sampled_peak_private_bytes": 3664367616,
+        "sampled_peak_private_gib": 3.412708282470703,
+        "ten_minute_active_samples": 14,
+        "ten_minute_engine_counts": [
+          1
+        ],
+        "ten_minute_ws_range_gib": [
+          2.44,
+          3.02
+        ],
+        "ten_minute_private_max_gib": 3.05,
+        "machine_total_ram_gib": 31.47,
+        "warning": "Measured whole historical engine; no F-off paired production memory measurement. Historical SourceGroupBuffer lazily stores SG >100 whereas PR64 uses dense double leaves."
+      },
+      "current_PR64_memory_projection": {
+        "type": "formula, not measurement",
+        "extra_double_payload_bytes": 296887680,
+        "extra_double_payload_mib": 283.1341552734375,
+        "formula": "8*(NXL+2)*(NYL+2)*NS*SourceGroups.Count",
+        "excludes": "array/reference overhead, GC retention and unchanged arrays",
+        "percent_of_historical_sampled_peak_ws_scale_only": 8.145767636230412,
+        "denominator_warning": "Scale comparison only; different memory representations prevent treating it as a measured overhead fraction."
+      }
+    }
+  ],
+  "source_counts": {
+    "area_source_input_rows": 213788,
+    "source_group_count": 108,
+    "active_area_rows_per_situation_range": [
+      532,
+      3860
+    ],
+    "interpretation": "input rows repeat spatial geometry across release-hour source groups; do not call 213788 distinct geographical emission sources or ships"
+  },
+  "historical_precision": {
+    "metric": "For each situation, select whole-domain cells at or above the 99th percentile of positive concentrations in that configuration's 8k fresh-emission field. Divide the 30k concentration sum by the 8k sum over those same selected cells.",
+    "scope": {
+      "situations": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "period": "six nighttime situations",
+      "slice_height_m": 2,
+      "source_groups": 48,
+      "weather_fields": "h:00",
+      "particle_rates_per_second": [
+        8000,
+        30000
+      ],
+      "component": "fresh-emission concentration",
+      "selection": "each configuration uses its own 8k hotspot sets"
+    },
+    "stock_ratios": [
+      0.6927590502967385,
+      0.729163301057602,
+      0.6616492500157659,
+      0.5924170343446646,
+      0.7994940823150521,
+      0.9463176272813887
+    ],
+    "patched_ratios": [
+      1.001893962099215,
+      1.0009139482030447,
+      0.9995090822769757,
+      0.9991456876056485,
+      0.9980956261238031,
+      1.0010833148306115
+    ],
+    "attribution": "Historical F+S+late-NaNGuard bundle; motivation and convergence evidence, not a measured effect size for current PR #64.",
+    "do_not_claim": [
+      "Absolute concentration accuracy was validated.",
+      "The historical six-situation effect size was reproduced on current PR #64.",
+      "All numbers are from an F-only run.",
+      "The stock and patched hotspot sets are identical."
+    ]
+  },
+  "historical_optimization": {
+    "scope": "Existing application runs, full OPT1 engine plus launcher versus the preceding patched engine plus launcher; not an isolated test of PR #68 or #69.",
+    "conditions": {
+      "weather_situations": 36,
+      "new_particles_per_second": 8000,
+      "timing_pairs": 4,
+      "matching": "Same physical machine and same seed within each timing pair.",
+      "concentration_pairs": 6
+    },
+    "timing": [
+      {
+        "pair": "A",
+        "prior_time_normalized": 100.0,
+        "optimized_time_normalized": 55.00038768380927,
+        "speedup": 1.81816900227846,
+        "time_saved_percent": 44.99961231619073
+      },
+      {
+        "pair": "B",
+        "prior_time_normalized": 100.0,
+        "optimized_time_normalized": 57.14977797812424,
+        "speedup": 1.7497880750871497,
+        "time_saved_percent": 42.85022202187576
+      },
+      {
+        "pair": "C",
+        "prior_time_normalized": 100.0,
+        "optimized_time_normalized": 58.94833432181104,
+        "speedup": 1.696400774516876,
+        "time_saved_percent": 41.05166567818897
+      },
+      {
+        "pair": "D",
+        "prior_time_normalized": 100.0,
+        "optimized_time_normalized": 56.77064067229693,
+        "speedup": 1.7614738677557014,
+        "time_saved_percent": 43.22935932770308
+      }
+    ],
+    "concentration": {
+      "normalized_absolute_difference_percent_range": [
+        5.789391242119738e-05,
+        0.0003064781351412
+      ],
+      "hourly_top_one_percent_jaccard_min": 1.0,
+      "period_peak_location_same_fraction_min": 1.0,
+      "metric": "Area-weighted absolute concentration difference summed over the assessed land cells and times, divided by the reference concentration sum, in percent."
+    },
+    "attribution": "The full package includes optimizations absent from the current two PRs, including per-worker concentration buffering. Current #69 also omits the historical hinted-search algorithm. Historical NP8 combined stack storage and slice changes; its measured single-thread whole-model effect was within timing noise. These package results cannot be assigned to either PR."
+  },
+  "public_prior_evidence": "https://github.com/Borealis-Thoon/GRAL/blob/20b8a2672b21208b501913214fb93dfe171d4183/adversarial_review_20261013/OPERATIONAL_CONTEXT.md",
+  "private_source_hashes": [
+    "44ea749a59cf49f459ab7f976aeef9963dd56372b462e36053df6edeba4df251",
+    "7c4171ab418df46dd9b172004ee383508a19a92ff9a43dec496e5d4534d12f1c",
+    "dc3ee1d6092ca11f188a270eff1e8ab2fb442a1f5f303d1356879b0c667c575d",
+    "fd6a3d11f4be88f82517556bf7a37244315e8bc174ac93790886b6f91504ea29",
+    "fd6a3d11f4be88f82517556bf7a37244315e8bc174ac93790886b6f91504ea29"
+  ]
+}

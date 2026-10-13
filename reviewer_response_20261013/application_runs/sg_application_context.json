@@ -1,0 +1,160 @@
+{
+  "schema": "sg-application-context-public/v1",
+  "status": "verified_with_scope_limits",
+  "measurements": [
+    {
+      "label": "500 m application",
+      "cpu": "Intel(R) Core(TM) Ultra 7 270K Plus",
+      "physical_cores": 24,
+      "logical_processors": 24,
+      "configured_workers": 22,
+      "nominal_ram_gb_reported_by_user": 32,
+      "visible_ram_gib_recorded": 31.47,
+      "grid": [
+        114,
+        82
+      ],
+      "resolution_m": 500.0,
+      "horizontal_slices": 9,
+      "time_partitioned_source_groups": 108,
+      "completed_situations": 108,
+      "elapsed_minutes": 143.28,
+      "completion_status": "complete",
+      "watch_errors": 0,
+      "problem_report_lines": 0,
+      "sampled_peak_working_set_gib": 2.16851806640625,
+      "sampled_peak_private_memory_gib": 2.1710052490234375,
+      "archive_name_checks": 108,
+      "member_name_checks": 104976,
+      "unique_slice_group_keys_per_archive": 972,
+      "stored_full_run_analysis_nan_total": 0,
+      "direct_payload_audit": {
+        "situations": [
+          1,
+          108
+        ],
+        "members": 1944,
+        "sparse_values": 325560,
+        "nonfinite_values": 0,
+        "negative_values": 0,
+        "invalid_grid_indices": 0,
+        "last_situation_positive_groups_above_99": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108
+        ]
+      }
+    },
+    {
+      "label": "250 m application",
+      "cpu": "Intel(R) Core(TM) Ultra 7 270K Plus",
+      "physical_cores": 24,
+      "logical_processors": 24,
+      "configured_workers": 22,
+      "nominal_ram_gb_reported_by_user": 32,
+      "visible_ram_gib_recorded": 31.47,
+      "grid": [
+        228,
+        164
+      ],
+      "resolution_m": 250.0,
+      "horizontal_slices": 9,
+      "time_partitioned_source_groups": 108,
+      "completed_situations": 108,
+      "elapsed_minutes": 147.76,
+      "completion_status": "complete",
+      "watch_errors": 0,
+      "problem_report_lines": 0,
+      "sampled_peak_working_set_gib": 3.394378662109375,
+      "sampled_peak_private_memory_gib": 3.412708282470703,
+      "archive_name_checks": 108,
+      "member_name_checks": 104976,
+      "unique_slice_group_keys_per_archive": 972,
+      "stored_full_run_analysis_nan_total": 0,
+      "direct_payload_audit": {
+        "situations": [
+          1,
+          108
+        ],
+        "members": 1944,
+        "sparse_values": 1174799,
+        "nonfinite_values": 0,
+        "negative_values": 0,
+        "invalid_grid_indices": 0,
+        "last_situation_positive_groups_above_99": [
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108
+        ]
+      }
+    }
+  ],
+  "historical_engine": {
+    "version": "26.0.2-inu.3-memory.1-r7b.1-opt.1",
+    "sha256": "cf0338b18d79e8e1946e0cb6f21b3d87a0bccf7ae56bcfbdce2dff39d8401f5a",
+    "storage": "Lazy source-group buffers above 100 groups, with additional application patches and optimizations.",
+    "output_codec": "Custom two-character source-group tokens: 01..99 remain decimal; 100..108 are A0..A8. The historical source supports IDs 1..1295."
+  },
+  "interpretation": [
+    "These are two completed applications of the historical custom engine, not runs of the proposed minimal source-reader patch.",
+    "The groups are time-partitioned; the case does not represent108 groups continuously emitting at the same time.",
+    "The process-memory values are maxima of approximately two-second samples, not OS-maintained lifetime peaks or paired measurements of a single patch.",
+    "All 216 archive directories were checked for a complete 108-group by 9-slice output matrix. Direct payload validation covered the first and last situation of each case; it did not decode every payload again.",
+    "The existing full-run analysis reports zero NaN totals. It is distinct from the direct finite/nonnegative/grid-index checks on the sampled payloads.",
+    "The historical memory layout and filename codec differ from a minimal source-reader change. Its memory cost and downstream-format compatibility require separate tests."
+  ],
+  "private_source_sha256": [
+    {
+      "label": "evidence_01",
+      "sha256": "d04e56f44ff3a923819cabace116a2003d8109c017ab4b225f6e8e436995bbef"
+    },
+    {
+      "label": "evidence_02",
+      "sha256": "3e51c339d7ed7b3612fd5bb16bbd4a77d79bc8cbac981562c651b444434d2f82"
+    },
+    {
+      "label": "evidence_03",
+      "sha256": "91ab74f0d19d90b71fbc042d6a1670bcae9bb3a9a927e3f3702bd85dcb27b2a4"
+    },
+    {
+      "label": "evidence_04",
+      "sha256": "f235f8a7a2ab31172f9d2fbd47d183b6a07b443fa33485f688b361106087b6f8"
+    },
+    {
+      "label": "evidence_05",
+      "sha256": "07158d1e4d834a67722d5e71e2e66213d51c3ff52b3b1f2d21f049d00248dd38"
+    },
+    {
+      "label": "evidence_06",
+      "sha256": "2a21f191dd75db94c132a934d8b0df517601c2c64c09efd3469f3ae1d0a5f306"
+    },
+    {
+      "label": "evidence_07",
+      "sha256": "3ba951669aaa4ea3dbd844a86b8aefcfe3a8b222d491368ed5b3d4bcaf0fbbf4"
+    },
+    {
+      "label": "evidence_08",
+      "sha256": "994b4752c02a6e5153e203deafef98ad52b3d7d772f48388d5de5a014db62f7b"
+    },
+    {
+      "label": "evidence_09",
+      "sha256": "44ea749a59cf49f459ab7f976aeef9963dd56372b462e36053df6edeba4df251"
+    },
+    {
+      "label": "evidence_10",
+      "sha256": "9b6949036a1a64da8a144a27b424632d5aa99a6fc79b86b4806d7ccc2fd4c28b"
+    }
+  ]
+}

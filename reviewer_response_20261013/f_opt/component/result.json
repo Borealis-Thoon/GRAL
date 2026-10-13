@@ -1,0 +1,349 @@
+{
+  "status": "pass",
+  "memory": [
+    {
+      "name": "synthetic_1sg",
+      "nx": 100,
+      "ny": 100,
+      "slices": 1,
+      "source_groups": 1,
+      "payload_bytes": 83232,
+      "allocated_bytes": 752616,
+      "jagged_and_closure_overhead_bytes": 669384
+    },
+    {
+      "name": "synthetic_108sg",
+      "nx": 100,
+      "ny": 100,
+      "slices": 9,
+      "source_groups": 108,
+      "payload_bytes": 80901504,
+      "allocated_bytes": 84234312,
+      "jagged_and_closure_overhead_bytes": 3332808
+    },
+    {
+      "name": "reported_500m_shape",
+      "nx": 114,
+      "ny": 82,
+      "slices": 9,
+      "source_groups": 108,
+      "payload_bytes": 75769344,
+      "allocated_bytes": 78891400,
+      "jagged_and_closure_overhead_bytes": 3122056
+    },
+    {
+      "name": "same_domain_250m_shape",
+      "nx": 228,
+      "ny": 164,
+      "slices": 9,
+      "source_groups": 108,
+      "payload_bytes": 296887680,
+      "allocated_bytes": 309114328,
+      "jagged_and_closure_overhead_bytes": 12226648
+    }
+  ],
+  "precision": [
+    {
+      "contributions": 3000,
+      "distribution": "equal",
+      "permutations": 8,
+      "exact_sum": 0.18310546875,
+      "reference_float": 0.18310547,
+      "float_values": [
+        0.18310547,
+        0.18310547,
+        0.18310547,
+        0.18310547,
+        0.18310547,
+        0.18310547,
+        0.18310547,
+        0.18310547
+      ],
+      "double_values": [
+        0.18310547,
+        0.18310547,
+        0.18310547,
+        0.18310547,
+        0.18310547,
+        0.18310547,
+        0.18310547,
+        0.18310547
+      ],
+      "float_unique_outputs": 1,
+      "double_unique_outputs": 1,
+      "float_range": 0,
+      "double_range": 0,
+      "max_float_relative_error": 0,
+      "max_double_relative_error": 0
+    },
+    {
+      "contributions": 3000,
+      "distribution": "mixed_1e3",
+      "permutations": 8,
+      "exact_sum": 1501.46484375,
+      "reference_float": 1501.4648,
+      "float_values": [
+        1501.4648,
+        1501.4648,
+        1501.4648,
+        1501.4648,
+        1501.4648,
+        1501.4648,
+        1501.4648,
+        1501.4648
+      ],
+      "double_values": [
+        1501.4648,
+        1501.4648,
+        1501.4648,
+        1501.4648,
+        1501.4648,
+        1501.4648,
+        1501.4648,
+        1501.4648
+      ],
+      "float_unique_outputs": 1,
+      "double_unique_outputs": 1,
+      "float_range": 0,
+      "double_range": 0,
+      "max_float_relative_error": 0,
+      "max_double_relative_error": 0
+    },
+    {
+      "contributions": 3000,
+      "distribution": "mixed_1e7",
+      "permutations": 8,
+      "exact_sum": 750.0001341104507,
+      "reference_float": 750.0001,
+      "float_values": [
+        750,
+        750,
+        750,
+        750,
+        750,
+        750,
+        750,
+        750
+      ],
+      "double_values": [
+        750.0001,
+        750.0001,
+        750.0001,
+        750.0001,
+        750.0001,
+        750.0001,
+        750.0001,
+        750.0001
+      ],
+      "float_unique_outputs": 1,
+      "double_unique_outputs": 1,
+      "float_range": 0,
+      "double_range": 0,
+      "max_float_relative_error": 1.7881390235175448E-07,
+      "max_double_relative_error": 1.605351478891307E-08
+    },
+    {
+      "contributions": 100000,
+      "distribution": "equal",
+      "permutations": 8,
+      "exact_sum": 6.103515625,
+      "reference_float": 6.1035156,
+      "float_values": [
+        6.1035156,
+        6.1035156,
+        6.1035156,
+        6.1035156,
+        6.1035156,
+        6.1035156,
+        6.1035156,
+        6.1035156
+      ],
+      "double_values": [
+        6.1035156,
+        6.1035156,
+        6.1035156,
+        6.1035156,
+        6.1035156,
+        6.1035156,
+        6.1035156,
+        6.1035156
+      ],
+      "float_unique_outputs": 1,
+      "double_unique_outputs": 1,
+      "float_range": 0,
+      "double_range": 0,
+      "max_float_relative_error": 0,
+      "max_double_relative_error": 0
+    },
+    {
+      "contributions": 100000,
+      "distribution": "mixed_1e3",
+      "permutations": 8,
+      "exact_sum": 50048.828125,
+      "reference_float": 50048.83,
+      "float_values": [
+        50016.023,
+        50015.66,
+        50015.926,
+        50015.867,
+        50015.938,
+        50015.902,
+        50016.305,
+        50015.95
+      ],
+      "double_values": [
+        50048.83,
+        50048.83,
+        50048.83,
+        50048.83,
+        50048.83,
+        50048.83,
+        50048.83,
+        50048.83
+      ],
+      "float_unique_outputs": 8,
+      "double_unique_outputs": 1,
+      "float_range": 0.64453125,
+      "double_range": 0,
+      "max_float_relative_error": 0.0006627121951219512,
+      "max_double_relative_error": 0
+    },
+    {
+      "contributions": 100000,
+      "distribution": "mixed_1e7",
+      "permutations": 8,
+      "exact_sum": 25000.004470348358,
+      "reference_float": 25000.004,
+      "float_values": [
+        25000,
+        25000,
+        25000,
+        25000,
+        25000,
+        25000,
+        25000,
+        25000
+      ],
+      "double_values": [
+        25000.004,
+        25000.004,
+        25000.004,
+        25000.004,
+        25000.004,
+        25000.004,
+        25000.004,
+        25000.004
+      ],
+      "float_unique_outputs": 1,
+      "double_unique_outputs": 1,
+      "float_range": 0,
+      "double_range": 0,
+      "max_float_relative_error": 1.7881390235175448E-07,
+      "max_double_relative_error": 2.2563930291426725E-08
+    },
+    {
+      "contributions": 1000000,
+      "distribution": "equal",
+      "permutations": 8,
+      "exact_sum": 61.03515625,
+      "reference_float": 61.035156,
+      "float_values": [
+        61.035156,
+        61.035156,
+        61.035156,
+        61.035156,
+        61.035156,
+        61.035156,
+        61.035156,
+        61.035156
+      ],
+      "double_values": [
+        61.035156,
+        61.035156,
+        61.035156,
+        61.035156,
+        61.035156,
+        61.035156,
+        61.035156,
+        61.035156
+      ],
+      "float_unique_outputs": 1,
+      "double_unique_outputs": 1,
+      "float_range": 0,
+      "double_range": 0,
+      "max_float_relative_error": 0,
+      "max_double_relative_error": 0
+    },
+    {
+      "contributions": 1000000,
+      "distribution": "mixed_1e3",
+      "permutations": 8,
+      "exact_sum": 500488.28125,
+      "reference_float": 500488.28,
+      "float_values": [
+        500016.1,
+        500015.94,
+        500016.12,
+        500015.88,
+        500015.9,
+        500016.06,
+        500015.88,
+        500015.88
+      ],
+      "double_values": [
+        500488.28,
+        500488.28,
+        500488.28,
+        500488.28,
+        500488.28,
+        500488.28,
+        500488.28,
+        500488.28
+      ],
+      "float_unique_outputs": 6,
+      "double_unique_outputs": 1,
+      "float_range": 0.25,
+      "double_range": 0,
+      "max_float_relative_error": 0.0009438907317073171,
+      "max_double_relative_error": 0
+    },
+    {
+      "contributions": 1000000,
+      "distribution": "mixed_1e7",
+      "permutations": 8,
+      "exact_sum": 250000.04470348358,
+      "reference_float": 250000.05,
+      "float_values": [
+        250000,
+        250000,
+        250000,
+        250000,
+        250000,
+        250000,
+        250000,
+        250000
+      ],
+      "double_values": [
+        250000.05,
+        250000.05,
+        250000.05,
+        250000.05,
+        250000.05,
+        250000.05,
+        250000.05,
+        250000.05
+      ],
+      "float_unique_outputs": 1,
+      "double_unique_outputs": 1,
+      "float_range": 0,
+      "double_range": 0,
+      "max_float_relative_error": 1.7881390235175448E-07,
+      "max_double_relative_error": 8.686064120638826E-09
+    }
+  ],
+  "limits": [
+    "Allocation-only shape checks; these are not production-process peak measurements.",
+    "Permutation inputs are constructed positive dyadic contributions, not samples extracted from a production run.",
+    "Every double sum equals the correctly rounded binary32 reference for these cases; arbitrary parallel runs are not guaranteed bitwise reproducible."
+  ]
+}
