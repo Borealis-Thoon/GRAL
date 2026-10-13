@@ -1,0 +1,54 @@
+{
+  "status": "pass",
+  "baseline": "891225b2f9dbbcda7f5ef6e9ef6db65e64845108",
+  "primary_conditions": 24,
+  "primary_main_executions": 96,
+  "fixed_completions": 48,
+  "baseline_completions": 24,
+  "expected_baseline_unsupported_outcomes": 24,
+  "baseline_failure_return_codes": {
+    "3762504530": 14,
+    "0": 10
+  },
+  "primary_watchdog_timeouts": 0,
+  "compatibility_restart_main_executions": 12,
+  "reported_main_executions": 108,
+  "excluded_exploratory_main_attempts": 8,
+  "all_main_attempts": 116,
+  "output_payloads_checked": 10880,
+  "strict_build_targets": 3,
+  "warnings": 0,
+  "errors": 0,
+  "checks": {
+    "fixed_seed_repeat_baseline": 12,
+    "fixed_seed_repeat_fixed": 24,
+    "legacy_baseline_equal": 12,
+    "high_low_id_payload_equal": 6
+  },
+  "source_group_count_checkpoint_tests_per_variant": [
+    99,
+    108,
+    255,
+    256
+  ],
+  "actual_particle_allocations": [
+    2040,
+    2121,
+    2160,
+    2178
+  ],
+  "changes": {
+    "files": 6,
+    "removed_lines": 6,
+    "added_lines": 6,
+    "removed_line_characters_excluding_newlines": 389,
+    "added_line_characters_excluding_newlines": 516,
+    "changed_line_characters_excluding_newlines": 905,
+    "aligned_deleted_characters": 17,
+    "aligned_inserted_characters": 144,
+    "aligned_edited_characters": 161,
+    "unified_diff_utf8_bytes": 3102,
+    "unified_diff_characters": 3102
+  },
+  "restart_scope": "Emission-OFF SG read/resume compatibility only. See checkpoint_observations.md for separate unresolved writer observations."
+}

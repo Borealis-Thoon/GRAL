@@ -1,0 +1,347 @@
+{
+  "status": "pass",
+  "base": "891225b2f9dbbcda7f5ef6e9ef6db65e64845108",
+  "builds": {
+    "baseline": {
+      "warnings": 0,
+      "errors": 0,
+      "elapsed_s": 0.7209883000000445
+    },
+    "fixed": {
+      "warnings": 0,
+      "errors": 0,
+      "elapsed_s": 0.7564633000001777
+    },
+    "fixture": {
+      "warnings": 0,
+      "errors": 0,
+      "elapsed_s": 0.7153901000001497
+    }
+  },
+  "fixtures": [
+    {
+      "status": "pass",
+      "variant": "baseline",
+      "decay_length": 102,
+      "decay_rates": {
+        "1": 0.001,
+        "99": 0.009,
+        "100": 0.001,
+        "101": 0.001
+      },
+      "checkpoint_count_roundtrip": [
+        99,
+        108,
+        255,
+        256
+      ],
+      "checkpoint_note": "256 is a count-format fixture using IDs 0..255, not a claim of 256 positive supported IDs"
+    },
+    {
+      "status": "pass",
+      "variant": "fixed",
+      "decay_length": 256,
+      "decay_rates": {
+        "1": 0.001,
+        "99": 0.009,
+        "100": 0.01,
+        "101": 0.011,
+        "102": 0.012,
+        "108": 0.018,
+        "255": 0.025
+      },
+      "checkpoint_count_roundtrip": [
+        99,
+        108,
+        255,
+        256
+      ],
+      "checkpoint_note": "256 is a count-format fixture using IDs 0..255, not a claim of 256 positive supported IDs"
+    }
+  ],
+  "main_runs": 96,
+  "conditions": 24,
+  "completed_runs": 72,
+  "expected_baseline_failures": 24,
+  "checks": [
+    {
+      "case": "legacy_point",
+      "test": "fixed_seed_repeat_baseline",
+      "pass_": true
+    },
+    {
+      "case": "legacy_point",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "legacy_point",
+      "test": "legacy_baseline_equal",
+      "pass_": true
+    },
+    {
+      "case": "sparse_point",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "count108_point",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "mirror_point",
+      "test": "fixed_seed_repeat_baseline",
+      "pass_": true
+    },
+    {
+      "case": "mirror_point",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "mirror_point",
+      "test": "legacy_baseline_equal",
+      "pass_": true
+    },
+    {
+      "case": "legacy_portal",
+      "test": "fixed_seed_repeat_baseline",
+      "pass_": true
+    },
+    {
+      "case": "legacy_portal",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "legacy_portal",
+      "test": "legacy_baseline_equal",
+      "pass_": true
+    },
+    {
+      "case": "sparse_portal",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "count108_portal",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "mirror_portal",
+      "test": "fixed_seed_repeat_baseline",
+      "pass_": true
+    },
+    {
+      "case": "mirror_portal",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "mirror_portal",
+      "test": "legacy_baseline_equal",
+      "pass_": true
+    },
+    {
+      "case": "legacy_line",
+      "test": "fixed_seed_repeat_baseline",
+      "pass_": true
+    },
+    {
+      "case": "legacy_line",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "legacy_line",
+      "test": "legacy_baseline_equal",
+      "pass_": true
+    },
+    {
+      "case": "sparse_line",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "count108_line",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "mirror_line",
+      "test": "fixed_seed_repeat_baseline",
+      "pass_": true
+    },
+    {
+      "case": "mirror_line",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "mirror_line",
+      "test": "legacy_baseline_equal",
+      "pass_": true
+    },
+    {
+      "case": "legacy_area",
+      "test": "fixed_seed_repeat_baseline",
+      "pass_": true
+    },
+    {
+      "case": "legacy_area",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "legacy_area",
+      "test": "legacy_baseline_equal",
+      "pass_": true
+    },
+    {
+      "case": "sparse_area",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "count108_area",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "mirror_area",
+      "test": "fixed_seed_repeat_baseline",
+      "pass_": true
+    },
+    {
+      "case": "mirror_area",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "mirror_area",
+      "test": "legacy_baseline_equal",
+      "pass_": true
+    },
+    {
+      "case": "count99_area",
+      "test": "fixed_seed_repeat_baseline",
+      "pass_": true
+    },
+    {
+      "case": "count99_area",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "count99_area",
+      "test": "legacy_baseline_equal",
+      "pass_": true
+    },
+    {
+      "case": "count101_area",
+      "test": "fixed_seed_repeat_baseline",
+      "pass_": true
+    },
+    {
+      "case": "count101_area",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "count101_area",
+      "test": "legacy_baseline_equal",
+      "pass_": true
+    },
+    {
+      "case": "count255_area",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "reversed_sparse_area",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "decay_sparse_area",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "decay_mirror_area",
+      "test": "fixed_seed_repeat_baseline",
+      "pass_": true
+    },
+    {
+      "case": "decay_mirror_area",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "decay_mirror_area",
+      "test": "legacy_baseline_equal",
+      "pass_": true
+    },
+    {
+      "case": "steady_sparse_area",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "steady_mirror_area",
+      "test": "fixed_seed_repeat_baseline",
+      "pass_": true
+    },
+    {
+      "case": "steady_mirror_area",
+      "test": "fixed_seed_repeat_fixed",
+      "pass_": true
+    },
+    {
+      "case": "steady_mirror_area",
+      "test": "legacy_baseline_equal",
+      "pass_": true
+    },
+    {
+      "case": "sparse_point",
+      "test": "high_low_id_payload_equal",
+      "pass_": true
+    },
+    {
+      "case": "sparse_portal",
+      "test": "high_low_id_payload_equal",
+      "pass_": true
+    },
+    {
+      "case": "sparse_line",
+      "test": "high_low_id_payload_equal",
+      "pass_": true
+    },
+    {
+      "case": "sparse_area",
+      "test": "high_low_id_payload_equal",
+      "pass_": true
+    },
+    {
+      "case": "decay_sparse_area",
+      "test": "high_low_id_payload_equal",
+      "pass_": true
+    },
+    {
+      "case": "steady_sparse_area",
+      "test": "high_low_id_payload_equal",
+      "pass_": true
+    }
+  ],
+  "errors": [],
+  "limits": [
+    "No GUI compatibility claim for three-digit IDs.",
+    "No memory reduction or speedup claim; dense concentration arrays still scale with selected group count.",
+    "256-group checkpoint fixture tests Int32 count serialization only, not 256 positive supported IDs.",
+    "Synthetic runs are input/output regression tests, not atmospheric validation."
+  ],
+  "final_invocation_elapsed_s": 45.13073430000031,
+  "timing_note": "The suite resumed after the initial watchdog attempt. final_invocation_elapsed_s measures only the final invocation; per-run wall_s covers all 96 reported executions. No speed comparison is inferred."
+}

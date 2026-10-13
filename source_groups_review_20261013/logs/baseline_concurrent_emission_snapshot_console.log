@@ -1,0 +1,76 @@
+
++------------------------------------------------------+
+|                                                      |
++  > >         G R A L Version 27.01Beta1        < <   +
+|                  .NET10 Version                      |
+|                                                      |
++------------------------------------------------------+
+
+[GRAL]  Copyright (C) <2019>  <Dietmar Oettl, Markus Kuntner>
+This program comes with ABSOLUTELY NO WARRANTY; for details start GRAL with a startup parameter ‘show_w’
+This is free software, and you are welcome to redistribute it under certain conditions; start GRAL with a startup parameter ‘show_c’ for details. )
+
+
+Source group count: 2
+
+Searching for optional file ggeom.asc...
+ggeom.asc does not exist. Simulation is carried out for flat terrain.
+SIMD - support: 8 float values  IsHardwareAccelerated: True
+
+Array declarations.........Reading Transient_Concentrations.tmp successful! Already calculated emission rates:
+Summarized emission rates per source group in kg
+SG:   1  	SG:   99  	
+8.33e-003	1.41e-002	
+
+.
+
+Total number of horizontal slices for concentration grid: 1
+  Slice height above ground [m]: 2
+Reading emissions_timeseries.txt successful - mean factors for each source group: 
+  Source group: 1 Mean emission factor: 0.25
+  Source group: 99 Mean emission factor: 0.62
+
+GRAL Deterministic Mode
+
+Reading file cadastre.dat
+Total number of area source partitions: 2
+Total emission [kg/h]: 2.000 (  SG 1[kg/h]: 1.000  SG 99[kg/h]: 1.000 )
+Using a total of 2160 particles (72 part./s) within the model domain
+
+Transient GRAL mode. Number of weather situations: 4
+_______________________________________________________________________________
+Weather number: 3 - 01.01-02:00
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.06
+Boundary-layer height [m]: 291
+Init meteo:  wind speed [m/s]: 0.50  direction [deg]: 90  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....XXXXXXXXXX
+Dispersion computation.....IIIIIIIIII
+
+Total simulation time [s]: 0.1
+Dispersion [s]: 0.1
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 4 - 01.01-03:00
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.06
+Boundary-layer height [m]: 291
+Init meteo:  wind speed [m/s]: 0.50  direction [deg]: 90  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....XXXXXXXXXX
+Dispersion computation.....IIIIIIIIII
+
+Total simulation time [s]: 0.0
+Dispersion [s]: 0.0
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 5
+Summarized emission rates per source group in kg
+SG:   1  	SG:   99  	
+8.33e-003	2.25e-002	
+Process exit called

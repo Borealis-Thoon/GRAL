@@ -1,0 +1,78 @@
+diff --git a/src/ProgramDeclarations.cs b/src/ProgramDeclarations.cs
+index 7299882..db63417 100644
+--- a/src/ProgramDeclarations.cs
++++ b/src/ProgramDeclarations.cs
+@@ -1243,7 +1243,7 @@ namespace GRAL_2001
+         ///<summary>
+         /// decay rate for bioaerosols for each source group
+         ///</summary>
+-        public static readonly double[] DecayRate = new double[102];
++        public static readonly double[] DecayRate = new double[byte.MaxValue + 1];
+         ///<summary>
+         /// Pollutant name
+         ///</summary>
+diff --git a/src/ReadAreaSources.cs b/src/ReadAreaSources.cs
+index 31fe850..30abd83 100644
+--- a/src/ReadAreaSources.cs
++++ b/src/ReadAreaSources.cs
+@@ -28,7 +28,7 @@ namespace GRAL_2001
+ 
+             double totalemission = 0;
+             int countrealsources = 0;
+-            double[] emission_sourcegroup = new double[101];
++            double[] emission_sourcegroup = new double[Program.SourceGroups.Count];
+ 
+             AQ.Add(new SourceData());
+ 
+diff --git a/src/ReadLinieSources.cs b/src/ReadLinieSources.cs
+index d0a0db1..6aa3755 100644
+--- a/src/ReadLinieSources.cs
++++ b/src/ReadLinieSources.cs
+@@ -28,7 +28,7 @@ namespace GRAL_2001
+ 
+             double totalemission = 0;
+             int countrealsources = 0;
+-            double[] emission_sourcegroup = new double[101];
++            double[] emission_sourcegroup = new double[Program.SourceGroups.Count];
+ 
+             Deposition Dep = new Deposition();
+ 
+diff --git a/src/ReadPointSources.cs b/src/ReadPointSources.cs
+index ad9a65c..f2f1354 100644
+--- a/src/ReadPointSources.cs
++++ b/src/ReadPointSources.cs
+@@ -31,7 +31,7 @@ namespace GRAL_2001
+ 
+             double totalemission = 0;
+             int countrealsources = 0;
+-            double[] emission_sourcegroup = new double[101];
++            double[] emission_sourcegroup = new double[Program.SourceGroups.Count];
+ 
+             PQ.Add(new SourceData());
+ 
+diff --git a/src/ReadPollutant.cs b/src/ReadPollutant.cs
+index 0c036e8..3a89eac 100644
+--- a/src/ReadPollutant.cs
++++ b/src/ReadPollutant.cs
+@@ -102,7 +102,7 @@ namespace GRAL_2001
+                                         int sg_number = 0;
+                                         if (int.TryParse(_values[0], out sg_number))
+                                         {
+-                                            if (sg_number > 0 && sg_number < 100)
++                                            if (sg_number > 0 && sg_number < Program.DecayRate.Length)
+                                             {
+                                                 try
+                                                 {
+diff --git a/src/ReadTunnelportals.cs b/src/ReadTunnelportals.cs
+index 0e4578d..297d122 100644
+--- a/src/ReadTunnelportals.cs
++++ b/src/ReadTunnelportals.cs
+@@ -29,7 +29,7 @@ namespace GRAL_2001
+ 
+             double totalemission = 0;
+             int countrealsources = 0;
+-            double[] emission_sourcegroup = new double[101];
++            double[] emission_sourcegroup = new double[Program.SourceGroups.Count];
+ 
+             TQ.Add(new SourceData());
+ 

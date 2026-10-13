@@ -1,0 +1,57 @@
+{
+  "final_checkpoint": {
+    "variant": "fixed",
+    "groups": 108,
+    "prefix_situations": 2,
+    "files": [
+      {
+        "filename": "Transient_Concentrations1.tmp",
+        "bytes": 1538,
+        "sha256": "8c1be298852e2de13fe3c0ac6409f223b8411bd2074a2e2cc3231a45041790cf",
+        "valid_zip": true,
+        "situation": 1,
+        "groups": 108
+      },
+      {
+        "filename": "Transient_Concentrations2.tmp",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "valid_zip": false
+      }
+    ],
+    "source_observation": "The Program.cs exit path joins the result writer but does not join ThreadWriteConz4dFile. The truncated file was observed in this fixed-build run; the same outcome was not reproduced in an unmodified 108-group run, which cannot complete."
+  },
+  "concurrent_emission_snapshot": {
+    "variant": "baseline",
+    "groups": [
+      1,
+      99
+    ],
+    "checkpoint_situation": 2,
+    "expected_group99_kg": 0.0125,
+    "loaded_group99_kg_rounded": 0.0141,
+    "expected_resume_four_situation_kg": 0.020833333333333332,
+    "observed_resume_group99_kg_rounded": 0.0225,
+    "interpretation": "The checkpoint writer reads the live cumulative EmissionPerSG array while the next situation can update it. These observations concern existing code and are not fixed by the six-line SG change."
+  },
+  "excluded_attempts": [
+    {
+      "kind": "original sparse-line baseline watchdog",
+      "main_executions": 1,
+      "timeout_s": 30,
+      "reason": "No completion within watchdog; bounded retry is in the 96-run table. Original stdout was not retained; the core log is retained."
+    },
+    {
+      "kind": "two-situation prefix plan",
+      "main_executions": 5,
+      "reason": "Stopped when both an older valid checkpoint and a zero-byte final checkpoint were found."
+    },
+    {
+      "kind": "three-situation active-emission checkpoint plan",
+      "main_executions": 2,
+      "reason": "Stopped on baseline cumulative-emission mismatch; kept as a separate observation."
+    }
+  ],
+  "off_resume_assertion_adjustment": "The first 10 runs of the final OFF suite were retained. The initial every-group-positive check was replaced with output entry presence, finite nonnegative values, positive total, and repeat equality because SG30 and224 had zero surface concentration in the 255-group resumed window. Only the last two runs remained to execute.",
+  "total_excluded_main_attempts": 8
+}

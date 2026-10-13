@@ -1,0 +1,179 @@
+
++------------------------------------------------------+
+|                                                      |
++  > >         G R A L Version 27.01Beta1        < <   +
+|                  .NET10 Version                      |
+|                                                      |
++------------------------------------------------------+
+
+[GRAL]  Copyright (C) <2019>  <Dietmar Oettl, Markus Kuntner>
+This program comes with ABSOLUTELY NO WARRANTY; for details start GRAL with a startup parameter ‘show_w’
+This is free software, and you are welcome to redistribute it under certain conditions; start GRAL with a startup parameter ‘show_c’ for details. )
+
+
+Source group count: 108
+
+Searching for optional file ggeom.asc...
+ggeom.asc does not exist. Simulation is carried out for flat terrain.
+SIMD - support: 8 float values  IsHardwareAccelerated: True
+
+Array declarations.......Reading KeepAndReadTransientTempFiles.dat successful
+..
+.
+
+Total number of horizontal slices for concentration grid: 1
+  Slice height above ground [m]: 2
+Reading emissions_timeseries.txt successful - mean factors for each source group: 
+  Source group: 1 Mean emission factor: 0.5
+  Source group: 2 Mean emission factor: 0.75
+  Source group: 3 Mean emission factor: 0.5
+  Source group: 4 Mean emission factor: 0.75
+  Source group: 5 Mean emission factor: 0.5
+  Source group: 6 Mean emission factor: 0.75
+  Source group: 7 Mean emission factor: 0.5
+  Source group: 8 Mean emission factor: 0.75
+  Source group: 9 Mean emission factor: 0.5
+  Source group: 10 Mean emission factor: 0.75
+  Source group: 11 Mean emission factor: 0.5
+  Source group: 12 Mean emission factor: 0.75
+  Source group: 13 Mean emission factor: 0.5
+  Source group: 14 Mean emission factor: 0.75
+  Source group: 15 Mean emission factor: 0.5
+  Source group: 16 Mean emission factor: 0.75
+  Source group: 17 Mean emission factor: 0.5
+  Source group: 18 Mean emission factor: 0.75
+  Source group: 19 Mean emission factor: 0.5
+  Source group: 20 Mean emission factor: 0.75
+  Source group: 21 Mean emission factor: 0.5
+  Source group: 22 Mean emission factor: 0.75
+  Source group: 23 Mean emission factor: 0.5
+  Source group: 24 Mean emission factor: 0.75
+  Source group: 25 Mean emission factor: 0.5
+  Source group: 26 Mean emission factor: 0.75
+  Source group: 27 Mean emission factor: 0.5
+  Source group: 28 Mean emission factor: 0.75
+  Source group: 29 Mean emission factor: 0.5
+  Source group: 30 Mean emission factor: 0.75
+  Source group: 31 Mean emission factor: 0.5
+  Source group: 32 Mean emission factor: 0.75
+  Source group: 33 Mean emission factor: 0.5
+  Source group: 34 Mean emission factor: 0.75
+  Source group: 35 Mean emission factor: 0.5
+  Source group: 36 Mean emission factor: 0.75
+  Source group: 37 Mean emission factor: 0.5
+  Source group: 38 Mean emission factor: 0.75
+  Source group: 39 Mean emission factor: 0.5
+  Source group: 40 Mean emission factor: 0.75
+  Source group: 41 Mean emission factor: 0.5
+  Source group: 42 Mean emission factor: 0.75
+  Source group: 43 Mean emission factor: 0.5
+  Source group: 44 Mean emission factor: 0.75
+  Source group: 45 Mean emission factor: 0.5
+  Source group: 46 Mean emission factor: 0.75
+  Source group: 47 Mean emission factor: 0.5
+  Source group: 48 Mean emission factor: 0.75
+  Source group: 49 Mean emission factor: 0.5
+  Source group: 50 Mean emission factor: 0.75
+  Source group: 51 Mean emission factor: 0.5
+  Source group: 52 Mean emission factor: 0.75
+  Source group: 53 Mean emission factor: 0.5
+  Source group: 54 Mean emission factor: 0.75
+  Source group: 55 Mean emission factor: 0.5
+  Source group: 56 Mean emission factor: 0.75
+  Source group: 57 Mean emission factor: 0.5
+  Source group: 58 Mean emission factor: 0.75
+  Source group: 59 Mean emission factor: 0.5
+  Source group: 60 Mean emission factor: 0.75
+  Source group: 61 Mean emission factor: 0.5
+  Source group: 62 Mean emission factor: 0.75
+  Source group: 63 Mean emission factor: 0.5
+  Source group: 64 Mean emission factor: 0.75
+  Source group: 65 Mean emission factor: 0.5
+  Source group: 66 Mean emission factor: 0.75
+  Source group: 67 Mean emission factor: 0.5
+  Source group: 68 Mean emission factor: 0.75
+  Source group: 69 Mean emission factor: 0.5
+  Source group: 70 Mean emission factor: 0.75
+  Source group: 71 Mean emission factor: 0.5
+  Source group: 72 Mean emission factor: 0.75
+  Source group: 73 Mean emission factor: 0.5
+  Source group: 74 Mean emission factor: 0.75
+  Source group: 75 Mean emission factor: 0.5
+  Source group: 76 Mean emission factor: 0.75
+  Source group: 77 Mean emission factor: 0.5
+  Source group: 78 Mean emission factor: 0.75
+  Source group: 79 Mean emission factor: 0.5
+  Source group: 80 Mean emission factor: 0.75
+  Source group: 81 Mean emission factor: 0.5
+  Source group: 82 Mean emission factor: 0.75
+  Source group: 83 Mean emission factor: 0.5
+  Source group: 84 Mean emission factor: 0.75
+  Source group: 85 Mean emission factor: 0.5
+  Source group: 86 Mean emission factor: 0.75
+  Source group: 87 Mean emission factor: 0.5
+  Source group: 88 Mean emission factor: 0.75
+  Source group: 89 Mean emission factor: 0.5
+  Source group: 90 Mean emission factor: 0.75
+  Source group: 91 Mean emission factor: 0.5
+  Source group: 92 Mean emission factor: 0.75
+  Source group: 93 Mean emission factor: 0.5
+  Source group: 94 Mean emission factor: 0.75
+  Source group: 95 Mean emission factor: 0.5
+  Source group: 96 Mean emission factor: 0.75
+  Source group: 97 Mean emission factor: 0.5
+  Source group: 98 Mean emission factor: 0.75
+  Source group: 99 Mean emission factor: 0.5
+  Source group: 100 Mean emission factor: 0.75
+  Source group: 101 Mean emission factor: 0.5
+  Source group: 102 Mean emission factor: 0.75
+  Source group: 103 Mean emission factor: 0.5
+  Source group: 104 Mean emission factor: 0.75
+  Source group: 105 Mean emission factor: 0.5
+  Source group: 106 Mean emission factor: 0.75
+  Source group: 107 Mean emission factor: 0.5
+  Source group: 108 Mean emission factor: 0.75
+
+GRAL Deterministic Mode
+
+Reading file cadastre.dat
+Total number of area source partitions: 108
+Total emission [kg/h]: 108.000 (  SG 1[kg/h]: 1.000  SG 2[kg/h]: 1.000  SG 3[kg/h]: 1.000  SG 4[kg/h]: 1.000  SG 5[kg/h]: 1.000  SG 6[kg/h]: 1.000  SG 7[kg/h]: 1.000  SG 8[kg/h]: 1.000  SG 9[kg/h]: 1.000  SG 10[kg/h]: 1.000  SG 11[kg/h]: 1.000  SG 12[kg/h]: 1.000  SG 13[kg/h]: 1.000  SG 14[kg/h]: 1.000  SG 15[kg/h]: 1.000  SG 16[kg/h]: 1.000  SG 17[kg/h]: 1.000  SG 18[kg/h]: 1.000  SG 19[kg/h]: 1.000  SG 20[kg/h]: 1.000  SG 21[kg/h]: 1.000  SG 22[kg/h]: 1.000  SG 23[kg/h]: 1.000  SG 24[kg/h]: 1.000  SG 25[kg/h]: 1.000  SG 26[kg/h]: 1.000  SG 27[kg/h]: 1.000  SG 28[kg/h]: 1.000  SG 29[kg/h]: 1.000  SG 30[kg/h]: 1.000  SG 31[kg/h]: 1.000  SG 32[kg/h]: 1.000  SG 33[kg/h]: 1.000  SG 34[kg/h]: 1.000  SG 35[kg/h]: 1.000  SG 36[kg/h]: 1.000  SG 37[kg/h]: 1.000  SG 38[kg/h]: 1.000  SG 39[kg/h]: 1.000  SG 40[kg/h]: 1.000  SG 41[kg/h]: 1.000  SG 42[kg/h]: 1.000  SG 43[kg/h]: 1.000  SG 44[kg/h]: 1.000  SG 45[kg/h]: 1.000  SG 46[kg/h]: 1.000  SG 47[kg/h]: 1.000  SG 48[kg/h]: 1.000  SG 49[kg/h]: 1.000  SG 50[kg/h]: 1.000  SG 51[kg/h]: 1.000  SG 52[kg/h]: 1.000  SG 53[kg/h]: 1.000  SG 54[kg/h]: 1.000  SG 55[kg/h]: 1.000  SG 56[kg/h]: 1.000  SG 57[kg/h]: 1.000  SG 58[kg/h]: 1.000  SG 59[kg/h]: 1.000  SG 60[kg/h]: 1.000  SG 61[kg/h]: 1.000  SG 62[kg/h]: 1.000  SG 63[kg/h]: 1.000  SG 64[kg/h]: 1.000  SG 65[kg/h]: 1.000  SG 66[kg/h]: 1.000  SG 67[kg/h]: 1.000  SG 68[kg/h]: 1.000  SG 69[kg/h]: 1.000  SG 70[kg/h]: 1.000  SG 71[kg/h]: 1.000  SG 72[kg/h]: 1.000  SG 73[kg/h]: 1.000  SG 74[kg/h]: 1.000  SG 75[kg/h]: 1.000  SG 76[kg/h]: 1.000  SG 77[kg/h]: 1.000  SG 78[kg/h]: 1.000  SG 79[kg/h]: 1.000  SG 80[kg/h]: 1.000  SG 81[kg/h]: 1.000  SG 82[kg/h]: 1.000  SG 83[kg/h]: 1.000  SG 84[kg/h]: 1.000  SG 85[kg/h]: 1.000  SG 86[kg/h]: 1.000  SG 87[kg/h]: 1.000  SG 88[kg/h]: 1.000  SG 89[kg/h]: 1.000  SG 90[kg/h]: 1.000  SG 91[kg/h]: 1.000  SG 92[kg/h]: 1.000  SG 93[kg/h]: 1.000  SG 94[kg/h]: 1.000  SG 95[kg/h]: 1.000  SG 96[kg/h]: 1.000  SG 97[kg/h]: 1.000  SG 98[kg/h]: 1.000  SG 99[kg/h]: 1.000  SG 100[kg/h]: 1.000  SG 101[kg/h]: 1.000  SG 102[kg/h]: 1.000  SG 103[kg/h]: 1.000  SG 104[kg/h]: 1.000  SG 105[kg/h]: 1.000  SG 106[kg/h]: 1.000  SG 107[kg/h]: 1.000  SG 108[kg/h]: 1.000 )
+Using a total of 2160 particles (72 part./s) within the model domain
+
+Transient GRAL mode. Number of weather situations: 2
+_______________________________________________________________________________
+Weather number: 1 - 01.01-00:00
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.06
+Boundary-layer height [m]: 291
+Init meteo:  wind speed [m/s]: 0.50  direction [deg]: 90  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....XXXXXXXXXX
+Dispersion computation.....IIIIIIIIII
+
+Total simulation time [s]: 0.1
+Dispersion [s]: 0.1
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 2 - 01.01-01:00
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.06
+Boundary-layer height [m]: 291
+Init meteo:  wind speed [m/s]: 0.50  direction [deg]: 90  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....XXXXXXXXXX
+Dispersion computation.....IIIIIIIIII
+
+Total simulation time [s]: 0.0
+Dispersion [s]: 0.0
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 3
+Summarized emission rates per source group in kg
+SG:   1  	SG:   2  	SG:   3  	SG:   4  	SG:   5  	SG:   6  	SG:   7  	SG:   8  	SG:   9  	SG:   10  	SG:   11  	SG:   12  	SG:   13  	SG:   14  	SG:   15  	SG:   16  	SG:   17  	SG:   18  	SG:   19  	SG:   20  	SG:   21  	SG:   22  	SG:   23  	SG:   24  	SG:   25  	SG:   26  	SG:   27  	SG:   28  	SG:   29  	SG:   30  	SG:   31  	SG:   32  	SG:   33  	SG:   34  	SG:   35  	SG:   36  	SG:   37  	SG:   38  	SG:   39  	SG:   40  	SG:   41  	SG:   42  	SG:   43  	SG:   44  	SG:   45  	SG:   46  	SG:   47  	SG:   48  	SG:   49  	SG:   50  	SG:   51  	SG:   52  	SG:   53  	SG:   54  	SG:   55  	SG:   56  	SG:   57  	SG:   58  	SG:   59  	SG:   60  	SG:   61  	SG:   62  	SG:   63  	SG:   64  	SG:   65  	SG:   66  	SG:   67  	SG:   68  	SG:   69  	SG:   70  	SG:   71  	SG:   72  	SG:   73  	SG:   74  	SG:   75  	SG:   76  	SG:   77  	SG:   78  	SG:   79  	SG:   80  	SG:   81  	SG:   82  	SG:   83  	SG:   84  	SG:   85  	SG:   86  	SG:   87  	SG:   88  	SG:   89  	SG:   90  	SG:   91  	SG:   92  	SG:   93  	SG:   94  	SG:   95  	SG:   96  	SG:   97  	SG:   98  	SG:   99  	SG:   100  	SG:   101  	SG:   102  	SG:   103  	SG:   104  	SG:   105  	SG:   106  	SG:   107  	SG:   108  	
+8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	8.33e-003	1.25e-002	
+Process exit called

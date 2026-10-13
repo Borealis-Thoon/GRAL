@@ -1,0 +1,59 @@
+--------------------------------------------------------------------------------
++  > >         G R A L Version 27.01Beta1        < <   +
+Computation started at: 2026-10-13 오전 10:02:53
+Computation folder:     <work_dir>\run\sparse_line_baseline_0
+Application hash code:  5fa4dba916a6bc846eb6001e7f6a468d04c2be04
+Source group count: 6
+Reading emissions_timeseries.txt successful - mean factors for each source group: 
+  Source group: 99 Mean emission factor: 0.33
+  Source group: 100 Mean emission factor: 0.67
+  Source group: 101 Mean emission factor: 0.33
+  Source group: 102 Mean emission factor: 0.67
+  Source group: 108 Mean emission factor: 0.33
+  Source group: 255 Mean emission factor: 0.67
+ 
+GRAL Deterministic Mode
+Total number of line source segments: 6
+Total emission [kg/h]: 6.000
+  SG 99[kg/h]: 1.000
+  SG 100[kg/h]: 1.000
+  SG 101[kg/h]: 1.000
+  SG 102[kg/h]: 1.000
+  SG 108[kg/h]: 1.000
+  SG 255[kg/h]: 1.000
+Using a total of 2160 particles (72 part./s) within the model domain
+
+Transient GRAL mode. Number of weather situations: 3
+
+Particles per second per weather situation: 72
+Dispersion time [s]: 30
+Sum of all particles: 2160
+
+GRAL domain area
+  West  (abs): 0 (rel): 0
+  East  (abs): 200 (rel): 200
+  North (abs): 200 (rel): 200
+  South (abs): 0 (rel): 0
+  Latitude [°]: 47
+
+  Concentration grid cell nr. in x-direction: 10
+  Concentration grid cell nr. in y-direction: 10
+  Concentration grid size in x direction  [m]: 20
+  Concentration grid size in y direction  [m]: 20
+  Concentration grid size in z direction  [m]: 4
+  Total number of horizontal slices for the concentration grid: 1
+    Slice height above ground [m]: 2
+  Top height of the GRAL domain (abs) [m]: 800
+
+
+  Transient concentration grid cell nr. in x-direction: 10
+  Transient concentration grid cell nr. in y-direction: 10
+  Transient concentration grid cell nr. in z-direction: 82
+  Transient concentration threshold [µg/m³]: 1E-12
+
+Flat terrain 
+Roughness length [m]: 0.1
+No buildings
+Number of receptor points: 0
+Writing compressed result files *.grz
+Computing pollutant NOx
