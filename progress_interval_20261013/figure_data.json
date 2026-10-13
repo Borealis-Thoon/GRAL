@@ -1,0 +1,54 @@
+{
+  "topic": "progress_interval",
+  "particle_count": 6,
+  "repeats": 3,
+  "rows": [
+    {
+      "workers": 1,
+      "variant": "baseline",
+      "visits": 1,
+      "logged_release_g": 1.39,
+      "expected_release_g": 8.333333333333334
+    },
+    {
+      "workers": 1,
+      "variant": "candidate",
+      "visits": 6,
+      "logged_release_g": 8.33,
+      "expected_release_g": 8.333333333333334
+    },
+    {
+      "workers": 4,
+      "variant": "baseline",
+      "visits": 4,
+      "logged_release_g": 5.56,
+      "expected_release_g": 8.333333333333334
+    },
+    {
+      "workers": 4,
+      "variant": "candidate",
+      "visits": 6,
+      "logged_release_g": 8.33,
+      "expected_release_g": 8.333333333333334
+    },
+    {
+      "workers": 24,
+      "variant": "baseline",
+      "visits": 6,
+      "logged_release_g": 8.33,
+      "expected_release_g": 8.333333333333334
+    },
+    {
+      "workers": 24,
+      "variant": "candidate",
+      "visits": 6,
+      "logged_release_g": 8.33,
+      "expected_release_g": 8.333333333333334
+    }
+  ],
+  "data_sources": [
+    "results/main.csv",
+    "results/probe_baseline.json",
+    "results/probe_candidate.json"
+  ]
+}

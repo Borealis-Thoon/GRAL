@@ -1,0 +1,79 @@
+{
+  "status": "pass",
+  "note": "Removed an unintended BOM only. All normalized source hashes equal the 90-run source; rebuilt final candidate with warnings as errors and repeated six Main cases.",
+  "runs": [
+    {
+      "case": "p6_w1",
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "payloads_equal_prior_candidate": true,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8de9597f0fb56546c4d73e9c2cc610fe38f84b1d3fcac16e13984a8fedebd131"
+      },
+      "concentration_sum": 1635.9608764648438,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p6_w4",
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "payloads_equal_prior_candidate": true,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8de9597f0fb56546c4d73e9c2cc610fe38f84b1d3fcac16e13984a8fedebd131"
+      },
+      "concentration_sum": 1635.9608764648438,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p6_w24",
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "payloads_equal_prior_candidate": true,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8de9597f0fb56546c4d73e9c2cc610fe38f84b1d3fcac16e13984a8fedebd131"
+      },
+      "concentration_sum": 1635.9608764648438,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p10_w1",
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "payloads_equal_prior_candidate": true,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w1",
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "payloads_equal_prior_candidate": true,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "d1d19d6916bc4dd7f2a70f51d49cd3d911d878c185ed8093e6a6a233898494a6"
+      },
+      "concentration_sum": 2251.469192504883,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p3000_w1",
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "payloads_equal_prior_candidate": true,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "102e87e73970ac3b5de5624d5871965e142ea559ba7be189e38b20b91b394d27"
+      },
+      "concentration_sum": 2379.362660109997,
+      "maximum": 1079.06591796875,
+      "nonzero_cells": 6
+    }
+  ],
+  "programfunctions_sha256": "f77199af2d66162cf611f97ab98afd1617ad70f007ab2ac6268a4f40fc5d5a2c"
+}

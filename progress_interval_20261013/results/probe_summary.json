@@ -1,0 +1,7 @@
+{
+  "status": "pass",
+  "cases_per_variant": 288,
+  "candidate_exactly_once": 288,
+  "baseline_defective_cases": 39,
+  "scope": "The actual compiled driver is called through reflection. Only its particle-body call is replaced by an interlocked visit counter in separate diagnostic source copies."
+}

@@ -1,0 +1,1674 @@
+{
+  "status": "pass",
+  "runs": 90,
+  "records": [
+    {
+      "case": "p6_w1",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 6,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00139,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955"
+      },
+      "concentration_sum": 0.0,
+      "maximum": 0,
+      "nonzero_cells": 0
+    },
+    {
+      "case": "p6_w1",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 6,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8de9597f0fb56546c4d73e9c2cc610fe38f84b1d3fcac16e13984a8fedebd131"
+      },
+      "concentration_sum": 1635.9608764648438,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p6_w1",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 6,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00139,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955"
+      },
+      "concentration_sum": 0.0,
+      "maximum": 0,
+      "nonzero_cells": 0
+    },
+    {
+      "case": "p6_w1",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 6,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8de9597f0fb56546c4d73e9c2cc610fe38f84b1d3fcac16e13984a8fedebd131"
+      },
+      "concentration_sum": 1635.9608764648438,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p6_w1",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 6,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00139,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955"
+      },
+      "concentration_sum": 0.0,
+      "maximum": 0,
+      "nonzero_cells": 0
+    },
+    {
+      "case": "p6_w1",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 6,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8de9597f0fb56546c4d73e9c2cc610fe38f84b1d3fcac16e13984a8fedebd131"
+      },
+      "concentration_sum": 1635.9608764648438,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p6_w4",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 6,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00556,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "b947b03abedc4b575f25ddd620fd5a4ad73a0627011520f97044ae06cb5cf8cb"
+      },
+      "concentration_sum": 640.4656982421875,
+      "maximum": 640.4656982421875,
+      "nonzero_cells": 1
+    },
+    {
+      "case": "p6_w4",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 6,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8de9597f0fb56546c4d73e9c2cc610fe38f84b1d3fcac16e13984a8fedebd131"
+      },
+      "concentration_sum": 1635.9608764648438,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p6_w4",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 6,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00556,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "b947b03abedc4b575f25ddd620fd5a4ad73a0627011520f97044ae06cb5cf8cb"
+      },
+      "concentration_sum": 640.4656982421875,
+      "maximum": 640.4656982421875,
+      "nonzero_cells": 1
+    },
+    {
+      "case": "p6_w4",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 6,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8de9597f0fb56546c4d73e9c2cc610fe38f84b1d3fcac16e13984a8fedebd131"
+      },
+      "concentration_sum": 1635.9608764648438,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p6_w4",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 6,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00556,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "b947b03abedc4b575f25ddd620fd5a4ad73a0627011520f97044ae06cb5cf8cb"
+      },
+      "concentration_sum": 640.4656982421875,
+      "maximum": 640.4656982421875,
+      "nonzero_cells": 1
+    },
+    {
+      "case": "p6_w4",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 6,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8de9597f0fb56546c4d73e9c2cc610fe38f84b1d3fcac16e13984a8fedebd131"
+      },
+      "concentration_sum": 1635.9608764648438,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p6_w24",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 6,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8de9597f0fb56546c4d73e9c2cc610fe38f84b1d3fcac16e13984a8fedebd131"
+      },
+      "concentration_sum": 1635.9608764648438,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p6_w24",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 6,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8de9597f0fb56546c4d73e9c2cc610fe38f84b1d3fcac16e13984a8fedebd131"
+      },
+      "concentration_sum": 1635.9608764648438,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p6_w24",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 6,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8de9597f0fb56546c4d73e9c2cc610fe38f84b1d3fcac16e13984a8fedebd131"
+      },
+      "concentration_sum": 1635.9608764648438,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p6_w24",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 6,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "39853451b5683575e2a0a4b9cb10ec69f86f53726e3911b5d5e64870411ccdff"
+      },
+      "concentration_sum": 1635.9608154296875,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p6_w24",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 6,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8de9597f0fb56546c4d73e9c2cc610fe38f84b1d3fcac16e13984a8fedebd131"
+      },
+      "concentration_sum": 1635.9608764648438,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p6_w24",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 6,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8de9597f0fb56546c4d73e9c2cc610fe38f84b1d3fcac16e13984a8fedebd131"
+      },
+      "concentration_sum": 1635.9608764648438,
+      "maximum": 673.602294921875,
+      "nonzero_cells": 3
+    },
+    {
+      "case": "p9_w1",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 9,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.000926,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955"
+      },
+      "concentration_sum": 0.0,
+      "maximum": 0,
+      "nonzero_cells": 0
+    },
+    {
+      "case": "p9_w1",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 9,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "a3c511146eaea854be0237716dca99a3a8cc8a9f063fdee8b9088ea07ee76f59"
+      },
+      "concentration_sum": 2015.4868774414062,
+      "maximum": 1137.353515625,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p9_w1",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 9,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.000926,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955"
+      },
+      "concentration_sum": 0.0,
+      "maximum": 0,
+      "nonzero_cells": 0
+    },
+    {
+      "case": "p9_w1",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 9,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "a3c511146eaea854be0237716dca99a3a8cc8a9f063fdee8b9088ea07ee76f59"
+      },
+      "concentration_sum": 2015.4868774414062,
+      "maximum": 1137.353515625,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p9_w1",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 9,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.000926,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "db906f693e7412649ef212c5ccf41f0820e2dabae85cecc9f272919bd7c10955"
+      },
+      "concentration_sum": 0.0,
+      "maximum": 0,
+      "nonzero_cells": 0
+    },
+    {
+      "case": "p9_w1",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 9,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "a3c511146eaea854be0237716dca99a3a8cc8a9f063fdee8b9088ea07ee76f59"
+      },
+      "concentration_sum": 2015.4868774414062,
+      "maximum": 1137.353515625,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p9_w4",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 9,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.0037,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "c9ca4f6a41850eae673fd7f661e891bfc1526c6c9adc6cdf3bd9e5ef95f3c07d"
+      },
+      "concentration_sum": 426.9771423339844,
+      "maximum": 426.9771423339844,
+      "nonzero_cells": 1
+    },
+    {
+      "case": "p9_w4",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 9,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "a3c511146eaea854be0237716dca99a3a8cc8a9f063fdee8b9088ea07ee76f59"
+      },
+      "concentration_sum": 2015.4868774414062,
+      "maximum": 1137.353515625,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p9_w4",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 9,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.0037,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "c9ca4f6a41850eae673fd7f661e891bfc1526c6c9adc6cdf3bd9e5ef95f3c07d"
+      },
+      "concentration_sum": 426.9771423339844,
+      "maximum": 426.9771423339844,
+      "nonzero_cells": 1
+    },
+    {
+      "case": "p9_w4",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 9,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "a3c511146eaea854be0237716dca99a3a8cc8a9f063fdee8b9088ea07ee76f59"
+      },
+      "concentration_sum": 2015.4868774414062,
+      "maximum": 1137.353515625,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p9_w4",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 9,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.0037,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "c9ca4f6a41850eae673fd7f661e891bfc1526c6c9adc6cdf3bd9e5ef95f3c07d"
+      },
+      "concentration_sum": 426.9771423339844,
+      "maximum": 426.9771423339844,
+      "nonzero_cells": 1
+    },
+    {
+      "case": "p9_w4",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 9,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "a3c511146eaea854be0237716dca99a3a8cc8a9f063fdee8b9088ea07ee76f59"
+      },
+      "concentration_sum": 2015.4868774414062,
+      "maximum": 1137.353515625,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p9_w24",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 9,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "a3c511146eaea854be0237716dca99a3a8cc8a9f063fdee8b9088ea07ee76f59"
+      },
+      "concentration_sum": 2015.4868774414062,
+      "maximum": 1137.353515625,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p9_w24",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 9,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "a3c511146eaea854be0237716dca99a3a8cc8a9f063fdee8b9088ea07ee76f59"
+      },
+      "concentration_sum": 2015.4868774414062,
+      "maximum": 1137.353515625,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p9_w24",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 9,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "a3c511146eaea854be0237716dca99a3a8cc8a9f063fdee8b9088ea07ee76f59"
+      },
+      "concentration_sum": 2015.4868774414062,
+      "maximum": 1137.353515625,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p9_w24",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 9,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "a3c511146eaea854be0237716dca99a3a8cc8a9f063fdee8b9088ea07ee76f59"
+      },
+      "concentration_sum": 2015.4868774414062,
+      "maximum": 1137.353515625,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p9_w24",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 9,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "a3c511146eaea854be0237716dca99a3a8cc8a9f063fdee8b9088ea07ee76f59"
+      },
+      "concentration_sum": 2015.4868774414062,
+      "maximum": 1137.353515625,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p9_w24",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 9,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "a3c511146eaea854be0237716dca99a3a8cc8a9f063fdee8b9088ea07ee76f59"
+      },
+      "concentration_sum": 2015.4868774414062,
+      "maximum": 1137.353515625,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w1",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 10,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w1",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 10,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w1",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 10,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w1",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 10,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w1",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 10,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w1",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 10,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w4",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 10,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w4",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 10,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w4",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 10,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w4",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 10,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w4",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 10,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w4",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 10,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w24",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 10,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w24",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 10,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w24",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 10,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w24",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 10,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w24",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 10,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p10_w24",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 10,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "8b07ca59827b6e83f513ca68293bdf5b75f3aa3f369b1fb23110613484f74149"
+      },
+      "concentration_sum": 1860.2682800292969,
+      "maximum": 1069.9482421875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w1",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 100,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "d1d19d6916bc4dd7f2a70f51d49cd3d911d878c185ed8093e6a6a233898494a6"
+      },
+      "concentration_sum": 2251.469192504883,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w1",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 100,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "d1d19d6916bc4dd7f2a70f51d49cd3d911d878c185ed8093e6a6a233898494a6"
+      },
+      "concentration_sum": 2251.469192504883,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w1",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 100,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "d1d19d6916bc4dd7f2a70f51d49cd3d911d878c185ed8093e6a6a233898494a6"
+      },
+      "concentration_sum": 2251.469192504883,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w1",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 100,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "d1d19d6916bc4dd7f2a70f51d49cd3d911d878c185ed8093e6a6a233898494a6"
+      },
+      "concentration_sum": 2251.469192504883,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w1",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 100,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "d1d19d6916bc4dd7f2a70f51d49cd3d911d878c185ed8093e6a6a233898494a6"
+      },
+      "concentration_sum": 2251.469192504883,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w1",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 100,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "d1d19d6916bc4dd7f2a70f51d49cd3d911d878c185ed8093e6a6a233898494a6"
+      },
+      "concentration_sum": 2251.469192504883,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w4",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 100,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "cd5270e24891f3a80a394f776e76fb02da970c77d90e5d0ec7945eb5a0ad20ce"
+      },
+      "concentration_sum": 2251.4691314697266,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w4",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 100,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "d1d19d6916bc4dd7f2a70f51d49cd3d911d878c185ed8093e6a6a233898494a6"
+      },
+      "concentration_sum": 2251.469192504883,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w4",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 100,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "c7e2a09fed0f0737bd68290db7ffeb15a52e301296f951aae683831145c565d1"
+      },
+      "concentration_sum": 2251.4690704345703,
+      "maximum": 961.4871215820312,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w4",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 100,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "f83266f324ce4bb667b084b130c2aaff9090fae1121a27e1e1d9091573c72c40"
+      },
+      "concentration_sum": 2251.4691314697266,
+      "maximum": 961.4871215820312,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w4",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 100,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "cd5270e24891f3a80a394f776e76fb02da970c77d90e5d0ec7945eb5a0ad20ce"
+      },
+      "concentration_sum": 2251.4691314697266,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w4",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 100,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "1c5bc9e6b43a37b40e4f63f011d2c60fc4c2bc8a486ccc4c642002f70c1ec0b3"
+      },
+      "concentration_sum": 2251.469253540039,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w24",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 100,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "cd5270e24891f3a80a394f776e76fb02da970c77d90e5d0ec7945eb5a0ad20ce"
+      },
+      "concentration_sum": 2251.4691314697266,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w24",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 100,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "cd5270e24891f3a80a394f776e76fb02da970c77d90e5d0ec7945eb5a0ad20ce"
+      },
+      "concentration_sum": 2251.4691314697266,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w24",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 100,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "cd5270e24891f3a80a394f776e76fb02da970c77d90e5d0ec7945eb5a0ad20ce"
+      },
+      "concentration_sum": 2251.4691314697266,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w24",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 100,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "d1d19d6916bc4dd7f2a70f51d49cd3d911d878c185ed8093e6a6a233898494a6"
+      },
+      "concentration_sum": 2251.469192504883,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w24",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 100,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "d1d19d6916bc4dd7f2a70f51d49cd3d911d878c185ed8093e6a6a233898494a6"
+      },
+      "concentration_sum": 2251.469192504883,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p100_w24",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 100,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "1c5bc9e6b43a37b40e4f63f011d2c60fc4c2bc8a486ccc4c642002f70c1ec0b3"
+      },
+      "concentration_sum": 2251.469253540039,
+      "maximum": 961.4871826171875,
+      "nonzero_cells": 4
+    },
+    {
+      "case": "p3000_w1",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 3000,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "102e87e73970ac3b5de5624d5871965e142ea559ba7be189e38b20b91b394d27"
+      },
+      "concentration_sum": 2379.362660109997,
+      "maximum": 1079.06591796875,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w1",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 3000,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "102e87e73970ac3b5de5624d5871965e142ea559ba7be189e38b20b91b394d27"
+      },
+      "concentration_sum": 2379.362660109997,
+      "maximum": 1079.06591796875,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w1",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 3000,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "102e87e73970ac3b5de5624d5871965e142ea559ba7be189e38b20b91b394d27"
+      },
+      "concentration_sum": 2379.362660109997,
+      "maximum": 1079.06591796875,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w1",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 3000,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "102e87e73970ac3b5de5624d5871965e142ea559ba7be189e38b20b91b394d27"
+      },
+      "concentration_sum": 2379.362660109997,
+      "maximum": 1079.06591796875,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w1",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 3000,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "102e87e73970ac3b5de5624d5871965e142ea559ba7be189e38b20b91b394d27"
+      },
+      "concentration_sum": 2379.362660109997,
+      "maximum": 1079.06591796875,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w1",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 3000,
+      "workers": 1,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "102e87e73970ac3b5de5624d5871965e142ea559ba7be189e38b20b91b394d27"
+      },
+      "concentration_sum": 2379.362660109997,
+      "maximum": 1079.06591796875,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w4",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 3000,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "80326c2e613364024227b47a15dce18ed27316959a16021179513e6e6916f42c"
+      },
+      "concentration_sum": 2379.359730422497,
+      "maximum": 1079.06298828125,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w4",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 3000,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "85404cd804406adc3fd20a13b6702cc6c6a9d1fd441b81d59244f8c86e2cdb58"
+      },
+      "concentration_sum": 2379.3600966334343,
+      "maximum": 1079.0633544921875,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w4",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 3000,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "80326c2e613364024227b47a15dce18ed27316959a16021179513e6e6916f42c"
+      },
+      "concentration_sum": 2379.359730422497,
+      "maximum": 1079.06298828125,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w4",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 3000,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "c3b61412b4a9ccb03b0c6d22e203c4a73b3a444be89b4370934300d1eb34bf60"
+      },
+      "concentration_sum": 2379.360218703747,
+      "maximum": 1079.0634765625,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w4",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 3000,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "c3b61412b4a9ccb03b0c6d22e203c4a73b3a444be89b4370934300d1eb34bf60"
+      },
+      "concentration_sum": 2379.360218703747,
+      "maximum": 1079.0634765625,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w4",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 3000,
+      "workers": 4,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "85404cd804406adc3fd20a13b6702cc6c6a9d1fd441b81d59244f8c86e2cdb58"
+      },
+      "concentration_sum": 2379.3600966334343,
+      "maximum": 1079.0633544921875,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w24",
+      "variant": "baseline",
+      "repeat": 0,
+      "particles": 3000,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "9093061750d28b50ed039dbf8fdbfbfac96354e6cbe89ec77d75d6c2e225ed7b"
+      },
+      "concentration_sum": 2379.3552748560905,
+      "maximum": 1079.05859375,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w24",
+      "variant": "candidate",
+      "repeat": 0,
+      "particles": 3000,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "2b7b9509ca4b34136e5c5f8caa4b613057c957bad9b0307b656b8c11c361aea9"
+      },
+      "concentration_sum": 2379.358509719372,
+      "maximum": 1079.06201171875,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w24",
+      "variant": "baseline",
+      "repeat": 1,
+      "particles": 3000,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "c000d8da4b0885207dc256bc541704af780eb20d2c1f38162233c34b583207d4"
+      },
+      "concentration_sum": 2379.3591811060905,
+      "maximum": 1079.0625,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w24",
+      "variant": "candidate",
+      "repeat": 1,
+      "particles": 3000,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "b9d6cdc07528ac38170a17e9be978e6f2dddd6ca607b1e5c2cb6f509a3b5a87d"
+      },
+      "concentration_sum": 2379.3593642115593,
+      "maximum": 1079.062744140625,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w24",
+      "variant": "baseline",
+      "repeat": 2,
+      "particles": 3000,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "f59f16547f4920a1f57eaf1a430f8b79217a0cee73e5a776fa1b84f39e27e46f"
+      },
+      "concentration_sum": 2379.3593642115593,
+      "maximum": 1079.0626220703125,
+      "nonzero_cells": 6
+    },
+    {
+      "case": "p3000_w24",
+      "variant": "candidate",
+      "repeat": 2,
+      "particles": 3000,
+      "workers": 24,
+      "exit_code": 0,
+      "emitted_mass_kg_logged": 0.00833,
+      "expected_mass_kg": 0.008333333333333333,
+      "payload_sha256": {
+        "00001.grz:00001-101.con": "92d9a63f6cf7d2f0eb5e5ffba3dfdb3af68a62d6e24094c52086d125d2738542"
+      },
+      "concentration_sum": 2379.3586928248405,
+      "maximum": 1079.06201171875,
+      "nonzero_cells": 6
+    }
+  ],
+  "comparisons": [
+    {
+      "case": "p6_w1",
+      "repeat": 0,
+      "payloads_equal": false
+    },
+    {
+      "case": "p6_w1",
+      "repeat": 1,
+      "payloads_equal": false
+    },
+    {
+      "case": "p6_w1",
+      "repeat": 2,
+      "payloads_equal": false
+    },
+    {
+      "case": "p6_w4",
+      "repeat": 0,
+      "payloads_equal": false
+    },
+    {
+      "case": "p6_w4",
+      "repeat": 1,
+      "payloads_equal": false
+    },
+    {
+      "case": "p6_w4",
+      "repeat": 2,
+      "payloads_equal": false
+    },
+    {
+      "case": "p6_w24",
+      "repeat": 0,
+      "payloads_equal": true
+    },
+    {
+      "case": "p6_w24",
+      "repeat": 1,
+      "payloads_equal": false
+    },
+    {
+      "case": "p6_w24",
+      "repeat": 2,
+      "payloads_equal": true
+    },
+    {
+      "case": "p9_w1",
+      "repeat": 0,
+      "payloads_equal": false
+    },
+    {
+      "case": "p9_w1",
+      "repeat": 1,
+      "payloads_equal": false
+    },
+    {
+      "case": "p9_w1",
+      "repeat": 2,
+      "payloads_equal": false
+    },
+    {
+      "case": "p9_w4",
+      "repeat": 0,
+      "payloads_equal": false
+    },
+    {
+      "case": "p9_w4",
+      "repeat": 1,
+      "payloads_equal": false
+    },
+    {
+      "case": "p9_w4",
+      "repeat": 2,
+      "payloads_equal": false
+    },
+    {
+      "case": "p9_w24",
+      "repeat": 0,
+      "payloads_equal": true
+    },
+    {
+      "case": "p9_w24",
+      "repeat": 1,
+      "payloads_equal": true
+    },
+    {
+      "case": "p9_w24",
+      "repeat": 2,
+      "payloads_equal": true
+    },
+    {
+      "case": "p10_w1",
+      "repeat": 0,
+      "payloads_equal": true
+    },
+    {
+      "case": "p10_w1",
+      "repeat": 1,
+      "payloads_equal": true
+    },
+    {
+      "case": "p10_w1",
+      "repeat": 2,
+      "payloads_equal": true
+    },
+    {
+      "case": "p10_w4",
+      "repeat": 0,
+      "payloads_equal": true
+    },
+    {
+      "case": "p10_w4",
+      "repeat": 1,
+      "payloads_equal": true
+    },
+    {
+      "case": "p10_w4",
+      "repeat": 2,
+      "payloads_equal": true
+    },
+    {
+      "case": "p10_w24",
+      "repeat": 0,
+      "payloads_equal": true
+    },
+    {
+      "case": "p10_w24",
+      "repeat": 1,
+      "payloads_equal": true
+    },
+    {
+      "case": "p10_w24",
+      "repeat": 2,
+      "payloads_equal": true
+    },
+    {
+      "case": "p100_w1",
+      "repeat": 0,
+      "payloads_equal": true
+    },
+    {
+      "case": "p100_w1",
+      "repeat": 1,
+      "payloads_equal": true
+    },
+    {
+      "case": "p100_w1",
+      "repeat": 2,
+      "payloads_equal": true
+    },
+    {
+      "case": "p100_w4",
+      "repeat": 0,
+      "payloads_equal": false
+    },
+    {
+      "case": "p100_w4",
+      "repeat": 1,
+      "payloads_equal": false
+    },
+    {
+      "case": "p100_w4",
+      "repeat": 2,
+      "payloads_equal": false
+    },
+    {
+      "case": "p100_w24",
+      "repeat": 0,
+      "payloads_equal": true
+    },
+    {
+      "case": "p100_w24",
+      "repeat": 1,
+      "payloads_equal": false
+    },
+    {
+      "case": "p100_w24",
+      "repeat": 2,
+      "payloads_equal": false
+    },
+    {
+      "case": "p3000_w1",
+      "repeat": 0,
+      "payloads_equal": true
+    },
+    {
+      "case": "p3000_w1",
+      "repeat": 1,
+      "payloads_equal": true
+    },
+    {
+      "case": "p3000_w1",
+      "repeat": 2,
+      "payloads_equal": true
+    },
+    {
+      "case": "p3000_w4",
+      "repeat": 0,
+      "payloads_equal": false
+    },
+    {
+      "case": "p3000_w4",
+      "repeat": 1,
+      "payloads_equal": false
+    },
+    {
+      "case": "p3000_w4",
+      "repeat": 2,
+      "payloads_equal": false
+    },
+    {
+      "case": "p3000_w24",
+      "repeat": 0,
+      "payloads_equal": false
+    },
+    {
+      "case": "p3000_w24",
+      "repeat": 1,
+      "payloads_equal": false
+    },
+    {
+      "case": "p3000_w24",
+      "repeat": 2,
+      "payloads_equal": false
+    }
+  ],
+  "elapsed_seconds": 27.110000000000582
+}
