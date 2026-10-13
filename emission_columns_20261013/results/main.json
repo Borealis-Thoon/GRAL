@@ -1,0 +1,1931 @@
+{
+  "status": "pass",
+  "conditions": 8,
+  "repeats": 2,
+  "main_runs": 64,
+  "records": [
+    {
+      "case": "matched",
+      "dx": 20,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "point",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.5442275000004884,
+      "hashes": {
+        "00001.grz:00001-101.con": "3b87f9ccddbc1167ff398b2fedad0bb9ba5d85d53485fa014f6852c2d514927a",
+        "00001.grz:00001-102.con": "ff6e4e96766a1bbe2a9d167857245d8c5f31fee9bf3449e2eb15983d872e768a",
+        "00002.grz:00002-101.con": "d0f872c9ea4e4f541b2d8453900756f18a41f4d7d8a7797a66decbf6c26217e5",
+        "00002.grz:00002-102.con": "adc71020b316b68a76e99f748e9aca6a188456e76aa8627acd03d97fc1fde650",
+        "00003.grz:00003-101.con": "bd01b859d7873903b8ab67cbf67957b7d4996dcb632c52af4eba089886df0764",
+        "00003.grz:00003-102.con": "bed67cd86427e3a8ce56aad5bc85e29da44ffc90d0e1dff5a2071e7274bfde45"
+      },
+      "total": 8669.69227027893,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "matched",
+      "dx": 20,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "point",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3144344000011188,
+      "hashes": {
+        "00001.grz:00001-101.con": "3b87f9ccddbc1167ff398b2fedad0bb9ba5d85d53485fa014f6852c2d514927a",
+        "00001.grz:00001-102.con": "ff6e4e96766a1bbe2a9d167857245d8c5f31fee9bf3449e2eb15983d872e768a",
+        "00002.grz:00002-101.con": "d0f872c9ea4e4f541b2d8453900756f18a41f4d7d8a7797a66decbf6c26217e5",
+        "00002.grz:00002-102.con": "adc71020b316b68a76e99f748e9aca6a188456e76aa8627acd03d97fc1fde650",
+        "00003.grz:00003-101.con": "bd01b859d7873903b8ab67cbf67957b7d4996dcb632c52af4eba089886df0764",
+        "00003.grz:00003-102.con": "bed67cd86427e3a8ce56aad5bc85e29da44ffc90d0e1dff5a2071e7274bfde45"
+      },
+      "total": 8669.69227027893,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "matched",
+      "dx": 20,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "point",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.5266315000008035,
+      "hashes": {
+        "00001.grz:00001-101.con": "3b87f9ccddbc1167ff398b2fedad0bb9ba5d85d53485fa014f6852c2d514927a",
+        "00001.grz:00001-102.con": "ff6e4e96766a1bbe2a9d167857245d8c5f31fee9bf3449e2eb15983d872e768a",
+        "00002.grz:00002-101.con": "d0f872c9ea4e4f541b2d8453900756f18a41f4d7d8a7797a66decbf6c26217e5",
+        "00002.grz:00002-102.con": "adc71020b316b68a76e99f748e9aca6a188456e76aa8627acd03d97fc1fde650",
+        "00003.grz:00003-101.con": "bd01b859d7873903b8ab67cbf67957b7d4996dcb632c52af4eba089886df0764",
+        "00003.grz:00003-102.con": "bed67cd86427e3a8ce56aad5bc85e29da44ffc90d0e1dff5a2071e7274bfde45"
+      },
+      "total": 8669.69227027893,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "matched",
+      "dx": 20,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "point",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3006956999997783,
+      "hashes": {
+        "00001.grz:00001-101.con": "3b87f9ccddbc1167ff398b2fedad0bb9ba5d85d53485fa014f6852c2d514927a",
+        "00001.grz:00001-102.con": "ff6e4e96766a1bbe2a9d167857245d8c5f31fee9bf3449e2eb15983d872e768a",
+        "00002.grz:00002-101.con": "d0f872c9ea4e4f541b2d8453900756f18a41f4d7d8a7797a66decbf6c26217e5",
+        "00002.grz:00002-102.con": "adc71020b316b68a76e99f748e9aca6a188456e76aa8627acd03d97fc1fde650",
+        "00003.grz:00003-101.con": "bd01b859d7873903b8ab67cbf67957b7d4996dcb632c52af4eba089886df0764",
+        "00003.grz:00003-102.con": "bed67cd86427e3a8ce56aad5bc85e29da44ffc90d0e1dff5a2071e7274bfde45"
+      },
+      "total": 8669.69227027893,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "matched",
+      "dx": 20,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "point",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.30307170000014594,
+      "hashes": {
+        "00001.grz:00001-101.con": "3b87f9ccddbc1167ff398b2fedad0bb9ba5d85d53485fa014f6852c2d514927a",
+        "00001.grz:00001-102.con": "ff6e4e96766a1bbe2a9d167857245d8c5f31fee9bf3449e2eb15983d872e768a",
+        "00002.grz:00002-101.con": "d0f872c9ea4e4f541b2d8453900756f18a41f4d7d8a7797a66decbf6c26217e5",
+        "00002.grz:00002-102.con": "adc71020b316b68a76e99f748e9aca6a188456e76aa8627acd03d97fc1fde650",
+        "00003.grz:00003-101.con": "bd01b859d7873903b8ab67cbf67957b7d4996dcb632c52af4eba089886df0764",
+        "00003.grz:00003-102.con": "bed67cd86427e3a8ce56aad5bc85e29da44ffc90d0e1dff5a2071e7274bfde45"
+      },
+      "total": 8669.69227027893,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "matched",
+      "dx": 20,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "point",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3049971000000369,
+      "hashes": {
+        "00001.grz:00001-101.con": "3b87f9ccddbc1167ff398b2fedad0bb9ba5d85d53485fa014f6852c2d514927a",
+        "00001.grz:00001-102.con": "ff6e4e96766a1bbe2a9d167857245d8c5f31fee9bf3449e2eb15983d872e768a",
+        "00002.grz:00002-101.con": "d0f872c9ea4e4f541b2d8453900756f18a41f4d7d8a7797a66decbf6c26217e5",
+        "00002.grz:00002-102.con": "adc71020b316b68a76e99f748e9aca6a188456e76aa8627acd03d97fc1fde650",
+        "00003.grz:00003-101.con": "bd01b859d7873903b8ab67cbf67957b7d4996dcb632c52af4eba089886df0764",
+        "00003.grz:00003-102.con": "bed67cd86427e3a8ce56aad5bc85e29da44ffc90d0e1dff5a2071e7274bfde45"
+      },
+      "total": 8669.69227027893,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "matched",
+      "dx": 20,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "point",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3081473999991431,
+      "hashes": {
+        "00001.grz:00001-101.con": "3b87f9ccddbc1167ff398b2fedad0bb9ba5d85d53485fa014f6852c2d514927a",
+        "00001.grz:00001-102.con": "ff6e4e96766a1bbe2a9d167857245d8c5f31fee9bf3449e2eb15983d872e768a",
+        "00002.grz:00002-101.con": "d0f872c9ea4e4f541b2d8453900756f18a41f4d7d8a7797a66decbf6c26217e5",
+        "00002.grz:00002-102.con": "adc71020b316b68a76e99f748e9aca6a188456e76aa8627acd03d97fc1fde650",
+        "00003.grz:00003-101.con": "bd01b859d7873903b8ab67cbf67957b7d4996dcb632c52af4eba089886df0764",
+        "00003.grz:00003-102.con": "bed67cd86427e3a8ce56aad5bc85e29da44ffc90d0e1dff5a2071e7274bfde45"
+      },
+      "total": 8669.69227027893,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "matched",
+      "dx": 20,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "point",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.30132270000103745,
+      "hashes": {
+        "00001.grz:00001-101.con": "3b87f9ccddbc1167ff398b2fedad0bb9ba5d85d53485fa014f6852c2d514927a",
+        "00001.grz:00001-102.con": "ff6e4e96766a1bbe2a9d167857245d8c5f31fee9bf3449e2eb15983d872e768a",
+        "00002.grz:00002-101.con": "d0f872c9ea4e4f541b2d8453900756f18a41f4d7d8a7797a66decbf6c26217e5",
+        "00002.grz:00002-102.con": "adc71020b316b68a76e99f748e9aca6a188456e76aa8627acd03d97fc1fde650",
+        "00003.grz:00003-101.con": "bd01b859d7873903b8ab67cbf67957b7d4996dcb632c52af4eba089886df0764",
+        "00003.grz:00003-102.con": "bed67cd86427e3a8ce56aad5bc85e29da44ffc90d0e1dff5a2071e7274bfde45"
+      },
+      "total": 8669.69227027893,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "reordered",
+      "dx": 10,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "mixed",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3473895999995875,
+      "hashes": {
+        "00001.grz:00001-101.con": "35eccc113ad10e02ca57c96133c08804ee2b74e54c3bf00f7070e201aa7696ee",
+        "00001.grz:00001-102.con": "db776233cf17397af90cb6c51f2061b904ad9a1646030af195e8771849c00039",
+        "00002.grz:00002-101.con": "265e6683e8bdfcb6c2a8d47ac3c63833930f41eef2a7f468baf13bfed7f426b2",
+        "00002.grz:00002-102.con": "aab4a006fb31e408ff3a2e3b93d5a8cbad9bf4c2b14e5c0bf2516b25fda5d740",
+        "00003.grz:00003-101.con": "a276120c2081fc751b65aaa05ab4b002b3b51db3afaf565b50c163332b12d3bb",
+        "00003.grz:00003-102.con": "984d614bf18a934d74f1f4e66b42dce3b746ed253c0efc80d621cee759e949de"
+      },
+      "total": 238284.1218738556,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "reordered",
+      "dx": 10,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "mixed",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.33003909999933967,
+      "hashes": {
+        "00001.grz:00001-101.con": "35eccc113ad10e02ca57c96133c08804ee2b74e54c3bf00f7070e201aa7696ee",
+        "00001.grz:00001-102.con": "db776233cf17397af90cb6c51f2061b904ad9a1646030af195e8771849c00039",
+        "00002.grz:00002-101.con": "265e6683e8bdfcb6c2a8d47ac3c63833930f41eef2a7f468baf13bfed7f426b2",
+        "00002.grz:00002-102.con": "aab4a006fb31e408ff3a2e3b93d5a8cbad9bf4c2b14e5c0bf2516b25fda5d740",
+        "00003.grz:00003-101.con": "a276120c2081fc751b65aaa05ab4b002b3b51db3afaf565b50c163332b12d3bb",
+        "00003.grz:00003-102.con": "984d614bf18a934d74f1f4e66b42dce3b746ed253c0efc80d621cee759e949de"
+      },
+      "total": 238284.1218738556,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "reordered",
+      "dx": 10,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "mixed",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3277014000013878,
+      "hashes": {
+        "00001.grz:00001-101.con": "35eccc113ad10e02ca57c96133c08804ee2b74e54c3bf00f7070e201aa7696ee",
+        "00001.grz:00001-102.con": "db776233cf17397af90cb6c51f2061b904ad9a1646030af195e8771849c00039",
+        "00002.grz:00002-101.con": "265e6683e8bdfcb6c2a8d47ac3c63833930f41eef2a7f468baf13bfed7f426b2",
+        "00002.grz:00002-102.con": "aab4a006fb31e408ff3a2e3b93d5a8cbad9bf4c2b14e5c0bf2516b25fda5d740",
+        "00003.grz:00003-101.con": "a276120c2081fc751b65aaa05ab4b002b3b51db3afaf565b50c163332b12d3bb",
+        "00003.grz:00003-102.con": "984d614bf18a934d74f1f4e66b42dce3b746ed253c0efc80d621cee759e949de"
+      },
+      "total": 238284.1218738556,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "reordered",
+      "dx": 10,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "mixed",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3302434000015637,
+      "hashes": {
+        "00001.grz:00001-101.con": "35eccc113ad10e02ca57c96133c08804ee2b74e54c3bf00f7070e201aa7696ee",
+        "00001.grz:00001-102.con": "db776233cf17397af90cb6c51f2061b904ad9a1646030af195e8771849c00039",
+        "00002.grz:00002-101.con": "265e6683e8bdfcb6c2a8d47ac3c63833930f41eef2a7f468baf13bfed7f426b2",
+        "00002.grz:00002-102.con": "aab4a006fb31e408ff3a2e3b93d5a8cbad9bf4c2b14e5c0bf2516b25fda5d740",
+        "00003.grz:00003-101.con": "a276120c2081fc751b65aaa05ab4b002b3b51db3afaf565b50c163332b12d3bb",
+        "00003.grz:00003-102.con": "984d614bf18a934d74f1f4e66b42dce3b746ed253c0efc80d621cee759e949de"
+      },
+      "total": 238284.1218738556,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "reordered",
+      "dx": 10,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "mixed",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.32902590000048804,
+      "hashes": {
+        "00001.grz:00001-101.con": "35eccc113ad10e02ca57c96133c08804ee2b74e54c3bf00f7070e201aa7696ee",
+        "00001.grz:00001-102.con": "db776233cf17397af90cb6c51f2061b904ad9a1646030af195e8771849c00039",
+        "00002.grz:00002-101.con": "265e6683e8bdfcb6c2a8d47ac3c63833930f41eef2a7f468baf13bfed7f426b2",
+        "00002.grz:00002-102.con": "aab4a006fb31e408ff3a2e3b93d5a8cbad9bf4c2b14e5c0bf2516b25fda5d740",
+        "00003.grz:00003-101.con": "a276120c2081fc751b65aaa05ab4b002b3b51db3afaf565b50c163332b12d3bb",
+        "00003.grz:00003-102.con": "984d614bf18a934d74f1f4e66b42dce3b746ed253c0efc80d621cee759e949de"
+      },
+      "total": 238284.1218738556,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "reordered",
+      "dx": 10,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "mixed",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.32477470000048925,
+      "hashes": {
+        "00001.grz:00001-101.con": "35eccc113ad10e02ca57c96133c08804ee2b74e54c3bf00f7070e201aa7696ee",
+        "00001.grz:00001-102.con": "db776233cf17397af90cb6c51f2061b904ad9a1646030af195e8771849c00039",
+        "00002.grz:00002-101.con": "265e6683e8bdfcb6c2a8d47ac3c63833930f41eef2a7f468baf13bfed7f426b2",
+        "00002.grz:00002-102.con": "aab4a006fb31e408ff3a2e3b93d5a8cbad9bf4c2b14e5c0bf2516b25fda5d740",
+        "00003.grz:00003-101.con": "a276120c2081fc751b65aaa05ab4b002b3b51db3afaf565b50c163332b12d3bb",
+        "00003.grz:00003-102.con": "984d614bf18a934d74f1f4e66b42dce3b746ed253c0efc80d621cee759e949de"
+      },
+      "total": 238284.1218738556,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "reordered",
+      "dx": 10,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "mixed",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3305501999984699,
+      "hashes": {
+        "00001.grz:00001-101.con": "35eccc113ad10e02ca57c96133c08804ee2b74e54c3bf00f7070e201aa7696ee",
+        "00001.grz:00001-102.con": "db776233cf17397af90cb6c51f2061b904ad9a1646030af195e8771849c00039",
+        "00002.grz:00002-101.con": "265e6683e8bdfcb6c2a8d47ac3c63833930f41eef2a7f468baf13bfed7f426b2",
+        "00002.grz:00002-102.con": "aab4a006fb31e408ff3a2e3b93d5a8cbad9bf4c2b14e5c0bf2516b25fda5d740",
+        "00003.grz:00003-101.con": "a276120c2081fc751b65aaa05ab4b002b3b51db3afaf565b50c163332b12d3bb",
+        "00003.grz:00003-102.con": "984d614bf18a934d74f1f4e66b42dce3b746ed253c0efc80d621cee759e949de"
+      },
+      "total": 238284.1218738556,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "reordered",
+      "dx": 10,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "mixed",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.33003150000149617,
+      "hashes": {
+        "00001.grz:00001-101.con": "35eccc113ad10e02ca57c96133c08804ee2b74e54c3bf00f7070e201aa7696ee",
+        "00001.grz:00001-102.con": "db776233cf17397af90cb6c51f2061b904ad9a1646030af195e8771849c00039",
+        "00002.grz:00002-101.con": "265e6683e8bdfcb6c2a8d47ac3c63833930f41eef2a7f468baf13bfed7f426b2",
+        "00002.grz:00002-102.con": "aab4a006fb31e408ff3a2e3b93d5a8cbad9bf4c2b14e5c0bf2516b25fda5d740",
+        "00003.grz:00003-101.con": "a276120c2081fc751b65aaa05ab4b002b3b51db3afaf565b50c163332b12d3bb",
+        "00003.grz:00003-102.con": "984d614bf18a934d74f1f4e66b42dce3b746ed253c0efc80d621cee759e949de"
+      },
+      "total": 238284.1218738556,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "selected_absent",
+      "dx": 40,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "area",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.32339540000066336,
+      "hashes": {
+        "00001.grz:00001-101.con": "d48a4d80f6826632a12099196d517a099632d4b9ab3f4f06b1ce2a57ec43c97d",
+        "00001.grz:00001-102.con": "be792fa86db3d766cff514fbb7bc07436e36e0e5883e8d8b1e44e979d3058cde",
+        "00002.grz:00002-101.con": "0550ee8f9aa27a778f39eda92638784b507536d29fb77218d15d54dbc5f2ac95",
+        "00002.grz:00002-102.con": "6d04912018da523c0df54e2d934b204fd239fbe7c63a12617b203f59df75f5ac",
+        "00003.grz:00003-101.con": "35bd60355766bedc5d5c498f19d683b29911c1f168c35b423975f21f3aedaac3",
+        "00003.grz:00003-102.con": "6c1ddc27829031830544ec529a0cabc817e983d37b368dac0db364e6b688ef7e"
+      },
+      "total": 7035.337053120136,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "selected_absent",
+      "dx": 40,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "area",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.31857339999987744,
+      "hashes": {
+        "00001.grz:00001-101.con": "d48a4d80f6826632a12099196d517a099632d4b9ab3f4f06b1ce2a57ec43c97d",
+        "00001.grz:00001-102.con": "be792fa86db3d766cff514fbb7bc07436e36e0e5883e8d8b1e44e979d3058cde",
+        "00002.grz:00002-101.con": "0550ee8f9aa27a778f39eda92638784b507536d29fb77218d15d54dbc5f2ac95",
+        "00002.grz:00002-102.con": "6d04912018da523c0df54e2d934b204fd239fbe7c63a12617b203f59df75f5ac",
+        "00003.grz:00003-101.con": "35bd60355766bedc5d5c498f19d683b29911c1f168c35b423975f21f3aedaac3",
+        "00003.grz:00003-102.con": "6c1ddc27829031830544ec529a0cabc817e983d37b368dac0db364e6b688ef7e"
+      },
+      "total": 7035.337053120136,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "selected_absent",
+      "dx": 40,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "area",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3208824999983335,
+      "hashes": {
+        "00001.grz:00001-101.con": "d48a4d80f6826632a12099196d517a099632d4b9ab3f4f06b1ce2a57ec43c97d",
+        "00001.grz:00001-102.con": "be792fa86db3d766cff514fbb7bc07436e36e0e5883e8d8b1e44e979d3058cde",
+        "00002.grz:00002-101.con": "0550ee8f9aa27a778f39eda92638784b507536d29fb77218d15d54dbc5f2ac95",
+        "00002.grz:00002-102.con": "6d04912018da523c0df54e2d934b204fd239fbe7c63a12617b203f59df75f5ac",
+        "00003.grz:00003-101.con": "35bd60355766bedc5d5c498f19d683b29911c1f168c35b423975f21f3aedaac3",
+        "00003.grz:00003-102.con": "6c1ddc27829031830544ec529a0cabc817e983d37b368dac0db364e6b688ef7e"
+      },
+      "total": 7035.337053120136,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "selected_absent",
+      "dx": 40,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "area",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.31422159999965515,
+      "hashes": {
+        "00001.grz:00001-101.con": "d48a4d80f6826632a12099196d517a099632d4b9ab3f4f06b1ce2a57ec43c97d",
+        "00001.grz:00001-102.con": "be792fa86db3d766cff514fbb7bc07436e36e0e5883e8d8b1e44e979d3058cde",
+        "00002.grz:00002-101.con": "0550ee8f9aa27a778f39eda92638784b507536d29fb77218d15d54dbc5f2ac95",
+        "00002.grz:00002-102.con": "6d04912018da523c0df54e2d934b204fd239fbe7c63a12617b203f59df75f5ac",
+        "00003.grz:00003-101.con": "35bd60355766bedc5d5c498f19d683b29911c1f168c35b423975f21f3aedaac3",
+        "00003.grz:00003-102.con": "6c1ddc27829031830544ec529a0cabc817e983d37b368dac0db364e6b688ef7e"
+      },
+      "total": 7035.337053120136,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "selected_absent",
+      "dx": 40,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "area",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3131498999991891,
+      "hashes": {
+        "00001.grz:00001-101.con": "d48a4d80f6826632a12099196d517a099632d4b9ab3f4f06b1ce2a57ec43c97d",
+        "00001.grz:00001-102.con": "be792fa86db3d766cff514fbb7bc07436e36e0e5883e8d8b1e44e979d3058cde",
+        "00002.grz:00002-101.con": "0550ee8f9aa27a778f39eda92638784b507536d29fb77218d15d54dbc5f2ac95",
+        "00002.grz:00002-102.con": "6d04912018da523c0df54e2d934b204fd239fbe7c63a12617b203f59df75f5ac",
+        "00003.grz:00003-101.con": "35bd60355766bedc5d5c498f19d683b29911c1f168c35b423975f21f3aedaac3",
+        "00003.grz:00003-102.con": "6c1ddc27829031830544ec529a0cabc817e983d37b368dac0db364e6b688ef7e"
+      },
+      "total": 7035.337053120136,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "selected_absent",
+      "dx": 40,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "area",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.31306170000061684,
+      "hashes": {
+        "00001.grz:00001-101.con": "d48a4d80f6826632a12099196d517a099632d4b9ab3f4f06b1ce2a57ec43c97d",
+        "00001.grz:00001-102.con": "be792fa86db3d766cff514fbb7bc07436e36e0e5883e8d8b1e44e979d3058cde",
+        "00002.grz:00002-101.con": "0550ee8f9aa27a778f39eda92638784b507536d29fb77218d15d54dbc5f2ac95",
+        "00002.grz:00002-102.con": "6d04912018da523c0df54e2d934b204fd239fbe7c63a12617b203f59df75f5ac",
+        "00003.grz:00003-101.con": "35bd60355766bedc5d5c498f19d683b29911c1f168c35b423975f21f3aedaac3",
+        "00003.grz:00003-102.con": "6c1ddc27829031830544ec529a0cabc817e983d37b368dac0db364e6b688ef7e"
+      },
+      "total": 7035.337053120136,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "selected_absent",
+      "dx": 40,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "area",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3132552000006399,
+      "hashes": {
+        "00001.grz:00001-101.con": "d48a4d80f6826632a12099196d517a099632d4b9ab3f4f06b1ce2a57ec43c97d",
+        "00001.grz:00001-102.con": "be792fa86db3d766cff514fbb7bc07436e36e0e5883e8d8b1e44e979d3058cde",
+        "00002.grz:00002-101.con": "0550ee8f9aa27a778f39eda92638784b507536d29fb77218d15d54dbc5f2ac95",
+        "00002.grz:00002-102.con": "6d04912018da523c0df54e2d934b204fd239fbe7c63a12617b203f59df75f5ac",
+        "00003.grz:00003-101.con": "35bd60355766bedc5d5c498f19d683b29911c1f168c35b423975f21f3aedaac3",
+        "00003.grz:00003-102.con": "6c1ddc27829031830544ec529a0cabc817e983d37b368dac0db364e6b688ef7e"
+      },
+      "total": 7035.337053120136,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "selected_absent",
+      "dx": 40,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "area",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": false,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.30790629999864905,
+      "hashes": {
+        "00001.grz:00001-101.con": "d48a4d80f6826632a12099196d517a099632d4b9ab3f4f06b1ce2a57ec43c97d",
+        "00001.grz:00001-102.con": "be792fa86db3d766cff514fbb7bc07436e36e0e5883e8d8b1e44e979d3058cde",
+        "00002.grz:00002-101.con": "0550ee8f9aa27a778f39eda92638784b507536d29fb77218d15d54dbc5f2ac95",
+        "00002.grz:00002-102.con": "6d04912018da523c0df54e2d934b204fd239fbe7c63a12617b203f59df75f5ac",
+        "00003.grz:00003-101.con": "35bd60355766bedc5d5c498f19d683b29911c1f168c35b423975f21f3aedaac3",
+        "00003.grz:00003-102.con": "6c1ddc27829031830544ec529a0cabc817e983d37b368dac0db364e6b688ef7e"
+      },
+      "total": 7035.337053120136,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "extra_first",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.34422049999921,
+      "hashes": {
+        "00001.grz:00001-101.con": "1fc02ead4d901b867b0925b41968b59bc23f6650a4d1dadb5cbb92d420f1e6aa",
+        "00001.grz:00001-102.con": "e399c620e98bc5a0473e3a5d969f17332acb35e6eab93f215f6c85021c2df0cc",
+        "00002.grz:00002-101.con": "6b9affcfc87c50a6e2f919079bef47cb3c68b3734fb3fbe8b429e61026568a87",
+        "00002.grz:00002-102.con": "09ad84e66209e639a2b8c3850c5267fafee479233ee8906db31406272f50daa2",
+        "00003.grz:00003-101.con": "50b8afc3744e067ffa737a8affa555f25d9e0e03b28e3f373850c099d0c5306c",
+        "00003.grz:00003-102.con": "16aec35fc28ff3ffec4abb77b65ecd4d029bc42014035b85962660ee96e18458"
+      },
+      "total": 7911.177982509136,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "extra_first",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": false,
+      "exit_code": 0,
+      "wall_s": 0.3164227999986906,
+      "hashes": {
+        "00001.grz:00001-101.con": "e5d5128736ebabe4e39dca896226dc4a1e2d3e9fff7007106b59013b2b3be44b",
+        "00001.grz:00001-102.con": "f225ce1651038705b342cd6c6be45130ff6402c83f0b5d55d6b017d99290ef9b",
+        "00002.grz:00002-101.con": "c951fbb79e682ebfe4949da9f038b81c78d2d4e3f6565d5694b4d44cf8437f75",
+        "00002.grz:00002-102.con": "a3e7c1aa0ecce95e4882f5f7b76ea395a22664daeb8dd36c316e3f4ec4fbacf3",
+        "00003.grz:00003-101.con": "00d868054a09420a8bfc8664c7af0653cee0de067ac4a489ce70cedf429f37b7",
+        "00003.grz:00003-102.con": "6e5d8184456ad1976fc057c86e3f11d566785e44bf0fd125cc088b57f61f29f6"
+      },
+      "total": 3118.224341034889,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "extra_first",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.33869460000096296,
+      "hashes": {
+        "00001.grz:00001-101.con": "1fc02ead4d901b867b0925b41968b59bc23f6650a4d1dadb5cbb92d420f1e6aa",
+        "00001.grz:00001-102.con": "e399c620e98bc5a0473e3a5d969f17332acb35e6eab93f215f6c85021c2df0cc",
+        "00002.grz:00002-101.con": "6b9affcfc87c50a6e2f919079bef47cb3c68b3734fb3fbe8b429e61026568a87",
+        "00002.grz:00002-102.con": "09ad84e66209e639a2b8c3850c5267fafee479233ee8906db31406272f50daa2",
+        "00003.grz:00003-101.con": "50b8afc3744e067ffa737a8affa555f25d9e0e03b28e3f373850c099d0c5306c",
+        "00003.grz:00003-102.con": "16aec35fc28ff3ffec4abb77b65ecd4d029bc42014035b85962660ee96e18458"
+      },
+      "total": 7911.177982509136,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "extra_first",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3462125999994896,
+      "hashes": {
+        "00001.grz:00001-101.con": "1fc02ead4d901b867b0925b41968b59bc23f6650a4d1dadb5cbb92d420f1e6aa",
+        "00001.grz:00001-102.con": "e399c620e98bc5a0473e3a5d969f17332acb35e6eab93f215f6c85021c2df0cc",
+        "00002.grz:00002-101.con": "6b9affcfc87c50a6e2f919079bef47cb3c68b3734fb3fbe8b429e61026568a87",
+        "00002.grz:00002-102.con": "09ad84e66209e639a2b8c3850c5267fafee479233ee8906db31406272f50daa2",
+        "00003.grz:00003-101.con": "50b8afc3744e067ffa737a8affa555f25d9e0e03b28e3f373850c099d0c5306c",
+        "00003.grz:00003-102.con": "16aec35fc28ff3ffec4abb77b65ecd4d029bc42014035b85962660ee96e18458"
+      },
+      "total": 7911.177982509136,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "extra_first",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3377799000008963,
+      "hashes": {
+        "00001.grz:00001-101.con": "1fc02ead4d901b867b0925b41968b59bc23f6650a4d1dadb5cbb92d420f1e6aa",
+        "00001.grz:00001-102.con": "e399c620e98bc5a0473e3a5d969f17332acb35e6eab93f215f6c85021c2df0cc",
+        "00002.grz:00002-101.con": "6b9affcfc87c50a6e2f919079bef47cb3c68b3734fb3fbe8b429e61026568a87",
+        "00002.grz:00002-102.con": "09ad84e66209e639a2b8c3850c5267fafee479233ee8906db31406272f50daa2",
+        "00003.grz:00003-101.con": "50b8afc3744e067ffa737a8affa555f25d9e0e03b28e3f373850c099d0c5306c",
+        "00003.grz:00003-102.con": "16aec35fc28ff3ffec4abb77b65ecd4d029bc42014035b85962660ee96e18458"
+      },
+      "total": 7911.177982509136,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "extra_first",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": false,
+      "exit_code": 0,
+      "wall_s": 0.3231943999999203,
+      "hashes": {
+        "00001.grz:00001-101.con": "e5d5128736ebabe4e39dca896226dc4a1e2d3e9fff7007106b59013b2b3be44b",
+        "00001.grz:00001-102.con": "f225ce1651038705b342cd6c6be45130ff6402c83f0b5d55d6b017d99290ef9b",
+        "00002.grz:00002-101.con": "c951fbb79e682ebfe4949da9f038b81c78d2d4e3f6565d5694b4d44cf8437f75",
+        "00002.grz:00002-102.con": "a3e7c1aa0ecce95e4882f5f7b76ea395a22664daeb8dd36c316e3f4ec4fbacf3",
+        "00003.grz:00003-101.con": "00d868054a09420a8bfc8664c7af0653cee0de067ac4a489ce70cedf429f37b7",
+        "00003.grz:00003-102.con": "6e5d8184456ad1976fc057c86e3f11d566785e44bf0fd125cc088b57f61f29f6"
+      },
+      "total": 3118.224341034889,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "extra_first",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.34689889999935986,
+      "hashes": {
+        "00001.grz:00001-101.con": "1fc02ead4d901b867b0925b41968b59bc23f6650a4d1dadb5cbb92d420f1e6aa",
+        "00001.grz:00001-102.con": "e399c620e98bc5a0473e3a5d969f17332acb35e6eab93f215f6c85021c2df0cc",
+        "00002.grz:00002-101.con": "6b9affcfc87c50a6e2f919079bef47cb3c68b3734fb3fbe8b429e61026568a87",
+        "00002.grz:00002-102.con": "09ad84e66209e639a2b8c3850c5267fafee479233ee8906db31406272f50daa2",
+        "00003.grz:00003-101.con": "50b8afc3744e067ffa737a8affa555f25d9e0e03b28e3f373850c099d0c5306c",
+        "00003.grz:00003-102.con": "16aec35fc28ff3ffec4abb77b65ecd4d029bc42014035b85962660ee96e18458"
+      },
+      "total": 7911.177982509136,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "extra_first",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.342703000000256,
+      "hashes": {
+        "00001.grz:00001-101.con": "1fc02ead4d901b867b0925b41968b59bc23f6650a4d1dadb5cbb92d420f1e6aa",
+        "00001.grz:00001-102.con": "e399c620e98bc5a0473e3a5d969f17332acb35e6eab93f215f6c85021c2df0cc",
+        "00002.grz:00002-101.con": "6b9affcfc87c50a6e2f919079bef47cb3c68b3734fb3fbe8b429e61026568a87",
+        "00002.grz:00002-102.con": "09ad84e66209e639a2b8c3850c5267fafee479233ee8906db31406272f50daa2",
+        "00003.grz:00003-101.con": "50b8afc3744e067ffa737a8affa555f25d9e0e03b28e3f373850c099d0c5306c",
+        "00003.grz:00003-102.con": "16aec35fc28ff3ffec4abb77b65ecd4d029bc42014035b85962660ee96e18458"
+      },
+      "total": 7911.177982509136,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "extra_middle",
+      "dx": 10,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.34828250000100525,
+      "hashes": {
+        "00001.grz:00001-101.con": "2ad09bd0d205fc3ccc2792f39e89a2b84f831ea7161a972a4e7083f00ba6c91b",
+        "00001.grz:00001-102.con": "537f97ad1bf29d76331df6980504966bb5c3a3052bec955dea809d3f003a6831",
+        "00002.grz:00002-101.con": "9a48bc30c3045c6bfb9f315416e133d4d1fb7b9b5a321050cf8746f8e6251290",
+        "00002.grz:00002-102.con": "01bf6833acaea6ac68b213e60c4e6e000ffd8c2ecf4d4857686321d34d7ec652",
+        "00003.grz:00003-101.con": "e172d2d997c32dd486bbf3cffbfa7626572ac3ef901663d12585669247923052",
+        "00003.grz:00003-102.con": "dab750580df1bbfe03afa521d0b65559bf599992b7f4dcd6f8d8cca7fa325f53"
+      },
+      "total": 235777.90678060055,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "extra_middle",
+      "dx": 10,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": false,
+      "exit_code": 0,
+      "wall_s": 0.3365312999994785,
+      "hashes": {
+        "00001.grz:00001-101.con": "2ad09bd0d205fc3ccc2792f39e89a2b84f831ea7161a972a4e7083f00ba6c91b",
+        "00001.grz:00001-102.con": "02fd5072269acc8c7a0f3856bb9c83c54f8bea59f960f730cb84efd48a251e43",
+        "00002.grz:00002-101.con": "9a48bc30c3045c6bfb9f315416e133d4d1fb7b9b5a321050cf8746f8e6251290",
+        "00002.grz:00002-102.con": "7d1a58d1050243c1e984f9dfac2607dba398c3526a4402719531f2f1a68a94c9",
+        "00003.grz:00003-101.con": "ce66bce141ad07bb5c7d4f70dcf33ea86fb4376aab71585d417231c0d9aededc",
+        "00003.grz:00003-102.con": "39119e5ea6d5ba7322d6dd5ad0dfcb2961539b5d2cf81ce9c926c75142831f94"
+      },
+      "total": 90178.82511532307,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "extra_middle",
+      "dx": 10,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3505079000005935,
+      "hashes": {
+        "00001.grz:00001-101.con": "2ad09bd0d205fc3ccc2792f39e89a2b84f831ea7161a972a4e7083f00ba6c91b",
+        "00001.grz:00001-102.con": "537f97ad1bf29d76331df6980504966bb5c3a3052bec955dea809d3f003a6831",
+        "00002.grz:00002-101.con": "9a48bc30c3045c6bfb9f315416e133d4d1fb7b9b5a321050cf8746f8e6251290",
+        "00002.grz:00002-102.con": "01bf6833acaea6ac68b213e60c4e6e000ffd8c2ecf4d4857686321d34d7ec652",
+        "00003.grz:00003-101.con": "e172d2d997c32dd486bbf3cffbfa7626572ac3ef901663d12585669247923052",
+        "00003.grz:00003-102.con": "dab750580df1bbfe03afa521d0b65559bf599992b7f4dcd6f8d8cca7fa325f53"
+      },
+      "total": 235777.90678060055,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "extra_middle",
+      "dx": 10,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3501496999997471,
+      "hashes": {
+        "00001.grz:00001-101.con": "2ad09bd0d205fc3ccc2792f39e89a2b84f831ea7161a972a4e7083f00ba6c91b",
+        "00001.grz:00001-102.con": "537f97ad1bf29d76331df6980504966bb5c3a3052bec955dea809d3f003a6831",
+        "00002.grz:00002-101.con": "9a48bc30c3045c6bfb9f315416e133d4d1fb7b9b5a321050cf8746f8e6251290",
+        "00002.grz:00002-102.con": "01bf6833acaea6ac68b213e60c4e6e000ffd8c2ecf4d4857686321d34d7ec652",
+        "00003.grz:00003-101.con": "e172d2d997c32dd486bbf3cffbfa7626572ac3ef901663d12585669247923052",
+        "00003.grz:00003-102.con": "dab750580df1bbfe03afa521d0b65559bf599992b7f4dcd6f8d8cca7fa325f53"
+      },
+      "total": 235777.90678060055,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "extra_middle",
+      "dx": 10,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.34840389999953914,
+      "hashes": {
+        "00001.grz:00001-101.con": "2ad09bd0d205fc3ccc2792f39e89a2b84f831ea7161a972a4e7083f00ba6c91b",
+        "00001.grz:00001-102.con": "537f97ad1bf29d76331df6980504966bb5c3a3052bec955dea809d3f003a6831",
+        "00002.grz:00002-101.con": "9a48bc30c3045c6bfb9f315416e133d4d1fb7b9b5a321050cf8746f8e6251290",
+        "00002.grz:00002-102.con": "01bf6833acaea6ac68b213e60c4e6e000ffd8c2ecf4d4857686321d34d7ec652",
+        "00003.grz:00003-101.con": "e172d2d997c32dd486bbf3cffbfa7626572ac3ef901663d12585669247923052",
+        "00003.grz:00003-102.con": "dab750580df1bbfe03afa521d0b65559bf599992b7f4dcd6f8d8cca7fa325f53"
+      },
+      "total": 235777.90678060055,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "extra_middle",
+      "dx": 10,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": false,
+      "exit_code": 0,
+      "wall_s": 0.33174999999937427,
+      "hashes": {
+        "00001.grz:00001-101.con": "2ad09bd0d205fc3ccc2792f39e89a2b84f831ea7161a972a4e7083f00ba6c91b",
+        "00001.grz:00001-102.con": "02fd5072269acc8c7a0f3856bb9c83c54f8bea59f960f730cb84efd48a251e43",
+        "00002.grz:00002-101.con": "9a48bc30c3045c6bfb9f315416e133d4d1fb7b9b5a321050cf8746f8e6251290",
+        "00002.grz:00002-102.con": "7d1a58d1050243c1e984f9dfac2607dba398c3526a4402719531f2f1a68a94c9",
+        "00003.grz:00003-101.con": "ce66bce141ad07bb5c7d4f70dcf33ea86fb4376aab71585d417231c0d9aededc",
+        "00003.grz:00003-102.con": "39119e5ea6d5ba7322d6dd5ad0dfcb2961539b5d2cf81ce9c926c75142831f94"
+      },
+      "total": 90178.82511532307,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "extra_middle",
+      "dx": 10,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.35194749999936903,
+      "hashes": {
+        "00001.grz:00001-101.con": "2ad09bd0d205fc3ccc2792f39e89a2b84f831ea7161a972a4e7083f00ba6c91b",
+        "00001.grz:00001-102.con": "537f97ad1bf29d76331df6980504966bb5c3a3052bec955dea809d3f003a6831",
+        "00002.grz:00002-101.con": "9a48bc30c3045c6bfb9f315416e133d4d1fb7b9b5a321050cf8746f8e6251290",
+        "00002.grz:00002-102.con": "01bf6833acaea6ac68b213e60c4e6e000ffd8c2ecf4d4857686321d34d7ec652",
+        "00003.grz:00003-101.con": "e172d2d997c32dd486bbf3cffbfa7626572ac3ef901663d12585669247923052",
+        "00003.grz:00003-102.con": "dab750580df1bbfe03afa521d0b65559bf599992b7f4dcd6f8d8cca7fa325f53"
+      },
+      "total": 235777.90678060055,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "extra_middle",
+      "dx": 10,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.36104990000058024,
+      "hashes": {
+        "00001.grz:00001-101.con": "2ad09bd0d205fc3ccc2792f39e89a2b84f831ea7161a972a4e7083f00ba6c91b",
+        "00001.grz:00001-102.con": "537f97ad1bf29d76331df6980504966bb5c3a3052bec955dea809d3f003a6831",
+        "00002.grz:00002-101.con": "9a48bc30c3045c6bfb9f315416e133d4d1fb7b9b5a321050cf8746f8e6251290",
+        "00002.grz:00002-102.con": "01bf6833acaea6ac68b213e60c4e6e000ffd8c2ecf4d4857686321d34d7ec652",
+        "00003.grz:00003-101.con": "e172d2d997c32dd486bbf3cffbfa7626572ac3ef901663d12585669247923052",
+        "00003.grz:00003-102.con": "dab750580df1bbfe03afa521d0b65559bf599992b7f4dcd6f8d8cca7fa325f53"
+      },
+      "total": 235777.90678060055,
+      "values": 2400,
+      "archives": 3
+    },
+    {
+      "case": "extra_last",
+      "dx": 40,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "area",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.33044840000002296,
+      "hashes": {
+        "00001.grz:00001-101.con": "1a1e7fee4197285b779f2b75586a08e982d11be468c9be137a05b9e7c2254595",
+        "00001.grz:00001-102.con": "55208b38a91d990f9cad0814e58a8a1efb5efa32575891df7f0a3e4ecd0c1ab7",
+        "00002.grz:00002-101.con": "0e0cb6eb6815c6aaa50ab0e41b57b21cf484a438672f08eb4347064b279d4175",
+        "00002.grz:00002-102.con": "cc885fed06f0febba4b9c8e51214ed137bb12a2b7d8d3a392c78b7cf4293f40e",
+        "00003.grz:00003-101.con": "54a7c1ca826aaf90ed780a25723499baba8567fd8c2658ebda7eac60ba378cab",
+        "00003.grz:00003-102.con": "6398f7fdb39f4184d031ac1a85471cc66960f5ad92dd35e36485d3101d38d7ed"
+      },
+      "total": 9266.04476928711,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "extra_last",
+      "dx": 40,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "area",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": false,
+      "exit_code": 0,
+      "wall_s": 0.3216256000014255,
+      "hashes": {
+        "00001.grz:00001-101.con": "1a1e7fee4197285b779f2b75586a08e982d11be468c9be137a05b9e7c2254595",
+        "00001.grz:00001-102.con": "55208b38a91d990f9cad0814e58a8a1efb5efa32575891df7f0a3e4ecd0c1ab7",
+        "00002.grz:00002-101.con": "0e0cb6eb6815c6aaa50ab0e41b57b21cf484a438672f08eb4347064b279d4175",
+        "00002.grz:00002-102.con": "a77b6a16d3c57c7f4ed42a868ed5cd5aacc9bbffe152bd93a4bd032c0751c255",
+        "00003.grz:00003-101.con": "e1a252950da7133c547f3541546d7cf0b77aab2494e79046385276c6c58f042e",
+        "00003.grz:00003-102.con": "df35a337ab24280874fd9a1814e504374cdb34da68e8c09a4a2de65f02109b74"
+      },
+      "total": 4833.0966796875,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "extra_last",
+      "dx": 40,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "area",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.30335289999857196,
+      "hashes": {
+        "00001.grz:00001-101.con": "1a1e7fee4197285b779f2b75586a08e982d11be468c9be137a05b9e7c2254595",
+        "00001.grz:00001-102.con": "55208b38a91d990f9cad0814e58a8a1efb5efa32575891df7f0a3e4ecd0c1ab7",
+        "00002.grz:00002-101.con": "0e0cb6eb6815c6aaa50ab0e41b57b21cf484a438672f08eb4347064b279d4175",
+        "00002.grz:00002-102.con": "cc885fed06f0febba4b9c8e51214ed137bb12a2b7d8d3a392c78b7cf4293f40e",
+        "00003.grz:00003-101.con": "54a7c1ca826aaf90ed780a25723499baba8567fd8c2658ebda7eac60ba378cab",
+        "00003.grz:00003-102.con": "6398f7fdb39f4184d031ac1a85471cc66960f5ad92dd35e36485d3101d38d7ed"
+      },
+      "total": 9266.04476928711,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "extra_last",
+      "dx": 40,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "area",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3061006999996607,
+      "hashes": {
+        "00001.grz:00001-101.con": "1a1e7fee4197285b779f2b75586a08e982d11be468c9be137a05b9e7c2254595",
+        "00001.grz:00001-102.con": "55208b38a91d990f9cad0814e58a8a1efb5efa32575891df7f0a3e4ecd0c1ab7",
+        "00002.grz:00002-101.con": "0e0cb6eb6815c6aaa50ab0e41b57b21cf484a438672f08eb4347064b279d4175",
+        "00002.grz:00002-102.con": "cc885fed06f0febba4b9c8e51214ed137bb12a2b7d8d3a392c78b7cf4293f40e",
+        "00003.grz:00003-101.con": "54a7c1ca826aaf90ed780a25723499baba8567fd8c2658ebda7eac60ba378cab",
+        "00003.grz:00003-102.con": "6398f7fdb39f4184d031ac1a85471cc66960f5ad92dd35e36485d3101d38d7ed"
+      },
+      "total": 9266.04476928711,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "extra_last",
+      "dx": 40,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "area",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3066165000000183,
+      "hashes": {
+        "00001.grz:00001-101.con": "1a1e7fee4197285b779f2b75586a08e982d11be468c9be137a05b9e7c2254595",
+        "00001.grz:00001-102.con": "55208b38a91d990f9cad0814e58a8a1efb5efa32575891df7f0a3e4ecd0c1ab7",
+        "00002.grz:00002-101.con": "0e0cb6eb6815c6aaa50ab0e41b57b21cf484a438672f08eb4347064b279d4175",
+        "00002.grz:00002-102.con": "cc885fed06f0febba4b9c8e51214ed137bb12a2b7d8d3a392c78b7cf4293f40e",
+        "00003.grz:00003-101.con": "54a7c1ca826aaf90ed780a25723499baba8567fd8c2658ebda7eac60ba378cab",
+        "00003.grz:00003-102.con": "6398f7fdb39f4184d031ac1a85471cc66960f5ad92dd35e36485d3101d38d7ed"
+      },
+      "total": 9266.04476928711,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "extra_last",
+      "dx": 40,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "area",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": false,
+      "exit_code": 0,
+      "wall_s": 0.3022809000012785,
+      "hashes": {
+        "00001.grz:00001-101.con": "1a1e7fee4197285b779f2b75586a08e982d11be468c9be137a05b9e7c2254595",
+        "00001.grz:00001-102.con": "55208b38a91d990f9cad0814e58a8a1efb5efa32575891df7f0a3e4ecd0c1ab7",
+        "00002.grz:00002-101.con": "0e0cb6eb6815c6aaa50ab0e41b57b21cf484a438672f08eb4347064b279d4175",
+        "00002.grz:00002-102.con": "a77b6a16d3c57c7f4ed42a868ed5cd5aacc9bbffe152bd93a4bd032c0751c255",
+        "00003.grz:00003-101.con": "e1a252950da7133c547f3541546d7cf0b77aab2494e79046385276c6c58f042e",
+        "00003.grz:00003-102.con": "df35a337ab24280874fd9a1814e504374cdb34da68e8c09a4a2de65f02109b74"
+      },
+      "total": 4833.0966796875,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "extra_last",
+      "dx": 40,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "area",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.30565980000028503,
+      "hashes": {
+        "00001.grz:00001-101.con": "1a1e7fee4197285b779f2b75586a08e982d11be468c9be137a05b9e7c2254595",
+        "00001.grz:00001-102.con": "55208b38a91d990f9cad0814e58a8a1efb5efa32575891df7f0a3e4ecd0c1ab7",
+        "00002.grz:00002-101.con": "0e0cb6eb6815c6aaa50ab0e41b57b21cf484a438672f08eb4347064b279d4175",
+        "00002.grz:00002-102.con": "cc885fed06f0febba4b9c8e51214ed137bb12a2b7d8d3a392c78b7cf4293f40e",
+        "00003.grz:00003-101.con": "54a7c1ca826aaf90ed780a25723499baba8567fd8c2658ebda7eac60ba378cab",
+        "00003.grz:00003-102.con": "6398f7fdb39f4184d031ac1a85471cc66960f5ad92dd35e36485d3101d38d7ed"
+      },
+      "total": 9266.04476928711,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "extra_last",
+      "dx": 40,
+      "budget": 100,
+      "actual_particles": [
+        100
+      ],
+      "source_kind": "area",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.30320410000058473,
+      "hashes": {
+        "00001.grz:00001-101.con": "1a1e7fee4197285b779f2b75586a08e982d11be468c9be137a05b9e7c2254595",
+        "00001.grz:00001-102.con": "55208b38a91d990f9cad0814e58a8a1efb5efa32575891df7f0a3e4ecd0c1ab7",
+        "00002.grz:00002-101.con": "0e0cb6eb6815c6aaa50ab0e41b57b21cf484a438672f08eb4347064b279d4175",
+        "00002.grz:00002-102.con": "cc885fed06f0febba4b9c8e51214ed137bb12a2b7d8d3a392c78b7cf4293f40e",
+        "00003.grz:00003-101.con": "54a7c1ca826aaf90ed780a25723499baba8567fd8c2658ebda7eac60ba378cab",
+        "00003.grz:00003-102.con": "6398f7fdb39f4184d031ac1a85471cc66960f5ad92dd35e36485d3101d38d7ed"
+      },
+      "total": 9266.04476928711,
+      "values": 150,
+      "archives": 3
+    },
+    {
+      "case": "many_extra",
+      "dx": 20,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.35441679999894404,
+      "hashes": {
+        "00001.grz:00001-101.con": "04528954443b37303c8f7668ed1ebd84c26d0ba5a89f8ebffba3cdadb0ddc7b3",
+        "00001.grz:00001-102.con": "151e206b0771132fc3084be7594704cad5867e23aeb7d904048cb444910c7c26",
+        "00002.grz:00002-101.con": "cba52c0bf6f7e93b606b70f58f224adf46d845776230ffc678855344de56b5d2",
+        "00002.grz:00002-102.con": "83c01dbd5ce9da4d520ee76e74955dc415b5d9764a7b164a21f062b45db1450c",
+        "00003.grz:00003-101.con": "5ab3b1532e48da96b7283d3d18017e7cdb3b32a8c8e71df99c95c10174499f61",
+        "00003.grz:00003-102.con": "e03f920a8a3a2b0917e68bbb50d0f844eab1e8526aa430ebf32fcfcf88e76625"
+      },
+      "total": 57277.7785821259,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "many_extra",
+      "dx": 20,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": false,
+      "exit_code": 0,
+      "wall_s": 0.33447950000118,
+      "hashes": {
+        "00001.grz:00001-101.con": "b43a4ace4ce3fa8891cd25430727e47490c2ec6982c194fd41a73ae1d1bd9297",
+        "00001.grz:00001-102.con": "1ef23871eddea56575b221cf6917fe14061f5ffe368e7ed7bce6ff5945e16196",
+        "00002.grz:00002-101.con": "753272e444efc1daff8a9e0f41495fa0c48c9bbd40bf5e49f41c82ec2b57aaa1",
+        "00002.grz:00002-102.con": "df1619427c278f2f636a36e608de44fc3c1c8e7f1f5fcdebee1fcdc66b4dd534",
+        "00003.grz:00003-101.con": "e898973473db4764f196d852cdbe6fa04eb52eb3cb177a74784e5e0e22cffde5",
+        "00003.grz:00003-102.con": "9ae63a68924ae91e5d93ba4f3ca10bab259d1f1ccd507862b8248a857da27d8b"
+      },
+      "total": 26909.11954730749,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "many_extra",
+      "dx": 20,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3432628000009572,
+      "hashes": {
+        "00001.grz:00001-101.con": "04528954443b37303c8f7668ed1ebd84c26d0ba5a89f8ebffba3cdadb0ddc7b3",
+        "00001.grz:00001-102.con": "151e206b0771132fc3084be7594704cad5867e23aeb7d904048cb444910c7c26",
+        "00002.grz:00002-101.con": "cba52c0bf6f7e93b606b70f58f224adf46d845776230ffc678855344de56b5d2",
+        "00002.grz:00002-102.con": "83c01dbd5ce9da4d520ee76e74955dc415b5d9764a7b164a21f062b45db1450c",
+        "00003.grz:00003-101.con": "5ab3b1532e48da96b7283d3d18017e7cdb3b32a8c8e71df99c95c10174499f61",
+        "00003.grz:00003-102.con": "e03f920a8a3a2b0917e68bbb50d0f844eab1e8526aa430ebf32fcfcf88e76625"
+      },
+      "total": 57277.7785821259,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "many_extra",
+      "dx": 20,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3450448999992659,
+      "hashes": {
+        "00001.grz:00001-101.con": "04528954443b37303c8f7668ed1ebd84c26d0ba5a89f8ebffba3cdadb0ddc7b3",
+        "00001.grz:00001-102.con": "151e206b0771132fc3084be7594704cad5867e23aeb7d904048cb444910c7c26",
+        "00002.grz:00002-101.con": "cba52c0bf6f7e93b606b70f58f224adf46d845776230ffc678855344de56b5d2",
+        "00002.grz:00002-102.con": "83c01dbd5ce9da4d520ee76e74955dc415b5d9764a7b164a21f062b45db1450c",
+        "00003.grz:00003-101.con": "5ab3b1532e48da96b7283d3d18017e7cdb3b32a8c8e71df99c95c10174499f61",
+        "00003.grz:00003-102.con": "e03f920a8a3a2b0917e68bbb50d0f844eab1e8526aa430ebf32fcfcf88e76625"
+      },
+      "total": 57277.7785821259,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "many_extra",
+      "dx": 20,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.35595660000035423,
+      "hashes": {
+        "00001.grz:00001-101.con": "04528954443b37303c8f7668ed1ebd84c26d0ba5a89f8ebffba3cdadb0ddc7b3",
+        "00001.grz:00001-102.con": "151e206b0771132fc3084be7594704cad5867e23aeb7d904048cb444910c7c26",
+        "00002.grz:00002-101.con": "cba52c0bf6f7e93b606b70f58f224adf46d845776230ffc678855344de56b5d2",
+        "00002.grz:00002-102.con": "83c01dbd5ce9da4d520ee76e74955dc415b5d9764a7b164a21f062b45db1450c",
+        "00003.grz:00003-101.con": "5ab3b1532e48da96b7283d3d18017e7cdb3b32a8c8e71df99c95c10174499f61",
+        "00003.grz:00003-102.con": "e03f920a8a3a2b0917e68bbb50d0f844eab1e8526aa430ebf32fcfcf88e76625"
+      },
+      "total": 57277.7785821259,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "many_extra",
+      "dx": 20,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": false,
+      "exit_code": 0,
+      "wall_s": 0.33256280000023253,
+      "hashes": {
+        "00001.grz:00001-101.con": "b43a4ace4ce3fa8891cd25430727e47490c2ec6982c194fd41a73ae1d1bd9297",
+        "00001.grz:00001-102.con": "1ef23871eddea56575b221cf6917fe14061f5ffe368e7ed7bce6ff5945e16196",
+        "00002.grz:00002-101.con": "753272e444efc1daff8a9e0f41495fa0c48c9bbd40bf5e49f41c82ec2b57aaa1",
+        "00002.grz:00002-102.con": "df1619427c278f2f636a36e608de44fc3c1c8e7f1f5fcdebee1fcdc66b4dd534",
+        "00003.grz:00003-101.con": "e898973473db4764f196d852cdbe6fa04eb52eb3cb177a74784e5e0e22cffde5",
+        "00003.grz:00003-102.con": "9ae63a68924ae91e5d93ba4f3ca10bab259d1f1ccd507862b8248a857da27d8b"
+      },
+      "total": 26909.11954730749,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "many_extra",
+      "dx": 20,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.35675760000049195,
+      "hashes": {
+        "00001.grz:00001-101.con": "04528954443b37303c8f7668ed1ebd84c26d0ba5a89f8ebffba3cdadb0ddc7b3",
+        "00001.grz:00001-102.con": "151e206b0771132fc3084be7594704cad5867e23aeb7d904048cb444910c7c26",
+        "00002.grz:00002-101.con": "cba52c0bf6f7e93b606b70f58f224adf46d845776230ffc678855344de56b5d2",
+        "00002.grz:00002-102.con": "83c01dbd5ce9da4d520ee76e74955dc415b5d9764a7b164a21f062b45db1450c",
+        "00003.grz:00003-101.con": "5ab3b1532e48da96b7283d3d18017e7cdb3b32a8c8e71df99c95c10174499f61",
+        "00003.grz:00003-102.con": "e03f920a8a3a2b0917e68bbb50d0f844eab1e8526aa430ebf32fcfcf88e76625"
+      },
+      "total": 57277.7785821259,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "many_extra",
+      "dx": 20,
+      "budget": 3000,
+      "actual_particles": [
+        3000
+      ],
+      "source_kind": "mixed",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.34824359999947774,
+      "hashes": {
+        "00001.grz:00001-101.con": "04528954443b37303c8f7668ed1ebd84c26d0ba5a89f8ebffba3cdadb0ddc7b3",
+        "00001.grz:00001-102.con": "151e206b0771132fc3084be7594704cad5867e23aeb7d904048cb444910c7c26",
+        "00002.grz:00002-101.con": "cba52c0bf6f7e93b606b70f58f224adf46d845776230ffc678855344de56b5d2",
+        "00002.grz:00002-102.con": "83c01dbd5ce9da4d520ee76e74955dc415b5d9764a7b164a21f062b45db1450c",
+        "00003.grz:00003-101.con": "5ab3b1532e48da96b7283d3d18017e7cdb3b32a8c8e71df99c95c10174499f61",
+        "00003.grz:00003-102.con": "e03f920a8a3a2b0917e68bbb50d0f844eab1e8526aa430ebf32fcfcf88e76625"
+      },
+      "total": 57277.7785821259,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "missing_value",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.34602949999862176,
+      "hashes": {
+        "00001.grz:00001-101.con": "1fc02ead4d901b867b0925b41968b59bc23f6650a4d1dadb5cbb92d420f1e6aa",
+        "00001.grz:00001-102.con": "f225ce1651038705b342cd6c6be45130ff6402c83f0b5d55d6b017d99290ef9b",
+        "00002.grz:00002-101.con": "6b9affcfc87c50a6e2f919079bef47cb3c68b3734fb3fbe8b429e61026568a87",
+        "00002.grz:00002-102.con": "4495acffa2d973fbc9b38971b5227eac45d6e5b68e71b7a8580efdb9354a15eb",
+        "00003.grz:00003-101.con": "50b8afc3744e067ffa737a8affa555f25d9e0e03b28e3f373850c099d0c5306c",
+        "00003.grz:00003-102.con": "556f8fb5f4aef2fabf2e53278d46ed29d9d4c053a78b0d73526c26825ad308e8"
+      },
+      "total": 7169.101205468178,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "missing_value",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": false,
+      "exit_code": 0,
+      "wall_s": 0.32738269999936165,
+      "hashes": {
+        "00001.grz:00001-101.con": "e5d5128736ebabe4e39dca896226dc4a1e2d3e9fff7007106b59013b2b3be44b",
+        "00001.grz:00001-102.con": "f225ce1651038705b342cd6c6be45130ff6402c83f0b5d55d6b017d99290ef9b",
+        "00002.grz:00002-101.con": "c951fbb79e682ebfe4949da9f038b81c78d2d4e3f6565d5694b4d44cf8437f75",
+        "00002.grz:00002-102.con": "a3e7c1aa0ecce95e4882f5f7b76ea395a22664daeb8dd36c316e3f4ec4fbacf3",
+        "00003.grz:00003-101.con": "00d868054a09420a8bfc8664c7af0653cee0de067ac4a489ce70cedf429f37b7",
+        "00003.grz:00003-102.con": "6e5d8184456ad1976fc057c86e3f11d566785e44bf0fd125cc088b57f61f29f6"
+      },
+      "total": 3118.224341034889,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "missing_value",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3474797999988368,
+      "hashes": {
+        "00001.grz:00001-101.con": "1fc02ead4d901b867b0925b41968b59bc23f6650a4d1dadb5cbb92d420f1e6aa",
+        "00001.grz:00001-102.con": "f225ce1651038705b342cd6c6be45130ff6402c83f0b5d55d6b017d99290ef9b",
+        "00002.grz:00002-101.con": "6b9affcfc87c50a6e2f919079bef47cb3c68b3734fb3fbe8b429e61026568a87",
+        "00002.grz:00002-102.con": "4495acffa2d973fbc9b38971b5227eac45d6e5b68e71b7a8580efdb9354a15eb",
+        "00003.grz:00003-101.con": "50b8afc3744e067ffa737a8affa555f25d9e0e03b28e3f373850c099d0c5306c",
+        "00003.grz:00003-102.con": "556f8fb5f4aef2fabf2e53278d46ed29d9d4c053a78b0d73526c26825ad308e8"
+      },
+      "total": 7169.101205468178,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "missing_value",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 0,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.3494752000005974,
+      "hashes": {
+        "00001.grz:00001-101.con": "1fc02ead4d901b867b0925b41968b59bc23f6650a4d1dadb5cbb92d420f1e6aa",
+        "00001.grz:00001-102.con": "f225ce1651038705b342cd6c6be45130ff6402c83f0b5d55d6b017d99290ef9b",
+        "00002.grz:00002-101.con": "6b9affcfc87c50a6e2f919079bef47cb3c68b3734fb3fbe8b429e61026568a87",
+        "00002.grz:00002-102.con": "4495acffa2d973fbc9b38971b5227eac45d6e5b68e71b7a8580efdb9354a15eb",
+        "00003.grz:00003-101.con": "50b8afc3744e067ffa737a8affa555f25d9e0e03b28e3f373850c099d0c5306c",
+        "00003.grz:00003-102.con": "556f8fb5f4aef2fabf2e53278d46ed29d9d4c053a78b0d73526c26825ad308e8"
+      },
+      "total": 7169.101205468178,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "missing_value",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "baseline",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.340499699999782,
+      "hashes": {
+        "00001.grz:00001-101.con": "1fc02ead4d901b867b0925b41968b59bc23f6650a4d1dadb5cbb92d420f1e6aa",
+        "00001.grz:00001-102.con": "f225ce1651038705b342cd6c6be45130ff6402c83f0b5d55d6b017d99290ef9b",
+        "00002.grz:00002-101.con": "6b9affcfc87c50a6e2f919079bef47cb3c68b3734fb3fbe8b429e61026568a87",
+        "00002.grz:00002-102.con": "4495acffa2d973fbc9b38971b5227eac45d6e5b68e71b7a8580efdb9354a15eb",
+        "00003.grz:00003-101.con": "50b8afc3744e067ffa737a8affa555f25d9e0e03b28e3f373850c099d0c5306c",
+        "00003.grz:00003-102.con": "556f8fb5f4aef2fabf2e53278d46ed29d9d4c053a78b0d73526c26825ad308e8"
+      },
+      "total": 7169.101205468178,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "missing_value",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "baseline",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": false,
+      "exit_code": 0,
+      "wall_s": 0.3180997999988904,
+      "hashes": {
+        "00001.grz:00001-101.con": "e5d5128736ebabe4e39dca896226dc4a1e2d3e9fff7007106b59013b2b3be44b",
+        "00001.grz:00001-102.con": "f225ce1651038705b342cd6c6be45130ff6402c83f0b5d55d6b017d99290ef9b",
+        "00002.grz:00002-101.con": "c951fbb79e682ebfe4949da9f038b81c78d2d4e3f6565d5694b4d44cf8437f75",
+        "00002.grz:00002-102.con": "a3e7c1aa0ecce95e4882f5f7b76ea395a22664daeb8dd36c316e3f4ec4fbacf3",
+        "00003.grz:00003-101.con": "00d868054a09420a8bfc8664c7af0653cee0de067ac4a489ce70cedf429f37b7",
+        "00003.grz:00003-102.con": "6e5d8184456ad1976fc057c86e3f11d566785e44bf0fd125cc088b57f61f29f6"
+      },
+      "total": 3118.224341034889,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "missing_value",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "candidate",
+      "layout": "canonical",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.345799700000498,
+      "hashes": {
+        "00001.grz:00001-101.con": "1fc02ead4d901b867b0925b41968b59bc23f6650a4d1dadb5cbb92d420f1e6aa",
+        "00001.grz:00001-102.con": "f225ce1651038705b342cd6c6be45130ff6402c83f0b5d55d6b017d99290ef9b",
+        "00002.grz:00002-101.con": "6b9affcfc87c50a6e2f919079bef47cb3c68b3734fb3fbe8b429e61026568a87",
+        "00002.grz:00002-102.con": "4495acffa2d973fbc9b38971b5227eac45d6e5b68e71b7a8580efdb9354a15eb",
+        "00003.grz:00003-101.con": "50b8afc3744e067ffa737a8affa555f25d9e0e03b28e3f373850c099d0c5306c",
+        "00003.grz:00003-102.con": "556f8fb5f4aef2fabf2e53278d46ed29d9d4c053a78b0d73526c26825ad308e8"
+      },
+      "total": 7169.101205468178,
+      "values": 600,
+      "archives": 3
+    },
+    {
+      "case": "missing_value",
+      "dx": 20,
+      "budget": 1000,
+      "actual_particles": [
+        1000
+      ],
+      "source_kind": "point",
+      "variant": "candidate",
+      "layout": "supplied",
+      "repeat": 1,
+      "known_defect": true,
+      "finished": true,
+      "reader_complete": true,
+      "exit_code": 0,
+      "wall_s": 0.342171900001631,
+      "hashes": {
+        "00001.grz:00001-101.con": "1fc02ead4d901b867b0925b41968b59bc23f6650a4d1dadb5cbb92d420f1e6aa",
+        "00001.grz:00001-102.con": "f225ce1651038705b342cd6c6be45130ff6402c83f0b5d55d6b017d99290ef9b",
+        "00002.grz:00002-101.con": "6b9affcfc87c50a6e2f919079bef47cb3c68b3734fb3fbe8b429e61026568a87",
+        "00002.grz:00002-102.con": "4495acffa2d973fbc9b38971b5227eac45d6e5b68e71b7a8580efdb9354a15eb",
+        "00003.grz:00003-101.con": "50b8afc3744e067ffa737a8affa555f25d9e0e03b28e3f373850c099d0c5306c",
+        "00003.grz:00003-102.con": "556f8fb5f4aef2fabf2e53278d46ed29d9d4c053a78b0d73526c26825ad308e8"
+      },
+      "total": 7169.101205468178,
+      "values": 600,
+      "archives": 3
+    }
+  ],
+  "comparisons": [
+    {
+      "case": "matched",
+      "repeat": 0,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": true,
+      "known_defect": false
+    },
+    {
+      "case": "matched",
+      "repeat": 1,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": true,
+      "known_defect": false
+    },
+    {
+      "case": "reordered",
+      "repeat": 0,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": true,
+      "known_defect": false
+    },
+    {
+      "case": "reordered",
+      "repeat": 1,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": true,
+      "known_defect": false
+    },
+    {
+      "case": "selected_absent",
+      "repeat": 0,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": true,
+      "known_defect": false
+    },
+    {
+      "case": "selected_absent",
+      "repeat": 1,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": true,
+      "known_defect": false
+    },
+    {
+      "case": "extra_first",
+      "repeat": 0,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": false,
+      "known_defect": true
+    },
+    {
+      "case": "extra_first",
+      "repeat": 1,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": false,
+      "known_defect": true
+    },
+    {
+      "case": "extra_middle",
+      "repeat": 0,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": false,
+      "known_defect": true
+    },
+    {
+      "case": "extra_middle",
+      "repeat": 1,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": false,
+      "known_defect": true
+    },
+    {
+      "case": "extra_last",
+      "repeat": 0,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": false,
+      "known_defect": true
+    },
+    {
+      "case": "extra_last",
+      "repeat": 1,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": false,
+      "known_defect": true
+    },
+    {
+      "case": "many_extra",
+      "repeat": 0,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": false,
+      "known_defect": true
+    },
+    {
+      "case": "many_extra",
+      "repeat": 1,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": false,
+      "known_defect": true
+    },
+    {
+      "case": "missing_value",
+      "repeat": 0,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": false,
+      "known_defect": true
+    },
+    {
+      "case": "missing_value",
+      "repeat": 1,
+      "candidate_supplied_matches_baseline_canonical": true,
+      "candidate_canonical_matches_baseline_canonical": true,
+      "baseline_supplied_matches_baseline_canonical": false,
+      "known_defect": true
+    }
+  ],
+  "elapsed_s": 28.802662599999167
+}

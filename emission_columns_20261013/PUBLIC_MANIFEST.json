@@ -1,0 +1,159 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 9,
+      "sha256": "8b9c3028d6467ff3be7c793141927841d70f47f52d0590677438f488ca154992"
+    },
+    {
+      "path": "build_logs/baseline_build.log",
+      "bytes": 221,
+      "sha256": "793a74d5fa9200d3365a68ca1f287988b19736f320d1686f3a6902505a1b42d8"
+    },
+    {
+      "path": "build_logs/baseline_fixture_build.log",
+      "bytes": 285,
+      "sha256": "19f4749ee38c7f858a5236e970e41b930f4aa6b75b24aa5fef48ebf30328b24c"
+    },
+    {
+      "path": "build_logs/candidate_build.log",
+      "bytes": 233,
+      "sha256": "1f39c8c7e0b0c42fae39491771ad73a5336d92b3e3e1d6aed90e109ad9f23dff"
+    },
+    {
+      "path": "build_logs/candidate_fixture_build.log",
+      "bytes": 287,
+      "sha256": "363ef3eb53706fdb139522e928bd0e0ae4cee37a3e1204d85e32dfd2d410a05e"
+    },
+    {
+      "path": "figure_data.json",
+      "bytes": 926,
+      "sha256": "ace4e1249fb225f09b62970c2f0e7cc263ec8b8822e364a716eaabd9e683d1c8"
+    },
+    {
+      "path": "figures/emission_columns.png",
+      "bytes": 109073,
+      "sha256": "70e0f37c65b87f63b973c9f88a39a3d4ae8ff9f12e81a19b9d7931f7613db38d"
+    },
+    {
+      "path": "figures/emission_columns.svg",
+      "bytes": 12527,
+      "sha256": "f70ab060660aeaa18f9e149c6136354bc4469d2ebb14ab129c53f2d4545d08ab"
+    },
+    {
+      "path": "ReaderFixture.cs",
+      "bytes": 5105,
+      "sha256": "7c52109ae1f0b334b4b4a960d7fa9411badf18bc34de45667b0df61aa3c74555"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3847,
+      "sha256": "875ad3f5ca2802a9eafc87f1a31fdc38e3c5a0b68def1df5bf7f8e4179ad22f9"
+    },
+    {
+      "path": "render_figure.py",
+      "bytes": 3799,
+      "sha256": "2f3af7f889a6533cf66d830c0126fd77f2f312a3a034118f281a74df834e3a8a"
+    },
+    {
+      "path": "results/baseline_reader.json",
+      "bytes": 6816,
+      "sha256": "4780bf58e58f6cd2401ca31a27e476e0882981e5bfb7ca86897ffb81ccf70ed7"
+    },
+    {
+      "path": "results/candidate_reader.json",
+      "bytes": 7754,
+      "sha256": "0089cb357c1a2810ee7817a15898239e44dbc22bae8bfe7c073fca765b1a9706"
+    },
+    {
+      "path": "results/figure_data.csv",
+      "bytes": 177,
+      "sha256": "84b8ceaa91ed6d7af701fdf818fee1d2317b1093b9127e2e0b48c25601261dc1"
+    },
+    {
+      "path": "results/figure_data.json",
+      "bytes": 894,
+      "sha256": "b83a4519ab256006c7a573c1cdda9e7ecb4eee0e4b1743eb8feb257606bab2d2"
+    },
+    {
+      "path": "results/main.json",
+      "bytes": 76639,
+      "sha256": "883e3801b7a818f43dc90e3a49f2e6c963921b5eff6867a51321101d1a885262"
+    },
+    {
+      "path": "results/summary.json",
+      "bytes": 809,
+      "sha256": "cac63333c58c9320a6625388864f692d86a86ffb9181e035573aacda154d4507"
+    },
+    {
+      "path": "results/verification_summary.json",
+      "bytes": 726,
+      "sha256": "41cef845214226ab5069935a0e2a3fb3b3cfa630b1100ece3849d77a70b3f729"
+    },
+    {
+      "path": "source.patch",
+      "bytes": 2443,
+      "sha256": "cd183c70c609ebb739a85f59114d06833a11dda69ab2c9d9c063f8e61c4ecdab"
+    },
+    {
+      "path": "source_manifest.json",
+      "bytes": 17106,
+      "sha256": "128dd74216870c69f660b699572c5ba14f45f342b5a1e390546009907ef3a570"
+    },
+    {
+      "path": "transient/template/emissions_timeseries.txt",
+      "bytes": 68,
+      "sha256": "9635c0e80fc2a50aed325d488f51ab47fb8c95b077cd8bd9a81f22f46d66ea14"
+    },
+    {
+      "path": "transient/template/GRAL.geb",
+      "bytes": 36,
+      "sha256": "141c49d6ca7e227edc4214cd10e10f9b29d751b12adbd8d1d351cff7947c1260"
+    },
+    {
+      "path": "transient/template/GRAL_Trans_Conc_Threshold.txt",
+      "bytes": 6,
+      "sha256": "81b757d439f94af4fb4bfd44c6c0d090aa7149c69b8ab73c1cd3e7ac8fdccb7d"
+    },
+    {
+      "path": "transient/template/in.dat",
+      "bytes": 103,
+      "sha256": "07f46aa7ef545b326a976d8fcd84f28f4bd64fbdc6b60b7556769e493f9de6a3"
+    },
+    {
+      "path": "transient/template/KeepAndReadTransientTempFiles.dat",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "transient/template/Max_Proc.txt",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "transient/template/meteopgt.all",
+      "bytes": 57,
+      "sha256": "271522299e2c101cbc01c34cb1b92b364814c56956e7a421f937a078feb6e0b5"
+    },
+    {
+      "path": "transient/template/mettimeseries.dat",
+      "bytes": 63,
+      "sha256": "94657f08f1075f12f1a32f0a6198cb55e2e54963a5a217aaa879b105a73ac714"
+    },
+    {
+      "path": "transient/template/micro_vert_layers.txt",
+      "bytes": 3,
+      "sha256": "673650f936cb3b0a2f93ce09d81be10748b1b203c19e8176b4eefc1964a0cf3a"
+    },
+    {
+      "path": "transient_support.py",
+      "bytes": 2999,
+      "sha256": "494880d1902ff056d4038d622e31b869a33a2c64361d69cf3de7bff5e654d18c"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 8493,
+      "sha256": "6cabf4f88450a705db7639b26b2e7e55b5c19e1dd6bac27fe033a00f1a612331"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+variant,hour,actual,expected,completed
+baseline,0,1,0.5,False
+baseline,1,0,2,False
+baseline,2,0,1,False
+candidate,0,0.5,0.5,True
+candidate,1,2,2,True
+candidate,2,1,1,True

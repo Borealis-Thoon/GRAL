@@ -1,0 +1,369 @@
+{
+  "status": "pass",
+  "variant": "candidate",
+  "cases": 13,
+  "assertions": 110,
+  "records": [
+    {
+      "name": "figure_selected_one",
+      "known_defect": true,
+      "equal": true,
+      "complete": true,
+      "expected": [
+        [
+          0.5
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "actual": [
+        [
+          0.5
+        ],
+        [
+          2
+        ],
+        [
+          1
+        ]
+      ],
+      "log": "Reading emissions_timeseries.txt successful - mean factors for each source group: \r\n  Source group: 1 Mean emission factor: 1.17\r\n\r\n"
+    },
+    {
+      "name": "matched",
+      "known_defect": false,
+      "equal": true,
+      "complete": true,
+      "expected": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0.5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "actual": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0.5
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "log": "Reading emissions_timeseries.txt successful - mean factors for each source group: \r\n  Source group: 1 Mean emission factor: 1.33\r\n  Source group: 2 Mean emission factor: 2.17\r\n\r\n"
+    },
+    {
+      "name": "reordered",
+      "known_defect": false,
+      "equal": true,
+      "complete": true,
+      "expected": [
+        [
+          2,
+          1
+        ],
+        [
+          0.5,
+          0
+        ]
+      ],
+      "actual": [
+        [
+          2,
+          1
+        ],
+        [
+          0.5,
+          0
+        ]
+      ],
+      "log": "Reading emissions_timeseries.txt successful - mean factors for each source group: \r\n  Source group: 1 Mean emission factor: 0.5\r\n  Source group: 2 Mean emission factor: 1.25\r\n\r\n"
+    },
+    {
+      "name": "extra_first",
+      "known_defect": true,
+      "equal": true,
+      "complete": true,
+      "expected": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0.5
+        ]
+      ],
+      "actual": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0.5
+        ]
+      ],
+      "log": "Reading emissions_timeseries.txt successful - mean factors for each source group: \r\n  Source group: 1 Mean emission factor: 0.5\r\n  Source group: 2 Mean emission factor: 1.25\r\n\r\n"
+    },
+    {
+      "name": "extra_middle",
+      "known_defect": true,
+      "equal": true,
+      "complete": true,
+      "expected": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0.5
+        ]
+      ],
+      "actual": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0.5
+        ]
+      ],
+      "log": "Reading emissions_timeseries.txt successful - mean factors for each source group: \r\n  Source group: 1 Mean emission factor: 0.5\r\n  Source group: 2 Mean emission factor: 1.25\r\n\r\n"
+    },
+    {
+      "name": "extra_last",
+      "known_defect": true,
+      "equal": true,
+      "complete": true,
+      "expected": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0.5
+        ]
+      ],
+      "actual": [
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          0.5
+        ]
+      ],
+      "log": "Reading emissions_timeseries.txt successful - mean factors for each source group: \r\n  Source group: 1 Mean emission factor: 0.5\r\n  Source group: 2 Mean emission factor: 1.25\r\n\r\n"
+    },
+    {
+      "name": "selected_after_many",
+      "known_defect": true,
+      "equal": true,
+      "complete": true,
+      "expected": [
+        [
+          0.25
+        ],
+        [
+          2.5
+        ]
+      ],
+      "actual": [
+        [
+          0.25
+        ],
+        [
+          2.5
+        ]
+      ],
+      "log": "Reading emissions_timeseries.txt successful - mean factors for each source group: \r\n  Source group: 7 Mean emission factor: 1.38\r\n\r\n"
+    },
+    {
+      "name": "selected_absent",
+      "known_defect": false,
+      "equal": true,
+      "complete": true,
+      "expected": [
+        [
+          0.25,
+          1
+        ],
+        [
+          2.5,
+          1
+        ]
+      ],
+      "actual": [
+        [
+          0.25,
+          1
+        ],
+        [
+          2.5,
+          1
+        ]
+      ],
+      "log": "Reading emissions_timeseries.txt successful - mean factors for each source group: \r\n  Source group: 1 Mean emission factor: 1.38\r\n\r\n"
+    },
+    {
+      "name": "all_unselected",
+      "known_defect": true,
+      "equal": true,
+      "complete": true,
+      "expected": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "actual": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "log": "Reading emissions_timeseries.txt successful - mean factors for each source group: \r\n\r\n"
+    },
+    {
+      "name": "missing_selected_value",
+      "known_defect": false,
+      "equal": true,
+      "complete": true,
+      "expected": [
+        [
+          0.25,
+          1
+        ],
+        [
+          2.5,
+          0.5
+        ]
+      ],
+      "actual": [
+        [
+          0.25,
+          1
+        ],
+        [
+          2.5,
+          0.5
+        ]
+      ],
+      "log": "Reading emissions_timeseries.txt successful - mean factors for each source group: \r\n  Source group: 1 Mean emission factor: 1.38\r\n  Source group: 2 Mean emission factor: 0.75\r\n\r\n"
+    },
+    {
+      "name": "missing_after_unselected",
+      "known_defect": true,
+      "equal": true,
+      "complete": true,
+      "expected": [
+        [
+          0.25,
+          1
+        ],
+        [
+          2.5,
+          0.5
+        ]
+      ],
+      "actual": [
+        [
+          0.25,
+          1
+        ],
+        [
+          2.5,
+          0.5
+        ]
+      ],
+      "log": "Reading emissions_timeseries.txt successful - mean factors for each source group: \r\n  Source group: 1 Mean emission factor: 1.38\r\n  Source group: 2 Mean emission factor: 0.75\r\n\r\n"
+    },
+    {
+      "name": "ignored_text_value",
+      "known_defect": true,
+      "equal": true,
+      "complete": true,
+      "expected": [
+        [
+          0.25,
+          0.5
+        ],
+        [
+          2.5,
+          0
+        ]
+      ],
+      "actual": [
+        [
+          0.25,
+          0.5
+        ],
+        [
+          2.5,
+          0
+        ]
+      ],
+      "log": "Reading emissions_timeseries.txt successful - mean factors for each source group: \r\n  Source group: 1 Mean emission factor: 1.38\r\n  Source group: 2 Mean emission factor: 0.25\r\n\r\n"
+    },
+    {
+      "name": "duplicate_selected",
+      "known_defect": false,
+      "equal": true,
+      "complete": true,
+      "expected": [
+        [
+          0.25,
+          0.5,
+          1
+        ],
+        [
+          2.5,
+          0,
+          1
+        ]
+      ],
+      "actual": [
+        [
+          0.25,
+          0.5,
+          1
+        ],
+        [
+          2.5,
+          0,
+          1
+        ]
+      ],
+      "log": "Reading emissions_timeseries.txt successful - mean factors for each source group: \r\n  Source group: 1 Mean emission factor: 8\r\n  Source group: 1 Mean emission factor: 1.38\r\n  Source group: 2 Mean emission factor: 0.25\r\n\r\n"
+    }
+  ]
+}

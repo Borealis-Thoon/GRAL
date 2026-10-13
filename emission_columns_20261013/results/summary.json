@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "builds": {
+    "baseline": {
+      "exit_code": 0,
+      "wall_s": 0.7712921000002098,
+      "warnings": 0,
+      "errors": 0
+    },
+    "baseline_fixture": {
+      "exit_code": 0,
+      "wall_s": 1.7550300999992032,
+      "warnings": 0,
+      "errors": 0
+    },
+    "candidate": {
+      "exit_code": 0,
+      "wall_s": 2.268932200000563,
+      "warnings": 0,
+      "errors": 0
+    },
+    "candidate_fixture": {
+      "exit_code": 0,
+      "wall_s": 1.736066400000709,
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "component_cases": 13,
+  "component_assertions": {
+    "baseline": 50,
+    "candidate": 110
+  },
+  "main_runs": 64,
+  "main_conditions": 8,
+  "main_repeats": 2,
+  "baseline_fault_runs": 10,
+  "elapsed_s": 28.80374329999904
+}
