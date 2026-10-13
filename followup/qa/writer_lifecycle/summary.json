@@ -1,0 +1,2379 @@
+{
+  "method": "Actual compiled GRAL public and private writers, with synthetic dictionary/array inputs; no writer code is reimplemented.",
+  "source_sha256": "081eaf735fc9006557a6590ab9fd8691d07a8b70882b9032fb998eac86fc0bf0",
+  "runner_sha256": "25de2f3d1c9d8bb062c7354564bf754458bd5e95ce05f4a65e6c95d6d4542ad0",
+  "runs": [
+    {
+      "variant": "double",
+      "elapsed_s": 0.8280000000086147,
+      "assembly_sha256": "135a860eb07e2a8cd1faa8ecf9bf03aac54f4ac1baaf3883272dfcca9e92b0ca",
+      "result_sha256": "66d967f2c22a794622ff732a355e709778fcf6cbdd8637443fe1947c52f15e16"
+    },
+    {
+      "variant": "dictionary_fixed",
+      "elapsed_s": 0.8129999999946449,
+      "assembly_sha256": "88ae707c43c558bb0a5f39994916a87112882365a8fe772f5a9520f3a086b3cd",
+      "result_sha256": "fdf1be34e90cd7f3fba65c51c689b3e049eebfe59d77df01e2166cf373346669"
+    },
+    {
+      "variant": "static_update",
+      "elapsed_s": 0.39100000000325963,
+      "assembly_sha256": "8f0e8d658d96488a95fa3c8d533ceb925412d0b1cfa4e2e9d0c16402106a80fa",
+      "result_sha256": "4302bb8c1dddbcbc1582ed4d5151bf2520646e47d15b4198577ca6b3133bd1e0"
+    },
+    {
+      "variant": "output_index",
+      "elapsed_s": 0.3899999999994179,
+      "assembly_sha256": "0adcadf882f272973398d211bdf821fbff9ea6f35e8ea12ee0e86d5d31ec74fe",
+      "result_sha256": "9d28ba893fdee9f98a7d6f9a77d92c7f57e28a7bdc8ce36871b99399902dec0e"
+    },
+    {
+      "variant": "combined",
+      "elapsed_s": 0.48399999999674037,
+      "assembly_sha256": "720473fc583a6f323a797a037eaf332cb86c88de9105b779293a3a7af6ae023c",
+      "result_sha256": "df8155992e3db82eb6f26c5ca9f84264dd3b428e2bcd357faf1706e0853c623f"
+    }
+  ],
+  "original_writer_outputs": 84,
+  "new_public_outputs": 896,
+  "public_calls": 64,
+  "public_exception_cleanup_cases": 1,
+  "public_output_headers": [
+    -1,
+    -2,
+    -3
+  ],
+  "public_modes": [
+    "zipped plain",
+    "zipped strong compressed",
+    "zipped all compressed",
+    "unzipped plain"
+  ],
+  "ascii": true,
+  "deposition": true,
+  "odour_presence_masks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "same_instance_consecutive_situations": 2,
+  "comparisons_against_double": {
+    "double": {
+      "count": 980,
+      "byte_mismatches": 0,
+      "decoded_mismatches": 0,
+      "differences": []
+    },
+    "dictionary_fixed": {
+      "count": 980,
+      "byte_mismatches": 0,
+      "decoded_mismatches": 0,
+      "differences": []
+    },
+    "static_update": {
+      "count": 980,
+      "byte_mismatches": 0,
+      "decoded_mismatches": 0,
+      "differences": []
+    },
+    "output_index": {
+      "count": 980,
+      "byte_mismatches": 0,
+      "decoded_mismatches": 0,
+      "differences": []
+    },
+    "combined": {
+      "count": 980,
+      "byte_mismatches": 0,
+      "decoded_mismatches": 0,
+      "differences": []
+    }
+  },
+  "cache_checks": {
+    "double": [
+      {
+        "label": "mode_0_mask_0_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_0_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_1_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_1_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_2_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_2_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_3_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_3_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_4_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_4_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_5_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_5_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_6_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_6_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_7_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_0_mask_7_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_0_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_0_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_1_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_1_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_2_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_2_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_3_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_3_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_4_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_4_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_5_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_5_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_6_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_6_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_7_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_1_mask_7_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_0_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_0_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_1_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_1_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_2_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_2_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_3_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_3_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_4_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_4_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_5_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_5_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_6_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_6_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_7_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_2_mask_7_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_0_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_0_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_1_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_1_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_2_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_2_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_3_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_3_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_4_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_4_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_5_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_5_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_6_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_6_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_7_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "mode_3_mask_7_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": null
+      },
+      {
+        "label": "exception_cleanup",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "exception_observed": true
+      }
+    ],
+    "dictionary_fixed": [
+      {
+        "label": "mode_0_mask_0_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_0_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_1_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_1_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_2_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_2_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_3_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_3_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_4_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_4_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_5_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_5_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_6_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_6_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_7_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_7_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_0_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_0_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_1_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_1_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_2_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_2_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_3_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_3_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_4_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_4_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_5_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_5_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_6_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_6_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_7_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_7_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_0_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_0_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_1_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_1_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_2_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_2_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_3_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_3_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_4_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_4_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_5_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_5_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_6_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_6_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_7_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_7_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_0_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_0_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_1_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_1_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_2_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_2_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_3_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_3_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_4_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_4_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_5_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_5_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_6_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_6_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_7_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_7_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "exception_cleanup",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "exception_observed": true
+      }
+    ],
+    "static_update": [
+      {
+        "label": "mode_0_mask_0_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_0_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_1_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_1_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_2_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_2_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_3_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_3_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_4_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_4_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_5_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_5_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_6_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_6_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_7_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_7_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_0_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_0_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_1_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_1_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_2_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_2_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_3_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_3_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_4_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_4_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_5_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_5_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_6_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_6_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_7_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_7_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_0_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_0_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_1_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_1_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_2_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_2_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_3_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_3_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_4_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_4_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_5_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_5_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_6_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_6_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_7_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_7_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_0_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_0_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_1_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_1_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_2_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_2_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_3_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_3_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_4_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_4_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_5_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_5_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_6_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_6_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_7_situation_1",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_7_situation_2",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "exception_cleanup",
+        "cache_field_exists": false,
+        "cache_null_after": true,
+        "exception_observed": true
+      }
+    ],
+    "output_index": [
+      {
+        "label": "mode_0_mask_0_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_0_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_1_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_1_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_2_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_2_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_3_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_3_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_4_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_4_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_5_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_5_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_6_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_6_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_7_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_7_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_0_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_0_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_1_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_1_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_2_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_2_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_3_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_3_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_4_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_4_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_5_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_5_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_6_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_6_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_7_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_7_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_0_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_0_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_1_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_1_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_2_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_2_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_3_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_3_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_4_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_4_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_5_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_5_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_6_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_6_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_7_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_7_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_0_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_0_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_1_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_1_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_2_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_2_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_3_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_3_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_4_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_4_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_5_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_5_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_6_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_6_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_7_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_7_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "exception_cleanup",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "exception_observed": true
+      }
+    ],
+    "combined": [
+      {
+        "label": "mode_0_mask_0_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_0_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_1_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_1_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_2_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_2_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_3_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_3_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_4_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_4_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_5_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_5_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_6_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_6_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_7_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_0_mask_7_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_0_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_0_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_1_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_1_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_2_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_2_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_3_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_3_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_4_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_4_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_5_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_5_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_6_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_6_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_7_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_1_mask_7_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_0_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_0_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_1_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_1_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_2_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_2_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_3_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_3_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_4_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_4_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_5_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_5_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_6_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_6_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_7_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_2_mask_7_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_0_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_0_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_1_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_1_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_2_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_2_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_3_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_3_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_4_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_4_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_5_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_5_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_6_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_6_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_7_situation_1",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "mode_3_mask_7_situation_2",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "outputs": 14,
+        "same_dictionary_instance": true
+      },
+      {
+        "label": "exception_cleanup",
+        "cache_field_exists": true,
+        "cache_null_after": true,
+        "exception_observed": true
+      }
+    ]
+  }
+}

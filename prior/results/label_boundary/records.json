@@ -1,0 +1,362 @@
+[
+  {
+    "case": "labels_1_99_100_101",
+    "variant": "float",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.4857144999987213,
+    "cpu_s": 0.484375,
+    "pid": 48768,
+    "memory": {
+      "PeakWorkingSetSize": 58011648,
+      "PeakPagefileUsage": 34185216,
+      "PrivateUsage": 28164096,
+      "WorkingSetSize": 53317632
+    },
+    "memory_samples": 46,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 4,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "08e25cd10c527c70ebe970aabf97624f6d2d65e5623176dedccefa3adf2ac4f4",
+      "00001.grz:00001-1100.con": "dfc23ba26586fb0c1b0dca6bcbdbf8b4007218ef05591fb11da8c3a1ebb68552",
+      "00001.grz:00001-1101.con": "751183a7959351ecc6dc6d00cf0ebd991e28df68a4afe97b4181803e876a6a5a",
+      "00001.grz:00001-199.con": "a3ca9da2ecee09b32fe230a4f0e66960893d36d164b7d6a4acb30a9c69beda34"
+    },
+    "situation_sums": {
+      "00001.grz": 46577.98581521213
+    },
+    "nonzero_values": 234,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 14400,
+    "occupied_fraction": 0.01625,
+    "issues": []
+  },
+  {
+    "case": "labels_1_99_100_101",
+    "variant": "double",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.484137900013593,
+    "cpu_s": 0.484375,
+    "pid": 56812,
+    "memory": {
+      "PeakWorkingSetSize": 58454016,
+      "PeakPagefileUsage": 34660352,
+      "PrivateUsage": 32292864,
+      "WorkingSetSize": 56041472
+    },
+    "memory_samples": 46,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 4,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "4935ca3eaf2afc9becc3da8e599c62b697f146b1a0c3f130e70e248407e5c83a",
+      "00001.grz:00001-1100.con": "7025f4052d1ec016fc43fb123eee50f8d8d5ac7378e411485a5aa9a7fc644057",
+      "00001.grz:00001-1101.con": "0d6c6b7cecc4c08a264cd49d24da0c8717505036ef5046735a00757b6ef3fc0e",
+      "00001.grz:00001-199.con": "fa2aaebe2a4cb448a218178a4df02b940a1a8de04988e0d35490ba66e54684e0"
+    },
+    "situation_sums": {
+      "00001.grz": 46578.102768942714
+    },
+    "nonzero_values": 234,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 14400,
+    "occupied_fraction": 0.01625,
+    "issues": []
+  },
+  {
+    "case": "labels_1_99_100_101",
+    "variant": "dictionary",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.5156106000067666,
+    "cpu_s": 0.5,
+    "pid": 60316,
+    "memory": {
+      "PeakWorkingSetSize": 57499648,
+      "PeakPagefileUsage": 33476608,
+      "PrivateUsage": 28958720,
+      "WorkingSetSize": 53510144
+    },
+    "memory_samples": 49,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 4,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "4935ca3eaf2afc9becc3da8e599c62b697f146b1a0c3f130e70e248407e5c83a",
+      "00001.grz:00001-1100.con": "7025f4052d1ec016fc43fb123eee50f8d8d5ac7378e411485a5aa9a7fc644057",
+      "00001.grz:00001-1101.con": "0d6c6b7cecc4c08a264cd49d24da0c8717505036ef5046735a00757b6ef3fc0e",
+      "00001.grz:00001-199.con": "fa2aaebe2a4cb448a218178a4df02b940a1a8de04988e0d35490ba66e54684e0"
+    },
+    "situation_sums": {
+      "00001.grz": 46578.102768942714
+    },
+    "nonzero_values": 234,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 14400,
+    "occupied_fraction": 0.01625,
+    "issues": []
+  },
+  {
+    "case": "labels_1_99_100_101",
+    "variant": "dictionary_fixed",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.5161613000091165,
+    "cpu_s": 0.5,
+    "pid": 10276,
+    "memory": {
+      "PeakWorkingSetSize": 57364480,
+      "PeakPagefileUsage": 33464320,
+      "PrivateUsage": 30277632,
+      "WorkingSetSize": 54177792
+    },
+    "memory_samples": 49,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 4,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "4935ca3eaf2afc9becc3da8e599c62b697f146b1a0c3f130e70e248407e5c83a",
+      "00001.grz:00001-1100.con": "7025f4052d1ec016fc43fb123eee50f8d8d5ac7378e411485a5aa9a7fc644057",
+      "00001.grz:00001-1101.con": "0d6c6b7cecc4c08a264cd49d24da0c8717505036ef5046735a00757b6ef3fc0e",
+      "00001.grz:00001-199.con": "fa2aaebe2a4cb448a218178a4df02b940a1a8de04988e0d35490ba66e54684e0"
+    },
+    "situation_sums": {
+      "00001.grz": 46578.102768942714
+    },
+    "nonzero_values": 234,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 14400,
+    "occupied_fraction": 0.01625,
+    "issues": []
+  },
+  {
+    "case": "labels_1_102",
+    "variant": "double",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 3762504530,
+    "wall_s": 2.8225974999950267,
+    "cpu_s": 0.375,
+    "pid": 20772,
+    "memory": {
+      "PeakWorkingSetSize": 61456384,
+      "PeakPagefileUsage": 34557952,
+      "PrivateUsage": 32260096,
+      "WorkingSetSize": 61435904
+    },
+    "memory_samples": 269,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "nonzero_exit",
+      "incomplete",
+      "con_count_0_expected_2",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "labels_1_102",
+    "variant": "dictionary",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 3762504530,
+    "wall_s": 2.7744883999985177,
+    "cpu_s": 0.375,
+    "pid": 61428,
+    "memory": {
+      "PeakWorkingSetSize": 61648896,
+      "PeakPagefileUsage": 33419264,
+      "PrivateUsage": 31002624,
+      "WorkingSetSize": 61628416
+    },
+    "memory_samples": 265,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "nonzero_exit",
+      "incomplete",
+      "con_count_0_expected_2",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "labels_1_102",
+    "variant": "dictionary_fixed",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 3762504530,
+    "wall_s": 2.759308799999417,
+    "cpu_s": 0.375,
+    "pid": 51084,
+    "memory": {
+      "PeakWorkingSetSize": 61882368,
+      "PeakPagefileUsage": 33370112,
+      "PrivateUsage": 32272384,
+      "WorkingSetSize": 61874176
+    },
+    "memory_samples": 263,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "nonzero_exit",
+      "incomplete",
+      "con_count_0_expected_2",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "labels_1_102",
+    "variant": "float",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 3762504530,
+    "wall_s": 2.7660411999968346,
+    "cpu_s": 0.359375,
+    "pid": 56744,
+    "memory": {
+      "PeakWorkingSetSize": 60829696,
+      "PeakPagefileUsage": 34246656,
+      "PrivateUsage": 31813632,
+      "WorkingSetSize": 60809216
+    },
+    "memory_samples": 264,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "nonzero_exit",
+      "incomplete",
+      "con_count_0_expected_2",
+      "no_concentration"
+    ]
+  }
+]

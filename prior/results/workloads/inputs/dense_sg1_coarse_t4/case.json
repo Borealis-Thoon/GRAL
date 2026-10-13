@@ -1,0 +1,37 @@
+{
+  "pps": 1000,
+  "tau": 300,
+  "kind": "point",
+  "sources": 16,
+  "sg": 1,
+  "length": 400,
+  "flow": 40,
+  "conc": 40,
+  "slices": 1,
+  "speed": 0.25,
+  "sc": 6,
+  "workers": 4,
+  "hot": false,
+  "buildings": 0,
+  "adaptive": 0,
+  "transient": false,
+  "id": "dense_sg1_coarse_t4",
+  "distributed": true,
+  "purpose": "Many updates per occupied key; measure actual occupancy",
+  "particles": 300000,
+  "nx": 10,
+  "ny": 10,
+  "source_counts": {
+    "point": 16
+  },
+  "vertical_flow_layers": 40,
+  "situations": 1,
+  "weather": [
+    [
+      9,
+      0.25,
+      6
+    ]
+  ],
+  "total_output_slots": 100
+}

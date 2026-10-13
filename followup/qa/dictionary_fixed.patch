@@ -1,0 +1,74 @@
+diff --git a/src/ProgramFunctions.cs b/src/ProgramFunctions.cs
+index f06839a..dcd34f7 100644
+--- a/src/ProgramFunctions.cs
++++ b/src/ProgramFunctions.cs
+@@ -1169,7 +1169,6 @@ namespace GRAL_2001
+         [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+         private static void ParallelParticleDriver(int inclusiveLowerBound, int exclusiveUpperBound)
+         {
+-            Program.Concentration2D.Clear();
+             if (Program.UseFixedRndSeedVal)
+             {
+                 // Custom ligthweight parallel loop for the release of particles from all sources
+diff --git a/src/Write2DConcentrations.cs b/src/Write2DConcentrations.cs
+index c7c7f12..5fc18a8 100644
+--- a/src/Write2DConcentrations.cs
++++ b/src/Write2DConcentrations.cs
+@@ -790,7 +790,7 @@ namespace GRAL_2001
+ 
+                         if (Program.IOUTPUT <= 0)
+                         {
+-                            if (Program.TempConcArray[i][j] != 0)
++                            if (Program.Concentration2D.TryGetValue((i, j, II, IQ), out double concentration) && (float)concentration != 0)
+                             {
+                                 sw.Write(Program.ConvToInt(xxx));
+                                 sw.Write(Program.ConvToInt(yyy));
+@@ -845,7 +845,7 @@ namespace GRAL_2001
+                     int count = 0;
+                     for (int j = 1; j <= Program.NYL; j++)
+                     {
+-                        if (Program.TempConcArray[i][j] != 0)
++                        if (Program.Concentration2D.TryGetValue((i, j, II, IQ), out double concentration) && (float)concentration != 0)
+                         {
+                             if (count == 0) // write new start
+                             {
+@@ -919,7 +919,7 @@ namespace GRAL_2001
+                 {
+                     for (int j = 1; j <= Program.NYL; j++)
+                     {
+-                        if (Program.TempConcArray[i][j] != 0)
++                        if (Program.Concentration2D.TryGetValue((i, j, II, IQ), out double concentration) && (float)concentration != 0)
+                         {
+                             sw.Write(Program.TempConcArray[i][j]);
+                             sw.Write(TempConcArray2[i][j]);
+diff --git a/src/Zeitschleife.cs b/src/Zeitschleife.cs
+index 58af3b5..a148e1b 100644
+--- a/src/Zeitschleife.cs
++++ b/src/Zeitschleife.cs
+@@ -425,7 +425,7 @@ namespace GRAL_2001
+             double yneu = 0; double xneuy = 0; double yneuy = 0; float zturb = 0; double yold = 0;
+             float coruri = 0; float corqri = 0; float coswind = 0; float sinwind = 0; float UXneu = 0;
+             float UYneu = 0; float xrikor = 0; float yrikor = 0; float buoy = 0; float B = 0;
+-            float HydrD = 0; float TLT0 = 0; float constA = 0.35F; float faktzeit = 1; float geschwalt = 0; float geschwneu = 0;
++            float HydrD = 0; float TLT0 = 0; float faktzeit = 1; float geschwalt = 0; float geschwneu = 0;
+ 
+             float TS_ExitTemperature = 0;
+             float TS_ExitVelocity = 0;
+@@ -606,7 +606,7 @@ namespace GRAL_2001
+                 float wstern = Ustern * 2.9F;
+                 float vert_blh = PartHeightAboveBuilding / blh;
+                 float hterm = (1 - vert_blh);
+-                float varwu = 0; float dvarw = 0; float dcurt = 0;
++                float dvarw = 0; float dcurt = 0;
+ 
+                 if (ObLength >= 0)
+                 {
+@@ -2136,7 +2136,7 @@ namespace GRAL_2001
+                 if (Deposition_type < Consts.DepoOnly) // compute concentrations for this particle
+                 {
+                     //receptor concentrations
+-                    if ((Program.ReceptorsAvailable) && (reflexion_flag == Consts.ParticleNotReflected))
++                    if (Program.ReceptorsAvailable && reflexion_flag == Consts.ParticleNotReflected && Program.GridCellReceptors != null)
+                     {
+                         //search for a receptor within the recent cell
+                         if (Program.GridCellReceptors.TryGetValue((iko, jko), out var receptors))

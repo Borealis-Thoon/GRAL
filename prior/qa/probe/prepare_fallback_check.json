@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "modified_file": "work/probe/probe.py",
+  "source_lookup": [
+    "JOB/work/{variant}",
+    "JOB/work/restored/{variant} only if preferred path does not exist"
+  ],
+  "python_syntax": "pass",
+  "instrumented_source_hash_checks": {
+    "float": true,
+    "double": true,
+    "dictionary_fixed": true
+  },
+  "instrumentation_patch_hash_checks": "all unchanged",
+  "build_or_model_rerun": false,
+  "script_sha256": "27253c4b789498bf04a99c5322170a30db4f0acd94d2af9511a7776e160f264d"
+}

@@ -1,0 +1,49 @@
+{
+  "status": "pass",
+  "source_files_verified": 410,
+  "strict_builds": [
+    {
+      "variant": "double",
+      "source_files_verified": 82,
+      "strict_build": true,
+      "binary_sha256": "5ff2f6ee3f2bed4fb2ba788ad2984dbcdc23e9347140b909ca23d9677242c411"
+    },
+    {
+      "variant": "dictionary_fixed",
+      "source_files_verified": 82,
+      "strict_build": true,
+      "binary_sha256": "b492d59848bfaa3b79d80befb1fc6f932df41b68d8cb610cfc7d8d801675153f"
+    },
+    {
+      "variant": "output_index",
+      "source_files_verified": 82,
+      "strict_build": true,
+      "binary_sha256": "0467b2cf0f4d3fbfe4fe894c38adbb05628e8fa5c39837870a509d7a9ec41a1a"
+    },
+    {
+      "variant": "static_update",
+      "source_files_verified": 82,
+      "strict_build": true,
+      "binary_sha256": "725f39a7b2d3ff93bc669381fc0bdbe7d62fc43c380e4dcf5546ad43d8f19af5"
+    },
+    {
+      "variant": "combined",
+      "source_files_verified": 82,
+      "strict_build": true,
+      "binary_sha256": "b9b235f117c4a8ecfa702cca7ac26f160f398c13411551457b51f6ca694a051f"
+    }
+  ],
+  "model_runs": 5,
+  "all_model_status_pass": true,
+  "paired_comparisons": 4,
+  "all_paired_outputs_exact": true,
+  "all_outputs_exact_against_original_double": [
+    "double",
+    "dictionary_fixed",
+    "output_index",
+    "static_update",
+    "combined"
+  ],
+  "case": "transient_three_t1",
+  "method": "Fresh official-source restore, patches, exact source hashes, strict builds, short transient model smoke."
+}

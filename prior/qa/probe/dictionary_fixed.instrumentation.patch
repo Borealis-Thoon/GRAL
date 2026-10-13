@@ -1,0 +1,124 @@
+--- a/src/ConcentrationProbe.cs
++++ b/src/ConcentrationProbe.cs
+@@ -0,0 +1,74 @@
++// Diagnostic-only instrumentation; not a proposed engine patch.
++using System;
++using System.Collections.Generic;
++using System.Diagnostics;
++using System.IO;
++using System.Text.Json;
++using System.Threading;
++namespace GRAL_2001
++{
++    internal static class ConcentrationProbe
++    {
++        private static long conversionTicks;
++        private static long conversionCalls;
++        private static long[] conversionTicksByKind = new long[3];
++        private static long[] conversionCallsByKind = new long[3];
++        private static readonly object LogLock = new object();
++        internal static long BeginWriter(int weather)
++        {
++            conversionTicks = 0;
++            conversionCalls = 0;
++            Array.Clear(conversionTicksByKind);
++            Array.Clear(conversionCallsByKind);
++            Snapshot("before_writer", weather, null);
++            return Stopwatch.GetTimestamp();
++        }
++        internal static void EndWriter(int weather, long start)
++        {
++            long elapsed = Stopwatch.GetTimestamp() - start;
++            var extra = new Dictionary<string, object>();
++            extra["writer_seconds"] = elapsed / (double)Stopwatch.Frequency;
++            extra["conversion_seconds"] = conversionTicks / (double)Stopwatch.Frequency;
++            extra["conversion_calls"] = conversionCalls;
++            extra["conversion_seconds_by_kind"] = new double[] {conversionTicksByKind[0] / (double)Stopwatch.Frequency, conversionTicksByKind[1] / (double)Stopwatch.Frequency, conversionTicksByKind[2] / (double)Stopwatch.Frequency};
++            extra["conversion_calls_by_kind"] = conversionCallsByKind;
++            Snapshot("after_writer", weather, extra);
++        }
++        internal static void EndConversion(long start, int kind)
++        {
++            long elapsed = Stopwatch.GetTimestamp() - start;
++            Interlocked.Add(ref conversionTicks, elapsed);
++            Interlocked.Increment(ref conversionCalls);
++            Interlocked.Add(ref conversionTicksByKind[kind], elapsed);
++            Interlocked.Increment(ref conversionCallsByKind[kind]);
++        }
++        internal static void Snapshot(string stage, int weather, Dictionary<string, object> extra)
++        {
++            var r = new Dictionary<string, object>();
++            r["variant"] = "dictionary_fixed";
++            r["stage"] = stage;
++            r["weather"] = weather;
++            r["groups"] = Program.SourceGroups.Count;
++            r["slices"] = Program.NS;
++            r["nx"] = Program.NXL;
++            r["ny"] = Program.NYL;
++            r["logical_output_slots"] = (long)Program.SourceGroups.Count * Program.NS * Program.NXL * Program.NYL;
++            r["group_slice_files"] = (long)Program.SourceGroups.Count * Program.NS;
++            r["odour"] = Program.Odour;
++            r["managed_bytes_no_collection"] = GC.GetTotalMemory(false);
++            r["allocated_bytes_approx_cumulative"] = GC.GetTotalAllocatedBytes(false);
++            r["gc_collections"] = new int[] { GC.CollectionCount(0), GC.CollectionCount(1), GC.CollectionCount(2) };
++            using (var process = Process.GetCurrentProcess())
++            {
++                process.Refresh();
++                r["working_set_bytes"] = process.WorkingSet64;
++                r["private_bytes"] = process.PrivateMemorySize64;
++            }
++            r["dictionary_central_count"] = Program.Concentration2D.Count;
++            r["dictionary_plus_count"] = Program.Concentration2D_P.Count;
++            r["dictionary_minus_count"] = Program.Concentration2D_M.Count;
++            if (extra != null) foreach (var pair in extra) r[pair.Key] = pair.Value;
++            lock (LogLock) File.AppendAllText("concentration_probe.jsonl", JsonSerializer.Serialize(r) + Environment.NewLine);
++        }
++    }
++}
+--- a/src/Program.cs
++++ b/src/Program.cs
+@@ -672,6 +672,7 @@
+                         }
+                     }
+ 
++                    ConcentrationProbe.Snapshot("before_dispersion", IWET, null);
+                     RnGSeed = new DeterministicRandomGenerator(IWET, WindVelGral, WindDirGral);
+ 
+                     //calculating momentum and bouyancy forces for point sources
+@@ -774,7 +775,12 @@
+                     //output of 2-D concentration files (concentrations, deposition, odour-files)
+                     Console.WriteLine("Writing result files in a background thread");
+                     recentWeatherSituation = IWET;
+-                    ThreadWrite2DConcentrationFiles = new Thread(() => WriteClass.Write2DConcentrations(recentWeatherSituation, ZippedFile));
++                    ThreadWrite2DConcentrationFiles = new Thread(() =>
++                    {
++                        long probeWriterStart = ConcentrationProbe.BeginWriter(recentWeatherSituation);
++                        try { WriteClass.Write2DConcentrations(recentWeatherSituation, ZippedFile); }
++                        finally { ConcentrationProbe.EndWriter(recentWeatherSituation, probeWriterStart); }
++                    });
+                     ThreadWrite2DConcentrationFiles.Start(); // start writing thread
+ 
+                     if (SyncWithMutex != null && SyncWithMutex.WaitOne(2000)) //File access synchronisation across multiple GRAL instances allows for a waiting time of up to 2000 ms.
+--- a/src/Write2DConcentrations.cs
++++ b/src/Write2DConcentrations.cs
+@@ -344,6 +344,10 @@
+ 
+         private static void ConvertFromDictionaryToArray(ConcurrentDictionary<(int i, int j, int II, int SG), double> Concentration, ref float[][] arrValues, int Slice, int SG)
+         {
++            int probeKind = object.ReferenceEquals(Concentration, Program.Concentration2D) ? 0 : object.ReferenceEquals(Concentration, Program.Concentration2D_P) ? 1 : 2;
++            long probeConversionStart = System.Diagnostics.Stopwatch.GetTimestamp();
++            try
++            {
+             for (int i = 1; i < arrValues.Length; ++i)
+             {
+                 Array.Clear(arrValues[i]);
+@@ -359,6 +363,9 @@
+                     }
+                 }
+             }
++        
++            }
++            finally { ConcentrationProbe.EndConversion(probeConversionStart, probeKind); }
+         }
+ 
+         /// <summary>

@@ -1,0 +1,198 @@
+{
+  "input_sha256": [
+    {
+      "path": "boundaries/records.json",
+      "sha256": "ebd2f30250933e33ae78ef10f5db1c656a0bd0ea3d33ef40be3b13a31dbea62c"
+    },
+    {
+      "path": "boundaries/comparisons.json",
+      "sha256": "9c331306b1d749b9a852f8a126ad60eeff0342515334598514db33b96bde4982"
+    },
+    {
+      "path": "boundaries/conditions.json",
+      "sha256": "50b2e379488d81e2e0d6b361eea97b344c0317382d7b621a2d4a26839d53dfe1"
+    },
+    {
+      "path": "boundaries/plan.json",
+      "sha256": "35f70796a6817fbb9231e242aa5413bc67dfe3c8aa0ea78e55473920b2e1786f"
+    },
+    {
+      "path": "boundaries/completion.json",
+      "sha256": "f895fc49cac680898823445d1a441923eb879bb18dbcc5f44d14dc593f1513ce"
+    },
+    {
+      "path": "label_boundary/records.json",
+      "sha256": "033f0f2a00cf4337399024dd5872485d8f18f60ba58006800c432bdaf19db73e"
+    },
+    {
+      "path": "label_boundary/comparisons.json",
+      "sha256": "95b0aad6d74dc749c49d53221acfbebb5c7d08d0722827bc597125161142c4bc"
+    },
+    {
+      "path": "label_boundary/conditions.json",
+      "sha256": "c571deca619332788c522c041059a2ea344392c67cac06d769aa547186481365"
+    },
+    {
+      "path": "label_boundary/plan.json",
+      "sha256": "25201f723e3bfd91934a1d5f0305bb4d1656c14ab0b6d0d1af4caa5167e76177"
+    },
+    {
+      "path": "label_boundary/completion.json",
+      "sha256": "eaf67d5e5b6f7ea042d20d16951db543175b8078c5199afc025de8bf073ab3f9"
+    },
+    {
+      "path": "load_transient/records.json",
+      "sha256": "2a942175fe0560438f92c56b795f953ab6249a4dfeed5930fdccd6710814699c"
+    },
+    {
+      "path": "load_transient/comparisons.json",
+      "sha256": "3c5b141db49f2ef02f068afa6a96a56409ab3d4241ca957185f25d8234a0596b"
+    },
+    {
+      "path": "load_transient/conditions.json",
+      "sha256": "17d5d6d1cd11d3758f3dcad4dd741306d7a67ff6a886a13801d200cee28fd8bc"
+    },
+    {
+      "path": "load_transient/plan.json",
+      "sha256": "8344b8e47e44cdda66ff28123106980ef4abcb4b701786571b272f202773bf08"
+    },
+    {
+      "path": "load_transient/completion.json",
+      "sha256": "7711a7a17c7fef3ebfb946c78e15c3e5f3b56df98d0e6afbdb53101b29a6bb5d"
+    },
+    {
+      "path": "pilot/records.json",
+      "sha256": "52428b67a3e4f7c2bf7b30ce59ea6eb19945c52b8ab6f07582f69351161a6663"
+    },
+    {
+      "path": "pilot/comparisons.json",
+      "sha256": "2bda1957736e78cfd8291a0c23075979a2135dd196ed9739631454d629fdbd75"
+    },
+    {
+      "path": "pilot/conditions.json",
+      "sha256": "f1a13bb65ed299b77155eab7a007252452ec3329a8abe9851a3323721ba7c599"
+    },
+    {
+      "path": "pilot/plan.json",
+      "sha256": "cf2451aced311a1f49c76976a0011d00bcd4a7f47f4cf033d11b9c35cace077d"
+    },
+    {
+      "path": "pilot/completion.json",
+      "sha256": "03ca97a261d06b4496086a699bca95fcb6e1c846ec780a49ff0132a8073cc430"
+    },
+    {
+      "path": "scaling/records.json",
+      "sha256": "529c79f1982a6c08581783d87bdd3d2083f9b5b2174eb5bf8b711c04a10d7651"
+    },
+    {
+      "path": "scaling/comparisons.json",
+      "sha256": "b6752fca76e35ae1e81e4109ad0168ef566fdfc666ae4120a00548d96417e084"
+    },
+    {
+      "path": "scaling/conditions.json",
+      "sha256": "05a1b595c3197e24716bb0de7458ac82793567852ac130317f81ae3ad4b51b4b"
+    },
+    {
+      "path": "scaling/plan.json",
+      "sha256": "863b64dc98301e356dc1cbfe060ebabede5d5d9d1ec737ed9ea4633cdbc40ecb"
+    },
+    {
+      "path": "scaling/completion.json",
+      "sha256": "f8be8a62e476852122e25281ec3252762bc4efeed2d04a04c026051da9b78f32"
+    },
+    {
+      "path": "sparse_final/records.json",
+      "sha256": "def9027c8633c90417bf7cfbf656bca20459a1d1837850a234bcb9aef3b3d4cd"
+    },
+    {
+      "path": "sparse_final/comparisons.json",
+      "sha256": "367087d81a4bb8ce2dc7bc8c44de78d0147bdf6f39533222541298a651742f9a"
+    },
+    {
+      "path": "sparse_final/conditions.json",
+      "sha256": "95c454815ba5ae4fa3306b648e63cbe8f307def6689c21711fd5df0e6557cd45"
+    },
+    {
+      "path": "sparse_final/plan.json",
+      "sha256": "bce6df3f9a7e7d35d3e2f618faa2bc7ced7e765d1bb924de37cbe73285187d36"
+    },
+    {
+      "path": "sparse_final/completion.json",
+      "sha256": "ae96db89b0fe4cc63a6c828c2198ad57d22cc830726cbd1457f853f4b9cb4066"
+    },
+    {
+      "path": "workloads/records.json",
+      "sha256": "9b6cf6f2b489f7f2e83036a51c8704f01f705c174b8d45b73401315f6e1390cd"
+    },
+    {
+      "path": "workloads/comparisons.json",
+      "sha256": "67a265f855280cab3ef5a85aa459a4fa5c9705d7aae243ffe615159ef9c75f5d"
+    },
+    {
+      "path": "workloads/conditions.json",
+      "sha256": "f1d227e975ec91930a9cab51f99d4d74c305c318bca5ca11cff39265456a4da6"
+    },
+    {
+      "path": "workloads/plan.json",
+      "sha256": "706f86cbec8b518a5b8a98fafdc2ed023a6c123be3f7758228e31989eb76bd19"
+    },
+    {
+      "path": "workloads/completion.json",
+      "sha256": "e53e6f88ecf638a2b93c5710ba4beddcab5b9d270981cce128880c059b765034"
+    }
+  ],
+  "selected_key": [
+    "load_transient",
+    "transient_three_t1",
+    1
+  ],
+  "weather_files": [
+    "00001.grz",
+    "00002.grz",
+    "00003.grz"
+  ],
+  "rows": [
+    {
+      "variant": "double",
+      "concentration_sum_pct_of_double": [
+        100.0,
+        100.0,
+        100.0
+      ],
+      "status": "pass",
+      "raw_sums": {
+        "00001.grz": 36619.93734242022,
+        "00002.grz": 69056.75240573287,
+        "00003.grz": 34893.97876506299
+      }
+    },
+    {
+      "variant": "dictionary",
+      "concentration_sum_pct_of_double": [
+        100.0,
+        0.0,
+        27.955776044467644
+      ],
+      "status": "fail",
+      "raw_sums": {
+        "00001.grz": 36619.93734242022,
+        "00002.grz": 0.0,
+        "00003.grz": 9754.882556565106
+      }
+    },
+    {
+      "variant": "dictionary_fixed",
+      "concentration_sum_pct_of_double": [
+        100.0,
+        100.0,
+        100.0
+      ],
+      "status": "pass",
+      "raw_sums": {
+        "00001.grz": 36619.93734242022,
+        "00002.grz": 69056.75240573287,
+        "00003.grz": 34893.97876506299
+      }
+    }
+  ]
+}

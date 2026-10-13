@@ -1,0 +1,90 @@
+{
+  "status": "pass_with_two_minor_editorial_recommendations",
+  "scope": "Read-only final adversarial review of pre-humanize comment and README, source analysis, figure metadata/pixels, writer checks and fresh reproduction record. No engine/build/network work.",
+  "reviewed_sha256": {
+    "docs/reply_to_humanize.md": "16a2989045027d130eeeea4ef6f8c34a6c19a8a7ef69ab34c7dd08991910bb51",
+    "docs/README_to_humanize.md": "8a3462e2605c7677de956071b228327853accb708c2e40f8518ba68849eac3d3",
+    "results/followup_analysis.json": "4768d850c33901c1b43ffda62fabb9ea2f43f1739af099dd395ce6469dbf1989",
+    "qa/reproduction_check.json": "786bd7f0977fff1fca834ae0fadee532fa531c5c8e65d47045a207bbd942203a",
+    "qa/writer_lifecycle/summary.json": "8b6afe6e0c5cbe207f3e9ea3f430c80b9618c5e88d81273d0a32ff75c8ba82a8",
+    "figures/dictionary_followup_tradeoff.json": "d5b9d1cb0563541f42dd6f0fcf7d6de0c2a4663b0f998fc0a55f418ef67e9cb6",
+    "figures/dictionary_followup_tradeoff.png": "9801b0f5b81da7c2080eec1440c594d1948044422d9abe96d44d5cd7df819e06"
+  },
+  "blocking_findings": [],
+  "checks": {
+    "selected_timing_tags": [
+      "ablation_clean",
+      "extension",
+      "stress"
+    ],
+    "input_warnings": [],
+    "model_runs": 148,
+    "warmups": 37,
+    "measured_runs": 111,
+    "conditions": 11,
+    "table_values_match": true,
+    "paired_percentage_claims_match": {
+      "combined_large_time_pct": -26.300905632109096,
+      "combined_large_peak_commit_pct": -77.81111128118002,
+      "combined_26group14worker_time_pct": 63.63347427267778,
+      "combined_8000ps_time_pct": 17.273508283205242
+    },
+    "steady_exact_comparisons": "66/66",
+    "single_worker_transient_exact_comparisons": "6/6",
+    "combined_four_worker_transient_max_relative_l1": 5.970188567386037e-10,
+    "combined_four_worker_transient_max_absolute": 1.52587890625e-05,
+    "double_repeat_max_relative_l1": 5.970188567386037e-10,
+    "writer_outputs_each": 980,
+    "writer_variant_count": 5,
+    "writer_byte_mismatches": 0,
+    "lifetime_checks_each": 65,
+    "fresh_source_files": 410,
+    "fresh_strict_builds": 5,
+    "fresh_transient_runs": 5,
+    "fresh_outputs_exact": true,
+    "figure_analysis_sha_matches": true,
+    "figure_pixels_reviewed": true,
+    "source_group_boundary": "Prior recorded native tests pass all four variants at 101 groups and fail at 102; ReadPointSources.cs:34/90/223 confirms the fixed 101-entry array."
+  },
+  "editorial_recommendations": [
+    {
+      "id": "E01",
+      "priority": "low",
+      "target": "reply_to_humanize.md benefit paragraph",
+      "finding": "Both changes reduced time and memory against the array can be read as attributing the entire sparse-storage memory benefit to the two follow-up edits.",
+      "recommendation": "Say With both changes, the dictionary used ... than the double array. The measured comparison remains the same.",
+      "root_notified": true
+    },
+    {
+      "id": "E02",
+      "priority": "low",
+      "target": "README_to_humanize.md absolute concentration error",
+      "finding": "The absolute concentration difference is dimensional but currently lacks a unit.",
+      "recommendation": "Add micrograms per cubic metre (µg/m³), or omit the absolute value and retain the dimensionless relative L1.",
+      "source_support": [
+        "src/Zeitschleife.cs:81",
+        "src/Zeitschleife_nonsteadystate.cs:131"
+      ],
+      "root_notified": true
+    }
+  ],
+  "accepted_presentation": [
+    "The comment answers the developer directly and gives a concrete preferred path plus one reasonable alternative.",
+    "The table and figure show both the large-output benefit and the ordinary-grid cost; no global speedup or automatic threshold is claimed.",
+    "Memory is explicitly peak process commit in MiB; working set is separate.",
+    "Timing percentages use paired repeats rather than ratios of independent medians; no significance or confidence interval is invented.",
+    "The README excludes earlier CPU-contaminated timing records and identifies the three final timing tags.",
+    "Writer-only deposition coverage and the absence of deposition in the new model matrix are stated accurately.",
+    "The allocation exception difference is stated once in the integration notes rather than repeated throughout the comment.",
+    "Public links point to the planned evidence branch; publishing must precede posting the reply."
+  ],
+  "not_performed": [
+    "No edits to prose or source files",
+    "No new model/build/network test",
+    "No claim that the pending evidence branch already exists"
+  ],
+  "files_modified_by_this_task": [
+    "qa/final_adversarial_review.json",
+    "work/package_followup.py (exclude prose-review workflow metadata only)"
+  ]
+}

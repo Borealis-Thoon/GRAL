@@ -1,0 +1,39 @@
+{
+  "pps": 1000,
+  "tau": 300,
+  "kind": "mixed",
+  "sources": 64,
+  "sg": 26,
+  "length": 1200,
+  "flow": 20,
+  "conc": 10,
+  "slices": 1,
+  "speed": 2.5,
+  "sc": 2,
+  "workers": 8,
+  "hot": false,
+  "buildings": 0,
+  "adaptive": 0,
+  "transient": false,
+  "id": "convective_mixed_t8",
+  "purpose": "Source kinds and convective transport",
+  "particles": 300000,
+  "nx": 120,
+  "ny": 120,
+  "source_counts": {
+    "point": 16,
+    "area": 16,
+    "line": 16,
+    "portal": 16
+  },
+  "vertical_flow_layers": 40,
+  "situations": 1,
+  "weather": [
+    [
+      9,
+      2.5,
+      2
+    ]
+  ],
+  "total_output_slots": 374400
+}

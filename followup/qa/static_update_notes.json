@@ -1,0 +1,57 @@
+{
+  "status": "implemented_static_review_only",
+  "baseline": "prior\\work\\dictionary_fixed",
+  "scope": "Replace six capturing update factories with the TArg overload and static add/update factories. No other source changes.",
+  "api": "https://learn.microsoft.com/en-us/dotnet/api/system.collections.concurrent.concurrentdictionary-2.addorupdate?view=net-10.0",
+  "overload": "AddOrUpdate<TArg>(TKey, Func<TKey,TArg,TValue>, Func<TKey,TValue,TArg,TValue>, TArg)",
+  "numeric_review": {
+    "masse": "double",
+    "idt": "float",
+    "argument": "masse * idt is evaluated as double, as before. It is evaluated once before the synchronous call and reused by retries.",
+    "addition": "oldvalue + amount retains the same operand order and double precision.",
+    "concurrency": "Particle-local masse and idt cannot change while synchronous AddOrUpdate executes; retry factories are pure. Existing update ordering and ConcurrentDictionary synchronization remain unchanged.",
+    "unverified": "Build and native numerical equivalence have not been run by this worker."
+  },
+  "recommended_validation": [
+    "Release strict build with TreatWarningsAsErrors=true.",
+    "Native paired output comparison in single-worker steady, transient, odour and hot-plume cases.",
+    "Multi-worker concentration comparison and repeat variation.",
+    "Native paired timing and GC allocated bytes in neutral 26-group and sparse 99-group nine-height cases."
+  ],
+  "changes": [
+    {
+      "path": "src/Zeitschleife.cs",
+      "old_sha256": "fd90da75e0cd253f99580f698d479366818584ab9fe674253153643d31a6f257",
+      "new_sha256": "0fb340beca745721ef700271218e5b4a30a48d9c96bcebf4665612d5c3a648c1",
+      "replacements": 3,
+      "added_lines": 3,
+      "deleted_lines": 3,
+      "added_characters_including_indent_excluding_line_endings": 513,
+      "deleted_characters_including_indent_excluding_line_endings": 387
+    },
+    {
+      "path": "src/Zeitschleife_nonsteadystate.cs",
+      "old_sha256": "43fa2fe0e78615d7936ba57bfdab66ea97ef5dd67509981b7c942a1f91447b60",
+      "new_sha256": "4421514f00483c43e3404705cf9d55d739b84e1a8393d76303d174d8d194ae0d",
+      "replacements": 3,
+      "added_lines": 3,
+      "deleted_lines": 3,
+      "added_characters_including_indent_excluding_line_endings": 513,
+      "deleted_characters_including_indent_excluding_line_endings": 387
+    }
+  ],
+  "patch_sha256": "9712e428d16c7cadce508a3f09e958bbf40b82ae9e70add2faba97ff0c7f07b4",
+  "source_scope_check": {
+    "compared_cs_files": 81,
+    "changed_files": [
+      "src\\Zeitschleife.cs",
+      "src\\Zeitschleife_nonsteadystate.cs"
+    ],
+    "passed": true
+  },
+  "git_apply_check": {
+    "exit_code": 0,
+    "passed": true,
+    "base": "prior\\work\\dictionary_fixed"
+  }
+}

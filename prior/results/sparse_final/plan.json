@@ -1,0 +1,36 @@
+{
+  "cases": [
+    {
+      "pps": 1000,
+      "tau": 300,
+      "kind": "point",
+      "sources": 99,
+      "sg": 99,
+      "length": 2400,
+      "flow": 40,
+      "conc": 10,
+      "slices": 9,
+      "speed": 1,
+      "sc": 4,
+      "workers": 4,
+      "hot": false,
+      "buildings": 0,
+      "adaptive": 0,
+      "transient": false,
+      "id": "sparse_sg99_fine9_t4",
+      "purpose": "Large dense buffer, many groups/heights, sparse occupied keys"
+    }
+  ],
+  "variants": [
+    "float",
+    "double",
+    "dictionary",
+    "dictionary_fixed"
+  ],
+  "warmups": 1,
+  "measured_repeats": 3,
+  "process_limit_s": 120,
+  "chunk_limit_s": 840,
+  "order": "rotating",
+  "harness_sha256": "4f3197d5495fcc481defa2378192ee87c577ac8058dc9b2136b42773d39008b6"
+}

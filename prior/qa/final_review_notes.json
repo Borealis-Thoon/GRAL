@@ -1,0 +1,75 @@
+{
+  "status": "review_complete_with_reporting_actions",
+  "scope": "Read-only review of recorded edge checks, source review, current input builder and decoder; no model runs, builds, renders or bulk analysis.",
+  "reviewed": [
+    "qa/edge_checks/summary.json",
+    "qa/edge_checks/dictionary.json",
+    "qa/code_review.json",
+    "work/edge_checks/Program.cs",
+    "work/benchmark/dictionary_suite.py"
+  ],
+  "source_group_interpretation": {
+    "count": "emission_sourcegroup[101] holds indices 0..100: source review supports 101 groups and predicts failure at 102; verify actual native boundary results before final claim.",
+    "label": "Input labels become byte values in source and particle storage, independently of dictionary internal int indices. Labels 1,99,100,255 test four legal labels; 1,257 tests aliasing after byte truncation.",
+    "native_cases": "sg101_boundary, sg102_boundary, sg108_boundary, labels_1_99_100_255 and labels_1_257 are configured correctly for point-source boundary diagnostics.",
+    "writer_test_limit": "Reflection initializes arrays/dictionaries directly and bypasses source readers and ParticleSG. Exact output for internal indices up to 300 and labels up to 300 proves writer/key handling only, not end-to-end support.",
+    "required_label_metric": "Inspect per-group output sums for labels_1_257: a completed run and nonzero total alone do not detect concentration assigned to the wrong group."
+  },
+  "evidence_classification": [
+    {
+      "id": "D01",
+      "level": "reproduced_native_and_compiled_method",
+      "evidence": "Original dictionary loses central carryover in native transient pilot; actual ParallelParticleDriver with zero new particles changes seeded 123.25 to zero with fixed seed both off and on."
+    },
+    {
+      "id": "D02",
+      "level": "reproduced_compiled_writer",
+      "evidence": "Original dictionary differs in 12 of 24 odour writer cases: center-only and center+lower suppressed, upper-only and upper+lower included, across V01/V02/V03. Fixed dictionary has zero mismatches among all 84 writer checks."
+    },
+    {
+      "id": "D03",
+      "level": "source_identified_not_reproduced_in_reviewed_tests",
+      "evidence": "Current edge program does not invoke missing-receptor path. Treat as a restored safety guard/source regression risk unless an additional native or direct test establishes impact."
+    },
+    {
+      "id": "D04",
+      "level": "build_log_required",
+      "evidence": "Source review predicts reintroduced CS0219. Cite strict build result rather than the early code_review.json pending-build field."
+    }
+  ],
+  "findings": [
+    {
+      "id": "QA01",
+      "severity": "reporting",
+      "target": "qa/code_review.json confirmed_regressions",
+      "action": "Preserve historical source-review file; final evidence summary must distinguish D03 source risk from D01/D02 reproduced regression."
+    },
+    {
+      "id": "QA02",
+      "severity": "metric",
+      "target": "work/benchmark/dictionary_suite.py compare",
+      "action": "Exact equality/changed counts can cover all payloads, but do not aggregate concentration and deposition into one relative L1 because units differ. Analyze .con and .dep separately."
+    },
+    {
+      "id": "QA03",
+      "severity": "reporting",
+      "target": "qa/edge_checks/summary.json source_group_ids/source_group_indices",
+      "action": "Describe direct writer/internal-key coverage separately from native source-reader count and ID limits."
+    },
+    {
+      "id": "QA04",
+      "severity": "reporting",
+      "target": "work/benchmark/dictionary_suite.py labels_1_257",
+      "action": "Use per-group sums/support to report label aliasing; current broad status only validates completion and overall nonzero output."
+    }
+  ],
+  "accepted_checks": [
+    "Dense compressed V03 concentration and deposition share the same 28-byte header and float payload layout.",
+    "Deposition fields are counted per group/weather rather than per height.",
+    "Input appends PM2.5-only concentration+deposition parameters without extra source splitting.",
+    "Occupied fraction and situation concentration sums exclude deposition.",
+    "Terrain and building execution markers are now checked.",
+    "Cases keep source-group count separate from noncontiguous numeric IDs."
+  ],
+  "no_existing_files_modified": true
+}

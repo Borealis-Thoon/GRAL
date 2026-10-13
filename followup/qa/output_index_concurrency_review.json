@@ -1,0 +1,47 @@
+{
+  "scope": "Read-only source audit of the output_index trial. No model, build, network or timing work performed.",
+  "verdict": "Dictionary snapshots have a valid non-overlapping writer lifetime in the current engine call path. No concurrent dictionary mutation was found during index construction or consumption. The new allocation failure path is not exception-equivalent to the previous writer.",
+  "thread_lifetime": [
+    {"file":"src/Program.cs","lines":[624,638],"finding":"Before particle initialization or either dispersion driver, Join(5000) is followed by a while(IsAlive) loop using Join(30000); the loop cannot proceed to accumulation while the previous 2D writer is alive."},
+    {"file":"src/Program.cs","lines":[680,724],"finding":"Initial positions, transient driver at 714 and fresh-particle driver at 724 all run after the previous writer join."},
+    {"file":"src/ProgramFunctions.cs","lines":[1184,1212],"finding":"Fixed-seed fresh-particle work is queued, each worker decrements remainingWorkItems only after leaving its calculation loop, and WaitOne blocks the caller until all workers finish."},
+    {"file":"src/ProgramFunctions.cs","lines":[1293,1342],"finding":"Fixed-seed residual work uses the same decrement/event barrier; WaitOne prevents driver return before all cell workers finish."},
+    {"file":"src/ProgramFunctions.cs","lines":[1227,1259],"finding":"The alternative fresh-particle Parallel.For is synchronous."},
+    {"file":"src/ProgramFunctions.cs","lines":[1358,1399],"finding":"The alternative residual Parallel.For is synchronous."},
+    {"file":"src/Program.cs","lines":[749,778],"finding":"VolumeCorrection completes at 750 before the 2D writer thread is created and started at 777-778."},
+    {"file":"src/ProgramFunctions.cs","lines":[1024,1030,1080,1084,1516,1589],"finding":"Both volume-correction implementations complete their Parallel.For before returning, covering central and optional upper/lower dictionaries."},
+    {"file":"src/Program.cs","lines":[827,830,878],"finding":"Final shutdown joins the last 2D writer before CleanUpMemory can clear these dictionaries."}
+  ],
+  "mutation_inventory": [
+    {"file":"src/ProgramDeclarations.cs","lines":[256,1123,1127],"operation":"Initial dictionary construction."},
+    {"file":"src/Zeitschleife.cs","lines":[2181,2216,2229],"operation":"Fresh-particle centre/upper/lower AddOrUpdate; bounded by the synchronous driver."},
+    {"file":"src/Zeitschleife_nonsteadystate.cs","lines":[1219,1251,1264],"operation":"Residual centre/upper/lower AddOrUpdate; bounded by the synchronous driver."},
+    {"file":"src/ProgramFunctions.cs","lines":[1508,1582],"operation":"Volume correction of each passed concentration dictionary; completes before writer start."},
+    {"file":"src/Write2DConcentrations.cs","lines":[347,349],"operation":"Writer-owned Clear after all concentration and odour output."},
+    {"file":"src/CleanUp.cs","lines":[35,37],"operation":"Final cleanup after final writer join."}
+  ],
+  "snapshot_semantics": {
+    "construction": "Write2DConcentrations.cs:37-47 creates a per-call lookup of each of the three dictionaries by slice and internal group. Each entry copies a unique tuple key and double value after accumulation/volume correction.",
+    "consumption": "Write2DConcentrations.cs:371-393 clears the reusable horizontal float buffer, selects the current lookup group, and makes the same float assignment to each unique cell. Changing enumeration order does not change arithmetic because entries are assigned, not reduced or summed.",
+    "release": "Write2DConcentrations.cs:49-52 always nulls the thread-local index after the core writer completes or throws. The normal writer clears original dictionaries before return at 347-349.",
+    "odour": "Central-mask reads at 825/880/954 remain against the unchanged central dictionary. Upper/lower arrays are populated from the lookup before the writer clears any dictionary. The odour Parallel.For computes Q statistics but does not call the conversion helper on worker threads.",
+    "threadstatic": "ThreadStatic isolates the lookup on the writing thread. It is not the synchronization primitive protecting dictionaries; safety follows from the driver barriers and writer joins.",
+    "direct_writer_tests": "A direct private writer invocation has no lookup and follows the prior dictionary scan. To test the optimization, exercise the public wrapper with successive weather outputs as well."
+  },
+  "precision_of_claim": {
+    "supported": "No dispersion or volume-correction updates overlap the indexed dictionary output in the current Program.Main call path.",
+    "unsupported": "Do not claim that all model state is frozen during output. The next weather number, meteorological input and wind-field work can begin before the join at 627. These existing overlaps do not mutate the three concentration dictionaries, but a general audit of all odour/flow shared state is outside this patch-specific result."
+  },
+  "exceptions": {
+    "old_handling": "Concentration output exceptions inside the former writer body are caught and logged at current lines 162-166; odour file exceptions use their existing handlers. Ordinary I/O failures still use those unchanged handlers.",
+    "new_difference": "The outer index allocation at 37 and ToLookup allocations at 44 run before the core writer's catch blocks. Allocation failure can therefore escape the background writer thread rather than following the previous writer's logging path. The finally block releases an index allocated before a ToLookup failure, but cannot cover an exception thrown by the initial new() before the try.",
+    "severity": "Low-memory integration consideration, not a failure observed in completed trials. It matters because the branch is intended to save memory.",
+    "minimal_integration_options": [
+      "Place index construction in an inner helper that returns no index on OutOfMemoryException, then run the existing full-scan writer path; retain finally cleanup. This keeps the existing no-index path usable without duplicating numerical code.",
+      "Alternatively move index construction within the writer's established exception-reporting scope and preserve the same cleanup/termination behavior. This requires careful review of the existing per-format catches."
+    ],
+    "avoid": "Do not add a broad silent catch of arbitrary exceptions or claim that an allocation fallback has been implemented or tested in this trial."
+  },
+  "minimal_patch_assessment": "The trial changes one file and preserves writer method signatures/inner numerical loops by wrapping the existing body. The added grouping and cleanup are narrowly scoped. Native multi-weather and public-wrapper lifecycle results remain the runtime evidence needed alongside this source argument.",
+  "files_modified_by_reviewer": ["qa/output_index_concurrency_review.json"]
+}

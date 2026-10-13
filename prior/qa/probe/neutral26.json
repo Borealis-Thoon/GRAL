@@ -1,0 +1,432 @@
+{
+  "status": "pass",
+  "purpose": "diagnostic attribution only; not native benchmark timing",
+  "case": {
+    "pps": 1000,
+    "tau": 300,
+    "kind": "point",
+    "sources": 26,
+    "sg": 26,
+    "length": 1200,
+    "flow": 40,
+    "conc": 20,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 4,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "neutral_sg26_t4",
+    "purpose": "Controlled worker scaling",
+    "particles": 300000,
+    "nx": 60,
+    "ny": 60,
+    "source_counts": {
+      "point": 26
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 93600
+  },
+  "records": [
+    {
+      "variant": "float",
+      "case": "neutral_sg26_t4",
+      "whole_process_diagnostic": {
+        "exit_code": 0,
+        "wall_s": 3.207739900011802,
+        "cpu_s": 11.71875,
+        "pid": 44400,
+        "memory": {
+          "PeakWorkingSetSize": 82059264,
+          "PeakPagefileUsage": 53800960,
+          "PrivateUsage": 53792768,
+          "WorkingSetSize": 82059264
+        },
+        "memory_samples": 307,
+        "memory_after_exit_api_succeeded": true
+      },
+      "snapshots": [
+        {
+          "variant": "float",
+          "stage": "before_dispersion",
+          "weather": 1,
+          "groups": 26,
+          "slices": 1,
+          "nx": 60,
+          "ny": 60,
+          "logical_output_slots": 93600,
+          "group_slice_files": 26,
+          "odour": false,
+          "managed_bytes_no_collection": 15507824,
+          "allocated_bytes_approx_cumulative": 16217664,
+          "gc_collections": [
+            1,
+            1,
+            1
+          ],
+          "working_set_bytes": 42643456,
+          "private_bytes": 32935936,
+          "dictionary_central_count": null,
+          "dictionary_plus_count": null,
+          "dictionary_minus_count": null
+        },
+        {
+          "variant": "float",
+          "stage": "before_writer",
+          "weather": 1,
+          "groups": 26,
+          "slices": 1,
+          "nx": 60,
+          "ny": 60,
+          "logical_output_slots": 93600,
+          "group_slice_files": 26,
+          "odour": false,
+          "managed_bytes_no_collection": 26038056,
+          "allocated_bytes_approx_cumulative": 26745280,
+          "gc_collections": [
+            1,
+            1,
+            1
+          ],
+          "working_set_bytes": 81350656,
+          "private_bytes": 53321728,
+          "dictionary_central_count": null,
+          "dictionary_plus_count": null,
+          "dictionary_minus_count": null,
+          "interval_from_stage": "before_dispersion",
+          "interval_allocated_bytes_approx": 10527616,
+          "interval_gc_collections": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "variant": "float",
+          "stage": "after_writer",
+          "weather": 1,
+          "groups": 26,
+          "slices": 1,
+          "nx": 60,
+          "ny": 60,
+          "logical_output_slots": 93600,
+          "group_slice_files": 26,
+          "odour": false,
+          "managed_bytes_no_collection": 26128328,
+          "allocated_bytes_approx_cumulative": 26835312,
+          "gc_collections": [
+            1,
+            1,
+            1
+          ],
+          "working_set_bytes": 82059264,
+          "private_bytes": 53792768,
+          "dictionary_central_count": null,
+          "dictionary_plus_count": null,
+          "dictionary_minus_count": null,
+          "writer_seconds": 0.0219362,
+          "conversion_seconds": 0,
+          "conversion_calls": 0,
+          "conversion_seconds_by_kind": [
+            0,
+            0,
+            0
+          ],
+          "conversion_calls_by_kind": [
+            0,
+            0,
+            0
+          ],
+          "interval_from_stage": "before_writer",
+          "interval_allocated_bytes_approx": 90032,
+          "interval_gc_collections": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "input_sha256": {
+        "case.json": "4133f1e3196102e74cd6c7a0f1c6b35b0ce78a2b0389a43ee7d7efd0fcae1b27",
+        "GRAL.geb": "2975afaf08584c2eda0fb97db002da861bad279efb1eeca30b168302208c8c8d",
+        "in.dat": "7e03e68bda62efffbd4e16366f50741f267f55bdcc164d19bb5c6d5579045ec9",
+        "Max_Proc.txt": "7c468f5e59f2871b946e051445493bbcace531d597edbbcc9935e7d02d025114",
+        "meteopgt.all": "405fc5944c81a92f13ced70a9fa29074a302708e7d69e2d75be9ee228f80c3f2",
+        "micro_vert_layers.txt": "673650f936cb3b0a2f93ce09d81be10748b1b203c19e8176b4eefc1964a0cf3a",
+        "point.dat": "06c9efb8ed502840fbd6e3ca08ce0e30e929e200b341c90ef7784d7cc5e6444a"
+      },
+      "dll_sha256": "551fe1dc2a34680495bce7d23d7bcad0a5e730315fed93c00568c8ec71b456e4"
+    },
+    {
+      "variant": "double",
+      "case": "neutral_sg26_t4",
+      "whole_process_diagnostic": {
+        "exit_code": 0,
+        "wall_s": 3.2263330000132555,
+        "cpu_s": 11.671875,
+        "pid": 56636,
+        "memory": {
+          "PeakWorkingSetSize": 83177472,
+          "PeakPagefileUsage": 55005184,
+          "PrivateUsage": 54956032,
+          "WorkingSetSize": 83177472
+        },
+        "memory_samples": 307,
+        "memory_after_exit_api_succeeded": true
+      },
+      "snapshots": [
+        {
+          "variant": "double",
+          "stage": "before_dispersion",
+          "weather": 1,
+          "groups": 26,
+          "slices": 1,
+          "nx": 60,
+          "ny": 60,
+          "logical_output_slots": 93600,
+          "group_slice_files": 26,
+          "odour": false,
+          "managed_bytes_no_collection": 16555744,
+          "allocated_bytes_approx_cumulative": 17272288,
+          "gc_collections": [
+            1,
+            1,
+            1
+          ],
+          "working_set_bytes": 43524096,
+          "private_bytes": 35065856,
+          "dictionary_central_count": null,
+          "dictionary_plus_count": null,
+          "dictionary_minus_count": null
+        },
+        {
+          "variant": "double",
+          "stage": "before_writer",
+          "weather": 1,
+          "groups": 26,
+          "slices": 1,
+          "nx": 60,
+          "ny": 60,
+          "logical_output_slots": 93600,
+          "group_slice_files": 26,
+          "odour": false,
+          "managed_bytes_no_collection": 27031072,
+          "allocated_bytes_approx_cumulative": 27745096,
+          "gc_collections": [
+            1,
+            1,
+            1
+          ],
+          "working_set_bytes": 82403328,
+          "private_bytes": 54489088,
+          "dictionary_central_count": null,
+          "dictionary_plus_count": null,
+          "dictionary_minus_count": null,
+          "interval_from_stage": "before_dispersion",
+          "interval_allocated_bytes_approx": 10472808,
+          "interval_gc_collections": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "variant": "double",
+          "stage": "after_writer",
+          "weather": 1,
+          "groups": 26,
+          "slices": 1,
+          "nx": 60,
+          "ny": 60,
+          "logical_output_slots": 93600,
+          "group_slice_files": 26,
+          "odour": false,
+          "managed_bytes_no_collection": 27129640,
+          "allocated_bytes_approx_cumulative": 27843424,
+          "gc_collections": [
+            1,
+            1,
+            1
+          ],
+          "working_set_bytes": 83177472,
+          "private_bytes": 54956032,
+          "dictionary_central_count": null,
+          "dictionary_plus_count": null,
+          "dictionary_minus_count": null,
+          "writer_seconds": 0.0212587,
+          "conversion_seconds": 0,
+          "conversion_calls": 0,
+          "conversion_seconds_by_kind": [
+            0,
+            0,
+            0
+          ],
+          "conversion_calls_by_kind": [
+            0,
+            0,
+            0
+          ],
+          "interval_from_stage": "before_writer",
+          "interval_allocated_bytes_approx": 98328,
+          "interval_gc_collections": [
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "input_sha256": {
+        "case.json": "4133f1e3196102e74cd6c7a0f1c6b35b0ce78a2b0389a43ee7d7efd0fcae1b27",
+        "GRAL.geb": "2975afaf08584c2eda0fb97db002da861bad279efb1eeca30b168302208c8c8d",
+        "in.dat": "7e03e68bda62efffbd4e16366f50741f267f55bdcc164d19bb5c6d5579045ec9",
+        "Max_Proc.txt": "7c468f5e59f2871b946e051445493bbcace531d597edbbcc9935e7d02d025114",
+        "meteopgt.all": "405fc5944c81a92f13ced70a9fa29074a302708e7d69e2d75be9ee228f80c3f2",
+        "micro_vert_layers.txt": "673650f936cb3b0a2f93ce09d81be10748b1b203c19e8176b4eefc1964a0cf3a",
+        "point.dat": "06c9efb8ed502840fbd6e3ca08ce0e30e929e200b341c90ef7784d7cc5e6444a"
+      },
+      "dll_sha256": "0d4be82735b6f7b9e65400666902fb394fbf2452f204af1e0eea56291d6719f8"
+    },
+    {
+      "variant": "dictionary_fixed",
+      "case": "neutral_sg26_t4",
+      "whole_process_diagnostic": {
+        "exit_code": 0,
+        "wall_s": 3.61933789998875,
+        "cpu_s": 13.34375,
+        "pid": 63132,
+        "memory": {
+          "PeakWorkingSetSize": 118829056,
+          "PeakPagefileUsage": 90415104,
+          "PrivateUsage": 90382336,
+          "WorkingSetSize": 118820864
+        },
+        "memory_samples": 345,
+        "memory_after_exit_api_succeeded": true
+      },
+      "snapshots": [
+        {
+          "variant": "dictionary_fixed",
+          "stage": "before_dispersion",
+          "weather": 1,
+          "groups": 26,
+          "slices": 1,
+          "nx": 60,
+          "ny": 60,
+          "logical_output_slots": 93600,
+          "group_slice_files": 26,
+          "odour": false,
+          "managed_bytes_no_collection": 14895720,
+          "allocated_bytes_approx_cumulative": 15599192,
+          "gc_collections": [
+            1,
+            1,
+            1
+          ],
+          "working_set_bytes": 43929600,
+          "private_bytes": 32423936,
+          "dictionary_central_count": 0,
+          "dictionary_plus_count": 0,
+          "dictionary_minus_count": 0
+        },
+        {
+          "variant": "dictionary_fixed",
+          "stage": "before_writer",
+          "weather": 1,
+          "groups": 26,
+          "slices": 1,
+          "nx": 60,
+          "ny": 60,
+          "logical_output_slots": 93600,
+          "group_slice_files": 26,
+          "odour": false,
+          "managed_bytes_no_collection": 62303960,
+          "allocated_bytes_approx_cumulative": 63002992,
+          "gc_collections": [
+            1,
+            1,
+            1
+          ],
+          "working_set_bytes": 117944320,
+          "private_bytes": 89911296,
+          "dictionary_central_count": 3593,
+          "dictionary_plus_count": 0,
+          "dictionary_minus_count": 0,
+          "interval_from_stage": "before_dispersion",
+          "interval_allocated_bytes_approx": 47403800,
+          "interval_gc_collections": [
+            0,
+            0,
+            0
+          ],
+          "central_stored_key_fraction": 0.038386752136752134
+        },
+        {
+          "variant": "dictionary_fixed",
+          "stage": "after_writer",
+          "weather": 1,
+          "groups": 26,
+          "slices": 1,
+          "nx": 60,
+          "ny": 60,
+          "logical_output_slots": 93600,
+          "group_slice_files": 26,
+          "odour": false,
+          "managed_bytes_no_collection": 62394168,
+          "allocated_bytes_approx_cumulative": 63092960,
+          "gc_collections": [
+            1,
+            1,
+            1
+          ],
+          "working_set_bytes": 118820864,
+          "private_bytes": 90382336,
+          "dictionary_central_count": 0,
+          "dictionary_plus_count": 0,
+          "dictionary_minus_count": 0,
+          "writer_seconds": 0.0243956,
+          "conversion_seconds": 0.0021384,
+          "conversion_calls": 26,
+          "conversion_seconds_by_kind": [
+            0.0021384,
+            0,
+            0
+          ],
+          "conversion_calls_by_kind": [
+            26,
+            0,
+            0
+          ],
+          "interval_from_stage": "before_writer",
+          "interval_allocated_bytes_approx": 89968,
+          "interval_gc_collections": [
+            0,
+            0,
+            0
+          ],
+          "estimated_entries_visited": 93418,
+          "conversion_fraction_of_writer": 0.08765515092885602
+        }
+      ],
+      "input_sha256": {
+        "case.json": "4133f1e3196102e74cd6c7a0f1c6b35b0ce78a2b0389a43ee7d7efd0fcae1b27",
+        "GRAL.geb": "2975afaf08584c2eda0fb97db002da861bad279efb1eeca30b168302208c8c8d",
+        "in.dat": "7e03e68bda62efffbd4e16366f50741f267f55bdcc164d19bb5c6d5579045ec9",
+        "Max_Proc.txt": "7c468f5e59f2871b946e051445493bbcace531d597edbbcc9935e7d02d025114",
+        "meteopgt.all": "405fc5944c81a92f13ced70a9fa29074a302708e7d69e2d75be9ee228f80c3f2",
+        "micro_vert_layers.txt": "673650f936cb3b0a2f93ce09d81be10748b1b203c19e8176b4eefc1964a0cf3a",
+        "point.dat": "06c9efb8ed502840fbd6e3ca08ce0e30e929e200b341c90ef7784d7cc5e6444a"
+      },
+      "dll_sha256": "e2223ac515da3d2f94bacde82393f393d43805e9bfdd2f832fdd877d0c805916"
+    }
+  ]
+}

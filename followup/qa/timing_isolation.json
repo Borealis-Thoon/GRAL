@@ -1,0 +1,905 @@
+{
+  "status": "pass",
+  "cleanup_utc": "2026-10-13T18:53:29.304030+00:00",
+  "excluded_timing": [
+    "prior/*",
+    "ablation"
+  ],
+  "accepted_tags": [
+    "ablation_clean",
+    "extension",
+    "stress"
+  ],
+  "measured_runs": 111,
+  "reason": "Stale automated document-conversion processes were removed before the final measured trials. Earlier timings are excluded. Correctness records remain available.",
+  "checks": [
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "dictionary_fixed",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:58:00.741215+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "output_index",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:58:04.320556+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "static_update",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:58:07.883776+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "combined",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:58:11.402968+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "double",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:58:14.971181+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "output_index",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:58:17.085027+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "static_update",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:58:20.713248+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "combined",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:58:24.265275+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "double",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:58:27.806464+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "dictionary_fixed",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:58:29.973767+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "static_update",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:58:33.518837+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "combined",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:58:37.053480+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "double",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:58:40.614695+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "dictionary_fixed",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:58:42.835755+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "output_index",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:58:46.360013+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "output_index",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:59:47.811259+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "static_update",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:59:55.802061+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "combined",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:00:11.388252+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "double",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:00:19.498449+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:00:30.841211+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "static_update",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:00:46.693204+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "combined",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:01:02.137295+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "double",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:01:10.364291+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:01:21.381476+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "output_index",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:01:36.245868+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "combined",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:01:44.716716+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "double",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:01:52.968016+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:02:03.296443+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "output_index",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:02:18.022563+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "static_update",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:02:26.050282+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t1",
+      "variant": "dictionary_fixed",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:53:41.650976+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t1",
+      "variant": "combined",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:53:53.673860+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t1",
+      "variant": "double",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:54:05.762834+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t1",
+      "variant": "combined",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:54:16.652063+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t1",
+      "variant": "double",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:54:28.714793+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t1",
+      "variant": "dictionary_fixed",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:54:39.646526+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t1",
+      "variant": "double",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:54:51.721441+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t1",
+      "variant": "dictionary_fixed",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:55:02.611950+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t1",
+      "variant": "combined",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:55:14.684223+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t4",
+      "variant": "combined",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:55:36.688488+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t4",
+      "variant": "double",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:55:40.090575+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:55:43.102609+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t4",
+      "variant": "double",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:55:46.435752+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:55:49.467652+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t4",
+      "variant": "combined",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:55:52.883223+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:55:56.274606+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t4",
+      "variant": "combined",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:55:59.674472+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "neutral_sg26_t4",
+      "variant": "double",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:56:03.206646+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t4",
+      "variant": "double",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:56:07.534824+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:56:07.944819+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t4",
+      "variant": "combined",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:56:08.364609+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:56:08.790414+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t4",
+      "variant": "combined",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:56:09.230819+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t4",
+      "variant": "double",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:56:09.663383+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t4",
+      "variant": "combined",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:56:10.070632+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t4",
+      "variant": "double",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:56:10.486441+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:56:10.897189+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t1",
+      "variant": "dictionary_fixed",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:56:13.044767+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t1",
+      "variant": "combined",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:56:13.615244+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t1",
+      "variant": "double",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:56:14.207432+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t1",
+      "variant": "combined",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:56:14.749324+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t1",
+      "variant": "double",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:56:15.329010+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t1",
+      "variant": "dictionary_fixed",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:56:15.877348+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t1",
+      "variant": "double",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:56:16.450530+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t1",
+      "variant": "dictionary_fixed",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:56:16.992335+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "transient_three_t1",
+      "variant": "combined",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:56:17.561315+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "sparse_sg99_fine1_t4",
+      "variant": "combined",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:56:30.214209+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "sparse_sg99_fine1_t4",
+      "variant": "double",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:56:34.390203+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "sparse_sg99_fine1_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 1,
+      "started_utc": "2026-10-13T18:56:38.176157+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "sparse_sg99_fine1_t4",
+      "variant": "double",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:56:42.287583+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "sparse_sg99_fine1_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:56:46.110353+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "sparse_sg99_fine1_t4",
+      "variant": "combined",
+      "repeat": 2,
+      "started_utc": "2026-10-13T18:56:50.282809+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "sparse_sg99_fine1_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:56:54.465316+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "sparse_sg99_fine1_t4",
+      "variant": "combined",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:56:58.581825+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "extension",
+      "case": "sparse_sg99_fine1_t4",
+      "variant": "double",
+      "repeat": 3,
+      "started_utc": "2026-10-13T18:57:02.687335+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "terrain_stable_area_t8",
+      "variant": "dictionary_fixed",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:03:10.372636+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "terrain_stable_area_t8",
+      "variant": "combined",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:03:12.768622+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "terrain_stable_area_t8",
+      "variant": "double",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:03:15.220124+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "terrain_stable_area_t8",
+      "variant": "combined",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:03:17.251181+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "terrain_stable_area_t8",
+      "variant": "double",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:03:19.636779+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "terrain_stable_area_t8",
+      "variant": "dictionary_fixed",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:03:21.704650+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "terrain_stable_area_t8",
+      "variant": "double",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:03:24.078286+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "terrain_stable_area_t8",
+      "variant": "dictionary_fixed",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:03:26.098835+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "terrain_stable_area_t8",
+      "variant": "combined",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:03:28.684712+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "convective_mixed_t8",
+      "variant": "combined",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:03:33.944959+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "convective_mixed_t8",
+      "variant": "double",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:03:34.916214+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "convective_mixed_t8",
+      "variant": "dictionary_fixed",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:03:35.817009+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "convective_mixed_t8",
+      "variant": "double",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:03:36.798723+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "convective_mixed_t8",
+      "variant": "dictionary_fixed",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:03:37.696888+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "convective_mixed_t8",
+      "variant": "combined",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:03:38.675577+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "convective_mixed_t8",
+      "variant": "dictionary_fixed",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:03:39.641218+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "convective_mixed_t8",
+      "variant": "combined",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:03:40.622439+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "convective_mixed_t8",
+      "variant": "double",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:03:41.576640+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "medium_8000ps_t8",
+      "variant": "double",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:04:34.314613+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "medium_8000ps_t8",
+      "variant": "dictionary_fixed",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:04:49.874295+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "medium_8000ps_t8",
+      "variant": "combined",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:05:07.860043+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "medium_8000ps_t8",
+      "variant": "dictionary_fixed",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:05:26.403392+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "medium_8000ps_t8",
+      "variant": "combined",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:05:44.378201+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "medium_8000ps_t8",
+      "variant": "double",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:06:02.526664+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "medium_8000ps_t8",
+      "variant": "combined",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:06:18.009628+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "medium_8000ps_t8",
+      "variant": "double",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:06:36.167839+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "medium_8000ps_t8",
+      "variant": "dictionary_fixed",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:06:51.697088+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "buildings_mixed_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:07:14.036782+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "buildings_mixed_t4",
+      "variant": "combined",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:07:15.571239+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "buildings_mixed_t4",
+      "variant": "double",
+      "repeat": 1,
+      "started_utc": "2026-10-13T19:07:17.116383+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "buildings_mixed_t4",
+      "variant": "combined",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:07:18.516175+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "buildings_mixed_t4",
+      "variant": "double",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:07:20.066280+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "buildings_mixed_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 2,
+      "started_utc": "2026-10-13T19:07:21.464273+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "buildings_mixed_t4",
+      "variant": "double",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:07:23.013063+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "buildings_mixed_t4",
+      "variant": "dictionary_fixed",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:07:24.408086+00:00",
+      "after_cleanup": true
+    },
+    {
+      "tag": "stress",
+      "case": "buildings_mixed_t4",
+      "variant": "combined",
+      "repeat": 3,
+      "started_utc": "2026-10-13T19:07:25.946208+00:00",
+      "after_cleanup": true
+    }
+  ]
+}

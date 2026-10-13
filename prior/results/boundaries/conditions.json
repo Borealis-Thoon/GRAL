@@ -1,0 +1,262 @@
+[
+  {
+    "pps": 100,
+    "tau": 30,
+    "kind": "point",
+    "sources": 108,
+    "sg": 108,
+    "length": 1200,
+    "flow": 40,
+    "conc": 20,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 1,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "sg108_boundary",
+    "expected_boundary": true,
+    "particles": 3000,
+    "nx": 60,
+    "ny": 60,
+    "source_counts": {
+      "point": 108
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 388800
+  },
+  {
+    "pps": 100,
+    "tau": 120,
+    "kind": "point",
+    "sources": 2,
+    "sg": 2,
+    "length": 1200,
+    "flow": 40,
+    "conc": 20,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 1,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "dry_deposition_t1",
+    "deposition": true,
+    "particles": 12000,
+    "nx": 60,
+    "ny": 60,
+    "source_counts": {
+      "point": 2
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 7200
+  },
+  {
+    "pps": 100,
+    "tau": 30,
+    "kind": "point",
+    "sources": 101,
+    "sg": 101,
+    "length": 1200,
+    "flow": 40,
+    "conc": 20,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 1,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "sg101_boundary",
+    "expected_boundary": true,
+    "particles": 3000,
+    "nx": 60,
+    "ny": 60,
+    "source_counts": {
+      "point": 101
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 363600
+  },
+  {
+    "pps": 100,
+    "tau": 30,
+    "kind": "point",
+    "sources": 102,
+    "sg": 102,
+    "length": 1200,
+    "flow": 40,
+    "conc": 20,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 1,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "sg102_boundary",
+    "expected_boundary": true,
+    "particles": 3000,
+    "nx": 60,
+    "ny": 60,
+    "source_counts": {
+      "point": 102
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 367200
+  },
+  {
+    "pps": 100,
+    "tau": 60,
+    "kind": "point",
+    "sources": 4,
+    "sg": 4,
+    "length": 1200,
+    "flow": 40,
+    "conc": 20,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 1,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "labels_1_99_100_255",
+    "labels": [
+      1,
+      99,
+      100,
+      255
+    ],
+    "particles": 6000,
+    "nx": 60,
+    "ny": 60,
+    "source_counts": {
+      "point": 4
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 14400
+  },
+  {
+    "pps": 100,
+    "tau": 60,
+    "kind": "point",
+    "sources": 2,
+    "sg": 2,
+    "length": 1200,
+    "flow": 40,
+    "conc": 20,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 1,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "labels_1_257",
+    "labels": [
+      1,
+      257
+    ],
+    "particles": 6000,
+    "nx": 60,
+    "ny": 60,
+    "source_counts": {
+      "point": 2
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 7200
+  },
+  {
+    "pps": 100,
+    "tau": 120,
+    "kind": "point",
+    "sources": 2,
+    "sg": 2,
+    "length": 1200,
+    "flow": 40,
+    "conc": 20,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 1,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "missing_receptor_diagnostic",
+    "missing_receptor": true,
+    "particles": 12000,
+    "nx": 60,
+    "ny": 60,
+    "source_counts": {
+      "point": 2
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 7200
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "status": "implemented_static_review_only",
+  "build_run": false,
+  "model_run": false,
+  "source_file": "followup\\work\\output_index\\src\\Write2DConcentrations.cs",
+  "baseline_source": "prior\\work\\dictionary_fixed\\src\\Write2DConcentrations.cs",
+  "baseline_sha256": "980F1513C8CC366B2BF42DC591A84D9B62B131E1DF85F2C2A228E40A989E33A9",
+  "source_sha256": "B0376393D90DE8AFD52DAF6B709603D4E9607B11E317CC62FEEDB12EB5AA2DC8",
+  "patch_sha256": "8053D819DEF85559A343E9DB6800E0920ABDB714F06CE951C4CB23C8A5871B68",
+  "changed_files": 1,
+  "added_lines": 33,
+  "removed_lines": 1,
+  "added_characters": 1432.0,
+  "removed_characters": 52.0,
+  "implementation": [
+    "Public writer wrapper indexes each dictionary once by (slice, source-group index).",
+    "Existing writer body is renamed without indentation or numerical changes.",
+    "ConvertFromDictionaryToArray selects the requested lookup group; a direct private writer call without a cache follows the old full scan.",
+    "ThreadStatic restricts the cache to the output thread; finally releases all references after each public call."
+  ],
+  "memory_tradeoff": "One KeyValuePair snapshot per sparse entry, typically 24 bytes of payload before Lookup group overhead and array capacity slack; no added full-grid cache.",
+  "complexity": "Dictionary filtering becomes O(entries) per output call instead of O(entries * source groups * slices); dense buffer clearing, compression and file output are unchanged.",
+  "static_evidence": [
+    "Program.cs:625-638 waits for the previous output thread before the next dispersion cycle.",
+    "Program.cs:724 returns from ParallelParticleDriver before Program.cs:777-778 starts the writer thread.",
+    "VolumeCorrection occurs before the writer thread, so grouped values include the same correction.",
+    "Each dictionary key is unique; group enumeration writes unique array locations and does not sum or reorder arithmetic."
+  ],
+  "risks": [
+    "Additional sparse snapshot memory may outweigh the time benefit for tiny outputs.",
+    "This remains a local diagnostic prototype; no claim of native parity or performance is made before root testing.",
+    "Lookup construction precedes the old writer exception handling; catastrophic allocation failure can propagate from the wrapper."
+  ],
+  "test_recommendations": [
+    "Strict Release build with warnings treated as errors.",
+    "Native comparison for large sparse 99-group, 9-slice output and ordinary 26-group output.",
+    "Transient multi-weather output with zero emissions in the middle situation to test cache lifetime.",
+    "Native odour with center/upper/lower populated; compare all three output formats plus ASCII and unzipped output.",
+    "Reflection direct writer fallback and full public wrapper paths; repeat two public calls on one thread with different dictionary contents.",
+    "Peak process commit and working set, not just managed allocation, because Lookup adds sparse snapshots."
+  ],
+  "alternatives": "Removing ThreadStatic saves one attribute but would share cache state across output threads and focused tests. Passing cache through every private writer requires a wider signature change. Current wrapper approach confines the prototype to this file."
+}

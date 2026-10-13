@@ -1,0 +1,19 @@
+{
+  "stage": "prepared_not_built",
+  "variants": [
+    "float",
+    "double",
+    "dictionary_fixed"
+  ],
+  "diagnostic_only": true,
+  "writer_timing": "Whole Write2DConcentrations call including output, array clear and dictionary reset; excludes snapshot collection and JSON log.",
+  "conversion_timing": "Clear of temporary float[][] plus full dictionary enumeration and matching-key transfer, accumulated over calls; timer overhead is present.",
+  "counts": "ConcurrentDictionary.Count before dispersion and before writer; counts reflect stored keys including any zero-valued entry, not count of nonzero output cells.",
+  "occupancy_denominator": "SourceGroups.Count * NS * NXL * NYL, separately for central/plus/minus dictionaries.",
+  "memory": "Snapshots of GC.GetTotalMemory(false), GC.GetTotalAllocatedBytes(false), GC.CollectionCount(0/1/2), working set and private bytes without forced GC. Allocation and collection deltas are reported for before_dispersion-to-before_writer and before_writer-to-after_writer; allocation estimates include the diagnostic snapshots/logging. Uninstrumented native benchmark is performance authority.",
+  "before_dispersion": "After flow-field work and prior particle transport for that weather situation.",
+  "requested_cases": [
+    "sparse_sg99_fine9_t4",
+    "neutral_sg26_t4"
+  ]
+}

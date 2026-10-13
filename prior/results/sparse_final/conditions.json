@@ -1,0 +1,38 @@
+[
+  {
+    "pps": 1000,
+    "tau": 300,
+    "kind": "point",
+    "sources": 99,
+    "sg": 99,
+    "length": 2400,
+    "flow": 40,
+    "conc": 10,
+    "slices": 9,
+    "speed": 1,
+    "sc": 4,
+    "workers": 4,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "sparse_sg99_fine9_t4",
+    "purpose": "Large dense buffer, many groups/heights, sparse occupied keys",
+    "particles": 300000,
+    "nx": 240,
+    "ny": 240,
+    "source_counts": {
+      "point": 99
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 51321600
+  }
+]

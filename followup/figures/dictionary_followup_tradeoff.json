@@ -1,0 +1,722 @@
+{
+  "tag": "ablation_clean",
+  "analysis_sha256": "4768d850c33901c1b43ffda62fabb9ea2f43f1739af099dd395ce6469dbf1989",
+  "csv_sha256": "8cdbeb9762d7a854e4f6b33c1566464a438b52d9a6e55d1ad73fb9eed3f48f6b",
+  "script_sha256": "b664286bd2b1d6ac5937f1fe04541a0326c605c8a5077439e85bcc5619cb074d",
+  "cases": [
+    {
+      "id": "sparse_sg99_fine9_t4",
+      "title": "Large sparse output",
+      "condition": {
+        "nx": 240,
+        "ny": 240,
+        "conc": 10,
+        "sg": 99,
+        "slices": 9,
+        "pps": 1000,
+        "workers": 4
+      }
+    },
+    {
+      "id": "neutral_sg26_t14",
+      "title": "Smaller output, more workers",
+      "condition": {
+        "nx": 60,
+        "ny": 60,
+        "conc": 20,
+        "sg": 26,
+        "slices": 1,
+        "pps": 1000,
+        "workers": 14
+      }
+    }
+  ],
+  "variants": [
+    {
+      "id": "double",
+      "label": "Dense double (#64)",
+      "color": "#656C76"
+    },
+    {
+      "id": "dictionary_fixed",
+      "label": "Dictionary, corrected",
+      "color": "#C78646"
+    },
+    {
+      "id": "output_index",
+      "label": "+ Grouped output",
+      "color": "#287EAB"
+    },
+    {
+      "id": "static_update",
+      "label": "+ Static updates",
+      "color": "#8774A8"
+    },
+    {
+      "id": "combined",
+      "label": "+ Both",
+      "color": "#318267"
+    }
+  ],
+  "data": [
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "double",
+      "n": 3,
+      "repeats": [
+        1,
+        2,
+        3
+      ],
+      "condition": {
+        "pps": 1000,
+        "tau": 300,
+        "kind": "point",
+        "sources": 99,
+        "sg": 99,
+        "length": 2400,
+        "flow": 40,
+        "conc": 10,
+        "slices": 9,
+        "speed": 1,
+        "sc": 4,
+        "workers": 4,
+        "hot": false,
+        "buildings": 0,
+        "adaptive": 0,
+        "transient": false,
+        "id": "sparse_sg99_fine9_t4",
+        "purpose": "Large dense buffer, many groups/heights, sparse occupied keys",
+        "particles": 300000,
+        "nx": 240,
+        "ny": 240,
+        "source_counts": {
+          "point": 99
+        },
+        "vertical_flow_layers": 40,
+        "situations": 1,
+        "weather": [
+          [
+            9,
+            1,
+            4
+          ]
+        ],
+        "total_output_slots": 51321600
+      },
+      "wall_s_n": 3,
+      "wall_s_median": 10.606557199993404,
+      "wall_s_min": 9.910546200000681,
+      "wall_s_max": 10.936270699996385,
+      "cpu_s_n": 3,
+      "cpu_s_median": 20.984375,
+      "cpu_s_min": 20.171875,
+      "cpu_s_max": 21.453125,
+      "peak_commit_mib_n": 3,
+      "peak_commit_mib_median": 766.1875,
+      "peak_commit_mib_min": 765.62109375,
+      "peak_commit_mib_max": 769.31640625,
+      "peak_working_mib_n": 3,
+      "peak_working_mib_median": 774.90625,
+      "peak_working_mib_min": 774.78515625,
+      "peak_working_mib_max": 775.34765625
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "dictionary_fixed",
+      "n": 3,
+      "repeats": [
+        1,
+        2,
+        3
+      ],
+      "condition": {
+        "pps": 1000,
+        "tau": 300,
+        "kind": "point",
+        "sources": 99,
+        "sg": 99,
+        "length": 2400,
+        "flow": 40,
+        "conc": 10,
+        "slices": 9,
+        "speed": 1,
+        "sc": 4,
+        "workers": 4,
+        "hot": false,
+        "buildings": 0,
+        "adaptive": 0,
+        "transient": false,
+        "id": "sparse_sg99_fine9_t4",
+        "purpose": "Large dense buffer, many groups/heights, sparse occupied keys",
+        "particles": 300000,
+        "nx": 240,
+        "ny": 240,
+        "source_counts": {
+          "point": 99
+        },
+        "vertical_flow_layers": 40,
+        "situations": 1,
+        "weather": [
+          [
+            9,
+            1,
+            4
+          ]
+        ],
+        "total_output_slots": 51321600
+      },
+      "wall_s_n": 3,
+      "wall_s_median": 14.427435100005823,
+      "wall_s_min": 14.313200399992638,
+      "wall_s_max": 15.039300699994783,
+      "cpu_s_n": 3,
+      "cpu_s_median": 26.1875,
+      "cpu_s_min": 26.171875,
+      "cpu_s_max": 26.609375,
+      "peak_commit_mib_n": 3,
+      "peak_commit_mib_median": 172.453125,
+      "peak_commit_mib_min": 172.35546875,
+      "peak_commit_mib_max": 172.78125,
+      "peak_working_mib_n": 3,
+      "peak_working_mib_median": 196.46484375,
+      "peak_working_mib_min": 194.4765625,
+      "peak_working_mib_max": 196.75390625
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "output_index",
+      "n": 3,
+      "repeats": [
+        1,
+        2,
+        3
+      ],
+      "condition": {
+        "pps": 1000,
+        "tau": 300,
+        "kind": "point",
+        "sources": 99,
+        "sg": 99,
+        "length": 2400,
+        "flow": 40,
+        "conc": 10,
+        "slices": 9,
+        "speed": 1,
+        "sc": 4,
+        "workers": 4,
+        "hot": false,
+        "buildings": 0,
+        "adaptive": 0,
+        "transient": false,
+        "id": "sparse_sg99_fine9_t4",
+        "purpose": "Large dense buffer, many groups/heights, sparse occupied keys",
+        "particles": 300000,
+        "nx": 240,
+        "ny": 240,
+        "source_counts": {
+          "point": 99
+        },
+        "vertical_flow_layers": 40,
+        "situations": 1,
+        "weather": [
+          [
+            9,
+            1,
+            4
+          ]
+        ],
+        "total_output_slots": 51321600
+      },
+      "wall_s_n": 3,
+      "wall_s_median": 7.6139762999955565,
+      "wall_s_min": 7.590215999996872,
+      "wall_s_max": 7.642359800011036,
+      "cpu_s_n": 3,
+      "cpu_s_median": 19.46875,
+      "cpu_s_min": 19.25,
+      "cpu_s_max": 19.640625,
+      "peak_commit_mib_n": 3,
+      "peak_commit_mib_median": 172.48828125,
+      "peak_commit_mib_min": 172.01171875,
+      "peak_commit_mib_max": 173.11328125,
+      "peak_working_mib_n": 3,
+      "peak_working_mib_median": 196.4921875,
+      "peak_working_mib_min": 196.32421875,
+      "peak_working_mib_max": 196.73046875
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "static_update",
+      "n": 3,
+      "repeats": [
+        1,
+        2,
+        3
+      ],
+      "condition": {
+        "pps": 1000,
+        "tau": 300,
+        "kind": "point",
+        "sources": 99,
+        "sg": 99,
+        "length": 2400,
+        "flow": 40,
+        "conc": 10,
+        "slices": 9,
+        "speed": 1,
+        "sc": 4,
+        "workers": 4,
+        "hot": false,
+        "buildings": 0,
+        "adaptive": 0,
+        "transient": false,
+        "id": "sparse_sg99_fine9_t4",
+        "purpose": "Large dense buffer, many groups/heights, sparse occupied keys",
+        "particles": 300000,
+        "nx": 240,
+        "ny": 240,
+        "source_counts": {
+          "point": 99
+        },
+        "vertical_flow_layers": 40,
+        "situations": 1,
+        "weather": [
+          [
+            9,
+            1,
+            4
+          ]
+        ],
+        "total_output_slots": 51321600
+      },
+      "wall_s_n": 3,
+      "wall_s_median": 15.078736600000411,
+      "wall_s_min": 15.005040599993663,
+      "wall_s_max": 15.19079029999557,
+      "cpu_s_n": 3,
+      "cpu_s_median": 27.328125,
+      "cpu_s_min": 27.28125,
+      "cpu_s_max": 27.5,
+      "peak_commit_mib_n": 3,
+      "peak_commit_mib_median": 143.53125,
+      "peak_commit_mib_min": 142.78515625,
+      "peak_commit_mib_max": 147.5,
+      "peak_working_mib_n": 3,
+      "peak_working_mib_median": 167.96484375,
+      "peak_working_mib_min": 167.4296875,
+      "peak_working_mib_max": 170.19140625
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "combined",
+      "n": 3,
+      "repeats": [
+        1,
+        2,
+        3
+      ],
+      "condition": {
+        "pps": 1000,
+        "tau": 300,
+        "kind": "point",
+        "sources": 99,
+        "sg": 99,
+        "length": 2400,
+        "flow": 40,
+        "conc": 10,
+        "slices": 9,
+        "speed": 1,
+        "sc": 4,
+        "workers": 4,
+        "hot": false,
+        "buildings": 0,
+        "adaptive": 0,
+        "transient": false,
+        "id": "sparse_sg99_fine9_t4",
+        "purpose": "Large dense buffer, many groups/heights, sparse occupied keys",
+        "particles": 300000,
+        "nx": 240,
+        "ny": 240,
+        "source_counts": {
+          "point": 99
+        },
+        "vertical_flow_layers": 40,
+        "situations": 1,
+        "weather": [
+          [
+            9,
+            1,
+            4
+          ]
+        ],
+        "total_output_slots": 51321600
+      },
+      "wall_s_n": 3,
+      "wall_s_median": 7.816936600007466,
+      "wall_s_min": 7.714074000003166,
+      "wall_s_max": 7.824827699994785,
+      "cpu_s_n": 3,
+      "cpu_s_median": 20.109375,
+      "cpu_s_min": 19.984375,
+      "cpu_s_max": 20.171875,
+      "peak_commit_mib_n": 3,
+      "peak_commit_mib_median": 169.8828125,
+      "peak_commit_mib_min": 168.734375,
+      "peak_commit_mib_max": 173.921875,
+      "peak_working_mib_n": 3,
+      "peak_working_mib_median": 194.30859375,
+      "peak_working_mib_min": 193.234375,
+      "peak_working_mib_max": 196.48828125
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "double",
+      "n": 3,
+      "repeats": [
+        1,
+        2,
+        3
+      ],
+      "condition": {
+        "pps": 1000,
+        "tau": 300,
+        "kind": "point",
+        "sources": 26,
+        "sg": 26,
+        "length": 1200,
+        "flow": 40,
+        "conc": 20,
+        "slices": 1,
+        "speed": 1,
+        "sc": 4,
+        "workers": 14,
+        "hot": false,
+        "buildings": 0,
+        "adaptive": 0,
+        "transient": false,
+        "id": "neutral_sg26_t14",
+        "purpose": "Controlled worker scaling",
+        "particles": 300000,
+        "nx": 60,
+        "ny": 60,
+        "source_counts": {
+          "point": 26
+        },
+        "vertical_flow_layers": 40,
+        "situations": 1,
+        "weather": [
+          [
+            9,
+            1,
+            4
+          ]
+        ],
+        "total_output_slots": 93600
+      },
+      "wall_s_n": 3,
+      "wall_s_median": 2.1599597000022186,
+      "wall_s_min": 2.106546300012269,
+      "wall_s_max": 2.213432100004866,
+      "cpu_s_n": 3,
+      "cpu_s_median": 20.421875,
+      "cpu_s_min": 20.1875,
+      "cpu_s_max": 21.28125,
+      "peak_commit_mib_n": 3,
+      "peak_commit_mib_median": 51.09765625,
+      "peak_commit_mib_min": 51.0546875,
+      "peak_commit_mib_max": 51.70703125,
+      "peak_working_mib_n": 3,
+      "peak_working_mib_median": 75.4140625,
+      "peak_working_mib_min": 75.33203125,
+      "peak_working_mib_max": 75.5234375
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "dictionary_fixed",
+      "n": 3,
+      "repeats": [
+        1,
+        2,
+        3
+      ],
+      "condition": {
+        "pps": 1000,
+        "tau": 300,
+        "kind": "point",
+        "sources": 26,
+        "sg": 26,
+        "length": 1200,
+        "flow": 40,
+        "conc": 20,
+        "slices": 1,
+        "speed": 1,
+        "sc": 4,
+        "workers": 14,
+        "hot": false,
+        "buildings": 0,
+        "adaptive": 0,
+        "transient": false,
+        "id": "neutral_sg26_t14",
+        "purpose": "Controlled worker scaling",
+        "particles": 300000,
+        "nx": 60,
+        "ny": 60,
+        "source_counts": {
+          "point": 26
+        },
+        "vertical_flow_layers": 40,
+        "situations": 1,
+        "weather": [
+          [
+            9,
+            1,
+            4
+          ]
+        ],
+        "total_output_slots": 93600
+      },
+      "wall_s_n": 3,
+      "wall_s_median": 3.5348834000033094,
+      "wall_s_min": 3.5146767999976873,
+      "wall_s_max": 3.572666100008064,
+      "cpu_s_n": 3,
+      "cpu_s_median": 31.265625,
+      "cpu_s_min": 31.140625,
+      "cpu_s_max": 31.75,
+      "peak_commit_mib_n": 3,
+      "peak_commit_mib_median": 84.46875,
+      "peak_commit_mib_min": 84.44921875,
+      "peak_commit_mib_max": 84.7109375,
+      "peak_working_mib_n": 3,
+      "peak_working_mib_median": 109.171875,
+      "peak_working_mib_min": 108.14453125,
+      "peak_working_mib_max": 109.3125
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "output_index",
+      "n": 3,
+      "repeats": [
+        1,
+        2,
+        3
+      ],
+      "condition": {
+        "pps": 1000,
+        "tau": 300,
+        "kind": "point",
+        "sources": 26,
+        "sg": 26,
+        "length": 1200,
+        "flow": 40,
+        "conc": 20,
+        "slices": 1,
+        "speed": 1,
+        "sc": 4,
+        "workers": 14,
+        "hot": false,
+        "buildings": 0,
+        "adaptive": 0,
+        "transient": false,
+        "id": "neutral_sg26_t14",
+        "purpose": "Controlled worker scaling",
+        "particles": 300000,
+        "nx": 60,
+        "ny": 60,
+        "source_counts": {
+          "point": 26
+        },
+        "vertical_flow_layers": 40,
+        "situations": 1,
+        "weather": [
+          [
+            9,
+            1,
+            4
+          ]
+        ],
+        "total_output_slots": 93600
+      },
+      "wall_s_n": 3,
+      "wall_s_median": 3.566850600007456,
+      "wall_s_min": 3.555514599996968,
+      "wall_s_max": 3.621245000002091,
+      "cpu_s_n": 3,
+      "cpu_s_median": 31.890625,
+      "cpu_s_min": 31.46875,
+      "cpu_s_max": 31.953125,
+      "peak_commit_mib_n": 3,
+      "peak_commit_mib_median": 84.3046875,
+      "peak_commit_mib_min": 84.26953125,
+      "peak_commit_mib_max": 85.03125,
+      "peak_working_mib_n": 3,
+      "peak_working_mib_median": 109.0234375,
+      "peak_working_mib_min": 108.84375,
+      "peak_working_mib_max": 109.11328125
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "static_update",
+      "n": 3,
+      "repeats": [
+        1,
+        2,
+        3
+      ],
+      "condition": {
+        "pps": 1000,
+        "tau": 300,
+        "kind": "point",
+        "sources": 26,
+        "sg": 26,
+        "length": 1200,
+        "flow": 40,
+        "conc": 20,
+        "slices": 1,
+        "speed": 1,
+        "sc": 4,
+        "workers": 14,
+        "hot": false,
+        "buildings": 0,
+        "adaptive": 0,
+        "transient": false,
+        "id": "neutral_sg26_t14",
+        "purpose": "Controlled worker scaling",
+        "particles": 300000,
+        "nx": 60,
+        "ny": 60,
+        "source_counts": {
+          "point": 26
+        },
+        "vertical_flow_layers": 40,
+        "situations": 1,
+        "weather": [
+          [
+            9,
+            1,
+            4
+          ]
+        ],
+        "total_output_slots": 93600
+      },
+      "wall_s_n": 3,
+      "wall_s_median": 3.527876100008143,
+      "wall_s_min": 3.5128112000093097,
+      "wall_s_max": 3.544877500011353,
+      "cpu_s_n": 3,
+      "cpu_s_median": 31.59375,
+      "cpu_s_min": 31.34375,
+      "cpu_s_max": 31.6875,
+      "peak_commit_mib_n": 3,
+      "peak_commit_mib_median": 49.79296875,
+      "peak_commit_mib_min": 49.3046875,
+      "peak_commit_mib_max": 49.97265625,
+      "peak_working_mib_n": 3,
+      "peak_working_mib_median": 74.3125,
+      "peak_working_mib_min": 73.9609375,
+      "peak_working_mib_max": 74.8046875
+    },
+    {
+      "tag": "ablation_clean",
+      "case": "neutral_sg26_t14",
+      "variant": "combined",
+      "n": 3,
+      "repeats": [
+        1,
+        2,
+        3
+      ],
+      "condition": {
+        "pps": 1000,
+        "tau": 300,
+        "kind": "point",
+        "sources": 26,
+        "sg": 26,
+        "length": 1200,
+        "flow": 40,
+        "conc": 20,
+        "slices": 1,
+        "speed": 1,
+        "sc": 4,
+        "workers": 14,
+        "hot": false,
+        "buildings": 0,
+        "adaptive": 0,
+        "transient": false,
+        "id": "neutral_sg26_t14",
+        "purpose": "Controlled worker scaling",
+        "particles": 300000,
+        "nx": 60,
+        "ny": 60,
+        "source_counts": {
+          "point": 26
+        },
+        "vertical_flow_layers": 40,
+        "situations": 1,
+        "weather": [
+          [
+            9,
+            1,
+            4
+          ]
+        ],
+        "total_output_slots": 93600
+      },
+      "wall_s_n": 3,
+      "wall_s_median": 3.5535979000123916,
+      "wall_s_min": 3.5344171000033384,
+      "wall_s_max": 3.5611539999954402,
+      "cpu_s_n": 3,
+      "cpu_s_median": 31.46875,
+      "cpu_s_min": 31.0625,
+      "cpu_s_max": 31.953125,
+      "peak_commit_mib_n": 3,
+      "peak_commit_mib_median": 50.14453125,
+      "peak_commit_mib_min": 49.32421875,
+      "peak_commit_mib_max": 50.5078125,
+      "peak_working_mib_n": 3,
+      "peak_working_mib_median": 74.78515625,
+      "peak_working_mib_min": 74.2578125,
+      "peak_working_mib_max": 75.36328125
+    }
+  ],
+  "callouts": [
+    {
+      "case": "sparse_sg99_fine9_t4",
+      "column": 0,
+      "text": "Grouped output: 47.0% less time than dictionary",
+      "paired_change_pct_median": -47.02897814450782
+    },
+    {
+      "case": "sparse_sg99_fine9_t4",
+      "column": 1,
+      "text": "Grouped output: 77.5% less memory than dense",
+      "paired_change_pct_median": -77.47080342246645
+    },
+    {
+      "case": "neutral_sg26_t14",
+      "column": 0,
+      "text": "Both changes: 63.6% more time than dense",
+      "paired_change_pct_median": 63.63347427267778
+    },
+    {
+      "case": "neutral_sg26_t14",
+      "column": 1,
+      "text": "Both changes: 3.0% less memory than dense",
+      "paired_change_pct_median": -3.0218327415577506
+    }
+  ],
+  "png_sha256": "9801b0f5b81da7c2080eec1440c594d1948044422d9abe96d44d5cd7df819e06",
+  "svg_sha256": "d253d673c12939cc21e72376b427ab215715f3aa7edc503dac231428c01fb839",
+  "method": "Median bars; wall-time whiskers show the observed min/max. Callouts use within-repeat percentage-change medians from the analysis, not ratios of bar medians."
+}

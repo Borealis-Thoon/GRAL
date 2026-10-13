@@ -1,0 +1,66 @@
+{
+  "scope": "Independent read-only design and prior-result review; no engine execution or build performed by this reviewer.",
+  "checked_at": "2026-10-14",
+  "base_verification": {
+    "live_branch_api": "https://api.github.com/repos/GralDispersionModel/GRAL/branches/V2701",
+    "live_v2701_tip": "e3336e8e901d5f49f20fa3a954a08463517bf61d",
+    "pull64_base_snapshot": "5f3983090053188de6b505900d45343ee8fec434",
+    "pull64_head": "003b00e60ebe9f0c5acc7377ed155c3271b4d8c9",
+    "developer_branch": "7d4366a6ac16f58a5d28f166e272e59247362630",
+    "compare": {"from": "e3336e8e901d5f49f20fa3a954a08463517bf61d", "to": "5f3983090053188de6b505900d45343ee8fec434", "status": "behind", "ahead_by": 0, "behind_by": 10},
+    "intervening_changes": ["Unused-local cleanup", "Residual seed identity", "Residual split bound", "Source lookup binary search", "Null receptor-map protection"],
+    "decision": "Keep common e3336e8 foundation and apply only PR64 diff there. The PR base SHA is older than the actual branch tip; it is not a newly changed upstream implementation."
+  },
+  "prior_results_review": {
+    "valid_evidence": [
+      "Whole native-process wall time and peak process commit are reported separately from instrumented attribution runs.",
+      "Invalid raw-dictionary transient outputs are excluded from performance claims.",
+      "Same-base double and dictionary comparisons avoid unrelated merged source-selection/residual changes.",
+      "Prior native cases use realistic particle rates and increase grid/group/height/source load.",
+      "Reported source-group count and external label limits distinguish actual reader restrictions from dictionary key support."
+    ],
+    "remaining_decision_gaps": [
+      "Previous output-scan and closure-allocation explanations were profiling hypotheses; test each change independently before causal performance claims.",
+      "The 99-group, nine-height sparse case alone cannot justify a global default or automatic threshold.",
+      "Three measured runs establish large consistent effects but not stable tiny percentage improvements; repeat only close or noisy cases.",
+      "Store process commit, working set and GC allocated bytes as separate quantities. Do not infer retained heap or dictionary-entry overhead from peak commit alone.",
+      "No absolute deterministic guarantee follows from double accumulation; retain measured transient equality/error figures.",
+      "A reduced writer scan can affect output cache lifetime; test successive writes and formats explicitly."
+    ]
+  },
+  "minimal_test_plan": {
+    "variants": ["double", "dictionary_fixed", "output_index", "static_update", "combined"],
+    "first_stage": {
+      "cases": ["sparse_sg99_fine9_t4", "neutral_sg26_t14"],
+      "reason": "Separate repeated full-output scans from update allocation/contention on two dominant adverse cases.",
+      "warmups": 1,
+      "measured_repeats": 3,
+      "runs": 40
+    },
+    "second_stage": {
+      "variants": ["double", "dictionary_fixed", "combined"],
+      "cases": ["neutral_sg26_t1", "neutral_sg26_t4", "same spatial/group layout as sparse99 with one output height", "transient_three_t1", "transient_three_t4"],
+      "warmups": 1,
+      "measured_repeats": 3,
+      "runs": 60,
+      "purpose": "Check worker scaling, output-height dependence and residual contribution preservation."
+    },
+    "focused_checks": [
+      "Reuse the actual compiled-DLL 84-output checks for new variants; retain -1, -2, -3 headers, centre/upper/lower masks, external SG labels and internal indices.",
+      "Exercise two successive writer cycles with changed dictionary keys/values to detect stale cached group/slice indexing.",
+      "Check output index construction/release does not alter central, upper or lower dictionaries or building-volume correction order.",
+      "For static AddOrUpdate callbacks, verify retry factories remain side-effect-free and each mass-times-dt addition uses the original double operation order.",
+      "If combination changes one-worker transient outputs, investigate before timing or publication."
+    ],
+    "execution_controls": ["Non-overlapping native timing windows", "Rotating variant order", "Per-process 120-second timeout", "Per-batch at most 840 seconds", "Outputs finite, complete and nonnegative", "Same-case same-repeat paired comparisons", "Warmups excluded"]
+  },
+  "recommendation_rules": [
+    "Recommend the simple double array if dictionary follow-ups retain substantial cost across ordinary grids without offsetting memory benefit.",
+    "Recommend a corrected sparse implementation for memory-heavy grids if output indexing removes most large-case overhead while maintaining result preservation.",
+    "Prefer staged maintainer review of fixes and independent optimizations over a speculative automatic selector: thresholds require broader retained-memory and occupancy evidence.",
+    "Ask the maintainer whether to retain the array default plus optional sparse storage, or first refine the sparse branch further; indicate willingness to follow the preferred direction.",
+    "Mention source-group expansion as a separate small reader/ID change only; do not imply the dictionary alone removes existing limits."
+  ],
+  "comment_outline": ["Thank the developer and answer the proposed approach directly.", "Give two representative timing/memory results and the tested workload range.", "State newly demonstrated independent optimization effects using measured values.", "Mention the reproduced residual/odour fixes briefly and link patch/evidence.", "Recommend a concrete implementation path with one reasonable alternative and ask which is preferred."],
+  "files_modified_by_this_reviewer": ["qa/followup_review.json"]
+}

@@ -1,0 +1,73 @@
+{
+  "status": "pass",
+  "fresh_source_restore": true,
+  "four_source_hash_sets_verified": true,
+  "fresh_build_count": 4,
+  "smoke_runs": 4,
+  "purpose": "reproduction validation; excluded from performance summaries",
+  "matches": [
+    {
+      "variant": "float",
+      "status": "pass",
+      "matching_native_repeats": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "payload_fields": 1
+    },
+    {
+      "variant": "double",
+      "status": "pass",
+      "matching_native_repeats": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "payload_fields": 1
+    },
+    {
+      "variant": "dictionary",
+      "status": "pass",
+      "matching_native_repeats": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "payload_fields": 1
+    },
+    {
+      "variant": "dictionary_fixed",
+      "status": "pass",
+      "matching_native_repeats": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "payload_fields": 1
+    }
+  ],
+  "builds": [
+    {
+      "variant": "float",
+      "sha256": "e740e1608b66dccc6754fcb8e5b884f29d36ab3a715139ec5bfc025f4dc690b7"
+    },
+    {
+      "variant": "double",
+      "sha256": "08bc44e23b66e6231b98d30efa28f3ba66e7b62a8e94304e308e048b8e2f3c01"
+    },
+    {
+      "variant": "dictionary",
+      "sha256": "d7ccd377553fa506371d39471ec897b77cb06bcf4c0e8338b8a4e6a0b971f0cd"
+    },
+    {
+      "variant": "dictionary_fixed",
+      "sha256": "d07619fc279b215bbea7594e41bc315470fa471485eaed5ff08e8769334e77e3"
+    }
+  ],
+  "script_sha256": "8cff183fccd435ea718857d53561a847aad2bfb80f1928dbe6eb404ac93f942c"
+}

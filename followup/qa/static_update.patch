@@ -1,0 +1,60 @@
+diff --git a/src/Zeitschleife.cs b/src/Zeitschleife.cs
+--- a/src/Zeitschleife.cs
++++ b/src/Zeitschleife.cs
+@@ -2178,7 +2178,7 @@
+                         if ((kko[II] == 0) && (reflexion_flag == Consts.ParticleNotReflected))
+                         {
+                             var key = (iko, jko, II, SG_nteil);
+-                            Program.Concentration2D.AddOrUpdate(key, masse * idt, (key, oldvalue) => oldvalue + masse * idt);
++                            Program.Concentration2D.AddOrUpdate(key, static (key, amount) => amount, static (key, oldvalue, amount) => oldvalue + amount, masse * idt);
+                         }
+                     }
+ 
+@@ -2213,7 +2213,7 @@
+                             if ((kko[II] == 0) && (reflexion_flag == Consts.ParticleNotReflected))
+                             {
+                                 var key = (iko, jko, II, SG_nteil);
+-                                Program.Concentration2D_P.AddOrUpdate(key, masse * idt, (key, oldvalue) => oldvalue + masse * idt);
++                                Program.Concentration2D_P.AddOrUpdate(key, static (key, amount) => amount, static (key, oldvalue, amount) => oldvalue + amount, masse * idt);
+                             }
+                         }
+                         for (int II = 0; II < kko.Length; II++)
+@@ -2226,7 +2226,7 @@
+                             if ((kko[II] == 0) && (reflexion_flag == Consts.ParticleNotReflected))
+                             {
+                                 var key = (iko, jko, II, SG_nteil);
+-                                Program.Concentration2D_M.AddOrUpdate(key, masse * idt, (key, oldvalue) => oldvalue + masse * idt);
++                                Program.Concentration2D_M.AddOrUpdate(key, static (key, amount) => amount, static (key, oldvalue, amount) => oldvalue + amount, masse * idt);
+                             }
+                         }
+                     }
+diff --git a/src/Zeitschleife_nonsteadystate.cs b/src/Zeitschleife_nonsteadystate.cs
+--- a/src/Zeitschleife_nonsteadystate.cs
++++ b/src/Zeitschleife_nonsteadystate.cs
+@@ -1216,7 +1216,7 @@
+                         if ((kko[II] == 0) && (reflexion_flag == Consts.ParticleNotReflected))
+                         {
+                             var key = (iko, jko, II, SG_nteil);
+-                            Program.Concentration2D.AddOrUpdate(key, masse * idt, (key, oldvalue) => oldvalue + masse * idt);
++                            Program.Concentration2D.AddOrUpdate(key, static (key, amount) => amount, static (key, oldvalue, amount) => oldvalue + amount, masse * idt);
+                         }
+                     }
+ 
+@@ -1248,7 +1248,7 @@
+                             if ((kko[II] == 0) && (reflexion_flag == Consts.ParticleNotReflected))
+                             {
+                                 var key = (iko, jko, II, SG_nteil);
+-                                Program.Concentration2D_P.AddOrUpdate(key, masse * idt, (key, oldvalue) => oldvalue + masse * idt);
++                                Program.Concentration2D_P.AddOrUpdate(key, static (key, amount) => amount, static (key, oldvalue, amount) => oldvalue + amount, masse * idt);
+                             }
+                         }
+                         for (int II = 0; II < kko.Length; II++)
+@@ -1261,7 +1261,7 @@
+                             if ((kko[II] == 0) && (reflexion_flag == Consts.ParticleNotReflected))
+                             {
+                                 var key = (iko, jko, II, SG_nteil);
+-                                Program.Concentration2D_M.AddOrUpdate(key, masse * idt, (key, oldvalue) => oldvalue + masse * idt);
++                                Program.Concentration2D_M.AddOrUpdate(key, static (key, amount) => amount, static (key, oldvalue, amount) => oldvalue + amount, masse * idt);
+                             }
+                         }
+                     }

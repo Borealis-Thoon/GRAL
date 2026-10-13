@@ -1,0 +1,172 @@
+{
+  "scope": "Read-only adversarial source review plus explicitly authorized minimal fixes in dictionary_fixed only. No build or benchmark was executed by this reviewer.",
+  "base": "e3336e8e901d5f49f20fa3a954a08463517bf61d",
+  "developer": "7d4366a6ac16f58a5d28f166e272e59247362630",
+  "pr64_patch": "003b00e60ebe9f0c5acc7377ed155c3271b4d8c9",
+  "comparison_design": {
+    "recommended": "base, base plus PR64 single patch commit, developer branch (direct child of base), and separately labeled developer branch plus diagnostic fixes",
+    "avoid": "Do not benchmark the old PR64 HEAD directly against current developer HEAD; merged residual seeding/splitting and source selection changes would confound results."
+  },
+  "confirmed_regressions": [
+    {
+      "id": "D01",
+      "severity": "high",
+      "title": "Clearing central concentrations discards all residual-particle contributions",
+      "locations": [
+        "src/ProgramFunctions.cs:1172",
+        "src/Program.cs:711",
+        "src/Program.cs:724",
+        "src/Zeitschleife_nonsteadystate.cs:1219"
+      ],
+      "mechanism": "ParallelTransientParticleDriver runs first; ParallelParticleDriver subsequently clears the dictionary before newly emitted particles. Main output excludes carried particles in every transient weather step with residual mass. Receptors, upper/lower odour fields and deposition are not cleared here.",
+      "focused_test": "At least two weather steps, low wind, positive carryover, second step zero or greatly reduced emissions; compare central fields and receptor/carryover output.",
+      "local_fix": "Remove the redundant Clear at the start of ParallelParticleDriver. All three dictionaries are initialized empty and cleared at the end of Write2DConcentrations; previous output thread is joined before particle work."
+    },
+    {
+      "id": "D02",
+      "severity": "high",
+      "title": "Odour output mask changed from the central slice to the upper slice",
+      "locations": [
+        "src/Write2DConcentrations.cs:773",
+        "src/Write2DConcentrations.cs:793",
+        "src/Write2DConcentrations.cs:848",
+        "src/Write2DConcentrations.cs:922"
+      ],
+      "mechanism": "TempConcArray contains upper-slice concentration in odour writers. Using it for the inclusion condition suppresses central-only cells and includes upper-only cells, unlike the existing central concentration mask. Sparse output support changes; dense -3 output zeroes or populates different cells.",
+      "focused_test": "Direct central-only, upper-only, lower-only and mixed cells in regular, -2 and -3 output; include zipped/unzipped paths and float-underflow central values.",
+      "local_fix": "Restore the central field inclusion condition using TryGetValue and cast to float before comparing against zero. Soundplan full-field path stays unchanged."
+    },
+    {
+      "id": "D03",
+      "severity": "high",
+      "title": "Removal of null receptor-map guard can silently stop particle callbacks",
+      "locations": [
+        "src/Zeitschleife.cs:2139",
+        "src/ReadReceptors.cs:73",
+        "src/Input_rez.cs:27",
+        "src/ProgramFunctions.cs:1192"
+      ],
+      "mechanism": "When ReceptorsAvailable is true but Receptor.dat is absent, ReadReceptors reports the absence without disabling the flag, and Input_rez does not create a map. Newly removed guard permits a null TryGetValue call. The enclosing driver catches exceptions, allowing incomplete output.",
+      "focused_test": "Flag receptors available while omitting Receptor.dat; compare baseline, developer and fixed total concentrations.",
+      "local_fix": "Restore the existing GridCellReceptors != null guard in Zeitschleife."
+    },
+    {
+      "id": "D04",
+      "severity": "build",
+      "title": "Two removed unused locals were reintroduced",
+      "locations": [
+        "src/Zeitschleife.cs:428",
+        "src/Zeitschleife.cs:609"
+      ],
+      "mechanism": "constA and varwu are declared and assigned but never used. Expected CS0219 errors under warnings-as-errors; root will verify with strict build.",
+      "focused_test": "Strict Release build of unmodified and fixed developer variants.",
+      "local_fix": "Remove only constA and varwu declarations."
+    }
+  ],
+  "semantic_differences_not_local_fixes": [
+    {
+      "id": "S01",
+      "locations": [
+        "src/ProgramDeclarations.cs:1123",
+        "src/ProgramDeclarations.cs:1127",
+        "src/Zeitschleife.cs:2216",
+        "src/Zeitschleife.cs:2229"
+      ],
+      "finding": "Developer branch accumulates central, upper and lower concentration in double. PR64 changes central concentration only; upper/lower remain float. Therefore odour numeric differences can be intentional precision changes, independent of D02 support regression."
+    },
+    {
+      "id": "S02",
+      "locations": [
+        "src/ProgramFunctions.cs:1509",
+        "src/ProgramFunctions.cs:1583",
+        "src/Write2DConcentrations.cs:357"
+      ],
+      "finding": "Developer applies building volume multiplication to the double total before its final float cast. PR64 casts to float in TransferConcentrations first and multiplies in float. Building output need not be bit-identical even with one worker. Test both equal and different flow/concentration grid spacing."
+    }
+  ],
+  "concurrency_and_lifetime": [
+    "AddOrUpdate callbacks only return oldvalue plus mass*dt. Retries have no external side effect and each completed call makes one logical update; no obvious lost-update race in the accumulator.",
+    "The captured mass and timestep do not change before the synchronous AddOrUpdate returns. This does not make the floating addition order deterministic across workers.",
+    "Output conversion iterates dictionaries after particle drivers have completed. The single 2D-output writer reuses TempConcArray sequentially; Program.cs:627-637 waits for that writer before next particle work. No new scratch-array concurrency issue found.",
+    "Volume correction partitions each horizontal cell once, after accumulation. ContainsKey followed by AddOrUpdate is redundant work but no active-removal race exists in this lifecycle.",
+    "The new tuple keys contain four int fields; no packed-key truncation or source-group hash aliasing follows from this change."
+  ],
+  "memory_and_costs": [
+    {
+      "locations": [
+        "src/ProgramFunctions.cs:531"
+      ],
+      "finding": "Depo_conz remains an always-allocated dense double[NXL+2][NYL+2][SourceGroups.Count] even when this patch removes the central concentration array."
+    },
+    {
+      "locations": [
+        "src/LoadAndDefineTransientPresets.cs:83",
+        "src/LoadAndDefineTransientPresets.cs:86"
+      ],
+      "finding": "Both transient Conz4d and Conz5d remain dense float grids with SourceGroups.Count+1, so total transient memory cannot scale solely with concentration dictionary occupancy."
+    },
+    {
+      "locations": [
+        "src/Write2DConcentrations.cs:344",
+        "src/Write2DConcentrations.cs:353",
+        "src/Write2DConcentrations.cs:774",
+        "src/Write2DConcentrations.cs:831",
+        "src/Write2DConcentrations.cs:907"
+      ],
+      "finding": "Every source-group/slice conversion scans every stored dictionary entry. Each odour writer also allocates a fresh second horizontal scratch grid. Assess output and full-process time for dense occupancy, multiple slices and many groups."
+    },
+    {
+      "locations": [
+        "src/Zeitschleife.cs:2181",
+        "src/Zeitschleife_nonsteadystate.cs:1219"
+      ],
+      "finding": "Every update performs hashing/concurrent-dictionary operations and invokes a captured lambda; allocation/GC and contention cost should be measured on sparse and dense workloads. Source alone does not establish net speed or memory benefit."
+    }
+  ],
+  "existing_source_group_limits": {
+    "geometry": "ReadGeometryAndDomains.cs:166 accepts int labels and no explicit 99 group count check.",
+    "tuple": "Concentration dictionaries key by int internal index, not byte or packed source labels.",
+    "count_limit": {
+      "finding": "All four source readers retain double[101] emission_sourcegroup. An internal index >=101 or the final all-group reporting loop with >=102 groups exceeds this array. This affects base, PR64 and developer alike.",
+      "locations": [
+        "src/ReadPointSources.cs:34,90,223",
+        "src/ReadAreaSources.cs:31,77,198",
+        "src/ReadLinieSources.cs:31,90,216",
+        "src/ReadTunnelportals.cs:32,78,220"
+      ]
+    },
+    "label_limit": {
+      "finding": "All source group storage arrays and ParticleSG are byte arrays; source labels are explicitly cast to byte. Labels above 255 may truncate and alias an existing label before the int dictionary sees them.",
+      "locations": [
+        "src/ProgramDeclarations.cs:671,759,819,907,943",
+        "src/ReadPointSources.cs:195",
+        "src/ReadAreaSources.cs:174",
+        "src/ReadLinieSources.cs:192",
+        "src/ReadTunnelportals.cs:192"
+      ]
+    },
+    "recommended_cases": [
+      "Supported noncontiguous labels 1,99,100,255 (four groups)",
+      "99 groups for main performance stress",
+      "108 groups as existing reader-limit diagnostic",
+      "labels 1,257 as existing byte-truncation diagnostic, not a dictionary regression"
+    ]
+  },
+  "local_fix": {
+    "path": "prior\\qa\\dictionary_fixed.patch",
+    "files": [
+      "src/ProgramFunctions.cs",
+      "src/Write2DConcentrations.cs",
+      "src/Zeitschleife.cs"
+    ],
+    "diff_check": "pass",
+    "build": "pending root verification",
+    "benchmarks": "none run by this reviewer",
+    "sha256": "3e1d1adac796ece6f3d4a7e81ab917452b188b9710362f5a9f193194cca180fa",
+    "numstat": [
+      "0\t1\tsrc/ProgramFunctions.cs",
+      "3\t3\tsrc/Write2DConcentrations.cs",
+      "3\t3\tsrc/Zeitschleife.cs"
+    ]
+  }
+}

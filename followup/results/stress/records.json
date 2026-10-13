@@ -1,0 +1,3050 @@
+[
+  {
+    "case": "terrain_stable_area_t8",
+    "variant": "double",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 2.0656673000048613,
+    "cpu_s": 13.921875,
+    "pid": 62596,
+    "memory": {
+      "PeakWorkingSetSize": 87015424,
+      "PeakPagefileUsage": 63057920,
+      "PrivateUsage": 60690432,
+      "WorkingSetSize": 84852736
+    },
+    "memory_samples": 199,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299988
+    ],
+    "actual_particles_per_s": [
+      999.96
+    ],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 26,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "bcaee9b027cf5529953c9877330e133ce1ecabc4a54cd0d54f960f5b3816ca78",
+      "00001.grz:00001-102.con": "35cff8bb0b51baa0d290f7db2fdf4b9ee54e3b805dcf23da3ea5a18205a96f68",
+      "00001.grz:00001-103.con": "f1c655b4c51f23a21f57f5a8ddb0c89f17484583c7d0a832ba0ba2711d84ac8e",
+      "00001.grz:00001-104.con": "c5fad2f3041d95fbefcc7627e5611e222b8ef1e36f0b64ba64bedccc37815b75",
+      "00001.grz:00001-105.con": "408fc1c68f562e1735b1956a549229646bdba1799964a43d4c9f20c73fddb567",
+      "00001.grz:00001-106.con": "f894edc976d136bd0557c20c510528e6a458ca2124eedfd27ca39b3684b2c6b6",
+      "00001.grz:00001-107.con": "5e162e42eccf6b24e8a4ec75da8fd7801c10331bb9692907776b6ba26d7ccf6f",
+      "00001.grz:00001-108.con": "2d26146db48e7956a5b4b9f4de694a1ce48fcb008d3093f2b4060ec5e2c44cb6",
+      "00001.grz:00001-109.con": "5d8210a29b7ece02390049b7886e153bcbd30dafe326f9739bc234d0e926e3d6",
+      "00001.grz:00001-110.con": "0459543c6ecc365ba91dc9ecf34e5cc2cceb2bef1a3c38bcfc20d1192ae5928f",
+      "00001.grz:00001-111.con": "03856c3a8264bb9aef98a2a7b4ec2307244dc85a941c4f7e739c40b28d7c2be1",
+      "00001.grz:00001-112.con": "0aecc35d5996f8de2f0f3fef2031eec7d78dcc5ed743087294afb03d7e4aca1b",
+      "00001.grz:00001-113.con": "72bdab4f98ce010e0d4eb01aa15728a9a3f51718172468699d5253d302a1f157",
+      "00001.grz:00001-114.con": "d23d6f755aec8ea2daa02fc9ecf5e35ba52a5bb065498697d85de1dac3e5a3f4",
+      "00001.grz:00001-115.con": "e36c0d023ede50b7a278b48ea05e530bb11d69eb793d5984bfdb7e78c13e7ff1",
+      "00001.grz:00001-116.con": "ccfc5de3b6b2ca61d6a1e762c467a7b0316b1f69f84b4d40297cc1864455a66c",
+      "00001.grz:00001-117.con": "f6670ff532a5faa6ad91fdf930fe7a87d7ac258a4c9eb56dbf38ce1ee1b28917",
+      "00001.grz:00001-118.con": "6e1ea6d23f7c53d6aa3fe6c1291036af726f70fbcb416b438812a6c04d8a8f97",
+      "00001.grz:00001-119.con": "092b6ddd5374c7b045f86299b55cf684abe3bf9ee02e875fc6c9271ec911d50d",
+      "00001.grz:00001-120.con": "8219f1617312a84215cb57bc56be3ec4bde2cf32947fa7d2caf0cdc67489b428",
+      "00001.grz:00001-121.con": "02e215c35516a86527ecb9dac00af8519fe4c5584022513d227ca4f0a808ed3e",
+      "00001.grz:00001-122.con": "33b4339422d82ce88052b33a926185bfe1690189e23381f34871de68beca885e",
+      "00001.grz:00001-123.con": "9d30766d8b843f1dc39106e2ae8d159cdbe52f1ff12ab856040878bc54e8dd33",
+      "00001.grz:00001-124.con": "c5dfdc85bd7fb79e611f5b7d56634673549039551575225d5137f736e60d5f99",
+      "00001.grz:00001-125.con": "21288461d6fa450c814942ffba760ba5c1f300245b1605c9f7655671f37093cb",
+      "00001.grz:00001-126.con": "09fc62dca8b5c69dbb613c5deecc423c37316723195a1acf0d920add50c2957d"
+    },
+    "situation_sums": {
+      "00001.grz": 1136089.0112754588
+    },
+    "nonzero_values": 5961,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 93600,
+    "occupied_fraction": 0.06368589743589743,
+    "issues": []
+  },
+  {
+    "case": "terrain_stable_area_t8",
+    "variant": "dictionary_fixed",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 2.388309500005562,
+    "cpu_s": 16.28125,
+    "pid": 61332,
+    "memory": {
+      "PeakWorkingSetSize": 121462784,
+      "PeakPagefileUsage": 96178176,
+      "PrivateUsage": 96169984,
+      "WorkingSetSize": 120958976
+    },
+    "memory_samples": 230,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299988
+    ],
+    "actual_particles_per_s": [
+      999.96
+    ],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 26,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "bcaee9b027cf5529953c9877330e133ce1ecabc4a54cd0d54f960f5b3816ca78",
+      "00001.grz:00001-102.con": "35cff8bb0b51baa0d290f7db2fdf4b9ee54e3b805dcf23da3ea5a18205a96f68",
+      "00001.grz:00001-103.con": "f1c655b4c51f23a21f57f5a8ddb0c89f17484583c7d0a832ba0ba2711d84ac8e",
+      "00001.grz:00001-104.con": "c5fad2f3041d95fbefcc7627e5611e222b8ef1e36f0b64ba64bedccc37815b75",
+      "00001.grz:00001-105.con": "408fc1c68f562e1735b1956a549229646bdba1799964a43d4c9f20c73fddb567",
+      "00001.grz:00001-106.con": "f894edc976d136bd0557c20c510528e6a458ca2124eedfd27ca39b3684b2c6b6",
+      "00001.grz:00001-107.con": "5e162e42eccf6b24e8a4ec75da8fd7801c10331bb9692907776b6ba26d7ccf6f",
+      "00001.grz:00001-108.con": "2d26146db48e7956a5b4b9f4de694a1ce48fcb008d3093f2b4060ec5e2c44cb6",
+      "00001.grz:00001-109.con": "5d8210a29b7ece02390049b7886e153bcbd30dafe326f9739bc234d0e926e3d6",
+      "00001.grz:00001-110.con": "0459543c6ecc365ba91dc9ecf34e5cc2cceb2bef1a3c38bcfc20d1192ae5928f",
+      "00001.grz:00001-111.con": "03856c3a8264bb9aef98a2a7b4ec2307244dc85a941c4f7e739c40b28d7c2be1",
+      "00001.grz:00001-112.con": "0aecc35d5996f8de2f0f3fef2031eec7d78dcc5ed743087294afb03d7e4aca1b",
+      "00001.grz:00001-113.con": "72bdab4f98ce010e0d4eb01aa15728a9a3f51718172468699d5253d302a1f157",
+      "00001.grz:00001-114.con": "d23d6f755aec8ea2daa02fc9ecf5e35ba52a5bb065498697d85de1dac3e5a3f4",
+      "00001.grz:00001-115.con": "e36c0d023ede50b7a278b48ea05e530bb11d69eb793d5984bfdb7e78c13e7ff1",
+      "00001.grz:00001-116.con": "ccfc5de3b6b2ca61d6a1e762c467a7b0316b1f69f84b4d40297cc1864455a66c",
+      "00001.grz:00001-117.con": "f6670ff532a5faa6ad91fdf930fe7a87d7ac258a4c9eb56dbf38ce1ee1b28917",
+      "00001.grz:00001-118.con": "6e1ea6d23f7c53d6aa3fe6c1291036af726f70fbcb416b438812a6c04d8a8f97",
+      "00001.grz:00001-119.con": "092b6ddd5374c7b045f86299b55cf684abe3bf9ee02e875fc6c9271ec911d50d",
+      "00001.grz:00001-120.con": "8219f1617312a84215cb57bc56be3ec4bde2cf32947fa7d2caf0cdc67489b428",
+      "00001.grz:00001-121.con": "02e215c35516a86527ecb9dac00af8519fe4c5584022513d227ca4f0a808ed3e",
+      "00001.grz:00001-122.con": "33b4339422d82ce88052b33a926185bfe1690189e23381f34871de68beca885e",
+      "00001.grz:00001-123.con": "9d30766d8b843f1dc39106e2ae8d159cdbe52f1ff12ab856040878bc54e8dd33",
+      "00001.grz:00001-124.con": "c5dfdc85bd7fb79e611f5b7d56634673549039551575225d5137f736e60d5f99",
+      "00001.grz:00001-125.con": "21288461d6fa450c814942ffba760ba5c1f300245b1605c9f7655671f37093cb",
+      "00001.grz:00001-126.con": "09fc62dca8b5c69dbb613c5deecc423c37316723195a1acf0d920add50c2957d"
+    },
+    "situation_sums": {
+      "00001.grz": 1136089.0112754588
+    },
+    "nonzero_values": 5961,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 93600,
+    "occupied_fraction": 0.06368589743589743,
+    "issues": []
+  },
+  {
+    "case": "terrain_stable_area_t8",
+    "variant": "combined",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 2.368841200004681,
+    "cpu_s": 16.328125,
+    "pid": 49184,
+    "memory": {
+      "PeakWorkingSetSize": 85577728,
+      "PeakPagefileUsage": 59731968,
+      "PrivateUsage": 59654144,
+      "WorkingSetSize": 85024768
+    },
+    "memory_samples": 227,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299988
+    ],
+    "actual_particles_per_s": [
+      999.96
+    ],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 26,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "bcaee9b027cf5529953c9877330e133ce1ecabc4a54cd0d54f960f5b3816ca78",
+      "00001.grz:00001-102.con": "35cff8bb0b51baa0d290f7db2fdf4b9ee54e3b805dcf23da3ea5a18205a96f68",
+      "00001.grz:00001-103.con": "f1c655b4c51f23a21f57f5a8ddb0c89f17484583c7d0a832ba0ba2711d84ac8e",
+      "00001.grz:00001-104.con": "c5fad2f3041d95fbefcc7627e5611e222b8ef1e36f0b64ba64bedccc37815b75",
+      "00001.grz:00001-105.con": "408fc1c68f562e1735b1956a549229646bdba1799964a43d4c9f20c73fddb567",
+      "00001.grz:00001-106.con": "f894edc976d136bd0557c20c510528e6a458ca2124eedfd27ca39b3684b2c6b6",
+      "00001.grz:00001-107.con": "5e162e42eccf6b24e8a4ec75da8fd7801c10331bb9692907776b6ba26d7ccf6f",
+      "00001.grz:00001-108.con": "2d26146db48e7956a5b4b9f4de694a1ce48fcb008d3093f2b4060ec5e2c44cb6",
+      "00001.grz:00001-109.con": "5d8210a29b7ece02390049b7886e153bcbd30dafe326f9739bc234d0e926e3d6",
+      "00001.grz:00001-110.con": "0459543c6ecc365ba91dc9ecf34e5cc2cceb2bef1a3c38bcfc20d1192ae5928f",
+      "00001.grz:00001-111.con": "03856c3a8264bb9aef98a2a7b4ec2307244dc85a941c4f7e739c40b28d7c2be1",
+      "00001.grz:00001-112.con": "0aecc35d5996f8de2f0f3fef2031eec7d78dcc5ed743087294afb03d7e4aca1b",
+      "00001.grz:00001-113.con": "72bdab4f98ce010e0d4eb01aa15728a9a3f51718172468699d5253d302a1f157",
+      "00001.grz:00001-114.con": "d23d6f755aec8ea2daa02fc9ecf5e35ba52a5bb065498697d85de1dac3e5a3f4",
+      "00001.grz:00001-115.con": "e36c0d023ede50b7a278b48ea05e530bb11d69eb793d5984bfdb7e78c13e7ff1",
+      "00001.grz:00001-116.con": "ccfc5de3b6b2ca61d6a1e762c467a7b0316b1f69f84b4d40297cc1864455a66c",
+      "00001.grz:00001-117.con": "f6670ff532a5faa6ad91fdf930fe7a87d7ac258a4c9eb56dbf38ce1ee1b28917",
+      "00001.grz:00001-118.con": "6e1ea6d23f7c53d6aa3fe6c1291036af726f70fbcb416b438812a6c04d8a8f97",
+      "00001.grz:00001-119.con": "092b6ddd5374c7b045f86299b55cf684abe3bf9ee02e875fc6c9271ec911d50d",
+      "00001.grz:00001-120.con": "8219f1617312a84215cb57bc56be3ec4bde2cf32947fa7d2caf0cdc67489b428",
+      "00001.grz:00001-121.con": "02e215c35516a86527ecb9dac00af8519fe4c5584022513d227ca4f0a808ed3e",
+      "00001.grz:00001-122.con": "33b4339422d82ce88052b33a926185bfe1690189e23381f34871de68beca885e",
+      "00001.grz:00001-123.con": "9d30766d8b843f1dc39106e2ae8d159cdbe52f1ff12ab856040878bc54e8dd33",
+      "00001.grz:00001-124.con": "c5dfdc85bd7fb79e611f5b7d56634673549039551575225d5137f736e60d5f99",
+      "00001.grz:00001-125.con": "21288461d6fa450c814942ffba760ba5c1f300245b1605c9f7655671f37093cb",
+      "00001.grz:00001-126.con": "09fc62dca8b5c69dbb613c5deecc423c37316723195a1acf0d920add50c2957d"
+    },
+    "situation_sums": {
+      "00001.grz": 1136089.0112754588
+    },
+    "nonzero_values": 5961,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 93600,
+    "occupied_fraction": 0.06368589743589743,
+    "issues": []
+  },
+  {
+    "case": "terrain_stable_area_t8",
+    "variant": "dictionary_fixed",
+    "repeat": 1,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 2.3883396000019275,
+    "cpu_s": 16.453125,
+    "pid": 32240,
+    "memory": {
+      "PeakWorkingSetSize": 120713216,
+      "PeakPagefileUsage": 95707136,
+      "PrivateUsage": 95637504,
+      "WorkingSetSize": 120107008
+    },
+    "memory_samples": 229,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299988
+    ],
+    "actual_particles_per_s": [
+      999.96
+    ],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 26,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "bcaee9b027cf5529953c9877330e133ce1ecabc4a54cd0d54f960f5b3816ca78",
+      "00001.grz:00001-102.con": "35cff8bb0b51baa0d290f7db2fdf4b9ee54e3b805dcf23da3ea5a18205a96f68",
+      "00001.grz:00001-103.con": "f1c655b4c51f23a21f57f5a8ddb0c89f17484583c7d0a832ba0ba2711d84ac8e",
+      "00001.grz:00001-104.con": "c5fad2f3041d95fbefcc7627e5611e222b8ef1e36f0b64ba64bedccc37815b75",
+      "00001.grz:00001-105.con": "408fc1c68f562e1735b1956a549229646bdba1799964a43d4c9f20c73fddb567",
+      "00001.grz:00001-106.con": "f894edc976d136bd0557c20c510528e6a458ca2124eedfd27ca39b3684b2c6b6",
+      "00001.grz:00001-107.con": "5e162e42eccf6b24e8a4ec75da8fd7801c10331bb9692907776b6ba26d7ccf6f",
+      "00001.grz:00001-108.con": "2d26146db48e7956a5b4b9f4de694a1ce48fcb008d3093f2b4060ec5e2c44cb6",
+      "00001.grz:00001-109.con": "5d8210a29b7ece02390049b7886e153bcbd30dafe326f9739bc234d0e926e3d6",
+      "00001.grz:00001-110.con": "0459543c6ecc365ba91dc9ecf34e5cc2cceb2bef1a3c38bcfc20d1192ae5928f",
+      "00001.grz:00001-111.con": "03856c3a8264bb9aef98a2a7b4ec2307244dc85a941c4f7e739c40b28d7c2be1",
+      "00001.grz:00001-112.con": "0aecc35d5996f8de2f0f3fef2031eec7d78dcc5ed743087294afb03d7e4aca1b",
+      "00001.grz:00001-113.con": "72bdab4f98ce010e0d4eb01aa15728a9a3f51718172468699d5253d302a1f157",
+      "00001.grz:00001-114.con": "d23d6f755aec8ea2daa02fc9ecf5e35ba52a5bb065498697d85de1dac3e5a3f4",
+      "00001.grz:00001-115.con": "e36c0d023ede50b7a278b48ea05e530bb11d69eb793d5984bfdb7e78c13e7ff1",
+      "00001.grz:00001-116.con": "ccfc5de3b6b2ca61d6a1e762c467a7b0316b1f69f84b4d40297cc1864455a66c",
+      "00001.grz:00001-117.con": "f6670ff532a5faa6ad91fdf930fe7a87d7ac258a4c9eb56dbf38ce1ee1b28917",
+      "00001.grz:00001-118.con": "6e1ea6d23f7c53d6aa3fe6c1291036af726f70fbcb416b438812a6c04d8a8f97",
+      "00001.grz:00001-119.con": "092b6ddd5374c7b045f86299b55cf684abe3bf9ee02e875fc6c9271ec911d50d",
+      "00001.grz:00001-120.con": "8219f1617312a84215cb57bc56be3ec4bde2cf32947fa7d2caf0cdc67489b428",
+      "00001.grz:00001-121.con": "02e215c35516a86527ecb9dac00af8519fe4c5584022513d227ca4f0a808ed3e",
+      "00001.grz:00001-122.con": "33b4339422d82ce88052b33a926185bfe1690189e23381f34871de68beca885e",
+      "00001.grz:00001-123.con": "9d30766d8b843f1dc39106e2ae8d159cdbe52f1ff12ab856040878bc54e8dd33",
+      "00001.grz:00001-124.con": "c5dfdc85bd7fb79e611f5b7d56634673549039551575225d5137f736e60d5f99",
+      "00001.grz:00001-125.con": "21288461d6fa450c814942ffba760ba5c1f300245b1605c9f7655671f37093cb",
+      "00001.grz:00001-126.con": "09fc62dca8b5c69dbb613c5deecc423c37316723195a1acf0d920add50c2957d"
+    },
+    "situation_sums": {
+      "00001.grz": 1136089.0112754588
+    },
+    "nonzero_values": 5961,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 93600,
+    "occupied_fraction": 0.06368589743589743,
+    "issues": []
+  },
+  {
+    "case": "terrain_stable_area_t8",
+    "variant": "combined",
+    "repeat": 1,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 2.4416232999938074,
+    "cpu_s": 16.75,
+    "pid": 59824,
+    "memory": {
+      "PeakWorkingSetSize": 85311488,
+      "PeakPagefileUsage": 59588608,
+      "PrivateUsage": 59576320,
+      "WorkingSetSize": 84676608
+    },
+    "memory_samples": 234,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299988
+    ],
+    "actual_particles_per_s": [
+      999.96
+    ],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 26,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "bcaee9b027cf5529953c9877330e133ce1ecabc4a54cd0d54f960f5b3816ca78",
+      "00001.grz:00001-102.con": "35cff8bb0b51baa0d290f7db2fdf4b9ee54e3b805dcf23da3ea5a18205a96f68",
+      "00001.grz:00001-103.con": "f1c655b4c51f23a21f57f5a8ddb0c89f17484583c7d0a832ba0ba2711d84ac8e",
+      "00001.grz:00001-104.con": "c5fad2f3041d95fbefcc7627e5611e222b8ef1e36f0b64ba64bedccc37815b75",
+      "00001.grz:00001-105.con": "408fc1c68f562e1735b1956a549229646bdba1799964a43d4c9f20c73fddb567",
+      "00001.grz:00001-106.con": "f894edc976d136bd0557c20c510528e6a458ca2124eedfd27ca39b3684b2c6b6",
+      "00001.grz:00001-107.con": "5e162e42eccf6b24e8a4ec75da8fd7801c10331bb9692907776b6ba26d7ccf6f",
+      "00001.grz:00001-108.con": "2d26146db48e7956a5b4b9f4de694a1ce48fcb008d3093f2b4060ec5e2c44cb6",
+      "00001.grz:00001-109.con": "5d8210a29b7ece02390049b7886e153bcbd30dafe326f9739bc234d0e926e3d6",
+      "00001.grz:00001-110.con": "0459543c6ecc365ba91dc9ecf34e5cc2cceb2bef1a3c38bcfc20d1192ae5928f",
+      "00001.grz:00001-111.con": "03856c3a8264bb9aef98a2a7b4ec2307244dc85a941c4f7e739c40b28d7c2be1",
+      "00001.grz:00001-112.con": "0aecc35d5996f8de2f0f3fef2031eec7d78dcc5ed743087294afb03d7e4aca1b",
+      "00001.grz:00001-113.con": "72bdab4f98ce010e0d4eb01aa15728a9a3f51718172468699d5253d302a1f157",
+      "00001.grz:00001-114.con": "d23d6f755aec8ea2daa02fc9ecf5e35ba52a5bb065498697d85de1dac3e5a3f4",
+      "00001.grz:00001-115.con": "e36c0d023ede50b7a278b48ea05e530bb11d69eb793d5984bfdb7e78c13e7ff1",
+      "00001.grz:00001-116.con": "ccfc5de3b6b2ca61d6a1e762c467a7b0316b1f69f84b4d40297cc1864455a66c",
+      "00001.grz:00001-117.con": "f6670ff532a5faa6ad91fdf930fe7a87d7ac258a4c9eb56dbf38ce1ee1b28917",
+      "00001.grz:00001-118.con": "6e1ea6d23f7c53d6aa3fe6c1291036af726f70fbcb416b438812a6c04d8a8f97",
+      "00001.grz:00001-119.con": "092b6ddd5374c7b045f86299b55cf684abe3bf9ee02e875fc6c9271ec911d50d",
+      "00001.grz:00001-120.con": "8219f1617312a84215cb57bc56be3ec4bde2cf32947fa7d2caf0cdc67489b428",
+      "00001.grz:00001-121.con": "02e215c35516a86527ecb9dac00af8519fe4c5584022513d227ca4f0a808ed3e",
+      "00001.grz:00001-122.con": "33b4339422d82ce88052b33a926185bfe1690189e23381f34871de68beca885e",
+      "00001.grz:00001-123.con": "9d30766d8b843f1dc39106e2ae8d159cdbe52f1ff12ab856040878bc54e8dd33",
+      "00001.grz:00001-124.con": "c5dfdc85bd7fb79e611f5b7d56634673549039551575225d5137f736e60d5f99",
+      "00001.grz:00001-125.con": "21288461d6fa450c814942ffba760ba5c1f300245b1605c9f7655671f37093cb",
+      "00001.grz:00001-126.con": "09fc62dca8b5c69dbb613c5deecc423c37316723195a1acf0d920add50c2957d"
+    },
+    "situation_sums": {
+      "00001.grz": 1136089.0112754588
+    },
+    "nonzero_values": 5961,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 93600,
+    "occupied_fraction": 0.06368589743589743,
+    "issues": []
+  },
+  {
+    "case": "terrain_stable_area_t8",
+    "variant": "double",
+    "repeat": 1,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 2.0192596999986563,
+    "cpu_s": 13.515625,
+    "pid": 58848,
+    "memory": {
+      "PeakWorkingSetSize": 87076864,
+      "PeakPagefileUsage": 63139840,
+      "PrivateUsage": 62590976,
+      "WorkingSetSize": 86519808
+    },
+    "memory_samples": 195,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299988
+    ],
+    "actual_particles_per_s": [
+      999.96
+    ],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 26,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "bcaee9b027cf5529953c9877330e133ce1ecabc4a54cd0d54f960f5b3816ca78",
+      "00001.grz:00001-102.con": "35cff8bb0b51baa0d290f7db2fdf4b9ee54e3b805dcf23da3ea5a18205a96f68",
+      "00001.grz:00001-103.con": "f1c655b4c51f23a21f57f5a8ddb0c89f17484583c7d0a832ba0ba2711d84ac8e",
+      "00001.grz:00001-104.con": "c5fad2f3041d95fbefcc7627e5611e222b8ef1e36f0b64ba64bedccc37815b75",
+      "00001.grz:00001-105.con": "408fc1c68f562e1735b1956a549229646bdba1799964a43d4c9f20c73fddb567",
+      "00001.grz:00001-106.con": "f894edc976d136bd0557c20c510528e6a458ca2124eedfd27ca39b3684b2c6b6",
+      "00001.grz:00001-107.con": "5e162e42eccf6b24e8a4ec75da8fd7801c10331bb9692907776b6ba26d7ccf6f",
+      "00001.grz:00001-108.con": "2d26146db48e7956a5b4b9f4de694a1ce48fcb008d3093f2b4060ec5e2c44cb6",
+      "00001.grz:00001-109.con": "5d8210a29b7ece02390049b7886e153bcbd30dafe326f9739bc234d0e926e3d6",
+      "00001.grz:00001-110.con": "0459543c6ecc365ba91dc9ecf34e5cc2cceb2bef1a3c38bcfc20d1192ae5928f",
+      "00001.grz:00001-111.con": "03856c3a8264bb9aef98a2a7b4ec2307244dc85a941c4f7e739c40b28d7c2be1",
+      "00001.grz:00001-112.con": "0aecc35d5996f8de2f0f3fef2031eec7d78dcc5ed743087294afb03d7e4aca1b",
+      "00001.grz:00001-113.con": "72bdab4f98ce010e0d4eb01aa15728a9a3f51718172468699d5253d302a1f157",
+      "00001.grz:00001-114.con": "d23d6f755aec8ea2daa02fc9ecf5e35ba52a5bb065498697d85de1dac3e5a3f4",
+      "00001.grz:00001-115.con": "e36c0d023ede50b7a278b48ea05e530bb11d69eb793d5984bfdb7e78c13e7ff1",
+      "00001.grz:00001-116.con": "ccfc5de3b6b2ca61d6a1e762c467a7b0316b1f69f84b4d40297cc1864455a66c",
+      "00001.grz:00001-117.con": "f6670ff532a5faa6ad91fdf930fe7a87d7ac258a4c9eb56dbf38ce1ee1b28917",
+      "00001.grz:00001-118.con": "6e1ea6d23f7c53d6aa3fe6c1291036af726f70fbcb416b438812a6c04d8a8f97",
+      "00001.grz:00001-119.con": "092b6ddd5374c7b045f86299b55cf684abe3bf9ee02e875fc6c9271ec911d50d",
+      "00001.grz:00001-120.con": "8219f1617312a84215cb57bc56be3ec4bde2cf32947fa7d2caf0cdc67489b428",
+      "00001.grz:00001-121.con": "02e215c35516a86527ecb9dac00af8519fe4c5584022513d227ca4f0a808ed3e",
+      "00001.grz:00001-122.con": "33b4339422d82ce88052b33a926185bfe1690189e23381f34871de68beca885e",
+      "00001.grz:00001-123.con": "9d30766d8b843f1dc39106e2ae8d159cdbe52f1ff12ab856040878bc54e8dd33",
+      "00001.grz:00001-124.con": "c5dfdc85bd7fb79e611f5b7d56634673549039551575225d5137f736e60d5f99",
+      "00001.grz:00001-125.con": "21288461d6fa450c814942ffba760ba5c1f300245b1605c9f7655671f37093cb",
+      "00001.grz:00001-126.con": "09fc62dca8b5c69dbb613c5deecc423c37316723195a1acf0d920add50c2957d"
+    },
+    "situation_sums": {
+      "00001.grz": 1136089.0112754588
+    },
+    "nonzero_values": 5961,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 93600,
+    "occupied_fraction": 0.06368589743589743,
+    "issues": []
+  },
+  {
+    "case": "terrain_stable_area_t8",
+    "variant": "combined",
+    "repeat": 2,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 2.378205400003935,
+    "cpu_s": 16.28125,
+    "pid": 61076,
+    "memory": {
+      "PeakWorkingSetSize": 85336064,
+      "PeakPagefileUsage": 59727872,
+      "PrivateUsage": 59518976,
+      "WorkingSetSize": 84762624
+    },
+    "memory_samples": 229,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299988
+    ],
+    "actual_particles_per_s": [
+      999.96
+    ],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 26,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "bcaee9b027cf5529953c9877330e133ce1ecabc4a54cd0d54f960f5b3816ca78",
+      "00001.grz:00001-102.con": "35cff8bb0b51baa0d290f7db2fdf4b9ee54e3b805dcf23da3ea5a18205a96f68",
+      "00001.grz:00001-103.con": "f1c655b4c51f23a21f57f5a8ddb0c89f17484583c7d0a832ba0ba2711d84ac8e",
+      "00001.grz:00001-104.con": "c5fad2f3041d95fbefcc7627e5611e222b8ef1e36f0b64ba64bedccc37815b75",
+      "00001.grz:00001-105.con": "408fc1c68f562e1735b1956a549229646bdba1799964a43d4c9f20c73fddb567",
+      "00001.grz:00001-106.con": "f894edc976d136bd0557c20c510528e6a458ca2124eedfd27ca39b3684b2c6b6",
+      "00001.grz:00001-107.con": "5e162e42eccf6b24e8a4ec75da8fd7801c10331bb9692907776b6ba26d7ccf6f",
+      "00001.grz:00001-108.con": "2d26146db48e7956a5b4b9f4de694a1ce48fcb008d3093f2b4060ec5e2c44cb6",
+      "00001.grz:00001-109.con": "5d8210a29b7ece02390049b7886e153bcbd30dafe326f9739bc234d0e926e3d6",
+      "00001.grz:00001-110.con": "0459543c6ecc365ba91dc9ecf34e5cc2cceb2bef1a3c38bcfc20d1192ae5928f",
+      "00001.grz:00001-111.con": "03856c3a8264bb9aef98a2a7b4ec2307244dc85a941c4f7e739c40b28d7c2be1",
+      "00001.grz:00001-112.con": "0aecc35d5996f8de2f0f3fef2031eec7d78dcc5ed743087294afb03d7e4aca1b",
+      "00001.grz:00001-113.con": "72bdab4f98ce010e0d4eb01aa15728a9a3f51718172468699d5253d302a1f157",
+      "00001.grz:00001-114.con": "d23d6f755aec8ea2daa02fc9ecf5e35ba52a5bb065498697d85de1dac3e5a3f4",
+      "00001.grz:00001-115.con": "e36c0d023ede50b7a278b48ea05e530bb11d69eb793d5984bfdb7e78c13e7ff1",
+      "00001.grz:00001-116.con": "ccfc5de3b6b2ca61d6a1e762c467a7b0316b1f69f84b4d40297cc1864455a66c",
+      "00001.grz:00001-117.con": "f6670ff532a5faa6ad91fdf930fe7a87d7ac258a4c9eb56dbf38ce1ee1b28917",
+      "00001.grz:00001-118.con": "6e1ea6d23f7c53d6aa3fe6c1291036af726f70fbcb416b438812a6c04d8a8f97",
+      "00001.grz:00001-119.con": "092b6ddd5374c7b045f86299b55cf684abe3bf9ee02e875fc6c9271ec911d50d",
+      "00001.grz:00001-120.con": "8219f1617312a84215cb57bc56be3ec4bde2cf32947fa7d2caf0cdc67489b428",
+      "00001.grz:00001-121.con": "02e215c35516a86527ecb9dac00af8519fe4c5584022513d227ca4f0a808ed3e",
+      "00001.grz:00001-122.con": "33b4339422d82ce88052b33a926185bfe1690189e23381f34871de68beca885e",
+      "00001.grz:00001-123.con": "9d30766d8b843f1dc39106e2ae8d159cdbe52f1ff12ab856040878bc54e8dd33",
+      "00001.grz:00001-124.con": "c5dfdc85bd7fb79e611f5b7d56634673549039551575225d5137f736e60d5f99",
+      "00001.grz:00001-125.con": "21288461d6fa450c814942ffba760ba5c1f300245b1605c9f7655671f37093cb",
+      "00001.grz:00001-126.con": "09fc62dca8b5c69dbb613c5deecc423c37316723195a1acf0d920add50c2957d"
+    },
+    "situation_sums": {
+      "00001.grz": 1136089.0112754588
+    },
+    "nonzero_values": 5961,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 93600,
+    "occupied_fraction": 0.06368589743589743,
+    "issues": []
+  },
+  {
+    "case": "terrain_stable_area_t8",
+    "variant": "double",
+    "repeat": 2,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 2.0607412999961525,
+    "cpu_s": 13.9375,
+    "pid": 18700,
+    "memory": {
+      "PeakWorkingSetSize": 87130112,
+      "PeakPagefileUsage": 63045632,
+      "PrivateUsage": 59793408,
+      "WorkingSetSize": 85114880
+    },
+    "memory_samples": 198,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299988
+    ],
+    "actual_particles_per_s": [
+      999.96
+    ],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 26,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "bcaee9b027cf5529953c9877330e133ce1ecabc4a54cd0d54f960f5b3816ca78",
+      "00001.grz:00001-102.con": "35cff8bb0b51baa0d290f7db2fdf4b9ee54e3b805dcf23da3ea5a18205a96f68",
+      "00001.grz:00001-103.con": "f1c655b4c51f23a21f57f5a8ddb0c89f17484583c7d0a832ba0ba2711d84ac8e",
+      "00001.grz:00001-104.con": "c5fad2f3041d95fbefcc7627e5611e222b8ef1e36f0b64ba64bedccc37815b75",
+      "00001.grz:00001-105.con": "408fc1c68f562e1735b1956a549229646bdba1799964a43d4c9f20c73fddb567",
+      "00001.grz:00001-106.con": "f894edc976d136bd0557c20c510528e6a458ca2124eedfd27ca39b3684b2c6b6",
+      "00001.grz:00001-107.con": "5e162e42eccf6b24e8a4ec75da8fd7801c10331bb9692907776b6ba26d7ccf6f",
+      "00001.grz:00001-108.con": "2d26146db48e7956a5b4b9f4de694a1ce48fcb008d3093f2b4060ec5e2c44cb6",
+      "00001.grz:00001-109.con": "5d8210a29b7ece02390049b7886e153bcbd30dafe326f9739bc234d0e926e3d6",
+      "00001.grz:00001-110.con": "0459543c6ecc365ba91dc9ecf34e5cc2cceb2bef1a3c38bcfc20d1192ae5928f",
+      "00001.grz:00001-111.con": "03856c3a8264bb9aef98a2a7b4ec2307244dc85a941c4f7e739c40b28d7c2be1",
+      "00001.grz:00001-112.con": "0aecc35d5996f8de2f0f3fef2031eec7d78dcc5ed743087294afb03d7e4aca1b",
+      "00001.grz:00001-113.con": "72bdab4f98ce010e0d4eb01aa15728a9a3f51718172468699d5253d302a1f157",
+      "00001.grz:00001-114.con": "d23d6f755aec8ea2daa02fc9ecf5e35ba52a5bb065498697d85de1dac3e5a3f4",
+      "00001.grz:00001-115.con": "e36c0d023ede50b7a278b48ea05e530bb11d69eb793d5984bfdb7e78c13e7ff1",
+      "00001.grz:00001-116.con": "ccfc5de3b6b2ca61d6a1e762c467a7b0316b1f69f84b4d40297cc1864455a66c",
+      "00001.grz:00001-117.con": "f6670ff532a5faa6ad91fdf930fe7a87d7ac258a4c9eb56dbf38ce1ee1b28917",
+      "00001.grz:00001-118.con": "6e1ea6d23f7c53d6aa3fe6c1291036af726f70fbcb416b438812a6c04d8a8f97",
+      "00001.grz:00001-119.con": "092b6ddd5374c7b045f86299b55cf684abe3bf9ee02e875fc6c9271ec911d50d",
+      "00001.grz:00001-120.con": "8219f1617312a84215cb57bc56be3ec4bde2cf32947fa7d2caf0cdc67489b428",
+      "00001.grz:00001-121.con": "02e215c35516a86527ecb9dac00af8519fe4c5584022513d227ca4f0a808ed3e",
+      "00001.grz:00001-122.con": "33b4339422d82ce88052b33a926185bfe1690189e23381f34871de68beca885e",
+      "00001.grz:00001-123.con": "9d30766d8b843f1dc39106e2ae8d159cdbe52f1ff12ab856040878bc54e8dd33",
+      "00001.grz:00001-124.con": "c5dfdc85bd7fb79e611f5b7d56634673549039551575225d5137f736e60d5f99",
+      "00001.grz:00001-125.con": "21288461d6fa450c814942ffba760ba5c1f300245b1605c9f7655671f37093cb",
+      "00001.grz:00001-126.con": "09fc62dca8b5c69dbb613c5deecc423c37316723195a1acf0d920add50c2957d"
+    },
+    "situation_sums": {
+      "00001.grz": 1136089.0112754588
+    },
+    "nonzero_values": 5961,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 93600,
+    "occupied_fraction": 0.06368589743589743,
+    "issues": []
+  },
+  {
+    "case": "terrain_stable_area_t8",
+    "variant": "dictionary_fixed",
+    "repeat": 2,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 2.364839600006235,
+    "cpu_s": 16.140625,
+    "pid": 55616,
+    "memory": {
+      "PeakWorkingSetSize": 120696832,
+      "PeakPagefileUsage": 95641600,
+      "PrivateUsage": 95629312,
+      "WorkingSetSize": 120107008
+    },
+    "memory_samples": 227,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299988
+    ],
+    "actual_particles_per_s": [
+      999.96
+    ],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 26,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "bcaee9b027cf5529953c9877330e133ce1ecabc4a54cd0d54f960f5b3816ca78",
+      "00001.grz:00001-102.con": "35cff8bb0b51baa0d290f7db2fdf4b9ee54e3b805dcf23da3ea5a18205a96f68",
+      "00001.grz:00001-103.con": "f1c655b4c51f23a21f57f5a8ddb0c89f17484583c7d0a832ba0ba2711d84ac8e",
+      "00001.grz:00001-104.con": "c5fad2f3041d95fbefcc7627e5611e222b8ef1e36f0b64ba64bedccc37815b75",
+      "00001.grz:00001-105.con": "408fc1c68f562e1735b1956a549229646bdba1799964a43d4c9f20c73fddb567",
+      "00001.grz:00001-106.con": "f894edc976d136bd0557c20c510528e6a458ca2124eedfd27ca39b3684b2c6b6",
+      "00001.grz:00001-107.con": "5e162e42eccf6b24e8a4ec75da8fd7801c10331bb9692907776b6ba26d7ccf6f",
+      "00001.grz:00001-108.con": "2d26146db48e7956a5b4b9f4de694a1ce48fcb008d3093f2b4060ec5e2c44cb6",
+      "00001.grz:00001-109.con": "5d8210a29b7ece02390049b7886e153bcbd30dafe326f9739bc234d0e926e3d6",
+      "00001.grz:00001-110.con": "0459543c6ecc365ba91dc9ecf34e5cc2cceb2bef1a3c38bcfc20d1192ae5928f",
+      "00001.grz:00001-111.con": "03856c3a8264bb9aef98a2a7b4ec2307244dc85a941c4f7e739c40b28d7c2be1",
+      "00001.grz:00001-112.con": "0aecc35d5996f8de2f0f3fef2031eec7d78dcc5ed743087294afb03d7e4aca1b",
+      "00001.grz:00001-113.con": "72bdab4f98ce010e0d4eb01aa15728a9a3f51718172468699d5253d302a1f157",
+      "00001.grz:00001-114.con": "d23d6f755aec8ea2daa02fc9ecf5e35ba52a5bb065498697d85de1dac3e5a3f4",
+      "00001.grz:00001-115.con": "e36c0d023ede50b7a278b48ea05e530bb11d69eb793d5984bfdb7e78c13e7ff1",
+      "00001.grz:00001-116.con": "ccfc5de3b6b2ca61d6a1e762c467a7b0316b1f69f84b4d40297cc1864455a66c",
+      "00001.grz:00001-117.con": "f6670ff532a5faa6ad91fdf930fe7a87d7ac258a4c9eb56dbf38ce1ee1b28917",
+      "00001.grz:00001-118.con": "6e1ea6d23f7c53d6aa3fe6c1291036af726f70fbcb416b438812a6c04d8a8f97",
+      "00001.grz:00001-119.con": "092b6ddd5374c7b045f86299b55cf684abe3bf9ee02e875fc6c9271ec911d50d",
+      "00001.grz:00001-120.con": "8219f1617312a84215cb57bc56be3ec4bde2cf32947fa7d2caf0cdc67489b428",
+      "00001.grz:00001-121.con": "02e215c35516a86527ecb9dac00af8519fe4c5584022513d227ca4f0a808ed3e",
+      "00001.grz:00001-122.con": "33b4339422d82ce88052b33a926185bfe1690189e23381f34871de68beca885e",
+      "00001.grz:00001-123.con": "9d30766d8b843f1dc39106e2ae8d159cdbe52f1ff12ab856040878bc54e8dd33",
+      "00001.grz:00001-124.con": "c5dfdc85bd7fb79e611f5b7d56634673549039551575225d5137f736e60d5f99",
+      "00001.grz:00001-125.con": "21288461d6fa450c814942ffba760ba5c1f300245b1605c9f7655671f37093cb",
+      "00001.grz:00001-126.con": "09fc62dca8b5c69dbb613c5deecc423c37316723195a1acf0d920add50c2957d"
+    },
+    "situation_sums": {
+      "00001.grz": 1136089.0112754588
+    },
+    "nonzero_values": 5961,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 93600,
+    "occupied_fraction": 0.06368589743589743,
+    "issues": []
+  },
+  {
+    "case": "terrain_stable_area_t8",
+    "variant": "double",
+    "repeat": 3,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 2.010625800001435,
+    "cpu_s": 13.453125,
+    "pid": 43204,
+    "memory": {
+      "PeakWorkingSetSize": 86937600,
+      "PeakPagefileUsage": 62914560,
+      "PrivateUsage": 59846656,
+      "WorkingSetSize": 85217280
+    },
+    "memory_samples": 193,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299988
+    ],
+    "actual_particles_per_s": [
+      999.96
+    ],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 26,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "bcaee9b027cf5529953c9877330e133ce1ecabc4a54cd0d54f960f5b3816ca78",
+      "00001.grz:00001-102.con": "35cff8bb0b51baa0d290f7db2fdf4b9ee54e3b805dcf23da3ea5a18205a96f68",
+      "00001.grz:00001-103.con": "f1c655b4c51f23a21f57f5a8ddb0c89f17484583c7d0a832ba0ba2711d84ac8e",
+      "00001.grz:00001-104.con": "c5fad2f3041d95fbefcc7627e5611e222b8ef1e36f0b64ba64bedccc37815b75",
+      "00001.grz:00001-105.con": "408fc1c68f562e1735b1956a549229646bdba1799964a43d4c9f20c73fddb567",
+      "00001.grz:00001-106.con": "f894edc976d136bd0557c20c510528e6a458ca2124eedfd27ca39b3684b2c6b6",
+      "00001.grz:00001-107.con": "5e162e42eccf6b24e8a4ec75da8fd7801c10331bb9692907776b6ba26d7ccf6f",
+      "00001.grz:00001-108.con": "2d26146db48e7956a5b4b9f4de694a1ce48fcb008d3093f2b4060ec5e2c44cb6",
+      "00001.grz:00001-109.con": "5d8210a29b7ece02390049b7886e153bcbd30dafe326f9739bc234d0e926e3d6",
+      "00001.grz:00001-110.con": "0459543c6ecc365ba91dc9ecf34e5cc2cceb2bef1a3c38bcfc20d1192ae5928f",
+      "00001.grz:00001-111.con": "03856c3a8264bb9aef98a2a7b4ec2307244dc85a941c4f7e739c40b28d7c2be1",
+      "00001.grz:00001-112.con": "0aecc35d5996f8de2f0f3fef2031eec7d78dcc5ed743087294afb03d7e4aca1b",
+      "00001.grz:00001-113.con": "72bdab4f98ce010e0d4eb01aa15728a9a3f51718172468699d5253d302a1f157",
+      "00001.grz:00001-114.con": "d23d6f755aec8ea2daa02fc9ecf5e35ba52a5bb065498697d85de1dac3e5a3f4",
+      "00001.grz:00001-115.con": "e36c0d023ede50b7a278b48ea05e530bb11d69eb793d5984bfdb7e78c13e7ff1",
+      "00001.grz:00001-116.con": "ccfc5de3b6b2ca61d6a1e762c467a7b0316b1f69f84b4d40297cc1864455a66c",
+      "00001.grz:00001-117.con": "f6670ff532a5faa6ad91fdf930fe7a87d7ac258a4c9eb56dbf38ce1ee1b28917",
+      "00001.grz:00001-118.con": "6e1ea6d23f7c53d6aa3fe6c1291036af726f70fbcb416b438812a6c04d8a8f97",
+      "00001.grz:00001-119.con": "092b6ddd5374c7b045f86299b55cf684abe3bf9ee02e875fc6c9271ec911d50d",
+      "00001.grz:00001-120.con": "8219f1617312a84215cb57bc56be3ec4bde2cf32947fa7d2caf0cdc67489b428",
+      "00001.grz:00001-121.con": "02e215c35516a86527ecb9dac00af8519fe4c5584022513d227ca4f0a808ed3e",
+      "00001.grz:00001-122.con": "33b4339422d82ce88052b33a926185bfe1690189e23381f34871de68beca885e",
+      "00001.grz:00001-123.con": "9d30766d8b843f1dc39106e2ae8d159cdbe52f1ff12ab856040878bc54e8dd33",
+      "00001.grz:00001-124.con": "c5dfdc85bd7fb79e611f5b7d56634673549039551575225d5137f736e60d5f99",
+      "00001.grz:00001-125.con": "21288461d6fa450c814942ffba760ba5c1f300245b1605c9f7655671f37093cb",
+      "00001.grz:00001-126.con": "09fc62dca8b5c69dbb613c5deecc423c37316723195a1acf0d920add50c2957d"
+    },
+    "situation_sums": {
+      "00001.grz": 1136089.0112754588
+    },
+    "nonzero_values": 5961,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 93600,
+    "occupied_fraction": 0.06368589743589743,
+    "issues": []
+  },
+  {
+    "case": "terrain_stable_area_t8",
+    "variant": "dictionary_fixed",
+    "repeat": 3,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 2.5742434000130743,
+    "cpu_s": 17.515625,
+    "pid": 40360,
+    "memory": {
+      "PeakWorkingSetSize": 120930304,
+      "PeakPagefileUsage": 95510528,
+      "PrivateUsage": 95444992,
+      "WorkingSetSize": 120332288
+    },
+    "memory_samples": 247,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299988
+    ],
+    "actual_particles_per_s": [
+      999.96
+    ],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 26,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "bcaee9b027cf5529953c9877330e133ce1ecabc4a54cd0d54f960f5b3816ca78",
+      "00001.grz:00001-102.con": "35cff8bb0b51baa0d290f7db2fdf4b9ee54e3b805dcf23da3ea5a18205a96f68",
+      "00001.grz:00001-103.con": "f1c655b4c51f23a21f57f5a8ddb0c89f17484583c7d0a832ba0ba2711d84ac8e",
+      "00001.grz:00001-104.con": "c5fad2f3041d95fbefcc7627e5611e222b8ef1e36f0b64ba64bedccc37815b75",
+      "00001.grz:00001-105.con": "408fc1c68f562e1735b1956a549229646bdba1799964a43d4c9f20c73fddb567",
+      "00001.grz:00001-106.con": "f894edc976d136bd0557c20c510528e6a458ca2124eedfd27ca39b3684b2c6b6",
+      "00001.grz:00001-107.con": "5e162e42eccf6b24e8a4ec75da8fd7801c10331bb9692907776b6ba26d7ccf6f",
+      "00001.grz:00001-108.con": "2d26146db48e7956a5b4b9f4de694a1ce48fcb008d3093f2b4060ec5e2c44cb6",
+      "00001.grz:00001-109.con": "5d8210a29b7ece02390049b7886e153bcbd30dafe326f9739bc234d0e926e3d6",
+      "00001.grz:00001-110.con": "0459543c6ecc365ba91dc9ecf34e5cc2cceb2bef1a3c38bcfc20d1192ae5928f",
+      "00001.grz:00001-111.con": "03856c3a8264bb9aef98a2a7b4ec2307244dc85a941c4f7e739c40b28d7c2be1",
+      "00001.grz:00001-112.con": "0aecc35d5996f8de2f0f3fef2031eec7d78dcc5ed743087294afb03d7e4aca1b",
+      "00001.grz:00001-113.con": "72bdab4f98ce010e0d4eb01aa15728a9a3f51718172468699d5253d302a1f157",
+      "00001.grz:00001-114.con": "d23d6f755aec8ea2daa02fc9ecf5e35ba52a5bb065498697d85de1dac3e5a3f4",
+      "00001.grz:00001-115.con": "e36c0d023ede50b7a278b48ea05e530bb11d69eb793d5984bfdb7e78c13e7ff1",
+      "00001.grz:00001-116.con": "ccfc5de3b6b2ca61d6a1e762c467a7b0316b1f69f84b4d40297cc1864455a66c",
+      "00001.grz:00001-117.con": "f6670ff532a5faa6ad91fdf930fe7a87d7ac258a4c9eb56dbf38ce1ee1b28917",
+      "00001.grz:00001-118.con": "6e1ea6d23f7c53d6aa3fe6c1291036af726f70fbcb416b438812a6c04d8a8f97",
+      "00001.grz:00001-119.con": "092b6ddd5374c7b045f86299b55cf684abe3bf9ee02e875fc6c9271ec911d50d",
+      "00001.grz:00001-120.con": "8219f1617312a84215cb57bc56be3ec4bde2cf32947fa7d2caf0cdc67489b428",
+      "00001.grz:00001-121.con": "02e215c35516a86527ecb9dac00af8519fe4c5584022513d227ca4f0a808ed3e",
+      "00001.grz:00001-122.con": "33b4339422d82ce88052b33a926185bfe1690189e23381f34871de68beca885e",
+      "00001.grz:00001-123.con": "9d30766d8b843f1dc39106e2ae8d159cdbe52f1ff12ab856040878bc54e8dd33",
+      "00001.grz:00001-124.con": "c5dfdc85bd7fb79e611f5b7d56634673549039551575225d5137f736e60d5f99",
+      "00001.grz:00001-125.con": "21288461d6fa450c814942ffba760ba5c1f300245b1605c9f7655671f37093cb",
+      "00001.grz:00001-126.con": "09fc62dca8b5c69dbb613c5deecc423c37316723195a1acf0d920add50c2957d"
+    },
+    "situation_sums": {
+      "00001.grz": 1136089.0112754588
+    },
+    "nonzero_values": 5961,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 93600,
+    "occupied_fraction": 0.06368589743589743,
+    "issues": []
+  },
+  {
+    "case": "terrain_stable_area_t8",
+    "variant": "combined",
+    "repeat": 3,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 2.403168899996672,
+    "cpu_s": 16.5,
+    "pid": 11056,
+    "memory": {
+      "PeakWorkingSetSize": 85491712,
+      "PeakPagefileUsage": 59662336,
+      "PrivateUsage": 59645952,
+      "WorkingSetSize": 84873216
+    },
+    "memory_samples": 232,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299988
+    ],
+    "actual_particles_per_s": [
+      999.96
+    ],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 26,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "bcaee9b027cf5529953c9877330e133ce1ecabc4a54cd0d54f960f5b3816ca78",
+      "00001.grz:00001-102.con": "35cff8bb0b51baa0d290f7db2fdf4b9ee54e3b805dcf23da3ea5a18205a96f68",
+      "00001.grz:00001-103.con": "f1c655b4c51f23a21f57f5a8ddb0c89f17484583c7d0a832ba0ba2711d84ac8e",
+      "00001.grz:00001-104.con": "c5fad2f3041d95fbefcc7627e5611e222b8ef1e36f0b64ba64bedccc37815b75",
+      "00001.grz:00001-105.con": "408fc1c68f562e1735b1956a549229646bdba1799964a43d4c9f20c73fddb567",
+      "00001.grz:00001-106.con": "f894edc976d136bd0557c20c510528e6a458ca2124eedfd27ca39b3684b2c6b6",
+      "00001.grz:00001-107.con": "5e162e42eccf6b24e8a4ec75da8fd7801c10331bb9692907776b6ba26d7ccf6f",
+      "00001.grz:00001-108.con": "2d26146db48e7956a5b4b9f4de694a1ce48fcb008d3093f2b4060ec5e2c44cb6",
+      "00001.grz:00001-109.con": "5d8210a29b7ece02390049b7886e153bcbd30dafe326f9739bc234d0e926e3d6",
+      "00001.grz:00001-110.con": "0459543c6ecc365ba91dc9ecf34e5cc2cceb2bef1a3c38bcfc20d1192ae5928f",
+      "00001.grz:00001-111.con": "03856c3a8264bb9aef98a2a7b4ec2307244dc85a941c4f7e739c40b28d7c2be1",
+      "00001.grz:00001-112.con": "0aecc35d5996f8de2f0f3fef2031eec7d78dcc5ed743087294afb03d7e4aca1b",
+      "00001.grz:00001-113.con": "72bdab4f98ce010e0d4eb01aa15728a9a3f51718172468699d5253d302a1f157",
+      "00001.grz:00001-114.con": "d23d6f755aec8ea2daa02fc9ecf5e35ba52a5bb065498697d85de1dac3e5a3f4",
+      "00001.grz:00001-115.con": "e36c0d023ede50b7a278b48ea05e530bb11d69eb793d5984bfdb7e78c13e7ff1",
+      "00001.grz:00001-116.con": "ccfc5de3b6b2ca61d6a1e762c467a7b0316b1f69f84b4d40297cc1864455a66c",
+      "00001.grz:00001-117.con": "f6670ff532a5faa6ad91fdf930fe7a87d7ac258a4c9eb56dbf38ce1ee1b28917",
+      "00001.grz:00001-118.con": "6e1ea6d23f7c53d6aa3fe6c1291036af726f70fbcb416b438812a6c04d8a8f97",
+      "00001.grz:00001-119.con": "092b6ddd5374c7b045f86299b55cf684abe3bf9ee02e875fc6c9271ec911d50d",
+      "00001.grz:00001-120.con": "8219f1617312a84215cb57bc56be3ec4bde2cf32947fa7d2caf0cdc67489b428",
+      "00001.grz:00001-121.con": "02e215c35516a86527ecb9dac00af8519fe4c5584022513d227ca4f0a808ed3e",
+      "00001.grz:00001-122.con": "33b4339422d82ce88052b33a926185bfe1690189e23381f34871de68beca885e",
+      "00001.grz:00001-123.con": "9d30766d8b843f1dc39106e2ae8d159cdbe52f1ff12ab856040878bc54e8dd33",
+      "00001.grz:00001-124.con": "c5dfdc85bd7fb79e611f5b7d56634673549039551575225d5137f736e60d5f99",
+      "00001.grz:00001-125.con": "21288461d6fa450c814942ffba760ba5c1f300245b1605c9f7655671f37093cb",
+      "00001.grz:00001-126.con": "09fc62dca8b5c69dbb613c5deecc423c37316723195a1acf0d920add50c2957d"
+    },
+    "situation_sums": {
+      "00001.grz": 1136089.0112754588
+    },
+    "nonzero_values": 5961,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 93600,
+    "occupied_fraction": 0.06368589743589743,
+    "issues": []
+  },
+  {
+    "case": "convective_mixed_t8",
+    "variant": "dictionary_fixed",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.9630478999897605,
+    "cpu_s": 5.34375,
+    "pid": 61400,
+    "memory": {
+      "PeakWorkingSetSize": 118747136,
+      "PeakPagefileUsage": 95420416,
+      "PrivateUsage": 95408128,
+      "WorkingSetSize": 118206464
+    },
+    "memory_samples": 93,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299984
+    ],
+    "actual_particles_per_s": [
+      999.9466666666667
+    ],
+    "actual_source_counts": {
+      "point": 16,
+      "area": 16,
+      "portal": 16,
+      "line": 16
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ab82f93e0d4807c0be378c2b3ee5338bcc411b02369645c1425a323aac650d18",
+      "00001.grz:00001-102.con": "ea1d74437dac8224644b9341e8dccc949759a869f5220165977980fd9accd329",
+      "00001.grz:00001-103.con": "269b756d75921d1fba813f33b836cd863504d850198a7fc1db957a8f9dd20e0b",
+      "00001.grz:00001-104.con": "7ac53e278a9f7192549b92f05c71d47638b58db399dfcc9bbd4874062a479330",
+      "00001.grz:00001-105.con": "ba713d3d0a4633a7761a50a8535e7508d8659141d729b7fc34d4e8c0298c5598",
+      "00001.grz:00001-106.con": "c24961487f887cf0794a3d5aec7d3923751f9c5cbf2b484d6ec96d159523a12a",
+      "00001.grz:00001-107.con": "a0f944a06f4001b56480323f240a49be67acbd8bd8bbafaa1ec8d6f34967221e",
+      "00001.grz:00001-108.con": "3c9f5abc2f1cf28b853cbc45c353e276fb62fae7babd0672375f19c0504b3176",
+      "00001.grz:00001-109.con": "6519cae57f274be7964bfcc3e88ad5d594bf026c4a525f628e61127871cdcb2d",
+      "00001.grz:00001-110.con": "f8806f98a0b07fe4ec6ca84acacb84e1fa06f6964b4434b57ead99a6a1a64a29",
+      "00001.grz:00001-111.con": "a7094b358b36a3410a2b6ea2ac805a5be758caf3abed3e4a852f9bcbf07d42c9",
+      "00001.grz:00001-112.con": "99a14012d15d77638ab15328177d7b3825421ffbcfa2623c4491e4761353bba6",
+      "00001.grz:00001-113.con": "feee74ef9c8ae0a4d67be5603b93e75dec7664915077219cdfbd401d334e4c28",
+      "00001.grz:00001-114.con": "80b8fedba4dc9684973bd6acb52fa2f5216dc1c6722b66ba0c6dd12c9f727479",
+      "00001.grz:00001-115.con": "e8ccd1e19016d9007648d5ee8cc33123671d59b01a291c92a432f6838134d897",
+      "00001.grz:00001-116.con": "9ba0a3184aa6ec2c957a9a40c79d1d54d8df8247cae95e28308c2d8269d8051a",
+      "00001.grz:00001-117.con": "340f00278288207bfe2f3a76761c0d4928dbe1eaab33859bcb8d22872d24305e",
+      "00001.grz:00001-118.con": "60b93f1467920d87a64c02dd1f331a42dfc1432e8a85f3fde9f645197d1ccc09",
+      "00001.grz:00001-119.con": "3834e66debe00e030e40347e25858b8f0fb0f398f7a8ac512449e63cb0b6edc0",
+      "00001.grz:00001-120.con": "206a16fc03ca03c03d2a97e6bc1a658c5d5ab65865715e706e57479fd7c41ced",
+      "00001.grz:00001-121.con": "76f67bdb2daf6c04d537cac87b71a130dbf21e4065265d8f079072ef69b5602f",
+      "00001.grz:00001-122.con": "0765a4a62e829bfe43e67e03347d957aab1d679d51146a4181fe01069120d2ce",
+      "00001.grz:00001-123.con": "f9cbb188c9312d65c5c21d3599f9a83a47a51cbb097c77686f0e1d8d05297ff5",
+      "00001.grz:00001-124.con": "7be41586bdbdaa4ccf55e2529cabf74f2700806e7a1b2d72b5cb9d902a13b26b",
+      "00001.grz:00001-125.con": "c0998eaed71459e90e0f1ab9e502aadb390c085a52058038c281c63dc4419dbd",
+      "00001.grz:00001-126.con": "ae47aa039c9b3bf3a04d507eea5d3c6965f926b4ed113ec187af9a9efa73faad"
+    },
+    "situation_sums": {
+      "00001.grz": 989424.7087240648
+    },
+    "nonzero_values": 8859,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.023661858974358973,
+    "issues": []
+  },
+  {
+    "case": "convective_mixed_t8",
+    "variant": "combined",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.9516743999993196,
+    "cpu_s": 5.296875,
+    "pid": 48924,
+    "memory": {
+      "PeakWorkingSetSize": 84795392,
+      "PeakPagefileUsage": 61218816,
+      "PrivateUsage": 61202432,
+      "WorkingSetSize": 84312064
+    },
+    "memory_samples": 91,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299984
+    ],
+    "actual_particles_per_s": [
+      999.9466666666667
+    ],
+    "actual_source_counts": {
+      "point": 16,
+      "area": 16,
+      "portal": 16,
+      "line": 16
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ab82f93e0d4807c0be378c2b3ee5338bcc411b02369645c1425a323aac650d18",
+      "00001.grz:00001-102.con": "ea1d74437dac8224644b9341e8dccc949759a869f5220165977980fd9accd329",
+      "00001.grz:00001-103.con": "269b756d75921d1fba813f33b836cd863504d850198a7fc1db957a8f9dd20e0b",
+      "00001.grz:00001-104.con": "7ac53e278a9f7192549b92f05c71d47638b58db399dfcc9bbd4874062a479330",
+      "00001.grz:00001-105.con": "ba713d3d0a4633a7761a50a8535e7508d8659141d729b7fc34d4e8c0298c5598",
+      "00001.grz:00001-106.con": "c24961487f887cf0794a3d5aec7d3923751f9c5cbf2b484d6ec96d159523a12a",
+      "00001.grz:00001-107.con": "a0f944a06f4001b56480323f240a49be67acbd8bd8bbafaa1ec8d6f34967221e",
+      "00001.grz:00001-108.con": "3c9f5abc2f1cf28b853cbc45c353e276fb62fae7babd0672375f19c0504b3176",
+      "00001.grz:00001-109.con": "6519cae57f274be7964bfcc3e88ad5d594bf026c4a525f628e61127871cdcb2d",
+      "00001.grz:00001-110.con": "f8806f98a0b07fe4ec6ca84acacb84e1fa06f6964b4434b57ead99a6a1a64a29",
+      "00001.grz:00001-111.con": "a7094b358b36a3410a2b6ea2ac805a5be758caf3abed3e4a852f9bcbf07d42c9",
+      "00001.grz:00001-112.con": "99a14012d15d77638ab15328177d7b3825421ffbcfa2623c4491e4761353bba6",
+      "00001.grz:00001-113.con": "feee74ef9c8ae0a4d67be5603b93e75dec7664915077219cdfbd401d334e4c28",
+      "00001.grz:00001-114.con": "80b8fedba4dc9684973bd6acb52fa2f5216dc1c6722b66ba0c6dd12c9f727479",
+      "00001.grz:00001-115.con": "e8ccd1e19016d9007648d5ee8cc33123671d59b01a291c92a432f6838134d897",
+      "00001.grz:00001-116.con": "9ba0a3184aa6ec2c957a9a40c79d1d54d8df8247cae95e28308c2d8269d8051a",
+      "00001.grz:00001-117.con": "340f00278288207bfe2f3a76761c0d4928dbe1eaab33859bcb8d22872d24305e",
+      "00001.grz:00001-118.con": "60b93f1467920d87a64c02dd1f331a42dfc1432e8a85f3fde9f645197d1ccc09",
+      "00001.grz:00001-119.con": "3834e66debe00e030e40347e25858b8f0fb0f398f7a8ac512449e63cb0b6edc0",
+      "00001.grz:00001-120.con": "206a16fc03ca03c03d2a97e6bc1a658c5d5ab65865715e706e57479fd7c41ced",
+      "00001.grz:00001-121.con": "76f67bdb2daf6c04d537cac87b71a130dbf21e4065265d8f079072ef69b5602f",
+      "00001.grz:00001-122.con": "0765a4a62e829bfe43e67e03347d957aab1d679d51146a4181fe01069120d2ce",
+      "00001.grz:00001-123.con": "f9cbb188c9312d65c5c21d3599f9a83a47a51cbb097c77686f0e1d8d05297ff5",
+      "00001.grz:00001-124.con": "7be41586bdbdaa4ccf55e2529cabf74f2700806e7a1b2d72b5cb9d902a13b26b",
+      "00001.grz:00001-125.con": "c0998eaed71459e90e0f1ab9e502aadb390c085a52058038c281c63dc4419dbd",
+      "00001.grz:00001-126.con": "ae47aa039c9b3bf3a04d507eea5d3c6965f926b4ed113ec187af9a9efa73faad"
+    },
+    "situation_sums": {
+      "00001.grz": 989424.7087240648
+    },
+    "nonzero_values": 8859,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.023661858974358973,
+    "issues": []
+  },
+  {
+    "case": "convective_mixed_t8",
+    "variant": "double",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.8941000000049826,
+    "cpu_s": 4.828125,
+    "pid": 48372,
+    "memory": {
+      "PeakWorkingSetSize": 88563712,
+      "PeakPagefileUsage": 67567616,
+      "PrivateUsage": 67133440,
+      "WorkingSetSize": 88563712
+    },
+    "memory_samples": 86,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299984
+    ],
+    "actual_particles_per_s": [
+      999.9466666666667
+    ],
+    "actual_source_counts": {
+      "point": 16,
+      "area": 16,
+      "portal": 16,
+      "line": 16
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ab82f93e0d4807c0be378c2b3ee5338bcc411b02369645c1425a323aac650d18",
+      "00001.grz:00001-102.con": "ea1d74437dac8224644b9341e8dccc949759a869f5220165977980fd9accd329",
+      "00001.grz:00001-103.con": "269b756d75921d1fba813f33b836cd863504d850198a7fc1db957a8f9dd20e0b",
+      "00001.grz:00001-104.con": "7ac53e278a9f7192549b92f05c71d47638b58db399dfcc9bbd4874062a479330",
+      "00001.grz:00001-105.con": "ba713d3d0a4633a7761a50a8535e7508d8659141d729b7fc34d4e8c0298c5598",
+      "00001.grz:00001-106.con": "c24961487f887cf0794a3d5aec7d3923751f9c5cbf2b484d6ec96d159523a12a",
+      "00001.grz:00001-107.con": "a0f944a06f4001b56480323f240a49be67acbd8bd8bbafaa1ec8d6f34967221e",
+      "00001.grz:00001-108.con": "3c9f5abc2f1cf28b853cbc45c353e276fb62fae7babd0672375f19c0504b3176",
+      "00001.grz:00001-109.con": "6519cae57f274be7964bfcc3e88ad5d594bf026c4a525f628e61127871cdcb2d",
+      "00001.grz:00001-110.con": "f8806f98a0b07fe4ec6ca84acacb84e1fa06f6964b4434b57ead99a6a1a64a29",
+      "00001.grz:00001-111.con": "a7094b358b36a3410a2b6ea2ac805a5be758caf3abed3e4a852f9bcbf07d42c9",
+      "00001.grz:00001-112.con": "99a14012d15d77638ab15328177d7b3825421ffbcfa2623c4491e4761353bba6",
+      "00001.grz:00001-113.con": "feee74ef9c8ae0a4d67be5603b93e75dec7664915077219cdfbd401d334e4c28",
+      "00001.grz:00001-114.con": "80b8fedba4dc9684973bd6acb52fa2f5216dc1c6722b66ba0c6dd12c9f727479",
+      "00001.grz:00001-115.con": "e8ccd1e19016d9007648d5ee8cc33123671d59b01a291c92a432f6838134d897",
+      "00001.grz:00001-116.con": "9ba0a3184aa6ec2c957a9a40c79d1d54d8df8247cae95e28308c2d8269d8051a",
+      "00001.grz:00001-117.con": "340f00278288207bfe2f3a76761c0d4928dbe1eaab33859bcb8d22872d24305e",
+      "00001.grz:00001-118.con": "60b93f1467920d87a64c02dd1f331a42dfc1432e8a85f3fde9f645197d1ccc09",
+      "00001.grz:00001-119.con": "3834e66debe00e030e40347e25858b8f0fb0f398f7a8ac512449e63cb0b6edc0",
+      "00001.grz:00001-120.con": "206a16fc03ca03c03d2a97e6bc1a658c5d5ab65865715e706e57479fd7c41ced",
+      "00001.grz:00001-121.con": "76f67bdb2daf6c04d537cac87b71a130dbf21e4065265d8f079072ef69b5602f",
+      "00001.grz:00001-122.con": "0765a4a62e829bfe43e67e03347d957aab1d679d51146a4181fe01069120d2ce",
+      "00001.grz:00001-123.con": "f9cbb188c9312d65c5c21d3599f9a83a47a51cbb097c77686f0e1d8d05297ff5",
+      "00001.grz:00001-124.con": "7be41586bdbdaa4ccf55e2529cabf74f2700806e7a1b2d72b5cb9d902a13b26b",
+      "00001.grz:00001-125.con": "c0998eaed71459e90e0f1ab9e502aadb390c085a52058038c281c63dc4419dbd",
+      "00001.grz:00001-126.con": "ae47aa039c9b3bf3a04d507eea5d3c6965f926b4ed113ec187af9a9efa73faad"
+    },
+    "situation_sums": {
+      "00001.grz": 989424.7087240648
+    },
+    "nonzero_values": 8859,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.023661858974358973,
+    "issues": []
+  },
+  {
+    "case": "convective_mixed_t8",
+    "variant": "combined",
+    "repeat": 1,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.9615959999937331,
+    "cpu_s": 5.25,
+    "pid": 59868,
+    "memory": {
+      "PeakWorkingSetSize": 84750336,
+      "PeakPagefileUsage": 61145088,
+      "PrivateUsage": 61132800,
+      "WorkingSetSize": 84246528
+    },
+    "memory_samples": 92,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299984
+    ],
+    "actual_particles_per_s": [
+      999.9466666666667
+    ],
+    "actual_source_counts": {
+      "point": 16,
+      "area": 16,
+      "portal": 16,
+      "line": 16
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ab82f93e0d4807c0be378c2b3ee5338bcc411b02369645c1425a323aac650d18",
+      "00001.grz:00001-102.con": "ea1d74437dac8224644b9341e8dccc949759a869f5220165977980fd9accd329",
+      "00001.grz:00001-103.con": "269b756d75921d1fba813f33b836cd863504d850198a7fc1db957a8f9dd20e0b",
+      "00001.grz:00001-104.con": "7ac53e278a9f7192549b92f05c71d47638b58db399dfcc9bbd4874062a479330",
+      "00001.grz:00001-105.con": "ba713d3d0a4633a7761a50a8535e7508d8659141d729b7fc34d4e8c0298c5598",
+      "00001.grz:00001-106.con": "c24961487f887cf0794a3d5aec7d3923751f9c5cbf2b484d6ec96d159523a12a",
+      "00001.grz:00001-107.con": "a0f944a06f4001b56480323f240a49be67acbd8bd8bbafaa1ec8d6f34967221e",
+      "00001.grz:00001-108.con": "3c9f5abc2f1cf28b853cbc45c353e276fb62fae7babd0672375f19c0504b3176",
+      "00001.grz:00001-109.con": "6519cae57f274be7964bfcc3e88ad5d594bf026c4a525f628e61127871cdcb2d",
+      "00001.grz:00001-110.con": "f8806f98a0b07fe4ec6ca84acacb84e1fa06f6964b4434b57ead99a6a1a64a29",
+      "00001.grz:00001-111.con": "a7094b358b36a3410a2b6ea2ac805a5be758caf3abed3e4a852f9bcbf07d42c9",
+      "00001.grz:00001-112.con": "99a14012d15d77638ab15328177d7b3825421ffbcfa2623c4491e4761353bba6",
+      "00001.grz:00001-113.con": "feee74ef9c8ae0a4d67be5603b93e75dec7664915077219cdfbd401d334e4c28",
+      "00001.grz:00001-114.con": "80b8fedba4dc9684973bd6acb52fa2f5216dc1c6722b66ba0c6dd12c9f727479",
+      "00001.grz:00001-115.con": "e8ccd1e19016d9007648d5ee8cc33123671d59b01a291c92a432f6838134d897",
+      "00001.grz:00001-116.con": "9ba0a3184aa6ec2c957a9a40c79d1d54d8df8247cae95e28308c2d8269d8051a",
+      "00001.grz:00001-117.con": "340f00278288207bfe2f3a76761c0d4928dbe1eaab33859bcb8d22872d24305e",
+      "00001.grz:00001-118.con": "60b93f1467920d87a64c02dd1f331a42dfc1432e8a85f3fde9f645197d1ccc09",
+      "00001.grz:00001-119.con": "3834e66debe00e030e40347e25858b8f0fb0f398f7a8ac512449e63cb0b6edc0",
+      "00001.grz:00001-120.con": "206a16fc03ca03c03d2a97e6bc1a658c5d5ab65865715e706e57479fd7c41ced",
+      "00001.grz:00001-121.con": "76f67bdb2daf6c04d537cac87b71a130dbf21e4065265d8f079072ef69b5602f",
+      "00001.grz:00001-122.con": "0765a4a62e829bfe43e67e03347d957aab1d679d51146a4181fe01069120d2ce",
+      "00001.grz:00001-123.con": "f9cbb188c9312d65c5c21d3599f9a83a47a51cbb097c77686f0e1d8d05297ff5",
+      "00001.grz:00001-124.con": "7be41586bdbdaa4ccf55e2529cabf74f2700806e7a1b2d72b5cb9d902a13b26b",
+      "00001.grz:00001-125.con": "c0998eaed71459e90e0f1ab9e502aadb390c085a52058038c281c63dc4419dbd",
+      "00001.grz:00001-126.con": "ae47aa039c9b3bf3a04d507eea5d3c6965f926b4ed113ec187af9a9efa73faad"
+    },
+    "situation_sums": {
+      "00001.grz": 989424.7087240648
+    },
+    "nonzero_values": 8859,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.023661858974358973,
+    "issues": []
+  },
+  {
+    "case": "convective_mixed_t8",
+    "variant": "double",
+    "repeat": 1,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.8909186999953818,
+    "cpu_s": 4.703125,
+    "pid": 13516,
+    "memory": {
+      "PeakWorkingSetSize": 88555520,
+      "PeakPagefileUsage": 67547136,
+      "PrivateUsage": 67256320,
+      "WorkingSetSize": 88031232
+    },
+    "memory_samples": 85,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299984
+    ],
+    "actual_particles_per_s": [
+      999.9466666666667
+    ],
+    "actual_source_counts": {
+      "point": 16,
+      "area": 16,
+      "portal": 16,
+      "line": 16
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ab82f93e0d4807c0be378c2b3ee5338bcc411b02369645c1425a323aac650d18",
+      "00001.grz:00001-102.con": "ea1d74437dac8224644b9341e8dccc949759a869f5220165977980fd9accd329",
+      "00001.grz:00001-103.con": "269b756d75921d1fba813f33b836cd863504d850198a7fc1db957a8f9dd20e0b",
+      "00001.grz:00001-104.con": "7ac53e278a9f7192549b92f05c71d47638b58db399dfcc9bbd4874062a479330",
+      "00001.grz:00001-105.con": "ba713d3d0a4633a7761a50a8535e7508d8659141d729b7fc34d4e8c0298c5598",
+      "00001.grz:00001-106.con": "c24961487f887cf0794a3d5aec7d3923751f9c5cbf2b484d6ec96d159523a12a",
+      "00001.grz:00001-107.con": "a0f944a06f4001b56480323f240a49be67acbd8bd8bbafaa1ec8d6f34967221e",
+      "00001.grz:00001-108.con": "3c9f5abc2f1cf28b853cbc45c353e276fb62fae7babd0672375f19c0504b3176",
+      "00001.grz:00001-109.con": "6519cae57f274be7964bfcc3e88ad5d594bf026c4a525f628e61127871cdcb2d",
+      "00001.grz:00001-110.con": "f8806f98a0b07fe4ec6ca84acacb84e1fa06f6964b4434b57ead99a6a1a64a29",
+      "00001.grz:00001-111.con": "a7094b358b36a3410a2b6ea2ac805a5be758caf3abed3e4a852f9bcbf07d42c9",
+      "00001.grz:00001-112.con": "99a14012d15d77638ab15328177d7b3825421ffbcfa2623c4491e4761353bba6",
+      "00001.grz:00001-113.con": "feee74ef9c8ae0a4d67be5603b93e75dec7664915077219cdfbd401d334e4c28",
+      "00001.grz:00001-114.con": "80b8fedba4dc9684973bd6acb52fa2f5216dc1c6722b66ba0c6dd12c9f727479",
+      "00001.grz:00001-115.con": "e8ccd1e19016d9007648d5ee8cc33123671d59b01a291c92a432f6838134d897",
+      "00001.grz:00001-116.con": "9ba0a3184aa6ec2c957a9a40c79d1d54d8df8247cae95e28308c2d8269d8051a",
+      "00001.grz:00001-117.con": "340f00278288207bfe2f3a76761c0d4928dbe1eaab33859bcb8d22872d24305e",
+      "00001.grz:00001-118.con": "60b93f1467920d87a64c02dd1f331a42dfc1432e8a85f3fde9f645197d1ccc09",
+      "00001.grz:00001-119.con": "3834e66debe00e030e40347e25858b8f0fb0f398f7a8ac512449e63cb0b6edc0",
+      "00001.grz:00001-120.con": "206a16fc03ca03c03d2a97e6bc1a658c5d5ab65865715e706e57479fd7c41ced",
+      "00001.grz:00001-121.con": "76f67bdb2daf6c04d537cac87b71a130dbf21e4065265d8f079072ef69b5602f",
+      "00001.grz:00001-122.con": "0765a4a62e829bfe43e67e03347d957aab1d679d51146a4181fe01069120d2ce",
+      "00001.grz:00001-123.con": "f9cbb188c9312d65c5c21d3599f9a83a47a51cbb097c77686f0e1d8d05297ff5",
+      "00001.grz:00001-124.con": "7be41586bdbdaa4ccf55e2529cabf74f2700806e7a1b2d72b5cb9d902a13b26b",
+      "00001.grz:00001-125.con": "c0998eaed71459e90e0f1ab9e502aadb390c085a52058038c281c63dc4419dbd",
+      "00001.grz:00001-126.con": "ae47aa039c9b3bf3a04d507eea5d3c6965f926b4ed113ec187af9a9efa73faad"
+    },
+    "situation_sums": {
+      "00001.grz": 989424.7087240648
+    },
+    "nonzero_values": 8859,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.023661858974358973,
+    "issues": []
+  },
+  {
+    "case": "convective_mixed_t8",
+    "variant": "dictionary_fixed",
+    "repeat": 1,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.9696994999976596,
+    "cpu_s": 5.25,
+    "pid": 15284,
+    "memory": {
+      "PeakWorkingSetSize": 117895168,
+      "PeakPagefileUsage": 94748672,
+      "PrivateUsage": 94736384,
+      "WorkingSetSize": 117383168
+    },
+    "memory_samples": 93,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299984
+    ],
+    "actual_particles_per_s": [
+      999.9466666666667
+    ],
+    "actual_source_counts": {
+      "point": 16,
+      "area": 16,
+      "portal": 16,
+      "line": 16
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ab82f93e0d4807c0be378c2b3ee5338bcc411b02369645c1425a323aac650d18",
+      "00001.grz:00001-102.con": "ea1d74437dac8224644b9341e8dccc949759a869f5220165977980fd9accd329",
+      "00001.grz:00001-103.con": "269b756d75921d1fba813f33b836cd863504d850198a7fc1db957a8f9dd20e0b",
+      "00001.grz:00001-104.con": "7ac53e278a9f7192549b92f05c71d47638b58db399dfcc9bbd4874062a479330",
+      "00001.grz:00001-105.con": "ba713d3d0a4633a7761a50a8535e7508d8659141d729b7fc34d4e8c0298c5598",
+      "00001.grz:00001-106.con": "c24961487f887cf0794a3d5aec7d3923751f9c5cbf2b484d6ec96d159523a12a",
+      "00001.grz:00001-107.con": "a0f944a06f4001b56480323f240a49be67acbd8bd8bbafaa1ec8d6f34967221e",
+      "00001.grz:00001-108.con": "3c9f5abc2f1cf28b853cbc45c353e276fb62fae7babd0672375f19c0504b3176",
+      "00001.grz:00001-109.con": "6519cae57f274be7964bfcc3e88ad5d594bf026c4a525f628e61127871cdcb2d",
+      "00001.grz:00001-110.con": "f8806f98a0b07fe4ec6ca84acacb84e1fa06f6964b4434b57ead99a6a1a64a29",
+      "00001.grz:00001-111.con": "a7094b358b36a3410a2b6ea2ac805a5be758caf3abed3e4a852f9bcbf07d42c9",
+      "00001.grz:00001-112.con": "99a14012d15d77638ab15328177d7b3825421ffbcfa2623c4491e4761353bba6",
+      "00001.grz:00001-113.con": "feee74ef9c8ae0a4d67be5603b93e75dec7664915077219cdfbd401d334e4c28",
+      "00001.grz:00001-114.con": "80b8fedba4dc9684973bd6acb52fa2f5216dc1c6722b66ba0c6dd12c9f727479",
+      "00001.grz:00001-115.con": "e8ccd1e19016d9007648d5ee8cc33123671d59b01a291c92a432f6838134d897",
+      "00001.grz:00001-116.con": "9ba0a3184aa6ec2c957a9a40c79d1d54d8df8247cae95e28308c2d8269d8051a",
+      "00001.grz:00001-117.con": "340f00278288207bfe2f3a76761c0d4928dbe1eaab33859bcb8d22872d24305e",
+      "00001.grz:00001-118.con": "60b93f1467920d87a64c02dd1f331a42dfc1432e8a85f3fde9f645197d1ccc09",
+      "00001.grz:00001-119.con": "3834e66debe00e030e40347e25858b8f0fb0f398f7a8ac512449e63cb0b6edc0",
+      "00001.grz:00001-120.con": "206a16fc03ca03c03d2a97e6bc1a658c5d5ab65865715e706e57479fd7c41ced",
+      "00001.grz:00001-121.con": "76f67bdb2daf6c04d537cac87b71a130dbf21e4065265d8f079072ef69b5602f",
+      "00001.grz:00001-122.con": "0765a4a62e829bfe43e67e03347d957aab1d679d51146a4181fe01069120d2ce",
+      "00001.grz:00001-123.con": "f9cbb188c9312d65c5c21d3599f9a83a47a51cbb097c77686f0e1d8d05297ff5",
+      "00001.grz:00001-124.con": "7be41586bdbdaa4ccf55e2529cabf74f2700806e7a1b2d72b5cb9d902a13b26b",
+      "00001.grz:00001-125.con": "c0998eaed71459e90e0f1ab9e502aadb390c085a52058038c281c63dc4419dbd",
+      "00001.grz:00001-126.con": "ae47aa039c9b3bf3a04d507eea5d3c6965f926b4ed113ec187af9a9efa73faad"
+    },
+    "situation_sums": {
+      "00001.grz": 989424.7087240648
+    },
+    "nonzero_values": 8859,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.023661858974358973,
+    "issues": []
+  },
+  {
+    "case": "convective_mixed_t8",
+    "variant": "double",
+    "repeat": 2,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.8886456999898655,
+    "cpu_s": 4.75,
+    "pid": 31804,
+    "memory": {
+      "PeakWorkingSetSize": 88653824,
+      "PeakPagefileUsage": 67461120,
+      "PrivateUsage": 67362816,
+      "WorkingSetSize": 88121344
+    },
+    "memory_samples": 85,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299984
+    ],
+    "actual_particles_per_s": [
+      999.9466666666667
+    ],
+    "actual_source_counts": {
+      "point": 16,
+      "area": 16,
+      "portal": 16,
+      "line": 16
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ab82f93e0d4807c0be378c2b3ee5338bcc411b02369645c1425a323aac650d18",
+      "00001.grz:00001-102.con": "ea1d74437dac8224644b9341e8dccc949759a869f5220165977980fd9accd329",
+      "00001.grz:00001-103.con": "269b756d75921d1fba813f33b836cd863504d850198a7fc1db957a8f9dd20e0b",
+      "00001.grz:00001-104.con": "7ac53e278a9f7192549b92f05c71d47638b58db399dfcc9bbd4874062a479330",
+      "00001.grz:00001-105.con": "ba713d3d0a4633a7761a50a8535e7508d8659141d729b7fc34d4e8c0298c5598",
+      "00001.grz:00001-106.con": "c24961487f887cf0794a3d5aec7d3923751f9c5cbf2b484d6ec96d159523a12a",
+      "00001.grz:00001-107.con": "a0f944a06f4001b56480323f240a49be67acbd8bd8bbafaa1ec8d6f34967221e",
+      "00001.grz:00001-108.con": "3c9f5abc2f1cf28b853cbc45c353e276fb62fae7babd0672375f19c0504b3176",
+      "00001.grz:00001-109.con": "6519cae57f274be7964bfcc3e88ad5d594bf026c4a525f628e61127871cdcb2d",
+      "00001.grz:00001-110.con": "f8806f98a0b07fe4ec6ca84acacb84e1fa06f6964b4434b57ead99a6a1a64a29",
+      "00001.grz:00001-111.con": "a7094b358b36a3410a2b6ea2ac805a5be758caf3abed3e4a852f9bcbf07d42c9",
+      "00001.grz:00001-112.con": "99a14012d15d77638ab15328177d7b3825421ffbcfa2623c4491e4761353bba6",
+      "00001.grz:00001-113.con": "feee74ef9c8ae0a4d67be5603b93e75dec7664915077219cdfbd401d334e4c28",
+      "00001.grz:00001-114.con": "80b8fedba4dc9684973bd6acb52fa2f5216dc1c6722b66ba0c6dd12c9f727479",
+      "00001.grz:00001-115.con": "e8ccd1e19016d9007648d5ee8cc33123671d59b01a291c92a432f6838134d897",
+      "00001.grz:00001-116.con": "9ba0a3184aa6ec2c957a9a40c79d1d54d8df8247cae95e28308c2d8269d8051a",
+      "00001.grz:00001-117.con": "340f00278288207bfe2f3a76761c0d4928dbe1eaab33859bcb8d22872d24305e",
+      "00001.grz:00001-118.con": "60b93f1467920d87a64c02dd1f331a42dfc1432e8a85f3fde9f645197d1ccc09",
+      "00001.grz:00001-119.con": "3834e66debe00e030e40347e25858b8f0fb0f398f7a8ac512449e63cb0b6edc0",
+      "00001.grz:00001-120.con": "206a16fc03ca03c03d2a97e6bc1a658c5d5ab65865715e706e57479fd7c41ced",
+      "00001.grz:00001-121.con": "76f67bdb2daf6c04d537cac87b71a130dbf21e4065265d8f079072ef69b5602f",
+      "00001.grz:00001-122.con": "0765a4a62e829bfe43e67e03347d957aab1d679d51146a4181fe01069120d2ce",
+      "00001.grz:00001-123.con": "f9cbb188c9312d65c5c21d3599f9a83a47a51cbb097c77686f0e1d8d05297ff5",
+      "00001.grz:00001-124.con": "7be41586bdbdaa4ccf55e2529cabf74f2700806e7a1b2d72b5cb9d902a13b26b",
+      "00001.grz:00001-125.con": "c0998eaed71459e90e0f1ab9e502aadb390c085a52058038c281c63dc4419dbd",
+      "00001.grz:00001-126.con": "ae47aa039c9b3bf3a04d507eea5d3c6965f926b4ed113ec187af9a9efa73faad"
+    },
+    "situation_sums": {
+      "00001.grz": 989424.7087240648
+    },
+    "nonzero_values": 8859,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.023661858974358973,
+    "issues": []
+  },
+  {
+    "case": "convective_mixed_t8",
+    "variant": "dictionary_fixed",
+    "repeat": 2,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.9668729999975767,
+    "cpu_s": 5.390625,
+    "pid": 63168,
+    "memory": {
+      "PeakWorkingSetSize": 118665216,
+      "PeakPagefileUsage": 95465472,
+      "PrivateUsage": 95391744,
+      "WorkingSetSize": 118067200
+    },
+    "memory_samples": 93,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299984
+    ],
+    "actual_particles_per_s": [
+      999.9466666666667
+    ],
+    "actual_source_counts": {
+      "point": 16,
+      "area": 16,
+      "portal": 16,
+      "line": 16
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ab82f93e0d4807c0be378c2b3ee5338bcc411b02369645c1425a323aac650d18",
+      "00001.grz:00001-102.con": "ea1d74437dac8224644b9341e8dccc949759a869f5220165977980fd9accd329",
+      "00001.grz:00001-103.con": "269b756d75921d1fba813f33b836cd863504d850198a7fc1db957a8f9dd20e0b",
+      "00001.grz:00001-104.con": "7ac53e278a9f7192549b92f05c71d47638b58db399dfcc9bbd4874062a479330",
+      "00001.grz:00001-105.con": "ba713d3d0a4633a7761a50a8535e7508d8659141d729b7fc34d4e8c0298c5598",
+      "00001.grz:00001-106.con": "c24961487f887cf0794a3d5aec7d3923751f9c5cbf2b484d6ec96d159523a12a",
+      "00001.grz:00001-107.con": "a0f944a06f4001b56480323f240a49be67acbd8bd8bbafaa1ec8d6f34967221e",
+      "00001.grz:00001-108.con": "3c9f5abc2f1cf28b853cbc45c353e276fb62fae7babd0672375f19c0504b3176",
+      "00001.grz:00001-109.con": "6519cae57f274be7964bfcc3e88ad5d594bf026c4a525f628e61127871cdcb2d",
+      "00001.grz:00001-110.con": "f8806f98a0b07fe4ec6ca84acacb84e1fa06f6964b4434b57ead99a6a1a64a29",
+      "00001.grz:00001-111.con": "a7094b358b36a3410a2b6ea2ac805a5be758caf3abed3e4a852f9bcbf07d42c9",
+      "00001.grz:00001-112.con": "99a14012d15d77638ab15328177d7b3825421ffbcfa2623c4491e4761353bba6",
+      "00001.grz:00001-113.con": "feee74ef9c8ae0a4d67be5603b93e75dec7664915077219cdfbd401d334e4c28",
+      "00001.grz:00001-114.con": "80b8fedba4dc9684973bd6acb52fa2f5216dc1c6722b66ba0c6dd12c9f727479",
+      "00001.grz:00001-115.con": "e8ccd1e19016d9007648d5ee8cc33123671d59b01a291c92a432f6838134d897",
+      "00001.grz:00001-116.con": "9ba0a3184aa6ec2c957a9a40c79d1d54d8df8247cae95e28308c2d8269d8051a",
+      "00001.grz:00001-117.con": "340f00278288207bfe2f3a76761c0d4928dbe1eaab33859bcb8d22872d24305e",
+      "00001.grz:00001-118.con": "60b93f1467920d87a64c02dd1f331a42dfc1432e8a85f3fde9f645197d1ccc09",
+      "00001.grz:00001-119.con": "3834e66debe00e030e40347e25858b8f0fb0f398f7a8ac512449e63cb0b6edc0",
+      "00001.grz:00001-120.con": "206a16fc03ca03c03d2a97e6bc1a658c5d5ab65865715e706e57479fd7c41ced",
+      "00001.grz:00001-121.con": "76f67bdb2daf6c04d537cac87b71a130dbf21e4065265d8f079072ef69b5602f",
+      "00001.grz:00001-122.con": "0765a4a62e829bfe43e67e03347d957aab1d679d51146a4181fe01069120d2ce",
+      "00001.grz:00001-123.con": "f9cbb188c9312d65c5c21d3599f9a83a47a51cbb097c77686f0e1d8d05297ff5",
+      "00001.grz:00001-124.con": "7be41586bdbdaa4ccf55e2529cabf74f2700806e7a1b2d72b5cb9d902a13b26b",
+      "00001.grz:00001-125.con": "c0998eaed71459e90e0f1ab9e502aadb390c085a52058038c281c63dc4419dbd",
+      "00001.grz:00001-126.con": "ae47aa039c9b3bf3a04d507eea5d3c6965f926b4ed113ec187af9a9efa73faad"
+    },
+    "situation_sums": {
+      "00001.grz": 989424.7087240648
+    },
+    "nonzero_values": 8859,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.023661858974358973,
+    "issues": []
+  },
+  {
+    "case": "convective_mixed_t8",
+    "variant": "combined",
+    "repeat": 2,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.9538897999882465,
+    "cpu_s": 5.203125,
+    "pid": 62616,
+    "memory": {
+      "PeakWorkingSetSize": 84262912,
+      "PeakPagefileUsage": 60624896,
+      "PrivateUsage": 60612608,
+      "WorkingSetSize": 84262912
+    },
+    "memory_samples": 92,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299984
+    ],
+    "actual_particles_per_s": [
+      999.9466666666667
+    ],
+    "actual_source_counts": {
+      "point": 16,
+      "area": 16,
+      "portal": 16,
+      "line": 16
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ab82f93e0d4807c0be378c2b3ee5338bcc411b02369645c1425a323aac650d18",
+      "00001.grz:00001-102.con": "ea1d74437dac8224644b9341e8dccc949759a869f5220165977980fd9accd329",
+      "00001.grz:00001-103.con": "269b756d75921d1fba813f33b836cd863504d850198a7fc1db957a8f9dd20e0b",
+      "00001.grz:00001-104.con": "7ac53e278a9f7192549b92f05c71d47638b58db399dfcc9bbd4874062a479330",
+      "00001.grz:00001-105.con": "ba713d3d0a4633a7761a50a8535e7508d8659141d729b7fc34d4e8c0298c5598",
+      "00001.grz:00001-106.con": "c24961487f887cf0794a3d5aec7d3923751f9c5cbf2b484d6ec96d159523a12a",
+      "00001.grz:00001-107.con": "a0f944a06f4001b56480323f240a49be67acbd8bd8bbafaa1ec8d6f34967221e",
+      "00001.grz:00001-108.con": "3c9f5abc2f1cf28b853cbc45c353e276fb62fae7babd0672375f19c0504b3176",
+      "00001.grz:00001-109.con": "6519cae57f274be7964bfcc3e88ad5d594bf026c4a525f628e61127871cdcb2d",
+      "00001.grz:00001-110.con": "f8806f98a0b07fe4ec6ca84acacb84e1fa06f6964b4434b57ead99a6a1a64a29",
+      "00001.grz:00001-111.con": "a7094b358b36a3410a2b6ea2ac805a5be758caf3abed3e4a852f9bcbf07d42c9",
+      "00001.grz:00001-112.con": "99a14012d15d77638ab15328177d7b3825421ffbcfa2623c4491e4761353bba6",
+      "00001.grz:00001-113.con": "feee74ef9c8ae0a4d67be5603b93e75dec7664915077219cdfbd401d334e4c28",
+      "00001.grz:00001-114.con": "80b8fedba4dc9684973bd6acb52fa2f5216dc1c6722b66ba0c6dd12c9f727479",
+      "00001.grz:00001-115.con": "e8ccd1e19016d9007648d5ee8cc33123671d59b01a291c92a432f6838134d897",
+      "00001.grz:00001-116.con": "9ba0a3184aa6ec2c957a9a40c79d1d54d8df8247cae95e28308c2d8269d8051a",
+      "00001.grz:00001-117.con": "340f00278288207bfe2f3a76761c0d4928dbe1eaab33859bcb8d22872d24305e",
+      "00001.grz:00001-118.con": "60b93f1467920d87a64c02dd1f331a42dfc1432e8a85f3fde9f645197d1ccc09",
+      "00001.grz:00001-119.con": "3834e66debe00e030e40347e25858b8f0fb0f398f7a8ac512449e63cb0b6edc0",
+      "00001.grz:00001-120.con": "206a16fc03ca03c03d2a97e6bc1a658c5d5ab65865715e706e57479fd7c41ced",
+      "00001.grz:00001-121.con": "76f67bdb2daf6c04d537cac87b71a130dbf21e4065265d8f079072ef69b5602f",
+      "00001.grz:00001-122.con": "0765a4a62e829bfe43e67e03347d957aab1d679d51146a4181fe01069120d2ce",
+      "00001.grz:00001-123.con": "f9cbb188c9312d65c5c21d3599f9a83a47a51cbb097c77686f0e1d8d05297ff5",
+      "00001.grz:00001-124.con": "7be41586bdbdaa4ccf55e2529cabf74f2700806e7a1b2d72b5cb9d902a13b26b",
+      "00001.grz:00001-125.con": "c0998eaed71459e90e0f1ab9e502aadb390c085a52058038c281c63dc4419dbd",
+      "00001.grz:00001-126.con": "ae47aa039c9b3bf3a04d507eea5d3c6965f926b4ed113ec187af9a9efa73faad"
+    },
+    "situation_sums": {
+      "00001.grz": 989424.7087240648
+    },
+    "nonzero_values": 8859,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.023661858974358973,
+    "issues": []
+  },
+  {
+    "case": "convective_mixed_t8",
+    "variant": "dictionary_fixed",
+    "repeat": 3,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.9709610999998404,
+    "cpu_s": 5.53125,
+    "pid": 49172,
+    "memory": {
+      "PeakWorkingSetSize": 118943744,
+      "PeakPagefileUsage": 95522816,
+      "PrivateUsage": 95510528,
+      "WorkingSetSize": 118423552
+    },
+    "memory_samples": 93,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299984
+    ],
+    "actual_particles_per_s": [
+      999.9466666666667
+    ],
+    "actual_source_counts": {
+      "point": 16,
+      "area": 16,
+      "portal": 16,
+      "line": 16
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ab82f93e0d4807c0be378c2b3ee5338bcc411b02369645c1425a323aac650d18",
+      "00001.grz:00001-102.con": "ea1d74437dac8224644b9341e8dccc949759a869f5220165977980fd9accd329",
+      "00001.grz:00001-103.con": "269b756d75921d1fba813f33b836cd863504d850198a7fc1db957a8f9dd20e0b",
+      "00001.grz:00001-104.con": "7ac53e278a9f7192549b92f05c71d47638b58db399dfcc9bbd4874062a479330",
+      "00001.grz:00001-105.con": "ba713d3d0a4633a7761a50a8535e7508d8659141d729b7fc34d4e8c0298c5598",
+      "00001.grz:00001-106.con": "c24961487f887cf0794a3d5aec7d3923751f9c5cbf2b484d6ec96d159523a12a",
+      "00001.grz:00001-107.con": "a0f944a06f4001b56480323f240a49be67acbd8bd8bbafaa1ec8d6f34967221e",
+      "00001.grz:00001-108.con": "3c9f5abc2f1cf28b853cbc45c353e276fb62fae7babd0672375f19c0504b3176",
+      "00001.grz:00001-109.con": "6519cae57f274be7964bfcc3e88ad5d594bf026c4a525f628e61127871cdcb2d",
+      "00001.grz:00001-110.con": "f8806f98a0b07fe4ec6ca84acacb84e1fa06f6964b4434b57ead99a6a1a64a29",
+      "00001.grz:00001-111.con": "a7094b358b36a3410a2b6ea2ac805a5be758caf3abed3e4a852f9bcbf07d42c9",
+      "00001.grz:00001-112.con": "99a14012d15d77638ab15328177d7b3825421ffbcfa2623c4491e4761353bba6",
+      "00001.grz:00001-113.con": "feee74ef9c8ae0a4d67be5603b93e75dec7664915077219cdfbd401d334e4c28",
+      "00001.grz:00001-114.con": "80b8fedba4dc9684973bd6acb52fa2f5216dc1c6722b66ba0c6dd12c9f727479",
+      "00001.grz:00001-115.con": "e8ccd1e19016d9007648d5ee8cc33123671d59b01a291c92a432f6838134d897",
+      "00001.grz:00001-116.con": "9ba0a3184aa6ec2c957a9a40c79d1d54d8df8247cae95e28308c2d8269d8051a",
+      "00001.grz:00001-117.con": "340f00278288207bfe2f3a76761c0d4928dbe1eaab33859bcb8d22872d24305e",
+      "00001.grz:00001-118.con": "60b93f1467920d87a64c02dd1f331a42dfc1432e8a85f3fde9f645197d1ccc09",
+      "00001.grz:00001-119.con": "3834e66debe00e030e40347e25858b8f0fb0f398f7a8ac512449e63cb0b6edc0",
+      "00001.grz:00001-120.con": "206a16fc03ca03c03d2a97e6bc1a658c5d5ab65865715e706e57479fd7c41ced",
+      "00001.grz:00001-121.con": "76f67bdb2daf6c04d537cac87b71a130dbf21e4065265d8f079072ef69b5602f",
+      "00001.grz:00001-122.con": "0765a4a62e829bfe43e67e03347d957aab1d679d51146a4181fe01069120d2ce",
+      "00001.grz:00001-123.con": "f9cbb188c9312d65c5c21d3599f9a83a47a51cbb097c77686f0e1d8d05297ff5",
+      "00001.grz:00001-124.con": "7be41586bdbdaa4ccf55e2529cabf74f2700806e7a1b2d72b5cb9d902a13b26b",
+      "00001.grz:00001-125.con": "c0998eaed71459e90e0f1ab9e502aadb390c085a52058038c281c63dc4419dbd",
+      "00001.grz:00001-126.con": "ae47aa039c9b3bf3a04d507eea5d3c6965f926b4ed113ec187af9a9efa73faad"
+    },
+    "situation_sums": {
+      "00001.grz": 989424.7087240648
+    },
+    "nonzero_values": 8859,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.023661858974358973,
+    "issues": []
+  },
+  {
+    "case": "convective_mixed_t8",
+    "variant": "combined",
+    "repeat": 3,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.9458720999973593,
+    "cpu_s": 5.09375,
+    "pid": 58228,
+    "memory": {
+      "PeakWorkingSetSize": 84619264,
+      "PeakPagefileUsage": 61018112,
+      "PrivateUsage": 61001728,
+      "WorkingSetSize": 84119552
+    },
+    "memory_samples": 91,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299984
+    ],
+    "actual_particles_per_s": [
+      999.9466666666667
+    ],
+    "actual_source_counts": {
+      "point": 16,
+      "area": 16,
+      "portal": 16,
+      "line": 16
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ab82f93e0d4807c0be378c2b3ee5338bcc411b02369645c1425a323aac650d18",
+      "00001.grz:00001-102.con": "ea1d74437dac8224644b9341e8dccc949759a869f5220165977980fd9accd329",
+      "00001.grz:00001-103.con": "269b756d75921d1fba813f33b836cd863504d850198a7fc1db957a8f9dd20e0b",
+      "00001.grz:00001-104.con": "7ac53e278a9f7192549b92f05c71d47638b58db399dfcc9bbd4874062a479330",
+      "00001.grz:00001-105.con": "ba713d3d0a4633a7761a50a8535e7508d8659141d729b7fc34d4e8c0298c5598",
+      "00001.grz:00001-106.con": "c24961487f887cf0794a3d5aec7d3923751f9c5cbf2b484d6ec96d159523a12a",
+      "00001.grz:00001-107.con": "a0f944a06f4001b56480323f240a49be67acbd8bd8bbafaa1ec8d6f34967221e",
+      "00001.grz:00001-108.con": "3c9f5abc2f1cf28b853cbc45c353e276fb62fae7babd0672375f19c0504b3176",
+      "00001.grz:00001-109.con": "6519cae57f274be7964bfcc3e88ad5d594bf026c4a525f628e61127871cdcb2d",
+      "00001.grz:00001-110.con": "f8806f98a0b07fe4ec6ca84acacb84e1fa06f6964b4434b57ead99a6a1a64a29",
+      "00001.grz:00001-111.con": "a7094b358b36a3410a2b6ea2ac805a5be758caf3abed3e4a852f9bcbf07d42c9",
+      "00001.grz:00001-112.con": "99a14012d15d77638ab15328177d7b3825421ffbcfa2623c4491e4761353bba6",
+      "00001.grz:00001-113.con": "feee74ef9c8ae0a4d67be5603b93e75dec7664915077219cdfbd401d334e4c28",
+      "00001.grz:00001-114.con": "80b8fedba4dc9684973bd6acb52fa2f5216dc1c6722b66ba0c6dd12c9f727479",
+      "00001.grz:00001-115.con": "e8ccd1e19016d9007648d5ee8cc33123671d59b01a291c92a432f6838134d897",
+      "00001.grz:00001-116.con": "9ba0a3184aa6ec2c957a9a40c79d1d54d8df8247cae95e28308c2d8269d8051a",
+      "00001.grz:00001-117.con": "340f00278288207bfe2f3a76761c0d4928dbe1eaab33859bcb8d22872d24305e",
+      "00001.grz:00001-118.con": "60b93f1467920d87a64c02dd1f331a42dfc1432e8a85f3fde9f645197d1ccc09",
+      "00001.grz:00001-119.con": "3834e66debe00e030e40347e25858b8f0fb0f398f7a8ac512449e63cb0b6edc0",
+      "00001.grz:00001-120.con": "206a16fc03ca03c03d2a97e6bc1a658c5d5ab65865715e706e57479fd7c41ced",
+      "00001.grz:00001-121.con": "76f67bdb2daf6c04d537cac87b71a130dbf21e4065265d8f079072ef69b5602f",
+      "00001.grz:00001-122.con": "0765a4a62e829bfe43e67e03347d957aab1d679d51146a4181fe01069120d2ce",
+      "00001.grz:00001-123.con": "f9cbb188c9312d65c5c21d3599f9a83a47a51cbb097c77686f0e1d8d05297ff5",
+      "00001.grz:00001-124.con": "7be41586bdbdaa4ccf55e2529cabf74f2700806e7a1b2d72b5cb9d902a13b26b",
+      "00001.grz:00001-125.con": "c0998eaed71459e90e0f1ab9e502aadb390c085a52058038c281c63dc4419dbd",
+      "00001.grz:00001-126.con": "ae47aa039c9b3bf3a04d507eea5d3c6965f926b4ed113ec187af9a9efa73faad"
+    },
+    "situation_sums": {
+      "00001.grz": 989424.7087240648
+    },
+    "nonzero_values": 8859,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.023661858974358973,
+    "issues": []
+  },
+  {
+    "case": "convective_mixed_t8",
+    "variant": "double",
+    "repeat": 3,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.9024315999995451,
+    "cpu_s": 4.8125,
+    "pid": 16136,
+    "memory": {
+      "PeakWorkingSetSize": 88731648,
+      "PeakPagefileUsage": 67719168,
+      "PrivateUsage": 67493888,
+      "WorkingSetSize": 88203264
+    },
+    "memory_samples": 87,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      299984
+    ],
+    "actual_particles_per_s": [
+      999.9466666666667
+    ],
+    "actual_source_counts": {
+      "point": 16,
+      "area": 16,
+      "portal": 16,
+      "line": 16
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ab82f93e0d4807c0be378c2b3ee5338bcc411b02369645c1425a323aac650d18",
+      "00001.grz:00001-102.con": "ea1d74437dac8224644b9341e8dccc949759a869f5220165977980fd9accd329",
+      "00001.grz:00001-103.con": "269b756d75921d1fba813f33b836cd863504d850198a7fc1db957a8f9dd20e0b",
+      "00001.grz:00001-104.con": "7ac53e278a9f7192549b92f05c71d47638b58db399dfcc9bbd4874062a479330",
+      "00001.grz:00001-105.con": "ba713d3d0a4633a7761a50a8535e7508d8659141d729b7fc34d4e8c0298c5598",
+      "00001.grz:00001-106.con": "c24961487f887cf0794a3d5aec7d3923751f9c5cbf2b484d6ec96d159523a12a",
+      "00001.grz:00001-107.con": "a0f944a06f4001b56480323f240a49be67acbd8bd8bbafaa1ec8d6f34967221e",
+      "00001.grz:00001-108.con": "3c9f5abc2f1cf28b853cbc45c353e276fb62fae7babd0672375f19c0504b3176",
+      "00001.grz:00001-109.con": "6519cae57f274be7964bfcc3e88ad5d594bf026c4a525f628e61127871cdcb2d",
+      "00001.grz:00001-110.con": "f8806f98a0b07fe4ec6ca84acacb84e1fa06f6964b4434b57ead99a6a1a64a29",
+      "00001.grz:00001-111.con": "a7094b358b36a3410a2b6ea2ac805a5be758caf3abed3e4a852f9bcbf07d42c9",
+      "00001.grz:00001-112.con": "99a14012d15d77638ab15328177d7b3825421ffbcfa2623c4491e4761353bba6",
+      "00001.grz:00001-113.con": "feee74ef9c8ae0a4d67be5603b93e75dec7664915077219cdfbd401d334e4c28",
+      "00001.grz:00001-114.con": "80b8fedba4dc9684973bd6acb52fa2f5216dc1c6722b66ba0c6dd12c9f727479",
+      "00001.grz:00001-115.con": "e8ccd1e19016d9007648d5ee8cc33123671d59b01a291c92a432f6838134d897",
+      "00001.grz:00001-116.con": "9ba0a3184aa6ec2c957a9a40c79d1d54d8df8247cae95e28308c2d8269d8051a",
+      "00001.grz:00001-117.con": "340f00278288207bfe2f3a76761c0d4928dbe1eaab33859bcb8d22872d24305e",
+      "00001.grz:00001-118.con": "60b93f1467920d87a64c02dd1f331a42dfc1432e8a85f3fde9f645197d1ccc09",
+      "00001.grz:00001-119.con": "3834e66debe00e030e40347e25858b8f0fb0f398f7a8ac512449e63cb0b6edc0",
+      "00001.grz:00001-120.con": "206a16fc03ca03c03d2a97e6bc1a658c5d5ab65865715e706e57479fd7c41ced",
+      "00001.grz:00001-121.con": "76f67bdb2daf6c04d537cac87b71a130dbf21e4065265d8f079072ef69b5602f",
+      "00001.grz:00001-122.con": "0765a4a62e829bfe43e67e03347d957aab1d679d51146a4181fe01069120d2ce",
+      "00001.grz:00001-123.con": "f9cbb188c9312d65c5c21d3599f9a83a47a51cbb097c77686f0e1d8d05297ff5",
+      "00001.grz:00001-124.con": "7be41586bdbdaa4ccf55e2529cabf74f2700806e7a1b2d72b5cb9d902a13b26b",
+      "00001.grz:00001-125.con": "c0998eaed71459e90e0f1ab9e502aadb390c085a52058038c281c63dc4419dbd",
+      "00001.grz:00001-126.con": "ae47aa039c9b3bf3a04d507eea5d3c6965f926b4ed113ec187af9a9efa73faad"
+    },
+    "situation_sums": {
+      "00001.grz": 989424.7087240648
+    },
+    "nonzero_values": 8859,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.023661858974358973,
+    "issues": []
+  },
+  {
+    "case": "medium_8000ps_t8",
+    "variant": "combined",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 18.085487099990132,
+    "cpu_s": 141.84375,
+    "pid": 25228,
+    "memory": {
+      "PeakWorkingSetSize": 197050368,
+      "PeakPagefileUsage": 174907392,
+      "PrivateUsage": 174907392,
+      "WorkingSetSize": 197009408
+    },
+    "memory_samples": 1730,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      2400000
+    ],
+    "actual_particles_per_s": [
+      8000.0
+    ],
+    "actual_source_counts": {
+      "point": 128,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "1362058b05b51cd80e954bd4ac7d308be6a129833bf4b46b883c246bdfd82edf",
+      "00001.grz:00001-102.con": "1aec8c7fafa88c8cb2f22dc10387b69e14e3d2386330b5e7beddae29006f6e1f",
+      "00001.grz:00001-103.con": "45df63a3bbcf1f5e2584e955b5f001eef2ba341935a7a405f99932347792cbb0",
+      "00001.grz:00001-104.con": "5623ce9a645e944af39c6ac0589523797ece119154f08fbcf8a7ff37acd9bee1",
+      "00001.grz:00001-105.con": "b8ec88472120e460cbe5516787be9b2230f0b0c51f335c1a4672feff4de75a90",
+      "00001.grz:00001-106.con": "cb1a2aac8b525269d7b8cc84735de50623006aa9575da9c03a3d008b023d16a4",
+      "00001.grz:00001-107.con": "9efe1fa2f11542b00c59f6594fa4270137b143e210335ff3c3fa7bab69bc2d7e",
+      "00001.grz:00001-108.con": "027d9a60a0e89f014290fbd5a3d72fd171a9aef1bb989a9f4853d0db5f730103",
+      "00001.grz:00001-109.con": "bd1881a6af710cf5be970edadb846df14c18714ef3d551efbc5f59b4bbecb338",
+      "00001.grz:00001-110.con": "67d08532d1d4d0a8aeb015bcb64fdf5e228b8587b997781064f6552b094ef5c7",
+      "00001.grz:00001-111.con": "e4fa21e6199ad3f93111a9475dd7e119850bd676bf3151095c82d9605fc1a337",
+      "00001.grz:00001-112.con": "e2832383e78230e4ced5d04594f922be4926ee2beaac9d96d4d60f9a1b2f61d0",
+      "00001.grz:00001-113.con": "b938a7df82a632c30ae5a71e903ff26c7f451e77c977c3abc0c8538a6712ceb6",
+      "00001.grz:00001-114.con": "7f0d9bb8e4b3ef4009c9455a4ce734c573e02eb483ba93d1e69943db5f7969ca",
+      "00001.grz:00001-115.con": "50991b2df346a1d074b6cdbe321304c4d5b6df6dd20f1f14af7241f8052cb592",
+      "00001.grz:00001-116.con": "23101f41f691ddb4a52f3efe9df064bef92645c67f85dc43d734572f6e138d64",
+      "00001.grz:00001-117.con": "a0b3dcc99ca1188304ea66a821e3720817d941b64f982202b60093fe34a6b68d",
+      "00001.grz:00001-118.con": "6eeee139dce62518659e1c310b62ba5aa11400a94916ee156a3a424643e84203",
+      "00001.grz:00001-119.con": "9824de038c5e160aca77bd81bc2c8fa1693cda15989fed121d0c64b17dcf3908",
+      "00001.grz:00001-120.con": "cf5171d90122fa79c29df2e3d55cfe6b53771803107b1fc86217710c41ca1161",
+      "00001.grz:00001-121.con": "3052fa02c937d175bdc1860049c89ad1d7655a1b6c4b6707d8e30ecd7a2a196a",
+      "00001.grz:00001-122.con": "b39ad4100e487f7e52dff026659a43cdff1716f54a30cde27a45ca01109e321f",
+      "00001.grz:00001-123.con": "4ea5d4c73106e7f9c3e32d5bb7033c7f867ea3bceeebacd811317239477941df",
+      "00001.grz:00001-124.con": "4518433a6f339e440ec754c96e2cfa1ea58dd1a06aef9541381da60b60f3e1ce",
+      "00001.grz:00001-125.con": "2baf60b0dc226734e3b6c350a452b5b1ed83a3b3e449831ffa50e61cd13628e0",
+      "00001.grz:00001-126.con": "f6475cc7e1757243c605c333e85caac72c230762e004357b62f8a680c0cfc896"
+    },
+    "situation_sums": {
+      "00001.grz": 1774328.0068785418
+    },
+    "nonzero_values": 5848,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.01561965811965812,
+    "issues": []
+  },
+  {
+    "case": "medium_8000ps_t8",
+    "variant": "double",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 15.548789799999213,
+    "cpu_s": 121.40625,
+    "pid": 57660,
+    "memory": {
+      "PeakWorkingSetSize": 208044032,
+      "PeakPagefileUsage": 185196544,
+      "PrivateUsage": 180895744,
+      "WorkingSetSize": 202915840
+    },
+    "memory_samples": 1485,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      2400000
+    ],
+    "actual_particles_per_s": [
+      8000.0
+    ],
+    "actual_source_counts": {
+      "point": 128,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "1362058b05b51cd80e954bd4ac7d308be6a129833bf4b46b883c246bdfd82edf",
+      "00001.grz:00001-102.con": "1aec8c7fafa88c8cb2f22dc10387b69e14e3d2386330b5e7beddae29006f6e1f",
+      "00001.grz:00001-103.con": "45df63a3bbcf1f5e2584e955b5f001eef2ba341935a7a405f99932347792cbb0",
+      "00001.grz:00001-104.con": "5623ce9a645e944af39c6ac0589523797ece119154f08fbcf8a7ff37acd9bee1",
+      "00001.grz:00001-105.con": "b8ec88472120e460cbe5516787be9b2230f0b0c51f335c1a4672feff4de75a90",
+      "00001.grz:00001-106.con": "cb1a2aac8b525269d7b8cc84735de50623006aa9575da9c03a3d008b023d16a4",
+      "00001.grz:00001-107.con": "9efe1fa2f11542b00c59f6594fa4270137b143e210335ff3c3fa7bab69bc2d7e",
+      "00001.grz:00001-108.con": "027d9a60a0e89f014290fbd5a3d72fd171a9aef1bb989a9f4853d0db5f730103",
+      "00001.grz:00001-109.con": "bd1881a6af710cf5be970edadb846df14c18714ef3d551efbc5f59b4bbecb338",
+      "00001.grz:00001-110.con": "67d08532d1d4d0a8aeb015bcb64fdf5e228b8587b997781064f6552b094ef5c7",
+      "00001.grz:00001-111.con": "e4fa21e6199ad3f93111a9475dd7e119850bd676bf3151095c82d9605fc1a337",
+      "00001.grz:00001-112.con": "e2832383e78230e4ced5d04594f922be4926ee2beaac9d96d4d60f9a1b2f61d0",
+      "00001.grz:00001-113.con": "b938a7df82a632c30ae5a71e903ff26c7f451e77c977c3abc0c8538a6712ceb6",
+      "00001.grz:00001-114.con": "7f0d9bb8e4b3ef4009c9455a4ce734c573e02eb483ba93d1e69943db5f7969ca",
+      "00001.grz:00001-115.con": "50991b2df346a1d074b6cdbe321304c4d5b6df6dd20f1f14af7241f8052cb592",
+      "00001.grz:00001-116.con": "23101f41f691ddb4a52f3efe9df064bef92645c67f85dc43d734572f6e138d64",
+      "00001.grz:00001-117.con": "a0b3dcc99ca1188304ea66a821e3720817d941b64f982202b60093fe34a6b68d",
+      "00001.grz:00001-118.con": "6eeee139dce62518659e1c310b62ba5aa11400a94916ee156a3a424643e84203",
+      "00001.grz:00001-119.con": "9824de038c5e160aca77bd81bc2c8fa1693cda15989fed121d0c64b17dcf3908",
+      "00001.grz:00001-120.con": "cf5171d90122fa79c29df2e3d55cfe6b53771803107b1fc86217710c41ca1161",
+      "00001.grz:00001-121.con": "3052fa02c937d175bdc1860049c89ad1d7655a1b6c4b6707d8e30ecd7a2a196a",
+      "00001.grz:00001-122.con": "b39ad4100e487f7e52dff026659a43cdff1716f54a30cde27a45ca01109e321f",
+      "00001.grz:00001-123.con": "4ea5d4c73106e7f9c3e32d5bb7033c7f867ea3bceeebacd811317239477941df",
+      "00001.grz:00001-124.con": "4518433a6f339e440ec754c96e2cfa1ea58dd1a06aef9541381da60b60f3e1ce",
+      "00001.grz:00001-125.con": "2baf60b0dc226734e3b6c350a452b5b1ed83a3b3e449831ffa50e61cd13628e0",
+      "00001.grz:00001-126.con": "f6475cc7e1757243c605c333e85caac72c230762e004357b62f8a680c0cfc896"
+    },
+    "situation_sums": {
+      "00001.grz": 1774328.0068785418
+    },
+    "nonzero_values": 5848,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.01561965811965812,
+    "issues": []
+  },
+  {
+    "case": "medium_8000ps_t8",
+    "variant": "dictionary_fixed",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 18.14237959998718,
+    "cpu_s": 142.359375,
+    "pid": 57140,
+    "memory": {
+      "PeakWorkingSetSize": 217407488,
+      "PeakPagefileUsage": 194617344,
+      "PrivateUsage": 194609152,
+      "WorkingSetSize": 217350144
+    },
+    "memory_samples": 1735,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      2400000
+    ],
+    "actual_particles_per_s": [
+      8000.0
+    ],
+    "actual_source_counts": {
+      "point": 128,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "1362058b05b51cd80e954bd4ac7d308be6a129833bf4b46b883c246bdfd82edf",
+      "00001.grz:00001-102.con": "1aec8c7fafa88c8cb2f22dc10387b69e14e3d2386330b5e7beddae29006f6e1f",
+      "00001.grz:00001-103.con": "45df63a3bbcf1f5e2584e955b5f001eef2ba341935a7a405f99932347792cbb0",
+      "00001.grz:00001-104.con": "5623ce9a645e944af39c6ac0589523797ece119154f08fbcf8a7ff37acd9bee1",
+      "00001.grz:00001-105.con": "b8ec88472120e460cbe5516787be9b2230f0b0c51f335c1a4672feff4de75a90",
+      "00001.grz:00001-106.con": "cb1a2aac8b525269d7b8cc84735de50623006aa9575da9c03a3d008b023d16a4",
+      "00001.grz:00001-107.con": "9efe1fa2f11542b00c59f6594fa4270137b143e210335ff3c3fa7bab69bc2d7e",
+      "00001.grz:00001-108.con": "027d9a60a0e89f014290fbd5a3d72fd171a9aef1bb989a9f4853d0db5f730103",
+      "00001.grz:00001-109.con": "bd1881a6af710cf5be970edadb846df14c18714ef3d551efbc5f59b4bbecb338",
+      "00001.grz:00001-110.con": "67d08532d1d4d0a8aeb015bcb64fdf5e228b8587b997781064f6552b094ef5c7",
+      "00001.grz:00001-111.con": "e4fa21e6199ad3f93111a9475dd7e119850bd676bf3151095c82d9605fc1a337",
+      "00001.grz:00001-112.con": "e2832383e78230e4ced5d04594f922be4926ee2beaac9d96d4d60f9a1b2f61d0",
+      "00001.grz:00001-113.con": "b938a7df82a632c30ae5a71e903ff26c7f451e77c977c3abc0c8538a6712ceb6",
+      "00001.grz:00001-114.con": "7f0d9bb8e4b3ef4009c9455a4ce734c573e02eb483ba93d1e69943db5f7969ca",
+      "00001.grz:00001-115.con": "50991b2df346a1d074b6cdbe321304c4d5b6df6dd20f1f14af7241f8052cb592",
+      "00001.grz:00001-116.con": "23101f41f691ddb4a52f3efe9df064bef92645c67f85dc43d734572f6e138d64",
+      "00001.grz:00001-117.con": "a0b3dcc99ca1188304ea66a821e3720817d941b64f982202b60093fe34a6b68d",
+      "00001.grz:00001-118.con": "6eeee139dce62518659e1c310b62ba5aa11400a94916ee156a3a424643e84203",
+      "00001.grz:00001-119.con": "9824de038c5e160aca77bd81bc2c8fa1693cda15989fed121d0c64b17dcf3908",
+      "00001.grz:00001-120.con": "cf5171d90122fa79c29df2e3d55cfe6b53771803107b1fc86217710c41ca1161",
+      "00001.grz:00001-121.con": "3052fa02c937d175bdc1860049c89ad1d7655a1b6c4b6707d8e30ecd7a2a196a",
+      "00001.grz:00001-122.con": "b39ad4100e487f7e52dff026659a43cdff1716f54a30cde27a45ca01109e321f",
+      "00001.grz:00001-123.con": "4ea5d4c73106e7f9c3e32d5bb7033c7f867ea3bceeebacd811317239477941df",
+      "00001.grz:00001-124.con": "4518433a6f339e440ec754c96e2cfa1ea58dd1a06aef9541381da60b60f3e1ce",
+      "00001.grz:00001-125.con": "2baf60b0dc226734e3b6c350a452b5b1ed83a3b3e449831ffa50e61cd13628e0",
+      "00001.grz:00001-126.con": "f6475cc7e1757243c605c333e85caac72c230762e004357b62f8a680c0cfc896"
+    },
+    "situation_sums": {
+      "00001.grz": 1774328.0068785418
+    },
+    "nonzero_values": 5848,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.01561965811965812,
+    "issues": []
+  },
+  {
+    "case": "medium_8000ps_t8",
+    "variant": "double",
+    "repeat": 1,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 15.54911780000839,
+    "cpu_s": 121.6875,
+    "pid": 27176,
+    "memory": {
+      "PeakWorkingSetSize": 208138240,
+      "PeakPagefileUsage": 186093568,
+      "PrivateUsage": 181784576,
+      "WorkingSetSize": 203005952
+    },
+    "memory_samples": 1487,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      2400000
+    ],
+    "actual_particles_per_s": [
+      8000.0
+    ],
+    "actual_source_counts": {
+      "point": 128,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "1362058b05b51cd80e954bd4ac7d308be6a129833bf4b46b883c246bdfd82edf",
+      "00001.grz:00001-102.con": "1aec8c7fafa88c8cb2f22dc10387b69e14e3d2386330b5e7beddae29006f6e1f",
+      "00001.grz:00001-103.con": "45df63a3bbcf1f5e2584e955b5f001eef2ba341935a7a405f99932347792cbb0",
+      "00001.grz:00001-104.con": "5623ce9a645e944af39c6ac0589523797ece119154f08fbcf8a7ff37acd9bee1",
+      "00001.grz:00001-105.con": "b8ec88472120e460cbe5516787be9b2230f0b0c51f335c1a4672feff4de75a90",
+      "00001.grz:00001-106.con": "cb1a2aac8b525269d7b8cc84735de50623006aa9575da9c03a3d008b023d16a4",
+      "00001.grz:00001-107.con": "9efe1fa2f11542b00c59f6594fa4270137b143e210335ff3c3fa7bab69bc2d7e",
+      "00001.grz:00001-108.con": "027d9a60a0e89f014290fbd5a3d72fd171a9aef1bb989a9f4853d0db5f730103",
+      "00001.grz:00001-109.con": "bd1881a6af710cf5be970edadb846df14c18714ef3d551efbc5f59b4bbecb338",
+      "00001.grz:00001-110.con": "67d08532d1d4d0a8aeb015bcb64fdf5e228b8587b997781064f6552b094ef5c7",
+      "00001.grz:00001-111.con": "e4fa21e6199ad3f93111a9475dd7e119850bd676bf3151095c82d9605fc1a337",
+      "00001.grz:00001-112.con": "e2832383e78230e4ced5d04594f922be4926ee2beaac9d96d4d60f9a1b2f61d0",
+      "00001.grz:00001-113.con": "b938a7df82a632c30ae5a71e903ff26c7f451e77c977c3abc0c8538a6712ceb6",
+      "00001.grz:00001-114.con": "7f0d9bb8e4b3ef4009c9455a4ce734c573e02eb483ba93d1e69943db5f7969ca",
+      "00001.grz:00001-115.con": "50991b2df346a1d074b6cdbe321304c4d5b6df6dd20f1f14af7241f8052cb592",
+      "00001.grz:00001-116.con": "23101f41f691ddb4a52f3efe9df064bef92645c67f85dc43d734572f6e138d64",
+      "00001.grz:00001-117.con": "a0b3dcc99ca1188304ea66a821e3720817d941b64f982202b60093fe34a6b68d",
+      "00001.grz:00001-118.con": "6eeee139dce62518659e1c310b62ba5aa11400a94916ee156a3a424643e84203",
+      "00001.grz:00001-119.con": "9824de038c5e160aca77bd81bc2c8fa1693cda15989fed121d0c64b17dcf3908",
+      "00001.grz:00001-120.con": "cf5171d90122fa79c29df2e3d55cfe6b53771803107b1fc86217710c41ca1161",
+      "00001.grz:00001-121.con": "3052fa02c937d175bdc1860049c89ad1d7655a1b6c4b6707d8e30ecd7a2a196a",
+      "00001.grz:00001-122.con": "b39ad4100e487f7e52dff026659a43cdff1716f54a30cde27a45ca01109e321f",
+      "00001.grz:00001-123.con": "4ea5d4c73106e7f9c3e32d5bb7033c7f867ea3bceeebacd811317239477941df",
+      "00001.grz:00001-124.con": "4518433a6f339e440ec754c96e2cfa1ea58dd1a06aef9541381da60b60f3e1ce",
+      "00001.grz:00001-125.con": "2baf60b0dc226734e3b6c350a452b5b1ed83a3b3e449831ffa50e61cd13628e0",
+      "00001.grz:00001-126.con": "f6475cc7e1757243c605c333e85caac72c230762e004357b62f8a680c0cfc896"
+    },
+    "situation_sums": {
+      "00001.grz": 1774328.0068785418
+    },
+    "nonzero_values": 5848,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.01561965811965812,
+    "issues": []
+  },
+  {
+    "case": "medium_8000ps_t8",
+    "variant": "dictionary_fixed",
+    "repeat": 1,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 17.971573800008628,
+    "cpu_s": 140.796875,
+    "pid": 12112,
+    "memory": {
+      "PeakWorkingSetSize": 217788416,
+      "PeakPagefileUsage": 195104768,
+      "PrivateUsage": 195096576,
+      "WorkingSetSize": 217763840
+    },
+    "memory_samples": 1719,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      2400000
+    ],
+    "actual_particles_per_s": [
+      8000.0
+    ],
+    "actual_source_counts": {
+      "point": 128,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "1362058b05b51cd80e954bd4ac7d308be6a129833bf4b46b883c246bdfd82edf",
+      "00001.grz:00001-102.con": "1aec8c7fafa88c8cb2f22dc10387b69e14e3d2386330b5e7beddae29006f6e1f",
+      "00001.grz:00001-103.con": "45df63a3bbcf1f5e2584e955b5f001eef2ba341935a7a405f99932347792cbb0",
+      "00001.grz:00001-104.con": "5623ce9a645e944af39c6ac0589523797ece119154f08fbcf8a7ff37acd9bee1",
+      "00001.grz:00001-105.con": "b8ec88472120e460cbe5516787be9b2230f0b0c51f335c1a4672feff4de75a90",
+      "00001.grz:00001-106.con": "cb1a2aac8b525269d7b8cc84735de50623006aa9575da9c03a3d008b023d16a4",
+      "00001.grz:00001-107.con": "9efe1fa2f11542b00c59f6594fa4270137b143e210335ff3c3fa7bab69bc2d7e",
+      "00001.grz:00001-108.con": "027d9a60a0e89f014290fbd5a3d72fd171a9aef1bb989a9f4853d0db5f730103",
+      "00001.grz:00001-109.con": "bd1881a6af710cf5be970edadb846df14c18714ef3d551efbc5f59b4bbecb338",
+      "00001.grz:00001-110.con": "67d08532d1d4d0a8aeb015bcb64fdf5e228b8587b997781064f6552b094ef5c7",
+      "00001.grz:00001-111.con": "e4fa21e6199ad3f93111a9475dd7e119850bd676bf3151095c82d9605fc1a337",
+      "00001.grz:00001-112.con": "e2832383e78230e4ced5d04594f922be4926ee2beaac9d96d4d60f9a1b2f61d0",
+      "00001.grz:00001-113.con": "b938a7df82a632c30ae5a71e903ff26c7f451e77c977c3abc0c8538a6712ceb6",
+      "00001.grz:00001-114.con": "7f0d9bb8e4b3ef4009c9455a4ce734c573e02eb483ba93d1e69943db5f7969ca",
+      "00001.grz:00001-115.con": "50991b2df346a1d074b6cdbe321304c4d5b6df6dd20f1f14af7241f8052cb592",
+      "00001.grz:00001-116.con": "23101f41f691ddb4a52f3efe9df064bef92645c67f85dc43d734572f6e138d64",
+      "00001.grz:00001-117.con": "a0b3dcc99ca1188304ea66a821e3720817d941b64f982202b60093fe34a6b68d",
+      "00001.grz:00001-118.con": "6eeee139dce62518659e1c310b62ba5aa11400a94916ee156a3a424643e84203",
+      "00001.grz:00001-119.con": "9824de038c5e160aca77bd81bc2c8fa1693cda15989fed121d0c64b17dcf3908",
+      "00001.grz:00001-120.con": "cf5171d90122fa79c29df2e3d55cfe6b53771803107b1fc86217710c41ca1161",
+      "00001.grz:00001-121.con": "3052fa02c937d175bdc1860049c89ad1d7655a1b6c4b6707d8e30ecd7a2a196a",
+      "00001.grz:00001-122.con": "b39ad4100e487f7e52dff026659a43cdff1716f54a30cde27a45ca01109e321f",
+      "00001.grz:00001-123.con": "4ea5d4c73106e7f9c3e32d5bb7033c7f867ea3bceeebacd811317239477941df",
+      "00001.grz:00001-124.con": "4518433a6f339e440ec754c96e2cfa1ea58dd1a06aef9541381da60b60f3e1ce",
+      "00001.grz:00001-125.con": "2baf60b0dc226734e3b6c350a452b5b1ed83a3b3e449831ffa50e61cd13628e0",
+      "00001.grz:00001-126.con": "f6475cc7e1757243c605c333e85caac72c230762e004357b62f8a680c0cfc896"
+    },
+    "situation_sums": {
+      "00001.grz": 1774328.0068785418
+    },
+    "nonzero_values": 5848,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.01561965811965812,
+    "issues": []
+  },
+  {
+    "case": "medium_8000ps_t8",
+    "variant": "combined",
+    "repeat": 1,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 18.5272399999958,
+    "cpu_s": 145.4375,
+    "pid": 61552,
+    "memory": {
+      "PeakWorkingSetSize": 197001216,
+      "PeakPagefileUsage": 174424064,
+      "PrivateUsage": 174411776,
+      "WorkingSetSize": 196587520
+    },
+    "memory_samples": 1773,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      2400000
+    ],
+    "actual_particles_per_s": [
+      8000.0
+    ],
+    "actual_source_counts": {
+      "point": 128,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "1362058b05b51cd80e954bd4ac7d308be6a129833bf4b46b883c246bdfd82edf",
+      "00001.grz:00001-102.con": "1aec8c7fafa88c8cb2f22dc10387b69e14e3d2386330b5e7beddae29006f6e1f",
+      "00001.grz:00001-103.con": "45df63a3bbcf1f5e2584e955b5f001eef2ba341935a7a405f99932347792cbb0",
+      "00001.grz:00001-104.con": "5623ce9a645e944af39c6ac0589523797ece119154f08fbcf8a7ff37acd9bee1",
+      "00001.grz:00001-105.con": "b8ec88472120e460cbe5516787be9b2230f0b0c51f335c1a4672feff4de75a90",
+      "00001.grz:00001-106.con": "cb1a2aac8b525269d7b8cc84735de50623006aa9575da9c03a3d008b023d16a4",
+      "00001.grz:00001-107.con": "9efe1fa2f11542b00c59f6594fa4270137b143e210335ff3c3fa7bab69bc2d7e",
+      "00001.grz:00001-108.con": "027d9a60a0e89f014290fbd5a3d72fd171a9aef1bb989a9f4853d0db5f730103",
+      "00001.grz:00001-109.con": "bd1881a6af710cf5be970edadb846df14c18714ef3d551efbc5f59b4bbecb338",
+      "00001.grz:00001-110.con": "67d08532d1d4d0a8aeb015bcb64fdf5e228b8587b997781064f6552b094ef5c7",
+      "00001.grz:00001-111.con": "e4fa21e6199ad3f93111a9475dd7e119850bd676bf3151095c82d9605fc1a337",
+      "00001.grz:00001-112.con": "e2832383e78230e4ced5d04594f922be4926ee2beaac9d96d4d60f9a1b2f61d0",
+      "00001.grz:00001-113.con": "b938a7df82a632c30ae5a71e903ff26c7f451e77c977c3abc0c8538a6712ceb6",
+      "00001.grz:00001-114.con": "7f0d9bb8e4b3ef4009c9455a4ce734c573e02eb483ba93d1e69943db5f7969ca",
+      "00001.grz:00001-115.con": "50991b2df346a1d074b6cdbe321304c4d5b6df6dd20f1f14af7241f8052cb592",
+      "00001.grz:00001-116.con": "23101f41f691ddb4a52f3efe9df064bef92645c67f85dc43d734572f6e138d64",
+      "00001.grz:00001-117.con": "a0b3dcc99ca1188304ea66a821e3720817d941b64f982202b60093fe34a6b68d",
+      "00001.grz:00001-118.con": "6eeee139dce62518659e1c310b62ba5aa11400a94916ee156a3a424643e84203",
+      "00001.grz:00001-119.con": "9824de038c5e160aca77bd81bc2c8fa1693cda15989fed121d0c64b17dcf3908",
+      "00001.grz:00001-120.con": "cf5171d90122fa79c29df2e3d55cfe6b53771803107b1fc86217710c41ca1161",
+      "00001.grz:00001-121.con": "3052fa02c937d175bdc1860049c89ad1d7655a1b6c4b6707d8e30ecd7a2a196a",
+      "00001.grz:00001-122.con": "b39ad4100e487f7e52dff026659a43cdff1716f54a30cde27a45ca01109e321f",
+      "00001.grz:00001-123.con": "4ea5d4c73106e7f9c3e32d5bb7033c7f867ea3bceeebacd811317239477941df",
+      "00001.grz:00001-124.con": "4518433a6f339e440ec754c96e2cfa1ea58dd1a06aef9541381da60b60f3e1ce",
+      "00001.grz:00001-125.con": "2baf60b0dc226734e3b6c350a452b5b1ed83a3b3e449831ffa50e61cd13628e0",
+      "00001.grz:00001-126.con": "f6475cc7e1757243c605c333e85caac72c230762e004357b62f8a680c0cfc896"
+    },
+    "situation_sums": {
+      "00001.grz": 1774328.0068785418
+    },
+    "nonzero_values": 5848,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.01561965811965812,
+    "issues": []
+  },
+  {
+    "case": "medium_8000ps_t8",
+    "variant": "dictionary_fixed",
+    "repeat": 2,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 17.967007500003092,
+    "cpu_s": 140.859375,
+    "pid": 57816,
+    "memory": {
+      "PeakWorkingSetSize": 216903680,
+      "PeakPagefileUsage": 194174976,
+      "PrivateUsage": 194166784,
+      "WorkingSetSize": 216875008
+    },
+    "memory_samples": 1716,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      2400000
+    ],
+    "actual_particles_per_s": [
+      8000.0
+    ],
+    "actual_source_counts": {
+      "point": 128,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "1362058b05b51cd80e954bd4ac7d308be6a129833bf4b46b883c246bdfd82edf",
+      "00001.grz:00001-102.con": "1aec8c7fafa88c8cb2f22dc10387b69e14e3d2386330b5e7beddae29006f6e1f",
+      "00001.grz:00001-103.con": "45df63a3bbcf1f5e2584e955b5f001eef2ba341935a7a405f99932347792cbb0",
+      "00001.grz:00001-104.con": "5623ce9a645e944af39c6ac0589523797ece119154f08fbcf8a7ff37acd9bee1",
+      "00001.grz:00001-105.con": "b8ec88472120e460cbe5516787be9b2230f0b0c51f335c1a4672feff4de75a90",
+      "00001.grz:00001-106.con": "cb1a2aac8b525269d7b8cc84735de50623006aa9575da9c03a3d008b023d16a4",
+      "00001.grz:00001-107.con": "9efe1fa2f11542b00c59f6594fa4270137b143e210335ff3c3fa7bab69bc2d7e",
+      "00001.grz:00001-108.con": "027d9a60a0e89f014290fbd5a3d72fd171a9aef1bb989a9f4853d0db5f730103",
+      "00001.grz:00001-109.con": "bd1881a6af710cf5be970edadb846df14c18714ef3d551efbc5f59b4bbecb338",
+      "00001.grz:00001-110.con": "67d08532d1d4d0a8aeb015bcb64fdf5e228b8587b997781064f6552b094ef5c7",
+      "00001.grz:00001-111.con": "e4fa21e6199ad3f93111a9475dd7e119850bd676bf3151095c82d9605fc1a337",
+      "00001.grz:00001-112.con": "e2832383e78230e4ced5d04594f922be4926ee2beaac9d96d4d60f9a1b2f61d0",
+      "00001.grz:00001-113.con": "b938a7df82a632c30ae5a71e903ff26c7f451e77c977c3abc0c8538a6712ceb6",
+      "00001.grz:00001-114.con": "7f0d9bb8e4b3ef4009c9455a4ce734c573e02eb483ba93d1e69943db5f7969ca",
+      "00001.grz:00001-115.con": "50991b2df346a1d074b6cdbe321304c4d5b6df6dd20f1f14af7241f8052cb592",
+      "00001.grz:00001-116.con": "23101f41f691ddb4a52f3efe9df064bef92645c67f85dc43d734572f6e138d64",
+      "00001.grz:00001-117.con": "a0b3dcc99ca1188304ea66a821e3720817d941b64f982202b60093fe34a6b68d",
+      "00001.grz:00001-118.con": "6eeee139dce62518659e1c310b62ba5aa11400a94916ee156a3a424643e84203",
+      "00001.grz:00001-119.con": "9824de038c5e160aca77bd81bc2c8fa1693cda15989fed121d0c64b17dcf3908",
+      "00001.grz:00001-120.con": "cf5171d90122fa79c29df2e3d55cfe6b53771803107b1fc86217710c41ca1161",
+      "00001.grz:00001-121.con": "3052fa02c937d175bdc1860049c89ad1d7655a1b6c4b6707d8e30ecd7a2a196a",
+      "00001.grz:00001-122.con": "b39ad4100e487f7e52dff026659a43cdff1716f54a30cde27a45ca01109e321f",
+      "00001.grz:00001-123.con": "4ea5d4c73106e7f9c3e32d5bb7033c7f867ea3bceeebacd811317239477941df",
+      "00001.grz:00001-124.con": "4518433a6f339e440ec754c96e2cfa1ea58dd1a06aef9541381da60b60f3e1ce",
+      "00001.grz:00001-125.con": "2baf60b0dc226734e3b6c350a452b5b1ed83a3b3e449831ffa50e61cd13628e0",
+      "00001.grz:00001-126.con": "f6475cc7e1757243c605c333e85caac72c230762e004357b62f8a680c0cfc896"
+    },
+    "situation_sums": {
+      "00001.grz": 1774328.0068785418
+    },
+    "nonzero_values": 5848,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.01561965811965812,
+    "issues": []
+  },
+  {
+    "case": "medium_8000ps_t8",
+    "variant": "combined",
+    "repeat": 2,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 18.137767299995176,
+    "cpu_s": 142.015625,
+    "pid": 19452,
+    "memory": {
+      "PeakWorkingSetSize": 197292032,
+      "PeakPagefileUsage": 174809088,
+      "PrivateUsage": 174809088,
+      "WorkingSetSize": 197267456
+    },
+    "memory_samples": 1735,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      2400000
+    ],
+    "actual_particles_per_s": [
+      8000.0
+    ],
+    "actual_source_counts": {
+      "point": 128,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "1362058b05b51cd80e954bd4ac7d308be6a129833bf4b46b883c246bdfd82edf",
+      "00001.grz:00001-102.con": "1aec8c7fafa88c8cb2f22dc10387b69e14e3d2386330b5e7beddae29006f6e1f",
+      "00001.grz:00001-103.con": "45df63a3bbcf1f5e2584e955b5f001eef2ba341935a7a405f99932347792cbb0",
+      "00001.grz:00001-104.con": "5623ce9a645e944af39c6ac0589523797ece119154f08fbcf8a7ff37acd9bee1",
+      "00001.grz:00001-105.con": "b8ec88472120e460cbe5516787be9b2230f0b0c51f335c1a4672feff4de75a90",
+      "00001.grz:00001-106.con": "cb1a2aac8b525269d7b8cc84735de50623006aa9575da9c03a3d008b023d16a4",
+      "00001.grz:00001-107.con": "9efe1fa2f11542b00c59f6594fa4270137b143e210335ff3c3fa7bab69bc2d7e",
+      "00001.grz:00001-108.con": "027d9a60a0e89f014290fbd5a3d72fd171a9aef1bb989a9f4853d0db5f730103",
+      "00001.grz:00001-109.con": "bd1881a6af710cf5be970edadb846df14c18714ef3d551efbc5f59b4bbecb338",
+      "00001.grz:00001-110.con": "67d08532d1d4d0a8aeb015bcb64fdf5e228b8587b997781064f6552b094ef5c7",
+      "00001.grz:00001-111.con": "e4fa21e6199ad3f93111a9475dd7e119850bd676bf3151095c82d9605fc1a337",
+      "00001.grz:00001-112.con": "e2832383e78230e4ced5d04594f922be4926ee2beaac9d96d4d60f9a1b2f61d0",
+      "00001.grz:00001-113.con": "b938a7df82a632c30ae5a71e903ff26c7f451e77c977c3abc0c8538a6712ceb6",
+      "00001.grz:00001-114.con": "7f0d9bb8e4b3ef4009c9455a4ce734c573e02eb483ba93d1e69943db5f7969ca",
+      "00001.grz:00001-115.con": "50991b2df346a1d074b6cdbe321304c4d5b6df6dd20f1f14af7241f8052cb592",
+      "00001.grz:00001-116.con": "23101f41f691ddb4a52f3efe9df064bef92645c67f85dc43d734572f6e138d64",
+      "00001.grz:00001-117.con": "a0b3dcc99ca1188304ea66a821e3720817d941b64f982202b60093fe34a6b68d",
+      "00001.grz:00001-118.con": "6eeee139dce62518659e1c310b62ba5aa11400a94916ee156a3a424643e84203",
+      "00001.grz:00001-119.con": "9824de038c5e160aca77bd81bc2c8fa1693cda15989fed121d0c64b17dcf3908",
+      "00001.grz:00001-120.con": "cf5171d90122fa79c29df2e3d55cfe6b53771803107b1fc86217710c41ca1161",
+      "00001.grz:00001-121.con": "3052fa02c937d175bdc1860049c89ad1d7655a1b6c4b6707d8e30ecd7a2a196a",
+      "00001.grz:00001-122.con": "b39ad4100e487f7e52dff026659a43cdff1716f54a30cde27a45ca01109e321f",
+      "00001.grz:00001-123.con": "4ea5d4c73106e7f9c3e32d5bb7033c7f867ea3bceeebacd811317239477941df",
+      "00001.grz:00001-124.con": "4518433a6f339e440ec754c96e2cfa1ea58dd1a06aef9541381da60b60f3e1ce",
+      "00001.grz:00001-125.con": "2baf60b0dc226734e3b6c350a452b5b1ed83a3b3e449831ffa50e61cd13628e0",
+      "00001.grz:00001-126.con": "f6475cc7e1757243c605c333e85caac72c230762e004357b62f8a680c0cfc896"
+    },
+    "situation_sums": {
+      "00001.grz": 1774328.0068785418
+    },
+    "nonzero_values": 5848,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.01561965811965812,
+    "issues": []
+  },
+  {
+    "case": "medium_8000ps_t8",
+    "variant": "double",
+    "repeat": 2,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 15.466210200000205,
+    "cpu_s": 121.1875,
+    "pid": 47536,
+    "memory": {
+      "PeakWorkingSetSize": 208023552,
+      "PeakPagefileUsage": 185188352,
+      "PrivateUsage": 180895744,
+      "WorkingSetSize": 202899456
+    },
+    "memory_samples": 1478,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      2400000
+    ],
+    "actual_particles_per_s": [
+      8000.0
+    ],
+    "actual_source_counts": {
+      "point": 128,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "1362058b05b51cd80e954bd4ac7d308be6a129833bf4b46b883c246bdfd82edf",
+      "00001.grz:00001-102.con": "1aec8c7fafa88c8cb2f22dc10387b69e14e3d2386330b5e7beddae29006f6e1f",
+      "00001.grz:00001-103.con": "45df63a3bbcf1f5e2584e955b5f001eef2ba341935a7a405f99932347792cbb0",
+      "00001.grz:00001-104.con": "5623ce9a645e944af39c6ac0589523797ece119154f08fbcf8a7ff37acd9bee1",
+      "00001.grz:00001-105.con": "b8ec88472120e460cbe5516787be9b2230f0b0c51f335c1a4672feff4de75a90",
+      "00001.grz:00001-106.con": "cb1a2aac8b525269d7b8cc84735de50623006aa9575da9c03a3d008b023d16a4",
+      "00001.grz:00001-107.con": "9efe1fa2f11542b00c59f6594fa4270137b143e210335ff3c3fa7bab69bc2d7e",
+      "00001.grz:00001-108.con": "027d9a60a0e89f014290fbd5a3d72fd171a9aef1bb989a9f4853d0db5f730103",
+      "00001.grz:00001-109.con": "bd1881a6af710cf5be970edadb846df14c18714ef3d551efbc5f59b4bbecb338",
+      "00001.grz:00001-110.con": "67d08532d1d4d0a8aeb015bcb64fdf5e228b8587b997781064f6552b094ef5c7",
+      "00001.grz:00001-111.con": "e4fa21e6199ad3f93111a9475dd7e119850bd676bf3151095c82d9605fc1a337",
+      "00001.grz:00001-112.con": "e2832383e78230e4ced5d04594f922be4926ee2beaac9d96d4d60f9a1b2f61d0",
+      "00001.grz:00001-113.con": "b938a7df82a632c30ae5a71e903ff26c7f451e77c977c3abc0c8538a6712ceb6",
+      "00001.grz:00001-114.con": "7f0d9bb8e4b3ef4009c9455a4ce734c573e02eb483ba93d1e69943db5f7969ca",
+      "00001.grz:00001-115.con": "50991b2df346a1d074b6cdbe321304c4d5b6df6dd20f1f14af7241f8052cb592",
+      "00001.grz:00001-116.con": "23101f41f691ddb4a52f3efe9df064bef92645c67f85dc43d734572f6e138d64",
+      "00001.grz:00001-117.con": "a0b3dcc99ca1188304ea66a821e3720817d941b64f982202b60093fe34a6b68d",
+      "00001.grz:00001-118.con": "6eeee139dce62518659e1c310b62ba5aa11400a94916ee156a3a424643e84203",
+      "00001.grz:00001-119.con": "9824de038c5e160aca77bd81bc2c8fa1693cda15989fed121d0c64b17dcf3908",
+      "00001.grz:00001-120.con": "cf5171d90122fa79c29df2e3d55cfe6b53771803107b1fc86217710c41ca1161",
+      "00001.grz:00001-121.con": "3052fa02c937d175bdc1860049c89ad1d7655a1b6c4b6707d8e30ecd7a2a196a",
+      "00001.grz:00001-122.con": "b39ad4100e487f7e52dff026659a43cdff1716f54a30cde27a45ca01109e321f",
+      "00001.grz:00001-123.con": "4ea5d4c73106e7f9c3e32d5bb7033c7f867ea3bceeebacd811317239477941df",
+      "00001.grz:00001-124.con": "4518433a6f339e440ec754c96e2cfa1ea58dd1a06aef9541381da60b60f3e1ce",
+      "00001.grz:00001-125.con": "2baf60b0dc226734e3b6c350a452b5b1ed83a3b3e449831ffa50e61cd13628e0",
+      "00001.grz:00001-126.con": "f6475cc7e1757243c605c333e85caac72c230762e004357b62f8a680c0cfc896"
+    },
+    "situation_sums": {
+      "00001.grz": 1774328.0068785418
+    },
+    "nonzero_values": 5848,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.01561965811965812,
+    "issues": []
+  },
+  {
+    "case": "medium_8000ps_t8",
+    "variant": "combined",
+    "repeat": 3,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 18.145592800006852,
+    "cpu_s": 142.0,
+    "pid": 55520,
+    "memory": {
+      "PeakWorkingSetSize": 196747264,
+      "PeakPagefileUsage": 174379008,
+      "PrivateUsage": 174379008,
+      "WorkingSetSize": 196718592
+    },
+    "memory_samples": 1739,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      2400000
+    ],
+    "actual_particles_per_s": [
+      8000.0
+    ],
+    "actual_source_counts": {
+      "point": 128,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "1362058b05b51cd80e954bd4ac7d308be6a129833bf4b46b883c246bdfd82edf",
+      "00001.grz:00001-102.con": "1aec8c7fafa88c8cb2f22dc10387b69e14e3d2386330b5e7beddae29006f6e1f",
+      "00001.grz:00001-103.con": "45df63a3bbcf1f5e2584e955b5f001eef2ba341935a7a405f99932347792cbb0",
+      "00001.grz:00001-104.con": "5623ce9a645e944af39c6ac0589523797ece119154f08fbcf8a7ff37acd9bee1",
+      "00001.grz:00001-105.con": "b8ec88472120e460cbe5516787be9b2230f0b0c51f335c1a4672feff4de75a90",
+      "00001.grz:00001-106.con": "cb1a2aac8b525269d7b8cc84735de50623006aa9575da9c03a3d008b023d16a4",
+      "00001.grz:00001-107.con": "9efe1fa2f11542b00c59f6594fa4270137b143e210335ff3c3fa7bab69bc2d7e",
+      "00001.grz:00001-108.con": "027d9a60a0e89f014290fbd5a3d72fd171a9aef1bb989a9f4853d0db5f730103",
+      "00001.grz:00001-109.con": "bd1881a6af710cf5be970edadb846df14c18714ef3d551efbc5f59b4bbecb338",
+      "00001.grz:00001-110.con": "67d08532d1d4d0a8aeb015bcb64fdf5e228b8587b997781064f6552b094ef5c7",
+      "00001.grz:00001-111.con": "e4fa21e6199ad3f93111a9475dd7e119850bd676bf3151095c82d9605fc1a337",
+      "00001.grz:00001-112.con": "e2832383e78230e4ced5d04594f922be4926ee2beaac9d96d4d60f9a1b2f61d0",
+      "00001.grz:00001-113.con": "b938a7df82a632c30ae5a71e903ff26c7f451e77c977c3abc0c8538a6712ceb6",
+      "00001.grz:00001-114.con": "7f0d9bb8e4b3ef4009c9455a4ce734c573e02eb483ba93d1e69943db5f7969ca",
+      "00001.grz:00001-115.con": "50991b2df346a1d074b6cdbe321304c4d5b6df6dd20f1f14af7241f8052cb592",
+      "00001.grz:00001-116.con": "23101f41f691ddb4a52f3efe9df064bef92645c67f85dc43d734572f6e138d64",
+      "00001.grz:00001-117.con": "a0b3dcc99ca1188304ea66a821e3720817d941b64f982202b60093fe34a6b68d",
+      "00001.grz:00001-118.con": "6eeee139dce62518659e1c310b62ba5aa11400a94916ee156a3a424643e84203",
+      "00001.grz:00001-119.con": "9824de038c5e160aca77bd81bc2c8fa1693cda15989fed121d0c64b17dcf3908",
+      "00001.grz:00001-120.con": "cf5171d90122fa79c29df2e3d55cfe6b53771803107b1fc86217710c41ca1161",
+      "00001.grz:00001-121.con": "3052fa02c937d175bdc1860049c89ad1d7655a1b6c4b6707d8e30ecd7a2a196a",
+      "00001.grz:00001-122.con": "b39ad4100e487f7e52dff026659a43cdff1716f54a30cde27a45ca01109e321f",
+      "00001.grz:00001-123.con": "4ea5d4c73106e7f9c3e32d5bb7033c7f867ea3bceeebacd811317239477941df",
+      "00001.grz:00001-124.con": "4518433a6f339e440ec754c96e2cfa1ea58dd1a06aef9541381da60b60f3e1ce",
+      "00001.grz:00001-125.con": "2baf60b0dc226734e3b6c350a452b5b1ed83a3b3e449831ffa50e61cd13628e0",
+      "00001.grz:00001-126.con": "f6475cc7e1757243c605c333e85caac72c230762e004357b62f8a680c0cfc896"
+    },
+    "situation_sums": {
+      "00001.grz": 1774328.0068785418
+    },
+    "nonzero_values": 5848,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.01561965811965812,
+    "issues": []
+  },
+  {
+    "case": "medium_8000ps_t8",
+    "variant": "double",
+    "repeat": 3,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 15.515763999996125,
+    "cpu_s": 121.453125,
+    "pid": 7104,
+    "memory": {
+      "PeakWorkingSetSize": 207884288,
+      "PeakPagefileUsage": 184791040,
+      "PrivateUsage": 180453376,
+      "WorkingSetSize": 202780672
+    },
+    "memory_samples": 1487,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      2400000
+    ],
+    "actual_particles_per_s": [
+      8000.0
+    ],
+    "actual_source_counts": {
+      "point": 128,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "1362058b05b51cd80e954bd4ac7d308be6a129833bf4b46b883c246bdfd82edf",
+      "00001.grz:00001-102.con": "1aec8c7fafa88c8cb2f22dc10387b69e14e3d2386330b5e7beddae29006f6e1f",
+      "00001.grz:00001-103.con": "45df63a3bbcf1f5e2584e955b5f001eef2ba341935a7a405f99932347792cbb0",
+      "00001.grz:00001-104.con": "5623ce9a645e944af39c6ac0589523797ece119154f08fbcf8a7ff37acd9bee1",
+      "00001.grz:00001-105.con": "b8ec88472120e460cbe5516787be9b2230f0b0c51f335c1a4672feff4de75a90",
+      "00001.grz:00001-106.con": "cb1a2aac8b525269d7b8cc84735de50623006aa9575da9c03a3d008b023d16a4",
+      "00001.grz:00001-107.con": "9efe1fa2f11542b00c59f6594fa4270137b143e210335ff3c3fa7bab69bc2d7e",
+      "00001.grz:00001-108.con": "027d9a60a0e89f014290fbd5a3d72fd171a9aef1bb989a9f4853d0db5f730103",
+      "00001.grz:00001-109.con": "bd1881a6af710cf5be970edadb846df14c18714ef3d551efbc5f59b4bbecb338",
+      "00001.grz:00001-110.con": "67d08532d1d4d0a8aeb015bcb64fdf5e228b8587b997781064f6552b094ef5c7",
+      "00001.grz:00001-111.con": "e4fa21e6199ad3f93111a9475dd7e119850bd676bf3151095c82d9605fc1a337",
+      "00001.grz:00001-112.con": "e2832383e78230e4ced5d04594f922be4926ee2beaac9d96d4d60f9a1b2f61d0",
+      "00001.grz:00001-113.con": "b938a7df82a632c30ae5a71e903ff26c7f451e77c977c3abc0c8538a6712ceb6",
+      "00001.grz:00001-114.con": "7f0d9bb8e4b3ef4009c9455a4ce734c573e02eb483ba93d1e69943db5f7969ca",
+      "00001.grz:00001-115.con": "50991b2df346a1d074b6cdbe321304c4d5b6df6dd20f1f14af7241f8052cb592",
+      "00001.grz:00001-116.con": "23101f41f691ddb4a52f3efe9df064bef92645c67f85dc43d734572f6e138d64",
+      "00001.grz:00001-117.con": "a0b3dcc99ca1188304ea66a821e3720817d941b64f982202b60093fe34a6b68d",
+      "00001.grz:00001-118.con": "6eeee139dce62518659e1c310b62ba5aa11400a94916ee156a3a424643e84203",
+      "00001.grz:00001-119.con": "9824de038c5e160aca77bd81bc2c8fa1693cda15989fed121d0c64b17dcf3908",
+      "00001.grz:00001-120.con": "cf5171d90122fa79c29df2e3d55cfe6b53771803107b1fc86217710c41ca1161",
+      "00001.grz:00001-121.con": "3052fa02c937d175bdc1860049c89ad1d7655a1b6c4b6707d8e30ecd7a2a196a",
+      "00001.grz:00001-122.con": "b39ad4100e487f7e52dff026659a43cdff1716f54a30cde27a45ca01109e321f",
+      "00001.grz:00001-123.con": "4ea5d4c73106e7f9c3e32d5bb7033c7f867ea3bceeebacd811317239477941df",
+      "00001.grz:00001-124.con": "4518433a6f339e440ec754c96e2cfa1ea58dd1a06aef9541381da60b60f3e1ce",
+      "00001.grz:00001-125.con": "2baf60b0dc226734e3b6c350a452b5b1ed83a3b3e449831ffa50e61cd13628e0",
+      "00001.grz:00001-126.con": "f6475cc7e1757243c605c333e85caac72c230762e004357b62f8a680c0cfc896"
+    },
+    "situation_sums": {
+      "00001.grz": 1774328.0068785418
+    },
+    "nonzero_values": 5848,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.01561965811965812,
+    "issues": []
+  },
+  {
+    "case": "medium_8000ps_t8",
+    "variant": "dictionary_fixed",
+    "repeat": 3,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 17.81705769999826,
+    "cpu_s": 139.796875,
+    "pid": 63344,
+    "memory": {
+      "PeakWorkingSetSize": 217612288,
+      "PeakPagefileUsage": 194895872,
+      "PrivateUsage": 194887680,
+      "WorkingSetSize": 217583616
+    },
+    "memory_samples": 1704,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      2400000
+    ],
+    "actual_particles_per_s": [
+      8000.0
+    ],
+    "actual_source_counts": {
+      "point": 128,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "1362058b05b51cd80e954bd4ac7d308be6a129833bf4b46b883c246bdfd82edf",
+      "00001.grz:00001-102.con": "1aec8c7fafa88c8cb2f22dc10387b69e14e3d2386330b5e7beddae29006f6e1f",
+      "00001.grz:00001-103.con": "45df63a3bbcf1f5e2584e955b5f001eef2ba341935a7a405f99932347792cbb0",
+      "00001.grz:00001-104.con": "5623ce9a645e944af39c6ac0589523797ece119154f08fbcf8a7ff37acd9bee1",
+      "00001.grz:00001-105.con": "b8ec88472120e460cbe5516787be9b2230f0b0c51f335c1a4672feff4de75a90",
+      "00001.grz:00001-106.con": "cb1a2aac8b525269d7b8cc84735de50623006aa9575da9c03a3d008b023d16a4",
+      "00001.grz:00001-107.con": "9efe1fa2f11542b00c59f6594fa4270137b143e210335ff3c3fa7bab69bc2d7e",
+      "00001.grz:00001-108.con": "027d9a60a0e89f014290fbd5a3d72fd171a9aef1bb989a9f4853d0db5f730103",
+      "00001.grz:00001-109.con": "bd1881a6af710cf5be970edadb846df14c18714ef3d551efbc5f59b4bbecb338",
+      "00001.grz:00001-110.con": "67d08532d1d4d0a8aeb015bcb64fdf5e228b8587b997781064f6552b094ef5c7",
+      "00001.grz:00001-111.con": "e4fa21e6199ad3f93111a9475dd7e119850bd676bf3151095c82d9605fc1a337",
+      "00001.grz:00001-112.con": "e2832383e78230e4ced5d04594f922be4926ee2beaac9d96d4d60f9a1b2f61d0",
+      "00001.grz:00001-113.con": "b938a7df82a632c30ae5a71e903ff26c7f451e77c977c3abc0c8538a6712ceb6",
+      "00001.grz:00001-114.con": "7f0d9bb8e4b3ef4009c9455a4ce734c573e02eb483ba93d1e69943db5f7969ca",
+      "00001.grz:00001-115.con": "50991b2df346a1d074b6cdbe321304c4d5b6df6dd20f1f14af7241f8052cb592",
+      "00001.grz:00001-116.con": "23101f41f691ddb4a52f3efe9df064bef92645c67f85dc43d734572f6e138d64",
+      "00001.grz:00001-117.con": "a0b3dcc99ca1188304ea66a821e3720817d941b64f982202b60093fe34a6b68d",
+      "00001.grz:00001-118.con": "6eeee139dce62518659e1c310b62ba5aa11400a94916ee156a3a424643e84203",
+      "00001.grz:00001-119.con": "9824de038c5e160aca77bd81bc2c8fa1693cda15989fed121d0c64b17dcf3908",
+      "00001.grz:00001-120.con": "cf5171d90122fa79c29df2e3d55cfe6b53771803107b1fc86217710c41ca1161",
+      "00001.grz:00001-121.con": "3052fa02c937d175bdc1860049c89ad1d7655a1b6c4b6707d8e30ecd7a2a196a",
+      "00001.grz:00001-122.con": "b39ad4100e487f7e52dff026659a43cdff1716f54a30cde27a45ca01109e321f",
+      "00001.grz:00001-123.con": "4ea5d4c73106e7f9c3e32d5bb7033c7f867ea3bceeebacd811317239477941df",
+      "00001.grz:00001-124.con": "4518433a6f339e440ec754c96e2cfa1ea58dd1a06aef9541381da60b60f3e1ce",
+      "00001.grz:00001-125.con": "2baf60b0dc226734e3b6c350a452b5b1ed83a3b3e449831ffa50e61cd13628e0",
+      "00001.grz:00001-126.con": "f6475cc7e1757243c605c333e85caac72c230762e004357b62f8a680c0cfc896"
+    },
+    "situation_sums": {
+      "00001.grz": 1774328.0068785418
+    },
+    "nonzero_values": 5848,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 374400,
+    "occupied_fraction": 0.01561965811965812,
+    "issues": []
+  },
+  {
+    "case": "buildings_mixed_t4",
+    "variant": "double",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 1.3912929999933112,
+    "cpu_s": 4.546875,
+    "pid": 28980,
+    "memory": {
+      "PeakWorkingSetSize": 73744384,
+      "PeakPagefileUsage": 56524800,
+      "PrivateUsage": 51732480,
+      "WorkingSetSize": 73224192
+    },
+    "memory_samples": 133,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      149992
+    ],
+    "actual_particles_per_s": [
+      499.97333333333336
+    ],
+    "actual_source_counts": {
+      "point": 8,
+      "area": 8,
+      "portal": 8,
+      "line": 8
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ffda4ad3e258fa59ac851f6eb4b11302d1dff602540648710f60ce0c0871f6a0",
+      "00001.grz:00001-102.con": "e33fe306fd3bde9ca7e2eede418d2f7330e9e8040f439bf1ca2e3dbf060dfe1d",
+      "00001.grz:00001-103.con": "6269ab9ac60554ef09ba4cab92a2f1d9b8eed816a6034af7bcb67b0796820c6a",
+      "00001.grz:00001-104.con": "8054899d369b96355b0012e1e98da94d7a68ae42c396753c1df9ed3ae83afa1a",
+      "00001.grz:00001-105.con": "be6461f4f44c00abd938b5a6d8f5c09f90d222b6469770e56f44e6cd5238ca66",
+      "00001.grz:00001-106.con": "bc1995e7aeb838abeae5a35e005b50fca8bb56406728b3d6ee8c90187e921b24",
+      "00001.grz:00001-107.con": "e30e47be76ffb298883cf6cd4452ecba41a39014de7e2aa481104723dbec1da0",
+      "00001.grz:00001-108.con": "cf470269301b527b30d3a428de0fe3e8e130c5960f3388f8d2a7c2862ca1b990"
+    },
+    "situation_sums": {
+      "00001.grz": 1655760.8929983377
+    },
+    "nonzero_values": 4357,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 115200,
+    "occupied_fraction": 0.037821180555555556,
+    "issues": []
+  },
+  {
+    "case": "buildings_mixed_t4",
+    "variant": "dictionary_fixed",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 1.5200113000028068,
+    "cpu_s": 5.078125,
+    "pid": 44352,
+    "memory": {
+      "PeakWorkingSetSize": 89214976,
+      "PeakPagefileUsage": 64589824,
+      "PrivateUsage": 64577536,
+      "WorkingSetSize": 88612864
+    },
+    "memory_samples": 146,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      149992
+    ],
+    "actual_particles_per_s": [
+      499.97333333333336
+    ],
+    "actual_source_counts": {
+      "point": 8,
+      "area": 8,
+      "portal": 8,
+      "line": 8
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ffda4ad3e258fa59ac851f6eb4b11302d1dff602540648710f60ce0c0871f6a0",
+      "00001.grz:00001-102.con": "e33fe306fd3bde9ca7e2eede418d2f7330e9e8040f439bf1ca2e3dbf060dfe1d",
+      "00001.grz:00001-103.con": "6269ab9ac60554ef09ba4cab92a2f1d9b8eed816a6034af7bcb67b0796820c6a",
+      "00001.grz:00001-104.con": "8054899d369b96355b0012e1e98da94d7a68ae42c396753c1df9ed3ae83afa1a",
+      "00001.grz:00001-105.con": "be6461f4f44c00abd938b5a6d8f5c09f90d222b6469770e56f44e6cd5238ca66",
+      "00001.grz:00001-106.con": "bc1995e7aeb838abeae5a35e005b50fca8bb56406728b3d6ee8c90187e921b24",
+      "00001.grz:00001-107.con": "e30e47be76ffb298883cf6cd4452ecba41a39014de7e2aa481104723dbec1da0",
+      "00001.grz:00001-108.con": "cf470269301b527b30d3a428de0fe3e8e130c5960f3388f8d2a7c2862ca1b990"
+    },
+    "situation_sums": {
+      "00001.grz": 1655760.8929983377
+    },
+    "nonzero_values": 4357,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 115200,
+    "occupied_fraction": 0.037821180555555556,
+    "issues": []
+  },
+  {
+    "case": "buildings_mixed_t4",
+    "variant": "combined",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 1.5527671000018017,
+    "cpu_s": 5.1875,
+    "pid": 5328,
+    "memory": {
+      "PeakWorkingSetSize": 71471104,
+      "PeakPagefileUsage": 50302976,
+      "PrivateUsage": 46473216,
+      "WorkingSetSize": 71471104
+    },
+    "memory_samples": 149,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      149992
+    ],
+    "actual_particles_per_s": [
+      499.97333333333336
+    ],
+    "actual_source_counts": {
+      "point": 8,
+      "area": 8,
+      "portal": 8,
+      "line": 8
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ffda4ad3e258fa59ac851f6eb4b11302d1dff602540648710f60ce0c0871f6a0",
+      "00001.grz:00001-102.con": "e33fe306fd3bde9ca7e2eede418d2f7330e9e8040f439bf1ca2e3dbf060dfe1d",
+      "00001.grz:00001-103.con": "6269ab9ac60554ef09ba4cab92a2f1d9b8eed816a6034af7bcb67b0796820c6a",
+      "00001.grz:00001-104.con": "8054899d369b96355b0012e1e98da94d7a68ae42c396753c1df9ed3ae83afa1a",
+      "00001.grz:00001-105.con": "be6461f4f44c00abd938b5a6d8f5c09f90d222b6469770e56f44e6cd5238ca66",
+      "00001.grz:00001-106.con": "bc1995e7aeb838abeae5a35e005b50fca8bb56406728b3d6ee8c90187e921b24",
+      "00001.grz:00001-107.con": "e30e47be76ffb298883cf6cd4452ecba41a39014de7e2aa481104723dbec1da0",
+      "00001.grz:00001-108.con": "cf470269301b527b30d3a428de0fe3e8e130c5960f3388f8d2a7c2862ca1b990"
+    },
+    "situation_sums": {
+      "00001.grz": 1655760.8929983377
+    },
+    "nonzero_values": 4357,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 115200,
+    "occupied_fraction": 0.037821180555555556,
+    "issues": []
+  },
+  {
+    "case": "buildings_mixed_t4",
+    "variant": "dictionary_fixed",
+    "repeat": 1,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 1.527216899994528,
+    "cpu_s": 5.171875,
+    "pid": 59660,
+    "memory": {
+      "PeakWorkingSetSize": 88932352,
+      "PeakPagefileUsage": 64397312,
+      "PrivateUsage": 64385024,
+      "WorkingSetSize": 88403968
+    },
+    "memory_samples": 146,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      149992
+    ],
+    "actual_particles_per_s": [
+      499.97333333333336
+    ],
+    "actual_source_counts": {
+      "point": 8,
+      "area": 8,
+      "portal": 8,
+      "line": 8
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ffda4ad3e258fa59ac851f6eb4b11302d1dff602540648710f60ce0c0871f6a0",
+      "00001.grz:00001-102.con": "e33fe306fd3bde9ca7e2eede418d2f7330e9e8040f439bf1ca2e3dbf060dfe1d",
+      "00001.grz:00001-103.con": "6269ab9ac60554ef09ba4cab92a2f1d9b8eed816a6034af7bcb67b0796820c6a",
+      "00001.grz:00001-104.con": "8054899d369b96355b0012e1e98da94d7a68ae42c396753c1df9ed3ae83afa1a",
+      "00001.grz:00001-105.con": "be6461f4f44c00abd938b5a6d8f5c09f90d222b6469770e56f44e6cd5238ca66",
+      "00001.grz:00001-106.con": "bc1995e7aeb838abeae5a35e005b50fca8bb56406728b3d6ee8c90187e921b24",
+      "00001.grz:00001-107.con": "e30e47be76ffb298883cf6cd4452ecba41a39014de7e2aa481104723dbec1da0",
+      "00001.grz:00001-108.con": "cf470269301b527b30d3a428de0fe3e8e130c5960f3388f8d2a7c2862ca1b990"
+    },
+    "situation_sums": {
+      "00001.grz": 1655760.8929983377
+    },
+    "nonzero_values": 4357,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 115200,
+    "occupied_fraction": 0.037821180555555556,
+    "issues": []
+  },
+  {
+    "case": "buildings_mixed_t4",
+    "variant": "combined",
+    "repeat": 1,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 1.5345467000006465,
+    "cpu_s": 5.09375,
+    "pid": 58684,
+    "memory": {
+      "PeakWorkingSetSize": 71462912,
+      "PeakPagefileUsage": 50200576,
+      "PrivateUsage": 46551040,
+      "WorkingSetSize": 70914048
+    },
+    "memory_samples": 147,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      149992
+    ],
+    "actual_particles_per_s": [
+      499.97333333333336
+    ],
+    "actual_source_counts": {
+      "point": 8,
+      "area": 8,
+      "portal": 8,
+      "line": 8
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ffda4ad3e258fa59ac851f6eb4b11302d1dff602540648710f60ce0c0871f6a0",
+      "00001.grz:00001-102.con": "e33fe306fd3bde9ca7e2eede418d2f7330e9e8040f439bf1ca2e3dbf060dfe1d",
+      "00001.grz:00001-103.con": "6269ab9ac60554ef09ba4cab92a2f1d9b8eed816a6034af7bcb67b0796820c6a",
+      "00001.grz:00001-104.con": "8054899d369b96355b0012e1e98da94d7a68ae42c396753c1df9ed3ae83afa1a",
+      "00001.grz:00001-105.con": "be6461f4f44c00abd938b5a6d8f5c09f90d222b6469770e56f44e6cd5238ca66",
+      "00001.grz:00001-106.con": "bc1995e7aeb838abeae5a35e005b50fca8bb56406728b3d6ee8c90187e921b24",
+      "00001.grz:00001-107.con": "e30e47be76ffb298883cf6cd4452ecba41a39014de7e2aa481104723dbec1da0",
+      "00001.grz:00001-108.con": "cf470269301b527b30d3a428de0fe3e8e130c5960f3388f8d2a7c2862ca1b990"
+    },
+    "situation_sums": {
+      "00001.grz": 1655760.8929983377
+    },
+    "nonzero_values": 4357,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 115200,
+    "occupied_fraction": 0.037821180555555556,
+    "issues": []
+  },
+  {
+    "case": "buildings_mixed_t4",
+    "variant": "double",
+    "repeat": 1,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 1.3909151999978349,
+    "cpu_s": 4.484375,
+    "pid": 20776,
+    "memory": {
+      "PeakWorkingSetSize": 73338880,
+      "PeakPagefileUsage": 56418304,
+      "PrivateUsage": 54046720,
+      "WorkingSetSize": 72814592
+    },
+    "memory_samples": 134,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      149992
+    ],
+    "actual_particles_per_s": [
+      499.97333333333336
+    ],
+    "actual_source_counts": {
+      "point": 8,
+      "area": 8,
+      "portal": 8,
+      "line": 8
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ffda4ad3e258fa59ac851f6eb4b11302d1dff602540648710f60ce0c0871f6a0",
+      "00001.grz:00001-102.con": "e33fe306fd3bde9ca7e2eede418d2f7330e9e8040f439bf1ca2e3dbf060dfe1d",
+      "00001.grz:00001-103.con": "6269ab9ac60554ef09ba4cab92a2f1d9b8eed816a6034af7bcb67b0796820c6a",
+      "00001.grz:00001-104.con": "8054899d369b96355b0012e1e98da94d7a68ae42c396753c1df9ed3ae83afa1a",
+      "00001.grz:00001-105.con": "be6461f4f44c00abd938b5a6d8f5c09f90d222b6469770e56f44e6cd5238ca66",
+      "00001.grz:00001-106.con": "bc1995e7aeb838abeae5a35e005b50fca8bb56406728b3d6ee8c90187e921b24",
+      "00001.grz:00001-107.con": "e30e47be76ffb298883cf6cd4452ecba41a39014de7e2aa481104723dbec1da0",
+      "00001.grz:00001-108.con": "cf470269301b527b30d3a428de0fe3e8e130c5960f3388f8d2a7c2862ca1b990"
+    },
+    "situation_sums": {
+      "00001.grz": 1655760.8929983377
+    },
+    "nonzero_values": 4357,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 115200,
+    "occupied_fraction": 0.037821180555555556,
+    "issues": []
+  },
+  {
+    "case": "buildings_mixed_t4",
+    "variant": "combined",
+    "repeat": 2,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 1.5416298000054667,
+    "cpu_s": 5.140625,
+    "pid": 54524,
+    "memory": {
+      "PeakWorkingSetSize": 71847936,
+      "PeakPagefileUsage": 50184192,
+      "PrivateUsage": 46817280,
+      "WorkingSetSize": 71262208
+    },
+    "memory_samples": 148,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      149992
+    ],
+    "actual_particles_per_s": [
+      499.97333333333336
+    ],
+    "actual_source_counts": {
+      "point": 8,
+      "area": 8,
+      "portal": 8,
+      "line": 8
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ffda4ad3e258fa59ac851f6eb4b11302d1dff602540648710f60ce0c0871f6a0",
+      "00001.grz:00001-102.con": "e33fe306fd3bde9ca7e2eede418d2f7330e9e8040f439bf1ca2e3dbf060dfe1d",
+      "00001.grz:00001-103.con": "6269ab9ac60554ef09ba4cab92a2f1d9b8eed816a6034af7bcb67b0796820c6a",
+      "00001.grz:00001-104.con": "8054899d369b96355b0012e1e98da94d7a68ae42c396753c1df9ed3ae83afa1a",
+      "00001.grz:00001-105.con": "be6461f4f44c00abd938b5a6d8f5c09f90d222b6469770e56f44e6cd5238ca66",
+      "00001.grz:00001-106.con": "bc1995e7aeb838abeae5a35e005b50fca8bb56406728b3d6ee8c90187e921b24",
+      "00001.grz:00001-107.con": "e30e47be76ffb298883cf6cd4452ecba41a39014de7e2aa481104723dbec1da0",
+      "00001.grz:00001-108.con": "cf470269301b527b30d3a428de0fe3e8e130c5960f3388f8d2a7c2862ca1b990"
+    },
+    "situation_sums": {
+      "00001.grz": 1655760.8929983377
+    },
+    "nonzero_values": 4357,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 115200,
+    "occupied_fraction": 0.037821180555555556,
+    "issues": []
+  },
+  {
+    "case": "buildings_mixed_t4",
+    "variant": "double",
+    "repeat": 2,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 1.390635600007954,
+    "cpu_s": 4.53125,
+    "pid": 53660,
+    "memory": {
+      "PeakWorkingSetSize": 73768960,
+      "PeakPagefileUsage": 56516608,
+      "PrivateUsage": 54427648,
+      "WorkingSetSize": 73248768
+    },
+    "memory_samples": 133,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      149992
+    ],
+    "actual_particles_per_s": [
+      499.97333333333336
+    ],
+    "actual_source_counts": {
+      "point": 8,
+      "area": 8,
+      "portal": 8,
+      "line": 8
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ffda4ad3e258fa59ac851f6eb4b11302d1dff602540648710f60ce0c0871f6a0",
+      "00001.grz:00001-102.con": "e33fe306fd3bde9ca7e2eede418d2f7330e9e8040f439bf1ca2e3dbf060dfe1d",
+      "00001.grz:00001-103.con": "6269ab9ac60554ef09ba4cab92a2f1d9b8eed816a6034af7bcb67b0796820c6a",
+      "00001.grz:00001-104.con": "8054899d369b96355b0012e1e98da94d7a68ae42c396753c1df9ed3ae83afa1a",
+      "00001.grz:00001-105.con": "be6461f4f44c00abd938b5a6d8f5c09f90d222b6469770e56f44e6cd5238ca66",
+      "00001.grz:00001-106.con": "bc1995e7aeb838abeae5a35e005b50fca8bb56406728b3d6ee8c90187e921b24",
+      "00001.grz:00001-107.con": "e30e47be76ffb298883cf6cd4452ecba41a39014de7e2aa481104723dbec1da0",
+      "00001.grz:00001-108.con": "cf470269301b527b30d3a428de0fe3e8e130c5960f3388f8d2a7c2862ca1b990"
+    },
+    "situation_sums": {
+      "00001.grz": 1655760.8929983377
+    },
+    "nonzero_values": 4357,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 115200,
+    "occupied_fraction": 0.037821180555555556,
+    "issues": []
+  },
+  {
+    "case": "buildings_mixed_t4",
+    "variant": "dictionary_fixed",
+    "repeat": 2,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 1.5381499999930384,
+    "cpu_s": 5.0625,
+    "pid": 45536,
+    "memory": {
+      "PeakWorkingSetSize": 89313280,
+      "PeakPagefileUsage": 64712704,
+      "PrivateUsage": 64700416,
+      "WorkingSetSize": 88694784
+    },
+    "memory_samples": 147,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      149992
+    ],
+    "actual_particles_per_s": [
+      499.97333333333336
+    ],
+    "actual_source_counts": {
+      "point": 8,
+      "area": 8,
+      "portal": 8,
+      "line": 8
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ffda4ad3e258fa59ac851f6eb4b11302d1dff602540648710f60ce0c0871f6a0",
+      "00001.grz:00001-102.con": "e33fe306fd3bde9ca7e2eede418d2f7330e9e8040f439bf1ca2e3dbf060dfe1d",
+      "00001.grz:00001-103.con": "6269ab9ac60554ef09ba4cab92a2f1d9b8eed816a6034af7bcb67b0796820c6a",
+      "00001.grz:00001-104.con": "8054899d369b96355b0012e1e98da94d7a68ae42c396753c1df9ed3ae83afa1a",
+      "00001.grz:00001-105.con": "be6461f4f44c00abd938b5a6d8f5c09f90d222b6469770e56f44e6cd5238ca66",
+      "00001.grz:00001-106.con": "bc1995e7aeb838abeae5a35e005b50fca8bb56406728b3d6ee8c90187e921b24",
+      "00001.grz:00001-107.con": "e30e47be76ffb298883cf6cd4452ecba41a39014de7e2aa481104723dbec1da0",
+      "00001.grz:00001-108.con": "cf470269301b527b30d3a428de0fe3e8e130c5960f3388f8d2a7c2862ca1b990"
+    },
+    "situation_sums": {
+      "00001.grz": 1655760.8929983377
+    },
+    "nonzero_values": 4357,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 115200,
+    "occupied_fraction": 0.037821180555555556,
+    "issues": []
+  },
+  {
+    "case": "buildings_mixed_t4",
+    "variant": "double",
+    "repeat": 3,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 1.3876722999993945,
+    "cpu_s": 4.46875,
+    "pid": 15756,
+    "memory": {
+      "PeakWorkingSetSize": 73273344,
+      "PeakPagefileUsage": 56520704,
+      "PrivateUsage": 53317632,
+      "WorkingSetSize": 72888320
+    },
+    "memory_samples": 133,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      149992
+    ],
+    "actual_particles_per_s": [
+      499.97333333333336
+    ],
+    "actual_source_counts": {
+      "point": 8,
+      "area": 8,
+      "portal": 8,
+      "line": 8
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ffda4ad3e258fa59ac851f6eb4b11302d1dff602540648710f60ce0c0871f6a0",
+      "00001.grz:00001-102.con": "e33fe306fd3bde9ca7e2eede418d2f7330e9e8040f439bf1ca2e3dbf060dfe1d",
+      "00001.grz:00001-103.con": "6269ab9ac60554ef09ba4cab92a2f1d9b8eed816a6034af7bcb67b0796820c6a",
+      "00001.grz:00001-104.con": "8054899d369b96355b0012e1e98da94d7a68ae42c396753c1df9ed3ae83afa1a",
+      "00001.grz:00001-105.con": "be6461f4f44c00abd938b5a6d8f5c09f90d222b6469770e56f44e6cd5238ca66",
+      "00001.grz:00001-106.con": "bc1995e7aeb838abeae5a35e005b50fca8bb56406728b3d6ee8c90187e921b24",
+      "00001.grz:00001-107.con": "e30e47be76ffb298883cf6cd4452ecba41a39014de7e2aa481104723dbec1da0",
+      "00001.grz:00001-108.con": "cf470269301b527b30d3a428de0fe3e8e130c5960f3388f8d2a7c2862ca1b990"
+    },
+    "situation_sums": {
+      "00001.grz": 1655760.8929983377
+    },
+    "nonzero_values": 4357,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 115200,
+    "occupied_fraction": 0.037821180555555556,
+    "issues": []
+  },
+  {
+    "case": "buildings_mixed_t4",
+    "variant": "dictionary_fixed",
+    "repeat": 3,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 1.5298335999978008,
+    "cpu_s": 5.15625,
+    "pid": 51704,
+    "memory": {
+      "PeakWorkingSetSize": 88440832,
+      "PeakPagefileUsage": 63959040,
+      "PrivateUsage": 63946752,
+      "WorkingSetSize": 87912448
+    },
+    "memory_samples": 147,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      149992
+    ],
+    "actual_particles_per_s": [
+      499.97333333333336
+    ],
+    "actual_source_counts": {
+      "point": 8,
+      "area": 8,
+      "portal": 8,
+      "line": 8
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ffda4ad3e258fa59ac851f6eb4b11302d1dff602540648710f60ce0c0871f6a0",
+      "00001.grz:00001-102.con": "e33fe306fd3bde9ca7e2eede418d2f7330e9e8040f439bf1ca2e3dbf060dfe1d",
+      "00001.grz:00001-103.con": "6269ab9ac60554ef09ba4cab92a2f1d9b8eed816a6034af7bcb67b0796820c6a",
+      "00001.grz:00001-104.con": "8054899d369b96355b0012e1e98da94d7a68ae42c396753c1df9ed3ae83afa1a",
+      "00001.grz:00001-105.con": "be6461f4f44c00abd938b5a6d8f5c09f90d222b6469770e56f44e6cd5238ca66",
+      "00001.grz:00001-106.con": "bc1995e7aeb838abeae5a35e005b50fca8bb56406728b3d6ee8c90187e921b24",
+      "00001.grz:00001-107.con": "e30e47be76ffb298883cf6cd4452ecba41a39014de7e2aa481104723dbec1da0",
+      "00001.grz:00001-108.con": "cf470269301b527b30d3a428de0fe3e8e130c5960f3388f8d2a7c2862ca1b990"
+    },
+    "situation_sums": {
+      "00001.grz": 1655760.8929983377
+    },
+    "nonzero_values": 4357,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 115200,
+    "occupied_fraction": 0.037821180555555556,
+    "issues": []
+  },
+  {
+    "case": "buildings_mixed_t4",
+    "variant": "combined",
+    "repeat": 3,
+    "measured": true,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 1.5453902000008384,
+    "cpu_s": 5.171875,
+    "pid": 33352,
+    "memory": {
+      "PeakWorkingSetSize": 71663616,
+      "PeakPagefileUsage": 50257920,
+      "PrivateUsage": 46686208,
+      "WorkingSetSize": 71122944
+    },
+    "memory_samples": 149,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      149992
+    ],
+    "actual_particles_per_s": [
+      499.97333333333336
+    ],
+    "actual_source_counts": {
+      "point": 8,
+      "area": 8,
+      "portal": 8,
+      "line": 8
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "ffda4ad3e258fa59ac851f6eb4b11302d1dff602540648710f60ce0c0871f6a0",
+      "00001.grz:00001-102.con": "e33fe306fd3bde9ca7e2eede418d2f7330e9e8040f439bf1ca2e3dbf060dfe1d",
+      "00001.grz:00001-103.con": "6269ab9ac60554ef09ba4cab92a2f1d9b8eed816a6034af7bcb67b0796820c6a",
+      "00001.grz:00001-104.con": "8054899d369b96355b0012e1e98da94d7a68ae42c396753c1df9ed3ae83afa1a",
+      "00001.grz:00001-105.con": "be6461f4f44c00abd938b5a6d8f5c09f90d222b6469770e56f44e6cd5238ca66",
+      "00001.grz:00001-106.con": "bc1995e7aeb838abeae5a35e005b50fca8bb56406728b3d6ee8c90187e921b24",
+      "00001.grz:00001-107.con": "e30e47be76ffb298883cf6cd4452ecba41a39014de7e2aa481104723dbec1da0",
+      "00001.grz:00001-108.con": "cf470269301b527b30d3a428de0fe3e8e130c5960f3388f8d2a7c2862ca1b990"
+    },
+    "situation_sums": {
+      "00001.grz": 1655760.8929983377
+    },
+    "nonzero_values": 4357,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 115200,
+    "occupied_fraction": 0.037821180555555556,
+    "issues": []
+  }
+]

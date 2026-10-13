@@ -1,0 +1,251 @@
+{
+  "scope": "Read-only design; no benchmarks or builds run by this agent",
+  "reuse_root": "external-evidence\\public_candidates\\gral\\runtime",
+  "reusable_files": [
+    "field_support.py",
+    "template/in.dat",
+    "template/micro_vert_layers.txt"
+  ],
+  "reusable_functions": [
+    "field_support.configure",
+    "field_support.terrain_inputs",
+    "field_support.process",
+    "run_validation.configure",
+    "run_validation.payloads",
+    "run_validation.compare"
+  ],
+  "adaptations": [
+    "Drop old source locks, wall probe and VARIANTS; use current source_lock.json for float/double/dictionary.",
+    "field_support.process already records whole-process wall/CPU and Windows peak working-set/private commit at 10 ms intervals, with bounded child-tree kill.",
+    "Preserve input hashes, actual source counts, actual particles, completion marker and empty problem report.",
+    "Existing payload decoder supports only dense compressed V03 .grz; add sparse V02, coordinate V01 and unpacked paths for output regressions.",
+    "Set SG99 for unmodified source comparisons: all four readers still use emission_sourcegroup[101], so SG108 is a separate expected-failure boundary diagnostic.",
+    "Keep performance builds uninstrumented; use diagnostic builds separately for dictionary.Count, pre/post writer times and allocation/collection counters."
+  ],
+  "common": {
+    "pps": 1000,
+    "tau": 300,
+    "kind": "point",
+    "sources": 26,
+    "sg": 26,
+    "length": 1200,
+    "flow": 40,
+    "conc": 20,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 4,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false
+  },
+  "primary_cases": [
+    {
+      "id": "small_sg1_t1",
+      "pps": 100,
+      "tau": 600,
+      "kind": "point",
+      "sources": 1,
+      "sg": 1,
+      "length": 400,
+      "flow": 40,
+      "conc": 40,
+      "slices": 1,
+      "workers": 1,
+      "purpose": "Single-worker double-versus-dictionary exact reference"
+    },
+    {
+      "id": "neutral_sg26_t1",
+      "workers": 1,
+      "purpose": "Controlled worker scaling baseline"
+    },
+    {
+      "id": "neutral_sg26_t4",
+      "workers": 4,
+      "purpose": "Controlled worker scaling"
+    },
+    {
+      "id": "neutral_sg26_t8",
+      "workers": 8,
+      "purpose": "Controlled worker scaling"
+    },
+    {
+      "id": "neutral_sg26_t14",
+      "workers": 14,
+      "purpose": "Controlled worker scaling"
+    },
+    {
+      "id": "dense_sg1_coarse_t4",
+      "sources": 16,
+      "sg": 1,
+      "length": 400,
+      "flow": 40,
+      "conc": 40,
+      "speed": 0.25,
+      "sc": 6,
+      "workers": 4,
+      "distributed": true,
+      "purpose": "Many updates per occupied key; measure actual occupancy"
+    },
+    {
+      "id": "sparse_sg99_fine9_t4",
+      "sources": 99,
+      "sg": 99,
+      "length": 2400,
+      "flow": 40,
+      "conc": 10,
+      "slices": 9,
+      "workers": 4,
+      "purpose": "Large dense buffer, many groups/heights, sparse occupied keys"
+    },
+    {
+      "id": "terrain_stable_area_t8",
+      "kind": "area",
+      "terrain": true,
+      "sources": 26,
+      "sg": 26,
+      "length": 1200,
+      "flow": 20,
+      "conc": 20,
+      "speed": 0.5,
+      "sc": 6,
+      "workers": 8,
+      "purpose": "Stable terrain and area emissions"
+    },
+    {
+      "id": "convective_mixed_t8",
+      "kind": "mixed",
+      "sources": 64,
+      "sg": 26,
+      "length": 1200,
+      "flow": 20,
+      "conc": 10,
+      "speed": 2.5,
+      "sc": 2,
+      "workers": 8,
+      "purpose": "Source kinds and convective transport"
+    },
+    {
+      "id": "transient_three_t4",
+      "pps": 100,
+      "tau": 120,
+      "kind": "mixed",
+      "sources": 8,
+      "sg": 2,
+      "workers": 4,
+      "transient": true,
+      "purpose": "Three meteorologies, emissions factors 1/0/0.5, residual-only middle situation and dictionary reset"
+    },
+    {
+      "id": "medium_8000ps_t8",
+      "pps": 8000,
+      "tau": 300,
+      "sources": 128,
+      "sg": 26,
+      "length": 2400,
+      "flow": 40,
+      "conc": 20,
+      "workers": 8,
+      "purpose": "Realistic medium rate and source/domain load"
+    }
+  ],
+  "limited_extra_checks": [
+    {
+      "id": "sg108_unmodified_boundary",
+      "pps": 100,
+      "tau": 30,
+      "sources": 108,
+      "sg": 108,
+      "purpose": "Record current input-reader failure rather than claim dictionary lifts group limit"
+    },
+    {
+      "id": "output_paths",
+      "pps": 100,
+      "tau": 60,
+      "sources": 2,
+      "sg": 2,
+      "workers": 1,
+      "formats": [
+        "compressed",
+        "compressed V02",
+        "compressed V03",
+        "uncompressed"
+      ],
+      "ascii": true,
+      "purpose": "Double/dictionary values through all writer paths"
+    },
+    {
+      "id": "dry_deposition",
+      "pps": 100,
+      "tau": 120,
+      "sources": 2,
+      "sg": 2,
+      "workers": 1,
+      "point_row_extra": [
+        100,
+        100,
+        30,
+        1000,
+        0.005,
+        0,
+        0,
+        1
+      ],
+      "purpose": "One PM2.5 concentration+deposition source per original source; no source splitting; require nonzero .dep"
+    },
+    {
+      "id": "odour_writer",
+      "pps": 100,
+      "tau": 60,
+      "sources": 2,
+      "sg": 2,
+      "workers": 1,
+      "purpose": "Only if current branch changes odour P/M transfer; compare .odr shape/nonfinite/value behavior"
+    }
+  ],
+  "statistics": {
+    "pilot": "Two representative cases, one cold run of each variant",
+    "screen": "1 discarded warmup plus 3 measured repeats per case/variant, rotating variant order",
+    "confirmation": "Only important benefits/regressions or noisy cases: add 2 measured repeats",
+    "per_process_cap_s": 120,
+    "per_chunk_cap_s": 840,
+    "memory_metrics": [
+      "peak_working_set_bytes",
+      "peak_pagefile_usage_bytes",
+      "sampled_peak_private_usage_bytes"
+    ],
+    "effect_metrics": [
+      "paired_runtime_change_percent_against_float",
+      "paired_runtime_change_percent_against_dense_double",
+      "peak_memory_delta_bytes",
+      "occupied_keys",
+      "total_output_slots",
+      "occupied_fraction",
+      "writer_seconds_diagnostic_only"
+    ],
+    "fidelity_metrics": [
+      "payload_hashes",
+      "exact_cells",
+      "relative_L1",
+      "max_abs",
+      "sum_concentration",
+      "nonzero_cells",
+      "repeat_range",
+      "all_pairwise_repeat_L1"
+    ],
+    "comparison": "One-worker dictionary versus dense double is the strongest storage-preservation check; multi-worker values may differ only through order of floating-point addition, so retain exact counts plus magnitude and repeat envelopes. Float versus double is an accuracy change, not an exact-preservation criterion."
+  },
+  "decoder_notes": {
+    "v03": "28-byte <iiiffii header, NXL*NYL float32, i-major/j-inner",
+    "v02": "20-byte <iiiff header, then runs (length,start_i,start_j,float32[length]) with 1-based indices, int32 -1 sentinel",
+    "v01": "int32 header then repeated <iif x,y,value> nonzero-coordinate records; uncompressed files same writer with header",
+    "ascii": "Six header rows; y reversed relative to internal i-major array",
+    "deposition": "Same three record formats, .dep has one field per source group (not per height); V02 writes values >1e-15"
+  },
+  "crucial_source_findings": [
+    "Dictionary writer enumerates every dictionary entry once for each requested group and slice; test group/slice scaling, not only particle rate.",
+    "Clear() at the end of Write2DConcentrations should be tested over successive situations with changing emissions.",
+    "ReadPointSources, ReadAreaSources, ReadLinieSources, ReadTunnelportals still allocate emission_sourcegroup[101]."
+  ]
+}

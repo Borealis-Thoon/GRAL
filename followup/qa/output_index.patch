@@ -1,0 +1,63 @@
+diff --git a/src/Write2DConcentrations.cs b/src/Write2DConcentrations.cs
+index 0149788..a843915 100644
+--- a/src/Write2DConcentrations.cs
++++ b/src/Write2DConcentrations.cs
+@@ -17,16 +17,42 @@ using System.IO.Compression;
+ using System.Text;
+ using System.Threading.Tasks;
+ using System.Collections.Concurrent;
++using System.Collections.Generic;
++using System.Linq;
++using ConcentrationEntry = System.Collections.Generic.KeyValuePair<(int i, int j, int II, int SG), double>;
+ 
+ namespace GRAL_2001
+ {
+     public partial class ProgramWriters
+     {
+         private int weatherSituation = 0;
++        [ThreadStatic]
++        private static Dictionary<ConcurrentDictionary<(int i, int j, int II, int SG), double>, ILookup<(int II, int SG), ConcentrationEntry>> outputIndex;
++
+         /// <summary>
+         ///Output of 2-D concentration files (concentrations, deposition, odour-files)
+         /// </summary>
+         public void Write2DConcentrations(int WeatherSituation, string ZippedFile)
++        {
++            outputIndex = new();
++            try
++            {
++                foreach (var concentration in new[] { Program.Concentration2D, Program.Concentration2D_P, Program.Concentration2D_M })
++                {
++                    if (concentration != null)
++                    {
++                        outputIndex[concentration] = concentration.ToLookup(value => (value.Key.II, value.Key.SG));
++                    }
++                }
++                Write2DConcentrationsCore(WeatherSituation, ZippedFile);
++            }
++            finally
++            {
++                outputIndex = null;
++            }
++        }
++
++        private void Write2DConcentrationsCore(int WeatherSituation, string ZippedFile)
+         {
+             try
+             {
+@@ -350,8 +376,14 @@ namespace GRAL_2001
+             }
+             if (Concentration != null)
+             {
++                // Reuse this output call's grouping; direct writer calls retain the original path.
++                IEnumerable<ConcentrationEntry> values = Concentration;
++                if (outputIndex != null && outputIndex.TryGetValue(Concentration, out var groups))
++                {
++                    values = groups[(Slice, SG)];
++                }
+                 //write from concentration2D to conz3d File
+-                foreach (var value in Concentration)
++                foreach (var value in values)
+                 {
+                     if (Slice == value.Key.II && SG == value.Key.SG)
+                     {

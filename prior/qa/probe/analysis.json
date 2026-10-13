@@ -1,0 +1,495 @@
+{
+  "status": "pass",
+  "diagnostic_only": true,
+  "allocation_counter": "GC.GetTotalAllocatedBytes(false); approximate cumulative allocation, not live heap size; deltas include probe logging overhead",
+  "source_lock_checks": {
+    "float": {
+      "original_source_files": 82,
+      "mismatches": []
+    },
+    "double": {
+      "original_source_files": 82,
+      "mismatches": []
+    },
+    "dictionary_fixed": {
+      "original_source_files": 82,
+      "mismatches": []
+    }
+  },
+  "rows": [
+    {
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "float",
+      "slots": 51321600,
+      "groups": 99,
+      "slices": 9,
+      "keys": null,
+      "occupied_key_fraction": null,
+      "before_dispersion_managed_mib": 328.74337005615234,
+      "before_writer_managed_mib": 280.98802185058594,
+      "before_writer_private_mib": 349.50390625,
+      "transport_allocated_mib_approx": 19.18548583984375,
+      "transport_gc": [
+        1,
+        1,
+        0
+      ],
+      "writer_allocated_mib_approx": 0.9384841918945312,
+      "writer_gc": [
+        0,
+        0,
+        0
+      ],
+      "writer_seconds": 7.006034,
+      "conversion_seconds": 0,
+      "conversion_calls": 0,
+      "conversion_fraction_of_writer": null,
+      "estimated_entries_visited": null,
+      "snapshot_dictionary_counts": {
+        "before": [
+          null,
+          null,
+          null
+        ],
+        "after": [
+          null,
+          null,
+          null
+        ]
+      },
+      "native_reference_batch": "sparse_final",
+      "input_hashes_identical": true,
+      "payload_sha_comparisons": [
+        {
+          "repeat": 0,
+          "measured": false,
+          "fields": 891,
+          "matching_fields": 467,
+          "exact": false
+        },
+        {
+          "repeat": 1,
+          "measured": true,
+          "fields": 891,
+          "matching_fields": 459,
+          "exact": false
+        },
+        {
+          "repeat": 2,
+          "measured": true,
+          "fields": 891,
+          "matching_fields": 475,
+          "exact": false
+        },
+        {
+          "repeat": 3,
+          "measured": true,
+          "fields": 891,
+          "matching_fields": 459,
+          "exact": false
+        }
+      ],
+      "numeric_against_native_measured_repeat_1": {
+        "values": 51321600,
+        "changed_values": 1365,
+        "relative_l1": 3.277528521987352e-09,
+        "max_abs": 0.002197265625
+      }
+    },
+    {
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "double",
+      "slots": 51321600,
+      "groups": 99,
+      "slices": 9,
+      "keys": null,
+      "occupied_key_fraction": null,
+      "before_dispersion_managed_mib": 744.6958847045898,
+      "before_writer_managed_mib": 715.0872497558594,
+      "before_writer_private_mib": 754.88671875,
+      "transport_allocated_mib_approx": 19.24639129638672,
+      "transport_gc": [
+        0,
+        0,
+        0
+      ],
+      "writer_allocated_mib_approx": 0.8875656127929688,
+      "writer_gc": [
+        0,
+        0,
+        0
+      ],
+      "writer_seconds": 6.8388339,
+      "conversion_seconds": 0,
+      "conversion_calls": 0,
+      "conversion_fraction_of_writer": null,
+      "estimated_entries_visited": null,
+      "snapshot_dictionary_counts": {
+        "before": [
+          null,
+          null,
+          null
+        ],
+        "after": [
+          null,
+          null,
+          null
+        ]
+      },
+      "native_reference_batch": "sparse_final",
+      "input_hashes_identical": true,
+      "payload_sha_comparisons": [
+        {
+          "repeat": 0,
+          "measured": false,
+          "fields": 891,
+          "matching_fields": 891,
+          "exact": true
+        },
+        {
+          "repeat": 1,
+          "measured": true,
+          "fields": 891,
+          "matching_fields": 891,
+          "exact": true
+        },
+        {
+          "repeat": 2,
+          "measured": true,
+          "fields": 891,
+          "matching_fields": 891,
+          "exact": true
+        },
+        {
+          "repeat": 3,
+          "measured": true,
+          "fields": 891,
+          "matching_fields": 891,
+          "exact": true
+        }
+      ],
+      "numeric_against_native_measured_repeat_1": {
+        "values": 51321600,
+        "changed_values": 0,
+        "relative_l1": 0.0,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "case": "sparse_sg99_fine9_t4",
+      "variant": "dictionary_fixed",
+      "slots": 51321600,
+      "groups": 99,
+      "slices": 9,
+      "keys": 386562,
+      "occupied_key_fraction": 0.0075321502057613164,
+      "before_dispersion_managed_mib": 61.1800537109375,
+      "before_writer_managed_mib": 107.12578582763672,
+      "before_writer_private_mib": 160.7421875,
+      "transport_allocated_mib_approx": 109.3768539428711,
+      "transport_gc": [
+        3,
+        2,
+        1
+      ],
+      "writer_allocated_mib_approx": 0.963043212890625,
+      "writer_gc": [
+        0,
+        0,
+        0
+      ],
+      "writer_seconds": 14.9781283,
+      "conversion_seconds": 10.8184876,
+      "conversion_calls": 891,
+      "conversion_fraction_of_writer": 0.7222856810486794,
+      "estimated_entries_visited": 344426742,
+      "snapshot_dictionary_counts": {
+        "before": [
+          386562,
+          0,
+          0
+        ],
+        "after": [
+          0,
+          0,
+          0
+        ]
+      },
+      "native_reference_batch": "sparse_final",
+      "input_hashes_identical": true,
+      "payload_sha_comparisons": [
+        {
+          "repeat": 0,
+          "measured": false,
+          "fields": 891,
+          "matching_fields": 891,
+          "exact": true
+        },
+        {
+          "repeat": 1,
+          "measured": true,
+          "fields": 891,
+          "matching_fields": 891,
+          "exact": true
+        },
+        {
+          "repeat": 2,
+          "measured": true,
+          "fields": 891,
+          "matching_fields": 891,
+          "exact": true
+        },
+        {
+          "repeat": 3,
+          "measured": true,
+          "fields": 891,
+          "matching_fields": 891,
+          "exact": true
+        }
+      ],
+      "numeric_against_native_measured_repeat_1": {
+        "values": 51321600,
+        "changed_values": 0,
+        "relative_l1": 0.0,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "case": "neutral_sg26_t4",
+      "variant": "float",
+      "slots": 93600,
+      "groups": 26,
+      "slices": 1,
+      "keys": null,
+      "occupied_key_fraction": null,
+      "before_dispersion_managed_mib": 14.789413452148438,
+      "before_writer_managed_mib": 24.831825256347656,
+      "before_writer_private_mib": 50.8515625,
+      "transport_allocated_mib_approx": 10.0399169921875,
+      "transport_gc": [
+        0,
+        0,
+        0
+      ],
+      "writer_allocated_mib_approx": 0.0858612060546875,
+      "writer_gc": [
+        0,
+        0,
+        0
+      ],
+      "writer_seconds": 0.0219362,
+      "conversion_seconds": 0,
+      "conversion_calls": 0,
+      "conversion_fraction_of_writer": null,
+      "estimated_entries_visited": null,
+      "snapshot_dictionary_counts": {
+        "before": [
+          null,
+          null,
+          null
+        ],
+        "after": [
+          null,
+          null,
+          null
+        ]
+      },
+      "native_reference_batch": "scaling",
+      "input_hashes_identical": true,
+      "payload_sha_comparisons": [
+        {
+          "repeat": 0,
+          "measured": false,
+          "fields": 26,
+          "matching_fields": 0,
+          "exact": false
+        },
+        {
+          "repeat": 1,
+          "measured": true,
+          "fields": 26,
+          "matching_fields": 0,
+          "exact": false
+        },
+        {
+          "repeat": 2,
+          "measured": true,
+          "fields": 26,
+          "matching_fields": 0,
+          "exact": false
+        },
+        {
+          "repeat": 3,
+          "measured": true,
+          "fields": 26,
+          "matching_fields": 0,
+          "exact": false
+        }
+      ],
+      "numeric_against_native_measured_repeat_1": {
+        "values": 93600,
+        "changed_values": 159,
+        "relative_l1": 4.96822054157584e-08,
+        "max_abs": 0.0032958984375
+      }
+    },
+    {
+      "case": "neutral_sg26_t4",
+      "variant": "double",
+      "slots": 93600,
+      "groups": 26,
+      "slices": 1,
+      "keys": null,
+      "occupied_key_fraction": null,
+      "before_dispersion_managed_mib": 15.788787841796875,
+      "before_writer_managed_mib": 25.778839111328125,
+      "before_writer_private_mib": 51.96484375,
+      "transport_allocated_mib_approx": 9.987648010253906,
+      "transport_gc": [
+        0,
+        0,
+        0
+      ],
+      "writer_allocated_mib_approx": 0.09377288818359375,
+      "writer_gc": [
+        0,
+        0,
+        0
+      ],
+      "writer_seconds": 0.0212587,
+      "conversion_seconds": 0,
+      "conversion_calls": 0,
+      "conversion_fraction_of_writer": null,
+      "estimated_entries_visited": null,
+      "snapshot_dictionary_counts": {
+        "before": [
+          null,
+          null,
+          null
+        ],
+        "after": [
+          null,
+          null,
+          null
+        ]
+      },
+      "native_reference_batch": "scaling",
+      "input_hashes_identical": true,
+      "payload_sha_comparisons": [
+        {
+          "repeat": 0,
+          "measured": false,
+          "fields": 26,
+          "matching_fields": 26,
+          "exact": true
+        },
+        {
+          "repeat": 1,
+          "measured": true,
+          "fields": 26,
+          "matching_fields": 26,
+          "exact": true
+        },
+        {
+          "repeat": 2,
+          "measured": true,
+          "fields": 26,
+          "matching_fields": 26,
+          "exact": true
+        },
+        {
+          "repeat": 3,
+          "measured": true,
+          "fields": 26,
+          "matching_fields": 26,
+          "exact": true
+        }
+      ],
+      "numeric_against_native_measured_repeat_1": {
+        "values": 93600,
+        "changed_values": 0,
+        "relative_l1": 0.0,
+        "max_abs": 0.0
+      }
+    },
+    {
+      "case": "neutral_sg26_t4",
+      "variant": "dictionary_fixed",
+      "slots": 93600,
+      "groups": 26,
+      "slices": 1,
+      "keys": 3593,
+      "occupied_key_fraction": 0.038386752136752134,
+      "before_dispersion_managed_mib": 14.205665588378906,
+      "before_writer_managed_mib": 59.417686462402344,
+      "before_writer_private_mib": 85.74609375,
+      "transport_allocated_mib_approx": 45.207786560058594,
+      "transport_gc": [
+        0,
+        0,
+        0
+      ],
+      "writer_allocated_mib_approx": 0.0858001708984375,
+      "writer_gc": [
+        0,
+        0,
+        0
+      ],
+      "writer_seconds": 0.0243956,
+      "conversion_seconds": 0.0021384,
+      "conversion_calls": 26,
+      "conversion_fraction_of_writer": 0.08765515092885602,
+      "estimated_entries_visited": 93418,
+      "snapshot_dictionary_counts": {
+        "before": [
+          3593,
+          0,
+          0
+        ],
+        "after": [
+          0,
+          0,
+          0
+        ]
+      },
+      "native_reference_batch": "scaling",
+      "input_hashes_identical": true,
+      "payload_sha_comparisons": [
+        {
+          "repeat": 0,
+          "measured": false,
+          "fields": 26,
+          "matching_fields": 26,
+          "exact": true
+        },
+        {
+          "repeat": 1,
+          "measured": true,
+          "fields": 26,
+          "matching_fields": 26,
+          "exact": true
+        },
+        {
+          "repeat": 2,
+          "measured": true,
+          "fields": 26,
+          "matching_fields": 26,
+          "exact": true
+        },
+        {
+          "repeat": 3,
+          "measured": true,
+          "fields": 26,
+          "matching_fields": 26,
+          "exact": true
+        }
+      ],
+      "numeric_against_native_measured_repeat_1": {
+        "values": 93600,
+        "changed_values": 0,
+        "relative_l1": 0.0,
+        "max_abs": 0.0
+      }
+    }
+  ]
+}

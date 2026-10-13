@@ -1,0 +1,1655 @@
+[
+  {
+    "case": "sg108_boundary",
+    "variant": "float",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 0,
+    "wall_s": 0.23236999999789987,
+    "cpu_s": 0.203125,
+    "pid": 58764,
+    "memory": {
+      "PeakWorkingSetSize": 44855296,
+      "PeakPagefileUsage": 21610496,
+      "PrivateUsage": 21340160,
+      "WorkingSetSize": 43806720
+    },
+    "memory_samples": 22,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [],
+    "actual_particles_per_s": [],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "incomplete",
+      "problem_report",
+      "particle_count",
+      "weather_count",
+      "source_count_point",
+      "con_count_0_expected_108",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "sg108_boundary",
+    "variant": "double",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 0,
+    "wall_s": 0.2214051000046311,
+    "cpu_s": 0.203125,
+    "pid": 32244,
+    "memory": {
+      "PeakWorkingSetSize": 48349184,
+      "PeakPagefileUsage": 24891392,
+      "PrivateUsage": 24866816,
+      "WorkingSetSize": 47763456
+    },
+    "memory_samples": 21,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [],
+    "actual_particles_per_s": [],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "incomplete",
+      "problem_report",
+      "particle_count",
+      "weather_count",
+      "source_count_point",
+      "con_count_0_expected_108",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "sg108_boundary",
+    "variant": "dictionary",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 0,
+    "wall_s": 0.2218150999979116,
+    "cpu_s": 0.21875,
+    "pid": 34132,
+    "memory": {
+      "PeakWorkingSetSize": 42930176,
+      "PeakPagefileUsage": 19488768,
+      "PrivateUsage": 19488768,
+      "WorkingSetSize": 41877504
+    },
+    "memory_samples": 21,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [],
+    "actual_particles_per_s": [],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "incomplete",
+      "problem_report",
+      "particle_count",
+      "weather_count",
+      "source_count_point",
+      "con_count_0_expected_108",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "sg108_boundary",
+    "variant": "dictionary_fixed",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 0,
+    "wall_s": 0.21900430000096094,
+    "cpu_s": 0.1875,
+    "pid": 11304,
+    "memory": {
+      "PeakWorkingSetSize": 42897408,
+      "PeakPagefileUsage": 19787776,
+      "PrivateUsage": 19779584,
+      "WorkingSetSize": 42463232
+    },
+    "memory_samples": 21,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [],
+    "actual_particles_per_s": [],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "incomplete",
+      "problem_report",
+      "particle_count",
+      "weather_count",
+      "source_count_point",
+      "con_count_0_expected_108",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "dry_deposition_t1",
+    "variant": "double",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.5968838999979198,
+    "cpu_s": 0.59375,
+    "pid": 53364,
+    "memory": {
+      "PeakWorkingSetSize": 58765312,
+      "PeakPagefileUsage": 34902016,
+      "PrivateUsage": 33656832,
+      "WorkingSetSize": 57548800
+    },
+    "memory_samples": 57,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      12000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-01.dep": "22f3be5ffd3ae81e0c7acdcb26687d1f89bb98dca24e9ffdf26a47338792817b",
+      "00001.grz:00001-02.dep": "8ba58143b773951fa8f20ea15d1d08442d3c2855556696373efa329c743496cb",
+      "00001.grz:00001-101.con": "2bafeb1efa5b97c32268bd9eb6c3fe4a6ac20af5f4852c9e3f8cb5d3872c00dc",
+      "00001.grz:00001-102.con": "1b3d4b6861cedfeb0f4505efb99392b123d748db1f4f9831110d425f56aebd38"
+    },
+    "situation_sums": {
+      "00001.grz": 17332.0552685149
+    },
+    "nonzero_values": 159,
+    "deposition_fields": 2,
+    "deposition_nonzero": 95,
+    "output_values": 14400,
+    "occupied_fraction": 0.022083333333333333,
+    "issues": [],
+    "deposition_files": [
+      "00001.grz:00001-01.dep",
+      "00001.grz:00001-02.dep"
+    ]
+  },
+  {
+    "case": "dry_deposition_t1",
+    "variant": "dictionary",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.6206663000048138,
+    "cpu_s": 0.59375,
+    "pid": 46784,
+    "memory": {
+      "PeakWorkingSetSize": 57479168,
+      "PeakPagefileUsage": 33488896,
+      "PrivateUsage": 31346688,
+      "WorkingSetSize": 55656448
+    },
+    "memory_samples": 59,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      12000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-01.dep": "22f3be5ffd3ae81e0c7acdcb26687d1f89bb98dca24e9ffdf26a47338792817b",
+      "00001.grz:00001-02.dep": "8ba58143b773951fa8f20ea15d1d08442d3c2855556696373efa329c743496cb",
+      "00001.grz:00001-101.con": "2bafeb1efa5b97c32268bd9eb6c3fe4a6ac20af5f4852c9e3f8cb5d3872c00dc",
+      "00001.grz:00001-102.con": "1b3d4b6861cedfeb0f4505efb99392b123d748db1f4f9831110d425f56aebd38"
+    },
+    "situation_sums": {
+      "00001.grz": 17332.0552685149
+    },
+    "nonzero_values": 159,
+    "deposition_fields": 2,
+    "deposition_nonzero": 95,
+    "output_values": 14400,
+    "occupied_fraction": 0.022083333333333333,
+    "issues": [],
+    "deposition_files": [
+      "00001.grz:00001-01.dep",
+      "00001.grz:00001-02.dep"
+    ]
+  },
+  {
+    "case": "dry_deposition_t1",
+    "variant": "dictionary_fixed",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.6196926999982679,
+    "cpu_s": 0.625,
+    "pid": 60624,
+    "memory": {
+      "PeakWorkingSetSize": 57552896,
+      "PeakPagefileUsage": 33591296,
+      "PrivateUsage": 31588352,
+      "WorkingSetSize": 55500800
+    },
+    "memory_samples": 59,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      12000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-01.dep": "22f3be5ffd3ae81e0c7acdcb26687d1f89bb98dca24e9ffdf26a47338792817b",
+      "00001.grz:00001-02.dep": "8ba58143b773951fa8f20ea15d1d08442d3c2855556696373efa329c743496cb",
+      "00001.grz:00001-101.con": "2bafeb1efa5b97c32268bd9eb6c3fe4a6ac20af5f4852c9e3f8cb5d3872c00dc",
+      "00001.grz:00001-102.con": "1b3d4b6861cedfeb0f4505efb99392b123d748db1f4f9831110d425f56aebd38"
+    },
+    "situation_sums": {
+      "00001.grz": 17332.0552685149
+    },
+    "nonzero_values": 159,
+    "deposition_fields": 2,
+    "deposition_nonzero": 95,
+    "output_values": 14400,
+    "occupied_fraction": 0.022083333333333333,
+    "issues": [],
+    "deposition_files": [
+      "00001.grz:00001-01.dep",
+      "00001.grz:00001-02.dep"
+    ]
+  },
+  {
+    "case": "dry_deposition_t1",
+    "variant": "float",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.583947300008731,
+    "cpu_s": 0.5625,
+    "pid": 32820,
+    "memory": {
+      "PeakWorkingSetSize": 58200064,
+      "PeakPagefileUsage": 34381824,
+      "PrivateUsage": 28844032,
+      "WorkingSetSize": 53096448
+    },
+    "memory_samples": 56,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      12000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-01.dep": "22f3be5ffd3ae81e0c7acdcb26687d1f89bb98dca24e9ffdf26a47338792817b",
+      "00001.grz:00001-02.dep": "8ba58143b773951fa8f20ea15d1d08442d3c2855556696373efa329c743496cb",
+      "00001.grz:00001-101.con": "2dcfeca2d9327e0a1af76085dd823e25f433e47c1ebc06353d8404660ba4a894",
+      "00001.grz:00001-102.con": "f579e930f5339ee882c38c33f5e3a0cebd1816c5bcca6246a297cf9edea315bb"
+    },
+    "situation_sums": {
+      "00001.grz": 17336.128820497543
+    },
+    "nonzero_values": 159,
+    "deposition_fields": 2,
+    "deposition_nonzero": 95,
+    "output_values": 14400,
+    "occupied_fraction": 0.022083333333333333,
+    "issues": [],
+    "deposition_files": [
+      "00001.grz:00001-01.dep",
+      "00001.grz:00001-02.dep"
+    ]
+  },
+  {
+    "case": "sg101_boundary",
+    "variant": "dictionary",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.46191640000324696,
+    "cpu_s": 0.453125,
+    "pid": 35604,
+    "memory": {
+      "PeakWorkingSetSize": 61267968,
+      "PeakPagefileUsage": 37498880,
+      "PrivateUsage": 37101568,
+      "WorkingSetSize": 60817408
+    },
+    "memory_samples": 44,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      3030
+    ],
+    "actual_particles_per_s": [
+      101.0
+    ],
+    "actual_source_counts": {
+      "point": 101,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "74260789669cc18b502e14c9cf8ccbba929a98ba4020e2f1e56568a02f59919b",
+      "00001.grz:00001-102.con": "d5c565336bcdb1e13e6f06953ba091b32af8815b948571c05bae205e635b27bd",
+      "00001.grz:00001-103.con": "8da27c85e755a8b8f1223f1d19f4ea4737707e52a34b299b8283815cae69de48",
+      "00001.grz:00001-104.con": "fba3fa25d94555eca056f429581eb3eb3478817852ba4212a85eb5baa54d358b",
+      "00001.grz:00001-105.con": "22735fe6c27423850872ed714faab745c2f65290e7b0b4570010a444385ba0ba",
+      "00001.grz:00001-106.con": "ab31d89e6044721853c9ef74b053d343b6d1451f3049c428cf06a32419a7b582",
+      "00001.grz:00001-107.con": "0d819d600d54de53a3ecc792b3b4033fd7560b60d43afeefa3f40bfaac75428b",
+      "00001.grz:00001-108.con": "eb8e952790e613acfc011ba0eb6156307691546a8020d0b7e40c37821e0c4323",
+      "00001.grz:00001-109.con": "ee6cdb285f2e3654d37f672591b7c5b3a8008c94767b6a7301cf92221951170f",
+      "00001.grz:00001-110.con": "eb0baef56c35fe8ac3f7eb8d7f6eec38d996d7c79ef6838e68fb35c1f1932c89",
+      "00001.grz:00001-1100.con": "ab5deefe1944a2e4c995f9723e1b06a35f3970fd699ee64024ae2721bd9e8e22",
+      "00001.grz:00001-1101.con": "1b2e33304ef9bdaf5caa670bddbb697aa4047cb42e141445bb8366935ac7be89",
+      "00001.grz:00001-111.con": "22c672eecd7524aafb59a10ec8e4ff01c7cc69de0425f2fb9fd0d600bb756820",
+      "00001.grz:00001-112.con": "d8bc458c4b1ac4583f564d1b3249330a5921b05b29c61082b5bfdf0bc4acea77",
+      "00001.grz:00001-113.con": "fef2999e71e9f3ea26780d35b0857cda03d427740c4e5c0a7c7da3a4e6b34715",
+      "00001.grz:00001-114.con": "a0590aeb629f473991eff222f44ff980723b116848f1854c459cb5ac55e78b63",
+      "00001.grz:00001-115.con": "42f709c978b8f2bc5de0bbd6b3e61218f11a33d0d2f671253703d47cde174c86",
+      "00001.grz:00001-116.con": "73299a27690f8a0bc2ac456aecb81fa31f83f0d3dde6ee434de55d4042fe3083",
+      "00001.grz:00001-117.con": "3083f9d3b6fe55a19d1da292dda6d74baf15918a6378154e95346ddb13df4666",
+      "00001.grz:00001-118.con": "4b940ecf45cedbf803211b5425928b4215f726973f51cb9aea95d910cc6e5aef",
+      "00001.grz:00001-119.con": "10084a4e823524ad77b5861843fb004582d898c0f6f236f1fd4abdedff3b5817",
+      "00001.grz:00001-120.con": "8246b04ed4ac3daf4fcec2a3b8a40c82ca891611a5c7407b729a7521b07431a3",
+      "00001.grz:00001-121.con": "5722c3c28f93fe265062da8140bc9628a8a31075ddc8017aeefb4614946d646f",
+      "00001.grz:00001-122.con": "6a2d2cfd1a806f3ba95445872901f8843c65446833aa90ab5d92c1e1064bc751",
+      "00001.grz:00001-123.con": "691b5bc5aa3801ad7e6f93eed60a9e5525bfb81c6ca96d638d5264698996af1b",
+      "00001.grz:00001-124.con": "5ed0cf2f6b0cca2eb88fc515b8e08371d54ec8e30f50b6facaf73b80af65d107",
+      "00001.grz:00001-125.con": "0727d61516b2457262cbd64b1802b4d41c9bcbeb8cf8522aa8e125bbe7eef432",
+      "00001.grz:00001-126.con": "0acf04d092e089bd1f9469e508b58393eca7a06a20e9786e5294404d368d0e0a",
+      "00001.grz:00001-127.con": "5b22c17d1ab46ee7cc4e9d0dc5eb38218e8db53fee29cd75e958e4d8798a6b85",
+      "00001.grz:00001-128.con": "118d5ac1e335a40ff57ce90840dd24245dce34c86f2af58ff48e6eebe2c4a40e",
+      "00001.grz:00001-129.con": "02bb68ccb0a8a87d6d4820a20c98486cfbe2b89e4ff754f3e0e4eb4972a455db",
+      "00001.grz:00001-130.con": "0d2a1f4a94d7fc2d6d09b22b137c440767a5ae674bfbb62d493160f323295ee7",
+      "00001.grz:00001-131.con": "0c5d9adda53c908126e59c9d54da37cd08d5de1c824b656325ebd2a1a0628c2a",
+      "00001.grz:00001-132.con": "d187201d9796f107f54d6389bc6d526939aa2066585ad507950986e287f24a2e",
+      "00001.grz:00001-133.con": "8adeb35936d682c0ed6a9ba5ce85e2d7f4d01608b3593a7362598285ef26d303",
+      "00001.grz:00001-134.con": "4f757a7b938b46137652c026da546fc2f2590dbe1f513a8ebe692fd3a8083cc6",
+      "00001.grz:00001-135.con": "088e3b3945ac6f952dd81e3158815dae3b63b2b439e5ed18807e5bc7d4b3dac8",
+      "00001.grz:00001-136.con": "85a8ed9310f3ca10d1a03d3f4c946eb6c323a8d5193b56f0c56dba26dd9ed804",
+      "00001.grz:00001-137.con": "a778e44085c8477b29e906ca8c529200162b6a06148db7e2c928547e78d98ce3",
+      "00001.grz:00001-138.con": "278997d47608c38d7a13605e176e5752fafbcd65949c9d00e8bb859a9659029d",
+      "00001.grz:00001-139.con": "54bc60c8b2cdad2023432c8b4226860455043831f23e6851301f37ad02e2ae90",
+      "00001.grz:00001-140.con": "f4bcd25f3e9032858f79d5a6c46bd3807fe0ff4e2a363899d2703668dbb2ac7e",
+      "00001.grz:00001-141.con": "c5e26f66f77d03e6f7f2c118aee500cf4b416fd065824fa06f2166282ace11de",
+      "00001.grz:00001-142.con": "646a729184ac0cfcb1a842718b34379a86237d739c4f34d80f348ef18003ff1d",
+      "00001.grz:00001-143.con": "8c184ec048c4903dc01f18f92bd2448134c092902f1d077ad2966c528c93fa67",
+      "00001.grz:00001-144.con": "3bc1793fa35f9de1bdd4a208d11054f39a29d12d1fc47fd30ddd4663c6ead3d3",
+      "00001.grz:00001-145.con": "8c29ed54c67badd25a517aa2e705e21130cbd1360bc9853d4971fe52bac06105",
+      "00001.grz:00001-146.con": "b6d1fcbd29af91de7abd62b9cf9e2ad6b45320ae5c4474869f31b2ab2bfa4e38",
+      "00001.grz:00001-147.con": "b578c4afb261233be773dd22040f75704d0b535cb0344c4c356e32c488295ee8",
+      "00001.grz:00001-148.con": "8c93a0a34e101ff00ea0cfedbaf23a25321a48e7f14ddca81d055bafbfb761f3",
+      "00001.grz:00001-149.con": "53c74ac2fbe2543d1e18840654507c3e902295eedf18d67f9bd68ba6dc97c4c7",
+      "00001.grz:00001-150.con": "996e47da8698a16b5294777339db05c35375f2877b5ced186762e56a96524c0f",
+      "00001.grz:00001-151.con": "8542a8e71ec3eabf16b868e189772520e9112a25e29d4f01ac847f0a37b3e452",
+      "00001.grz:00001-152.con": "60775c2e7ca53ac9bc2070056140025557fed175822d35cd6dbf5ddf2bddb501",
+      "00001.grz:00001-153.con": "559561bb3d8eb2a48df0f09eae64c41086c33a9fd9fa0086f369225169da1cb7",
+      "00001.grz:00001-154.con": "2bb8c80fe4a76380f3ed4f321b878d10db8596b96ae186b038eab179e32ab938",
+      "00001.grz:00001-155.con": "0adce18b5451c76a5cc6aa5ee7a85a2d67855b66330c44b08432e60b3162923b",
+      "00001.grz:00001-156.con": "1dc83dcab4a71fa3d3e03f930c6457fd2f039ae64e2dfc596e5ae1cdfe2334c9",
+      "00001.grz:00001-157.con": "6f09068daf0b2a202c4d9fff1fc10e3c458c3fbaa006cf075a46f54f41d15cd3",
+      "00001.grz:00001-158.con": "fcf9ec9513a3f0228d07dddf216d2026f3e05481a5d6ae13aa4d328cf5c7544e",
+      "00001.grz:00001-159.con": "343fc38bb0d0af217e48bb9ca2ee03414581b904199f947d8c22a924428dc5d4",
+      "00001.grz:00001-160.con": "4f103a9712d614fb33b34ead3d20526c0110587f54fc22b6ef6de05cf27d0ad8",
+      "00001.grz:00001-161.con": "e44275777089c0d1c317db77d0232b125b6f1fb88f44a4efdd0288cedd6b7681",
+      "00001.grz:00001-162.con": "c3e02b6dbb3cf42f6adbf404829512b69ca656e858b51b5be8fe294d7e7d1945",
+      "00001.grz:00001-163.con": "11f7727b17fe5086b0950cf84226b669c195950cd920bba9a24f45af944569b6",
+      "00001.grz:00001-164.con": "8332b9fe132d855120f012a7786925eafc1e5df40540c26ed6c0f0973e562f64",
+      "00001.grz:00001-165.con": "005bf1cf222cd4e1396997a3bce26697b1ad8e17d33633091ceab577c602976a",
+      "00001.grz:00001-166.con": "b3a13a8116d24382174ff2c0f544d99ad2a26df49685894a743ee60675e65326",
+      "00001.grz:00001-167.con": "dcebaeb7ca490bf439e78d473a769f0c0199d3a752964fee711cd47c8ec4bc50",
+      "00001.grz:00001-168.con": "6414a5fb47f19a4f8a2bc6ea4e36640b721c75e9e5e25664dc977a7fc6836b0d",
+      "00001.grz:00001-169.con": "611b518644406275c3da335b1799ba390470a48e5aa6c3a3288f0d108da1c090",
+      "00001.grz:00001-170.con": "9c210a8a29e1fe116eb885e6851fbac0e29f1e6243520f79b0d710470ee28698",
+      "00001.grz:00001-171.con": "1a80c458c4242edf2b46035ea304352b54d2888854a17e8393c4a3b904be3681",
+      "00001.grz:00001-172.con": "43a5d0b884c74d210f9b1225337f89b61f7d9afdcc90e111a144a99f1b4780e7",
+      "00001.grz:00001-173.con": "b7a060f443c9a99be7174f8ee470a7050d9a103a7b78b6aa2f928f9acfa51d9e",
+      "00001.grz:00001-174.con": "fb4cf0dd890641d9f1282bbe9f23180fcbaa310d0a0201c8ef348a242b18c101",
+      "00001.grz:00001-175.con": "05ac103e71253b848100878a192d82114e3184121cd4eeb1453dc1275b0d0d1d",
+      "00001.grz:00001-176.con": "0774ec198bdf3d015ba0ce1d675eebcb8827a1449acef6340f0a1bbf6ee3583a",
+      "00001.grz:00001-177.con": "3a9783d0e6544b8a37d0435d6d8edcbc81aa7df76afa3527811753fcee9ac8f6",
+      "00001.grz:00001-178.con": "4062d002ab9b6ae2add6f385c82b6177668fd8551ded90f49ddcb9d01d00090d",
+      "00001.grz:00001-179.con": "314774903ca8cb833870fcfbcdd9c39b8d4a686aa9caa7b421a29ed736dde555",
+      "00001.grz:00001-180.con": "58f4c33f334a304778a5dad7105f62da275b2a7ed9cae9e250623cb0f8f52a7e",
+      "00001.grz:00001-181.con": "054a46a697987b1650e351ee43cdc15e27d91a887c23576963b243019d079e5b",
+      "00001.grz:00001-182.con": "448a4a7a1789d181b652ce169bd2824a41299d8232cb3b8e2d8b8d8ee1c4b1a5",
+      "00001.grz:00001-183.con": "f0b0a2e15b5d0bced6fc40e59e24673b90dd9c7f545f8ad3a7095ac6810e5d0c",
+      "00001.grz:00001-184.con": "b1c3edd6950678fe5c6619b683045a2b0d84eacef73de6399f7e6c6740e4fab9",
+      "00001.grz:00001-185.con": "e7fc66e5154414899a681cbc31a938445078334a9a2c41c13ceda6ee0c8313fe",
+      "00001.grz:00001-186.con": "a79e18310d13939fe65900d1c257e2e1015fcaff76ae1eed76b25d1a21d17cbd",
+      "00001.grz:00001-187.con": "cafc3bea54d5ee5a1609d1dcfda8184a05c2a0853c777a2cfaa3ff9fb374ad2f",
+      "00001.grz:00001-188.con": "da262f7e7177fb473278c17c0256b28ffc13c344f706007c6d4e71ee74c7dc63",
+      "00001.grz:00001-189.con": "a6273448764003198a96d0b92a9c7393cac2c342fa920669e8dfb9dc2b9bbda8",
+      "00001.grz:00001-190.con": "5280d49bf8959204e5662b726d9f127cd05d4bbb1e0ce7abff25705b6203f845",
+      "00001.grz:00001-191.con": "6ac25bafb0cbb326d3be9fa624604f8fab3cfa8d18a5c305d9ef0165cf4272e5",
+      "00001.grz:00001-192.con": "13b0b40f7a817aa46ae733465de5625ee3c7d07557812f36c821d7ccbec1c0a9",
+      "00001.grz:00001-193.con": "c5d0ef5960bc99e05fe37abe9638bef7ff902a381b6118826a0c6a52f4fcd27b",
+      "00001.grz:00001-194.con": "6cbe36efaace173f4c61b1b3f6330c80617c309a916a715e8e649634bc6e23be",
+      "00001.grz:00001-195.con": "91f496dff9e77e963ace0ff744f3902955302fe321110c7322cc77d3ea783d66",
+      "00001.grz:00001-196.con": "025d4acefd8cbb36c5bde0290acd32819a0a803538caf3aeaa0f8da967da32d2",
+      "00001.grz:00001-197.con": "11027f6c5affc7d60e0fb6ec735c23e536cf24b82b1c73fe2d93cd2c90cd3f43",
+      "00001.grz:00001-198.con": "454d9af473e597fab17e49f927c24f4a85a8caeb432bf4181a26f32063949a43",
+      "00001.grz:00001-199.con": "ca132a446ff9a5a41d3256a321a66d5fc92419c9bcd27ead5b855f1d45745de9"
+    },
+    "situation_sums": {
+      "00001.grz": 1349558.569929123
+    },
+    "nonzero_values": 3198,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 363600,
+    "occupied_fraction": 0.008795379537953795,
+    "issues": []
+  },
+  {
+    "case": "sg101_boundary",
+    "variant": "dictionary_fixed",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.4635884999879636,
+    "cpu_s": 0.4375,
+    "pid": 49136,
+    "memory": {
+      "PeakWorkingSetSize": 61161472,
+      "PeakPagefileUsage": 37396480,
+      "PrivateUsage": 34902016,
+      "WorkingSetSize": 58646528
+    },
+    "memory_samples": 44,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      3030
+    ],
+    "actual_particles_per_s": [
+      101.0
+    ],
+    "actual_source_counts": {
+      "point": 101,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "74260789669cc18b502e14c9cf8ccbba929a98ba4020e2f1e56568a02f59919b",
+      "00001.grz:00001-102.con": "d5c565336bcdb1e13e6f06953ba091b32af8815b948571c05bae205e635b27bd",
+      "00001.grz:00001-103.con": "8da27c85e755a8b8f1223f1d19f4ea4737707e52a34b299b8283815cae69de48",
+      "00001.grz:00001-104.con": "fba3fa25d94555eca056f429581eb3eb3478817852ba4212a85eb5baa54d358b",
+      "00001.grz:00001-105.con": "22735fe6c27423850872ed714faab745c2f65290e7b0b4570010a444385ba0ba",
+      "00001.grz:00001-106.con": "ab31d89e6044721853c9ef74b053d343b6d1451f3049c428cf06a32419a7b582",
+      "00001.grz:00001-107.con": "0d819d600d54de53a3ecc792b3b4033fd7560b60d43afeefa3f40bfaac75428b",
+      "00001.grz:00001-108.con": "eb8e952790e613acfc011ba0eb6156307691546a8020d0b7e40c37821e0c4323",
+      "00001.grz:00001-109.con": "ee6cdb285f2e3654d37f672591b7c5b3a8008c94767b6a7301cf92221951170f",
+      "00001.grz:00001-110.con": "eb0baef56c35fe8ac3f7eb8d7f6eec38d996d7c79ef6838e68fb35c1f1932c89",
+      "00001.grz:00001-1100.con": "ab5deefe1944a2e4c995f9723e1b06a35f3970fd699ee64024ae2721bd9e8e22",
+      "00001.grz:00001-1101.con": "1b2e33304ef9bdaf5caa670bddbb697aa4047cb42e141445bb8366935ac7be89",
+      "00001.grz:00001-111.con": "22c672eecd7524aafb59a10ec8e4ff01c7cc69de0425f2fb9fd0d600bb756820",
+      "00001.grz:00001-112.con": "d8bc458c4b1ac4583f564d1b3249330a5921b05b29c61082b5bfdf0bc4acea77",
+      "00001.grz:00001-113.con": "fef2999e71e9f3ea26780d35b0857cda03d427740c4e5c0a7c7da3a4e6b34715",
+      "00001.grz:00001-114.con": "a0590aeb629f473991eff222f44ff980723b116848f1854c459cb5ac55e78b63",
+      "00001.grz:00001-115.con": "42f709c978b8f2bc5de0bbd6b3e61218f11a33d0d2f671253703d47cde174c86",
+      "00001.grz:00001-116.con": "73299a27690f8a0bc2ac456aecb81fa31f83f0d3dde6ee434de55d4042fe3083",
+      "00001.grz:00001-117.con": "3083f9d3b6fe55a19d1da292dda6d74baf15918a6378154e95346ddb13df4666",
+      "00001.grz:00001-118.con": "4b940ecf45cedbf803211b5425928b4215f726973f51cb9aea95d910cc6e5aef",
+      "00001.grz:00001-119.con": "10084a4e823524ad77b5861843fb004582d898c0f6f236f1fd4abdedff3b5817",
+      "00001.grz:00001-120.con": "8246b04ed4ac3daf4fcec2a3b8a40c82ca891611a5c7407b729a7521b07431a3",
+      "00001.grz:00001-121.con": "5722c3c28f93fe265062da8140bc9628a8a31075ddc8017aeefb4614946d646f",
+      "00001.grz:00001-122.con": "6a2d2cfd1a806f3ba95445872901f8843c65446833aa90ab5d92c1e1064bc751",
+      "00001.grz:00001-123.con": "691b5bc5aa3801ad7e6f93eed60a9e5525bfb81c6ca96d638d5264698996af1b",
+      "00001.grz:00001-124.con": "5ed0cf2f6b0cca2eb88fc515b8e08371d54ec8e30f50b6facaf73b80af65d107",
+      "00001.grz:00001-125.con": "0727d61516b2457262cbd64b1802b4d41c9bcbeb8cf8522aa8e125bbe7eef432",
+      "00001.grz:00001-126.con": "0acf04d092e089bd1f9469e508b58393eca7a06a20e9786e5294404d368d0e0a",
+      "00001.grz:00001-127.con": "5b22c17d1ab46ee7cc4e9d0dc5eb38218e8db53fee29cd75e958e4d8798a6b85",
+      "00001.grz:00001-128.con": "118d5ac1e335a40ff57ce90840dd24245dce34c86f2af58ff48e6eebe2c4a40e",
+      "00001.grz:00001-129.con": "02bb68ccb0a8a87d6d4820a20c98486cfbe2b89e4ff754f3e0e4eb4972a455db",
+      "00001.grz:00001-130.con": "0d2a1f4a94d7fc2d6d09b22b137c440767a5ae674bfbb62d493160f323295ee7",
+      "00001.grz:00001-131.con": "0c5d9adda53c908126e59c9d54da37cd08d5de1c824b656325ebd2a1a0628c2a",
+      "00001.grz:00001-132.con": "d187201d9796f107f54d6389bc6d526939aa2066585ad507950986e287f24a2e",
+      "00001.grz:00001-133.con": "8adeb35936d682c0ed6a9ba5ce85e2d7f4d01608b3593a7362598285ef26d303",
+      "00001.grz:00001-134.con": "4f757a7b938b46137652c026da546fc2f2590dbe1f513a8ebe692fd3a8083cc6",
+      "00001.grz:00001-135.con": "088e3b3945ac6f952dd81e3158815dae3b63b2b439e5ed18807e5bc7d4b3dac8",
+      "00001.grz:00001-136.con": "85a8ed9310f3ca10d1a03d3f4c946eb6c323a8d5193b56f0c56dba26dd9ed804",
+      "00001.grz:00001-137.con": "a778e44085c8477b29e906ca8c529200162b6a06148db7e2c928547e78d98ce3",
+      "00001.grz:00001-138.con": "278997d47608c38d7a13605e176e5752fafbcd65949c9d00e8bb859a9659029d",
+      "00001.grz:00001-139.con": "54bc60c8b2cdad2023432c8b4226860455043831f23e6851301f37ad02e2ae90",
+      "00001.grz:00001-140.con": "f4bcd25f3e9032858f79d5a6c46bd3807fe0ff4e2a363899d2703668dbb2ac7e",
+      "00001.grz:00001-141.con": "c5e26f66f77d03e6f7f2c118aee500cf4b416fd065824fa06f2166282ace11de",
+      "00001.grz:00001-142.con": "646a729184ac0cfcb1a842718b34379a86237d739c4f34d80f348ef18003ff1d",
+      "00001.grz:00001-143.con": "8c184ec048c4903dc01f18f92bd2448134c092902f1d077ad2966c528c93fa67",
+      "00001.grz:00001-144.con": "3bc1793fa35f9de1bdd4a208d11054f39a29d12d1fc47fd30ddd4663c6ead3d3",
+      "00001.grz:00001-145.con": "8c29ed54c67badd25a517aa2e705e21130cbd1360bc9853d4971fe52bac06105",
+      "00001.grz:00001-146.con": "b6d1fcbd29af91de7abd62b9cf9e2ad6b45320ae5c4474869f31b2ab2bfa4e38",
+      "00001.grz:00001-147.con": "b578c4afb261233be773dd22040f75704d0b535cb0344c4c356e32c488295ee8",
+      "00001.grz:00001-148.con": "8c93a0a34e101ff00ea0cfedbaf23a25321a48e7f14ddca81d055bafbfb761f3",
+      "00001.grz:00001-149.con": "53c74ac2fbe2543d1e18840654507c3e902295eedf18d67f9bd68ba6dc97c4c7",
+      "00001.grz:00001-150.con": "996e47da8698a16b5294777339db05c35375f2877b5ced186762e56a96524c0f",
+      "00001.grz:00001-151.con": "8542a8e71ec3eabf16b868e189772520e9112a25e29d4f01ac847f0a37b3e452",
+      "00001.grz:00001-152.con": "60775c2e7ca53ac9bc2070056140025557fed175822d35cd6dbf5ddf2bddb501",
+      "00001.grz:00001-153.con": "559561bb3d8eb2a48df0f09eae64c41086c33a9fd9fa0086f369225169da1cb7",
+      "00001.grz:00001-154.con": "2bb8c80fe4a76380f3ed4f321b878d10db8596b96ae186b038eab179e32ab938",
+      "00001.grz:00001-155.con": "0adce18b5451c76a5cc6aa5ee7a85a2d67855b66330c44b08432e60b3162923b",
+      "00001.grz:00001-156.con": "1dc83dcab4a71fa3d3e03f930c6457fd2f039ae64e2dfc596e5ae1cdfe2334c9",
+      "00001.grz:00001-157.con": "6f09068daf0b2a202c4d9fff1fc10e3c458c3fbaa006cf075a46f54f41d15cd3",
+      "00001.grz:00001-158.con": "fcf9ec9513a3f0228d07dddf216d2026f3e05481a5d6ae13aa4d328cf5c7544e",
+      "00001.grz:00001-159.con": "343fc38bb0d0af217e48bb9ca2ee03414581b904199f947d8c22a924428dc5d4",
+      "00001.grz:00001-160.con": "4f103a9712d614fb33b34ead3d20526c0110587f54fc22b6ef6de05cf27d0ad8",
+      "00001.grz:00001-161.con": "e44275777089c0d1c317db77d0232b125b6f1fb88f44a4efdd0288cedd6b7681",
+      "00001.grz:00001-162.con": "c3e02b6dbb3cf42f6adbf404829512b69ca656e858b51b5be8fe294d7e7d1945",
+      "00001.grz:00001-163.con": "11f7727b17fe5086b0950cf84226b669c195950cd920bba9a24f45af944569b6",
+      "00001.grz:00001-164.con": "8332b9fe132d855120f012a7786925eafc1e5df40540c26ed6c0f0973e562f64",
+      "00001.grz:00001-165.con": "005bf1cf222cd4e1396997a3bce26697b1ad8e17d33633091ceab577c602976a",
+      "00001.grz:00001-166.con": "b3a13a8116d24382174ff2c0f544d99ad2a26df49685894a743ee60675e65326",
+      "00001.grz:00001-167.con": "dcebaeb7ca490bf439e78d473a769f0c0199d3a752964fee711cd47c8ec4bc50",
+      "00001.grz:00001-168.con": "6414a5fb47f19a4f8a2bc6ea4e36640b721c75e9e5e25664dc977a7fc6836b0d",
+      "00001.grz:00001-169.con": "611b518644406275c3da335b1799ba390470a48e5aa6c3a3288f0d108da1c090",
+      "00001.grz:00001-170.con": "9c210a8a29e1fe116eb885e6851fbac0e29f1e6243520f79b0d710470ee28698",
+      "00001.grz:00001-171.con": "1a80c458c4242edf2b46035ea304352b54d2888854a17e8393c4a3b904be3681",
+      "00001.grz:00001-172.con": "43a5d0b884c74d210f9b1225337f89b61f7d9afdcc90e111a144a99f1b4780e7",
+      "00001.grz:00001-173.con": "b7a060f443c9a99be7174f8ee470a7050d9a103a7b78b6aa2f928f9acfa51d9e",
+      "00001.grz:00001-174.con": "fb4cf0dd890641d9f1282bbe9f23180fcbaa310d0a0201c8ef348a242b18c101",
+      "00001.grz:00001-175.con": "05ac103e71253b848100878a192d82114e3184121cd4eeb1453dc1275b0d0d1d",
+      "00001.grz:00001-176.con": "0774ec198bdf3d015ba0ce1d675eebcb8827a1449acef6340f0a1bbf6ee3583a",
+      "00001.grz:00001-177.con": "3a9783d0e6544b8a37d0435d6d8edcbc81aa7df76afa3527811753fcee9ac8f6",
+      "00001.grz:00001-178.con": "4062d002ab9b6ae2add6f385c82b6177668fd8551ded90f49ddcb9d01d00090d",
+      "00001.grz:00001-179.con": "314774903ca8cb833870fcfbcdd9c39b8d4a686aa9caa7b421a29ed736dde555",
+      "00001.grz:00001-180.con": "58f4c33f334a304778a5dad7105f62da275b2a7ed9cae9e250623cb0f8f52a7e",
+      "00001.grz:00001-181.con": "054a46a697987b1650e351ee43cdc15e27d91a887c23576963b243019d079e5b",
+      "00001.grz:00001-182.con": "448a4a7a1789d181b652ce169bd2824a41299d8232cb3b8e2d8b8d8ee1c4b1a5",
+      "00001.grz:00001-183.con": "f0b0a2e15b5d0bced6fc40e59e24673b90dd9c7f545f8ad3a7095ac6810e5d0c",
+      "00001.grz:00001-184.con": "b1c3edd6950678fe5c6619b683045a2b0d84eacef73de6399f7e6c6740e4fab9",
+      "00001.grz:00001-185.con": "e7fc66e5154414899a681cbc31a938445078334a9a2c41c13ceda6ee0c8313fe",
+      "00001.grz:00001-186.con": "a79e18310d13939fe65900d1c257e2e1015fcaff76ae1eed76b25d1a21d17cbd",
+      "00001.grz:00001-187.con": "cafc3bea54d5ee5a1609d1dcfda8184a05c2a0853c777a2cfaa3ff9fb374ad2f",
+      "00001.grz:00001-188.con": "da262f7e7177fb473278c17c0256b28ffc13c344f706007c6d4e71ee74c7dc63",
+      "00001.grz:00001-189.con": "a6273448764003198a96d0b92a9c7393cac2c342fa920669e8dfb9dc2b9bbda8",
+      "00001.grz:00001-190.con": "5280d49bf8959204e5662b726d9f127cd05d4bbb1e0ce7abff25705b6203f845",
+      "00001.grz:00001-191.con": "6ac25bafb0cbb326d3be9fa624604f8fab3cfa8d18a5c305d9ef0165cf4272e5",
+      "00001.grz:00001-192.con": "13b0b40f7a817aa46ae733465de5625ee3c7d07557812f36c821d7ccbec1c0a9",
+      "00001.grz:00001-193.con": "c5d0ef5960bc99e05fe37abe9638bef7ff902a381b6118826a0c6a52f4fcd27b",
+      "00001.grz:00001-194.con": "6cbe36efaace173f4c61b1b3f6330c80617c309a916a715e8e649634bc6e23be",
+      "00001.grz:00001-195.con": "91f496dff9e77e963ace0ff744f3902955302fe321110c7322cc77d3ea783d66",
+      "00001.grz:00001-196.con": "025d4acefd8cbb36c5bde0290acd32819a0a803538caf3aeaa0f8da967da32d2",
+      "00001.grz:00001-197.con": "11027f6c5affc7d60e0fb6ec735c23e536cf24b82b1c73fe2d93cd2c90cd3f43",
+      "00001.grz:00001-198.con": "454d9af473e597fab17e49f927c24f4a85a8caeb432bf4181a26f32063949a43",
+      "00001.grz:00001-199.con": "ca132a446ff9a5a41d3256a321a66d5fc92419c9bcd27ead5b855f1d45745de9"
+    },
+    "situation_sums": {
+      "00001.grz": 1349558.569929123
+    },
+    "nonzero_values": 3198,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 363600,
+    "occupied_fraction": 0.008795379537953795,
+    "issues": []
+  },
+  {
+    "case": "sg101_boundary",
+    "variant": "float",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.4412175999896135,
+    "cpu_s": 0.421875,
+    "pid": 51588,
+    "memory": {
+      "PeakWorkingSetSize": 63201280,
+      "PeakPagefileUsage": 39391232,
+      "PrivateUsage": 36188160,
+      "WorkingSetSize": 60104704
+    },
+    "memory_samples": 42,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      3030
+    ],
+    "actual_particles_per_s": [
+      101.0
+    ],
+    "actual_source_counts": {
+      "point": 101,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "0ef067bdeb1bcc2d614c395998c4cf3cd627b2931012ba38ac9d5c303dbc725b",
+      "00001.grz:00001-102.con": "c7b9fb80fb8bf474c0b30c0fee3784650349a400e3a3efd0d2d0b93e4586742f",
+      "00001.grz:00001-103.con": "9dd0a65d67e48a102f74aa077a7b58bc3cef8fa5fe513ab9c0fb1d25900d38e9",
+      "00001.grz:00001-104.con": "eb624d98c4ae37ca516dc2bf4283da6d0bcbd512ef628d622136501d06e6e22d",
+      "00001.grz:00001-105.con": "76f3456dd6d38bc0ecbdb18a9e1e5d585327e22f53e54327c23fda0ee0f321cf",
+      "00001.grz:00001-106.con": "09ea8f88de7d816324cf263360f97a9b87887c21009110305cb653ba179c87a3",
+      "00001.grz:00001-107.con": "6673efc476e1442752b1d59a9fae009d0a4545d43d447d2063e8a0538058dd0b",
+      "00001.grz:00001-108.con": "76f1ea4113bf3f26e454eeba927c4819544f8cc82141fbf42895fbe8716d9064",
+      "00001.grz:00001-109.con": "7e11441cd5e699a7398a74f55cd024ed6f738bdb5beec1ea8879b9262d1dba29",
+      "00001.grz:00001-110.con": "bcdcc4f44d7810c7ee16f29968079b7880041a5198da1da64f35aa7d20198ac6",
+      "00001.grz:00001-1100.con": "b3d3328add0deac6da7bae0f86794d20b5c014de85c126aed78a0e88a75a6635",
+      "00001.grz:00001-1101.con": "9137ff1f6eeb7949e981e6df66c7cea56c0e02ad637e839b6294b24ecf9e4133",
+      "00001.grz:00001-111.con": "2155ad4183d5c7c648f077877e599cb7e3674f01a0a3dd7ac7ca206534aa0836",
+      "00001.grz:00001-112.con": "23ba8f394236feb70889b0544d64760ab65394445c51a3a8b901838682fd223b",
+      "00001.grz:00001-113.con": "2244a45792e47ef7d900b436e49b7682c2ec844baa3ed154ea81d1b2875d137f",
+      "00001.grz:00001-114.con": "92487c3e4e914b958d884e1c5acdae6f95da81890c4631cd43d7e68ae6793b2e",
+      "00001.grz:00001-115.con": "4380d3c4324e5539adae0cef605770f7b77d70dac0706bb13c43246d20158894",
+      "00001.grz:00001-116.con": "02231a15425bd2b84210f01b35c2c77f500dccf1fe5e9a79c31cfb9ad344b6f3",
+      "00001.grz:00001-117.con": "e6fb705cce83db12d5c2075878aca497a6813f44e345ead1d6852a17cdf8ece4",
+      "00001.grz:00001-118.con": "c43152b3196706936aced93bce6ecefc419381c94ebe3f2e0c656f228420787e",
+      "00001.grz:00001-119.con": "f49ca9a96115666dd7343272b39662891e8e457a114417b3a115fffda1c1e932",
+      "00001.grz:00001-120.con": "c744355a3a9ce20372f5be3974354512e0f163d0dab2d6c32b6f855cf12422d5",
+      "00001.grz:00001-121.con": "1e536a0a56dfbf059e20a50fa1a43f15655d823ae34e5f5f5caf704a21fd61e1",
+      "00001.grz:00001-122.con": "70dc113e5453e0e1cded48019e72e17eb2dc0a88ca2d8802fdd243127be95848",
+      "00001.grz:00001-123.con": "d1baad55f112de8c98bca8c90c567adbb1667bfd2184d25bc1e3d1b3ae0c0ae8",
+      "00001.grz:00001-124.con": "04c30652641caac081015e833f923d81662ed38ae61242d292853397fafb8d5b",
+      "00001.grz:00001-125.con": "520397de7e0eb8ab10229e489b8eb9c6ba4d13bc0d3120cc9ee1ea8ef0a706c9",
+      "00001.grz:00001-126.con": "a13a76e4399e4de5391f566a79e5a3c6ae8bb182915bb77d373ef44458a173eb",
+      "00001.grz:00001-127.con": "d3520715239a83a370fdacf163c081140075090b05f0b207d8a3f857ee66d3bb",
+      "00001.grz:00001-128.con": "7aef1652bc1f6987cf14626b076662156655aafa827debb79bc311f41782a655",
+      "00001.grz:00001-129.con": "f0e309d44039b15e26437aa2776758644b5b0ff2fef645cd23a7f3f26becdc21",
+      "00001.grz:00001-130.con": "c2510b63bc664b594b6d3add409dd3a25564b851707e16824d52fd427041760b",
+      "00001.grz:00001-131.con": "03557bcc8e330313877ba42e8cfe4db5606c45ebddc0faff9032a7ade656a60a",
+      "00001.grz:00001-132.con": "7ea247190e89fadd047f39e259ff2d907f6d504136f52953cb38f4ac718c79cf",
+      "00001.grz:00001-133.con": "e0b9c880b53b332327cd1ea4727e310575ef6f482ad206c50d2ef6c435e5b528",
+      "00001.grz:00001-134.con": "a23c7261f5db4e8d8b15508bf10c39afd09a24dbed68b3671a60792db90363c6",
+      "00001.grz:00001-135.con": "9e8721defd37c8472fd8078f0d5812280e2044524a2c0b0cab04afa3c9725563",
+      "00001.grz:00001-136.con": "dd8a5c19ee793e66bf719f822d57a7be6ccaa99d3e6e901101ace0df8d5bbd36",
+      "00001.grz:00001-137.con": "4e40885adff2d22d29965602a33509159ca640a4e8cf9f2f9f8cf81a29652cf9",
+      "00001.grz:00001-138.con": "7860ec34948c6ff202ccf94f3ad73b4cfb0d3a53d8c58027dc795a8015c42438",
+      "00001.grz:00001-139.con": "3ea7c82835f8f322a0417c9a1ac00517024d84fb872d4bc17551b748d2a66930",
+      "00001.grz:00001-140.con": "cdcb5a323dbfe15bab35886050aec797bd3ba5749aa3ebc78c7ef7258d403f7f",
+      "00001.grz:00001-141.con": "9bd70f7729667dc08397148ab9718ae4d002da5da313010f4548003c853d295f",
+      "00001.grz:00001-142.con": "90f63c5324274ca854c69837ad59670d56c24e0869ddae5015619f7f83ca8231",
+      "00001.grz:00001-143.con": "8d3eec09625c0aa24b0c818b38bb1839617fc30dc77418099a6baa233c41940c",
+      "00001.grz:00001-144.con": "78f954f5bffcce94d460c9f0c166ff46a39ebaf997c49731a2fdd9e09ad52e25",
+      "00001.grz:00001-145.con": "8534a8d8d0af0abe247a9796735909c55f97cb9ef7f2b2891a0f515bd74130a6",
+      "00001.grz:00001-146.con": "bde21539026995b7c1e0bf7dca16f505f0a3f4845e4be6fcbc1ffd3c69cc8c37",
+      "00001.grz:00001-147.con": "03f3255eaa1b42632393f47e4ef46d9a53f5ba5b6d101c8a12cad5ed16031db7",
+      "00001.grz:00001-148.con": "0d12667fa04c6100777458ccb8e3a6de8ef8550dfac4543665edd59945768a03",
+      "00001.grz:00001-149.con": "f356ea32977c9e601723ba9b2053d7e04877234331bef4d5d4f9c6802d9cd589",
+      "00001.grz:00001-150.con": "5dae22c74e53cb5bcaeef3367a45d2241725fbabef4d4e91a78dcfa992a2129b",
+      "00001.grz:00001-151.con": "d1ec1b8efc13bd882495c23684209f43a6c87af55872645cc87ff67eeed06427",
+      "00001.grz:00001-152.con": "0e001426d51c72ed4fd3b52f93058afb07e072fa66574b9cf022c48e7d87b57c",
+      "00001.grz:00001-153.con": "ae4d5da1df49df0f63a94cc0fcca0c4b4e5066ea02c1b6b8a0961a5566b6d413",
+      "00001.grz:00001-154.con": "ae1b3768fe49c86b1fe325a1c076cb85e503847d805efd50b1418d6099a2bb1e",
+      "00001.grz:00001-155.con": "8f9231cdd0b06de5963c38cfbcae17055de155457a87f291e2354a897d9a9929",
+      "00001.grz:00001-156.con": "fff20782bba92429822a6e6836df5ea6c1ced63cd985f5837a65af96e112c8c8",
+      "00001.grz:00001-157.con": "9b24211a83911360a1b87bde5bbaef3e4daaf7f49d64a587be206ae2558c5470",
+      "00001.grz:00001-158.con": "875fb33b924b3e0aa0362c0dbbc6c55eb06333115b289ea7a70a50e82543e223",
+      "00001.grz:00001-159.con": "b6267632f105db70722a095abb618ae92777125cf52b7f541327f575de24bea4",
+      "00001.grz:00001-160.con": "4c10af1660b4451871398fa74b3ab1a640fc2ae79e9d0f943f40d0234c589af3",
+      "00001.grz:00001-161.con": "087997a28d486fc884deb479e047942f970b814417f51e3cd6e719185276174c",
+      "00001.grz:00001-162.con": "7e0ea0e7a18f1999e26991c25da37187520e25d3b25c5604df44e900b37a8463",
+      "00001.grz:00001-163.con": "070b5801308dbc94447314667040737dab2767a32348d83e65f5304d27b47a1a",
+      "00001.grz:00001-164.con": "ffac5bbe22176d1807ae8d672f577523dd495ad04a088dfa25692fa8c68a478f",
+      "00001.grz:00001-165.con": "33fcf4708ed83bd18557b95e44a325acf07e97c011a06d7e7ae5646ec1693ff2",
+      "00001.grz:00001-166.con": "e423e8f99aec9beaec6fb3f9c1efcb23e271be4a95da609b8f11638111f42ad2",
+      "00001.grz:00001-167.con": "502543c2aca132adf413cc6424038d98064d5aea9fa98ffa1fc6eb86add737c9",
+      "00001.grz:00001-168.con": "a5af5da8218a80181475a238c88fe97e094ffab34f80a79626107bfeb2998490",
+      "00001.grz:00001-169.con": "b87b5b3622f61b4677aba4eee1089bc7c792e677a1a301a4d83e02d98b0471f3",
+      "00001.grz:00001-170.con": "7f7a48fd8584f312f54c86129dfc3ac7e93b9f02bc11800bab55aa65ceedce09",
+      "00001.grz:00001-171.con": "b35dfc95969c0c03aa6d06d4d997ecd03434c5622ccfa359e3174091a4c5b685",
+      "00001.grz:00001-172.con": "cc5c6c00153d4ac989bc984e735aca45097009c31dea1994afdbe9f539ce4ecc",
+      "00001.grz:00001-173.con": "d0a0096821843fe4eadd6d75b8d05ac6b69cb375da3eee6cfc1d19a5242381b0",
+      "00001.grz:00001-174.con": "7b419b550f1b27f67bb9cc696773762c3530a90dfb33b3e8c9f110104e83d4cd",
+      "00001.grz:00001-175.con": "be7a94203522bd3e872c4d7a817563906a5eb4a32936341333fbd678a79247c9",
+      "00001.grz:00001-176.con": "fad3dc9f9e00579cf7e90ebe52a6c52bea58dede19a606607a88d1e5a37d4018",
+      "00001.grz:00001-177.con": "28ffe0e5d1c7d631d5f33ec672e2baadfe340a3fc267bf58c31053e7a57705ce",
+      "00001.grz:00001-178.con": "3b8a5e7d55c969693caeb4cd955371c45c3617e885bb1898f59f7a3f025bc613",
+      "00001.grz:00001-179.con": "581ccde5af88a1dbcdee03bc8b51a9cc6e12b9ad4df283ba8551bd6a329d8fd3",
+      "00001.grz:00001-180.con": "60586cf973fdde5507e8543549797e33c66afa388b92aa0274808c9a1bdb7134",
+      "00001.grz:00001-181.con": "6d655ad382f4981496c3b5b0dae02b4cfef35b54d2c25aca30260efc0bab5288",
+      "00001.grz:00001-182.con": "aad9e1e9163c15deee101bf209af90c50e36cadf09ea36854cef19d34a386d42",
+      "00001.grz:00001-183.con": "953aec2f2b1e9e6eebc6045b22dead528db52ec9ea77075c0d8b5ac35c299d69",
+      "00001.grz:00001-184.con": "f9c6e5f89f1fec497d3d8a7004fcd126e4932086727b6b182731ae70c42e5a85",
+      "00001.grz:00001-185.con": "ec6e7ffff5119313a3cd2c018cf9de45fb6bbd53c2a820be601d1d3dd9ac7894",
+      "00001.grz:00001-186.con": "8396d3a502da5626d358ff4765f083b4aa4bafc37194c663e39f3d61bf86969e",
+      "00001.grz:00001-187.con": "62ea1dc43735293a7c2e516f7a07233b20a87803cdaf16095a62079630b0073a",
+      "00001.grz:00001-188.con": "f00a4e019ae958f51fd9adcf78d9bea4b0d7743365d53d5a6e9d35705996c70c",
+      "00001.grz:00001-189.con": "99fd6a4695a738bacb93eebbfc7c0e55276bb42aec754fa4a9d5454f2187951d",
+      "00001.grz:00001-190.con": "75684095208d88186d4df89818d914928f3893d8e3a2932349c621cdb03c4432",
+      "00001.grz:00001-191.con": "f1338c76358d41a6e3779a70dd4e4022c5f1851f0429afe10f893a6a14a208c2",
+      "00001.grz:00001-192.con": "b66c8fd0981f64fd72c2785410e14ced4fa417eeb6dd7a288e12edae1f7ef4a8",
+      "00001.grz:00001-193.con": "c8decde47527f8babe5a4ffe08e44b65e53a4809cd335205be251fb633f4dd3a",
+      "00001.grz:00001-194.con": "55d1d7894efac41a25e362b3921b58ed7573855fd0cad4a047d4aa9d877c058f",
+      "00001.grz:00001-195.con": "43dc39695c334ec42d0f6e01dfdfab0446d488768f03144ec63b4aa89ca534bd",
+      "00001.grz:00001-196.con": "d312b71ca332e330cd74913155af458de5d66567f90b99cb1c884c11e2840939",
+      "00001.grz:00001-197.con": "b35afd3add339562bd7b694ac112672f0566053035d56aa7c305980d2af69667",
+      "00001.grz:00001-198.con": "2d7a2c260ccea2bbbc0d6334f17f5232fed0ec1d2d1f7c4921964ab0beb48b8c",
+      "00001.grz:00001-199.con": "e793c35fb1995b95538ffe1d1b06b97de0b33afbfddb41ebff1cec4894d0014a"
+    },
+    "situation_sums": {
+      "00001.grz": 1349557.0119276047
+    },
+    "nonzero_values": 3198,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 363600,
+    "occupied_fraction": 0.008795379537953795,
+    "issues": []
+  },
+  {
+    "case": "sg101_boundary",
+    "variant": "double",
+    "repeat": 0,
+    "measured": false,
+    "status": "pass",
+    "exit_code": 0,
+    "wall_s": 0.4387239000061527,
+    "cpu_s": 0.421875,
+    "pid": 48776,
+    "memory": {
+      "PeakWorkingSetSize": 66715648,
+      "PeakPagefileUsage": 42991616,
+      "PrivateUsage": 41529344,
+      "WorkingSetSize": 65216512
+    },
+    "memory_samples": 42,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      3030
+    ],
+    "actual_particles_per_s": [
+      101.0
+    ],
+    "actual_source_counts": {
+      "point": 101,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "74260789669cc18b502e14c9cf8ccbba929a98ba4020e2f1e56568a02f59919b",
+      "00001.grz:00001-102.con": "d5c565336bcdb1e13e6f06953ba091b32af8815b948571c05bae205e635b27bd",
+      "00001.grz:00001-103.con": "8da27c85e755a8b8f1223f1d19f4ea4737707e52a34b299b8283815cae69de48",
+      "00001.grz:00001-104.con": "fba3fa25d94555eca056f429581eb3eb3478817852ba4212a85eb5baa54d358b",
+      "00001.grz:00001-105.con": "22735fe6c27423850872ed714faab745c2f65290e7b0b4570010a444385ba0ba",
+      "00001.grz:00001-106.con": "ab31d89e6044721853c9ef74b053d343b6d1451f3049c428cf06a32419a7b582",
+      "00001.grz:00001-107.con": "0d819d600d54de53a3ecc792b3b4033fd7560b60d43afeefa3f40bfaac75428b",
+      "00001.grz:00001-108.con": "eb8e952790e613acfc011ba0eb6156307691546a8020d0b7e40c37821e0c4323",
+      "00001.grz:00001-109.con": "ee6cdb285f2e3654d37f672591b7c5b3a8008c94767b6a7301cf92221951170f",
+      "00001.grz:00001-110.con": "eb0baef56c35fe8ac3f7eb8d7f6eec38d996d7c79ef6838e68fb35c1f1932c89",
+      "00001.grz:00001-1100.con": "ab5deefe1944a2e4c995f9723e1b06a35f3970fd699ee64024ae2721bd9e8e22",
+      "00001.grz:00001-1101.con": "1b2e33304ef9bdaf5caa670bddbb697aa4047cb42e141445bb8366935ac7be89",
+      "00001.grz:00001-111.con": "22c672eecd7524aafb59a10ec8e4ff01c7cc69de0425f2fb9fd0d600bb756820",
+      "00001.grz:00001-112.con": "d8bc458c4b1ac4583f564d1b3249330a5921b05b29c61082b5bfdf0bc4acea77",
+      "00001.grz:00001-113.con": "fef2999e71e9f3ea26780d35b0857cda03d427740c4e5c0a7c7da3a4e6b34715",
+      "00001.grz:00001-114.con": "a0590aeb629f473991eff222f44ff980723b116848f1854c459cb5ac55e78b63",
+      "00001.grz:00001-115.con": "42f709c978b8f2bc5de0bbd6b3e61218f11a33d0d2f671253703d47cde174c86",
+      "00001.grz:00001-116.con": "73299a27690f8a0bc2ac456aecb81fa31f83f0d3dde6ee434de55d4042fe3083",
+      "00001.grz:00001-117.con": "3083f9d3b6fe55a19d1da292dda6d74baf15918a6378154e95346ddb13df4666",
+      "00001.grz:00001-118.con": "4b940ecf45cedbf803211b5425928b4215f726973f51cb9aea95d910cc6e5aef",
+      "00001.grz:00001-119.con": "10084a4e823524ad77b5861843fb004582d898c0f6f236f1fd4abdedff3b5817",
+      "00001.grz:00001-120.con": "8246b04ed4ac3daf4fcec2a3b8a40c82ca891611a5c7407b729a7521b07431a3",
+      "00001.grz:00001-121.con": "5722c3c28f93fe265062da8140bc9628a8a31075ddc8017aeefb4614946d646f",
+      "00001.grz:00001-122.con": "6a2d2cfd1a806f3ba95445872901f8843c65446833aa90ab5d92c1e1064bc751",
+      "00001.grz:00001-123.con": "691b5bc5aa3801ad7e6f93eed60a9e5525bfb81c6ca96d638d5264698996af1b",
+      "00001.grz:00001-124.con": "5ed0cf2f6b0cca2eb88fc515b8e08371d54ec8e30f50b6facaf73b80af65d107",
+      "00001.grz:00001-125.con": "0727d61516b2457262cbd64b1802b4d41c9bcbeb8cf8522aa8e125bbe7eef432",
+      "00001.grz:00001-126.con": "0acf04d092e089bd1f9469e508b58393eca7a06a20e9786e5294404d368d0e0a",
+      "00001.grz:00001-127.con": "5b22c17d1ab46ee7cc4e9d0dc5eb38218e8db53fee29cd75e958e4d8798a6b85",
+      "00001.grz:00001-128.con": "118d5ac1e335a40ff57ce90840dd24245dce34c86f2af58ff48e6eebe2c4a40e",
+      "00001.grz:00001-129.con": "02bb68ccb0a8a87d6d4820a20c98486cfbe2b89e4ff754f3e0e4eb4972a455db",
+      "00001.grz:00001-130.con": "0d2a1f4a94d7fc2d6d09b22b137c440767a5ae674bfbb62d493160f323295ee7",
+      "00001.grz:00001-131.con": "0c5d9adda53c908126e59c9d54da37cd08d5de1c824b656325ebd2a1a0628c2a",
+      "00001.grz:00001-132.con": "d187201d9796f107f54d6389bc6d526939aa2066585ad507950986e287f24a2e",
+      "00001.grz:00001-133.con": "8adeb35936d682c0ed6a9ba5ce85e2d7f4d01608b3593a7362598285ef26d303",
+      "00001.grz:00001-134.con": "4f757a7b938b46137652c026da546fc2f2590dbe1f513a8ebe692fd3a8083cc6",
+      "00001.grz:00001-135.con": "088e3b3945ac6f952dd81e3158815dae3b63b2b439e5ed18807e5bc7d4b3dac8",
+      "00001.grz:00001-136.con": "85a8ed9310f3ca10d1a03d3f4c946eb6c323a8d5193b56f0c56dba26dd9ed804",
+      "00001.grz:00001-137.con": "a778e44085c8477b29e906ca8c529200162b6a06148db7e2c928547e78d98ce3",
+      "00001.grz:00001-138.con": "278997d47608c38d7a13605e176e5752fafbcd65949c9d00e8bb859a9659029d",
+      "00001.grz:00001-139.con": "54bc60c8b2cdad2023432c8b4226860455043831f23e6851301f37ad02e2ae90",
+      "00001.grz:00001-140.con": "f4bcd25f3e9032858f79d5a6c46bd3807fe0ff4e2a363899d2703668dbb2ac7e",
+      "00001.grz:00001-141.con": "c5e26f66f77d03e6f7f2c118aee500cf4b416fd065824fa06f2166282ace11de",
+      "00001.grz:00001-142.con": "646a729184ac0cfcb1a842718b34379a86237d739c4f34d80f348ef18003ff1d",
+      "00001.grz:00001-143.con": "8c184ec048c4903dc01f18f92bd2448134c092902f1d077ad2966c528c93fa67",
+      "00001.grz:00001-144.con": "3bc1793fa35f9de1bdd4a208d11054f39a29d12d1fc47fd30ddd4663c6ead3d3",
+      "00001.grz:00001-145.con": "8c29ed54c67badd25a517aa2e705e21130cbd1360bc9853d4971fe52bac06105",
+      "00001.grz:00001-146.con": "b6d1fcbd29af91de7abd62b9cf9e2ad6b45320ae5c4474869f31b2ab2bfa4e38",
+      "00001.grz:00001-147.con": "b578c4afb261233be773dd22040f75704d0b535cb0344c4c356e32c488295ee8",
+      "00001.grz:00001-148.con": "8c93a0a34e101ff00ea0cfedbaf23a25321a48e7f14ddca81d055bafbfb761f3",
+      "00001.grz:00001-149.con": "53c74ac2fbe2543d1e18840654507c3e902295eedf18d67f9bd68ba6dc97c4c7",
+      "00001.grz:00001-150.con": "996e47da8698a16b5294777339db05c35375f2877b5ced186762e56a96524c0f",
+      "00001.grz:00001-151.con": "8542a8e71ec3eabf16b868e189772520e9112a25e29d4f01ac847f0a37b3e452",
+      "00001.grz:00001-152.con": "60775c2e7ca53ac9bc2070056140025557fed175822d35cd6dbf5ddf2bddb501",
+      "00001.grz:00001-153.con": "559561bb3d8eb2a48df0f09eae64c41086c33a9fd9fa0086f369225169da1cb7",
+      "00001.grz:00001-154.con": "2bb8c80fe4a76380f3ed4f321b878d10db8596b96ae186b038eab179e32ab938",
+      "00001.grz:00001-155.con": "0adce18b5451c76a5cc6aa5ee7a85a2d67855b66330c44b08432e60b3162923b",
+      "00001.grz:00001-156.con": "1dc83dcab4a71fa3d3e03f930c6457fd2f039ae64e2dfc596e5ae1cdfe2334c9",
+      "00001.grz:00001-157.con": "6f09068daf0b2a202c4d9fff1fc10e3c458c3fbaa006cf075a46f54f41d15cd3",
+      "00001.grz:00001-158.con": "fcf9ec9513a3f0228d07dddf216d2026f3e05481a5d6ae13aa4d328cf5c7544e",
+      "00001.grz:00001-159.con": "343fc38bb0d0af217e48bb9ca2ee03414581b904199f947d8c22a924428dc5d4",
+      "00001.grz:00001-160.con": "4f103a9712d614fb33b34ead3d20526c0110587f54fc22b6ef6de05cf27d0ad8",
+      "00001.grz:00001-161.con": "e44275777089c0d1c317db77d0232b125b6f1fb88f44a4efdd0288cedd6b7681",
+      "00001.grz:00001-162.con": "c3e02b6dbb3cf42f6adbf404829512b69ca656e858b51b5be8fe294d7e7d1945",
+      "00001.grz:00001-163.con": "11f7727b17fe5086b0950cf84226b669c195950cd920bba9a24f45af944569b6",
+      "00001.grz:00001-164.con": "8332b9fe132d855120f012a7786925eafc1e5df40540c26ed6c0f0973e562f64",
+      "00001.grz:00001-165.con": "005bf1cf222cd4e1396997a3bce26697b1ad8e17d33633091ceab577c602976a",
+      "00001.grz:00001-166.con": "b3a13a8116d24382174ff2c0f544d99ad2a26df49685894a743ee60675e65326",
+      "00001.grz:00001-167.con": "dcebaeb7ca490bf439e78d473a769f0c0199d3a752964fee711cd47c8ec4bc50",
+      "00001.grz:00001-168.con": "6414a5fb47f19a4f8a2bc6ea4e36640b721c75e9e5e25664dc977a7fc6836b0d",
+      "00001.grz:00001-169.con": "611b518644406275c3da335b1799ba390470a48e5aa6c3a3288f0d108da1c090",
+      "00001.grz:00001-170.con": "9c210a8a29e1fe116eb885e6851fbac0e29f1e6243520f79b0d710470ee28698",
+      "00001.grz:00001-171.con": "1a80c458c4242edf2b46035ea304352b54d2888854a17e8393c4a3b904be3681",
+      "00001.grz:00001-172.con": "43a5d0b884c74d210f9b1225337f89b61f7d9afdcc90e111a144a99f1b4780e7",
+      "00001.grz:00001-173.con": "b7a060f443c9a99be7174f8ee470a7050d9a103a7b78b6aa2f928f9acfa51d9e",
+      "00001.grz:00001-174.con": "fb4cf0dd890641d9f1282bbe9f23180fcbaa310d0a0201c8ef348a242b18c101",
+      "00001.grz:00001-175.con": "05ac103e71253b848100878a192d82114e3184121cd4eeb1453dc1275b0d0d1d",
+      "00001.grz:00001-176.con": "0774ec198bdf3d015ba0ce1d675eebcb8827a1449acef6340f0a1bbf6ee3583a",
+      "00001.grz:00001-177.con": "3a9783d0e6544b8a37d0435d6d8edcbc81aa7df76afa3527811753fcee9ac8f6",
+      "00001.grz:00001-178.con": "4062d002ab9b6ae2add6f385c82b6177668fd8551ded90f49ddcb9d01d00090d",
+      "00001.grz:00001-179.con": "314774903ca8cb833870fcfbcdd9c39b8d4a686aa9caa7b421a29ed736dde555",
+      "00001.grz:00001-180.con": "58f4c33f334a304778a5dad7105f62da275b2a7ed9cae9e250623cb0f8f52a7e",
+      "00001.grz:00001-181.con": "054a46a697987b1650e351ee43cdc15e27d91a887c23576963b243019d079e5b",
+      "00001.grz:00001-182.con": "448a4a7a1789d181b652ce169bd2824a41299d8232cb3b8e2d8b8d8ee1c4b1a5",
+      "00001.grz:00001-183.con": "f0b0a2e15b5d0bced6fc40e59e24673b90dd9c7f545f8ad3a7095ac6810e5d0c",
+      "00001.grz:00001-184.con": "b1c3edd6950678fe5c6619b683045a2b0d84eacef73de6399f7e6c6740e4fab9",
+      "00001.grz:00001-185.con": "e7fc66e5154414899a681cbc31a938445078334a9a2c41c13ceda6ee0c8313fe",
+      "00001.grz:00001-186.con": "a79e18310d13939fe65900d1c257e2e1015fcaff76ae1eed76b25d1a21d17cbd",
+      "00001.grz:00001-187.con": "cafc3bea54d5ee5a1609d1dcfda8184a05c2a0853c777a2cfaa3ff9fb374ad2f",
+      "00001.grz:00001-188.con": "da262f7e7177fb473278c17c0256b28ffc13c344f706007c6d4e71ee74c7dc63",
+      "00001.grz:00001-189.con": "a6273448764003198a96d0b92a9c7393cac2c342fa920669e8dfb9dc2b9bbda8",
+      "00001.grz:00001-190.con": "5280d49bf8959204e5662b726d9f127cd05d4bbb1e0ce7abff25705b6203f845",
+      "00001.grz:00001-191.con": "6ac25bafb0cbb326d3be9fa624604f8fab3cfa8d18a5c305d9ef0165cf4272e5",
+      "00001.grz:00001-192.con": "13b0b40f7a817aa46ae733465de5625ee3c7d07557812f36c821d7ccbec1c0a9",
+      "00001.grz:00001-193.con": "c5d0ef5960bc99e05fe37abe9638bef7ff902a381b6118826a0c6a52f4fcd27b",
+      "00001.grz:00001-194.con": "6cbe36efaace173f4c61b1b3f6330c80617c309a916a715e8e649634bc6e23be",
+      "00001.grz:00001-195.con": "91f496dff9e77e963ace0ff744f3902955302fe321110c7322cc77d3ea783d66",
+      "00001.grz:00001-196.con": "025d4acefd8cbb36c5bde0290acd32819a0a803538caf3aeaa0f8da967da32d2",
+      "00001.grz:00001-197.con": "11027f6c5affc7d60e0fb6ec735c23e536cf24b82b1c73fe2d93cd2c90cd3f43",
+      "00001.grz:00001-198.con": "454d9af473e597fab17e49f927c24f4a85a8caeb432bf4181a26f32063949a43",
+      "00001.grz:00001-199.con": "ca132a446ff9a5a41d3256a321a66d5fc92419c9bcd27ead5b855f1d45745de9"
+    },
+    "situation_sums": {
+      "00001.grz": 1349558.569929123
+    },
+    "nonzero_values": 3198,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 363600,
+    "occupied_fraction": 0.008795379537953795,
+    "issues": []
+  },
+  {
+    "case": "sg102_boundary",
+    "variant": "dictionary_fixed",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 0,
+    "wall_s": 0.222272899991367,
+    "cpu_s": 0.21875,
+    "pid": 55180,
+    "memory": {
+      "PeakWorkingSetSize": 42586112,
+      "PeakPagefileUsage": 19058688,
+      "PrivateUsage": 18792448,
+      "WorkingSetSize": 41832448
+    },
+    "memory_samples": 21,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [],
+    "actual_particles_per_s": [],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "incomplete",
+      "problem_report",
+      "particle_count",
+      "weather_count",
+      "source_count_point",
+      "con_count_0_expected_102",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "sg102_boundary",
+    "variant": "float",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 0,
+    "wall_s": 0.22168030000466388,
+    "cpu_s": 0.203125,
+    "pid": 50608,
+    "memory": {
+      "PeakWorkingSetSize": 44449792,
+      "PeakPagefileUsage": 21245952,
+      "PrivateUsage": 21155840,
+      "WorkingSetSize": 43388928
+    },
+    "memory_samples": 21,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [],
+    "actual_particles_per_s": [],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "incomplete",
+      "problem_report",
+      "particle_count",
+      "weather_count",
+      "source_count_point",
+      "con_count_0_expected_102",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "sg102_boundary",
+    "variant": "double",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 0,
+    "wall_s": 0.22145450000243727,
+    "cpu_s": 0.203125,
+    "pid": 52368,
+    "memory": {
+      "PeakWorkingSetSize": 48041984,
+      "PeakPagefileUsage": 24649728,
+      "PrivateUsage": 24616960,
+      "WorkingSetSize": 47423488
+    },
+    "memory_samples": 21,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [],
+    "actual_particles_per_s": [],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "incomplete",
+      "problem_report",
+      "particle_count",
+      "weather_count",
+      "source_count_point",
+      "con_count_0_expected_102",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "sg102_boundary",
+    "variant": "dictionary",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 0,
+    "wall_s": 0.22221880000142846,
+    "cpu_s": 0.203125,
+    "pid": 48564,
+    "memory": {
+      "PeakWorkingSetSize": 42913792,
+      "PeakPagefileUsage": 19513344,
+      "PrivateUsage": 19488768,
+      "WorkingSetSize": 42098688
+    },
+    "memory_samples": 21,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [],
+    "actual_particles_per_s": [],
+    "actual_source_counts": {
+      "point": 0,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "incomplete",
+      "problem_report",
+      "particle_count",
+      "weather_count",
+      "source_count_point",
+      "con_count_0_expected_102",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "labels_1_99_100_255",
+    "variant": "float",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 3762504530,
+    "wall_s": 3.017925299995113,
+    "cpu_s": 0.421875,
+    "pid": 10280,
+    "memory": {
+      "PeakWorkingSetSize": 61476864,
+      "PeakPagefileUsage": 34398208,
+      "PrivateUsage": 31891456,
+      "WorkingSetSize": 61456384
+    },
+    "memory_samples": 291,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 4,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "nonzero_exit",
+      "incomplete",
+      "con_count_0_expected_4",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "labels_1_99_100_255",
+    "variant": "double",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 3762504530,
+    "wall_s": 2.984437099992647,
+    "cpu_s": 0.421875,
+    "pid": 10540,
+    "memory": {
+      "PeakWorkingSetSize": 61607936,
+      "PeakPagefileUsage": 34762752,
+      "PrivateUsage": 33792000,
+      "WorkingSetSize": 61587456
+    },
+    "memory_samples": 287,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 4,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "nonzero_exit",
+      "incomplete",
+      "con_count_0_expected_4",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "labels_1_99_100_255",
+    "variant": "dictionary",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 3762504530,
+    "wall_s": 2.9624177000077907,
+    "cpu_s": 0.421875,
+    "pid": 52820,
+    "memory": {
+      "PeakWorkingSetSize": 62001152,
+      "PeakPagefileUsage": 33439744,
+      "PrivateUsage": 32694272,
+      "WorkingSetSize": 61997056
+    },
+    "memory_samples": 285,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 4,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "nonzero_exit",
+      "incomplete",
+      "con_count_0_expected_4",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "labels_1_99_100_255",
+    "variant": "dictionary_fixed",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 3762504530,
+    "wall_s": 2.982915700005833,
+    "cpu_s": 0.421875,
+    "pid": 46812,
+    "memory": {
+      "PeakWorkingSetSize": 62427136,
+      "PeakPagefileUsage": 33705984,
+      "PrivateUsage": 32202752,
+      "WorkingSetSize": 62402560
+    },
+    "memory_samples": 287,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 4,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "nonzero_exit",
+      "incomplete",
+      "con_count_0_expected_4",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "labels_1_257",
+    "variant": "double",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 3762504530,
+    "wall_s": 2.9494164000061573,
+    "cpu_s": 0.46875,
+    "pid": 49504,
+    "memory": {
+      "PeakWorkingSetSize": 61554688,
+      "PeakPagefileUsage": 34586624,
+      "PrivateUsage": 34238464,
+      "WorkingSetSize": 61534208
+    },
+    "memory_samples": 284,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "nonzero_exit",
+      "incomplete",
+      "con_count_0_expected_2",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "labels_1_257",
+    "variant": "dictionary",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 3762504530,
+    "wall_s": 3.0983844000002136,
+    "cpu_s": 0.5,
+    "pid": 59064,
+    "memory": {
+      "PeakWorkingSetSize": 62259200,
+      "PeakPagefileUsage": 33214464,
+      "PrivateUsage": 30863360,
+      "WorkingSetSize": 62255104
+    },
+    "memory_samples": 298,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "nonzero_exit",
+      "incomplete",
+      "con_count_0_expected_2",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "labels_1_257",
+    "variant": "dictionary_fixed",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 3762504530,
+    "wall_s": 3.096695800006273,
+    "cpu_s": 0.484375,
+    "pid": 14308,
+    "memory": {
+      "PeakWorkingSetSize": 62414848,
+      "PeakPagefileUsage": 33411072,
+      "PrivateUsage": 32944128,
+      "WorkingSetSize": 62394368
+    },
+    "memory_samples": 298,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "nonzero_exit",
+      "incomplete",
+      "con_count_0_expected_2",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "labels_1_257",
+    "variant": "float",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 3762504530,
+    "wall_s": 3.0283754000120098,
+    "cpu_s": 0.46875,
+    "pid": 57788,
+    "memory": {
+      "PeakWorkingSetSize": 60952576,
+      "PeakPagefileUsage": 34226176,
+      "PrivateUsage": 33529856,
+      "WorkingSetSize": 60932096
+    },
+    "memory_samples": 291,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      6000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {},
+    "situation_sums": {},
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 0,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "nonzero_exit",
+      "incomplete",
+      "con_count_0_expected_2",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "missing_receptor_diagnostic",
+    "variant": "dictionary",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 0,
+    "wall_s": 0.307246699987445,
+    "cpu_s": 0.328125,
+    "pid": 47540,
+    "memory": {
+      "PeakWorkingSetSize": 57798656,
+      "PeakPagefileUsage": 33718272,
+      "PrivateUsage": 28774400,
+      "WorkingSetSize": 54337536
+    },
+    "memory_samples": 29,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      12000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "a58ec7e7c95b553a012b3ff6c493452b3b98e2005a394a8692c5f367161f5184",
+      "00001.grz:00001-102.con": "a58ec7e7c95b553a012b3ff6c493452b3b98e2005a394a8692c5f367161f5184"
+    },
+    "situation_sums": {
+      "00001.grz": 0.0
+    },
+    "nonzero_values": 0,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 7200,
+    "occupied_fraction": 0.0,
+    "issues": [
+      "problem_report",
+      "no_concentration"
+    ]
+  },
+  {
+    "case": "missing_receptor_diagnostic",
+    "variant": "dictionary_fixed",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 0,
+    "wall_s": 0.7271584999980405,
+    "cpu_s": 0.734375,
+    "pid": 46880,
+    "memory": {
+      "PeakWorkingSetSize": 57516032,
+      "PeakPagefileUsage": 33562624,
+      "PrivateUsage": 31559680,
+      "WorkingSetSize": 55525376
+    },
+    "memory_samples": 69,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      12000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "6881cc580f4afb2bd59d7d309db59880badb71c5255bb7681915c6f04c54550d",
+      "00001.grz:00001-102.con": "362f2ec2320c342b10ad60ed7dcef5aa4660e1ecf0752234b4c66ace821d5fea"
+    },
+    "situation_sums": {
+      "00001.grz": 22821.016972642392
+    },
+    "nonzero_values": 159,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 7200,
+    "occupied_fraction": 0.022083333333333333,
+    "issues": [
+      "problem_report"
+    ]
+  },
+  {
+    "case": "missing_receptor_diagnostic",
+    "variant": "float",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 0,
+    "wall_s": 0.6875748000020394,
+    "cpu_s": 0.65625,
+    "pid": 7272,
+    "memory": {
+      "PeakWorkingSetSize": 58494976,
+      "PeakPagefileUsage": 34582528,
+      "PrivateUsage": 33406976,
+      "WorkingSetSize": 57294848
+    },
+    "memory_samples": 66,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      12000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "9e4ad00cf8e0da43b6a6a83a9ed652afca81b9a9bcc599159d9e00e88f7b6cfb",
+      "00001.grz:00001-102.con": "252f3229fcdcdad32b9e11163f7801b2e2df852b535ffad295a7b1134ad04e0c"
+    },
+    "situation_sums": {
+      "00001.grz": 22824.89505435154
+    },
+    "nonzero_values": 159,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 7200,
+    "occupied_fraction": 0.022083333333333333,
+    "issues": [
+      "problem_report"
+    ]
+  },
+  {
+    "case": "missing_receptor_diagnostic",
+    "variant": "double",
+    "repeat": 0,
+    "measured": false,
+    "status": "fail",
+    "exit_code": 0,
+    "wall_s": 0.6896297999919625,
+    "cpu_s": 0.703125,
+    "pid": 8664,
+    "memory": {
+      "PeakWorkingSetSize": 58834944,
+      "PeakPagefileUsage": 34824192,
+      "PrivateUsage": 34275328,
+      "WorkingSetSize": 58310656
+    },
+    "memory_samples": 66,
+    "memory_after_exit_api_succeeded": true,
+    "actual_particles": [
+      12000
+    ],
+    "actual_particles_per_s": [
+      100.0
+    ],
+    "actual_source_counts": {
+      "point": 2,
+      "area": 0,
+      "portal": 0,
+      "line": 0
+    },
+    "payload_hashes": {
+      "00001.grz:00001-101.con": "6881cc580f4afb2bd59d7d309db59880badb71c5255bb7681915c6f04c54550d",
+      "00001.grz:00001-102.con": "362f2ec2320c342b10ad60ed7dcef5aa4660e1ecf0752234b4c66ace821d5fea"
+    },
+    "situation_sums": {
+      "00001.grz": 22821.016972642392
+    },
+    "nonzero_values": 159,
+    "deposition_fields": 0,
+    "deposition_nonzero": 0,
+    "output_values": 7200,
+    "occupied_fraction": 0.022083333333333333,
+    "issues": [
+      "problem_report"
+    ]
+  }
+]

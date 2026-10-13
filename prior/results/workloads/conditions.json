@@ -1,0 +1,199 @@
+[
+  {
+    "pps": 1000,
+    "tau": 300,
+    "kind": "point",
+    "sources": 16,
+    "sg": 1,
+    "length": 400,
+    "flow": 40,
+    "conc": 40,
+    "slices": 1,
+    "speed": 0.25,
+    "sc": 6,
+    "workers": 4,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "dense_sg1_coarse_t4",
+    "distributed": true,
+    "purpose": "Many updates per occupied key; measure actual occupancy",
+    "particles": 300000,
+    "nx": 10,
+    "ny": 10,
+    "source_counts": {
+      "point": 16
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        0.25,
+        6
+      ]
+    ],
+    "total_output_slots": 100
+  },
+  {
+    "pps": 1000,
+    "tau": 300,
+    "kind": "area",
+    "sources": 26,
+    "sg": 26,
+    "length": 1200,
+    "flow": 20,
+    "conc": 20,
+    "slices": 1,
+    "speed": 0.5,
+    "sc": 6,
+    "workers": 8,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "terrain_stable_area_t8",
+    "terrain": true,
+    "purpose": "Stable terrain and area emissions",
+    "particles": 300000,
+    "nx": 60,
+    "ny": 60,
+    "source_counts": {
+      "area": 26
+    },
+    "vertical_flow_layers": 40,
+    "synthetic_terrain_recipe": {
+      "coarse_grid": [
+        40,
+        40,
+        20
+      ],
+      "coarse_dx": 40,
+      "coarse_dz": 20,
+      "terrain": "0.01*(x+200)+0.003*(y+200)",
+      "wind": "horizontal vectors from weather rows; zero vertical; prescribed input"
+    },
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        0.5,
+        6
+      ]
+    ],
+    "total_output_slots": 93600
+  },
+  {
+    "pps": 1000,
+    "tau": 300,
+    "kind": "mixed",
+    "sources": 64,
+    "sg": 26,
+    "length": 1200,
+    "flow": 20,
+    "conc": 10,
+    "slices": 1,
+    "speed": 2.5,
+    "sc": 2,
+    "workers": 8,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "convective_mixed_t8",
+    "purpose": "Source kinds and convective transport",
+    "particles": 300000,
+    "nx": 120,
+    "ny": 120,
+    "source_counts": {
+      "point": 16,
+      "area": 16,
+      "line": 16,
+      "portal": 16
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        2.5,
+        2
+      ]
+    ],
+    "total_output_slots": 374400
+  },
+  {
+    "pps": 500,
+    "tau": 300,
+    "kind": "mixed",
+    "sources": 32,
+    "sg": 8,
+    "length": 1200,
+    "flow": 20,
+    "conc": 10,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 4,
+    "hot": false,
+    "buildings": 6,
+    "adaptive": 0,
+    "transient": false,
+    "id": "buildings_mixed_t4",
+    "particles": 150000,
+    "nx": 120,
+    "ny": 120,
+    "source_counts": {
+      "point": 8,
+      "area": 8,
+      "line": 8,
+      "portal": 8
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 115200
+  },
+  {
+    "pps": 1000,
+    "tau": 300,
+    "kind": "point",
+    "sources": 8,
+    "sg": 8,
+    "length": 1200,
+    "flow": 40,
+    "conc": 20,
+    "slices": 1,
+    "speed": 2.5,
+    "sc": 2,
+    "workers": 1,
+    "hot": true,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "hot_stack_t1",
+    "particles": 300000,
+    "nx": 60,
+    "ny": 60,
+    "source_counts": {
+      "point": 8
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        2.5,
+        2
+      ]
+    ],
+    "total_output_slots": 28800
+  }
+]

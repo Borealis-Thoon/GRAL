@@ -1,0 +1,182 @@
+[
+  {
+    "pps": 100,
+    "tau": 600,
+    "kind": "point",
+    "sources": 1,
+    "sg": 1,
+    "length": 400,
+    "flow": 40,
+    "conc": 40,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 1,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "small_sg1_t1",
+    "purpose": "Single-worker double-versus-dictionary exact reference",
+    "particles": 60000,
+    "nx": 10,
+    "ny": 10,
+    "source_counts": {
+      "point": 1
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 100
+  },
+  {
+    "pps": 1000,
+    "tau": 300,
+    "kind": "point",
+    "sources": 26,
+    "sg": 26,
+    "length": 1200,
+    "flow": 40,
+    "conc": 20,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 1,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "neutral_sg26_t1",
+    "purpose": "Controlled worker scaling baseline",
+    "particles": 300000,
+    "nx": 60,
+    "ny": 60,
+    "source_counts": {
+      "point": 26
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 93600
+  },
+  {
+    "pps": 1000,
+    "tau": 300,
+    "kind": "point",
+    "sources": 26,
+    "sg": 26,
+    "length": 1200,
+    "flow": 40,
+    "conc": 20,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 4,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "neutral_sg26_t4",
+    "purpose": "Controlled worker scaling",
+    "particles": 300000,
+    "nx": 60,
+    "ny": 60,
+    "source_counts": {
+      "point": 26
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 93600
+  },
+  {
+    "pps": 1000,
+    "tau": 300,
+    "kind": "point",
+    "sources": 26,
+    "sg": 26,
+    "length": 1200,
+    "flow": 40,
+    "conc": 20,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 8,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "neutral_sg26_t8",
+    "purpose": "Controlled worker scaling",
+    "particles": 300000,
+    "nx": 60,
+    "ny": 60,
+    "source_counts": {
+      "point": 26
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 93600
+  },
+  {
+    "pps": 1000,
+    "tau": 300,
+    "kind": "point",
+    "sources": 26,
+    "sg": 26,
+    "length": 1200,
+    "flow": 40,
+    "conc": 20,
+    "slices": 1,
+    "speed": 1,
+    "sc": 4,
+    "workers": 14,
+    "hot": false,
+    "buildings": 0,
+    "adaptive": 0,
+    "transient": false,
+    "id": "neutral_sg26_t14",
+    "purpose": "Controlled worker scaling",
+    "particles": 300000,
+    "nx": 60,
+    "ny": 60,
+    "source_counts": {
+      "point": 26
+    },
+    "vertical_flow_layers": 40,
+    "situations": 1,
+    "weather": [
+      [
+        9,
+        1,
+        4
+      ]
+    ],
+    "total_output_slots": 93600
+  }
+]

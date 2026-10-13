@@ -1,0 +1,35 @@
+{
+  "new_public_outputs": 896,
+  "source": "work/benchmark/writer_lifecycle_probe.cs",
+  "command": "python.exe -X utf8 -B work/benchmark/writer_lifecycle_test.py --job J --stage all",
+  "runner": "work/benchmark/writer_lifecycle_test.py",
+  "public_exception_cleanup_calls": 1,
+  "limits": {
+    "batch_seconds": 840,
+    "process_seconds": 120
+  },
+  "variants": [
+    "double",
+    "dictionary_fixed",
+    "static_update",
+    "output_index",
+    "combined"
+  ],
+  "public_success_calls": 64,
+  "notes": [
+    "These tests exercise real output code but not particle transport; native field runs remain separate.",
+    "Strict build completed with 0 warnings and 0 errors; all 5 variants passed 980 output comparisons and 65 lifecycle checks.",
+    "Elapsed time is diagnostic only and is not a native model performance measurement."
+  ],
+  "checks": [
+    "Actual DLL private writers preserve all 84 previous checks.",
+    "Public writer executed for all 8 center/upper/lower presence masks.",
+    "3 zipped formats and raw unzipped output; ASCII and deposition enabled in every case.",
+    "Two different successive situations reuse the same writer and dictionary objects.",
+    "Cache outputIndex must be null before and after each call, and after an injected odour evaluation exception.",
+    "Byte equality and independently decoded finite-value equality against double baseline."
+  ],
+  "original_outputs": 84,
+  "status": "completed_pass",
+  "result": "qa/writer_lifecycle/summary.json"
+}

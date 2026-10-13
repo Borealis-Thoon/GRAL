@@ -1,0 +1,32 @@
+{
+  "status": "pass",
+  "report": "release/docs/GRAL_64_개발자제안_검증결과.md",
+  "figures": ["release/figures/01_time_memory.png", "release/figures/02_worker_scaling.png", "release/figures/03_transient_regression.png"],
+  "humanize": {
+    "skill": "humanize-kit:humanize-korean",
+    "run_id": "2026-10-14-002-ae8c",
+    "route": "light (automatic)",
+    "change_rate_raw": 0.0011,
+    "change_rate_display_pct": 0.1,
+    "gate_exit": 0,
+    "golden": "pass",
+    "modality_restored": 0,
+    "modality_held": 0,
+    "modality_lost": 0,
+    "number_drops": 0,
+    "finalizer": "accept; zero corrections",
+    "self_check": "6/6",
+    "unresolved_warnings": []
+  },
+  "visual_review": {
+    "viewed_pngs": 3,
+    "fixed": ["First figure title/subtitle overlap", "Crowded log-axis tick labels", "Aligned diagnostic panel headings"],
+    "final_review": "Three figures have readable text with no clipping or overlaps. Main figure separates developer-original performance from corrected-variant diagnostic results; headline annotation shows 77.5% lower peak commit and 84.8% longer time in the sparse 99-group case.",
+    "statistical_encoding": "Three individual paired measurements and median markers; absolute peak process commit includes float and double references; primary runtime reference is same-base PR64 double."
+  },
+  "evidence_corrections_before_final_humanize_input": [
+    "Neutral 26-group case has zero GC in all variants; additional allocation and 25.78-to-59.42 MiB managed memory are reported instead.",
+    "DecayRate has length 102 and is indexed by external source-group ID."
+  ],
+  "external_publication": "none"
+}
