@@ -1,0 +1,176 @@
+{
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "cache_unstable_variance.patch",
+      "bytes": 2389,
+      "sha256": "88d6a1c44eb37809c9587f726233bbdd7f69484a17a91eac56ac973603a99659"
+    },
+    {
+      "path": "figures/unstable_variance_runtime.png",
+      "bytes": 230204,
+      "sha256": "bd94a1e47081952ffbe365b90021077d5fbf326a02cc5a4365cc80ce0071917f"
+    },
+    {
+      "path": "figures/unstable_variance_runtime.svg",
+      "bytes": 27342,
+      "sha256": "4ac79432789fd4609f553a45e6da82ee54fd46d2e3785f63abad4c358fef5c00"
+    },
+    {
+      "path": "helpers/main_harness.py",
+      "bytes": 6938,
+      "sha256": "a96692594a7d5a111cec910c3b9d8cd7561f379a33bd81982db389bee39f1d6b"
+    },
+    {
+      "path": "helpers/transient_harness.py",
+      "bytes": 3209,
+      "sha256": "40c5d1c27a2efd00aa1db2744df77149ce6fed640ee5fabfb5fa1436f976612c"
+    },
+    {
+      "path": "prepare.py",
+      "bytes": 2909,
+      "sha256": "cef3eee1d9614d18b1d6ef6842f427cb5ee02c2019140d867ad58e5f6fade13e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3680,
+      "sha256": "3b4d46c3b1b758e53a6456961bb39101ca5cf7bdf28d8b8e78c1de7397449bc1"
+    },
+    {
+      "path": "render_figure.py",
+      "bytes": 3986,
+      "sha256": "b87eaea5e2b572a5686b5fc228678b8c912199ef35b04049bd960576d970e505"
+    },
+    {
+      "path": "results/build_baseline.log",
+      "bytes": 351,
+      "sha256": "3d2ee0e59f3132e2a27051d661c52a07819c9a049a252167d05e6070ebe86b2a"
+    },
+    {
+      "path": "results/build_candidate.log",
+      "bytes": 250,
+      "sha256": "a5b7e334a6cacbd9b3a04592fa715e298183f5b9aebbc6945ec0a111eddfad5f"
+    },
+    {
+      "path": "results/build_fixture.log",
+      "bytes": 266,
+      "sha256": "014cbddc9eb24078431187a33b6ab11bf0513c67fdf17d7d77f7322481422187"
+    },
+    {
+      "path": "results/compiled.json",
+      "bytes": 2966,
+      "sha256": "3e8291c292e1d3186b6e72397bff94b670c1c4001bc70221f4570df883b587f5"
+    },
+    {
+      "path": "results/environment.json",
+      "bytes": 419,
+      "sha256": "9da0e229d3803a07b5f6257c3a51ffa8cec7bdbdb3f0b1b09e992d6c9cbfcba2"
+    },
+    {
+      "path": "results/main_summary.json",
+      "bytes": 89066,
+      "sha256": "a948d72c4404e7010e50caa92790857cb791146f7e1388a28a201e644083b0a0"
+    },
+    {
+      "path": "results/summaries.csv",
+      "bytes": 1676,
+      "sha256": "ce7da06439e6522430c64b3a75e3f1078d201ee008e061727979e5758f2ed770"
+    },
+    {
+      "path": "results/timings.csv",
+      "bytes": 5238,
+      "sha256": "9c686becafc4cecc5975790cd5cb732a61e180c5134eef3b7b30dd4a3f73251f"
+    },
+    {
+      "path": "run_main.py",
+      "bytes": 5675,
+      "sha256": "f71d736788b1d0effe71093e1640dd552c08b381c738369040760e8dfdc38ffb"
+    },
+    {
+      "path": "small_provenance.json",
+      "bytes": 1008,
+      "sha256": "c068fa7cdddb5b96b302b3a33847dca624494e87863cd71609e04da7874de160"
+    },
+    {
+      "path": "source_manifest.json",
+      "bytes": 17044,
+      "sha256": "0743f751e8a9c10092927913bb256d57836906a3c5620b7acfa5171e46fcf9ff"
+    },
+    {
+      "path": "template/in.dat",
+      "bytes": 103,
+      "sha256": "07f46aa7ef545b326a976d8fcd84f28f4bd64fbdc6b60b7556769e493f9de6a3"
+    },
+    {
+      "path": "template/micro_vert_layers.txt",
+      "bytes": 3,
+      "sha256": "673650f936cb3b0a2f93ce09d81be10748b1b203c19e8176b4eefc1964a0cf3a"
+    },
+    {
+      "path": "transient_template/cadastre.dat",
+      "bytes": 59,
+      "sha256": "2cc72b339ac75e423f0a9c48b1856ccae612d8aee91009507c3f6035de3ea98f"
+    },
+    {
+      "path": "transient_template/emissions_timeseries.txt",
+      "bytes": 77,
+      "sha256": "f155df5dad3ebc9ae6e1cbfa77aa536bf7085368b2aa4ffbc9aceec59360ec21"
+    },
+    {
+      "path": "transient_template/GRAL.geb",
+      "bytes": 48,
+      "sha256": "cc7f48022d3229f80ebfec46d25d7a398bbec00c8b0e9346224e7134d340b78c"
+    },
+    {
+      "path": "transient_template/GRAL_Trans_Conc_Threshold.txt",
+      "bytes": 6,
+      "sha256": "81b757d439f94af4fb4bfd44c6c0d090aa7149c69b8ab73c1cd3e7ac8fdccb7d"
+    },
+    {
+      "path": "transient_template/in.dat",
+      "bytes": 111,
+      "sha256": "3478ea41e051e410cca756e83f727da4838df0e1bd2e9dc1f0801f765f475a2b"
+    },
+    {
+      "path": "transient_template/KeepAndReadTransientTempFiles.dat",
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    {
+      "path": "transient_template/Max_Proc.txt",
+      "bytes": 3,
+      "sha256": "f1b2f662800122bed0ff255693df89c4487fbdcf453d3524a42d4ec20c3d9c04"
+    },
+    {
+      "path": "transient_template/meteopgt.all",
+      "bytes": 83,
+      "sha256": "b5b67bbfdeff6d4219c6340642a93494f383c2a98fd76111d93005b9d332c2c8"
+    },
+    {
+      "path": "transient_template/mettimeseries.dat",
+      "bytes": 69,
+      "sha256": "2a11099acae772e6dbbb65701dcdfc8dbd3d1994856073c41a4c55ecd617b358"
+    },
+    {
+      "path": "transient_template/micro_vert_layers.txt",
+      "bytes": 3,
+      "sha256": "673650f936cb3b0a2f93ce09d81be10748b1b203c19e8176b4eefc1964a0cf3a"
+    },
+    {
+      "path": "variance_provenance.json",
+      "bytes": 1772,
+      "sha256": "6f56915a76837986bb48d4881a74909492c27ffb36e899e13f53acebdef7bf1a"
+    },
+    {
+      "path": "VarianceReview.cs",
+      "bytes": 4874,
+      "sha256": "aa7e0ade91a3fd3766e264298dd32614026deae56c2be93d66682cfa09998457"
+    }
+  ],
+  "source": "Synthetic validation and public engine source",
+  "raw_model_outputs_included": false
+}

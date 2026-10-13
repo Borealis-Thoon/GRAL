@@ -1,0 +1,16 @@
+[
+  {
+    "file": "Zeitschleife.cs",
+    "baseline_sha256": "2f65fd62b9d52fa33c919e84a88671022f3bef41b14e79bb6aa616a41c66ad80",
+    "candidate_sha256": "2ba713dc4c16595f979b8225f3e216421f8b51d50b22091d3f07bc568485170d",
+    "baseline_expression": "Program.Pow2(Ustern) * Program.Pow2(1.15F + 0.1F * MathF.Pow(blh / (-ObLength), 0.67F)) * Program.Pow2(Program.StdDeviationW)",
+    "candidate_block": "                        if (ObLength != cachedObLength || Ustern != cachedUstern)\n                        {\n                            cachedVariance = Program.Pow2(Ustern) * Program.Pow2(1.15F + 0.1F * MathF.Pow(blh / (-ObLength), 0.67F)) * Program.Pow2(Program.StdDeviationW);\n                            cachedObLength = ObLength;\n                            cachedUstern = Ustern;\n                        }\n                        varw = cachedVariance;"
+  },
+  {
+    "file": "Zeitschleife_nonsteadystate.cs",
+    "baseline_sha256": "7b66139a215379199cca9956d6f172d02554be8fe61991d0ac01bebfa231a257",
+    "candidate_sha256": "6f75445bf6d07b121a8197e06cc86523cb34c4d0d08fd1273ebf8c2cbfd06ab8",
+    "baseline_expression": "Program.Pow2(Ustern) * Program.Pow2(1.15F + 0.1F * MathF.Pow(blh / (-ObLength), 0.67F)) * Program.Pow2(Program.StdDeviationW)",
+    "candidate_block": "                        if (ObLength != cachedObLength || Ustern != cachedUstern)\n                        {\n                            cachedVariance = Program.Pow2(Ustern) * Program.Pow2(1.15F + 0.1F * MathF.Pow(blh / (-ObLength), 0.67F)) * Program.Pow2(Program.StdDeviationW);\n                            cachedObLength = ObLength;\n                            cachedUstern = Ustern;\n                        }\n                        varw = cachedVariance;"
+  }
+]

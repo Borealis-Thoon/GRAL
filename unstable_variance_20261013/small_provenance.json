@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "variance_expressions_exact_in_both_drivers": true,
+  "cache_fixture_extracted_from_source": true,
+  "gradient_probe_exact_whitespace_normalized_expression": "velxold - (termp * velxold + termq * velyold) * idt + U0int * MathF.Sqrt(2 * termp * idt) * zuff1\n                    + idt * (DUDX * velX + DUDY * velY + U0int * DSIGUDX)\n                    + idt * (velxold / U0int * (DSIGUDX * velX + DSIGUDY * velY))",
+  "gradient_fixture_sha256": "aa7e0ade91a3fd3766e264298dd32614026deae56c2be93d66682cfa09998457",
+  "constant_field_writers": [
+    {
+      "file": "ProgramDeclarations.cs",
+      "line": 610,
+      "text": "public static float StdDeviationW = 1;"
+    }
+  ],
+  "flow_fixture": "Compiles the full source Intwind.cs in each variant; compares public fresh-search and internal per-particle-search methods, then compares cross-build checksums and Main outputs.",
+  "flow_fixture_sha256": "c245ea129bbd23e2b7bd6908db1ab2647bf6b60f19ea4c063a73847a3343dd3f"
+}
