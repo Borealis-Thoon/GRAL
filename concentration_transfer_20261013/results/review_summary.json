@@ -1,0 +1,33 @@
+{
+  "status": "pass",
+  "base_commit": "891225b2f9dbbcda7f5ef6e9ef6db65e64845108",
+  "depends_on_pr": 64,
+  "build_warnings": 0,
+  "build_errors": 0,
+  "source_change": {
+    "variant": "parallel",
+    "file": "ProgramFunctions.cs",
+    "added_lines": 16,
+    "deleted_lines": 1,
+    "added_characters": 578,
+    "deleted_characters": 57,
+    "changed_characters": 635,
+    "character_definition": "Unicode codepoints in added and removed source lines, excluding CR and LF line endings; indentation is included"
+  },
+  "component_runs": 30,
+  "component_timed_configurations": 12,
+  "empty_slice_configurations": 3,
+  "component_checked_values": 280534304,
+  "final_source_main_runs": 6,
+  "earlier_guard_main_regression_runs": 36,
+  "all_main_payloads_byte_identical": true,
+  "small_transfer_serial_threshold_values": 131072,
+  "threshold_interpretation": "Conservative small-array bypass; not a hardware-independent optimum",
+  "serial_fallback_can_have_jit_layout_cost": true,
+  "whole_model_speedup_claim": false,
+  "source_reconstruction": "pass: independent public prepare reproduced85/85source hashes for each of f64 and parallel",
+  "public_figures": "PNG and SVG rendered; layout and values visually checked",
+  "humanizer": "humanize-kit:humanizer Embedded applied to README and PR draft; evidence/numbers/modality checked",
+  "published_code_commit": "514bd97aad89dc49bae83cf2f5d7ed59fe3523bd",
+  "prerequisite_commit": "f2bd495cde6d060be2e451320c102090c157d7df"
+}

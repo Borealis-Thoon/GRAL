@@ -1,0 +1,195 @@
+{
+  "status": "pass",
+  "source_stage": "Final source including NS=0 guard correction",
+  "main_runs": 6,
+  "conditions": [
+    {
+      "id": "dense_output_grid_w4",
+      "particles": 3000,
+      "kind": "area",
+      "sources": 64,
+      "sg": 64,
+      "length": 1000,
+      "flow": 40,
+      "conc": 10,
+      "slices": 9,
+      "tau": 30,
+      "speed": 1,
+      "sc": 4,
+      "hot": false,
+      "workers": 4,
+      "nx": 100,
+      "ny": 100,
+      "source_counts": {
+        "area": 64
+      },
+      "vertical_flow_layers": 40,
+      "output_shape": {
+        "situations": 1,
+        "sg": 64,
+        "slices": 9,
+        "nx": 100,
+        "ny": 100,
+        "dx": 10
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "case": "dense_output_grid_w4",
+      "repeat": 1,
+      "status": "byte_identical",
+      "members": 576
+    },
+    {
+      "case": "dense_output_grid_w4",
+      "repeat": 2,
+      "status": "byte_identical",
+      "members": 576
+    },
+    {
+      "case": "dense_output_grid_w4",
+      "repeat": 3,
+      "status": "byte_identical",
+      "members": 576
+    }
+  ],
+  "records": [
+    {
+      "exit_code": 0,
+      "wall_s": 0.8062497000000803,
+      "cpu_s": 0.9375,
+      "memory": {
+        "PeakWorkingSetSize": 142561280,
+        "PeakPagefileUsage": 122617856,
+        "PrivateUsage": 121786368,
+        "WorkingSetSize": 141631488
+      },
+      "memory_samples": 77,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid_w4",
+      "variant": "f64",
+      "repeat": 1,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.8507943999993586,
+      "cpu_s": 1.0,
+      "memory": {
+        "PeakWorkingSetSize": 142643200,
+        "PeakPagefileUsage": 122699776,
+        "PrivateUsage": 122560512,
+        "WorkingSetSize": 142454784
+      },
+      "memory_samples": 82,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid_w4",
+      "variant": "parallel",
+      "repeat": 1,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.8012361999999484,
+      "cpu_s": 0.9375,
+      "memory": {
+        "PeakWorkingSetSize": 142827520,
+        "PeakPagefileUsage": 122884096,
+        "PrivateUsage": 121634816,
+        "WorkingSetSize": 141615104
+      },
+      "memory_samples": 77,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid_w4",
+      "variant": "parallel",
+      "repeat": 2,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.8641185000005862,
+      "cpu_s": 0.9375,
+      "memory": {
+        "PeakWorkingSetSize": 142794752,
+        "PeakPagefileUsage": 122863616,
+        "PrivateUsage": 121683968,
+        "WorkingSetSize": 141553664
+      },
+      "memory_samples": 83,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid_w4",
+      "variant": "f64",
+      "repeat": 2,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.8768692000003284,
+      "cpu_s": 1.015625,
+      "memory": {
+        "PeakWorkingSetSize": 142880768,
+        "PeakPagefileUsage": 122920960,
+        "PrivateUsage": 122920960,
+        "WorkingSetSize": 142880768
+      },
+      "memory_samples": 84,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid_w4",
+      "variant": "f64",
+      "repeat": 3,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.8878328999999212,
+      "cpu_s": 1.109375,
+      "memory": {
+        "PeakWorkingSetSize": 142790656,
+        "PeakPagefileUsage": 122855424,
+        "PrivateUsage": 121606144,
+        "WorkingSetSize": 141553664
+      },
+      "memory_samples": 85,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid_w4",
+      "variant": "parallel",
+      "repeat": 3,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    }
+  ],
+  "repeat": 3,
+  "limits": [
+    "Cold process times include initialization, JIT and I/O; these short runs are output checks, not evidence of a general full-model speedup."
+  ]
+}

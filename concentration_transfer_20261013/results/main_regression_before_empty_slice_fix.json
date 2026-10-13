@@ -1,0 +1,1111 @@
+{
+  "status": "pass",
+  "main_runs": 36,
+  "conditions": [
+    {
+      "id": "small_point",
+      "particles": 3000,
+      "kind": "point",
+      "sources": 2,
+      "sg": 2,
+      "length": 400,
+      "flow": 40,
+      "conc": 40,
+      "slices": 1,
+      "tau": 30,
+      "speed": 1,
+      "sc": 4,
+      "hot": false,
+      "workers": 1,
+      "nx": 10,
+      "ny": 10,
+      "source_counts": {
+        "point": 2
+      },
+      "vertical_flow_layers": 40,
+      "output_shape": {
+        "situations": 1,
+        "sg": 2,
+        "slices": 1,
+        "nx": 10,
+        "ny": 10,
+        "dx": 40
+      }
+    },
+    {
+      "id": "terrain_area",
+      "terrain": true,
+      "particles": 30000,
+      "kind": "area",
+      "sources": 26,
+      "sg": 26,
+      "length": 1200,
+      "flow": 20,
+      "conc": 20,
+      "slices": 1,
+      "tau": 120,
+      "speed": 0.5,
+      "sc": 6,
+      "hot": false,
+      "workers": 1,
+      "nx": 60,
+      "ny": 60,
+      "source_counts": {
+        "area": 26
+      },
+      "vertical_flow_layers": 40,
+      "synthetic_terrain_recipe": {
+        "coarse_grid": [
+          40,
+          40,
+          20
+        ],
+        "coarse_dx": 40,
+        "coarse_dz": 20,
+        "terrain": "0.01*(x+200)+0.003*(y+200)",
+        "wind": "uniform westward, zero vertical, prescribed input; no GRAMM model run"
+      },
+      "output_shape": {
+        "situations": 1,
+        "sg": 26,
+        "slices": 1,
+        "nx": 60,
+        "ny": 60,
+        "dx": 20
+      }
+    },
+    {
+      "id": "many_sources",
+      "particles": 20000,
+      "kind": "mixed",
+      "sources": 512,
+      "sg": 64,
+      "length": 1200,
+      "flow": 40,
+      "conc": 40,
+      "slices": 1,
+      "tau": 60,
+      "speed": 2.5,
+      "sc": 2,
+      "hot": false,
+      "workers": 1,
+      "nx": 30,
+      "ny": 30,
+      "source_counts": {
+        "point": 128,
+        "area": 128,
+        "line": 128,
+        "portal": 128
+      },
+      "vertical_flow_layers": 40,
+      "output_shape": {
+        "situations": 1,
+        "sg": 64,
+        "slices": 1,
+        "nx": 30,
+        "ny": 30,
+        "dx": 40
+      }
+    },
+    {
+      "id": "dense_output_grid",
+      "particles": 3000,
+      "kind": "area",
+      "sources": 64,
+      "sg": 64,
+      "length": 1000,
+      "flow": 40,
+      "conc": 10,
+      "slices": 9,
+      "tau": 30,
+      "speed": 1,
+      "sc": 4,
+      "hot": false,
+      "workers": 1,
+      "nx": 100,
+      "ny": 100,
+      "source_counts": {
+        "area": 64
+      },
+      "vertical_flow_layers": 40,
+      "output_shape": {
+        "situations": 1,
+        "sg": 64,
+        "slices": 9,
+        "nx": 100,
+        "ny": 100,
+        "dx": 10
+      }
+    },
+    {
+      "id": "parallel_concentrated",
+      "particles": 100000,
+      "kind": "point",
+      "sources": 8,
+      "sg": 2,
+      "length": 1200,
+      "flow": 20,
+      "conc": 20,
+      "slices": 1,
+      "tau": 120,
+      "speed": 0.5,
+      "sc": 6,
+      "hot": false,
+      "workers": 4,
+      "nx": 60,
+      "ny": 60,
+      "source_counts": {
+        "point": 8
+      },
+      "vertical_flow_layers": 40,
+      "output_shape": {
+        "situations": 1,
+        "sg": 2,
+        "slices": 1,
+        "nx": 60,
+        "ny": 60,
+        "dx": 20
+      }
+    },
+    {
+      "id": "dense_output_grid_w4",
+      "particles": 3000,
+      "kind": "area",
+      "sources": 64,
+      "sg": 64,
+      "length": 1000,
+      "flow": 40,
+      "conc": 10,
+      "slices": 9,
+      "tau": 30,
+      "speed": 1,
+      "sc": 4,
+      "hot": false,
+      "workers": 4,
+      "nx": 100,
+      "ny": 100,
+      "source_counts": {
+        "area": 64
+      },
+      "vertical_flow_layers": 40,
+      "output_shape": {
+        "situations": 1,
+        "sg": 64,
+        "slices": 9,
+        "nx": 100,
+        "ny": 100,
+        "dx": 10
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "case": "small_point",
+      "repeat": 1,
+      "status": "byte_identical",
+      "members": 2
+    },
+    {
+      "case": "small_point",
+      "repeat": 2,
+      "status": "byte_identical",
+      "members": 2
+    },
+    {
+      "case": "small_point",
+      "repeat": 3,
+      "status": "byte_identical",
+      "members": 2
+    },
+    {
+      "case": "terrain_area",
+      "repeat": 1,
+      "status": "byte_identical",
+      "members": 26
+    },
+    {
+      "case": "terrain_area",
+      "repeat": 2,
+      "status": "byte_identical",
+      "members": 26
+    },
+    {
+      "case": "terrain_area",
+      "repeat": 3,
+      "status": "byte_identical",
+      "members": 26
+    },
+    {
+      "case": "many_sources",
+      "repeat": 1,
+      "status": "byte_identical",
+      "members": 64
+    },
+    {
+      "case": "many_sources",
+      "repeat": 2,
+      "status": "byte_identical",
+      "members": 64
+    },
+    {
+      "case": "many_sources",
+      "repeat": 3,
+      "status": "byte_identical",
+      "members": 64
+    },
+    {
+      "case": "dense_output_grid",
+      "repeat": 1,
+      "status": "byte_identical",
+      "members": 576
+    },
+    {
+      "case": "dense_output_grid",
+      "repeat": 2,
+      "status": "byte_identical",
+      "members": 576
+    },
+    {
+      "case": "dense_output_grid",
+      "repeat": 3,
+      "status": "byte_identical",
+      "members": 576
+    },
+    {
+      "case": "parallel_concentrated",
+      "repeat": 1,
+      "status": "byte_identical",
+      "members": 2
+    },
+    {
+      "case": "parallel_concentrated",
+      "repeat": 2,
+      "status": "byte_identical",
+      "members": 2
+    },
+    {
+      "case": "parallel_concentrated",
+      "repeat": 3,
+      "status": "byte_identical",
+      "members": 2
+    },
+    {
+      "case": "dense_output_grid_w4",
+      "repeat": 1,
+      "status": "byte_identical",
+      "members": 576
+    },
+    {
+      "case": "dense_output_grid_w4",
+      "repeat": 2,
+      "status": "byte_identical",
+      "members": 576
+    },
+    {
+      "case": "dense_output_grid_w4",
+      "repeat": 3,
+      "status": "byte_identical",
+      "members": 576
+    }
+  ],
+  "records": [
+    {
+      "exit_code": 0,
+      "wall_s": 0.39899460000015097,
+      "cpu_s": 0.390625,
+      "memory": {
+        "PeakWorkingSetSize": 56889344,
+        "PeakPagefileUsage": 33042432,
+        "PrivateUsage": 29143040,
+        "WorkingSetSize": 53059584
+      },
+      "memory_samples": 38,
+      "memory_after_exit_api_succeeded": true,
+      "case": "small_point",
+      "variant": "f64",
+      "repeat": 1,
+      "particle_counts": [
+        3000
+      ],
+      "output_values": 200,
+      "nonzero_values": 32,
+      "payload_set_sha256": "f86aaecbf17bbff0068b63f47f8e2e87d779dab11b4ef19c29890c40dfb187b5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.39553460000024643,
+      "cpu_s": 0.375,
+      "memory": {
+        "PeakWorkingSetSize": 56852480,
+        "PeakPagefileUsage": 33005568,
+        "PrivateUsage": 30363648,
+        "WorkingSetSize": 54284288
+      },
+      "memory_samples": 38,
+      "memory_after_exit_api_succeeded": true,
+      "case": "small_point",
+      "variant": "parallel",
+      "repeat": 1,
+      "particle_counts": [
+        3000
+      ],
+      "output_values": 200,
+      "nonzero_values": 32,
+      "payload_set_sha256": "f86aaecbf17bbff0068b63f47f8e2e87d779dab11b4ef19c29890c40dfb187b5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.3892232000007425,
+      "cpu_s": 0.375,
+      "memory": {
+        "PeakWorkingSetSize": 56799232,
+        "PeakPagefileUsage": 32993280,
+        "PrivateUsage": 30416896,
+        "WorkingSetSize": 54235136
+      },
+      "memory_samples": 37,
+      "memory_after_exit_api_succeeded": true,
+      "case": "small_point",
+      "variant": "parallel",
+      "repeat": 2,
+      "particle_counts": [
+        3000
+      ],
+      "output_values": 200,
+      "nonzero_values": 32,
+      "payload_set_sha256": "f86aaecbf17bbff0068b63f47f8e2e87d779dab11b4ef19c29890c40dfb187b5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.3891687000004822,
+      "cpu_s": 0.375,
+      "memory": {
+        "PeakWorkingSetSize": 57028608,
+        "PeakPagefileUsage": 33140736,
+        "PrivateUsage": 30568448,
+        "WorkingSetSize": 54521856
+      },
+      "memory_samples": 37,
+      "memory_after_exit_api_succeeded": true,
+      "case": "small_point",
+      "variant": "f64",
+      "repeat": 2,
+      "particle_counts": [
+        3000
+      ],
+      "output_values": 200,
+      "nonzero_values": 32,
+      "payload_set_sha256": "f86aaecbf17bbff0068b63f47f8e2e87d779dab11b4ef19c29890c40dfb187b5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.3993318000002546,
+      "cpu_s": 0.390625,
+      "memory": {
+        "PeakWorkingSetSize": 56995840,
+        "PeakPagefileUsage": 33173504,
+        "PrivateUsage": 26935296,
+        "WorkingSetSize": 51142656
+      },
+      "memory_samples": 38,
+      "memory_after_exit_api_succeeded": true,
+      "case": "small_point",
+      "variant": "f64",
+      "repeat": 3,
+      "particle_counts": [
+        3000
+      ],
+      "output_values": 200,
+      "nonzero_values": 32,
+      "payload_set_sha256": "f86aaecbf17bbff0068b63f47f8e2e87d779dab11b4ef19c29890c40dfb187b5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.38910410000062257,
+      "cpu_s": 0.375,
+      "memory": {
+        "PeakWorkingSetSize": 57036800,
+        "PeakPagefileUsage": 33275904,
+        "PrivateUsage": 31051776,
+        "WorkingSetSize": 54931456
+      },
+      "memory_samples": 37,
+      "memory_after_exit_api_succeeded": true,
+      "case": "small_point",
+      "variant": "parallel",
+      "repeat": 3,
+      "particle_counts": [
+        3000
+      ],
+      "output_values": 200,
+      "nonzero_values": 32,
+      "payload_set_sha256": "f86aaecbf17bbff0068b63f47f8e2e87d779dab11b4ef19c29890c40dfb187b5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.5794995000005656,
+      "cpu_s": 1.515625,
+      "memory": {
+        "PeakWorkingSetSize": 79011840,
+        "PeakPagefileUsage": 54292480,
+        "PrivateUsage": 53112832,
+        "WorkingSetSize": 77791232
+      },
+      "memory_samples": 151,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "f64",
+      "repeat": 1,
+      "particle_counts": [
+        30004
+      ],
+      "output_values": 93600,
+      "nonzero_values": 3140,
+      "payload_set_sha256": "f5838c43ff9d39dc2451c42e1f28dd15fd60697e68b191c68b6ef462c3391ccc"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.5761946000002354,
+      "cpu_s": 1.546875,
+      "memory": {
+        "PeakWorkingSetSize": 79065088,
+        "PeakPagefileUsage": 54226944,
+        "PrivateUsage": 48250880,
+        "WorkingSetSize": 73965568
+      },
+      "memory_samples": 151,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "parallel",
+      "repeat": 1,
+      "particle_counts": [
+        30004
+      ],
+      "output_values": 93600,
+      "nonzero_values": 3140,
+      "payload_set_sha256": "f5838c43ff9d39dc2451c42e1f28dd15fd60697e68b191c68b6ef462c3391ccc"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.5589319000000614,
+      "cpu_s": 1.546875,
+      "memory": {
+        "PeakWorkingSetSize": 79151104,
+        "PeakPagefileUsage": 54591488,
+        "PrivateUsage": 52641792,
+        "WorkingSetSize": 77185024
+      },
+      "memory_samples": 150,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "parallel",
+      "repeat": 2,
+      "particle_counts": [
+        30004
+      ],
+      "output_values": 93600,
+      "nonzero_values": 3140,
+      "payload_set_sha256": "f5838c43ff9d39dc2451c42e1f28dd15fd60697e68b191c68b6ef462c3391ccc"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.5777753000002122,
+      "cpu_s": 1.546875,
+      "memory": {
+        "PeakWorkingSetSize": 79167488,
+        "PeakPagefileUsage": 54341632,
+        "PrivateUsage": 53993472,
+        "WorkingSetSize": 78766080
+      },
+      "memory_samples": 152,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "f64",
+      "repeat": 2,
+      "particle_counts": [
+        30004
+      ],
+      "output_values": 93600,
+      "nonzero_values": 3140,
+      "payload_set_sha256": "f5838c43ff9d39dc2451c42e1f28dd15fd60697e68b191c68b6ef462c3391ccc"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.5744006000004447,
+      "cpu_s": 1.546875,
+      "memory": {
+        "PeakWorkingSetSize": 78987264,
+        "PeakPagefileUsage": 54202368,
+        "PrivateUsage": 53854208,
+        "WorkingSetSize": 78639104
+      },
+      "memory_samples": 152,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "f64",
+      "repeat": 3,
+      "particle_counts": [
+        30004
+      ],
+      "output_values": 93600,
+      "nonzero_values": 3140,
+      "payload_set_sha256": "f5838c43ff9d39dc2451c42e1f28dd15fd60697e68b191c68b6ef462c3391ccc"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.592022700000598,
+      "cpu_s": 1.546875,
+      "memory": {
+        "PeakWorkingSetSize": 79077376,
+        "PeakPagefileUsage": 54366208,
+        "PrivateUsage": 54022144,
+        "WorkingSetSize": 78716928
+      },
+      "memory_samples": 153,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "parallel",
+      "repeat": 3,
+      "particle_counts": [
+        30004
+      ],
+      "output_values": 93600,
+      "nonzero_values": 3140,
+      "payload_set_sha256": "f5838c43ff9d39dc2451c42e1f28dd15fd60697e68b191c68b6ef462c3391ccc"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.5128389000001334,
+      "cpu_s": 0.5,
+      "memory": {
+        "PeakWorkingSetSize": 61870080,
+        "PeakPagefileUsage": 38117376,
+        "PrivateUsage": 37498880,
+        "WorkingSetSize": 61325312
+      },
+      "memory_samples": 49,
+      "memory_after_exit_api_succeeded": true,
+      "case": "many_sources",
+      "variant": "f64",
+      "repeat": 1,
+      "particle_counts": [
+        19968
+      ],
+      "output_values": 57600,
+      "nonzero_values": 1851,
+      "payload_set_sha256": "5845c5875a5d418509cf2617a44eaf58e3216afd3ee46bf130cf1bc5dbd09889"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.5107747000001837,
+      "cpu_s": 0.5,
+      "memory": {
+        "PeakWorkingSetSize": 61952000,
+        "PeakPagefileUsage": 38199296,
+        "PrivateUsage": 37924864,
+        "WorkingSetSize": 61718528
+      },
+      "memory_samples": 49,
+      "memory_after_exit_api_succeeded": true,
+      "case": "many_sources",
+      "variant": "parallel",
+      "repeat": 1,
+      "particle_counts": [
+        19968
+      ],
+      "output_values": 57600,
+      "nonzero_values": 1851,
+      "payload_set_sha256": "5845c5875a5d418509cf2617a44eaf58e3216afd3ee46bf130cf1bc5dbd09889"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.5014885000000504,
+      "cpu_s": 0.46875,
+      "memory": {
+        "PeakWorkingSetSize": 61935616,
+        "PeakPagefileUsage": 38150144,
+        "PrivateUsage": 35926016,
+        "WorkingSetSize": 59731968
+      },
+      "memory_samples": 48,
+      "memory_after_exit_api_succeeded": true,
+      "case": "many_sources",
+      "variant": "parallel",
+      "repeat": 2,
+      "particle_counts": [
+        19968
+      ],
+      "output_values": 57600,
+      "nonzero_values": 1851,
+      "payload_set_sha256": "5845c5875a5d418509cf2617a44eaf58e3216afd3ee46bf130cf1bc5dbd09889"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.5035336999999345,
+      "cpu_s": 0.5,
+      "memory": {
+        "PeakWorkingSetSize": 61960192,
+        "PeakPagefileUsage": 38125568,
+        "PrivateUsage": 35897344,
+        "WorkingSetSize": 59703296
+      },
+      "memory_samples": 48,
+      "memory_after_exit_api_succeeded": true,
+      "case": "many_sources",
+      "variant": "f64",
+      "repeat": 2,
+      "particle_counts": [
+        19968
+      ],
+      "output_values": 57600,
+      "nonzero_values": 1851,
+      "payload_set_sha256": "5845c5875a5d418509cf2617a44eaf58e3216afd3ee46bf130cf1bc5dbd09889"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.522606900000028,
+      "cpu_s": 0.53125,
+      "memory": {
+        "PeakWorkingSetSize": 61915136,
+        "PeakPagefileUsage": 38133760,
+        "PrivateUsage": 35979264,
+        "WorkingSetSize": 59817984
+      },
+      "memory_samples": 50,
+      "memory_after_exit_api_succeeded": true,
+      "case": "many_sources",
+      "variant": "f64",
+      "repeat": 3,
+      "particle_counts": [
+        19968
+      ],
+      "output_values": 57600,
+      "nonzero_values": 1851,
+      "payload_set_sha256": "5845c5875a5d418509cf2617a44eaf58e3216afd3ee46bf130cf1bc5dbd09889"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.5132087000001775,
+      "cpu_s": 0.484375,
+      "memory": {
+        "PeakWorkingSetSize": 61886464,
+        "PeakPagefileUsage": 38076416,
+        "PrivateUsage": 34037760,
+        "WorkingSetSize": 57888768
+      },
+      "memory_samples": 49,
+      "memory_after_exit_api_succeeded": true,
+      "case": "many_sources",
+      "variant": "parallel",
+      "repeat": 3,
+      "particle_counts": [
+        19968
+      ],
+      "output_values": 57600,
+      "nonzero_values": 1851,
+      "payload_set_sha256": "5845c5875a5d418509cf2617a44eaf58e3216afd3ee46bf130cf1bc5dbd09889"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.088824499999646,
+      "cpu_s": 1.171875,
+      "memory": {
+        "PeakWorkingSetSize": 142364672,
+        "PeakPagefileUsage": 122429440,
+        "PrivateUsage": 120057856,
+        "WorkingSetSize": 139993088
+      },
+      "memory_samples": 104,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid",
+      "variant": "f64",
+      "repeat": 1,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.0808037999995577,
+      "cpu_s": 1.109375,
+      "memory": {
+        "PeakWorkingSetSize": 142438400,
+        "PeakPagefileUsage": 122437632,
+        "PrivateUsage": 121536512,
+        "WorkingSetSize": 141471744
+      },
+      "memory_samples": 103,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid",
+      "variant": "parallel",
+      "repeat": 1,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.9825352999996539,
+      "cpu_s": 1.0,
+      "memory": {
+        "PeakWorkingSetSize": 142618624,
+        "PeakPagefileUsage": 122605568,
+        "PrivateUsage": 121073664,
+        "WorkingSetSize": 141103104
+      },
+      "memory_samples": 94,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid",
+      "variant": "parallel",
+      "repeat": 2,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.9238032000002931,
+      "cpu_s": 0.921875,
+      "memory": {
+        "PeakWorkingSetSize": 142479360,
+        "PeakPagefileUsage": 122503168,
+        "PrivateUsage": 122159104,
+        "WorkingSetSize": 142147584
+      },
+      "memory_samples": 88,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid",
+      "variant": "f64",
+      "repeat": 2,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.9154367999999522,
+      "cpu_s": 0.921875,
+      "memory": {
+        "PeakWorkingSetSize": 142508032,
+        "PeakPagefileUsage": 122494976,
+        "PrivateUsage": 121245696,
+        "WorkingSetSize": 141266944
+      },
+      "memory_samples": 88,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid",
+      "variant": "f64",
+      "repeat": 3,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.9001848999996582,
+      "cpu_s": 0.90625,
+      "memory": {
+        "PeakWorkingSetSize": 142462976,
+        "PeakPagefileUsage": 122482688,
+        "PrivateUsage": 121647104,
+        "WorkingSetSize": 141520896
+      },
+      "memory_samples": 86,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid",
+      "variant": "parallel",
+      "repeat": 3,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.2776433999997607,
+      "cpu_s": 4.265625,
+      "memory": {
+        "PeakWorkingSetSize": 64348160,
+        "PeakPagefileUsage": 43327488,
+        "PrivateUsage": 37543936,
+        "WorkingSetSize": 62730240
+      },
+      "memory_samples": 123,
+      "memory_after_exit_api_succeeded": true,
+      "case": "parallel_concentrated",
+      "variant": "f64",
+      "repeat": 1,
+      "particle_counts": [
+        100000
+      ],
+      "output_values": 7200,
+      "nonzero_values": 1000,
+      "payload_set_sha256": "40ba9e412a4d1f4a88f2d32469b5a040fff3fbf04553350ab482ea99b1be0339"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.2775598000007449,
+      "cpu_s": 4.25,
+      "memory": {
+        "PeakWorkingSetSize": 64421888,
+        "PeakPagefileUsage": 43368448,
+        "PrivateUsage": 41492480,
+        "WorkingSetSize": 62570496
+      },
+      "memory_samples": 123,
+      "memory_after_exit_api_succeeded": true,
+      "case": "parallel_concentrated",
+      "variant": "parallel",
+      "repeat": 1,
+      "particle_counts": [
+        100000
+      ],
+      "output_values": 7200,
+      "nonzero_values": 1000,
+      "payload_set_sha256": "40ba9e412a4d1f4a88f2d32469b5a040fff3fbf04553350ab482ea99b1be0339"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.2994335000003048,
+      "cpu_s": 4.34375,
+      "memory": {
+        "PeakWorkingSetSize": 64577536,
+        "PeakPagefileUsage": 43335680,
+        "PrivateUsage": 39084032,
+        "WorkingSetSize": 63188992
+      },
+      "memory_samples": 125,
+      "memory_after_exit_api_succeeded": true,
+      "case": "parallel_concentrated",
+      "variant": "parallel",
+      "repeat": 2,
+      "particle_counts": [
+        100000
+      ],
+      "output_values": 7200,
+      "nonzero_values": 1000,
+      "payload_set_sha256": "40ba9e412a4d1f4a88f2d32469b5a040fff3fbf04553350ab482ea99b1be0339"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.2890173000005234,
+      "cpu_s": 4.328125,
+      "memory": {
+        "PeakWorkingSetSize": 64401408,
+        "PeakPagefileUsage": 43184128,
+        "PrivateUsage": 42631168,
+        "WorkingSetSize": 63774720
+      },
+      "memory_samples": 124,
+      "memory_after_exit_api_succeeded": true,
+      "case": "parallel_concentrated",
+      "variant": "f64",
+      "repeat": 2,
+      "particle_counts": [
+        100000
+      ],
+      "output_values": 7200,
+      "nonzero_values": 1000,
+      "payload_set_sha256": "40ba9e412a4d1f4a88f2d32469b5a040fff3fbf04553350ab482ea99b1be0339"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.3059377999998105,
+      "cpu_s": 4.34375,
+      "memory": {
+        "PeakWorkingSetSize": 64491520,
+        "PeakPagefileUsage": 43577344,
+        "PrivateUsage": 43507712,
+        "WorkingSetSize": 64479232
+      },
+      "memory_samples": 126,
+      "memory_after_exit_api_succeeded": true,
+      "case": "parallel_concentrated",
+      "variant": "f64",
+      "repeat": 3,
+      "particle_counts": [
+        100000
+      ],
+      "output_values": 7200,
+      "nonzero_values": 1000,
+      "payload_set_sha256": "40ba9e412a4d1f4a88f2d32469b5a040fff3fbf04553350ab482ea99b1be0339"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.339437800000269,
+      "cpu_s": 4.46875,
+      "memory": {
+        "PeakWorkingSetSize": 64458752,
+        "PeakPagefileUsage": 43298816,
+        "PrivateUsage": 40792064,
+        "WorkingSetSize": 62980096
+      },
+      "memory_samples": 129,
+      "memory_after_exit_api_succeeded": true,
+      "case": "parallel_concentrated",
+      "variant": "parallel",
+      "repeat": 3,
+      "particle_counts": [
+        100000
+      ],
+      "output_values": 7200,
+      "nonzero_values": 1000,
+      "payload_set_sha256": "40ba9e412a4d1f4a88f2d32469b5a040fff3fbf04553350ab482ea99b1be0339"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.9780281000003015,
+      "cpu_s": 1.0625,
+      "memory": {
+        "PeakWorkingSetSize": 142471168,
+        "PeakPagefileUsage": 122593280,
+        "PrivateUsage": 122114048,
+        "WorkingSetSize": 141979648
+      },
+      "memory_samples": 94,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid_w4",
+      "variant": "f64",
+      "repeat": 1,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.8366140999996787,
+      "cpu_s": 0.953125,
+      "memory": {
+        "PeakWorkingSetSize": 142548992,
+        "PeakPagefileUsage": 122634240,
+        "PrivateUsage": 120332288,
+        "WorkingSetSize": 140189696
+      },
+      "memory_samples": 80,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid_w4",
+      "variant": "parallel",
+      "repeat": 1,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.9094513999998526,
+      "cpu_s": 0.96875,
+      "memory": {
+        "PeakWorkingSetSize": 142487552,
+        "PeakPagefileUsage": 122482688,
+        "PrivateUsage": 119975936,
+        "WorkingSetSize": 140046336
+      },
+      "memory_samples": 87,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid_w4",
+      "variant": "parallel",
+      "repeat": 2,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.8038934000005611,
+      "cpu_s": 0.90625,
+      "memory": {
+        "PeakWorkingSetSize": 142675968,
+        "PeakPagefileUsage": 122789888,
+        "PrivateUsage": 120913920,
+        "WorkingSetSize": 140795904
+      },
+      "memory_samples": 77,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid_w4",
+      "variant": "f64",
+      "repeat": 2,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 1.012963000000127,
+      "cpu_s": 1.125,
+      "memory": {
+        "PeakWorkingSetSize": 142540800,
+        "PeakPagefileUsage": 122613760,
+        "PrivateUsage": 120524800,
+        "WorkingSetSize": 140500992
+      },
+      "memory_samples": 97,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid_w4",
+      "variant": "f64",
+      "repeat": 3,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 0.8563240000003134,
+      "cpu_s": 1.03125,
+      "memory": {
+        "PeakWorkingSetSize": 142778368,
+        "PeakPagefileUsage": 122826752,
+        "PrivateUsage": 117805056,
+        "WorkingSetSize": 138756096
+      },
+      "memory_samples": 82,
+      "memory_after_exit_api_succeeded": true,
+      "case": "dense_output_grid_w4",
+      "variant": "parallel",
+      "repeat": 3,
+      "particle_counts": [
+        3008
+      ],
+      "output_values": 5760000,
+      "nonzero_values": 34210,
+      "payload_set_sha256": "25bbda580af289b70f3a49de0ada3b19e22f3ee71ea463cf89a06d9211685fe3"
+    }
+  ],
+  "repeat": 3,
+  "limits": [
+    "Cold process times include initialization, JIT and I/O; three repeats do not establish a general full-model speedup.",
+    "One supplementary launch repeated the existing cases because its filter was not applied. Its30passing runs are retained privately and excluded from this36-run report."
+  ],
+  "source_stage": "Before NS=0 guard correction; same transfer loop and same branch selection for these NS>=1 inputs."
+}
