@@ -1,0 +1,11 @@
+--- a/src/Intwind.cs
++++ b/src/Intwind.cs
+@@ -190,7 +190,7 @@
+             {
+                 search = new WindSearch();
+             }
+-            if (search.Index > 0 && float.IsFinite(Height) && Height == search.Height)
++            if (Height == search.Height && search.Index > 0 && float.IsFinite(Height))
+             {
+                 return search.Index;
+             }

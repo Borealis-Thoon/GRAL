@@ -1,0 +1,880 @@
+{
+  "status": "pass",
+  "base": "891225b2f9dbbcda7f5ef6e9ef6db65e64845108",
+  "pr69_head": "7c23fe92803a019c1535af7f02fcc6b2e940f2ee",
+  "builds": {
+    "baseline": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "current": {
+      "warnings": 0,
+      "errors": 0
+    },
+    "height_first": {
+      "warnings": 0,
+      "errors": 0
+    }
+  },
+  "main_executions": 36,
+  "timed_executions": 30,
+  "warmups": 6,
+  "cases": [
+    {
+      "id": "terrain_area",
+      "terrain": true,
+      "particles": 100000,
+      "kind": "area",
+      "sources": 26,
+      "sg": 26,
+      "length": 1200,
+      "flow": 20,
+      "conc": 20,
+      "slices": 1,
+      "tau": 120,
+      "speed": 0.5,
+      "sc": 6,
+      "hot": false,
+      "workers": 1
+    },
+    {
+      "id": "terrain_hot_points",
+      "terrain": true,
+      "particles": 100000,
+      "kind": "point",
+      "sources": 26,
+      "sg": 26,
+      "length": 1200,
+      "flow": 20,
+      "conc": 20,
+      "slices": 9,
+      "tau": 120,
+      "speed": 2.5,
+      "sc": 2,
+      "hot": true,
+      "workers": 1
+    }
+  ],
+  "summaries": [
+    {
+      "case": "terrain_area",
+      "variant": "baseline",
+      "median_wall_s": 4.473880999999892,
+      "wall_s": [
+        4.716202499999781,
+        4.647104800000307,
+        4.385679099999834,
+        4.473880999999892,
+        4.318674600001032
+      ],
+      "median_cpu_s": 4.390625,
+      "median_peak_working_bytes": 76185600,
+      "percent_change_vs_baseline": 0.0,
+      "payload_pairs": 130
+    },
+    {
+      "case": "terrain_area",
+      "variant": "current",
+      "median_wall_s": 4.533836900000097,
+      "wall_s": [
+        4.489449099999547,
+        4.533836900000097,
+        4.481733499998882,
+        4.560796800000389,
+        4.538143699999637
+      ],
+      "median_cpu_s": 4.46875,
+      "median_peak_working_bytes": 77770752,
+      "percent_change_vs_baseline": 1.3401317558559667,
+      "payload_pairs": 130
+    },
+    {
+      "case": "terrain_area",
+      "variant": "height_first",
+      "median_wall_s": 4.517951900001208,
+      "wall_s": [
+        4.464186399998653,
+        4.762377399998513,
+        4.438138000001345,
+        4.799210600000151,
+        4.517951900001208
+      ],
+      "median_cpu_s": 4.5,
+      "median_peak_working_bytes": 77791232,
+      "percent_change_vs_baseline": 0.9850709037928507,
+      "payload_pairs": 130
+    },
+    {
+      "case": "terrain_hot_points",
+      "variant": "baseline",
+      "median_wall_s": 2.4938089000006585,
+      "wall_s": [
+        2.493353300000308,
+        2.4938089000006585,
+        2.4915650000002643,
+        2.4947422000004735,
+        2.516634100000374
+      ],
+      "median_cpu_s": 2.46875,
+      "median_peak_working_bytes": 80134144,
+      "percent_change_vs_baseline": 0.0,
+      "payload_pairs": 1170
+    },
+    {
+      "case": "terrain_hot_points",
+      "variant": "current",
+      "median_wall_s": 2.547371299999213,
+      "wall_s": [
+        2.5658514000006107,
+        2.547371299999213,
+        2.5260162000013224,
+        2.5535425999987638,
+        2.5440221000008023
+      ],
+      "median_cpu_s": 2.515625,
+      "median_peak_working_bytes": 80429056,
+      "percent_change_vs_baseline": 2.147814934758663,
+      "payload_pairs": 1170
+    },
+    {
+      "case": "terrain_hot_points",
+      "variant": "height_first",
+      "median_wall_s": 2.5397855999999592,
+      "wall_s": [
+        2.574260999999751,
+        2.5225296999997227,
+        2.5270953999988706,
+        2.5397855999999592,
+        2.5427725999998074
+      ],
+      "median_cpu_s": 2.5,
+      "median_peak_working_bytes": 80375808,
+      "percent_change_vs_baseline": 1.8436336480829985,
+      "payload_pairs": 1170
+    }
+  ],
+  "records": [
+    {
+      "exit_code": 0,
+      "wall_s": 5.297271200000978,
+      "cpu_s": 5.015625,
+      "memory": {
+        "PeakWorkingSetSize": 76242944,
+        "PeakPagefileUsage": 52109312,
+        "PrivateUsage": 46104576,
+        "WorkingSetSize": 71524352
+      },
+      "memory_samples": 509,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "baseline",
+      "repeat": 0,
+      "measured": false,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.8172233999994205,
+      "cpu_s": 4.59375,
+      "memory": {
+        "PeakWorkingSetSize": 77819904,
+        "PeakPagefileUsage": 53612544,
+        "PrivateUsage": 52367360,
+        "WorkingSetSize": 76550144
+      },
+      "memory_samples": 461,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "current",
+      "repeat": 0,
+      "measured": false,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.735485899998821,
+      "cpu_s": 4.484375,
+      "memory": {
+        "PeakWorkingSetSize": 78004224,
+        "PeakPagefileUsage": 53866496,
+        "PrivateUsage": 51363840,
+        "WorkingSetSize": 75517952
+      },
+      "memory_samples": 455,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "height_first",
+      "repeat": 0,
+      "measured": false,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.489449099999547,
+      "cpu_s": 4.390625,
+      "memory": {
+        "PeakWorkingSetSize": 77852672,
+        "PeakPagefileUsage": 53809152,
+        "PrivateUsage": 52002816,
+        "WorkingSetSize": 76066816
+      },
+      "memory_samples": 432,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "current",
+      "repeat": 1,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.464186399998653,
+      "cpu_s": 4.40625,
+      "memory": {
+        "PeakWorkingSetSize": 77791232,
+        "PeakPagefileUsage": 53776384,
+        "PrivateUsage": 51064832,
+        "WorkingSetSize": 75091968
+      },
+      "memory_samples": 430,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "height_first",
+      "repeat": 1,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.716202499999781,
+      "cpu_s": 4.65625,
+      "memory": {
+        "PeakWorkingSetSize": 76345344,
+        "PeakPagefileUsage": 52264960,
+        "PrivateUsage": 49758208,
+        "WorkingSetSize": 73834496
+      },
+      "memory_samples": 453,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "baseline",
+      "repeat": 1,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.762377399998513,
+      "cpu_s": 4.6875,
+      "memory": {
+        "PeakWorkingSetSize": 77840384,
+        "PeakPagefileUsage": 53907456,
+        "PrivateUsage": 52404224,
+        "WorkingSetSize": 76365824
+      },
+      "memory_samples": 457,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "height_first",
+      "repeat": 2,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.647104800000307,
+      "cpu_s": 4.671875,
+      "memory": {
+        "PeakWorkingSetSize": 76107776,
+        "PeakPagefileUsage": 52011008,
+        "PrivateUsage": 49434624,
+        "WorkingSetSize": 73502720
+      },
+      "memory_samples": 447,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "baseline",
+      "repeat": 2,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.533836900000097,
+      "cpu_s": 4.5,
+      "memory": {
+        "PeakWorkingSetSize": 77770752,
+        "PeakPagefileUsage": 53747712,
+        "PrivateUsage": 52711424,
+        "WorkingSetSize": 76718080
+      },
+      "memory_samples": 436,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "current",
+      "repeat": 2,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.385679099999834,
+      "cpu_s": 4.3125,
+      "memory": {
+        "PeakWorkingSetSize": 76156928,
+        "PeakPagefileUsage": 52080640,
+        "PrivateUsage": 50622464,
+        "WorkingSetSize": 74752000
+      },
+      "memory_samples": 425,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "baseline",
+      "repeat": 3,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.481733499998882,
+      "cpu_s": 4.4375,
+      "memory": {
+        "PeakWorkingSetSize": 77754368,
+        "PeakPagefileUsage": 53686272,
+        "PrivateUsage": 48394240,
+        "WorkingSetSize": 72511488
+      },
+      "memory_samples": 432,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "current",
+      "repeat": 3,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.438138000001345,
+      "cpu_s": 4.375,
+      "memory": {
+        "PeakWorkingSetSize": 77930496,
+        "PeakPagefileUsage": 53882880,
+        "PrivateUsage": 52633600,
+        "WorkingSetSize": 76623872
+      },
+      "memory_samples": 428,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "height_first",
+      "repeat": 3,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.560796800000389,
+      "cpu_s": 4.53125,
+      "memory": {
+        "PeakWorkingSetSize": 77770752,
+        "PeakPagefileUsage": 53731328,
+        "PrivateUsage": 53731328,
+        "WorkingSetSize": 77705216
+      },
+      "memory_samples": 439,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "current",
+      "repeat": 4,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.799210600000151,
+      "cpu_s": 4.765625,
+      "memory": {
+        "PeakWorkingSetSize": 77606912,
+        "PeakPagefileUsage": 53579776,
+        "PrivateUsage": 47378432,
+        "WorkingSetSize": 71389184
+      },
+      "memory_samples": 463,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "height_first",
+      "repeat": 4,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.473880999999892,
+      "cpu_s": 4.390625,
+      "memory": {
+        "PeakWorkingSetSize": 76185600,
+        "PeakPagefileUsage": 52158464,
+        "PrivateUsage": 51326976,
+        "WorkingSetSize": 75296768
+      },
+      "memory_samples": 431,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "baseline",
+      "repeat": 4,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.517951900001208,
+      "cpu_s": 4.5,
+      "memory": {
+        "PeakWorkingSetSize": 77713408,
+        "PeakPagefileUsage": 53776384,
+        "PrivateUsage": 49250304,
+        "WorkingSetSize": 73232384
+      },
+      "memory_samples": 435,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "height_first",
+      "repeat": 5,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.318674600001032,
+      "cpu_s": 4.3125,
+      "memory": {
+        "PeakWorkingSetSize": 76247040,
+        "PeakPagefileUsage": 52248576,
+        "PrivateUsage": 45461504,
+        "WorkingSetSize": 70533120
+      },
+      "memory_samples": 416,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "baseline",
+      "repeat": 5,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 4.538143699999637,
+      "cpu_s": 4.46875,
+      "memory": {
+        "PeakWorkingSetSize": 77758464,
+        "PeakPagefileUsage": 53755904,
+        "PrivateUsage": 51183616,
+        "WorkingSetSize": 75182080
+      },
+      "memory_samples": 438,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_area",
+      "variant": "current",
+      "repeat": 5,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 26,
+      "payload_manifest_sha256": "bc7428ceaea2809ff247d6e27a130d91c9deee57e94e64e5132427ea2953a266"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.5259774000005564,
+      "cpu_s": 2.484375,
+      "memory": {
+        "PeakWorkingSetSize": 79859712,
+        "PeakPagefileUsage": 57618432,
+        "PrivateUsage": 54452224,
+        "WorkingSetSize": 79351808
+      },
+      "memory_samples": 244,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "baseline",
+      "repeat": 0,
+      "measured": false,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.5459085000002233,
+      "cpu_s": 2.515625,
+      "memory": {
+        "PeakWorkingSetSize": 80543744,
+        "PeakPagefileUsage": 59359232,
+        "PrivateUsage": 56717312,
+        "WorkingSetSize": 80302080
+      },
+      "memory_samples": 247,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "current",
+      "repeat": 0,
+      "measured": false,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.545549200000096,
+      "cpu_s": 2.5,
+      "memory": {
+        "PeakWorkingSetSize": 80334848,
+        "PeakPagefileUsage": 59297792,
+        "PrivateUsage": 58257408,
+        "WorkingSetSize": 79855616
+      },
+      "memory_samples": 244,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "height_first",
+      "repeat": 0,
+      "measured": false,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.5658514000006107,
+      "cpu_s": 2.546875,
+      "memory": {
+        "PeakWorkingSetSize": 79679488,
+        "PeakPagefileUsage": 59432960,
+        "PrivateUsage": 54255616,
+        "WorkingSetSize": 79187968
+      },
+      "memory_samples": 246,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "current",
+      "repeat": 1,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.574260999999751,
+      "cpu_s": 2.53125,
+      "memory": {
+        "PeakWorkingSetSize": 80351232,
+        "PeakPagefileUsage": 59285504,
+        "PrivateUsage": 58220544,
+        "WorkingSetSize": 79855616
+      },
+      "memory_samples": 248,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "height_first",
+      "repeat": 1,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.493353300000308,
+      "cpu_s": 2.46875,
+      "memory": {
+        "PeakWorkingSetSize": 80134144,
+        "PeakPagefileUsage": 57774080,
+        "PrivateUsage": 54841344,
+        "WorkingSetSize": 79626240
+      },
+      "memory_samples": 241,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "baseline",
+      "repeat": 1,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.5225296999997227,
+      "cpu_s": 2.53125,
+      "memory": {
+        "PeakWorkingSetSize": 79482880,
+        "PeakPagefileUsage": 59252736,
+        "PrivateUsage": 54067200,
+        "WorkingSetSize": 79482880
+      },
+      "memory_samples": 244,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "height_first",
+      "repeat": 2,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.4938089000006585,
+      "cpu_s": 2.46875,
+      "memory": {
+        "PeakWorkingSetSize": 80343040,
+        "PeakPagefileUsage": 57700352,
+        "PrivateUsage": 55193600,
+        "WorkingSetSize": 80334848
+      },
+      "memory_samples": 241,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "baseline",
+      "repeat": 2,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.547371299999213,
+      "cpu_s": 2.5,
+      "memory": {
+        "PeakWorkingSetSize": 80429056,
+        "PeakPagefileUsage": 59273216,
+        "PrivateUsage": 56561664,
+        "WorkingSetSize": 79945728
+      },
+      "memory_samples": 245,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "current",
+      "repeat": 2,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.4915650000002643,
+      "cpu_s": 2.453125,
+      "memory": {
+        "PeakWorkingSetSize": 79986688,
+        "PeakPagefileUsage": 57614336,
+        "PrivateUsage": 54755328,
+        "WorkingSetSize": 79474688
+      },
+      "memory_samples": 241,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "baseline",
+      "repeat": 3,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.5260162000013224,
+      "cpu_s": 2.484375,
+      "memory": {
+        "PeakWorkingSetSize": 80506880,
+        "PeakPagefileUsage": 59437056,
+        "PrivateUsage": 55259136,
+        "WorkingSetSize": 79986688
+      },
+      "memory_samples": 244,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "current",
+      "repeat": 3,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.5270953999988706,
+      "cpu_s": 2.484375,
+      "memory": {
+        "PeakWorkingSetSize": 80642048,
+        "PeakPagefileUsage": 59518976,
+        "PrivateUsage": 57016320,
+        "WorkingSetSize": 80162816
+      },
+      "memory_samples": 246,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "height_first",
+      "repeat": 3,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.5535425999987638,
+      "cpu_s": 2.515625,
+      "memory": {
+        "PeakWorkingSetSize": 80560128,
+        "PeakPagefileUsage": 59281408,
+        "PrivateUsage": 56569856,
+        "WorkingSetSize": 80064512
+      },
+      "memory_samples": 246,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "current",
+      "repeat": 4,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.5397855999999592,
+      "cpu_s": 2.5,
+      "memory": {
+        "PeakWorkingSetSize": 80375808,
+        "PeakPagefileUsage": 59531264,
+        "PrivateUsage": 59330560,
+        "WorkingSetSize": 79880192
+      },
+      "memory_samples": 245,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "height_first",
+      "repeat": 4,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.4947422000004735,
+      "cpu_s": 2.453125,
+      "memory": {
+        "PeakWorkingSetSize": 80076800,
+        "PeakPagefileUsage": 57856000,
+        "PrivateUsage": 54759424,
+        "WorkingSetSize": 79568896
+      },
+      "memory_samples": 241,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "baseline",
+      "repeat": 4,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.5427725999998074,
+      "cpu_s": 2.46875,
+      "memory": {
+        "PeakWorkingSetSize": 80461824,
+        "PeakPagefileUsage": 59297792,
+        "PrivateUsage": 58576896,
+        "WorkingSetSize": 79966208
+      },
+      "memory_samples": 245,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "height_first",
+      "repeat": 5,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.516634100000374,
+      "cpu_s": 2.5,
+      "memory": {
+        "PeakWorkingSetSize": 80601088,
+        "PeakPagefileUsage": 57954304,
+        "PrivateUsage": 55275520,
+        "WorkingSetSize": 80592896
+      },
+      "memory_samples": 242,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "baseline",
+      "repeat": 5,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    },
+    {
+      "exit_code": 0,
+      "wall_s": 2.5440221000008023,
+      "cpu_s": 2.53125,
+      "memory": {
+        "PeakWorkingSetSize": 79609856,
+        "PeakPagefileUsage": 59252736,
+        "PrivateUsage": 54140928,
+        "WorkingSetSize": 79609856
+      },
+      "memory_samples": 246,
+      "memory_after_exit_api_succeeded": true,
+      "case": "terrain_hot_points",
+      "variant": "current",
+      "repeat": 5,
+      "measured": true,
+      "actual_particles": 99996,
+      "payloads": 234,
+      "payload_manifest_sha256": "7ae3f098add1bf7760ca440a2653b7879c0786d3c96dc43ede5cee6c389c5ad5"
+    }
+  ],
+  "elapsed_s": 133.4766466000001,
+  "method": "One worker, fixed seeds, 26 sources/groups, 100000 requested particles, two prescribed terrain fields. Each case has one excluded warmup per variant, then five interleaved repetitions. Whole-process wall time includes initialization and output. The one-line height-first alternative is evaluated independently of all other PRs."
+}

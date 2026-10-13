@@ -1,0 +1,46 @@
+{
+  "residual": {
+    "eligible": 300,
+    "target": 20,
+    "workers": 4,
+    "before_scans": 6,
+    "after_scans": 1,
+    "before_releases": 300,
+    "after_releases": 300,
+    "main_runs": 16,
+    "payload_pairs": 140,
+    "exact_split_count_cases": 225
+  },
+  "precision": {
+    "case": "parallel_concentrated",
+    "particles": 100000,
+    "workers": 4,
+    "repeat_comparisons": 4,
+    "cells": 7200,
+    "before_max_changed_cells": 15,
+    "after_max_changed_cells": 0,
+    "max_relative_cell_difference_percent": 0.0001865543596330142,
+    "memory": [
+      {
+        "name": "reported_500m_shape",
+        "nx": 114,
+        "ny": 82,
+        "slices": 9,
+        "source_groups": 108,
+        "payload_bytes": 75769344,
+        "allocated_bytes": 78891400,
+        "jagged_and_closure_overhead_bytes": 3122056
+      },
+      {
+        "name": "same_domain_250m_shape",
+        "nx": 228,
+        "ny": 164,
+        "slices": 9,
+        "source_groups": 108,
+        "payload_bytes": 296887680,
+        "allocated_bytes": 309114328,
+        "jagged_and_closure_overhead_bytes": 12226648
+      }
+    ]
+  }
+}

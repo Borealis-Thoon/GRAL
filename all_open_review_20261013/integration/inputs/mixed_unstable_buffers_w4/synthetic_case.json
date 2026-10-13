@@ -1,0 +1,81 @@
+{
+  "id": "mixed_unstable_buffers_w4",
+  "dx": 10,
+  "budget": 3000,
+  "kind": "point",
+  "sources": 2,
+  "groups": 2,
+  "pattern": "largeoff",
+  "workers": 4,
+  "ratio": 99,
+  "duration": 30,
+  "situations": 5,
+  "wind_m_s": 0.25,
+  "stability": 2,
+  "weather": [
+    [
+      9,
+      0.25,
+      2
+    ],
+    [
+      9,
+      0.25,
+      2
+    ],
+    [
+      9,
+      0.25,
+      2
+    ],
+    [
+      9,
+      0.25,
+      2
+    ],
+    [
+      9,
+      0.25,
+      2
+    ]
+  ],
+  "emission_factors": [
+    [
+      1.0,
+      1.0
+    ],
+    [
+      0,
+      1.0
+    ],
+    [
+      0,
+      1.0
+    ],
+    [
+      0,
+      1.0
+    ],
+    [
+      0,
+      1.0
+    ]
+  ],
+  "nominal_rates_kg_h": [
+    99.0,
+    1.0
+  ],
+  "source_counts": {
+    "point": 2
+  },
+  "expected_fresh_mass_kg": [
+    0.825,
+    0.041666666666666664
+  ],
+  "domain_m": [
+    0,
+    200,
+    0,
+    200
+  ]
+}

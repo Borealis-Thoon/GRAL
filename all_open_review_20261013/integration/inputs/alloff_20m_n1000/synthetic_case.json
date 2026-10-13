@@ -1,0 +1,81 @@
+{
+  "id": "alloff_20m_n1000",
+  "dx": 20,
+  "budget": 1000,
+  "kind": "point",
+  "sources": 2,
+  "groups": 2,
+  "pattern": "alloff",
+  "workers": 1,
+  "ratio": 1,
+  "duration": 30,
+  "situations": 5,
+  "wind_m_s": 0.25,
+  "stability": 6,
+  "weather": [
+    [
+      9,
+      0.25,
+      6
+    ],
+    [
+      9,
+      0.25,
+      6
+    ],
+    [
+      9,
+      0.25,
+      6
+    ],
+    [
+      9,
+      0.25,
+      6
+    ],
+    [
+      9,
+      0.25,
+      6
+    ]
+  ],
+  "emission_factors": [
+    [
+      1.0,
+      1.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0
+    ]
+  ],
+  "nominal_rates_kg_h": [
+    1.0,
+    1.0
+  ],
+  "source_counts": {
+    "point": 2
+  },
+  "expected_fresh_mass_kg": [
+    0.008333333333333333,
+    0.008333333333333333
+  ],
+  "domain_m": [
+    0,
+    200,
+    0,
+    200
+  ]
+}

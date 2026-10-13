@@ -1,0 +1,1101 @@
+--- a/src/CleanUp.cs
++++ b/src/CleanUp.cs
+@@ -32,6 +32,10 @@
+             }
+             StretchFlexible = null;
+             Conz3d = null;
++            Conz3dDouble = null;
++            WorkerConcentrations = null;
++            WorkerConcentrationSlots = null;
++            WorkerConcentrationGroups = null;
+             MeasurementHeight = null;
+             XKO = null;
+             YKO = null;
+--- a/src/Intwind.cs
++++ b/src/Intwind.cs
+@@ -31,6 +31,14 @@
+         [SkipLocalsInit]
+         public static (float, float, float, int) IntWindCalculate(int IndexI, int IndexJ, float AHint, double xcoord, double ycoord, float zcoord)
+         {
++            WindSearch search = default;
++            return IntWindCalculate(IndexI, IndexJ, AHint, xcoord, ycoord, zcoord, ref search);
++        }
++
++        [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
++        [SkipLocalsInit]
++        internal static (float, float, float, int) IntWindCalculate(int IndexI, int IndexJ, float AHint, double xcoord, double ycoord, float zcoord, ref WindSearch search)
++        {
+             float DXK = Program.DXK;
+             float DYK = Program.DYK;
+             float UXint = 0;
+@@ -41,7 +49,7 @@
+             if (Program.Topo == Consts.TerrainAvailable)
+             {
+                 float f1 = zcoord - Program.AHMIN;
+-                IndexK = BinarySearch(f1); //19.05.25 Ku
++                IndexK = BinarySearch(f1, ref search); //19.05.25 Ku
+ 
+                 float u1 = Program.UK[IndexI][IndexJ][IndexK];
+                 float u2 = Program.UK[IndexI + 1][IndexJ][IndexK];
+@@ -154,6 +162,43 @@
+         }
+ 
+ 
++        internal struct WindSearch
++        {
++            internal float[] Levels;
++            internal int Count;
++            internal float Height;
++            internal int Index;
++
++            public WindSearch()
++            {
++                Levels = Program.HOKART;
++                Count = Program.NKK;
++                Height = 0;
++                Index = 0;
++            }
++        }
++
++        [MethodImpl(MethodImplOptions.AggressiveInlining | MethodImplOptions.AggressiveOptimization)]
++        internal static int BinarySearch(float Height, ref WindSearch search)
++        {
++            // Vertical grids are fixed during particle tracking; each particle starts with a fresh search.
++            if (search.Levels == null)
++            {
++                return BinarySearch(Height);
++            }
++            if (search.Levels != Program.HOKART || search.Count != Program.NKK)
++            {
++                search = new WindSearch();
++            }
++            if (search.Index > 0 && float.IsFinite(Height) && Height == search.Height)
++            {
++                return search.Index;
++            }
++            search.Index = BinarySearch(Height);
++            search.Height = Height;
++            return search.Index;
++        }
++
+         /// <summary>
+         /// Find the index of a value in HOKART[] that exceeds the value Height - 19.05.25 Ku
+         /// </summary>
+--- a/src/Program.cs
++++ b/src/Program.cs
+@@ -711,6 +711,9 @@
+                         int cellNr = NII * NJJ;
+                         DispTimeSum = TAUS;
+                         // start the calculation for transient particle from all cells
++                        ParticleManagement.SetResidualParticleMass();
++                        ZeitschleifeNonSteadyState.PlanResidual();
++                        if (CancelToken.IsCancellationRequested) goto FinishGral;
+                         ParallelTransientParticleDriver(0, cellNr);
+                     } // non-steady-state particles
+                     if (CancelToken.IsCancellationRequested)
+@@ -727,6 +730,20 @@
+                     {
+                         goto FinishGral;
+                     }
++                    long nonFiniteParticles = Interlocked.Exchange(ref NonFiniteParticleCount, 0);
++                    if (nonFiniteParticles > 0)
++                    {
++                        Info = $"Rejected {nonFiniteParticles} non-finite particle states in weather situation {IWET}.";
++                        Console.WriteLine(Info);
++                        ProgramWriters.LogfileGralCoreWrite(Info);
++                    }
++                    long nonFiniteResidualWrites = Interlocked.Exchange(ref TransientConcentration.NonFiniteResidualWriteCount, 0);
++                    if (nonFiniteResidualWrites > 0)
++                    {
++                        Info = $"Skipped {nonFiniteResidualWrites} non-finite residual writes in weather situation {IWET}.";
++                        Console.WriteLine(Info);
++                        ProgramWriters.LogfileGralCoreWrite(Info);
++                    }
+                     // Wait until conz4d file is written
+                     if (ThreadWriteConz4dFile != null) // if Thread has been started -> wait until GFF--WriteThread has been finished
+                     {
+@@ -745,6 +762,8 @@
+                         ProgramWriters.LogfileGralCoreInfo(ResultFileZipped, GffFiles);
+                         FirstLoop = false;
+                     }
++
++                    TransferConcentrations();
+ 
+                     //Correction of concentration volume in each cell and for each gridded receptor 
+                     VolumeCorrection();
+--- a/src/ProgramDeclarations.cs
++++ b/src/ProgramDeclarations.cs
+@@ -253,6 +253,7 @@
+         ///2D concentration separated into source groups and horizontal slices
+         ///</summary>
+         public static float[][][][] Conz3d = CreateArray<float[][][]>(1, () => CreateArray<float[][]>(1, () => CreateArray<float[]>(1, () => new float[1])));
++        public static double[][][][] Conz3dDouble = CreateArray<double[][][]>(1, () => CreateArray<double[][]>(1, () => CreateArray<double[]>(1, () => new double[1])));
+         ///<summary>
+         ///Height of u,v measurements
+         ///</summary>
+@@ -1243,7 +1244,7 @@
+         ///<summary>
+         /// decay rate for bioaerosols for each source group
+         ///</summary>
+-        public static readonly double[] DecayRate = new double[102];
++        public static readonly double[] DecayRate = new double[byte.MaxValue + 1];
+         ///<summary>
+         /// Pollutant name
+         ///</summary>
+--- a/src/ProgramFunctions.cs
++++ b/src/ProgramFunctions.cs
+@@ -23,6 +23,19 @@
+ {
+     partial class Program
+     {
++        internal static long NonFiniteParticleCount;
++
++        [MethodImpl(MethodImplOptions.AggressiveInlining)]
++        internal static bool ParticleStateIsFinite(double x, double y, float z, double mass, float dt)
++        {
++            if (double.IsFinite(x) && double.IsFinite(y) && float.IsFinite(z) &&
++                double.IsFinite(mass) && float.IsFinite(dt))
++            {
++                return true;
++            }
++            Interlocked.Increment(ref NonFiniteParticleCount);
++            return false;
++        }
+         /// <summary>
+         /// Generate the vertical grid for GRAL calculations for flat terrain
+         /// </summary>
+@@ -499,6 +512,7 @@
+             NY2 = NY + 2;
+             NZ2 = NZ + 2;
+             Conz3d = CreateArray<float[][][]>(NXL + 2, () => CreateArray<float[][]>(NYL + 2, () => CreateArray<float[]>(NS, () => new float[Program.SourceGroups.Count])));
++            Conz3dDouble = CreateArray<double[][][]>(NXL + 2, () => CreateArray<double[][]>(NYL + 2, () => CreateArray<double[]>(NS, () => new double[Program.SourceGroups.Count])));
+             XKO = new double[NX2];
+             YKO = new double[NY2];
+             ZKO = new double[NZ2];
+@@ -1010,6 +1024,43 @@
+                 //write conz4d File 
+                 TreadWriteConz4dFile = new Thread(() => WriteClass.WriteTransientConcentration(IWET));
+                 TreadWriteConz4dFile.Start(); // start writing thread
++            }
++        }
++
++        /// <summary>
++        /// Transfer double precision concentrations to the output array
++        /// </summary>
++        private static void TransferConcentrations()
++        {
++            void TransferColumn(int i)
++            {
++                for (int j = 0; j < Conz3dDouble[i].Length; j++)
++                {
++                    for (int II = 0; II < Conz3dDouble[i][j].Length; II++)
++                    {
++                        double[] conz3d_L = Conz3dDouble[i][j][II];
++                        for (int iq = 0; iq < conz3d_L.Length; iq++)
++                        {
++                            Conz3d[i][j][II][iq] = (float)conz3d_L[iq];
++                            conz3d_L[iq] = 0;
++                        }
++                    }
++                }
++            }
++
++            long values = (long)Conz3dDouble.Length * Conz3dDouble[0].Length *
++                NS * SourceGroups.Count;
++            // Keep small transfers and single-worker runs serial.
++            if (pOptions.MaxDegreeOfParallelism == 1 || values < 128 * 1024)
++            {
++                for (int i = 0; i < Conz3dDouble.Length; i++)
++                {
++                    TransferColumn(i);
++                }
++            }
++            else
++            {
++                Parallel.For(0, Conz3dDouble.Length, pOptions, TransferColumn);
+             }
+         }
+ 
+@@ -1170,6 +1221,7 @@
+         [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+         private static void ParallelParticleDriver(int inclusiveLowerBound, int exclusiveUpperBound)
+         {
++            bool useWorkerConcentrations = PrepareWorkerConcentrations();
+             if (Program.UseFixedRndSeedVal)
+             {
+                 // Custom ligthweight parallel loop for the release of particles from all sources
+@@ -1177,11 +1229,12 @@
+                 {
+                     int remainingWorkItems = Program.pOptions.MaxDegreeOfParallelism;
+                     int nextIteration = inclusiveLowerBound;
+-                    int percent10 = (int)(Program.NTEILMAX * 0.1F);
++                    int percent10 = Math.Max(1, (int)(Program.NTEILMAX * 0.1F));
+ 
+                     // Create each of the work items up to MaxDegreeOfParallelism
+                     for (int p = 0; p < Program.pOptions.MaxDegreeOfParallelism; p++)
+                     {
++                        double[] workerConcentration = useWorkerConcentrations ? WorkerConcentrations[p] : null;
+                         ThreadPool.QueueUserWorkItem(delegate
+                         {
+                             try
+@@ -1190,7 +1243,7 @@
+                                 while ((index = Interlocked.Increment(ref nextIteration) - 1) < exclusiveUpperBound)
+                                 {
+                                     // start the particle driver for the particle No. index
+-                                    Zeitschleife.Calculate(index);
++                                    Zeitschleife.CalculateWithWorkerBuffer(index, workerConcentration);
+                                     // show progress bar
+                                     if (index % percent10 == 0 && index > 0)
+                                     {
+@@ -1211,6 +1264,10 @@
+                     }
+                     // Wait for all threads to complete
+                     manResetEvent.WaitOne();
++                    if (useWorkerConcentrations)
++                    {
++                        MergeWorkerConcentrations();
++                    }
+                 }
+             }
+             else
+--- a/src/ReadAreaSources.cs
++++ b/src/ReadAreaSources.cs
+@@ -28,7 +28,7 @@
+ 
+             double totalemission = 0;
+             int countrealsources = 0;
+-            double[] emission_sourcegroup = new double[101];
++            double[] emission_sourcegroup = new double[Program.SourceGroups.Count];
+ 
+             AQ.Add(new SourceData());
+ 
+--- a/src/ReadEmissionTimeSeries.cs
++++ b/src/ReadEmissionTimeSeries.cs
+@@ -39,7 +39,6 @@
+                     {
+                         int lineCount = File.ReadLines("emissions_timeseries.txt").Count();
+                         Program.EmFacTimeSeries = new float[lineCount, Program.SourceGroups.Count];
+-                        double[] mean = new double[Program.SourceGroups.Count];
+                         
+                         using (StreamReader sr = new StreamReader("emissions_timeseries.txt"))
+                         {
+@@ -50,6 +49,7 @@
+                             
+                             int SG_Time_Series_Count = Math.Max(text10.Length - 2, 1); // number of Source groups in emissions_timeseries.txt
+                             int[] SG_Time_Series = new int[SG_Time_Series_Count];
++                            double[] mean = new double[SG_Time_Series_Count];
+  
+                             for (int ii = 2; ii < text10.Length; ii++)
+                             {
+@@ -72,6 +72,7 @@
+                                 for (int n = 0; n < SG_Time_Series_Count; n++) // check each source group defined in emissions_timeseries.txt
+                                 {
+                                     int SG_internal = Program.Get_Internal_SG_Number(SG_Time_Series[n]); // get the internal SG number
++                                    if (SG_internal < 0) continue;
+ 
+                                     if (SG_internal >= 0 && (n + 2) < text10.Length) // otherwise this source group in emissions_timeseries.txt does not exist internal in GRAL
+                                     {
+@@ -91,6 +92,7 @@
+                             ProgramWriters.LogfileGralCoreWrite(info);
+                             for (int n = 0; n < SG_Time_Series_Count; n++) // check each source group defined in emissions_timeseries.txt
+                             {
++                                if (Program.Get_Internal_SG_Number(SG_Time_Series[n]) < 0) continue;
+                                 info = "  Source group: " + SG_Time_Series[n].ToString() + " Mean emission factor: " + Math.Round(mean[n] / i, 2);
+                                 Console.WriteLine(info);
+                                 ProgramWriters.LogfileGralCoreWrite(info);
+--- a/src/ReadLinieSources.cs
++++ b/src/ReadLinieSources.cs
+@@ -28,7 +28,7 @@
+ 
+             double totalemission = 0;
+             int countrealsources = 0;
+-            double[] emission_sourcegroup = new double[101];
++            double[] emission_sourcegroup = new double[Program.SourceGroups.Count];
+ 
+             Deposition Dep = new Deposition();
+ 
+--- a/src/ReadPointSources.cs
++++ b/src/ReadPointSources.cs
+@@ -31,7 +31,7 @@
+ 
+             double totalemission = 0;
+             int countrealsources = 0;
+-            double[] emission_sourcegroup = new double[101];
++            double[] emission_sourcegroup = new double[Program.SourceGroups.Count];
+ 
+             PQ.Add(new SourceData());
+ 
+--- a/src/ReadPollutant.cs
++++ b/src/ReadPollutant.cs
+@@ -102,7 +102,7 @@
+                                         int sg_number = 0;
+                                         if (int.TryParse(_values[0], out sg_number))
+                                         {
+-                                            if (sg_number > 0 && sg_number < 100)
++                                            if (sg_number > 0 && sg_number < Program.DecayRate.Length)
+                                             {
+                                                 try
+                                                 {
+--- a/src/ReadTunnelportals.cs
++++ b/src/ReadTunnelportals.cs
+@@ -29,7 +29,7 @@
+ 
+             double totalemission = 0;
+             int countrealsources = 0;
+-            double[] emission_sourcegroup = new double[101];
++            double[] emission_sourcegroup = new double[Program.SourceGroups.Count];
+ 
+             TQ.Add(new SourceData());
+ 
+--- a/src/TeilchenAufteilung.cs
++++ b/src/TeilchenAufteilung.cs
+@@ -161,6 +161,47 @@
+             return Sum_of_Particles;
+         }
+ 
++        public static double ParticleMassActive;
++
++        // Use the nominal reference when all sources are switched off.
++        public static void SetResidualParticleMass()
++        {
++            double emission = ActiveEmission(Program.PS_ER, Program.PS_ER_Dep, Program.PS_Mode, Program.PS_SG, Program.PS_Count)
++                + ActiveEmission(Program.LS_ER, Program.LS_ER_Dep, Program.LS_Mode, Program.LS_SG, Program.LS_Count)
++                + ActiveEmission(Program.TS_ER, Program.TS_ER_Dep, Program.TS_Mode, Program.TS_SG, Program.TS_Count)
++                + ActiveEmission(Program.AS_ER, Program.AS_ER_Dep, Program.AS_Mode, Program.AS_SG, Program.AS_Count);
++            if (emission > 0)
++            {
++                ParticleMassActive = emission / 3600 / Program.TPS * 1000000000 / Program.GridVolume / Program.TAUS;
++            }
++            else
++            {
++                ParticleMassActive = Program.ParticleMassMean;
++            }
++        }
++
++        private static double ActiveEmission(double[] rates, float[] depositionRates, byte[] modes, byte[] groups, int count)
++        {
++            double emission = 0;
++            for (int i = 1; i <= count; i++)
++            {
++                if (rates[i] <= 0 || (modes[i] == Consts.DepoOnly && depositionRates[i] <= 0))
++                {
++                    continue;
++                }
++                int group = Program.SourceGroups.IndexOf(groups[i]);
++                if (Program.EmissionTimeseriesExist && Program.IWET > 0 &&
++                    Program.IWET <= Program.EmFacTimeSeries.GetUpperBound(0) &&
++                    group >= 0 && group <= Program.EmFacTimeSeries.GetUpperBound(1) &&
++                    Program.EmFacTimeSeries[Program.IWET - 1, group] <= 0)
++                {
++                    continue;
++                }
++                emission += rates[i];
++            }
++            return emission;
++        }
++
+         private static int Set_Min_Particles_PS_TS(int source_count)
+         {
+             int Min_Particles = 10;
+--- a/src/Transient_Concentration.cs
++++ b/src/Transient_Concentration.cs
+@@ -10,12 +10,15 @@
+ ///</remarks>
+ #endregion
+ 
++using System;
+ using System.Runtime.CompilerServices;
++using System.Threading;
+ 
+ namespace GRAL_2001
+ {
+     internal class TransientConcentration
+     {
++        internal static long NonFiniteResidualWriteCount;
+ 
+         /// <summary>
+         ///Store the particle concentration in the transient grid
+@@ -33,14 +36,33 @@
+         {
+             if (reflexion_flag == 0)
+             {
+-                int IndexK3d = BinarySearchTransient(zcoord_nteil - AHint);
++                float height = zcoord_nteil - AHint;
++                if (!double.IsFinite(xsi) || !double.IsFinite(eta) ||
++                    !float.IsFinite(height) || !double.IsFinite(masse))
++                {
++                    Interlocked.Increment(ref NonFiniteResidualWriteCount);
++                    return;
++                }
++                int IndexK3d = BinarySearchTransient(height);
+                 int IndexI3d = (int)(xsi / Program.DXK) + 1;
+                 int IndexJ3d = (int)(eta / Program.DYK) + 1;
+ 
++                float concentration = (float)(masse * Program.GridVolume * Program.TAUS / (Area_cart * Program.DZK_Trans[IndexK3d]));
++                if (!float.IsFinite(concentration))
++                {
++                    Interlocked.Increment(ref NonFiniteResidualWriteCount);
++                    return;
++                }
+                 float[] conz5d_L = Program.Conz5d[IndexI3d][IndexJ3d][IndexK3d];
+                 lock (conz5d_L.SyncRoot)
+                 {
+-                    conz5d_L[SG_nteil] += (float)(masse * Program.GridVolume * Program.TAUS / (Area_cart * Program.DZK_Trans[IndexK3d]));
++                    float total = conz5d_L[SG_nteil] + concentration;
++                    if (!float.IsFinite(total))
++                    {
++                        Interlocked.Increment(ref NonFiniteResidualWriteCount);
++                        return;
++                    }
++                    conz5d_L[SG_nteil] = total;
+                 }
+             }
+         }
+@@ -61,14 +83,33 @@
+         {
+             if (reflexion_flag == 0)
+             {
+-                int IndexK3d = BinarySearchTransient(zcoord_nteil - AHint);
++                float height = zcoord_nteil - AHint;
++                if (!double.IsFinite(xsi) || !double.IsFinite(eta) ||
++                    !float.IsFinite(height) || !double.IsFinite(mass_real))
++                {
++                    Interlocked.Increment(ref NonFiniteResidualWriteCount);
++                    return;
++                }
++                int IndexK3d = BinarySearchTransient(height);
+                 int IndexI3d = (int)(xsi / Program.DXK) + 1;
+                 int IndexJ3d = (int)(eta / Program.DYK) + 1;
+ 
++                float concentration = (float)(mass_real * Program.TAUS / (Area_cart * Program.DZK_Trans[IndexK3d]));
++                if (!float.IsFinite(concentration))
++                {
++                    Interlocked.Increment(ref NonFiniteResidualWriteCount);
++                    return;
++                }
+                 float[] conz5d_L = Program.Conz5d[IndexI3d][IndexJ3d][IndexK3d];
+                 lock (conz5d_L.SyncRoot)
+                 {
+-                    conz5d_L[SG_nteil] += (float)(mass_real * Program.TAUS / (Area_cart * Program.DZK_Trans[IndexK3d]));
++                    float total = conz5d_L[SG_nteil] + concentration;
++                    if (!float.IsFinite(total))
++                    {
++                        Interlocked.Increment(ref NonFiniteResidualWriteCount);
++                        return;
++                    }
++                    conz5d_L[SG_nteil] = total;
+                 }
+             }
+         }
+--- /dev/null
++++ b/src/WorkerConcentrations.cs
+@@ -0,0 +1,139 @@
++#region Copyright
++///<remarks>
++/// <Graz Lagrangian Particle Dispersion Model>
++/// Copyright (C) [2019]  [Dietmar Oettl, Markus Kuntner]
++/// This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by
++/// the Free Software Foundation version 3 of the License
++/// This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
++/// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
++/// You should have received a copy of the GNU General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.
++///</remarks>
++#endregion
++
++using System;
++using System.Collections.Generic;
++using System.Threading.Tasks;
++
++namespace GRAL_2001
++{
++    partial class Program
++    {
++        // Set GRAL_WORKER_CONCENTRATION_MB to 1..256 to enable worker buffers.
++        private static readonly long WorkerConcentrationBudget = ReadWorkerConcentrationBudget();
++        private static double[][] WorkerConcentrations;
++        internal static int[] WorkerConcentrationSlots;
++        private static int[] WorkerConcentrationGroups;
++        internal static int WorkerConcentrationNy, WorkerConcentrationNs, WorkerConcentrationSlotCount;
++
++        private static long ReadWorkerConcentrationBudget()
++        {
++            return int.TryParse(Environment.GetEnvironmentVariable("GRAL_WORKER_CONCENTRATION_MB"), out int mb) && mb > 0
++                ? Math.Min(mb, 256) * 1024L * 1024 : 0;
++        }
++
++        private static bool PrepareWorkerConcentrations()
++        {
++            if (WorkerConcentrationBudget == 0)
++            {
++                return false;
++            }
++            int workers = pOptions.MaxDegreeOfParallelism;
++            if (!UseFixedRndSeedVal || workers <= 1)
++            {
++                ReportWorkerConcentrations("shared (driver)", workers, 0, 0);
++                return false;
++            }
++            bool[] active = new bool[byte.MaxValue + 1];
++            void Mark(int[] particles, byte[] groups, int count)
++            {
++                for (int i = 1; i <= count; i++)
++                {
++                    if (particles[i] > 0)
++                    {
++                        active[groups[i]] = true;
++                    }
++                }
++            }
++            Mark(PS_PartNumb, PS_SG, PS_Count);
++            Mark(LS_PartNumb, LS_SG, LS_Count);
++            Mark(TS_PartNumb, TS_SG, TS_Count);
++            Mark(AS_PartNumb, AS_SG, AS_Count);
++            int[] slots = new int[SourceGroups.Count];
++            Array.Fill(slots, -1);
++            var groups = new List<int>();
++            for (int q = 0; q < SourceGroups.Count; q++)
++            {
++                if ((uint)SourceGroups[q] < active.Length && active[SourceGroups[q]])
++                {
++                    slots[q] = groups.Count;
++                    groups.Add(q);
++                }
++            }
++            int ny = Conz3dDouble[0].Length, ns = Conz3dDouble[0][0].Length;
++            long length = (long)Conz3dDouble.Length * ny * ns * groups.Count;
++            long bytes = length * sizeof(double) * workers;
++            if (groups.Count == 0 || bytes > WorkerConcentrationBudget)
++            {
++                ReportWorkerConcentrations("shared (budget or no groups)", workers, groups.Count, bytes);
++                return false;
++            }
++            // Reuse the first allocation. Falling back avoids overlapping old and new buffers.
++            if (WorkerConcentrations != null &&
++                (WorkerConcentrations.Length < workers || WorkerConcentrations[0].LongLength < length))
++            {
++                ReportWorkerConcentrations("shared (capacity)", workers, groups.Count, bytes);
++                return false;
++            }
++            if (WorkerConcentrations == null)
++            {
++                WorkerConcentrations = CreateArray<double[]>(workers, () => new double[length]);
++            }
++            WorkerConcentrationSlots = slots;
++            WorkerConcentrationGroups = groups.ToArray();
++            WorkerConcentrationNy = ny;
++            WorkerConcentrationNs = ns;
++            WorkerConcentrationSlotCount = groups.Count;
++            ReportWorkerConcentrations("enabled", workers, groups.Count, bytes);
++            return true;
++        }
++
++        private static void MergeWorkerConcentrations()
++        {
++            int workers = pOptions.MaxDegreeOfParallelism;
++            int ny = WorkerConcentrationNy, ns = WorkerConcentrationNs, count = WorkerConcentrationSlotCount;
++            Parallel.For(0, Conz3dDouble.Length, pOptions, i =>
++            {
++                for (int j = 0; j < ny; j++)
++                {
++                    for (int slice = 0; slice < ns; slice++)
++                    {
++                        double[] target = Conz3dDouble[i][j][slice];
++                        int start = ((i * ny + j) * ns + slice) * count;
++                        for (int slot = 0; slot < count; slot++)
++                        {
++                            int q = WorkerConcentrationGroups[slot];
++                            for (int worker = 0; worker < workers; worker++)
++                            {
++                                double value = WorkerConcentrations[worker][start + slot];
++                                if (value != 0)
++                                {
++                                    target[q] += value;
++                                    WorkerConcentrations[worker][start + slot] = 0;
++                                }
++                            }
++                        }
++                    }
++                }
++            });
++        }
++
++        private static void ReportWorkerConcentrations(string status, int workers, int groups, long required)
++        {
++            long reserved = WorkerConcentrations == null ? 0 :
++                WorkerConcentrations.LongLength * WorkerConcentrations[0].LongLength * sizeof(double);
++            string message = $"Worker concentration buffers: {status}; workers={workers}; groups={groups}; required={required}; reserved={reserved}; limit={WorkerConcentrationBudget} bytes";
++            Console.WriteLine(message);
++            ProgramWriters.LogfileGralCoreWrite(message);
++        }
++    }
++}
+--- a/src/Zeitschleife.cs
++++ b/src/Zeitschleife.cs
+@@ -40,6 +40,12 @@
+         /// </remarks>
+         [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+         public static void Calculate(int nteil)
++        {
++            CalculateWithWorkerBuffer(nteil, null);
++        }
++
++        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
++        internal static void CalculateWithWorkerBuffer(int nteil, double[] workerConcentration)
+         {
+             //random number generator seeds
+             int rnd = (Environment.TickCount + nteil) & Int32.MaxValue;
+@@ -125,12 +131,17 @@
+                 return;
+             }
+ 
++            int workerSlot = workerConcentration == null ? -1 : Program.WorkerConcentrationSlots[SG_nteil];
++            int workerNy = Program.WorkerConcentrationNy, workerNs = Program.WorkerConcentrationNs;
++            int workerSlots = Program.WorkerConcentrationSlotCount;
++
+             int SourceType = Program.SourceType[nteil]; // sourcetype
+             float blh = Program.BdLayHeight;
++            float cachedObLength = float.NaN, cachedUstern = float.NaN, cachedVariance = 0;
+             int IKOOAGRAL = Program.IKOOAGRAL;
+             int JKOOAGRAL = Program.JKOOAGRAL;
+ 
+-            Span<int> kko = new int[Program.NS];
++            Span<int> kko = Program.NS <= 512 ? stackalloc int[Program.NS] : new int[Program.NS];
+             // Small receptor sets need no per-particle heap allocation; cap stack use at 2 KiB.
+             int receptorCount = Program.ReceptorNumber == 0 ? 0 : Program.ReceptorNumber + 1;
+             Span<double> ReceptorConcentration = receptorCount <= 256
+@@ -153,6 +164,11 @@
+             int timestep_number = 0;         // counter for the time-steps LOG-output
+ 
+             double decay_rate = Program.DecayRate[Program.ParticleSG[nteil]]; // decay rate for real source group number of this source
++
++            if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, 0.1F))
++            {
++                goto REMOVE_PARTICLE;
++            }
+ 
+             //for transient simulations dispersion time needs to be equally distributed from zero to TAUS
+             float tgesamt = Program.DispTimeSum;
+@@ -177,6 +193,11 @@
+                         goto REMOVE_PARTICLE;
+                     }
+                 }
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, 0.1F))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 //try
+                 if (Deposition_type < Consts.DepoOnly) // compute concentrations for this particle
+                 {
+@@ -256,8 +277,9 @@
+ 
+             //wind-field interpolation
+             float UXint = 0, UYint = 0, UZint = 0;
++            WindSearch windSearch = topo == Consts.TerrainAvailable ? new WindSearch() : default;
+             int IndexK = 1;
+-            (UXint, UYint, UZint, IndexK) = IntWindCalculate(FFCellX, FFCellY, AHint, xcoord_nteil, ycoord_nteil, zcoord_nteil);
++            (UXint, UYint, UZint, IndexK) = IntWindCalculate(FFCellX, FFCellY, AHint, xcoord_nteil, ycoord_nteil, zcoord_nteil, ref windSearch);
+             float windge = MathF.Max(0.1F, MathF.Sqrt(Program.Pow2(UXint) + Program.Pow2(UYint)));
+ 
+             //variables tunpa needs to be defined even if not used
+@@ -543,6 +565,11 @@
+         MOVE_FORWARD:
+             while (timestep_number <= Max_Loops)
+             {
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 ++timestep_number;
+                 double xcoord_nteil_Prev = xcoord_nteil;
+                 double ycoord_nteil_Prev = ycoord_nteil;
+@@ -560,7 +587,7 @@
+                 }
+ 
+                 //interpolate wind field
+-                (UXint, UYint, UZint, IndexK) = IntWindCalculate(FFCellX, FFCellY, AHint, xcoord_nteil, ycoord_nteil, zcoord_nteil);
++                (UXint, UYint, UZint, IndexK) = IntWindCalculate(FFCellX, FFCellY, AHint, xcoord_nteil, ycoord_nteil, zcoord_nteil, ref windSearch);
+                 windge = MathF.Max(0.01F, MathF.Sqrt(Program.Pow2(UXint) + Program.Pow2(UYint)));
+ 
+                 //particles below the surface or buildings are removed
+@@ -629,7 +656,13 @@
+                     }
+                     else
+                     {
+-                        varw = Program.Pow2(Ustern) * Program.Pow2(1.15F + 0.1F * MathF.Pow(blh / (-ObLength), 0.67F)) * Program.Pow2(Program.StdDeviationW);
++                        if (ObLength != cachedObLength || Ustern != cachedUstern)
++                        {
++                            cachedVariance = Program.Pow2(Ustern) * Program.Pow2(1.15F + 0.1F * MathF.Pow(blh / (-ObLength), 0.67F)) * Program.Pow2(Program.StdDeviationW);
++                            cachedObLength = ObLength;
++                            cachedUstern = Ustern;
++                        }
++                        varw = cachedVariance;
+                     }
+                     varw2 = Program.Pow2(varw);
+ 
+@@ -680,6 +713,11 @@
+                     idt = (float)Math.Min(4, idt);
+                     idt = (float)Program.fl_max(0.1F, idt);
+                      */
++                }
++
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
+                 }
+ 
+                 float dummyterm = curt - Program.Pow2(skew) / varw - varw2;
+@@ -873,6 +911,11 @@
+                     zcoord_nteil -= vsed * idt;
+                 }
+ 
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 //control dispersion time of particles
+                 auszeit += idt;
+                 if (ISTATIONAER == Consts.TransientMode)
+@@ -1111,6 +1154,11 @@
+                     Math.Clamp(idt, 0.05F, 0.5F);
+ 
+                     //idt = (float)Math.Min(Program.GralDx / (tunpa + 0.05F) * 0.5F, 0.5);
++                    if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                    {
++                        goto REMOVE_PARTICLE;
++                    }
++
+                     float tunpao = tunpa;
+ 
+                     //dispersion time of each particle
+@@ -1224,6 +1272,11 @@
+                     ycoord_nteil = ytun + yneu * tuncos + Program.yturb[nteil];
+                      */
+ 
++                    if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                    {
++                        goto REMOVE_PARTICLE;
++                    }
++
+                     //coordinate transformation towards model grid
+                     xsi = xcoord_nteil - IKOOAGRAL;
+                     eta = ycoord_nteil - JKOOAGRAL;
+@@ -1341,7 +1394,7 @@
+                         if (Program.BuildingsExist == true)
+                         {
+                             IndexKOld = IndexK;
+-                            IndexK = BinarySearch(zcoord_nteil - Program.AHMIN); //19.05.25 Ku
++                            IndexK = BinarySearch(zcoord_nteil - Program.AHMIN, ref windSearch); //19.05.25 Ku
+ 
+                             if ((IndexK <= Program.KKART[FFCellX][FFCellY]) && (Program.CUTK[FFCellX][FFCellY] > 0))
+                             {
+@@ -1518,6 +1571,11 @@
+                 int back = 1;
+                 while (back == 1)
+                 {
++                    if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                    {
++                        goto REMOVE_PARTICLE;
++                    }
++
+                     //coordinate transformation towards model grid
+                     xsi = xcoord_nteil - IKOOAGRAL;
+                     eta = ycoord_nteil - JKOOAGRAL;
+@@ -1610,7 +1668,7 @@
+                     if (Program.BuildingsExist == true || topo == Consts.TerrainAvailable)
+                     {
+                         int IndexKOld = IndexK;
+-                        IndexK = BinarySearch(zcoord_nteil - Program.AHMIN); //19.05.25 Ku
++                        IndexK = BinarySearch(zcoord_nteil - Program.AHMIN, ref windSearch); //19.05.25 Ku
+ 
+                         // Particle below building or terrain
+                         if (IndexK <= Program.KKART[FFCellX][FFCellY])
+@@ -1952,6 +2010,12 @@
+ 
+             MOVE_TO_CONCENTRATIONCALCULATION:
+ 
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
++
+                 //coordinate indices
+                 int iko = (int)(xsi * ConcGridXRez) + 1;
+                 int jko = (int)(eta * ConcGridYRez) + 1;
+@@ -2013,6 +2077,11 @@
+                     masse *= Math.Exp(-decay_rate * idt);
+                 }
+ 
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 // compute Wet deposition
+                 if (Program.WetDeposition == true && Program.WetDepoRW != 0)
+                 {
+@@ -2024,6 +2093,11 @@
+                         epsilonW_Masse = masse;
+                         ex = true;
+                     }
++                    if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, epsilonW_Masse, idt))
++                    {
++                        goto REMOVE_PARTICLE;
++                    }
++
+                     masse -= epsilonW_Masse;
+ 
+                     if (!Program.WetDopoDropDrift) // default deposition on the position of the particle
+@@ -2175,11 +2249,18 @@
+                     {
+                         if ((kko[II] == 0) && (reflexion_flag == Consts.ParticleNotReflected))
+                         {
+-                            float[] conz3d_L = Program.Conz3d[iko][jko][II];
+                             double conc = masse * idt;
+-                            lock (conz3d_L)
+-                            {
+-                                conz3d_L[SG_nteil] += (float)conc;
++                            if (workerSlot >= 0)
++                            {
++                                workerConcentration[((iko * workerNy + jko) * workerNs + II) * workerSlots + workerSlot] += conc;
++                            }
++                            else
++                            {
++                                double[] conz3d_L = Program.Conz3dDouble[iko][jko][II];
++                                lock (conz3d_L)
++                                {
++                                    conz3d_L[SG_nteil] += conc;
++                                }
+                             }
+                         }
+                     }
+--- a/src/Zeitschleife_nonsteadystate.cs
++++ b/src/Zeitschleife_nonsteadystate.cs
+@@ -41,9 +41,14 @@
+             double Vol_ratio = Program.DXK * Program.DYK * Program.DZK_Trans[k] / Program.GridVolume; // volume of this transient grid cell
+             double masse = TransConcentration * Vol_ratio / Program.TAUS;     //mass related to the concentration grid
+             
++            if (!double.IsFinite(masse))
++            {
++                Interlocked.Increment(ref Program.NonFiniteParticleCount);
++                return;
++            }
++
+             // Split summed transient particles; limit the count before converting to Int32.
+-            int transParticlesSplit = (int)Math.Min(100000,
+-                Math.Floor(Math.Floor(masse / Program.ParticleMassMean) / 10) + 1);
++            int transParticlesSplit = ResidualSplitCount(masse);
+ 
+             if (transParticlesSplit <= 1)
+             {
+@@ -57,6 +62,56 @@
+                 {
+                     ParticleDriver(i, j, k, SG, transConcSplit, p);
+                 }
++            }
++        }
++
++        private static double residualSplitK = 10;
++
++        private static int ResidualSplitCount(double masse)
++        {
++            double split = Math.Floor(Math.Floor(masse / ParticleManagement.ParticleMassActive) / residualSplitK) + 1;
++            return (int)Math.Min(100000, split > 1 ? split : 1);
++        }
++
++        // Six adjustments limit work toward the fresh-particle budget; this is not a hard cap.
++        public static void PlanResidual()
++        {
++            if (Program.CancelToken.IsCancellationRequested) return;
++            residualSplitK = 10;
++            double budget = Program.TAUS * Program.TPS;
++            if (budget <= 0 || ParticleManagement.ParticleMassActive <= 0)
++            {
++                return;
++            }
++            for (int it = 0; it < 6; it++)
++            {
++                long total = 0, entries = 0;
++                System.Threading.Tasks.Parallel.For(1, Program.NII + 1, Program.pOptions, i =>
++                {
++                    if (Program.CancelToken.IsCancellationRequested) return;
++                    long local = 0, localEntries = 0;
++                    for (int j = 1; j <= Program.NJJ; j++)
++                    {
++                        for (int k = 1; k <= Program.NKK_Transient; k++)
++                        {
++                            double volume = Program.DXK * Program.DYK * Program.DZK_Trans[k] / Program.GridVolume;
++                            float[] concentrations = Program.Conz4d[i][j][k];
++                            for (int group = 0; group < Program.SourceGroups.Count; group++)
++                            {
++                                if (concentrations[group] >= Program.TransConcThreshold)
++                                {
++                                    local += ResidualSplitCount(concentrations[group] * volume / Program.TAUS);
++                                    localEntries++;
++                                }
++                            }
++                        }
++                    }
++                    Interlocked.Add(ref total, local);
++                    Interlocked.Add(ref entries, localEntries);
++                });
++                if (Program.CancelToken.IsCancellationRequested) return;
++                if (total <= budget || total == entries) break;
++                residualSplitK *= Math.Max(1.05, total / budget);
+             }
+         }
+ 
+@@ -146,6 +201,7 @@
+             int IFQ = Program.TS_Count;
+             //Program.Sourcetype[0] = 3; 
+             float blh = Program.BdLayHeight;
++            float cachedObLength = float.NaN, cachedUstern = float.NaN, cachedVariance = 0;
+             int IKOOAGRAL = Program.IKOOAGRAL;
+             int JKOOAGRAL = Program.JKOOAGRAL;
+ 
+@@ -184,6 +240,12 @@
+             //decay rate
+             double decay_rate = Program.DecayRate[Program.SourceGroups[SG]]; // decay rate for real source group number of this source
+ 
++            if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, 0.1F) ||
++                !Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, mass_real, 0.1F))
++            {
++                goto REMOVE_PARTICLE;
++            }
++
+             //cell-indices of particles moving in the microscale flow field
+             double xsi = xcoord_nteil - IKOOAGRAL;
+             double eta = ycoord_nteil - JKOOAGRAL;
+@@ -239,8 +301,9 @@
+ 
+             //wind-field interpolation
+             float UXint = 0, UYint = 0, UZint = 0;
++            Zeitschleife.WindSearch windSearch = topo == Consts.TerrainAvailable ? new Zeitschleife.WindSearch() : default;
+             int IndexK = 1;
+-            (UXint, UYint, UZint, IndexK) = Zeitschleife.IntWindCalculate(FFCellX, FFCellY, AHint, xcoord_nteil, ycoord_nteil, zcoord_nteil);
++            (UXint, UYint, UZint, IndexK) = Zeitschleife.IntWindCalculate(FFCellX, FFCellY, AHint, xcoord_nteil, ycoord_nteil, zcoord_nteil, ref windSearch);
+ 
+             float windge = MathF.Sqrt(Program.Pow2(UXint) + Program.Pow2(UYint));
+             if (windge < 0.01F)
+@@ -313,6 +376,11 @@
+             //for (int izeit = 1; izeit <= 100000000; izeit++)
+             while (timestep_number <= Max_Loops)
+             {
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 ++timestep_number;
+                 double xcoord_nteil_Prev = xcoord_nteil;
+                 double ycoord_nteil_Prev = ycoord_nteil;
+@@ -330,7 +398,7 @@
+                 }
+ 
+                 //interpolate wind field
+-                (UXint, UYint, UZint, IndexK) = Zeitschleife.IntWindCalculate(FFCellX, FFCellY, AHint, xcoord_nteil, ycoord_nteil, zcoord_nteil);
++                (UXint, UYint, UZint, IndexK) = Zeitschleife.IntWindCalculate(FFCellX, FFCellY, AHint, xcoord_nteil, ycoord_nteil, zcoord_nteil, ref windSearch);
+                 windge = MathF.Sqrt(Program.Pow2(UXint) + Program.Pow2(UYint));
+                 if (windge == 0)
+                 {
+@@ -399,7 +467,13 @@
+                     }
+                     else
+                     {
+-                        varw = Program.Pow2(Ustern) * Program.Pow2(1.15F + 0.1F * MathF.Pow(blh / (-ObLength), 0.67F)) * Program.Pow2(Program.StdDeviationW);
++                        if (ObLength != cachedObLength || Ustern != cachedUstern)
++                        {
++                            cachedVariance = Program.Pow2(Ustern) * Program.Pow2(1.15F + 0.1F * MathF.Pow(blh / (-ObLength), 0.67F)) * Program.Pow2(Program.StdDeviationW);
++                            cachedObLength = ObLength;
++                            cachedUstern = Ustern;
++                        }
++                        varw = cachedVariance;
+                     }
+                     varw2 = Program.Pow2(varw);
+ 
+@@ -433,6 +507,11 @@
+                 }
+ 
+                 Math.Clamp(idt, 0.1F, 4F);
++
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
+ 
+                 //control dispersion time of particles
+                 auszeit += idt;
+@@ -620,6 +699,11 @@
+                 int back = 1;
+                 while (back == 1)
+                 {
++                    if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                    {
++                        goto REMOVE_PARTICLE;
++                    }
++
+                     //coordinate transformation towards model grid
+                     xsi = xcoord_nteil - IKOOAGRAL;
+                     eta = ycoord_nteil - JKOOAGRAL;
+@@ -663,7 +747,7 @@
+                     if (Program.BuildingsExist == true || topo == Consts.TerrainAvailable)
+                     {
+                         int IndexKOld = IndexK;
+-                        IndexK = Zeitschleife.BinarySearch(zcoord_nteil - Program.AHMIN); //19.05.25 Ku
++                        IndexK = Zeitschleife.BinarySearch(zcoord_nteil - Program.AHMIN, ref windSearch); //19.05.25 Ku
+ 
+                         // Particle below building or terrain
+                         if (IndexK <= Program.KKART[FFCellX][FFCellY])
+@@ -984,6 +1068,11 @@
+                     }
+                 }
+ 
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 //coordinate indices
+                 int iko = (int)(xsi * ConcGridXRez) + 1;
+                 int jko = (int)(eta * ConcGridYRez) + 1;
+@@ -1055,6 +1144,11 @@
+                     masse *= Math.Exp(-decay_rate * idt);
+                 }
+ 
++                if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, masse, idt))
++                {
++                    goto REMOVE_PARTICLE;
++                }
++
+                 // compute Wet deposition
+                 if (Program.WetDeposition == true && Program.WetDepoRW != 0)
+                 {
+@@ -1065,6 +1159,11 @@
+                     {
+                         epsilonW_Masse = masse;
+                         ex = true; // masse <= 0!
++                    }
++
++                    if (!Program.ParticleStateIsFinite(xcoord_nteil, ycoord_nteil, zcoord_nteil, epsilonW_Masse, idt))
++                    {
++                        goto REMOVE_PARTICLE;
+                     }
+ 
+                     masse -= epsilonW_Masse;
+@@ -1215,11 +1314,11 @@
+                     {
+                         if ((kko[II] == 0) && (reflexion_flag == Consts.ParticleNotReflected))
+                         {
+-                            float[] conz3d_L = Program.Conz3d[iko][jko][II];
++                            double[] conz3d_L = Program.Conz3dDouble[iko][jko][II];
+                             double conc = masse * idt;
+                             lock (conz3d_L)
+                             {
+-                                conz3d_L[SG_nteil] += (float)conc;
++                                conz3d_L[SG_nteil] += conc;
+                             }
+                         }
+                     }

@@ -1,0 +1,247 @@
+{
+  "reviewed_prs": [
+    62,
+    63,
+    64,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75
+  ],
+  "upstream": "891225b2f9dbbcda7f5ef6e9ef6db65e64845108",
+  "source_amendment": {
+    "pr": 63,
+    "before": "370084ba3d933e8cf444b33af93a34db41ba91fe",
+    "head": "4f7e7415da141af8900eeb785b269550b12bb3b2",
+    "branch": "codex/residual-adaptive-target-20261012",
+    "delta_numstat": "5\t3\tsrc/Zeitschleife_nonsteadystate.cs",
+    "delta_chars": 383,
+    "pushed": true
+  },
+  "findings": {
+    "residual_precision": [
+      {
+        "id": "R63-01",
+        "pr": 63,
+        "priority": "P2",
+        "type": "implementation",
+        "problem": "When every eligible entry already receives one particle and the total exceeds the budget, the planner scans the field six times without changing any release count.",
+        "resolution": "Count eligible entries in the existing loop and stop when total == entries.",
+        "status": "fixed locally and tested",
+        "source": "src/Zeitschleife_nonsteadystate.cs:82-107",
+        "added_lines": 5,
+        "removed_lines": 3,
+        "validation": "225 count-equivalence cases, 229 checks per variant; 16 Main runs, 140 identical paired concentration payloads; five strict builds including timing fixture."
+      },
+      {
+        "id": "R62-01",
+        "pr": 62,
+        "priority": "P2",
+        "type": "design tradeoff",
+        "problem": "Removing a strong inactive source from the reference can multiply release work for its retained material. More paths alone do not prove higher concentration accuracy.",
+        "resolution": "Retain measured 976 / 52975 / 11281 release comparison, clarify sampling impact, ask maintainer to choose nominal-reference planner or optional activity-aware policy.",
+        "status": "explained; default policy unchanged pending maintainer preference"
+      },
+      {
+        "id": "R64-01",
+        "pr": 64,
+        "priority": "P2",
+        "type": "presentation",
+        "problem": "Binary Same/Different tiles emphasize repeat differences without displaying the size of the affected portion of the field.",
+        "resolution": "New figure shows maximum changed cells (15 of 7200 versus zero), 0.000187% maximum relative difference, and measured array allocations.",
+        "status": "new PNG/SVG inspected"
+      },
+      {
+        "id": "R64-02",
+        "pr": 64,
+        "priority": "P2",
+        "type": "prose and alternatives",
+        "problem": "Long duplicated integration paragraphs in body and reply distract from the maintainer memory/default-precision question. An older linked runtime figure also still names the internal optimization label.",
+        "resolution": "Shorten body and edit existing reply. Remove old runtime-figure link, keep application size and measured memory context, and offer float-default/selectable double versus default double.",
+        "status": "replacement drafts ready"
+      },
+      {
+        "id": "R63-02",
+        "pr": 63,
+        "priority": "P3",
+        "type": "visualization",
+        "problem": "Existing figure emphasizes the previously unresolved planning cost even after the floor exit is implemented.",
+        "resolution": "Replace with six-to-one full scans and 300 unchanged releases, using exact planner-fixture output.",
+        "status": "new PNG/SVG inspected"
+      },
+      {
+        "id": "R63-03",
+        "pr": 63,
+        "priority": "P3",
+        "type": "performance",
+        "problem": "Entry counting adds work to the ordinary one-scan path.",
+        "resolution": "Measured 1M-entry planner cases with seven paired samples after warmup. Added 0.005-0.088 ms in one-scan cases; floor path 82.8-83.3% shorter. No full-engine speedup claim.",
+        "status": "measured and documented"
+      }
+    ],
+    "guards_storage": {
+      "status": "complete",
+      "prs": [
+        66,
+        67,
+        68,
+        69,
+        70
+      ],
+      "findings": [
+        {
+          "pr": 66,
+          "priority": "P2",
+          "issue": "Body repeats test history and integration instructions; the failure boundary is obscured.",
+          "resolution": "Lead with non-finite tracking state and early storage, explain discarded remainder, retain occurrence record and compact validation.",
+          "code_change": false,
+          "figure": "Retain; before/after branches and outcome are legible."
+        },
+        {
+          "pr": 67,
+          "priority": "P2",
+          "issue": "A list of historical counts dominates the failure mechanism and complements poorly with #66.",
+          "resolution": "Explain input, float increment and locked sum checks in order; keep the 32-call failure breakdown and normal-equivalence evidence.",
+          "code_change": false,
+          "figure": "Retain; all 32 injected outcomes and unchanged destinations are clear."
+        },
+        {
+          "pr": 68,
+          "priority": "P2",
+          "issue": "One-line description hides CS0219 cleanup in actual diff, and joint 41.9% result can imply an isolated benefit.",
+          "resolution": "State functional one-line change plus three warning removals. Use allocation savings as the primary result; link joint results briefly.",
+          "code_change": false,
+          "figure": "Retain; per-call units, stack cap and fallback are clear."
+        },
+        {
+          "pr": 69,
+          "priority": "P1",
+          "issue": "Repeated lookup reduction has no demonstrated whole-engine speed benefit; generic joint gain overstates its independent value.",
+          "resolution": "Run isolated three-way benchmark, retain exact output equality, reject unproven one-line alternative, replace figure and ask maintainer preferred scope.",
+          "code_change": false,
+          "figure": "Replace with reuse count and new independent end-to-end measurements."
+        },
+        {
+          "pr": 70,
+          "priority": "P2",
+          "issue": "Group count and external group ID are conflated; historical memory result can be mistaken for six-line patch overhead.",
+          "resolution": "State each threshold separately, retain 1456-byte element delta and application engine provenance, and keep essential GUI boundary.",
+          "code_change": false,
+          "figure": "Retain; historical storage strategy is explicit and labelled."
+        }
+      ],
+      "tests": {
+        "new_main_runs": 36,
+        "timed_runs": 30,
+        "strict_builds": 3,
+        "all_payloads_equal": true
+      },
+      "source_changes_to_publish": [],
+      "comment": "pr69_comment.md"
+    },
+    "new_optimizations": {
+      "code_changes_required": false,
+      "findings": [
+        {
+          "id": "N1",
+          "severity": "P2",
+          "prs": [
+            71,
+            72,
+            73
+          ],
+          "category": "explanation",
+          "finding": "Repeated combined 41.9% headline can be mistaken for the effect of each patch.",
+          "action": "Shortened #71/#72 to an interaction-evidence link; #73 retains a clearly combined-build comparison.",
+          "status": "resolved"
+        },
+        {
+          "id": "N2",
+          "severity": "P2",
+          "prs": [
+            73
+          ],
+          "category": "figure",
+          "finding": "Three-mode four-panel graphic and duplicated table make the direct opt-in effect hard to compare.",
+          "action": "Replaced with same-candidate OFF/ON runtime and peak-memory panels; values read from published JSON.",
+          "status": "resolved"
+        },
+        {
+          "id": "N3",
+          "severity": "P2",
+          "prs": [
+            73,
+            74
+          ],
+          "category": "coverage",
+          "finding": "Prior #74 evidence checked patch application to #73 but did not execute their combined driver.",
+          "action": "120 actual-driver executions now verify exact visits and merged sums with counts 1..10 and workers 1/4/24.",
+          "status": "resolved"
+        },
+        {
+          "id": "N4",
+          "severity": "P3",
+          "prs": [
+            71
+          ],
+          "category": "coverage",
+          "finding": "The original threshold fixture did not vary shape at fixed work size.",
+          "action": "32 additional actual-method runs include narrow columns and a single-group shape; parallel choices improve on this host.",
+          "status": "resolved"
+        },
+        {
+          "id": "N5",
+          "severity": "P3",
+          "prs": [
+            72
+          ],
+          "category": "tradeoff",
+          "finding": "PR body did not mention the measured lookup cost when inputs change every step.",
+          "action": "Added the existing isolated-test approximately 4% slowdown and tied benefit to repeated pairs; no adaptive machinery without whole-engine evidence.",
+          "status": "resolved"
+        },
+        {
+          "id": "N6",
+          "severity": "P3",
+          "prs": [
+            74,
+            75
+          ],
+          "category": "clarity",
+          "finding": "Long decimal mass units and generic missing-values wording obscure the concrete behavior.",
+          "action": "Expressed #74 example in grams to match its figure; narrowed #75 to omitted trailing values.",
+          "status": "resolved"
+        },
+        {
+          "id": "N7",
+          "severity": "P3",
+          "prs": [
+            73
+          ],
+          "category": "maintainer_input",
+          "finding": "No explicit maintainer choice on the opt-in configuration surface.",
+          "action": "Prepared short question: environment budget or normal input setting, retaining off-by-default and budget fallback.",
+          "status": "draft_ready"
+        }
+      ],
+      "checks": {
+        "driver_runs": 120,
+        "transfer_runs": 32,
+        "strict_builds": 2,
+        "source_prs": [
+          71,
+          72,
+          73,
+          74,
+          75
+        ]
+      }
+    }
+  }
+}

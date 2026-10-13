@@ -1,0 +1,101 @@
+{
+  "source": "https://github.com/Borealis-Thoon/GRAL/blob/2d65240f80f0d8ea58bf3c7ad94c811de067f589/worker_accumulation_20261013/results/performance.json",
+  "rows": [
+    {
+      "case": "concentrated_100k_w4",
+      "label": "100,000 particles / 4 workers",
+      "disabled": {
+        "case": "concentrated_100k_w4",
+        "variant": "off",
+        "median_s": 1.18338760000006,
+        "min_s": 1.1669089999995776,
+        "max_s": 1.1981377000001885,
+        "median_ratio": 0.9990887040331385,
+        "peak_working_set": 62210048,
+        "sampled_peak_private": 37593088
+      },
+      "enabled": {
+        "case": "concentrated_100k_w4",
+        "variant": "on",
+        "median_s": 1.1552432999997109,
+        "min_s": 1.1494124999999258,
+        "max_s": 1.2015780000001541,
+        "median_ratio": 0.9753275523924865,
+        "peak_working_set": 62308352,
+        "sampled_peak_private": 37257216
+      }
+    },
+    {
+      "case": "concentrated_100k_w24",
+      "label": "100,000 particles / 24 workers",
+      "disabled": {
+        "case": "concentrated_100k_w24",
+        "variant": "off",
+        "median_s": 0.5293795000006867,
+        "min_s": 0.5116307999996934,
+        "max_s": 0.5697824999997465,
+        "median_ratio": 0.9948771427618351,
+        "peak_working_set": 62885888,
+        "sampled_peak_private": 36200448
+      },
+      "enabled": {
+        "case": "concentrated_100k_w24",
+        "variant": "on",
+        "median_s": 0.49806929999977,
+        "min_s": 0.48975029999928665,
+        "max_s": 0.5093823999995948,
+        "median_ratio": 0.9360350411765392,
+        "peak_working_set": 62881792,
+        "sampled_peak_private": 36253696
+      }
+    },
+    {
+      "case": "concentrated_1m_w24",
+      "label": "1,000,000 particles / 24 workers",
+      "disabled": {
+        "case": "concentrated_1m_w24",
+        "variant": "off",
+        "median_s": 2.8451820999998745,
+        "min_s": 2.790618099999847,
+        "max_s": 2.968567599999915,
+        "median_ratio": 0.9671763070636443,
+        "peak_working_set": 129290240,
+        "sampled_peak_private": 104599552
+      },
+      "enabled": {
+        "case": "concentrated_1m_w24",
+        "variant": "on",
+        "median_s": 2.421762399999352,
+        "min_s": 2.389023400000042,
+        "max_s": 2.528900000000249,
+        "median_ratio": 0.8232412310681502,
+        "peak_working_set": 129507328,
+        "sampled_peak_private": 104923136
+      }
+    },
+    {
+      "case": "dense_grid_100k_w24",
+      "label": "100,000 particles / 24 workers\n120 \u00d7 120 grid / 9 heights",
+      "disabled": {
+        "case": "dense_grid_100k_w24",
+        "variant": "off",
+        "median_s": 0.7484951000005822,
+        "min_s": 0.7371284999999261,
+        "max_s": 0.7581298000004608,
+        "median_ratio": 1.0109503454686908,
+        "peak_working_set": 89505792,
+        "sampled_peak_private": 70107136
+      },
+      "enabled": {
+        "case": "dense_grid_100k_w24",
+        "variant": "on",
+        "median_s": 0.685828799999399,
+        "min_s": 0.6776949000004606,
+        "max_s": 0.6982288000008339,
+        "median_ratio": 0.9263104892620283,
+        "peak_working_set": 295370752,
+        "sampled_peak_private": 274468864
+      }
+    }
+  ]
+}

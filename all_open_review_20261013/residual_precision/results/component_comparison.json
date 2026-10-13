@@ -1,0 +1,758 @@
+{
+  "status": "pass",
+  "checks_per_variant": 229,
+  "exact_split_count_cases": 225,
+  "reduced_scan_cases": 75,
+  "scan_reductions": [
+    {
+      "workers": 1,
+      "n": 100,
+      "pattern": 0,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250,
+      "after_k": 10
+    },
+    {
+      "workers": 1,
+      "n": 100,
+      "pattern": 1,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250,
+      "after_k": 10
+    },
+    {
+      "workers": 1,
+      "n": 100,
+      "pattern": 2,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 312500,
+      "after_k": 100
+    },
+    {
+      "workers": 1,
+      "n": 100,
+      "pattern": 3,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 78281250,
+      "after_k": 25050
+    },
+    {
+      "workers": 1,
+      "n": 100,
+      "pattern": 4,
+      "budget": 20,
+      "before": 6,
+      "after": 3,
+      "before_k": 46875000000,
+      "after_k": 75000000
+    },
+    {
+      "workers": 1,
+      "n": 300,
+      "pattern": 0,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 113906250,
+      "after_k": 10
+    },
+    {
+      "workers": 1,
+      "n": 300,
+      "pattern": 0,
+      "budget": 200,
+      "before": 6,
+      "after": 1,
+      "before_k": 113.90625,
+      "after_k": 10
+    },
+    {
+      "workers": 1,
+      "n": 300,
+      "pattern": 1,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 113906250,
+      "after_k": 10
+    },
+    {
+      "workers": 1,
+      "n": 300,
+      "pattern": 1,
+      "budget": 200,
+      "before": 6,
+      "after": 1,
+      "before_k": 113.90625,
+      "after_k": 10
+    },
+    {
+      "workers": 1,
+      "n": 300,
+      "pattern": 2,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 227812500,
+      "after_k": 300
+    },
+    {
+      "workers": 1,
+      "n": 300,
+      "pattern": 2,
+      "budget": 200,
+      "before": 6,
+      "after": 2,
+      "before_k": 227.8125,
+      "after_k": 30
+    },
+    {
+      "workers": 1,
+      "n": 300,
+      "pattern": 3,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 57067031250,
+      "after_k": 75150
+    },
+    {
+      "workers": 1,
+      "n": 300,
+      "pattern": 3,
+      "budget": 200,
+      "before": 6,
+      "after": 3,
+      "before_k": 85600.546875,
+      "after_k": 16908.75
+    },
+    {
+      "workers": 1,
+      "n": 300,
+      "pattern": 4,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 11390625000000,
+      "after_k": 15000000
+    },
+    {
+      "workers": 1,
+      "n": 300,
+      "pattern": 4,
+      "budget": 200,
+      "before": 6,
+      "after": 3,
+      "before_k": 79734375,
+      "after_k": 15750000
+    },
+    {
+      "workers": 1,
+      "n": 1000,
+      "pattern": 0,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250000000,
+      "after_k": 10
+    },
+    {
+      "workers": 1,
+      "n": 1000,
+      "pattern": 0,
+      "budget": 200,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250,
+      "after_k": 10
+    },
+    {
+      "workers": 1,
+      "n": 1000,
+      "pattern": 1,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250000000,
+      "after_k": 10
+    },
+    {
+      "workers": 1,
+      "n": 1000,
+      "pattern": 1,
+      "budget": 200,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250,
+      "after_k": 10
+    },
+    {
+      "workers": 1,
+      "n": 1000,
+      "pattern": 2,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 312500000000,
+      "after_k": 1000
+    },
+    {
+      "workers": 1,
+      "n": 1000,
+      "pattern": 2,
+      "budget": 200,
+      "before": 6,
+      "after": 2,
+      "before_k": 312500,
+      "after_k": 100
+    },
+    {
+      "workers": 1,
+      "n": 1000,
+      "pattern": 3,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 78281250000000,
+      "after_k": 250500
+    },
+    {
+      "workers": 1,
+      "n": 1000,
+      "pattern": 3,
+      "budget": 200,
+      "before": 6,
+      "after": 2,
+      "before_k": 78281250,
+      "after_k": 25050
+    },
+    {
+      "workers": 1,
+      "n": 1000,
+      "pattern": 4,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 15625000000000000,
+      "after_k": 50000000
+    },
+    {
+      "workers": 1,
+      "n": 1000,
+      "pattern": 4,
+      "budget": 200,
+      "before": 6,
+      "after": 3,
+      "before_k": 46875000000,
+      "after_k": 75000000
+    },
+    {
+      "workers": 4,
+      "n": 100,
+      "pattern": 0,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250,
+      "after_k": 10
+    },
+    {
+      "workers": 4,
+      "n": 100,
+      "pattern": 1,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250,
+      "after_k": 10
+    },
+    {
+      "workers": 4,
+      "n": 100,
+      "pattern": 2,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 312500,
+      "after_k": 100
+    },
+    {
+      "workers": 4,
+      "n": 100,
+      "pattern": 3,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 78281250,
+      "after_k": 25050
+    },
+    {
+      "workers": 4,
+      "n": 100,
+      "pattern": 4,
+      "budget": 20,
+      "before": 6,
+      "after": 3,
+      "before_k": 46875000000,
+      "after_k": 75000000
+    },
+    {
+      "workers": 4,
+      "n": 300,
+      "pattern": 0,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 113906250,
+      "after_k": 10
+    },
+    {
+      "workers": 4,
+      "n": 300,
+      "pattern": 0,
+      "budget": 200,
+      "before": 6,
+      "after": 1,
+      "before_k": 113.90625,
+      "after_k": 10
+    },
+    {
+      "workers": 4,
+      "n": 300,
+      "pattern": 1,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 113906250,
+      "after_k": 10
+    },
+    {
+      "workers": 4,
+      "n": 300,
+      "pattern": 1,
+      "budget": 200,
+      "before": 6,
+      "after": 1,
+      "before_k": 113.90625,
+      "after_k": 10
+    },
+    {
+      "workers": 4,
+      "n": 300,
+      "pattern": 2,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 227812500,
+      "after_k": 300
+    },
+    {
+      "workers": 4,
+      "n": 300,
+      "pattern": 2,
+      "budget": 200,
+      "before": 6,
+      "after": 2,
+      "before_k": 227.8125,
+      "after_k": 30
+    },
+    {
+      "workers": 4,
+      "n": 300,
+      "pattern": 3,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 57067031250,
+      "after_k": 75150
+    },
+    {
+      "workers": 4,
+      "n": 300,
+      "pattern": 3,
+      "budget": 200,
+      "before": 6,
+      "after": 3,
+      "before_k": 85600.546875,
+      "after_k": 16908.75
+    },
+    {
+      "workers": 4,
+      "n": 300,
+      "pattern": 4,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 11390625000000,
+      "after_k": 15000000
+    },
+    {
+      "workers": 4,
+      "n": 300,
+      "pattern": 4,
+      "budget": 200,
+      "before": 6,
+      "after": 3,
+      "before_k": 79734375,
+      "after_k": 15750000
+    },
+    {
+      "workers": 4,
+      "n": 1000,
+      "pattern": 0,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250000000,
+      "after_k": 10
+    },
+    {
+      "workers": 4,
+      "n": 1000,
+      "pattern": 0,
+      "budget": 200,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250,
+      "after_k": 10
+    },
+    {
+      "workers": 4,
+      "n": 1000,
+      "pattern": 1,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250000000,
+      "after_k": 10
+    },
+    {
+      "workers": 4,
+      "n": 1000,
+      "pattern": 1,
+      "budget": 200,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250,
+      "after_k": 10
+    },
+    {
+      "workers": 4,
+      "n": 1000,
+      "pattern": 2,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 312500000000,
+      "after_k": 1000
+    },
+    {
+      "workers": 4,
+      "n": 1000,
+      "pattern": 2,
+      "budget": 200,
+      "before": 6,
+      "after": 2,
+      "before_k": 312500,
+      "after_k": 100
+    },
+    {
+      "workers": 4,
+      "n": 1000,
+      "pattern": 3,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 78281250000000,
+      "after_k": 250500
+    },
+    {
+      "workers": 4,
+      "n": 1000,
+      "pattern": 3,
+      "budget": 200,
+      "before": 6,
+      "after": 2,
+      "before_k": 78281250,
+      "after_k": 25050
+    },
+    {
+      "workers": 4,
+      "n": 1000,
+      "pattern": 4,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 15625000000000000,
+      "after_k": 50000000
+    },
+    {
+      "workers": 4,
+      "n": 1000,
+      "pattern": 4,
+      "budget": 200,
+      "before": 6,
+      "after": 3,
+      "before_k": 46875000000,
+      "after_k": 75000000
+    },
+    {
+      "workers": 24,
+      "n": 100,
+      "pattern": 0,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250,
+      "after_k": 10
+    },
+    {
+      "workers": 24,
+      "n": 100,
+      "pattern": 1,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250,
+      "after_k": 10
+    },
+    {
+      "workers": 24,
+      "n": 100,
+      "pattern": 2,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 312500,
+      "after_k": 100
+    },
+    {
+      "workers": 24,
+      "n": 100,
+      "pattern": 3,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 78281250,
+      "after_k": 25050
+    },
+    {
+      "workers": 24,
+      "n": 100,
+      "pattern": 4,
+      "budget": 20,
+      "before": 6,
+      "after": 3,
+      "before_k": 46875000000,
+      "after_k": 75000000
+    },
+    {
+      "workers": 24,
+      "n": 300,
+      "pattern": 0,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 113906250,
+      "after_k": 10
+    },
+    {
+      "workers": 24,
+      "n": 300,
+      "pattern": 0,
+      "budget": 200,
+      "before": 6,
+      "after": 1,
+      "before_k": 113.90625,
+      "after_k": 10
+    },
+    {
+      "workers": 24,
+      "n": 300,
+      "pattern": 1,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 113906250,
+      "after_k": 10
+    },
+    {
+      "workers": 24,
+      "n": 300,
+      "pattern": 1,
+      "budget": 200,
+      "before": 6,
+      "after": 1,
+      "before_k": 113.90625,
+      "after_k": 10
+    },
+    {
+      "workers": 24,
+      "n": 300,
+      "pattern": 2,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 227812500,
+      "after_k": 300
+    },
+    {
+      "workers": 24,
+      "n": 300,
+      "pattern": 2,
+      "budget": 200,
+      "before": 6,
+      "after": 2,
+      "before_k": 227.8125,
+      "after_k": 30
+    },
+    {
+      "workers": 24,
+      "n": 300,
+      "pattern": 3,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 57067031250,
+      "after_k": 75150
+    },
+    {
+      "workers": 24,
+      "n": 300,
+      "pattern": 3,
+      "budget": 200,
+      "before": 6,
+      "after": 3,
+      "before_k": 85600.546875,
+      "after_k": 16908.75
+    },
+    {
+      "workers": 24,
+      "n": 300,
+      "pattern": 4,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 11390625000000,
+      "after_k": 15000000
+    },
+    {
+      "workers": 24,
+      "n": 300,
+      "pattern": 4,
+      "budget": 200,
+      "before": 6,
+      "after": 3,
+      "before_k": 79734375,
+      "after_k": 15750000
+    },
+    {
+      "workers": 24,
+      "n": 1000,
+      "pattern": 0,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250000000,
+      "after_k": 10
+    },
+    {
+      "workers": 24,
+      "n": 1000,
+      "pattern": 0,
+      "budget": 200,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250,
+      "after_k": 10
+    },
+    {
+      "workers": 24,
+      "n": 1000,
+      "pattern": 1,
+      "budget": 20,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250000000,
+      "after_k": 10
+    },
+    {
+      "workers": 24,
+      "n": 1000,
+      "pattern": 1,
+      "budget": 200,
+      "before": 6,
+      "after": 1,
+      "before_k": 156250,
+      "after_k": 10
+    },
+    {
+      "workers": 24,
+      "n": 1000,
+      "pattern": 2,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 312500000000,
+      "after_k": 1000
+    },
+    {
+      "workers": 24,
+      "n": 1000,
+      "pattern": 2,
+      "budget": 200,
+      "before": 6,
+      "after": 2,
+      "before_k": 312500,
+      "after_k": 100
+    },
+    {
+      "workers": 24,
+      "n": 1000,
+      "pattern": 3,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 78281250000000,
+      "after_k": 250500
+    },
+    {
+      "workers": 24,
+      "n": 1000,
+      "pattern": 3,
+      "budget": 200,
+      "before": 6,
+      "after": 2,
+      "before_k": 78281250,
+      "after_k": 25050
+    },
+    {
+      "workers": 24,
+      "n": 1000,
+      "pattern": 4,
+      "budget": 20,
+      "before": 6,
+      "after": 2,
+      "before_k": 15625000000000000,
+      "after_k": 50000000
+    },
+    {
+      "workers": 24,
+      "n": 1000,
+      "pattern": 4,
+      "budget": 200,
+      "before": 6,
+      "after": 3,
+      "before_k": 46875000000,
+      "after_k": 75000000
+    }
+  ]
+}

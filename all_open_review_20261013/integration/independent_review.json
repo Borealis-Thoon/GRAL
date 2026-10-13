@@ -1,0 +1,93 @@
+{
+  "status": "pass",
+  "blockers": [],
+  "reviewer": "independent guards/storage review agent",
+  "new_model_execution": false,
+  "source_manifest_file_hashes_checked": 178,
+  "prs_present": [
+    62,
+    63,
+    64,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75
+  ],
+  "proof": [
+    "ResidualSplitCount returns an integer in [1, 100000]. Therefore total == entries means every accepted entry is already at one particle.",
+    "Increasing residualSplitK cannot lower a count below one. With unchanged Conz4d and active reference between planning and dispatch, stopping at this floor preserves every subsequent split count.",
+    "The mass-reference setup, K=10 reset, nonpositive budget/reference exits, zero-entry behavior and six-iteration maximum are unchanged.",
+    "Cancellation is checked before planning, within each Parallel.For row and after the join. A canceled partial count cannot trigger particle dispatch; Program.cs checks cancellation before ParallelTransientParticleDriver.",
+    "Entry counting uses thread-local accumulation and one extra Interlocked.Add per i-row. It adds no grid scan or allocation. Parallel.For joins before total and entries are tested."
+  ],
+  "component": {
+    "checks_per_variant": 229,
+    "split_cases_exact": 225,
+    "scan_reductions": 75,
+    "workers": [
+      1,
+      4,
+      24
+    ],
+    "entry_counts": [
+      0,
+      1,
+      100,
+      300,
+      1000
+    ],
+    "pre_canceled_nonpositive_budget_and_zero_reference_checks": "pass"
+  },
+  "normal_one_scan_cost": [
+    {
+      "workers": 1,
+      "before_ms": 2.3441,
+      "after_ms": 2.34954,
+      "added_ms": 0.005440000000000111,
+      "percent_change": 0.23207201057975357
+    },
+    {
+      "workers": 4,
+      "before_ms": 0.9327400000000001,
+      "after_ms": 1.0203799999999998,
+      "added_ms": 0.08763999999999972,
+      "percent_change": 9.39597315436238
+    },
+    {
+      "workers": 24,
+      "before_ms": 0.33104,
+      "after_ms": 0.33738,
+      "added_ms": 0.006340000000000012,
+      "percent_change": 1.9151764137264493
+    }
+  ],
+  "performance_assessment": "The normal one-scan path has a small added counting cost. The largest measured median difference was about 0.088 ms with four workers (9.4% of a sub-millisecond planner call); before/after ranges overlap. Avoid claiming zero overhead. Floor cases remove five unnecessary scans and measured about 83% less planner time.",
+  "integration": {
+    "strict_builds": {
+      "before": {
+        "warnings": 0,
+        "errors": 0
+      },
+      "after": {
+        "warnings": 0,
+        "errors": 0
+      }
+    },
+    "main_runs": 30,
+    "single_worker_cases": 5,
+    "single_worker_all_numeric_comparisons_exact": true,
+    "parallel_workers": 4,
+    "repeats_per_build": 5,
+    "max_cross_relative_l1": 2.8240520162641263e-09,
+    "max_before_repeat_relative_l1": 2.6475487647803176e-09,
+    "max_after_repeat_relative_l1": 2.8240520162641263e-09,
+    "parallel_assessment": "The maximum cross-build difference equals the after-build repeat spread and is consistent with parallel accumulation-order variation. Do not call the four-worker outputs byte-identical."
+  },
+  "decision": "The floor early exit is a minimal, behavior-preserving optimization with adequate targeted and combined evidence; no further source change or CPU test is needed."
+}

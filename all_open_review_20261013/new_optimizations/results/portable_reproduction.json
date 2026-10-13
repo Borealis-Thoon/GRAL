@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "purpose": "Fresh public-script source reconstruction and execution; timing remains separate from the primary recorded measurements.",
+  "source_commits": {
+    "baseline": "f2bd495cde6d060be2e451320c102090c157d7df",
+    "transfer": "514bd97aad89dc49bae83cf2f5d7ed59fe3523bd",
+    "buffers": "175bf603dc5d132a14a651df7397ce3ae9ff1df5"
+  },
+  "strict_builds": [
+    {
+      "log": "build_0.log",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "log": "build_1.log",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "log": "build_2.log",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "log": "build_3.log",
+      "warnings": 0,
+      "errors": 0
+    },
+    {
+      "log": "build_4.log",
+      "warnings": 0,
+      "errors": 0
+    }
+  ],
+  "driver_runs": 120,
+  "transfer_runs": 32,
+  "reproduce_script_sha256": "d84c82162a2101061d36d518d1d6900e91f2de5243b0aabfce85c20c4b7335d1"
+}
