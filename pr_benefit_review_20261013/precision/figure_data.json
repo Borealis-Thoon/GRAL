@@ -1,0 +1,21 @@
+{
+  "arithmetic_start": 16777216,
+  "additions": 100,
+  "increment": 1,
+  "float_result": 16777216,
+  "double_then_float_result": 16777316,
+  "engine_repeatability": {
+    "requested_particles_per_second": 833.3333333333334,
+    "duration_s": 120,
+    "source_count": 8,
+    "resolution_m": 20,
+    "workers": 4,
+    "repeats": 5,
+    "cell_count": 7200,
+    "max_changed_cells_baseline": 15,
+    "max_changed_cells_pr64": 0,
+    "max_relative_baseline_cell_difference_percent": 0.000187
+  },
+  "engine_evidence": "https://github.com/Borealis-Thoon/GRAL/blob/cb06f655aa78e2fdfe627cae3edf7f12481a3cfb/reviewer_response_20261013/README.md",
+  "scope": "Arithmetic example and previously published measured repeatability; no new runtime claim."
+}

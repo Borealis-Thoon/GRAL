@@ -1,0 +1,430 @@
+--- a/src/CleanUp.cs
++++ b/src/CleanUp.cs
+@@ -16,40 +16,43 @@
+ namespace GRAL_2001
+ {
+     partial class Program
+     {
+         /// <summary>
+         /// Clean the memory when the app has been finished or interrupted
+         /// </summary>
+         public static void CleanUpMemory()
+         {
+             DZK = null;
+             DZK_Trans = null;
+             HOKART = null;
+             HoKartTrans = null;
+             if (StretchFlexible != null)
+             {
+                 StretchFlexible.Clear();
+             }
+             StretchFlexible = null;
+             Conz3d = null;
+             Conz3dDouble = null;
++            WorkerConcentrations = null;
++            WorkerConcentrationSlots = null;
++            WorkerConcentrationGroups = null;
+             MeasurementHeight = null;
+             XKO = null;
+             YKO = null;
+             ZKO = null;
+             AH = null;
+             AHE = null;
+             ZSP = null;
+             DDX = null;
+             DDY = null;
+             UWIN = null;
+             VWIN = null;
+             WWIN = null;
+             Z0Gral = null;
+             USternGral = null;
+             OLGral = null;
+             Z0Gramm = null;
+             Ustern = null;
+             Ob = null;
+             SC_Gral = null;
+             AKL_GRAMM = null;
+--- a/src/ProgramFunctions.cs
++++ b/src/ProgramFunctions.cs
+@@ -1176,81 +1176,87 @@
+                 {
+                     string command = await reader.ReadLineAsync();
+                     if (command == "StopGRAL")
+                     {
+                         Console.WriteLine();
+                         Console.WriteLine(".....shutting down GRAL gracefully, triggered by the GUI......(ID:" + command.ToString() + ")");
+                         CancelToken.Cancel();
+                     }
+                 }
+             }
+         }
+ 
+         /// <summary>
+         /// Parallel loop for the release of particles from all sources
+         /// </summary>
+         /// <param name="inclusiveLowerBound">Start index of the loop</param>
+         /// <param name="exclusiveUpperBound">Final index of the loop + 1</param>
+         [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+         private static void ParallelParticleDriver(int inclusiveLowerBound, int exclusiveUpperBound)
+         {
++            bool useWorkerConcentrations = PrepareWorkerConcentrations();
+             if (Program.UseFixedRndSeedVal)
+             {
+                 // Custom ligthweight parallel loop for the release of particles from all sources
+                 using (ManualResetEvent manResetEvent = new ManualResetEvent(false))
+                 {
+                     int remainingWorkItems = Program.pOptions.MaxDegreeOfParallelism;
+                     int nextIteration = inclusiveLowerBound;
+                     int percent10 = (int)(Program.NTEILMAX * 0.1F);
+ 
+                     // Create each of the work items up to MaxDegreeOfParallelism
+                     for (int p = 0; p < Program.pOptions.MaxDegreeOfParallelism; p++)
+                     {
++                        double[] workerConcentration = useWorkerConcentrations ? WorkerConcentrations[p] : null;
+                         ThreadPool.QueueUserWorkItem(delegate
+                         {
+                             try
+                             {
+                                 int index;
+                                 while ((index = Interlocked.Increment(ref nextIteration) - 1) < exclusiveUpperBound)
+                                 {
+                                     // start the particle driver for the particle No. index
+-                                    Zeitschleife.Calculate(index);
++                                    Zeitschleife.CalculateWithWorkerBuffer(index, workerConcentration);
+                                     // show progress bar
+                                     if (index % percent10 == 0 && index > 0)
+                                     {
+                                         Console.Write("I");
+                                         if (Program.CancelToken.IsCancellationRequested)
+                                         {
+                                             throw new Exception();
+                                         }
+                                     }
+                                 }
+                             }
+                             catch { }
+                             if (Interlocked.Decrement(ref remainingWorkItems) == 0)
+                             {
+                                 manResetEvent.Set();
+                             }
+                         }, Program.CancelToken.Token);
+                     }
+                     // Wait for all threads to complete
+                     manResetEvent.WaitOne();
++                    if (useWorkerConcentrations)
++                    {
++                        MergeWorkerConcentrations();
++                    }
+                 }
+             }
+             else
+             {
+                 // default parallel loop
+                 int IPERC = 0;
+                 int advance = 0;
+                 int percent10 = (int)(NTEILMAX * 0.1F);
+                 ParallelOptions pOpt = new ParallelOptions();
+                 pOpt.MaxDegreeOfParallelism = Program.pOptions.MaxDegreeOfParallelism;
+                 pOpt.CancellationToken = Program.CancelToken.Token;
+                 int locker = 0;
+                 try
+                 {
+                     Parallel.For(inclusiveLowerBound, exclusiveUpperBound, pOpt, nteil =>
+                     {
+                         Interlocked.Increment(ref advance);
+                         if (advance > percent10)
+                         {
+                             if (Interlocked.Exchange(ref advance, 0) > advance)  // set advance to 0
+--- a/src/WorkerConcentrations.cs
++++ b/src/WorkerConcentrations.cs
+@@ -0,0 +1,139 @@
++#region Copyright
++///<remarks>
++/// <Graz Lagrangian Particle Dispersion Model>
++/// Copyright (C) [2019]  [Dietmar Oettl, Markus Kuntner]
++/// This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by
++/// the Free Software Foundation version 3 of the License
++/// This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
++/// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
++/// You should have received a copy of the GNU General Public License along with this program.  If not, see <https://www.gnu.org/licenses/>.
++///</remarks>
++#endregion
++
++using System;
++using System.Collections.Generic;
++using System.Threading.Tasks;
++
++namespace GRAL_2001
++{
++    partial class Program
++    {
++        // Set GRAL_WORKER_CONCENTRATION_MB to 1..256 to enable worker buffers.
++        private static readonly long WorkerConcentrationBudget = ReadWorkerConcentrationBudget();
++        private static double[][] WorkerConcentrations;
++        internal static int[] WorkerConcentrationSlots;
++        private static int[] WorkerConcentrationGroups;
++        internal static int WorkerConcentrationNy, WorkerConcentrationNs, WorkerConcentrationSlotCount;
++
++        private static long ReadWorkerConcentrationBudget()
++        {
++            return int.TryParse(Environment.GetEnvironmentVariable("GRAL_WORKER_CONCENTRATION_MB"), out int mb) && mb > 0
++                ? Math.Min(mb, 256) * 1024L * 1024 : 0;
++        }
++
++        private static bool PrepareWorkerConcentrations()
++        {
++            if (WorkerConcentrationBudget == 0)
++            {
++                return false;
++            }
++            int workers = pOptions.MaxDegreeOfParallelism;
++            if (!UseFixedRndSeedVal || workers <= 1)
++            {
++                ReportWorkerConcentrations("shared (driver)", workers, 0, 0);
++                return false;
++            }
++            bool[] active = new bool[byte.MaxValue + 1];
++            void Mark(int[] particles, byte[] groups, int count)
++            {
++                for (int i = 1; i <= count; i++)
++                {
++                    if (particles[i] > 0)
++                    {
++                        active[groups[i]] = true;
++                    }
++                }
++            }
++            Mark(PS_PartNumb, PS_SG, PS_Count);
++            Mark(LS_PartNumb, LS_SG, LS_Count);
++            Mark(TS_PartNumb, TS_SG, TS_Count);
++            Mark(AS_PartNumb, AS_SG, AS_Count);
++            int[] slots = new int[SourceGroups.Count];
++            Array.Fill(slots, -1);
++            var groups = new List<int>();
++            for (int q = 0; q < SourceGroups.Count; q++)
++            {
++                if ((uint)SourceGroups[q] < active.Length && active[SourceGroups[q]])
++                {
++                    slots[q] = groups.Count;
++                    groups.Add(q);
++                }
++            }
++            int ny = Conz3dDouble[0].Length, ns = Conz3dDouble[0][0].Length;
++            long length = (long)Conz3dDouble.Length * ny * ns * groups.Count;
++            long bytes = length * sizeof(double) * workers;
++            if (groups.Count == 0 || bytes > WorkerConcentrationBudget)
++            {
++                ReportWorkerConcentrations("shared (budget or no groups)", workers, groups.Count, bytes);
++                return false;
++            }
++            // Reuse the first allocation. Falling back avoids overlapping old and new buffers.
++            if (WorkerConcentrations != null &&
++                (WorkerConcentrations.Length < workers || WorkerConcentrations[0].LongLength < length))
++            {
++                ReportWorkerConcentrations("shared (capacity)", workers, groups.Count, bytes);
++                return false;
++            }
++            if (WorkerConcentrations == null)
++            {
++                WorkerConcentrations = CreateArray<double[]>(workers, () => new double[length]);
++            }
++            WorkerConcentrationSlots = slots;
++            WorkerConcentrationGroups = groups.ToArray();
++            WorkerConcentrationNy = ny;
++            WorkerConcentrationNs = ns;
++            WorkerConcentrationSlotCount = groups.Count;
++            ReportWorkerConcentrations("enabled", workers, groups.Count, bytes);
++            return true;
++        }
++
++        private static void MergeWorkerConcentrations()
++        {
++            int workers = pOptions.MaxDegreeOfParallelism;
++            int ny = WorkerConcentrationNy, ns = WorkerConcentrationNs, count = WorkerConcentrationSlotCount;
++            Parallel.For(0, Conz3dDouble.Length, pOptions, i =>
++            {
++                for (int j = 0; j < ny; j++)
++                {
++                    for (int slice = 0; slice < ns; slice++)
++                    {
++                        double[] target = Conz3dDouble[i][j][slice];
++                        int start = ((i * ny + j) * ns + slice) * count;
++                        for (int slot = 0; slot < count; slot++)
++                        {
++                            int q = WorkerConcentrationGroups[slot];
++                            for (int worker = 0; worker < workers; worker++)
++                            {
++                                double value = WorkerConcentrations[worker][start + slot];
++                                if (value != 0)
++                                {
++                                    target[q] += value;
++                                    WorkerConcentrations[worker][start + slot] = 0;
++                                }
++                            }
++                        }
++                    }
++                }
++            });
++        }
++
++        private static void ReportWorkerConcentrations(string status, int workers, int groups, long required)
++        {
++            long reserved = WorkerConcentrations == null ? 0 :
++                WorkerConcentrations.LongLength * WorkerConcentrations[0].LongLength * sizeof(double);
++            string message = $"Worker concentration buffers: {status}; workers={workers}; groups={groups}; required={required}; reserved={reserved}; limit={WorkerConcentrationBudget} bytes";
++            Console.WriteLine(message);
++            ProgramWriters.LogfileGralCoreWrite(message);
++        }
++    }
++}
+--- a/src/Zeitschleife.cs
++++ b/src/Zeitschleife.cs
+@@ -23,40 +23,46 @@
+         private const float aHurley = 0.1F;
+         private const float bHurley = 0.6F;
+ 
+         private const float a1Const = 0.05F;
+         private const float a2Const = 1.7F;
+         private const float a3Const = 1.1F;
+ 
+         private const float Pi2F = 2F * MathF.PI;
+         private const float RNG_Const = 2.328306435454494e-10F;
+ 
+         /// <summary>
+         ///Time loop for all released particles - the particles are tracked until they leave the domain area(steady state mode)
+         ///or until the dispersion time has expired (transient mode) 
+         /// </summary>
+         /// <param name="nteil">Particle number</param>
+         /// /// <remarks>
+         /// This class is the particle driver for particles, released by a source in steady state and transient GRAL mode
+         /// </remarks>
+         [MethodImpl(MethodImplOptions.AggressiveOptimization)]
+         public static void Calculate(int nteil)
++        {
++            CalculateWithWorkerBuffer(nteil, null);
++        }
++
++        [MethodImpl(MethodImplOptions.AggressiveOptimization)]
++        internal static void CalculateWithWorkerBuffer(int nteil, double[] workerConcentration)
+         {
+             //random number generator seeds
+             int rnd = (Environment.TickCount + nteil) & Int32.MaxValue;
+             uint m_w = (uint)(rnd + 521288629);
+             uint m_z = (uint)(rnd + 2232121);
+             if (Program.UseFixedRndSeedVal)
+             {
+                 m_w = Program.RnGSeed.Seed1 + (uint)nteil;
+                 m_z = Program.RnGSeed.Seed2 + (uint)nteil * 2;
+             }
+ 
+             float zahl1 = 0;
+             uint u_rg = 0;
+             float u1_rg = 0;
+ 
+             //local particle coordinates and pollution "mass"
+             double xcoord_nteil = Program.Xcoord[nteil];
+             double ycoord_nteil = Program.YCoord[nteil];
+             float zcoord_nteil = Program.ZCoord[nteil];
+             double masse = Program.ParticleMass[nteil];
+@@ -107,40 +113,44 @@
+             int GrammCellX = 1, GrammCellY = 1; // default value for flat terrain
+             int FFCellX, FFCellY;               // Flow field cells
+             float FFGridX = Program.DXK;
+             float FFGridY = Program.DYK;
+             float FFGridXRez = 1 / Program.DXK;
+             float FFGridYRez = 1 / Program.DYK;
+             float GrammGridXRez = 1 / Program.DDX[1];
+             float GrammGridYRez = 1 / Program.DDY[1];
+             float ConcGridXRez = 1 / Program.GralDx;
+             float ConcGridYRez = 1 / Program.GralDy;
+             float ConcGridZRez = 2 / Program.GralDz;
+             float ConcGridXHalf = Program.GralDx * 0.5F;
+             float ConcGridYHalf = Program.GralDy * 0.5F;
+ 
+             int IFQ = Program.TS_Count;
+             int Kenn_NTeil = Program.ParticleSource[nteil];       // number of source
+             if (Kenn_NTeil == 0)
+             {
+                 return;
+             }
++
++            int workerSlot = workerConcentration == null ? -1 : Program.WorkerConcentrationSlots[SG_nteil];
++            int workerNy = Program.WorkerConcentrationNy, workerNs = Program.WorkerConcentrationNs;
++            int workerSlots = Program.WorkerConcentrationSlotCount;
+ 
+             int SourceType = Program.SourceType[nteil]; // sourcetype
+             float blh = Program.BdLayHeight;
+             int IKOOAGRAL = Program.IKOOAGRAL;
+             int JKOOAGRAL = Program.JKOOAGRAL;
+ 
+             Span<int> kko = new int[Program.NS];
+             // Small receptor sets need no per-particle heap allocation; cap stack use at 2 KiB.
+             int receptorCount = Program.ReceptorNumber == 0 ? 0 : Program.ReceptorNumber + 1;
+             Span<double> ReceptorConcentration = receptorCount <= 256
+                 ? stackalloc double[receptorCount] : new double[receptorCount];
+             ReceptorConcentration.Clear();
+ 
+             int reflexion_flag = Consts.ParticleNotReflected;
+             int ISTATISTIK = Program.IStatistics;
+             int ISTATIONAER = Program.ISTATIONAER;
+             int topo = Program.Topo;
+ 
+             int TransientGridX = 1;
+             int TransientGridY = 1;
+@@ -2158,45 +2168,52 @@
+                                 {
+                                     if (Math.Abs(xcoord_nteil - Program.ReceptorX[irec]) < ConcGridXHalf &&
+                                         Math.Abs(ycoord_nteil - Program.ReceptorY[irec]) < ConcGridYHalf)
+                                     {
+                                         float slice = (zcoord_nteil - AHint - Program.ReceptorZ[irec]) * ConcGridZRez;
+                                         if ((int)slice == 0)
+                                         {
+                                             ReceptorConcentration[irec] += idt * masse;
+                                         }
+                                     }
+                                 }
+                             }
+                         }
+                     }
+ 
+                     //compute 2D - concentrations
+                     for (int II = 0; II < kko.Length; II++)
+                     {
+                         if ((kko[II] == 0) && (reflexion_flag == Consts.ParticleNotReflected))
+                         {
+-                            double[] conz3d_L = Program.Conz3dDouble[iko][jko][II];
+                             double conc = masse * idt;
+-                            lock (conz3d_L)
+-                            {
+-                                conz3d_L[SG_nteil] += conc;
++                            if (workerSlot >= 0)
++                            {
++                                workerConcentration[((iko * workerNy + jko) * workerNs + II) * workerSlots + workerSlot] += conc;
++                            }
++                            else
++                            {
++                                double[] conz3d_L = Program.Conz3dDouble[iko][jko][II];
++                                lock (conz3d_L)
++                                {
++                                    conz3d_L[SG_nteil] += conc;
++                                }
+                             }
+                         }
+                     }
+ 
+                     //count particles in case of non-steady-state dispersion for the 3D concentration file
+                     if (ISTATIONAER == Consts.TransientMode && Program.WriteVerticalConcentration)
+                     {
+                         if (reflexion_flag == Consts.ParticleNotReflected)
+                         {
+                             TransientGridZ = TransientConcentration.BinarySearchTransient(zcoord_nteil - AHint);
+                             TransientGridX = (int)(xsi * FFGridXRez) + 1;
+                             TransientGridY = (int)(eta * FFGridYRez) + 1;
+ 
+                             float[] conzsum_L = Program.ConzSsum[TransientGridX][TransientGridY];
+                             double conc = masse * Program.GridVolume * idt / (Area_cart * Program.DZK_Trans[TransientGridZ]);
+                             lock (conzsum_L)
+                             {
+                                 conzsum_L[TransientGridZ] += (float)conc;
+                             }
+                         }

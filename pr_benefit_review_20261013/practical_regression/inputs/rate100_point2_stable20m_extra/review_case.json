@@ -1,0 +1,21 @@
+{
+  "id": "rate100_point2_stable20m",
+  "rate": 100,
+  "duration": 60,
+  "sources": 2,
+  "groups": 2,
+  "kind": "point",
+  "dx": 20,
+  "stability": 6,
+  "wind_m_s": 0.5,
+  "budget": 6000,
+  "situations": 3,
+  "workers": 1,
+  "ratio": 1,
+  "pattern": "steady",
+  "source_group_mapping": {
+    "1": 101,
+    "2": 255
+  },
+  "unselected_group": 254
+}

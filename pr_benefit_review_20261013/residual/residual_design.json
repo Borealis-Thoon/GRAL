@@ -1,0 +1,82 @@
+{
+  "status": "prepared_not_executed",
+  "cases": [
+    {
+      "id": "steady_100pps_60s_2point_20m_stable",
+      "pps": 100,
+      "dx": 20,
+      "budget": 6000,
+      "kind": "point",
+      "sources": 2,
+      "groups": 2,
+      "pattern": "steady",
+      "workers": 1,
+      "ratio": 1,
+      "duration": 60,
+      "situations": 3,
+      "wind_m_s": 0.25,
+      "stability": 6
+    },
+    {
+      "id": "switch_off_1000pps_60s_2point_40m_stable",
+      "pps": 1000,
+      "dx": 40,
+      "budget": 60000,
+      "kind": "point",
+      "sources": 2,
+      "groups": 2,
+      "pattern": "largeoff",
+      "workers": 1,
+      "ratio": 99,
+      "duration": 60,
+      "situations": 3,
+      "wind_m_s": 0.25,
+      "stability": 6
+    },
+    {
+      "id": "mixed_1000pps_120s_16sources_10m_neutral",
+      "pps": 1000,
+      "dx": 10,
+      "budget": 120000,
+      "kind": "mixed",
+      "sources": 16,
+      "groups": 8,
+      "pattern": "steady",
+      "workers": 4,
+      "ratio": 1,
+      "duration": 120,
+      "situations": 3,
+      "wind_m_s": 2,
+      "stability": 4
+    },
+    {
+      "id": "area_8000pps_60s_32sources_20m_unstable",
+      "pps": 8000,
+      "dx": 20,
+      "budget": 480000,
+      "kind": "area",
+      "sources": 32,
+      "groups": 8,
+      "pattern": "steady",
+      "workers": 4,
+      "ratio": 1,
+      "duration": 60,
+      "situations": 3,
+      "wind_m_s": 1,
+      "stability": 2
+    }
+  ],
+  "pristine_variants": 3,
+  "repeats": 5,
+  "warmup_runs": 12,
+  "diagnostic_runs": 12,
+  "normal_runs": 60,
+  "timeout_per_run_s": 60,
+  "total_limit_s": 720,
+  "limitations": [
+    "End-to-end wall time includes startup, input and output; diagnostic planner/driver times come from separate instrumented runs.",
+    "Concentration differences measure numerical sensitivity, not accuracy against observations.",
+    "Multi-worker diagnostic output is not required to be byte-identical because floating-point accumulation order varies.",
+    "Automatic selection is a proposal, not an implemented code change."
+  ]
+}

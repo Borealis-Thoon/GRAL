@@ -1,0 +1,18 @@
+{
+  "id": "rate1000_mixed16_neutral10m",
+  "rate": 1000,
+  "duration": 120,
+  "sources": 16,
+  "groups": 8,
+  "kind": "mixed",
+  "dx": 10,
+  "stability": 4,
+  "wind_m_s": 1,
+  "budget": 120000,
+  "situations": 3,
+  "workers": 1,
+  "ratio": 1,
+  "pattern": "steady",
+  "source_group_mapping": {},
+  "unselected_group": 254
+}

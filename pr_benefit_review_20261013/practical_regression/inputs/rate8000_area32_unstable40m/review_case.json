@@ -1,0 +1,16 @@
+{
+  "id": "rate8000_area32_unstable40m",
+  "rate": 8000,
+  "duration": 60,
+  "sources": 32,
+  "groups": 8,
+  "kind": "area",
+  "dx": 40,
+  "stability": 2,
+  "wind_m_s": 1,
+  "budget": 480000,
+  "situations": 3,
+  "workers": 1,
+  "ratio": 1,
+  "pattern": "steady"
+}

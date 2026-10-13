@@ -1,0 +1,137 @@
+diff --git a/src/Program.cs b/src/Program.cs
+index 4793f10..d65e692 100644
+--- a/src/Program.cs
++++ b/src/Program.cs
+@@ -711,6 +711,9 @@ namespace GRAL_2001
+                         int cellNr = NII * NJJ;
+                         DispTimeSum = TAUS;
+                         // start the calculation for transient particle from all cells
++                        ParticleManagement.SetResidualParticleMass();
++                        ZeitschleifeNonSteadyState.PlanResidual();
++                        if (CancelToken.IsCancellationRequested) goto FinishGral;
+                         ParallelTransientParticleDriver(0, cellNr);
+                     } // non-steady-state particles
+                     if (CancelToken.IsCancellationRequested)
+diff --git a/src/TeilchenAufteilung.cs b/src/TeilchenAufteilung.cs
+index 43064f4..358d9df 100644
+--- a/src/TeilchenAufteilung.cs
++++ b/src/TeilchenAufteilung.cs
+@@ -161,6 +161,47 @@ namespace GRAL_2001
+             return Sum_of_Particles;
+         }
+ 
++        public static double ParticleMassActive;
++
++        // Use the nominal reference when all sources are switched off.
++        public static void SetResidualParticleMass()
++        {
++            double emission = ActiveEmission(Program.PS_ER, Program.PS_ER_Dep, Program.PS_Mode, Program.PS_SG, Program.PS_Count)
++                + ActiveEmission(Program.LS_ER, Program.LS_ER_Dep, Program.LS_Mode, Program.LS_SG, Program.LS_Count)
++                + ActiveEmission(Program.TS_ER, Program.TS_ER_Dep, Program.TS_Mode, Program.TS_SG, Program.TS_Count)
++                + ActiveEmission(Program.AS_ER, Program.AS_ER_Dep, Program.AS_Mode, Program.AS_SG, Program.AS_Count);
++            if (emission > 0)
++            {
++                ParticleMassActive = emission / 3600 / Program.TPS * 1000000000 / Program.GridVolume / Program.TAUS;
++            }
++            else
++            {
++                ParticleMassActive = Program.ParticleMassMean;
++            }
++        }
++
++        private static double ActiveEmission(double[] rates, float[] depositionRates, byte[] modes, byte[] groups, int count)
++        {
++            double emission = 0;
++            for (int i = 1; i <= count; i++)
++            {
++                if (rates[i] <= 0 || (modes[i] == Consts.DepoOnly && depositionRates[i] <= 0))
++                {
++                    continue;
++                }
++                int group = Program.SourceGroups.IndexOf(groups[i]);
++                if (Program.EmissionTimeseriesExist && Program.IWET > 0 &&
++                    Program.IWET <= Program.EmFacTimeSeries.GetUpperBound(0) &&
++                    group >= 0 && group <= Program.EmFacTimeSeries.GetUpperBound(1) &&
++                    Program.EmFacTimeSeries[Program.IWET - 1, group] <= 0)
++                {
++                    continue;
++                }
++                emission += rates[i];
++            }
++            return emission;
++        }
++
+         private static int Set_Min_Particles_PS_TS(int source_count)
+         {
+             int Min_Particles = 10;
+diff --git a/src/Zeitschleife_nonsteadystate.cs b/src/Zeitschleife_nonsteadystate.cs
+index 8b6fb24..e6cd09e 100644
+--- a/src/Zeitschleife_nonsteadystate.cs
++++ b/src/Zeitschleife_nonsteadystate.cs
+@@ -42,8 +42,7 @@ namespace GRAL_2001
+             double masse = TransConcentration * Vol_ratio / Program.TAUS;     //mass related to the concentration grid
+             
+             // Split summed transient particles; limit the count before converting to Int32.
+-            int transParticlesSplit = (int)Math.Min(100000,
+-                Math.Floor(Math.Floor(masse / Program.ParticleMassMean) / 10) + 1);
++            int transParticlesSplit = ResidualSplitCount(masse);
+ 
+             if (transParticlesSplit <= 1)
+             {
+@@ -60,6 +59,56 @@ namespace GRAL_2001
+             }
+         }
+ 
++        private static double residualSplitK = 10;
++
++        private static int ResidualSplitCount(double masse)
++        {
++            double split = Math.Floor(Math.Floor(masse / ParticleManagement.ParticleMassActive) / residualSplitK) + 1;
++            return (int)Math.Min(100000, split > 1 ? split : 1);
++        }
++
++        // Six adjustments limit work toward the fresh-particle budget; this is not a hard cap.
++        public static void PlanResidual()
++        {
++            if (Program.CancelToken.IsCancellationRequested) return;
++            residualSplitK = 10;
++            double budget = Program.TAUS * Program.TPS;
++            if (budget <= 0 || ParticleManagement.ParticleMassActive <= 0)
++            {
++                return;
++            }
++            for (int it = 0; it < 6; it++)
++            {
++                long total = 0, entries = 0;
++                System.Threading.Tasks.Parallel.For(1, Program.NII + 1, Program.pOptions, i =>
++                {
++                    if (Program.CancelToken.IsCancellationRequested) return;
++                    long local = 0, localEntries = 0;
++                    for (int j = 1; j <= Program.NJJ; j++)
++                    {
++                        for (int k = 1; k <= Program.NKK_Transient; k++)
++                        {
++                            double volume = Program.DXK * Program.DYK * Program.DZK_Trans[k] / Program.GridVolume;
++                            float[] concentrations = Program.Conz4d[i][j][k];
++                            for (int group = 0; group < Program.SourceGroups.Count; group++)
++                            {
++                                if (concentrations[group] >= Program.TransConcThreshold)
++                                {
++                                    local += ResidualSplitCount(concentrations[group] * volume / Program.TAUS);
++                                    localEntries++;
++                                }
++                            }
++                        }
++                    }
++                    Interlocked.Add(ref total, local);
++                    Interlocked.Add(ref entries, localEntries);
++                });
++                if (Program.CancelToken.IsCancellationRequested) return;
++                if (total <= budget || total == entries) break;
++                residualSplitK *= Math.Max(1.05, total / budget);
++            }
++        }
++
+         /// <summary>
+         /// Time loop for the particles released from the transient grid  
+         /// </summary>

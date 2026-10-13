@@ -1,0 +1,23 @@
+{
+  "kind": "point",
+  "sources": 8,
+  "sg": 8,
+  "length": 800,
+  "flow": 40,
+  "conc": 40,
+  "slices": 1,
+  "speed": 0.5,
+  "sc": 4,
+  "hot": false,
+  "workers": 24,
+  "id": "typical_1000",
+  "pps": 1000,
+  "tau": 120,
+  "particles": 120000,
+  "nx": 20,
+  "ny": 20,
+  "source_counts": {
+    "point": 8
+  },
+  "vertical_flow_layers": 40
+}

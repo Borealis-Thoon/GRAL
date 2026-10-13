@@ -1,0 +1,64 @@
+{
+  "id": "rate100_point2_stable20m",
+  "rate": 100,
+  "duration": 60,
+  "sources": 2,
+  "groups": 2,
+  "kind": "point",
+  "dx": 20,
+  "stability": 6,
+  "wind_m_s": 0.5,
+  "budget": 6000,
+  "situations": 3,
+  "workers": 1,
+  "ratio": 1,
+  "pattern": "steady",
+  "weather": [
+    [
+      9,
+      0.5,
+      6
+    ],
+    [
+      9,
+      0.5,
+      6
+    ],
+    [
+      9,
+      0.5,
+      6
+    ]
+  ],
+  "emission_factors": [
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0
+    ]
+  ],
+  "nominal_rates_kg_h": [
+    1.0,
+    1.0
+  ],
+  "source_counts": {
+    "point": 2
+  },
+  "expected_fresh_mass_kg": [
+    0.05,
+    0.05
+  ],
+  "domain_m": [
+    0,
+    200,
+    0,
+    200
+  ]
+}

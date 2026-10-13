@@ -1,0 +1,16 @@
+{
+  "status": "pass",
+  "recreated_source_files": 255,
+  "recreated_input_files": 47,
+  "ordinary_timed_runs": 60,
+  "warmups": 12,
+  "diagnostic_runs": 12,
+  "strict_builds": 6,
+  "source_checks": "exact SHA256",
+  "public_excluded": [
+    "raw model output",
+    "checkpoints",
+    "binaries"
+  ],
+  "prose_checks": "numbers, link placeholders, ASCII punctuation, implementation scope"
+}

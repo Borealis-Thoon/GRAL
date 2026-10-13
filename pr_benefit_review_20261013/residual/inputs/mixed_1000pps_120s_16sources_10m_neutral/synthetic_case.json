@@ -1,0 +1,97 @@
+{
+  "id": "mixed_1000pps_120s_16sources_10m_neutral",
+  "pps": 1000,
+  "dx": 10,
+  "budget": 120000,
+  "kind": "mixed",
+  "sources": 16,
+  "groups": 8,
+  "pattern": "steady",
+  "workers": 4,
+  "ratio": 1,
+  "duration": 120,
+  "situations": 3,
+  "wind_m_s": 2,
+  "stability": 4,
+  "weather": [
+    [
+      9,
+      2,
+      4
+    ],
+    [
+      9,
+      2,
+      4
+    ],
+    [
+      9,
+      2,
+      4
+    ]
+  ],
+  "emission_factors": [
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  ],
+  "nominal_rates_kg_h": [
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0,
+    2.0
+  ],
+  "source_counts": {
+    "point": 4,
+    "portal": 4,
+    "line": 4,
+    "area": 4
+  },
+  "expected_fresh_mass_kg": [
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "domain_m": [
+    0,
+    200,
+    0,
+    200
+  ]
+}

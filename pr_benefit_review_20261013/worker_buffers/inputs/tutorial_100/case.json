@@ -1,0 +1,23 @@
+{
+  "kind": "point",
+  "sources": 2,
+  "sg": 2,
+  "length": 800,
+  "flow": 40,
+  "conc": 40,
+  "slices": 1,
+  "speed": 0.25,
+  "sc": 6,
+  "hot": false,
+  "workers": 4,
+  "id": "tutorial_100",
+  "pps": 100,
+  "tau": 60,
+  "particles": 6000,
+  "nx": 20,
+  "ny": 20,
+  "source_counts": {
+    "point": 2
+  },
+  "vertical_flow_layers": 40
+}
