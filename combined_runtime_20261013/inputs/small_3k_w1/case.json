@@ -1,0 +1,22 @@
+{
+  "id": "small_3k_w1",
+  "particles": 3000,
+  "kind": "point",
+  "sources": 2,
+  "sg": 2,
+  "length": 400,
+  "flow": 40,
+  "conc": 40,
+  "slices": 1,
+  "tau": 30,
+  "speed": 1,
+  "sc": 4,
+  "hot": false,
+  "workers": 1,
+  "nx": 10,
+  "ny": 10,
+  "source_counts": {
+    "point": 2
+  },
+  "vertical_flow_layers": 40
+}

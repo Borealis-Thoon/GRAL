@@ -1,0 +1,54 @@
+{
+  "pr64": {
+    "file": "pr64.patch",
+    "head": "003b00e60ebe9f0c5acc7377ed155c3271b4d8c9",
+    "prerequisite": "3cfbd25505c21034673d2c850c368e953d08ef7e",
+    "sha256": "dc3ee1d6092ca11f188a270eff1e8ab2fb442a1f5f303d1356879b0c667c575d"
+  },
+  "pr66": {
+    "file": "pr66.patch",
+    "head": "cf09cb2b0af9f5a96ee97de4f060f1c4d5161437",
+    "prerequisite": "324dd08161bb2a4a4d02a43f33e2a7f4ebd0eff7",
+    "sha256": "beea28a07061c7f6c05a02b7a581c87dea401837297a62447085bbc8e598cbf3"
+  },
+  "pr67": {
+    "file": "pr67.patch",
+    "head": "4b8f5e98f63d4a6d0768a1114b357874ec16ead3",
+    "prerequisite": "324dd08161bb2a4a4d02a43f33e2a7f4ebd0eff7",
+    "sha256": "0b6e2baf51b72163d3cc555cd11c05b765310aaa3758fdcae4565c939cba09f8"
+  },
+  "pr68": {
+    "file": "pr68.patch",
+    "head": "b4ffec5e2ab55d3ec3717ed37d04938837e00120",
+    "prerequisite": "3cfbd25505c21034673d2c850c368e953d08ef7e",
+    "sha256": "4f97244da453fc9eae8a0fdbda46607a2e5cce484711d96d3340b00edccc99a3"
+  },
+  "pr69": {
+    "file": "pr69.patch",
+    "head": "7c23fe92803a019c1535af7f02fcc6b2e940f2ee",
+    "prerequisite": "3cfbd25505c21034673d2c850c368e953d08ef7e",
+    "sha256": "d905991672a4d41a2f7ffa7ccbfe3987613e6e6ece79d7de1c651c516d0e6d76"
+  },
+  "pr70": {
+    "file": "pr70.patch",
+    "head": "b2c4441a6ecc30640cec2e7cdacdd4c469a55618",
+    "prerequisite": "891225b2f9dbbcda7f5ef6e9ef6db65e64845108",
+    "sha256": "9ff0c55a8c1652092ebe20dc136d5cf6c55e2bc520f82fb4819373864e89d723"
+  },
+  "pr71": {
+    "file": "pr71.patch",
+    "head": "514bd97aad89dc49bae83cf2f5d7ed59fe3523bd",
+    "prerequisite": "f2bd495cde6d060be2e451320c102090c157d7df",
+    "sha256": "c08f29f5e3fce4c4e792eca932d59344ecd193e8f452528c179470e37181986e"
+  },
+  "met": {
+    "file": "met.patch",
+    "prerequisite": "891225b2f9dbbcda7f5ef6e9ef6db65e64845108",
+    "sha256": "88d6a1c44eb37809c9587f726233bbdd7f69484a17a91eac56ac973603a99659"
+  },
+  "worker": {
+    "file": "worker.patch",
+    "prerequisite": "891225b2f9dbbcda7f5ef6e9ef6db65e64845108 + #64",
+    "sha256": "8e46ed7ac4a349d4df9741485c3c40e1824fd3c315cd57f3b8520f5b7c400703"
+  }
+}

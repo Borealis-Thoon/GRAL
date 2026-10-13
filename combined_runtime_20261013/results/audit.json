@@ -1,0 +1,92 @@
+{
+  "status": "pass",
+  "topic_source_equivalence": [
+    {
+      "topic": "pr71",
+      "head": "514bd97aad89dc49bae83cf2f5d7ed59fe3523bd",
+      "normalized_source_files": 88,
+      "exact": true
+    },
+    {
+      "topic": "met",
+      "head": "bf99b2424264a194e0df6b3ded737b8c2e3d6990",
+      "normalized_source_files": 88,
+      "exact": true
+    },
+    {
+      "topic": "worker",
+      "head": "175bf603dc5d132a14a651df7397ce3ae9ff1df5",
+      "normalized_source_files": 89,
+      "exact": true
+    }
+  ],
+  "source_files_checked": 265,
+  "main_runs": 80,
+  "normal_exit_runs": 80,
+  "finite_nonnegative_output_runs": 80,
+  "member_checks": [
+    {
+      "case": "concentrated_100k_w4",
+      "expected_members": 2,
+      "all_15_reviewed_and_combined_runs_exact": true
+    },
+    {
+      "case": "concentrated_1m_unstable_w24",
+      "expected_members": 2,
+      "all_15_reviewed_and_combined_runs_exact": true
+    },
+    {
+      "case": "wide_9slice_8sg_100k_w24",
+      "expected_members": 72,
+      "all_15_reviewed_and_combined_runs_exact": true
+    },
+    {
+      "case": "small_3k_w1",
+      "expected_members": 2,
+      "all_15_reviewed_and_combined_runs_exact": true
+    }
+  ],
+  "paired_numerical_comparisons": 120,
+  "within_variant_repeat_pairs": 160,
+  "one_worker_combined_enabled_fallback_verified": true,
+  "hot_topic_hunks_with_trim": [
+    {
+      "variant": "reviewed",
+      "topic": "pr67",
+      "file": "src/Program.cs",
+      "hunk": "@@ -727,6 +727,13 @@ namespace GRAL_2001",
+      "context_trim": [
+        2,
+        0
+      ],
+      "mode": "unique context"
+    },
+    {
+      "variant": "combined",
+      "topic": "pr67",
+      "file": "src/Program.cs",
+      "hunk": "@@ -727,6 +727,13 @@ namespace GRAL_2001",
+      "context_trim": [
+        2,
+        0
+      ],
+      "mode": "unique context"
+    },
+    {
+      "variant": "combined",
+      "topic": "worker",
+      "file": "src/Zeitschleife.cs",
+      "hunk": "@@ -107,40 +113,44 @@",
+      "context_trim": [
+        0,
+        17
+      ],
+      "mode": "unique context"
+    }
+  ],
+  "limits": [
+    "Source equivalence uses normalized UTF-8/LF text; DLL hashes differ from builds made with different source paths.",
+    "Current versus reviewed differences combine the reviewed PRs. The measurements are not an isolated estimate of each PR.",
+    "Three combined optimizations preserve all reviewed payloads exactly in these four normal stationary fields. Transient and malformed-state tests are in their topic evidence."
+  ]
+}

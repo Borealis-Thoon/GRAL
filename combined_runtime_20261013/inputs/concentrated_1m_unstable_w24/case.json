@@ -1,0 +1,23 @@
+{
+  "id": "concentrated_1m_unstable_w24",
+  "particles": 1000000,
+  "kind": "point",
+  "sources": 2,
+  "sg": 2,
+  "length": 800,
+  "flow": 40,
+  "conc": 40,
+  "slices": 1,
+  "tau": 120,
+  "speed": 0.25,
+  "sc": 2,
+  "hot": false,
+  "workers": 24,
+  "concentrated": true,
+  "nx": 20,
+  "ny": 20,
+  "source_counts": {
+    "point": 2
+  },
+  "vertical_flow_layers": 40
+}

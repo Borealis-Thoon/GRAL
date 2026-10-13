@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "reviewer": "independent subagent f_opt_benchmark_design",
+  "checks": {
+    "source_manifest": "265 hashes matched",
+    "reverse_patch_check": "combined to reviewed: 11 hunks; reviewed to current: 49 hunks; exact source restoration",
+    "results": "80 final runs and aggregates verified",
+    "chart_wording": "range of five runs and median peak working set labels corrected"
+  },
+  "source_or_result_change_required": false
+}

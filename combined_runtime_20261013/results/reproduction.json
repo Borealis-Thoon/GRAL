@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "reconstructed_source_hashes": 265,
+  "inputs": [
+    {
+      "case": "concentrated_100k_w4",
+      "files": 7,
+      "byte_equal": true
+    },
+    {
+      "case": "concentrated_1m_unstable_w24",
+      "files": 7,
+      "byte_equal": true
+    },
+    {
+      "case": "wide_9slice_8sg_100k_w24",
+      "files": 7,
+      "byte_equal": true
+    },
+    {
+      "case": "small_3k_w1",
+      "files": 7,
+      "byte_equal": true
+    }
+  ],
+  "private_path_scan": "pass",
+  "model_rerun": false,
+  "scope": "Public script and patch reconstruction plus exact input reproduction; the full 80 Main runs were performed before packaging."
+}
