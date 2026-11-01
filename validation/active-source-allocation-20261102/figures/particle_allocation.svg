@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="720pt" height="324pt" viewBox="0 0 720 324" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-02T02:16:54.487608</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 324 
+L 720 324 
+L 720 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 136.8 243 
+L 691.2 243 
+L 691.2 97.2 
+L 136.8 97.2 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 136.8 149.741711 
+L 321.6 149.741711 
+L 321.6 103.827273 
+L 136.8 103.827273 
+z
+" clip-path="url(#pbc3c5fd689)" style="fill: #17689a; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 321.6 149.741711 
+L 506.4 149.741711 
+L 506.4 103.827273 
+L 321.6 103.827273 
+z
+" clip-path="url(#pbc3c5fd689)" style="fill: url(#he482de4241); stroke: #687985; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 506.4 149.741711 
+L 691.2 149.741711 
+L 691.2 103.827273 
+L 506.4 103.827273 
+z
+" clip-path="url(#pbc3c5fd689)" style="fill: url(#hb2ea356f78); stroke: #687985; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 136.8 236.372727 
+L 691.2 236.372727 
+L 691.2 190.458289 
+L 136.8 190.458289 
+z
+" clip-path="url(#pbc3c5fd689)" style="fill: #17689a; stroke: #ffffff; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="m49ccab000a" d="M 0 0 
+L 0 3.5 
+" style="stroke: #405360; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m49ccab000a" x="136.8" y="243" style="fill: #405360; stroke: #405360; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #405360" x="136.8" y="259.117188" transform="rotate(-0 136.8 259.117188)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#m49ccab000a" x="321.6" y="243" style="fill: #405360; stroke: #405360; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #405360" x="321.6" y="259.117188" transform="rotate(-0 321.6 259.117188)">36</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#m49ccab000a" x="506.4" y="243" style="fill: #405360; stroke: #405360; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #405360" x="506.4" y="259.117188" transform="rotate(-0 506.4 259.117188)">72</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m49ccab000a" x="691.2" y="243" style="fill: #405360; stroke: #405360; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #405360" x="691.2" y="259.117188" transform="rotate(-0 691.2 259.117188)">108</text>
+     </g>
+    </g>
+    <g id="text_5">
+     <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="414" y="279.118125" transform="rotate(-0 414 279.118125)">Allocated particles per hour</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_5"/>
+     <g id="text_6">
+      <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end" x="124.8" y="131.343554" transform="rotate(-0 124.8 131.343554)">Baseline</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_6"/>
+     <g id="text_7">
+      <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: end" x="124.8" y="217.974571" transform="rotate(-0 124.8 217.974571)">Patched</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_7">
+    <path d="M 136.8 243 
+L 691.2 243 
+" style="fill: none; stroke: #777777; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_8">
+    <g id="patch_8">
+     <path d="M 198.81375 134.824492 
+L 259.58625 134.824492 
+L 259.58625 118.744492 
+L 198.81375 118.744492 
+z
+" style="fill: #17689a"/>
+    </g>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="229.2" y="129.901679" transform="rotate(-0 229.2 129.901679)">SG 1: 36</text>
+   </g>
+   <g id="text_9">
+    <g id="patch_9">
+     <path d="M 383.61375 134.824492 
+L 444.38625 134.824492 
+L 444.38625 118.744492 
+L 383.61375 118.744492 
+z
+" style="fill: #e2e7ea"/>
+    </g>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b3a" x="414" y="129.901679" transform="rotate(-0 414 129.901679)">SG 2: 36</text>
+   </g>
+   <g id="text_10">
+    <g id="patch_10">
+     <path d="M 568.41375 134.824492 
+L 629.18625 134.824492 
+L 629.18625 118.744492 
+L 568.41375 118.744492 
+z
+" style="fill: #e2e7ea"/>
+    </g>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #172b3a" x="598.8" y="129.901679" transform="rotate(-0 598.8 129.901679)">SG 3: 36</text>
+   </g>
+   <g id="text_11">
+    <g id="patch_11">
+     <path d="M 379.439062 221.455508 
+L 448.560937 221.455508 
+L 448.560937 205.375508 
+L 379.439062 205.375508 
+z
+" style="fill: #17689a"/>
+    </g>
+    <text style="font-weight: 700; font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #ffffff" x="414" y="216.532696" transform="rotate(-0 414 216.532696)">SG 1: 108</text>
+   </g>
+  </g>
+  <g id="text_12">
+   <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #172b3a" x="57.6" y="29.16" transform="rotate(-0 57.6 29.16)">Particle allocation with one active source group</text>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #405360" x="57.6" y="58.32" transform="rotate(-0 57.6 58.32)">24 hourly situations  |  Factors: SG 1 = 3, SG 2 = 0, SG 3 = 0</text>
+  </g>
+  <g id="text_14">
+   <text style="font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #405360" x="57.6" y="299.7" transform="rotate(-0 57.6 299.7)">Allocation example, not a runtime comparison.  Total emissions: 3 kg/h in both runs.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbc3c5fd689">
+   <rect x="136.8" y="97.2" width="554.4" height="145.8"/>
+  </clipPath>
+ </defs>
+ <defs>
+  <pattern id="he482de4241" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+   <rect x="0" y="0" width="73" height="73" fill="#e2e7ea"/>
+   <path d="M -36 36 
+L 36 -36 
+M -32 40 
+L 40 -32 
+M -28 44 
+L 44 -28 
+M -24 48 
+L 48 -24 
+M -20 52 
+L 52 -20 
+M -16 56 
+L 56 -16 
+M -12 60 
+L 60 -12 
+M -8 64 
+L 64 -8 
+M -4 68 
+L 68 -4 
+M 0 72 
+L 72 0 
+M 4 76 
+L 76 4 
+M 8 80 
+L 80 8 
+M 12 84 
+L 84 12 
+M 16 88 
+L 88 16 
+M 20 92 
+L 92 20 
+M 24 96 
+L 96 24 
+M 28 100 
+L 100 28 
+M 32 104 
+L 104 32 
+M 36 108 
+L 108 36 
+" style="fill: #687985; stroke: #687985; stroke-width: 1.0; stroke-linecap: butt; stroke-linejoin: miter"/>
+  </pattern>
+  <pattern id="hb2ea356f78" patternUnits="userSpaceOnUse" x="0" y="0" width="72" height="72">
+   <rect x="0" y="0" width="73" height="73" fill="#e2e7ea"/>
+   <path d="M -36 36 
+L 36 108 
+M -32 32 
+L 40 104 
+M -28 28 
+L 44 100 
+M -24 24 
+L 48 96 
+M -20 20 
+L 52 92 
+M -16 16 
+L 56 88 
+M -12 12 
+L 60 84 
+M -8 8 
+L 64 80 
+M -4 4 
+L 68 76 
+M 0 0 
+L 72 72 
+M 4 -4 
+L 76 68 
+M 8 -8 
+L 80 64 
+M 12 -12 
+L 84 60 
+M 16 -16 
+L 88 56 
+M 20 -20 
+L 92 52 
+M 24 -24 
+L 96 48 
+M 28 -28 
+L 100 44 
+M 32 -32 
+L 104 40 
+M 36 -36 
+L 108 36 
+" style="fill: #687985; stroke: #687985; stroke-width: 1.0; stroke-linecap: butt; stroke-linejoin: miter"/>
+  </pattern>
+ </defs>
+</svg>

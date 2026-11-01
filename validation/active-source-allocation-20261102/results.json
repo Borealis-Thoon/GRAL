@@ -1,0 +1,26 @@
+{
+  "date_local": "2026-11-02",
+  "base_commit": "cd540abf4eda380e5669a891911323351d789e86",
+  "tested_patch_commit": "389379c3a46eb296ea8558b488d3d83856b71578",
+  "build": {"sdk": ".NET 10", "configuration": "Release", "TreatWarningsAsErrors": true, "warnings": 0, "errors": 0},
+  "component_cases_passed": ["active", "off", "budget", "deposition", "deposition-source", "capacity"],
+  "transport_cases_passed": ["control24", "sparse24", "switch48", "edge4"],
+  "deposition_cases_passed": ["control6", "late6", "cold6"],
+  "baseline_comparisons": {
+    "control24": {"identical_concentration_members": 72},
+    "control6": {"identical_concentration_members": 18, "identical_deposition_members": 18}
+  },
+  "comparison_method": "Byte comparison of decompressed output members; ZIP metadata excluded",
+  "sparse24": {
+    "hours": 24,
+    "particles_per_hour": 108,
+    "base_rates_kg_per_hour": [1, 1, 1],
+    "hourly_factors": [3, 0, 0],
+    "baseline_allocation": [36, 36, 36],
+    "patched_allocation": [108, 0, 0],
+    "baseline_total_emitted_kg": [72, 0, 0],
+    "patched_total_emitted_kg": [72, 0, 0]
+  },
+  "scope": "Virtual sources with fixed seeds. Main transport cases have constant total hourly emissions. Full-model runs use point sources; component checks cover all four source types.",
+  "limits": "No measured runtime or statistical-accuracy improvement. No production-domain equivalence claim. Redistribution changes individual Monte Carlo results; source-weighted deposition can differ by floating-point rounding."
+}

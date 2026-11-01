@@ -1,0 +1,2 @@
+# Preserve raw log bytes so their recorded SHA256 hashes remain portable.
+logs/*.txt -text

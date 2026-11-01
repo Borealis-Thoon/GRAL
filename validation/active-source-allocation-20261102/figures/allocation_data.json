@@ -1,0 +1,41 @@
+{
+  "description": "Allocation per hourly situation for equal-base point sources",
+  "weather_situations": 24,
+  "particle_budget_per_hour": 108,
+  "base_emission_kg_per_hour_each": [
+    1,
+    1,
+    1
+  ],
+  "emission_factors": [
+    3,
+    0,
+    0
+  ],
+  "total_emission_kg_over_24_hours": [
+    72,
+    0,
+    0
+  ],
+  "allocation": {
+    "Baseline": [
+      36,
+      36,
+      36
+    ],
+    "Patched": [
+      108,
+      0,
+      0
+    ]
+  },
+  "source_logs": {
+    "Baseline": "baseline_sparse24.txt",
+    "Patched": "patched_sparse24.txt"
+  },
+  "source_sha256": {
+    "Baseline": "a8aa73e609a417677ae5fca336d8022c65a831aeb0413505171cd3a516404cda",
+    "Patched": "f5fcd4d48dedec1cbb6768b2f71adb49f02dd9455ead0a78fde5b98251d87a66"
+  },
+  "interpretation": "Baseline uses initial allocation; patched allocation is logged for every hourly situation."
+}
