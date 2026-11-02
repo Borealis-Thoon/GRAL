@@ -1,0 +1,78 @@
+{
+  "schema": 1,
+  "published_source": "b60673164b749896c3b942d0e89753addc1c6f7b",
+  "original_measured_evidence": "510aaabc2207ec5f0c6c92b6ca4a6af6878809ae",
+  "scope": "Editorial figures only; production source and model results unchanged",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 8,
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da"
+    },
+    {
+      "path": "build_current_pr_figures.py",
+      "bytes": 4189,
+      "sha256": "0392655e7fafe7be6b6cb6f8d81801c0e583b1ff77641b1d15d192326886a2fe"
+    },
+    {
+      "path": "current_pr_figures/published_gpu_flow.pdf",
+      "bytes": 28465,
+      "sha256": "ee1750b3802f2c6926456ab86ba029980cefe27aa67a13719110d6815daaae4e"
+    },
+    {
+      "path": "current_pr_figures/published_gpu_flow.png",
+      "bytes": 136805,
+      "sha256": "86dad009367e60bf88f463f4123c92635c52ec4fc7301611f757fb761610e36e"
+    },
+    {
+      "path": "current_pr_figures/published_gpu_flow.svg",
+      "bytes": 12330,
+      "sha256": "0d0421f95bb3a6e2ab2a79354b11f9df0d9c85d313b016662dc88f1965a3bec5"
+    },
+    {
+      "path": "current_pr_figures/published_process_timing.pdf",
+      "bytes": 25914,
+      "sha256": "94d6e1933f26fa758ee7e10e072483d24aff92e75614756c1443742cb02725ae"
+    },
+    {
+      "path": "current_pr_figures/published_process_timing.png",
+      "bytes": 87742,
+      "sha256": "9a112c08fd9181872128d4d9e34353e4b206aae2fa30fa86cee5af981cefef8d"
+    },
+    {
+      "path": "current_pr_figures/published_process_timing.svg",
+      "bytes": 62990,
+      "sha256": "f024eadce06d2f5cdcd5c4805b249570044aa15899eeccca9135e85736cfc4b7"
+    },
+    {
+      "path": "current_pr_general_review.json",
+      "bytes": 10229,
+      "sha256": "b3f81e05a6084000b048237f21318a0d9c2deab88cac93cf6b1d00f86d327ef6"
+    },
+    {
+      "path": "current_pr_python_review.json",
+      "bytes": 3089,
+      "sha256": "a03952442d76c699e2d02b1a368c5015cc27caba23b3ea79bf5304f1de542b31"
+    },
+    {
+      "path": "current_pr_readme_humanize.json",
+      "bytes": 718,
+      "sha256": "ce073aa006acbec864136dc062d2cdceb1f01aa1cbbd7f3f93994ada63ee5fa4"
+    },
+    {
+      "path": "current_pr_readme_style.json",
+      "bytes": 516,
+      "sha256": "101271cb9a9d899de7ff74823032b18123bf396cdad917a8efae5a6765057379"
+    },
+    {
+      "path": "PR_REVIEW_BASE.json",
+      "bytes": 531,
+      "sha256": "30a56d7791cbbf146ffa638ce644e56981719b75c3995fcc8d4f723bf98acd49"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1548,
+      "sha256": "3dc0b40faa64123e34a281ff618ac55f9e11920b9c5cf91dc5f3921a2a3a7097"
+    }
+  ]
+}

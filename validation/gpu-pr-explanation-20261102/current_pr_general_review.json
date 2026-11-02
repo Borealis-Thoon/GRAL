@@ -1,0 +1,160 @@
+{
+  "schema": 1,
+  "reviewer": "/root/all_conditions_general_review",
+  "review_type": "published_pr_editorial_factual_and_visual_review",
+  "decision": "APPROVE",
+  "findings": [],
+  "severity_counts": {
+    "CRITICAL": 0,
+    "HIGH": 0,
+    "MEDIUM": 0,
+    "LOW": 0
+  },
+  "source_scope": {
+    "published_head": "b60673164b749896c3b942d0e89753addc1c6f7b",
+    "published_base": "cd540abf4eda380e5669a891911323351d789e86",
+    "changed_files": 23,
+    "additions": 6056,
+    "deletions": 62,
+    "measured_evidence": "Previously published 44-run transient/steady study at evidence commit 510aaabc2207ec5f0c6c92b6ca4a6af6878809ae.",
+    "excluded_scope": "The local all-GPU candidate, true VRAM partitioning and deferred complex 44-run study are not results of the published source."
+  },
+  "source_sha256": {
+    "publication/PR_BODY_PUBLISHED_BEFORE_REVIEW.md": "e628129536c7ccb46cb0fe031de389afbde08d4d9ff900a611daabb0f25fd7af",
+    "publication/PR_BODY_REVIEWED_CURRENT.md": "c421a5161823a0e63d7a38759d8d0f666f3a43fbda804dd44eee120594426557",
+    "publication/PR_REVIEW_BASE.json": "30a56d7791cbbf146ffa638ce644e56981719b75c3995fcc8d4f723bf98acd49",
+    "publication/build_current_pr_figures.py": "0392655e7fafe7be6b6cb6f8d81801c0e583b1ff77641b1d15d192326886a2fe",
+    "publication/CURRENT_PR_VISUALS_README.md": "3dc0b40faa64123e34a281ff618ac55f9e11920b9c5cf91dc5f3921a2a3a7097",
+    "publication/current_pr_python_review.json": "a03952442d76c699e2d02b1a368c5015cc27caba23b3ea79bf5304f1de542b31",
+    "publication/current_pr_figures/published_gpu_flow.pdf": "ee1750b3802f2c6926456ab86ba029980cefe27aa67a13719110d6815daaae4e",
+    "publication/current_pr_figures/published_gpu_flow.png": "86dad009367e60bf88f463f4123c92635c52ec4fc7301611f757fb761610e36e",
+    "publication/current_pr_figures/published_gpu_flow.svg": "0d0421f95bb3a6e2ab2a79354b11f9df0d9c85d313b016662dc88f1965a3bec5",
+    "publication/current_pr_figures/published_process_timing.pdf": "94d6e1933f26fa758ee7e10e072483d24aff92e75614756c1443742cb02725ae",
+    "publication/current_pr_figures/published_process_timing.png": "9a112c08fd9181872128d4d9e34353e4b206aae2fa30fa86cee5af981cefef8d",
+    "publication/current_pr_figures/published_process_timing.svg": "f024eadce06d2f5cdcd5c4805b249570044aa15899eeccca9135e85736cfc4b7",
+    "publication/current_pr_final_style.json": "d0e4cefa0c682b1470b6b2e58888e6f6070d14b288a397448f95bc0ced2e5147"
+  },
+  "preservation": {
+    "AI_section_exact_including_terminal_blank_line": true,
+    "complete_measured_results_section_text_exact": true,
+    "published_numeric_tables_preserved": "All measured timing, numerical and memory tables retain the published rows. The complete original runtime optimization table and following paragraph are restored verbatim inside an expandable section.",
+    "git_published_diff_verified": "23 files changed, 6056 insertions, 62 deletions against cd540abf4eda380e5669a891911323351d789e86..b60673164b749896c3b942d0e89753addc1c6f7b.",
+    "runtime_optimization_section_exact": true
+  },
+  "checks": [
+    {
+      "area": "intro_and_order",
+      "result": "pass",
+      "detail": "The introduction explains CPU particle cost, GPU execution and retained host responsibilities before implementation details. Execution, opt-in limits and setup precede checks and measured evidence. Tables and long figure lists remain available in expandable sections."
+    },
+    {
+      "area": "scope_and_claims",
+      "result": "pass",
+      "detail": "The body names b606731 and retains terrain, statistics, fixed-seed, decay, deposition, slice and receptor restrictions with CPU fallback. It adds no all-valid-GPU, memory-partition or new-study completion claim."
+    },
+    {
+      "area": "timing_integrity",
+      "result": "pass",
+      "detail": "The timing generator data literal contains the same 24 median/minimum/maximum values as the four published process start-to-exit table rows. The introductory paired speedups are the published 5.131 and 6.523 values, not ratios of backend medians."
+    },
+    {
+      "area": "uncertainty_and_captions",
+      "result": "pass",
+      "detail": "Steady 48-situation CPU range 77.203-202.793 s and CV 51.22% are prominent. Caption distinguishes process duration from the post-situation-3 boundary. The unknown cause and unstable-sample limit remain explicit. Map caption retains the fixed-fixture and field-validity boundary."
+    },
+    {
+      "area": "visual_review",
+      "result": "pass",
+      "detail": "Both final PNGs were opened. Labels, axes, legend and flow are readable. The timing axis includes the full steady CPU maximum. Shapes and colors distinguish CPU/GPU, and the GRAL GPU execution flow shows host/runtime/device responsibilities and steady/transient work without unpublished partition claims."
+    },
+    {
+      "area": "AI_disclosure",
+      "result": "pass",
+      "detail": "Checkbox wording, states and the terminal blank line now match the published snapshot exactly. Personal verification assertions are preserved, not independently certified by this review."
+    },
+    {
+      "area": "evidence_index",
+      "result": "pass",
+      "detail": "CURRENT_PR_VISUALS_README.md identifies b606731 and the old 510aaabc measurements, describes the two visuals, and explicitly states that this presentation revision adds no model measurement or production source change."
+    },
+    {
+      "area": "restored_optimization_section",
+      "result": "pass_exact_text_comparison",
+      "detail": "The original How the runtime avoids repeated work heading, complete table and following paragraph match verbatim inside the new Runtime optimizations and their measurement details section. It follows setup and precedes checks. AI section and complete measured-results section remain exact."
+    },
+    {
+      "area": "expandable_spatial_maps",
+      "result": "pass_localized_text_review",
+      "detail": "The 15-panel map is now inside details. Caption defines the base seed, mean over situations 4-24, CPU/GPU/GPU-minus-CPU columns, shared CPU/GPU scale per row, separate difference scale, grid-index axes and model-output units. The fixed-fixture and field-validity limit remains. Previous body SHA is reproduced by reversing only this wrapper/caption change."
+    }
+  ],
+  "specialist_review": {
+    "path": "publication/current_pr_python_review.json",
+    "decision": "pass_scoped",
+    "current_generator_and_png_hashes_match": {
+      "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_complex_sources\\publication\\current_pr_figures\\published_process_timing.png": true,
+      "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_complex_sources\\publication\\current_pr_figures\\published_gpu_flow.png": true,
+      "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_complex_sources\\publication\\build_current_pr_figures.py": true
+    },
+    "body_hash_note": "The specialist body hash predates restoration of the original AI terminal blank line and original runtime optimization section. Both restorations were checked by exact text comparison. Final body hash is recorded above."
+  },
+  "publication_prerequisites": [
+    {
+      "item": "image_url_substitution",
+      "status": "pending_root_publication",
+      "placeholders": [
+        "CURRENT_PR_FLOW_FIGURE_URL",
+        "CURRENT_PR_TIMING_FIGURE_URL"
+      ],
+      "detail": "Replace both placeholders with the published evidence image URLs before updating the PR. Preserve the reviewed captions, tables, scope and AI section."
+    },
+    {
+      "item": "production_head",
+      "status": "must_remain_b606731",
+      "detail": "This approval supports an evidence-only addition and PR body update for the current published production source."
+    }
+  ],
+  "execution": {
+    "models_launched": 0,
+    "gpu_context_created": false,
+    "heavy_analysis_run": false,
+    "figure_generator_run": false,
+    "remote_publication_performed": false,
+    "production_files_modified": false,
+    "body_modified_by_reviewer": false
+  },
+  "limits": [
+    "Approval covers the editorial copy and visual summaries for the current published source.",
+    "Source counts were checked locally against the pinned commits; the PR remote was not queried by this reviewer.",
+    "PNG visuals were reviewed; SVG/PDF files were hashed without separate rendering.",
+    "Published measurements were preserved and reconciled with the specialist review; model results were not recomputed.",
+    "No approval of the local candidate or deferred measurements is implied."
+  ],
+  "humanize": {
+    "skill": "humanize-kit:humanizer",
+    "mode": "Embedded",
+    "method": "Read and audit only for the PR prose. Concise review evidence statements checked for factual preservation, identifiers, exact disclosure and necessary uncertainty.",
+    "final_style_review": {
+      "path": "publication/current_pr_final_style.json",
+      "advisory_candidates": 5,
+      "retention_reason": "Candidates preserve distinctions in model mode, counter scope, ratio estimator, dependent seed contrasts and timing uncertainty."
+    }
+  },
+  "editorial_followup": {
+    "previous_reviewed_body_sha256": "5f97e5daca2c9c5e87a53df1a29321e4dbb6ecb4c37de6079220a1858ba481b9",
+    "current_reviewed_body_sha256": "98ff1f639c505d0986ae07d22049f8ccf80d59d1092ad632cd151360c0a324b2",
+    "change": "Restore the previously published runtime optimization section inside details.",
+    "tests_or_figures_rerun": false,
+    "only_inserted_details_block_added_hash_verified": true
+  },
+  "editorial_map_followup": {
+    "previous_reviewed_body_sha256": "98ff1f639c505d0986ae07d22049f8ccf80d59d1092ad632cd151360c0a324b2",
+    "current_reviewed_body_sha256": "c421a5161823a0e63d7a38759d8d0f666f3a43fbda804dd44eee120594426557",
+    "only_wrapper_and_caption_delta_hash_verified": true,
+    "optimization_section_exact": true,
+    "AI_section_exact": true,
+    "measured_results_section_exact": true,
+    "plotting_source_reference": "D:/INU_Modeling_Work/jobs/20261102_gral_gpu_point_portal_steady/analysis/plot_study.py:94",
+    "figure_rerun_by_reviewer": false
+  }
+}

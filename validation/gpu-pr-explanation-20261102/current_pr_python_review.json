@@ -1,0 +1,35 @@
+{
+  "decision": "pass_scoped",
+  "known_placeholders": [
+    "CURRENT_PR_FLOW_FIGURE_URL",
+    "CURRENT_PR_TIMING_FIGURE_URL"
+  ],
+  "checks": [
+    "Python AST parsed and data literal checked",
+    "24 plotted median/min/max values match rounded measured summaries",
+    "12 pairwise CPU/GPU ratios recomputed from stored raw values and agree with paired speedup fields",
+    "two PNG images visually inspected for labels, legibility and timing bounds",
+    "published transient 24 and 48 median paired speedups match 5.131 and 6.523",
+    "Updated GRAL GPU execution title inspected in regenerated PNG"
+  ],
+  "hashes": {
+    "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_complex_sources\\publication\\current_pr_figures\\published_process_timing.pdf": "94D6E1933F26FA758EE7E10E072483D24AFF92E75614756C1443742CB02725AE",
+    "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_complex_sources\\publication\\current_pr_figures\\published_process_timing.png": "9A112C08FD9181872128D4D9E34353E4B206AAE2FA30FA86CEE5AF981CEFEF8D",
+    "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_complex_sources\\publication\\current_pr_figures\\published_gpu_flow.png": "86DAD009367E60BF88F463F4123C92635C52EC4FC7301611F757FB761610E36E",
+    "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\analysis\\measured\\transient_all_sources\\analysis_summary.json": "45CEAD9B0966BD9F0DAF6B274BDD0330BCF622605CE189F2366BB944FE59B82C",
+    "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\analysis\\measured\\steady_all_sources\\analysis_summary.json": "B7884D68444DBEB51D7FF7B08ED9F598DD9717BD3182BAB8EA585562490B2207",
+    "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_complex_sources\\publication\\current_pr_figures\\published_gpu_flow.svg": "0D0421F95BB3A6E2AB2A79354B11F9DF0D9C85D313B016662DC88F1965A3BEC5",
+    "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_complex_sources\\publication\\current_pr_figures\\published_gpu_flow.pdf": "EE1750B3802F2C6926456AB86BA029980CEFE27AA67A13719110D6815DAAAE4E",
+    "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_complex_sources\\publication\\build_current_pr_figures.py": "0392655E7FAFE7BE6B6CB6F8D81801C0E583B1FF77641B1D15D192326886A2FE",
+    "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_complex_sources\\publication\\PR_BODY_REVIEWED_CURRENT.md": "01D0242BD270C89E760DC4905FFFBD89FB57F16A2D69BF1C34896EEB2F87B3F4",
+    "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_complex_sources\\publication\\current_pr_figures\\published_process_timing.svg": "F024EADCE06D2F5CDCD5C4805B249570044AA15899EECCCA9135E85736CFC4B7"
+  },
+  "finding": [],
+  "limitations": [
+    "Numbers describe published b606731 evidence, not the local all-GPU candidate",
+    "PNG inspected; SVG and PDF hashed but not rendered",
+    "No models, GPU or heavy analysis executed",
+    "Other narrative numerical tables were not exhaustively audited in this focused review",
+    "AI disclosure checkboxes are preserved from the existing published PR; this review does not verify the submitter personal assertions"
+  ]
+}
