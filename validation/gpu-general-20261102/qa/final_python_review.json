@@ -1,0 +1,26 @@
+{
+  "status": "pass",
+  "scope": "Python code review: CUDA event/host timing separation, fixed-seed repeatability, publication input selection and README; no scientific approval",
+  "unit_tests": {
+    "suite": "analysis/test_analysis.py",
+    "passed": 15,
+    "failed": 0,
+    "interpreter": "D:\\INU_Modeling_Work\\envs\\modeling-tools\\Scripts\\python.exe"
+  },
+  "measured_analysis_status": "analyzed_pending_review",
+  "numerical_gate": "pass_observed_fixture",
+  "numerical_decision": "engineering_review_required",
+  "analysis_summary_sha256": "3121f80ad2db571f41375941f134520bd54f24eb4e0de42efad1e127513c51a7",
+  "analysis_source_hashes_match": true,
+  "models_executed": false,
+  "checks": [
+    "CUDA event counter deltas and host timer separation",
+    "dependent fixed-seed pairs, 24/48h and all/steady windows",
+    "study_input_files selection matches packaging selection by explicit equality check",
+    "README path inclusion and scope reviewed"
+  ],
+  "limitations": [
+    "Scientific results require separate independent review",
+    "Final before/after input snapshot and package roundtrip remain pending"
+  ]
+}

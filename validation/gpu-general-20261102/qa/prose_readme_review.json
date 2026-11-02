@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "skill": "humanize-kit:humanizer",
+  "mode": "Embedded",
+  "profile": "english-ste-inspired",
+  "artifact": "docs/evidence_README.md",
+  "intended_bundle_path": "README.md",
+  "script_status": {
+    "route_exit": 0,
+    "source_style_exit": 0,
+    "final_style_exit": 0,
+    "final_style_candidate_count": 1,
+    "technical_fidelity_exit": 1
+  },
+  "candidate_decisions": [
+    "Modal-count change: must not be added became Do not add. The nested-time prohibition and scope are preserved.",
+    "Negation-count change: preparation, not additional measured replicates became a direct instruction to exclude preparation from measured replicate counts.",
+    "Negation-count change: removed the duplicate non-portability sentence. The adjacent requirement to review and explicitly adapt machine-specific model scripts preserves that boundary.",
+    "The remaining UNIFORM_RHYTHM candidate spans the introductory sentence and a required comparison table. The table contains distinct records and serves navigation. It was retained after paragraph review."
+  ],
+  "manual_fidelity": "Compared source and final text. Identifiers, dates, design counts, source commits, links, code, condition order, and limits are preserved.",
+  "figure_link_count": 14,
+  "figure_links": [
+    "situation_time_repeats.png",
+    "timing_variability.png",
+    "memory_walltime_24h.png",
+    "memory_walltime_48h.png",
+    "memory_per_situation_24h.png",
+    "memory_per_situation_48h.png",
+    "seed0_mean_spatial_maps.png",
+    "seed_twins_scatter.png",
+    "seed_R_V_blocks.png",
+    "seed_level_metrics.png",
+    "gpu_pipeline_phases_24h.png",
+    "gpu_pipeline_phases_48h.png",
+    "gpu_buffer_reuse_24h.png",
+    "gpu_buffer_reuse_48h.png"
+  ],
+  "review_scope": [
+    "Pinned source HEAD was read from repo: 1a44c07ba76db21c557277a841e6904ace8b9328.",
+    "Protocol run allocation and sample-count boundaries were checked.",
+    "Figure names and labels were checked against analysis/plot_study.py.",
+    "Bundle-relative paths were checked against publication/package_evidence.py, not an already published bundle.",
+    "C# relative project references were checked.",
+    "Functional summary lists 16 configurations and one bare-CPU zero-offset comparison. Nonfixed seed status remains dispatch/completion only.",
+    "No new model execution, network write, result analysis, or publication was performed."
+  ],
+  "publication_gate": "README links to measured outputs, public manifest, provenance, and final review require final bundle assembly and root verification.",
+  "quantitative_claims": "Design counts and intervals only. No study result, speedup, accuracy score, or 22-run completion claim.",
+  "humanize_review": [
+    "Split long introductory and provenance sentences.",
+    "Named the external observer as actor.",
+    "Replaced a semicolon with separate sentences.",
+    "Preserved factual negation, independent-sample limits, and machine-specific runner restrictions."
+  ],
+  "artifact_sha256": "1b13626496097e7037aeea1fdc4f8af293b1d08c3d15c28e23f742c3a56cf511",
+  "final_label_update": "qa/prose_readme_label_review.json",
+  "final_scope_update": "qa/prose_readme_final_scope_review.json"
+}

@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "status": "predeclared_design_no_results",
+  "cohort_freeze_required": true,
+  "job": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch",
+  "scope": "isolated_virtual_fixture_engineering_validation",
+  "primary_fixture": {
+    "source_groups": ["AREA", "horizontal_LINE", "vertical_LINE"],
+    "unsupported_source_in_primary_fixture": false,
+    "expected_grid": [50, 50],
+    "expected_new_particles_per_model_hour": 360000,
+    "verify_actual_fixture_before_cohort": true
+  },
+  "execution": {
+    "allowed_logical_cpus": 16,
+    "concurrent_model_processes": 1,
+    "record_effective_affinity": true,
+    "modify_process_lasso": false,
+    "cache_condition": "predeclared_warm_with_untimed_preparation",
+    "excluded_initial_situations_for_steady_timing": 3
+  },
+  "seeds": {
+    "offsets": [0, 100000, 200000, 300000, 400000, 500000],
+    "base_offset": 0,
+    "overlay": "checked(IWET + offset) passed only to designated RNG constructor",
+    "change_model_time_or_meteorology": false,
+    "record_effective_seed1_seed2": true,
+    "verify_distinct_actual_states": true,
+    "verify_zero_offset_unchanged_build": true
+  },
+  "measured_runs": {
+    "total": 22,
+    "science_24h": {
+      "seeds": 6,
+      "runs": 12,
+      "pair_backend_orders": [["CPU","GPU"],["GPU","CPU"],["CPU","GPU"],["GPU","CPU"],["CPU","GPU"],["GPU","CPU"]]
+    },
+    "timing_24h_extra": {
+      "base_seed_extra_pairs": 2,
+      "runs": 4,
+      "pair_backend_orders": [["GPU","CPU"],["CPU","GPU"]],
+      "include_base_seed_science_pair": true
+    },
+    "timing_48h": {
+      "base_seed_pairs": 3,
+      "runs": 6,
+      "pair_backend_orders": [["GPU","CPU"],["CPU","GPU"],["GPU","CPU"]]
+    },
+    "scientific_independent_seed_count": 6,
+    "scientific_independent_block_count": 3,
+    "timing_pair_count_per_duration": 3
+  },
+  "functional_matrix": {
+    "outside_measured_22_runs": true,
+    "duration_hours": 4,
+    "cases": ["AREA_only", "horizontal_LINE_only", "vertical_LINE_only", "supported_mixed", "POINT", "PORTAL", "unsupported_plus_supported", "implemented_guard_triggers"],
+    "fallback_scope": "whole_situation",
+    "fallback_oracle": "explicit_CPU_same_inputs_same_seed",
+    "must_record_actual_dispatch": true
+  },
+  "science": {
+    "primary_hours_inclusive": [4,24],
+    "sensitivity_hours_inclusive": [1,24],
+    "outcomes": ["each_source_group","aggregate"],
+    "weights": "cell_area_times_output_interval",
+    "metrics": ["symmetric_weighted_NMAE", "signed_normalized_bias", "signed_absolute_mean_difference", "spatial_Pearson_time_mean_maps", "P95", "P99", "maximum_absolute_difference", "maximum_concentration_and_location"],
+    "quantile_method": "linear_for_equal_weights_otherwise_predeclared_weighted",
+    "zero_policy": "both_zero_error_zero; positive_numerator_zero_reference_infinite; constant_correlation_null",
+    "disjoint_seed_index_blocks": [[0,1],[2,3],[4,5]],
+    "L": "weighted_mean_absolute_difference",
+    "A_b": "(L(C_i,G_i)+L(C_j,G_j))/2",
+    "B_b": "L(C_i,C_j)",
+    "D_b": "L(G_i,G_j)",
+    "R_b": "A_b/B_b",
+    "V_b": "D_b/B_b",
+    "primary_observed_gate": "R_b < 1 in every informative block for every source group and aggregate",
+    "zero_cpu_reference": "A_b=0 exact_match; A_b>0 engineering_fail",
+    "dispersion_review_band_inclusive": [0.5,2.0],
+    "dispersion_band_is_physical_margin": false,
+    "secondary_diagnostics_review_required": true,
+    "all_15_seed_pairs_independent": false
+  },
+  "uncertainty": {
+    "resampling_unit": "disjoint_seed_pair_block",
+    "paired_all_metrics_and_source_groups": true,
+    "block_count": 3,
+    "bootstrap": "enumerate_all_27_ordered_size3_resamples",
+    "statistics": ["sum_A_over_sum_B", "sum_D_over_sum_B"],
+    "percentiles": [2.5,97.5,95],
+    "interval_status": "exploratory_small_sample_no_coverage_guarantee",
+    "interval_is_acceptance_certificate": false,
+    "optional_exact_sign_test_best_p": 0.125,
+    "formal_physical_equivalence": "not_tested_no_application_margin"
+  },
+  "telemetry": {
+    "elapsed": ["process_start_to_exit", "per_situation_wall", "steady_situations_4_to_N", "GPU_prep_if_measured", "kernel_if_measured"],
+    "process_sample_interval_ms": 100,
+    "gpu_sample_interval_ms_range": [100,250],
+    "memory": ["process_working_set_RSS", "process_private_bytes", "OS_lifetime_peak_working_set_if_available", "device_wide_GPU_memory_and_idle_baseline", "actual_process_GPU_memory_only_if_available", "application_allocation_counters_separately"],
+    "unavailable_value": null,
+    "infer_process_VRAM_from_device_total": false,
+    "timing_statistics": ["raw_three_pairs", "median", "min", "max", "sample_SD", "CV", "paired_speedup_median_range"]
+  },
+  "decision_values": ["INVALID", "engineering_fail", "engineering_review_required", "engineering_pass_observed_fixture"],
+  "additional_claim_fields": ["inference_inconclusive", "physical_validation_not_established", "formal_equivalence_not_tested"],
+  "references": [
+    {"title":"NIST Technical Note 2106: Comparing Instruments, Section 5", "url":"https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2106.pdf"},
+    {"title":"SciPy bootstrap: paired resampling and degenerate distributions", "url":"https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html"}
+  ]
+}

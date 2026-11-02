@@ -1,0 +1,45 @@
+{
+  "runtime_helpers.py": {
+    "source_basename": "bench_tool.py",
+    "source_sha256": "7bdad8d490e81814be3ef674e9b583482845b6ffe0ab4b6d3921f6048f10b743",
+    "sha256": "5428bf9d1985f1edcd05b177dff0940e28334e6c0729857fe36df65196f36d30",
+    "definitions": [
+      "CleanupFailure",
+      "JobAccounting",
+      "QuietGateTimeout",
+      "WindowsJob",
+      "build_hashes",
+      "cpu_total",
+      "process_affinity_masks",
+      "quiet_gate",
+      "reservation",
+      "resume_process",
+      "run_contained",
+      "save",
+      "sha",
+      "stage_build",
+      "verify_build",
+      "wait_for_process"
+    ]
+  },
+  "telemetry_helpers.py": {
+    "source_basename": "bench_suite.py",
+    "source_sha256": "c8618d61bfefebcd34fc129dbbcfbb06578ae0384493c3366ea78779eb267be8",
+    "sha256": "487be1631ea8e5f3f093ce22727de15cfb9a8f2b0a1fb8484925597073c4a6d6",
+    "definitions": [
+      "telemetry"
+    ]
+  },
+  "runtime_controls.py": {
+    "source_basename": "run_synthetic_bench.py",
+    "source_sha256": "ae8aafe778510fb59c318458822c73974eaf4481cdfc2c09ae81a29004bb1019",
+    "sha256": "6a0ab3c296bc24ecd5236d5db1efad957e00b6702defa8b5bb2a43ea7cc624ea",
+    "definitions": [
+      "compilation_setting",
+      "configure_tiering",
+      "runtime_setting",
+      "runtime_tuning_setting",
+      "validate_affinity_records"
+    ]
+  }
+}

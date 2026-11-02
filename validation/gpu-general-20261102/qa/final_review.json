@@ -1,0 +1,53 @@
+{
+  "status": "pass",
+  "scope": "Final source, synthetic functional coverage, frozen 22-run cohort, independent observed-fixture engineering review, figures and input integrity. Publication transport roundtrip is checked separately.",
+  "claims": [
+    "Opt-in GPU handles the verified transient LINE/AREA subset; unsupported valid configurations use CPU before integration.",
+    "The repeated synthetic 24h/48h study supports the reported machine-specific timing and observed numerical engineering gate.",
+    "All 1200 selected raw study files are unchanged after analysis; frozen source, observer overlay, binary, runtime and harness hashes remain intact."
+  ],
+  "source_head": "1a44c07ba76db21c557277a841e6904ace8b9328",
+  "study_manifest_sha256": "1e4e09f2f79db94c85d20185b7255a511c2ff30fc7ede268f2304c79528c0693",
+  "study_results_sha256": "36804178c125cc4e4c72aa69334ef68e6756f7cfe5e3276e7a83d102c7fdb90d",
+  "analysis_summary_sha256": "36daac5aa7542b8b5aeb9853f4ea356f368886f47222f4fe66094dee74f50592",
+  "artifact_manifest_sha256": "4f49ec35d15d6dc99b303850a0e519e050616f01f738b6eaf61b3a4654b2d3cb",
+  "analysis_inputs_manifest_sha256": "f2fdd3881a92cdf133d650021d9f31da7de6edc1d4d70d384f0d0b6a192bc286",
+  "analysis_inputs_manifest_before_after_equal": true,
+  "analysis_source_sha256": {
+    "analyze_study.py": "3bcd281c2b34a86e2f9c355dd532a0cd65c323d89fd0b7638a1c7666c20338dc",
+    "plot_study.py": "5b488ccea50af35f6531fcf389cb91655273d851cec0ab81ea7c6141b4ecd704",
+    "synthetic_fixture.py": "6d1a1bd2be66f9d75509851bcd7882045c62d993f4db5b13fa8897dfbefee95f",
+    "test_analysis.py": "33f2de0a124d8394738b4759143320e47cbbf0d97368a7375eed95bc84fbed80"
+  },
+  "formal_equivalence_not_tested": true,
+  "inference_inconclusive": true,
+  "physical_validation_not_established": true,
+  "rng_stream_independence_not_verified": true,
+  "engineering_decision": "engineering_pass_observed_fixture",
+  "independent_checks": 1643,
+  "frozen_hash_groups_verified": {
+    "source_sha256": 110,
+    "overlay_source_sha256": 111,
+    "binary_sha256": 4,
+    "runtime_sha256": 5,
+    "script_sha256": 13
+  },
+  "functional_case_count": 16,
+  "functional_case_pairs": 16,
+  "bare_cpu_control_runs": 1,
+  "functional_model_runs": 33,
+  "measured_model_runs": 22,
+  "visual_figure_count": 14,
+  "review_receipt_sha256": {
+    "scientific_result_review.json": "808ffc0e664f3e1cccc77c1d3c74d1a05336b72bb0ec2734157a8baceff0397e",
+    "final_visual_review.json": "4d8dbec58ca6c8f0daf4d84ed8b8fe981d04e0853b6cdf3b33fcf6c75169cb31",
+    "final_source_build.json": "ce1c3ec43042412491548836f0f4372585386f779a4485e3008be41b88d6027e",
+    "final_python_review.json": "7bb2877e5cb04842f952b1457304b8be7694f1fe9984f5409a8627c7dcdc106e",
+    "analysis_v2_numeric_preservation.json": "3f9283e8299da411b2d9d0fd790d4c352e5ab1dd8de21c0c1b878c454102b01c",
+    "csharp_dispatch_review.md": "fc756ea9aa22484584376119953535bba48c452392ba63574095a0bc8d74531a",
+    "csharp_validation_addendum.md": "1a2f4469a95a103204ae83a0f0300d968809edf7b84856dd07b637d769f6cf46",
+    "dispatch_host_tests.json": "dca5c2211c7da012d185cabbd9e8ffa38a08d50e648cdfe7fbed2dc15b3020eb"
+  },
+  "analysis_python_review_scope": "Prior v1 code review remains preserved; final v2 changes only plotting labels/scales and descriptive metadata. Independent review and numeric preservation bind v2.",
+  "full_diff_whitespace": "Three blank-at-EOF notices are unchanged from the earlier public head. Incremental dispatch diff --check passes."
+}

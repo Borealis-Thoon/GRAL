@@ -1,0 +1,115 @@
+{
+  "status": "pass_with_nonblocking_caption_advisories",
+  "reviewer": "scientific_result_review",
+  "analysis": "measured_v2",
+  "review_type": "direct visual inspection; no numerical recalculation in this addendum",
+  "files_count": 9,
+  "blocking_findings": [],
+  "nonblocking_findings_count": 2,
+  "files": [
+    {
+      "file": "analysis\\measured_v2\\figures\\memory_walltime_48h.png",
+      "sha256": "8a22d3e707d8d5b9722196a379fb5f623543c5d2481c4c78337a6736f5b60f17",
+      "opened_with": "view_image",
+      "visual_review_completed": true,
+      "status": "pass",
+      "readability": "Readable panel titles, process legends and axes; no visible clipping. Shared y scales within each memory row.",
+      "axes_units": "Telemetry elapsed time in seconds; RSS/private/device-wide memory in MiB. CPU and GPU time ranges differ and remain labelled.",
+      "scope": "Representative base-seed run; sampled values; title explicitly separates device total from process VRAM. Console processes use gray dashed lines.",
+      "advisories": []
+    },
+    {
+      "file": "analysis\\measured_v2\\figures\\memory_per_situation_24h.png",
+      "sha256": "afb846dc8c4d71398edffb0b43ee1f38d0c8a1291472e9826fbceede5e711e12",
+      "opened_with": "view_image",
+      "visual_review_completed": true,
+      "status": "pass",
+      "readability": "CPU/GPU median lines distinguishable; faint repeat lines and n=3 are stated.",
+      "axes_units": "Situation/model hour; sampled peak tree RSS and private bytes in MiB.",
+      "scope": "Sampled within-situation peaks; no continuous or exact lifetime peak claim.",
+      "advisories": []
+    },
+    {
+      "file": "analysis\\measured_v2\\figures\\memory_per_situation_48h.png",
+      "sha256": "9481fb8bdf03643b292847836659c68aa4763a62b481132ea435870967be5c7e",
+      "opened_with": "view_image",
+      "visual_review_completed": true,
+      "status": "pass",
+      "readability": "Median and repeat traces remain readable; complete axis labels.",
+      "axes_units": "Situation/model hour; sampled peak tree RSS and private bytes in MiB.",
+      "scope": "n=3 fixed-seed repeats; claims remain descriptive.",
+      "advisories": []
+    },
+    {
+      "file": "analysis\\measured_v2\\figures\\gpu_buffer_reuse_24h.png",
+      "sha256": "ac1ec67f2df1d50954ad1c5a787c911eaffee250104022aba82206bd2d610d3d",
+      "opened_with": "view_image",
+      "visual_review_completed": true,
+      "status": "pass",
+      "readability": "Allocation, reuse and free counters labelled; allocation curves overlap where equal.",
+      "axes_units": "Cumulative counts and application buffer allocation in MiB; situation/model hour.",
+      "scope": "Title explicitly states application counters are not measured VRAM; no leak-free or long-run guarantee.",
+      "advisories": []
+    },
+    {
+      "file": "analysis\\measured_v2\\figures\\gpu_buffer_reuse_48h.png",
+      "sha256": "a9dbf045cfda4578bc49e3452b6f63a61229196487bcfe8a2436165e2a246f75",
+      "opened_with": "view_image",
+      "visual_review_completed": true,
+      "status": "pass",
+      "readability": "Counter and memory panels readable with complete legends.",
+      "axes_units": "Cumulative counts and application buffer allocation in MiB; situation/model hour.",
+      "scope": "48h bounded observation, distinct from physical VRAM measurement.",
+      "advisories": []
+    },
+    {
+      "file": "analysis\\measured_v2\\figures\\seed0_mean_spatial_maps.png",
+      "sha256": "c4eead9a78755b43e0162d65a2df42ed273bd0b87d3db6071c57ed9d055a76cf",
+      "opened_with": "view_image",
+      "visual_review_completed": true,
+      "status": "pass",
+      "readability": "All four rows readable; CPU/GPU share concentration scale within group; signed difference maps have separate labelled scales.",
+      "axes_units": "Grid x/y index; concentration in model output units.",
+      "scope": "Base seed, time mean hours4..24 explicitly stated; no plume omission or peak relocation visibly suggested.",
+      "advisories": []
+    },
+    {
+      "file": "analysis\\measured_v2\\figures\\seed_twins_scatter.png",
+      "sha256": "4530a1774c133979352792c3249f4b15f4953fb37a65490f5459b61e9e0c7956",
+      "opened_with": "view_image",
+      "visual_review_completed": true,
+      "status": "pass_with_nonblocking_caption_advisory",
+      "readability": "Four source-group panels and 1:1 line readable; dense overlapping points expected from very small differences.",
+      "axes_units": "CPU/GPU time-mean concentration; standalone axis does not spell out model output units.",
+      "scope": "All six offsets stated; cells explicitly not independent replicates.",
+      "advisories": [
+        "If shared as a standalone image, caption should state hours4..24 and model output units. These do not alter plotted values or the existing bounded scientific interpretation."
+      ]
+    },
+    {
+      "file": "analysis\\measured_v2\\figures\\seed_level_metrics.png",
+      "sha256": "f9dbdb46bcdbf915bb3c996d66ecbfb17df8ec06b5565c48829141d5908182e4",
+      "opened_with": "view_image",
+      "visual_review_completed": true,
+      "status": "pass_with_nonblocking_caption_advisory",
+      "readability": "Seed offsets and four metric panels readable; 1-Pearson r fixes prior offset notation.",
+      "axes_units": "Dimensionless NMAE, normalized bias and spatial decorrelation; P99 difference is a concentration quantity without explicit model-output-unit text on that axis.",
+      "scope": "Six paired offsets and hours4..24 stated; no independent-cell inference.",
+      "advisories": [
+        "Standalone caption should identify P99 difference as model output units."
+      ]
+    },
+    {
+      "file": "analysis\\measured_v2\\figures\\seed_R_V_blocks.png",
+      "sha256": "a1a1b5041a5a6fe5aaa2c463b1a92bdcc0641058570a76654d76af14036e7504",
+      "opened_with": "view_image",
+      "visual_review_completed": true,
+      "status": "pass",
+      "readability": "Block markers, gate line, review band and legends readable; values near zero/one require companion numerical table for precision.",
+      "axes_units": "Dimensionless error/CPU interseed variation and GPU/CPU interseed variation.",
+      "scope": "Titles say disjoint prespecified blocks; descriptive 27-resample bootstrap and unestablished95%coverage stated.",
+      "advisories": []
+    }
+  ],
+  "scope": "Seven requested final figures opened in this turn; two final seed figures directly opened in previous completed review. No figure or other agent file modified."
+}

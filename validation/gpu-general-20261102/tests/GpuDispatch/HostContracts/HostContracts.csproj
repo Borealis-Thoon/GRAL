@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ModelProject Condition="'$(ModelProject)' == ''">../../../repo/src/GRAL.csproj</ModelProject>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="$(ModelProject)" />
+  </ItemGroup>
+</Project>

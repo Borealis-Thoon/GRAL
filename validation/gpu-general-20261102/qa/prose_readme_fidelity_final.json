@@ -1,0 +1,45 @@
+{
+  "version": "1.0.2",
+  "route": {
+    "mode": "technical",
+    "profile": "english-ste-inspired",
+    "language": "en",
+    "genre": "technical-description",
+    "reason": "explicit_on",
+    "official_compliance": false,
+    "dictionary_available": false,
+    "humanize_route_unchanged": true
+  },
+  "style": {
+    "advisory_only": true,
+    "findings": [],
+    "english_segments_scanned": 24,
+    "hangul_segments_skipped_by_english_linter": 0,
+    "mixed_paragraphs_need_manual_language_review": false
+  },
+  "fidelity": {
+    "candidate_findings": [
+      {
+        "rule": "english-modality-condition",
+        "level": "review",
+        "before": {
+          "after": 2,
+          "not": 10,
+          "must": 3,
+          "before": 3,
+          "only": 2
+        },
+        "after": {
+          "after": 2,
+          "not": 8,
+          "before": 3,
+          "only": 2,
+          "must": 2
+        }
+      }
+    ],
+    "review_required": true,
+    "semantic_equivalence": "manual_review_required",
+    "automatic_certification": false
+  }
+}

@@ -1,0 +1,3176 @@
+{
+  "status": "pass",
+  "case": "supported_primary",
+  "requested_mode": "cpu",
+  "seed_offset": 0,
+  "model_hours": 48,
+  "timing_eligible": true,
+  "quiet_gate_enabled": true,
+  "errors": [],
+  "allowed_affinity_mask": 4294901760,
+  "system_affinity_mask": 4294967295,
+  "build_hashes": {
+    "GRAL.deps.json": "aaf3fd57bf54f2d6bf527e4edbb469d32ab7cba98b3e085f8104e905a09ee456",
+    "GRAL.dll": "ee3a918ed0435f0fd1e7f2f3ec27f2181976534d146c36368fefb19be5d3ca0a",
+    "GRAL.exe": "ea4e0b13ef2e33d15ab85fec4a4b4d0da2fae66bd962a244039ba37fbb4ab8b3",
+    "GRAL.runtimeconfig.json": "71896cae5446bd10f51e4476e335b7cfea37f24b99e01c6c3c13bca7516b38db"
+  },
+  "runtime_controls": {
+    "requested_tiering": "default",
+    "removed_inherited_compilation": [],
+    "removed_inherited_startup_hooks": [],
+    "child_runtime_environment": {},
+    "other_prefixed_environment_keys": []
+  },
+  "quiet_gate": {
+    "status": "pass",
+    "rule": {
+      "window_seconds": 45,
+      "sample_interval_seconds": 5,
+      "window_samples": 9,
+      "mean_cpu_pct_lt": 12.0,
+      "max_cpu_pct_lt": 20.0,
+      "max_wait_seconds": 600
+    },
+    "samples": [
+      {
+        "offset_s": 5.0,
+        "duration_s": 5.0,
+        "cpu_pct": 3.693209574987787
+      },
+      {
+        "offset_s": 10.0,
+        "duration_s": 5.0,
+        "cpu_pct": 5.258023607452931
+      },
+      {
+        "offset_s": 15.0,
+        "duration_s": 5.0,
+        "cpu_pct": 2.5961350771032596
+      },
+      {
+        "offset_s": 20.0,
+        "duration_s": 5.0,
+        "cpu_pct": 1.6909393021210049
+      },
+      {
+        "offset_s": 25.0,
+        "duration_s": 5.0,
+        "cpu_pct": 3.4287388883461953
+      },
+      {
+        "offset_s": 30.0,
+        "duration_s": 5.0,
+        "cpu_pct": 1.767405526804023
+      },
+      {
+        "offset_s": 35.0,
+        "duration_s": 5.0,
+        "cpu_pct": 4.0624080070650574
+      },
+      {
+        "offset_s": 40.0,
+        "duration_s": 5.0,
+        "cpu_pct": 2.242500728084652
+      },
+      {
+        "offset_s": 45.0,
+        "duration_s": 5.0,
+        "cpu_pct": 4.809854335712191
+      }
+    ],
+    "selected_mean_pct": 3.283246116408567,
+    "selected_max_pct": 5.258023607452931
+  },
+  "pid": 27856,
+  "exit_code": 0,
+  "timed_out": false,
+  "process_start_to_exit_s": 65.37158669999917,
+  "dispatch": {
+    "path": "cpu_requested",
+    "markers": []
+  },
+  "functional": {
+    "mass_ledger": {
+      "actual_kg": [
+        48.0,
+        48.0,
+        48.0
+      ],
+      "expected_kg": [
+        48.0,
+        48.0,
+        48.0
+      ],
+      "checked": true
+    },
+    "output_members": 144,
+    "residual_ledger": [],
+    "completed_situations": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ],
+    "terminal_banner_only": 49,
+    "positive_concentration": true,
+    "finite_nonnegative": true
+  },
+  "affinity": {
+    "verified": true,
+    "verification_scope": "startup_mask_exact_before_resume; runtime_mask_sampled_about_1s",
+    "observed_pids": [
+      7056,
+      27856
+    ],
+    "gpu_python_observed": false
+  },
+  "skipped_exiting_process_samples": [],
+  "observer": {
+    "status": "pass",
+    "seed_rows": [
+      {
+        "event_type": "seed",
+        "IWET": 1,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288833,
+        "Seed2": 2232123,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169790651126
+      },
+      {
+        "event_type": "seed",
+        "IWET": 2,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288837,
+        "Seed2": 2232125,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169804678459
+      },
+      {
+        "event_type": "seed",
+        "IWET": 3,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288841,
+        "Seed2": 2232127,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169818426299
+      },
+      {
+        "event_type": "seed",
+        "IWET": 4,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288845,
+        "Seed2": 2232129,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169831619176
+      },
+      {
+        "event_type": "seed",
+        "IWET": 5,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288849,
+        "Seed2": 2232131,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169844730434
+      },
+      {
+        "event_type": "seed",
+        "IWET": 6,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288853,
+        "Seed2": 2232133,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169857780429
+      },
+      {
+        "event_type": "seed",
+        "IWET": 7,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288857,
+        "Seed2": 2232135,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169873931874
+      },
+      {
+        "event_type": "seed",
+        "IWET": 8,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288861,
+        "Seed2": 2232137,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169888488677
+      },
+      {
+        "event_type": "seed",
+        "IWET": 9,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288865,
+        "Seed2": 2232139,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169901745954
+      },
+      {
+        "event_type": "seed",
+        "IWET": 10,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288869,
+        "Seed2": 2232141,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169914941156
+      },
+      {
+        "event_type": "seed",
+        "IWET": 11,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288873,
+        "Seed2": 2232143,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169929722898
+      },
+      {
+        "event_type": "seed",
+        "IWET": 12,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288877,
+        "Seed2": 2232145,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169943196657
+      },
+      {
+        "event_type": "seed",
+        "IWET": 13,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288881,
+        "Seed2": 2232147,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169956624959
+      },
+      {
+        "event_type": "seed",
+        "IWET": 14,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288885,
+        "Seed2": 2232149,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169970060617
+      },
+      {
+        "event_type": "seed",
+        "IWET": 15,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288889,
+        "Seed2": 2232151,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169983655056
+      },
+      {
+        "event_type": "seed",
+        "IWET": 16,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288893,
+        "Seed2": 2232153,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169996929531
+      },
+      {
+        "event_type": "seed",
+        "IWET": 17,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288897,
+        "Seed2": 2232155,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170011603127
+      },
+      {
+        "event_type": "seed",
+        "IWET": 18,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288901,
+        "Seed2": 2232157,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170027412836
+      },
+      {
+        "event_type": "seed",
+        "IWET": 19,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288905,
+        "Seed2": 2232159,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170041009846
+      },
+      {
+        "event_type": "seed",
+        "IWET": 20,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288909,
+        "Seed2": 2232161,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170054466152
+      },
+      {
+        "event_type": "seed",
+        "IWET": 21,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288913,
+        "Seed2": 2232163,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170068384135
+      },
+      {
+        "event_type": "seed",
+        "IWET": 22,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288917,
+        "Seed2": 2232165,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170081535240
+      },
+      {
+        "event_type": "seed",
+        "IWET": 23,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288921,
+        "Seed2": 2232167,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170094466341
+      },
+      {
+        "event_type": "seed",
+        "IWET": 24,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288925,
+        "Seed2": 2232169,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170107532753
+      },
+      {
+        "event_type": "seed",
+        "IWET": 25,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288929,
+        "Seed2": 2232171,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170120820655
+      },
+      {
+        "event_type": "seed",
+        "IWET": 26,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288933,
+        "Seed2": 2232173,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170133798331
+      },
+      {
+        "event_type": "seed",
+        "IWET": 27,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288937,
+        "Seed2": 2232175,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170147612231
+      },
+      {
+        "event_type": "seed",
+        "IWET": 28,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288941,
+        "Seed2": 2232177,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170161474113
+      },
+      {
+        "event_type": "seed",
+        "IWET": 29,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288945,
+        "Seed2": 2232179,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170175661526
+      },
+      {
+        "event_type": "seed",
+        "IWET": 30,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288949,
+        "Seed2": 2232181,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170189234389
+      },
+      {
+        "event_type": "seed",
+        "IWET": 31,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288953,
+        "Seed2": 2232183,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170203097989
+      },
+      {
+        "event_type": "seed",
+        "IWET": 32,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288957,
+        "Seed2": 2232185,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170217046453
+      },
+      {
+        "event_type": "seed",
+        "IWET": 33,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288961,
+        "Seed2": 2232187,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170230353153
+      },
+      {
+        "event_type": "seed",
+        "IWET": 34,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288965,
+        "Seed2": 2232189,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170243502356
+      },
+      {
+        "event_type": "seed",
+        "IWET": 35,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288969,
+        "Seed2": 2232191,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170256934183
+      },
+      {
+        "event_type": "seed",
+        "IWET": 36,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288973,
+        "Seed2": 2232193,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170269869058
+      },
+      {
+        "event_type": "seed",
+        "IWET": 37,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288977,
+        "Seed2": 2232195,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170282803576
+      },
+      {
+        "event_type": "seed",
+        "IWET": 38,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288981,
+        "Seed2": 2232197,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170295776180
+      },
+      {
+        "event_type": "seed",
+        "IWET": 39,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288985,
+        "Seed2": 2232199,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170308919765
+      },
+      {
+        "event_type": "seed",
+        "IWET": 40,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288989,
+        "Seed2": 2232201,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170321903357
+      },
+      {
+        "event_type": "seed",
+        "IWET": 41,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288993,
+        "Seed2": 2232203,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170334921670
+      },
+      {
+        "event_type": "seed",
+        "IWET": 42,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288997,
+        "Seed2": 2232205,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170348230534
+      },
+      {
+        "event_type": "seed",
+        "IWET": 43,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521289001,
+        "Seed2": 2232207,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170362052881
+      },
+      {
+        "event_type": "seed",
+        "IWET": 44,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521289005,
+        "Seed2": 2232209,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170375620468
+      },
+      {
+        "event_type": "seed",
+        "IWET": 45,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521289009,
+        "Seed2": 2232211,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170388712014
+      },
+      {
+        "event_type": "seed",
+        "IWET": 46,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521289013,
+        "Seed2": 2232213,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170401645700
+      },
+      {
+        "event_type": "seed",
+        "IWET": 47,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521289017,
+        "Seed2": 2232215,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170414832404
+      },
+      {
+        "event_type": "seed",
+        "IWET": 48,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521289021,
+        "Seed2": 2232217,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170428154669
+      }
+    ],
+    "situation_series": [
+      {
+        "situation": 1,
+        "start_s": 0.72367221277771,
+        "end_s": 2.1671056127777097,
+        "wall_s": 1.4434333999999998,
+        "seed_to_end_s": 1.3972984,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 96067584.0,
+        "peak_tree_private_bytes": 61956096.0,
+        "peak_dotnet_rss_bytes": 87818240.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 2,
+        "start_s": 2.16746281277771,
+        "end_s": 3.54052321277771,
+        "wall_s": 1.3730604,
+        "seed_to_end_s": 1.3679827,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 98344960.0,
+        "peak_tree_private_bytes": 62951424.0,
+        "peak_dotnet_rss_bytes": 90095616.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 3,
+        "start_s": 3.54154381277771,
+        "end_s": 4.85598581277771,
+        "wall_s": 1.3144419999999997,
+        "seed_to_end_s": 1.3086613,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 98742272.0,
+        "peak_tree_private_bytes": 63172608.0,
+        "peak_dotnet_rss_bytes": 90492928.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 4,
+        "start_s": 4.86119101277771,
+        "end_s": 6.17165921277771,
+        "wall_s": 1.3104681999999999,
+        "seed_to_end_s": 1.305047,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 99569664.0,
+        "peak_tree_private_bytes": 63614976.0,
+        "peak_dotnet_rss_bytes": 91320320.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 5,
+        "start_s": 6.17205741277771,
+        "end_s": 7.47679051277771,
+        "wall_s": 1.3047331,
+        "seed_to_end_s": 1.2990525,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 99819520.0,
+        "peak_tree_private_bytes": 63881216.0,
+        "peak_dotnet_rss_bytes": 91570176.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 6,
+        "start_s": 7.47737021277771,
+        "end_s": 9.09117621277771,
+        "wall_s": 1.6138059999999994,
+        "seed_to_end_s": 1.6084387,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 15,
+        "peak_tree_rss_bytes": 100130816.0,
+        "peak_tree_private_bytes": 64081920.0,
+        "peak_dotnet_rss_bytes": 91881472.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 7,
+        "start_s": 9.09169371277771,
+        "end_s": 10.54624771277771,
+        "wall_s": 1.454554,
+        "seed_to_end_s": 1.4483657,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 84570112.0,
+        "peak_tree_private_bytes": 48508928.0,
+        "peak_dotnet_rss_bytes": 76320768.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 8,
+        "start_s": 10.54676161277771,
+        "end_s": 11.87287411277771,
+        "wall_s": 1.3261125000000007,
+        "seed_to_end_s": 1.3193118,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 84803584.0,
+        "peak_tree_private_bytes": 48771072.0,
+        "peak_dotnet_rss_bytes": 76554240.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 9,
+        "start_s": 11.87325901277771,
+        "end_s": 13.19256411277771,
+        "wall_s": 1.3193050999999993,
+        "seed_to_end_s": 1.3132741,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 86355968.0,
+        "peak_tree_private_bytes": 50548736.0,
+        "peak_dotnet_rss_bytes": 78106624.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 10,
+        "start_s": 13.19297961277771,
+        "end_s": 14.66567771277771,
+        "wall_s": 1.4726980999999988,
+        "seed_to_end_s": 1.4668675,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 14,
+        "peak_tree_rss_bytes": 86614016.0,
+        "peak_tree_private_bytes": 50749440.0,
+        "peak_dotnet_rss_bytes": 78364672.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 11,
+        "start_s": 14.67095381277771,
+        "end_s": 16.01725271277771,
+        "wall_s": 1.3462989000000007,
+        "seed_to_end_s": 1.3402683,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 11,
+        "peak_tree_rss_bytes": 87048192.0,
+        "peak_tree_private_bytes": 51011584.0,
+        "peak_dotnet_rss_bytes": 78798848.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 12,
+        "start_s": 16.01794961277771,
+        "end_s": 17.36083671277771,
+        "wall_s": 1.3428871000000022,
+        "seed_to_end_s": 1.3364764,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 87560192.0,
+        "peak_tree_private_bytes": 51179520.0,
+        "peak_dotnet_rss_bytes": 79310848.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 13,
+        "start_s": 17.36120631277771,
+        "end_s": 18.70431731277771,
+        "wall_s": 1.3431110000000004,
+        "seed_to_end_s": 1.3371268,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 87359488.0,
+        "peak_tree_private_bytes": 51089408.0,
+        "peak_dotnet_rss_bytes": 79110144.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 14,
+        "start_s": 18.70456841277771,
+        "end_s": 20.06350361277771,
+        "wall_s": 1.3589351999999977,
+        "seed_to_end_s": 1.3527473,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 87576576.0,
+        "peak_tree_private_bytes": 51286016.0,
+        "peak_dotnet_rss_bytes": 79327232.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 15,
+        "start_s": 20.06407011277771,
+        "end_s": 21.39155991277771,
+        "wall_s": 1.3274897999999986,
+        "seed_to_end_s": 1.3213597,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 87830528.0,
+        "peak_tree_private_bytes": 51576832.0,
+        "peak_dotnet_rss_bytes": 79581184.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 16,
+        "start_s": 21.39197261277771,
+        "end_s": 22.85931421277771,
+        "wall_s": 1.467341600000001,
+        "seed_to_end_s": 1.4616665,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 87306240.0,
+        "peak_tree_private_bytes": 51564544.0,
+        "peak_dotnet_rss_bytes": 79056896.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 17,
+        "start_s": 22.85961321277771,
+        "end_s": 24.44030551277771,
+        "wall_s": 1.580692299999999,
+        "seed_to_end_s": 1.5752982,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 87519232.0,
+        "peak_tree_private_bytes": 51761152.0,
+        "peak_dotnet_rss_bytes": 79269888.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 18,
+        "start_s": 24.44070141277771,
+        "end_s": 25.80087311277771,
+        "wall_s": 1.3601716999999987,
+        "seed_to_end_s": 1.3548949,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 87740416.0,
+        "peak_tree_private_bytes": 52056064.0,
+        "peak_dotnet_rss_bytes": 79491072.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 19,
+        "start_s": 25.80112901277771,
+        "end_s": 27.14618591277771,
+        "wall_s": 1.3450568999999994,
+        "seed_to_end_s": 1.3405067,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 11,
+        "peak_tree_rss_bytes": 88141824.0,
+        "peak_tree_private_bytes": 52355072.0,
+        "peak_dotnet_rss_bytes": 79892480.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 20,
+        "start_s": 27.146442012777708,
+        "end_s": 28.53802091277771,
+        "wall_s": 1.3915789000000025,
+        "seed_to_end_s": 1.3867111,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 88391680.0,
+        "peak_tree_private_bytes": 52551680.0,
+        "peak_dotnet_rss_bytes": 80142336.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 21,
+        "start_s": 28.53827571277771,
+        "end_s": 29.85302161277771,
+        "wall_s": 1.3147458999999984,
+        "seed_to_end_s": 1.3099135,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 11,
+        "peak_tree_rss_bytes": 88612864.0,
+        "peak_tree_private_bytes": 52813824.0,
+        "peak_dotnet_rss_bytes": 80363520.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 22,
+        "start_s": 29.85327831277771,
+        "end_s": 31.14645481277771,
+        "wall_s": 1.2931764999999977,
+        "seed_to_end_s": 1.2882362,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 11,
+        "peak_tree_rss_bytes": 88809472.0,
+        "peak_tree_private_bytes": 53010432.0,
+        "peak_dotnet_rss_bytes": 80560128.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 23,
+        "start_s": 31.14671171277771,
+        "end_s": 32.452221612777706,
+        "wall_s": 1.305509899999997,
+        "seed_to_end_s": 1.3008929,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 89014272.0,
+        "peak_tree_private_bytes": 53161984.0,
+        "peak_dotnet_rss_bytes": 80785408.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 24,
+        "start_s": 32.45255351277771,
+        "end_s": 33.77680651277771,
+        "wall_s": 1.3242529999999988,
+        "seed_to_end_s": 1.3188366,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 88391680.0,
+        "peak_tree_private_bytes": 51798016.0,
+        "peak_dotnet_rss_bytes": 80162816.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 25,
+        "start_s": 33.78208611277771,
+        "end_s": 35.07890451277771,
+        "wall_s": 1.2968183999999994,
+        "seed_to_end_s": 1.2921444,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 11,
+        "peak_tree_rss_bytes": 88653824.0,
+        "peak_tree_private_bytes": 52137984.0,
+        "peak_dotnet_rss_bytes": 80424960.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 26,
+        "start_s": 35.07923481277771,
+        "end_s": 36.46067851277771,
+        "wall_s": 1.3814436999999984,
+        "seed_to_end_s": 1.3761508,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 88875008.0,
+        "peak_tree_private_bytes": 52400128.0,
+        "peak_dotnet_rss_bytes": 80646144.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 27,
+        "start_s": 36.46093721277771,
+        "end_s": 37.84530641277771,
+        "wall_s": 1.3843692000000019,
+        "seed_to_end_s": 1.3793887,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 89128960.0,
+        "peak_tree_private_bytes": 52596736.0,
+        "peak_dotnet_rss_bytes": 80900096.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 28,
+        "start_s": 37.84579361277771,
+        "end_s": 39.26029831277771,
+        "wall_s": 1.4145046999999948,
+        "seed_to_end_s": 1.4081924,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 90013696.0,
+        "peak_tree_private_bytes": 53321728.0,
+        "peak_dotnet_rss_bytes": 81784832.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 29,
+        "start_s": 39.26545001277771,
+        "end_s": 40.62200391277771,
+        "wall_s": 1.3565538999999944,
+        "seed_to_end_s": 1.3511567,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 11,
+        "peak_tree_rss_bytes": 90226688.0,
+        "peak_tree_private_bytes": 53489664.0,
+        "peak_dotnet_rss_bytes": 81997824.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 30,
+        "start_s": 40.62235971277771,
+        "end_s": 42.00826551277771,
+        "wall_s": 1.3859058000000033,
+        "seed_to_end_s": 1.380132,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 90468352.0,
+        "peak_tree_private_bytes": 53772288.0,
+        "peak_dotnet_rss_bytes": 82239488.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 31,
+        "start_s": 42.00873351277771,
+        "end_s": 43.40372271277771,
+        "wall_s": 1.3949891999999977,
+        "seed_to_end_s": 1.3892292,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 11,
+        "peak_tree_rss_bytes": 91320320.0,
+        "peak_tree_private_bytes": 54939648.0,
+        "peak_dotnet_rss_bytes": 83091456.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 32,
+        "start_s": 43.40407111277771,
+        "end_s": 44.72973921277771,
+        "wall_s": 1.3256681000000015,
+        "seed_to_end_s": 1.3203993,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 91594752.0,
+        "peak_tree_private_bytes": 55136256.0,
+        "peak_dotnet_rss_bytes": 83365888.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 33,
+        "start_s": 44.73493641277771,
+        "end_s": 46.04990441277771,
+        "wall_s": 1.3149680000000004,
+        "seed_to_end_s": 1.3098945,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 91824128.0,
+        "peak_tree_private_bytes": 55361536.0,
+        "peak_dotnet_rss_bytes": 83595264.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 34,
+        "start_s": 46.05021871277771,
+        "end_s": 47.39296101277771,
+        "wall_s": 1.3427422999999976,
+        "seed_to_end_s": 1.3380308,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 11,
+        "peak_tree_rss_bytes": 92024832.0,
+        "peak_tree_private_bytes": 55590912.0,
+        "peak_dotnet_rss_bytes": 83795968.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 35,
+        "start_s": 47.39326311277771,
+        "end_s": 48.68671511277771,
+        "wall_s": 1.293452000000002,
+        "seed_to_end_s": 1.2886022,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 92127232.0,
+        "peak_tree_private_bytes": 55758848.0,
+        "peak_dotnet_rss_bytes": 83898368.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 36,
+        "start_s": 48.68699291277771,
+        "end_s": 49.97532031277771,
+        "wall_s": 1.2883274,
+        "seed_to_end_s": 1.2837199,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 11,
+        "peak_tree_rss_bytes": 91009024.0,
+        "peak_tree_private_bytes": 54431744.0,
+        "peak_dotnet_rss_bytes": 82780160.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 37,
+        "start_s": 49.98042791277771,
+        "end_s": 51.27684971277771,
+        "wall_s": 1.2964218000000045,
+        "seed_to_end_s": 1.2917975,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 91213824.0,
+        "peak_tree_private_bytes": 54693888.0,
+        "peak_dotnet_rss_bytes": 82984960.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 38,
+        "start_s": 51.27720181277771,
+        "end_s": 52.59157621277771,
+        "wall_s": 1.3143743999999984,
+        "seed_to_end_s": 1.3092636,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 11,
+        "peak_tree_rss_bytes": 91447296.0,
+        "peak_tree_private_bytes": 54890496.0,
+        "peak_dotnet_rss_bytes": 83218432.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 39,
+        "start_s": 52.59184501277771,
+        "end_s": 53.88999831277771,
+        "wall_s": 1.2981533000000027,
+        "seed_to_end_s": 1.2933272,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 11,
+        "peak_tree_rss_bytes": 91668480.0,
+        "peak_tree_private_bytes": 55345152.0,
+        "peak_dotnet_rss_bytes": 83439616.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 40,
+        "start_s": 53.89025531277771,
+        "end_s": 55.19150841277771,
+        "wall_s": 1.3012530999999967,
+        "seed_to_end_s": 1.2964781,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 91979776.0,
+        "peak_tree_private_bytes": 55701504.0,
+        "peak_dotnet_rss_bytes": 83750912.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 41,
+        "start_s": 55.19209341277771,
+        "end_s": 56.52222501277771,
+        "wall_s": 1.3301316000000014,
+        "seed_to_end_s": 1.3253634,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 11,
+        "peak_tree_rss_bytes": 92196864.0,
+        "peak_tree_private_bytes": 55963648.0,
+        "peak_dotnet_rss_bytes": 83968000.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 42,
+        "start_s": 56.52260841277771,
+        "end_s": 57.90496871277771,
+        "wall_s": 1.382360300000002,
+        "seed_to_end_s": 1.3772207,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 92430336.0,
+        "peak_tree_private_bytes": 56160256.0,
+        "peak_dotnet_rss_bytes": 84201472.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 43,
+        "start_s": 57.90522641277771,
+        "end_s": 59.26179271277771,
+        "wall_s": 1.3565663000000043,
+        "seed_to_end_s": 1.35181,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 92614656.0,
+        "peak_tree_private_bytes": 56320000.0,
+        "peak_dotnet_rss_bytes": 84385792.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 44,
+        "start_s": 59.26207801277771,
+        "end_s": 60.57052971277771,
+        "wall_s": 1.3084517000000062,
+        "seed_to_end_s": 1.3037883,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 92876800.0,
+        "peak_tree_private_bytes": 56614912.0,
+        "peak_dotnet_rss_bytes": 84647936.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 45,
+        "start_s": 60.57110071277771,
+        "end_s": 61.86425841277771,
+        "wall_s": 1.2931577000000019,
+        "seed_to_end_s": 1.2883624,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 11,
+        "peak_tree_rss_bytes": 93052928.0,
+        "peak_tree_private_bytes": 56782848.0,
+        "peak_dotnet_rss_bytes": 84824064.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 46,
+        "start_s": 61.86461801277771,
+        "end_s": 63.18211751277771,
+        "wall_s": 1.3174994999999967,
+        "seed_to_end_s": 1.3128529,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 93257728.0,
+        "peak_tree_private_bytes": 57008128.0,
+        "peak_dotnet_rss_bytes": 85028864.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 47,
+        "start_s": 63.18250811277771,
+        "end_s": 64.51400771277771,
+        "wall_s": 1.3314996000000008,
+        "seed_to_end_s": 1.3260727,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 93478912.0,
+        "peak_tree_private_bytes": 57204736.0,
+        "peak_dotnet_rss_bytes": 85250048.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 48,
+        "start_s": 64.51437661277771,
+        "end_s": 65.8104256127777,
+        "wall_s": 1.2960489999999965,
+        "seed_to_end_s": 1.2902641,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 93716480.0,
+        "peak_tree_private_bytes": 57491456.0,
+        "peak_dotnet_rss_bytes": 85487616.0,
+        "peak_python_rss_bytes": 0.0
+      }
+    ],
+    "raw_events": [
+      {
+        "event_type": "config",
+        "warmup": 3,
+        "end": 48,
+        "stopwatch_frequency": 10000000,
+        "stopwatch_timestamp": 169789113120,
+        "utc_timestamp": "2026-11-02T05:23:53.2077587+00:00"
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 1,
+        "stopwatch_timestamp": 169790189776
+      },
+      {
+        "event_type": "seed",
+        "IWET": 1,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288833,
+        "Seed2": 2232123,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169790651126
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 1,
+        "stopwatch_timestamp": 169804624110
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 2,
+        "stopwatch_timestamp": 169804627682
+      },
+      {
+        "event_type": "seed",
+        "IWET": 2,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288837,
+        "Seed2": 2232125,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169804678459
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 2,
+        "stopwatch_timestamp": 169818358286
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 3,
+        "stopwatch_timestamp": 169818368492
+      },
+      {
+        "event_type": "seed",
+        "IWET": 3,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288841,
+        "Seed2": 2232127,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169818426299
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 3,
+        "stopwatch_timestamp": 169831512912
+      },
+      {
+        "event_type": "boundary",
+        "boundary": "start",
+        "IWET": 3,
+        "stopwatch_timestamp": 169831532397,
+        "stopwatch_frequency": 10000000,
+        "elapsed_s": 0,
+        "cumulative_model_seconds": 10800,
+        "measured_model_seconds": 0,
+        "completed_situations": 3,
+        "measured_situations": 0
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 4,
+        "stopwatch_timestamp": 169831564964
+      },
+      {
+        "event_type": "seed",
+        "IWET": 4,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288845,
+        "Seed2": 2232129,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169831619176
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 4,
+        "stopwatch_timestamp": 169844669646
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 5,
+        "stopwatch_timestamp": 169844673628
+      },
+      {
+        "event_type": "seed",
+        "IWET": 5,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288849,
+        "Seed2": 2232131,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169844730434
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 5,
+        "stopwatch_timestamp": 169857720959
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 6,
+        "stopwatch_timestamp": 169857726756
+      },
+      {
+        "event_type": "seed",
+        "IWET": 6,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288853,
+        "Seed2": 2232133,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169857780429
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 6,
+        "stopwatch_timestamp": 169873864816
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 7,
+        "stopwatch_timestamp": 169873869991
+      },
+      {
+        "event_type": "seed",
+        "IWET": 7,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288857,
+        "Seed2": 2232135,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169873931874
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 7,
+        "stopwatch_timestamp": 169888415531
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 8,
+        "stopwatch_timestamp": 169888420670
+      },
+      {
+        "event_type": "seed",
+        "IWET": 8,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288861,
+        "Seed2": 2232137,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169888488677
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 8,
+        "stopwatch_timestamp": 169901681795
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 9,
+        "stopwatch_timestamp": 169901685644
+      },
+      {
+        "event_type": "seed",
+        "IWET": 9,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288865,
+        "Seed2": 2232139,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169901745954
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 9,
+        "stopwatch_timestamp": 169914878695
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 10,
+        "stopwatch_timestamp": 169914882850
+      },
+      {
+        "event_type": "seed",
+        "IWET": 10,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288869,
+        "Seed2": 2232141,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169914941156
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 10,
+        "stopwatch_timestamp": 169929609831
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 11,
+        "stopwatch_timestamp": 169929662592
+      },
+      {
+        "event_type": "seed",
+        "IWET": 11,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288873,
+        "Seed2": 2232143,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169929722898
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 11,
+        "stopwatch_timestamp": 169943125581
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 12,
+        "stopwatch_timestamp": 169943132550
+      },
+      {
+        "event_type": "seed",
+        "IWET": 12,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288877,
+        "Seed2": 2232145,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169943196657
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 12,
+        "stopwatch_timestamp": 169956561421
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 13,
+        "stopwatch_timestamp": 169956565117
+      },
+      {
+        "event_type": "seed",
+        "IWET": 13,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288881,
+        "Seed2": 2232147,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169956624959
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 13,
+        "stopwatch_timestamp": 169969996227
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 14,
+        "stopwatch_timestamp": 169969998738
+      },
+      {
+        "event_type": "seed",
+        "IWET": 14,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288885,
+        "Seed2": 2232149,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169970060617
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 14,
+        "stopwatch_timestamp": 169983588090
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 15,
+        "stopwatch_timestamp": 169983593755
+      },
+      {
+        "event_type": "seed",
+        "IWET": 15,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288889,
+        "Seed2": 2232151,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169983655056
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 15,
+        "stopwatch_timestamp": 169996868653
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 16,
+        "stopwatch_timestamp": 169996872780
+      },
+      {
+        "event_type": "seed",
+        "IWET": 16,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288893,
+        "Seed2": 2232153,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 169996929531
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 16,
+        "stopwatch_timestamp": 170011546196
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 17,
+        "stopwatch_timestamp": 170011549186
+      },
+      {
+        "event_type": "seed",
+        "IWET": 17,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288897,
+        "Seed2": 2232155,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170011603127
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 17,
+        "stopwatch_timestamp": 170027356109
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 18,
+        "stopwatch_timestamp": 170027360068
+      },
+      {
+        "event_type": "seed",
+        "IWET": 18,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288901,
+        "Seed2": 2232157,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170027412836
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 18,
+        "stopwatch_timestamp": 170040961785
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 19,
+        "stopwatch_timestamp": 170040964344
+      },
+      {
+        "event_type": "seed",
+        "IWET": 19,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288905,
+        "Seed2": 2232159,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170041009846
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 19,
+        "stopwatch_timestamp": 170054414913
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 20,
+        "stopwatch_timestamp": 170054417474
+      },
+      {
+        "event_type": "seed",
+        "IWET": 20,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288909,
+        "Seed2": 2232161,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170054466152
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 20,
+        "stopwatch_timestamp": 170068333263
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 21,
+        "stopwatch_timestamp": 170068335811
+      },
+      {
+        "event_type": "seed",
+        "IWET": 21,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288913,
+        "Seed2": 2232163,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170068384135
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 21,
+        "stopwatch_timestamp": 170081483270
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 22,
+        "stopwatch_timestamp": 170081485837
+      },
+      {
+        "event_type": "seed",
+        "IWET": 22,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288917,
+        "Seed2": 2232165,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170081535240
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 22,
+        "stopwatch_timestamp": 170094417602
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 23,
+        "stopwatch_timestamp": 170094420171
+      },
+      {
+        "event_type": "seed",
+        "IWET": 23,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288921,
+        "Seed2": 2232167,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170094466341
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 23,
+        "stopwatch_timestamp": 170107475270
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 24,
+        "stopwatch_timestamp": 170107478589
+      },
+      {
+        "event_type": "seed",
+        "IWET": 24,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288925,
+        "Seed2": 2232169,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170107532753
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 24,
+        "stopwatch_timestamp": 170120721119
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 25,
+        "stopwatch_timestamp": 170120773915
+      },
+      {
+        "event_type": "seed",
+        "IWET": 25,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288929,
+        "Seed2": 2232171,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170120820655
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 25,
+        "stopwatch_timestamp": 170133742099
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 26,
+        "stopwatch_timestamp": 170133745402
+      },
+      {
+        "event_type": "seed",
+        "IWET": 26,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288933,
+        "Seed2": 2232173,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170133798331
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 26,
+        "stopwatch_timestamp": 170147559839
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 27,
+        "stopwatch_timestamp": 170147562426
+      },
+      {
+        "event_type": "seed",
+        "IWET": 27,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288937,
+        "Seed2": 2232175,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170147612231
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 27,
+        "stopwatch_timestamp": 170161406118
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 28,
+        "stopwatch_timestamp": 170161410990
+      },
+      {
+        "event_type": "seed",
+        "IWET": 28,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288941,
+        "Seed2": 2232177,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170161474113
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 28,
+        "stopwatch_timestamp": 170175556037
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 29,
+        "stopwatch_timestamp": 170175607554
+      },
+      {
+        "event_type": "seed",
+        "IWET": 29,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288945,
+        "Seed2": 2232179,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170175661526
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 29,
+        "stopwatch_timestamp": 170189173093
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 30,
+        "stopwatch_timestamp": 170189176651
+      },
+      {
+        "event_type": "seed",
+        "IWET": 30,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288949,
+        "Seed2": 2232181,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170189234389
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 30,
+        "stopwatch_timestamp": 170203035709
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 31,
+        "stopwatch_timestamp": 170203040389
+      },
+      {
+        "event_type": "seed",
+        "IWET": 31,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288953,
+        "Seed2": 2232183,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170203097989
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 31,
+        "stopwatch_timestamp": 170216990281
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 32,
+        "stopwatch_timestamp": 170216993765
+      },
+      {
+        "event_type": "seed",
+        "IWET": 32,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288957,
+        "Seed2": 2232185,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170217046453
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 32,
+        "stopwatch_timestamp": 170230250446
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 33,
+        "stopwatch_timestamp": 170230302418
+      },
+      {
+        "event_type": "seed",
+        "IWET": 33,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288961,
+        "Seed2": 2232187,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170230353153
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 33,
+        "stopwatch_timestamp": 170243452098
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 34,
+        "stopwatch_timestamp": 170243455241
+      },
+      {
+        "event_type": "seed",
+        "IWET": 34,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288965,
+        "Seed2": 2232189,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170243502356
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 34,
+        "stopwatch_timestamp": 170256882664
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 35,
+        "stopwatch_timestamp": 170256885685
+      },
+      {
+        "event_type": "seed",
+        "IWET": 35,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288969,
+        "Seed2": 2232191,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170256934183
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 35,
+        "stopwatch_timestamp": 170269820205
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 36,
+        "stopwatch_timestamp": 170269822983
+      },
+      {
+        "event_type": "seed",
+        "IWET": 36,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288973,
+        "Seed2": 2232193,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170269869058
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 36,
+        "stopwatch_timestamp": 170282706257
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 37,
+        "stopwatch_timestamp": 170282757333
+      },
+      {
+        "event_type": "seed",
+        "IWET": 37,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288977,
+        "Seed2": 2232195,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170282803576
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 37,
+        "stopwatch_timestamp": 170295721551
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 38,
+        "stopwatch_timestamp": 170295725072
+      },
+      {
+        "event_type": "seed",
+        "IWET": 38,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288981,
+        "Seed2": 2232197,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170295776180
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 38,
+        "stopwatch_timestamp": 170308868816
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 39,
+        "stopwatch_timestamp": 170308871504
+      },
+      {
+        "event_type": "seed",
+        "IWET": 39,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288985,
+        "Seed2": 2232199,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170308919765
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 39,
+        "stopwatch_timestamp": 170321853037
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 40,
+        "stopwatch_timestamp": 170321855607
+      },
+      {
+        "event_type": "seed",
+        "IWET": 40,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288989,
+        "Seed2": 2232201,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170321903357
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 40,
+        "stopwatch_timestamp": 170334868138
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 41,
+        "stopwatch_timestamp": 170334873988
+      },
+      {
+        "event_type": "seed",
+        "IWET": 41,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288993,
+        "Seed2": 2232203,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170334921670
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 41,
+        "stopwatch_timestamp": 170348175304
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 42,
+        "stopwatch_timestamp": 170348179138
+      },
+      {
+        "event_type": "seed",
+        "IWET": 42,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288997,
+        "Seed2": 2232205,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170348230534
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 42,
+        "stopwatch_timestamp": 170362002741
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 43,
+        "stopwatch_timestamp": 170362005318
+      },
+      {
+        "event_type": "seed",
+        "IWET": 43,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521289001,
+        "Seed2": 2232207,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170362052881
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 43,
+        "stopwatch_timestamp": 170375570981
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 44,
+        "stopwatch_timestamp": 170375573834
+      },
+      {
+        "event_type": "seed",
+        "IWET": 44,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521289005,
+        "Seed2": 2232209,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170375620468
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 44,
+        "stopwatch_timestamp": 170388658351
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 45,
+        "stopwatch_timestamp": 170388664061
+      },
+      {
+        "event_type": "seed",
+        "IWET": 45,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521289009,
+        "Seed2": 2232211,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170388712014
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 45,
+        "stopwatch_timestamp": 170401595638
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 46,
+        "stopwatch_timestamp": 170401599234
+      },
+      {
+        "event_type": "seed",
+        "IWET": 46,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521289013,
+        "Seed2": 2232213,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170401645700
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 46,
+        "stopwatch_timestamp": 170414774229
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 47,
+        "stopwatch_timestamp": 170414778135
+      },
+      {
+        "event_type": "seed",
+        "IWET": 47,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521289017,
+        "Seed2": 2232215,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170414832404
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 47,
+        "stopwatch_timestamp": 170428093131
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 48,
+        "stopwatch_timestamp": 170428096820
+      },
+      {
+        "event_type": "seed",
+        "IWET": 48,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521289021,
+        "Seed2": 2232217,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 170428154669
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 48,
+        "stopwatch_timestamp": 170441057310
+      },
+      {
+        "event_type": "boundary",
+        "boundary": "stop",
+        "IWET": 48,
+        "stopwatch_timestamp": 170441119702,
+        "stopwatch_frequency": 10000000,
+        "elapsed_s": 60.9587305,
+        "cumulative_model_seconds": 172800,
+        "measured_model_seconds": 162000,
+        "completed_situations": 48,
+        "measured_situations": 45
+      },
+      {
+        "event_type": "finished",
+        "complete": true,
+        "requested_end": 48,
+        "seeded_situations": 48,
+        "completed_situations": 48,
+        "cumulative_model_seconds": 172800
+      }
+    ]
+  },
+  "seed_validation": {
+    "status": "pass",
+    "offset": 0,
+    "situations": 48,
+    "states": [
+      [
+        521288833,
+        2232123
+      ],
+      [
+        521288837,
+        2232125
+      ],
+      [
+        521288841,
+        2232127
+      ],
+      [
+        521288845,
+        2232129
+      ],
+      [
+        521288849,
+        2232131
+      ],
+      [
+        521288853,
+        2232133
+      ],
+      [
+        521288857,
+        2232135
+      ],
+      [
+        521288861,
+        2232137
+      ],
+      [
+        521288865,
+        2232139
+      ],
+      [
+        521288869,
+        2232141
+      ],
+      [
+        521288873,
+        2232143
+      ],
+      [
+        521288877,
+        2232145
+      ],
+      [
+        521288881,
+        2232147
+      ],
+      [
+        521288885,
+        2232149
+      ],
+      [
+        521288889,
+        2232151
+      ],
+      [
+        521288893,
+        2232153
+      ],
+      [
+        521288897,
+        2232155
+      ],
+      [
+        521288901,
+        2232157
+      ],
+      [
+        521288905,
+        2232159
+      ],
+      [
+        521288909,
+        2232161
+      ],
+      [
+        521288913,
+        2232163
+      ],
+      [
+        521288917,
+        2232165
+      ],
+      [
+        521288921,
+        2232167
+      ],
+      [
+        521288925,
+        2232169
+      ],
+      [
+        521288929,
+        2232171
+      ],
+      [
+        521288933,
+        2232173
+      ],
+      [
+        521288937,
+        2232175
+      ],
+      [
+        521288941,
+        2232177
+      ],
+      [
+        521288945,
+        2232179
+      ],
+      [
+        521288949,
+        2232181
+      ],
+      [
+        521288953,
+        2232183
+      ],
+      [
+        521288957,
+        2232185
+      ],
+      [
+        521288961,
+        2232187
+      ],
+      [
+        521288965,
+        2232189
+      ],
+      [
+        521288969,
+        2232191
+      ],
+      [
+        521288973,
+        2232193
+      ],
+      [
+        521288977,
+        2232195
+      ],
+      [
+        521288981,
+        2232197
+      ],
+      [
+        521288985,
+        2232199
+      ],
+      [
+        521288989,
+        2232201
+      ],
+      [
+        521288993,
+        2232203
+      ],
+      [
+        521288997,
+        2232205
+      ],
+      [
+        521289001,
+        2232207
+      ],
+      [
+        521289005,
+        2232209
+      ],
+      [
+        521289009,
+        2232211
+      ],
+      [
+        521289013,
+        2232213
+      ],
+      [
+        521289017,
+        2232215
+      ],
+      [
+        521289021,
+        2232217
+      ]
+    ]
+  },
+  "memory_scope": {
+    "process_gpu_memory_mib": null,
+    "process_gpu_memory_availability": "unavailable in current WDDM query; device total must not be attributed to process",
+    "process_sample_target_s": 0.1,
+    "gpu_device_sample_target_s": 0.2,
+    "process_actual_sample_intervals_s": [
+      0.10643609999897308,
+      0.10873720000017784,
+      0.10969250000198372,
+      0.10708319999685045,
+      0.1090278000010585,
+      0.10799570000017411,
+      0.10985830000208807,
+      0.1082442999977502,
+      0.10854449999897042,
+      0.10962640000070678,
+      0.12389729999995325,
+      0.11318960000062361,
+      0.10797109999839449,
+      0.09444340000118245,
+      0.11703380000108154,
+      0.12230189999900176,
+      0.1056626999998116,
+      0.11051360000055865,
+      0.10373780000008992,
+      0.11087190000034752,
+      0.12683449999894947,
+      0.14302170000155456,
+      0.11278369999854476,
+      0.10703009999997448,
+      0.10772530000031111,
+      0.09752189999926486,
+      0.10515070000110427,
+      0.11046849999911501,
+      0.11365760000262526,
+      0.12107819999800995,
+      0.11425999999846681,
+      0.1187941000025603,
+      0.10916079999879003,
+      0.10905600000114646,
+      0.11269660000107251,
+      0.0947649999980058,
+      0.09499760000107926,
+      0.11157950000051642,
+      0.10944979999840143,
+      0.11074970000117901,
+      0.11015950000000885,
+      0.1110391999973217,
+      0.11306650000187801,
+      0.10892510000121547,
+      0.10908459999700426,
+      0.10843080000267946,
+      0.10714960000041174,
+      0.10990109999693232,
+      0.10893290000240086,
+      0.11018829999738955,
+      0.10881680000238703,
+      0.11032709999926738,
+      0.10988799999904586,
+      0.11029700000290177,
+      0.11100039999655564,
+      0.10959600000205683,
+      0.10897230000045965,
+      0.10905179999826942,
+      0.1074917000005371,
+      0.10943870000119205,
+      0.10770340000090073,
+      0.1081570999995165,
+      0.1094606999977259,
+      0.10986410000259639,
+      0.1077475999991293,
+      0.1122919000008551,
+      0.10604160000002594,
+      0.11112849999699392,
+      0.10875980000128038,
+      0.1101782000005187,
+      0.11028969999824767,
+      0.10970070000257692,
+      0.11106819999986328,
+      0.11208959999930812,
+      0.09471399999893038,
+      0.09363220000159345,
+      0.10023290000026464,
+      0.12114089999886346,
+      0.10318310000002384,
+      0.11267579999912414,
+      0.10697630000140634,
+      0.11077229999864358,
+      0.10712440000133938,
+      0.11410959999921033,
+      0.1132934999986901,
+      0.11147790000177338,
+      0.11327579999851878,
+      0.11151539999991655,
+      0.11798530000305618,
+      0.11320129999876372,
+      0.12250259999927948,
+      0.11378759999934118,
+      0.10826250000172877,
+      0.11639020000075107,
+      0.1017266999988351,
+      0.10830480000004172,
+      0.11210639999990235,
+      0.10930300000109128,
+      0.10828829999809386,
+      0.10781109999879845,
+      0.11039370000071358,
+      0.11028760000044713,
+      0.11207809999905294,
+      0.10965700000087963,
+      0.1097570000019914,
+      0.10660799999823212,
+      0.11026679999849875,
+      0.10844320000251173,
+      0.10763310000038473,
+      0.10809709999739425,
+      0.10975049999979092,
+      0.11199120000310359,
+      0.11117290000038338,
+      0.11040379999758443,
+      0.09258970000155387,
+      0.10925109999880078,
+      0.11204150000048685,
+      0.09302889999889885,
+      0.09286880000217934,
+      0.10918799999853945,
+      0.09422719999929541,
+      0.09301240000058897,
+      0.10812710000027437,
+      0.11034769999969285,
+      0.09742199999891454,
+      0.11478790000182926,
+      0.10459460000129184,
+      0.1005126999989443,
+      0.11226650000025984,
+      0.11275910000040312,
+      0.1118596999986039,
+      0.10466839999935473,
+      0.11775850000049104,
+      0.11079640000025393,
+      0.10931210000126157,
+      0.11966079999911017,
+      0.11421049999989918,
+      0.11161709999942104,
+      0.11451030000171158,
+      0.12201789999744506,
+      0.1250283000008494,
+      0.11940260000119451,
+      0.11276809999981197,
+      0.10652029999982915,
+      0.11250699999800418,
+      0.10449940000034985,
+      0.11538520000249264,
+      0.12126829999760957,
+      0.10880530000213184,
+      0.10781800000040676,
+      0.11815029999706894,
+      0.11414020000302116,
+      0.09585030000016559,
+      0.11112349999893922,
+      0.10898570000063046,
+      0.10582249999788473,
+      0.09836700000232668,
+      0.12029619999884744,
+      0.09259359999850858,
+      0.09307290000288049,
+      0.09357899999668007,
+      0.09234880000076373,
+      0.10771749999912572,
+      0.11344509999980801,
+      0.09142330000031507,
+      0.10850150000260328,
+      0.10921070000040345,
+      0.11239219999697525,
+      0.0936351000018476,
+      0.09506559999863384,
+      0.09476980000181356,
+      0.10530310000103782,
+      0.11032059999706689,
+      0.09384370000043418,
+      0.10860880000109319,
+      0.10691489999953774,
+      0.11199969999870518,
+      0.0951870000026247,
+      0.09137360000022454,
+      0.11340759999802685,
+      0.09514390000185813,
+      0.11855629999990924,
+      0.11355399999956717,
+      0.10407959999793093,
+      0.10962110000036773,
+      0.11540529999911087,
+      0.10311570000339998,
+      0.10866129999703844,
+      0.11485689999972237,
+      0.11162580000018352,
+      0.10245080000095186,
+      0.10991389999981038,
+      0.11262510000233306,
+      0.10324859999673208,
+      0.11140810000142665,
+      0.11120650000157184,
+      0.10866609999720822,
+      0.11546459999954095,
+      0.12227730000086012,
+      0.11048510000182432,
+      0.10882019999917247,
+      0.11111539999910747,
+      0.10973480000029667,
+      0.10145360000024084,
+      0.11953600000197184,
+      0.11453849999816157,
+      0.10751710000113235,
+      0.133249499998783,
+      0.10750869999901624,
+      0.10097400000086054,
+      0.1204914000009012,
+      0.10361249999914435,
+      0.1242119000016828,
+      0.15800889999809442,
+      0.11349329999939073,
+      0.11018020000119577,
+      0.1191700999988825,
+      0.11831060000258731,
+      0.12418019999677199,
+      0.13306140000349842,
+      0.12255129999903147,
+      0.12878659999842057,
+      0.10923410000032163,
+      0.11878090000027441,
+      0.12189819999912288,
+      0.12461640000037733,
+      0.11951110000154586,
+      0.11259609999979148,
+      0.11072620000049938,
+      0.13041009999869857,
+      0.13085270000010496,
+      0.11940020000110962,
+      0.11230449999857228,
+      0.11285209999914514,
+      0.13895080000293092,
+      0.10978389999945648,
+      0.10521159999916563,
+      0.11401979999936884,
+      0.11833670000123675,
+      0.12833479999972042,
+      0.11143459999948391,
+      0.1260775000009744,
+      0.10873189999983879,
+      0.10996370000066236,
+      0.12538639999911538,
+      0.10366449999855831,
+      0.1174343000020599,
+      0.11015929999848595,
+      0.09582990000126301,
+      0.10352549999879557,
+      0.12703269999838085,
+      0.10213190000285977,
+      0.1136103999997431,
+      0.11218039999948815,
+      0.09621350000088569,
+      0.10843649999878835,
+      0.09858819999863044,
+      0.12349370000083582,
+      0.11772170000040205,
+      0.12539319999996223,
+      0.1051073999988148,
+      0.11080560000118567,
+      0.11118189999979222,
+      0.1219837999997253,
+      0.10395310000239988,
+      0.11647949999678531,
+      0.11634730000150739,
+      0.11810239999977057,
+      0.10812040000018897,
+      0.1308640999995987,
+      0.10613920000105281,
+      0.125495399999636,
+      0.10753910000130418,
+      0.11807309999858262,
+      0.11991960000159452,
+      0.10954989999663667,
+      0.11931710000135354,
+      0.12349370000083582,
+      0.12694379999811645,
+      0.11478859999988344,
+      0.09346630000072764,
+      0.10820850000163773,
+      0.12051789999895846,
+      0.11668469999858644,
+      0.106221000001824,
+      0.11519789999874774,
+      0.12054680000073859,
+      0.10629120000157855,
+      0.1252387999993516,
+      0.11515879999933532,
+      0.10637339999811957,
+      0.12055970000074012,
+      0.11752210000122432,
+      0.09033239999916987,
+      0.1095941000021412,
+      0.0995584999982384,
+      0.13509659999908763,
+      0.10060650000013993,
+      0.13346029999956954,
+      0.10307220000322559,
+      0.11314559999664198,
+      0.1168061000025773,
+      0.11666169999807607,
+      0.10710060000201338,
+      0.12476319999768748,
+      0.10873790000187,
+      0.12991630000033183,
+      0.10847219999777735,
+      0.10820249999960652,
+      0.11150420000194572,
+      0.11394139999902109,
+      0.1066370000007737,
+      0.09947319999992033,
+      0.13107120000131545,
+      0.12264589999904274,
+      0.11783609999838518,
+      0.1061987000030058,
+      0.11068959999829531,
+      0.1050437999983842,
+      0.11674570000104723,
+      0.11655460000110907,
+      0.11571230000117794,
+      0.10307549999924959,
+      0.10832920000029844,
+      0.11800409999705153,
+      0.12133800000083284,
+      0.10799020000195014,
+      0.1264339999979711,
+      0.1337922000020626,
+      0.11303810000026715,
+      0.10759699999834993,
+      0.11046329999953741,
+      0.11221020000084536,
+      0.12535660000139615,
+      0.11391929999808781,
+      0.12295739999899524,
+      0.10043980000045849,
+      0.1103151000024809,
+      0.12128189999930328,
+      0.11727909999899566,
+      0.13348609999957262,
+      0.11408840000149212,
+      0.11385999999765772,
+      0.11500590000287048,
+      0.12164339999799267,
+      0.10498849999930826,
+      0.10943830000178423,
+      0.1128699000000779,
+      0.10045199999876786,
+      0.11988130000099773,
+      0.10418819999904372,
+      0.11890789999961271,
+      0.11326480000207084,
+      0.12390569999843137,
+      0.11911300000065239,
+      0.13231599999926402,
+      0.1159698000010394,
+      0.1009885999992548,
+      0.11372539999865694,
+      0.10944720000043162,
+      0.11233480000009877,
+      0.0905034000024898,
+      0.11450239999976475,
+      0.1174613999974099,
+      0.11692880000191508,
+      0.10446750000119209,
+      0.11553079999794136,
+      0.12404349999997066,
+      0.11147319999872707,
+      0.12386000000333297,
+      0.12220600000000559,
+      0.10408259999894653,
+      0.10898679999809247,
+      0.1210231000004569,
+      0.1169661999992968,
+      0.1049910000001546,
+      0.13045450000208803,
+      0.10784649999914109,
+      0.11014269999941462,
+      0.11587760000111302,
+      0.11801940000077593,
+      0.12477489999946556,
+      0.11813279999842052,
+      0.1267546000017319,
+      0.12684499999886611,
+      0.1258711000009498,
+      0.11552799999844865,
+      0.1037082000002556,
+      0.12234069999976782,
+      0.11365950000254088,
+      0.12497419999999693,
+      0.12393099999826518,
+      0.1086643999988155,
+      0.11623630000030971,
+      0.10184600000138744,
+      0.12006819999805884,
+      0.11352050000277814,
+      0.11142049999762094,
+      0.1098818000027677,
+      0.12252249999801279,
+      0.10970549999910872,
+      0.10671830000137561,
+      0.12119710000115447,
+      0.12282199999754084,
+      0.10692900000140071,
+      0.10294770000109565,
+      0.10740579999765032,
+      0.12392200000249431,
+      0.11218519999965793,
+      0.11461829999825568,
+      0.10921790000065812,
+      0.11193089999869699,
+      0.09089440000025206,
+      0.127776500001346,
+      0.1005695999992895,
+      0.12234900000112248,
+      0.11496959999931278,
+      0.13611220000166213,
+      0.11794059999738238,
+      0.11657310000009602,
+      0.13471990000107326,
+      0.10833400000046822,
+      0.11048079999818583,
+      0.10779660000116564,
+      0.10471959999995306,
+      0.11125479999827803,
+      0.13345939999999246,
+      0.10113320000164094,
+      0.10916290000022855,
+      0.10803329999907874,
+      0.11081130000093253,
+      0.10846020000099088,
+      0.11241899999731686,
+      0.11893110000164597,
+      0.12268290000065463,
+      0.11988569999812171,
+      0.10987129999921308,
+      0.10277120000318973,
+      0.11386029999994207,
+      0.09545579999758047,
+      0.10934120000092662,
+      0.11792110000169487,
+      0.12011469999924884,
+      0.12108689999877242,
+      0.10586229999898933,
+      0.11406160000115051,
+      0.10358519999863347,
+      0.10511810000025434,
+      0.1198026000020036,
+      0.10496539999803645,
+      0.121314900003199,
+      0.10898529999758466,
+      0.12194850000014412,
+      0.12486880000142264,
+      0.10761389999970561,
+      0.1129252999999153,
+      0.11833539999861387,
+      0.1146243000002869,
+      0.12913140000091516,
+      0.11984880000090925,
+      0.11940269999831798,
+      0.11540310000054887,
+      0.11935639999865089,
+      0.09450210000068182,
+      0.10528100000010454,
+      0.11329280000063591,
+      0.1091439999981958,
+      0.10503280000193627,
+      0.11813289999918197,
+      0.11668980000104057,
+      0.09383030000026338,
+      0.12132449999990058,
+      0.1360144999998738,
+      0.12181319999945117,
+      0.11128009999811184,
+      0.12845950000337325,
+      0.11222409999754746,
+      0.10969140000088373,
+      0.11093669999900158,
+      0.10763020000013057,
+      0.13315680000232533,
+      0.1131489999970654,
+      0.12088550000044052,
+      0.10712910000074771,
+      0.12750020000021323,
+      0.10547310000038124,
+      0.10620679999919957,
+      0.10792270000092685,
+      0.10879500000010012,
+      0.11436649999814108,
+      0.1225391000007221,
+      0.12694290000217734,
+      0.10489789999701316,
+      0.11701739999989513,
+      0.10480400000233203,
+      0.11917460000040592,
+      0.11866779999763821,
+      0.1083905000014056,
+      0.11938359999840031,
+      0.13914480000312324,
+      0.11663529999714228,
+      0.11520910000035656,
+      0.13781960000051185,
+      0.10371940000186441,
+      0.12622479999845382,
+      0.10986169999887352,
+      0.10964199999943958,
+      0.10572289999981876,
+      0.11974490000284277,
+      0.12860039999941364,
+      0.11572239999804879,
+      0.10754720000113593,
+      0.11944399999993038,
+      0.11917900000116788,
+      0.11522780000086641,
+      0.11555139999836683,
+      0.13005369999882532,
+      0.11503390000143554,
+      0.11278709999896819,
+      0.11331369999970775,
+      0.10800640000161366,
+      0.10755820000122185,
+      0.11478489999717567,
+      0.09765890000198851,
+      0.1307883999979822,
+      0.11348370000268915,
+      0.0983020999992732,
+      0.1284257000006619,
+      0.11891169999944395,
+      0.091316399997595,
+      0.09307520000220393,
+      0.10162119999949937,
+      0.11588370000026771,
+      0.11248189999969327,
+      0.10179810000045109,
+      0.13653879999765195,
+      0.11868760000288603,
+      0.11456600000019534,
+      0.12000259999695118,
+      0.11672900000121444,
+      0.11473409999962314,
+      0.11396729999978561,
+      0.10538230000020121,
+      0.11133610000251792,
+      0.12796909999815398,
+      0.10108330000002752,
+      0.10966539999935776,
+      0.11041409999961616,
+      0.11225810000178171,
+      0.12844380000024103,
+      0.10233049999806099,
+      0.11257330000080401,
+      0.12377220000053057,
+      0.10677949999808334,
+      0.11125340000216966,
+      0.11194249999971362,
+      0.1048914999992121,
+      0.11356290000185254,
+      0.11073299999770825,
+      0.11279669999930775,
+      0.10182870000062394,
+      0.11098670000137645,
+      0.10864969999965979,
+      0.11074730000109412,
+      0.11029729999791016,
+      0.11035339999943972,
+      0.11005330000261893,
+      0.11068879999947967,
+      0.09159139999974286,
+      0.11028449999867007,
+      0.1088768000008713,
+      0.11509220000152709,
+      0.11821489999783807,
+      0.1108395000010205,
+      0.09756270000070799,
+      0.1062084999975923,
+      0.09856330000184244,
+      0.10792619999847375,
+      0.11235270000179298,
+      0.10836510000081034,
+      0.11160329999984242,
+      0.10840289999759989,
+      0.11678820000088308,
+      0.12053110000124434,
+      0.11298239999814541
+    ],
+    "process_rows": 586,
+    "idle_baseline": "samples before contained model PID creation"
+  }
+}

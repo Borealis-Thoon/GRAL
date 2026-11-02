@@ -1,0 +1,30 @@
+{
+  "status": "pass",
+  "figure_count": 14,
+  "blocking_findings": 0,
+  "figure_sha256": {
+    "memory_walltime_24h.png": "90c35c5a5c0a8248727a06142348e7f43ca86caa637fe4089b9932d1cc28667e",
+    "gpu_pipeline_phases_24h.png": "1e1a52df2a21523325922bb27d6b224049b54038625eb7b72978b892451d1ee3",
+    "gpu_pipeline_phases_48h.png": "1f5a0decce558616c99c1504748599bf33f44fff1fb3fdafb20cba8cf04f6055",
+    "situation_time_repeats.png": "4c3fbd7bc884285a5c786a4c5e8a1b7f164d62b35202f2d4fa5d3f2f7f58b256",
+    "timing_variability.png": "dd56095f6d40257c30510c43fc996d8281ed2b793a26f4ee3e4c78fabbaf038d",
+    "memory_walltime_48h.png": "8a22d3e707d8d5b9722196a379fb5f623543c5d2481c4c78337a6736f5b60f17",
+    "memory_per_situation_24h.png": "afb846dc8c4d71398edffb0b43ee1f38d0c8a1291472e9826fbceede5e711e12",
+    "memory_per_situation_48h.png": "9481fb8bdf03643b292847836659c68aa4763a62b481132ea435870967be5c7e",
+    "gpu_buffer_reuse_24h.png": "ac1ec67f2df1d50954ad1c5a787c911eaffee250104022aba82206bd2d610d3d",
+    "gpu_buffer_reuse_48h.png": "a9dbf045cfda4578bc49e3452b6f63a61229196487bcfe8a2436165e2a246f75",
+    "seed0_mean_spatial_maps.png": "c4eead9a78755b43e0162d65a2df42ed273bd0b87d3db6071c57ed9d055a76cf",
+    "seed_twins_scatter.png": "4530a1774c133979352792c3249f4b15f4953fb37a65490f5459b61e9e0c7956",
+    "seed_level_metrics.png": "f9dbdb46bcdbf915bb3c996d66ecbfb17df8ec06b5565c48829141d5908182e4",
+    "seed_R_V_blocks.png": "a1a1b5041a5a6fe5aaa2c463b1a92bdcc0641058570a76654d76af14036e7504"
+  },
+  "review_receipts": {
+    "final_visual_review_root.json": "1c8baac5b7e041f911a25d697791e65158ff15f2171966c6dcd147b8b96c5cf0",
+    "final_visual_review_scientific.json": "4c68497b7429b99cc7ed4813d4d1f9a4c369406ca994c22bc80a0fd9700527b3"
+  },
+  "caption_advisories": "Resolved in final README and PR link captions: scatter hours 4 through 24 and model output units; P99 difference model output units.",
+  "caption_doc_sha256": {
+    "docs/evidence_README.md": "1b13626496097e7037aeea1fdc4f8af293b1d08c3d15c28e23f742c3a56cf511",
+    "publication/PR_BODY.md": "b32bb46a67088b254b5a9e1d49f3a91e9d4d03d121f0240133a42f5c5d70fa11"
+  }
+}

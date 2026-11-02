@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "language": "en",
+  "mode": "Embedded",
+  "profile": "english-ste-inspired",
+  "interpreter": "C:\\Users\\xpyss\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+  "interpreter_version": "Python 3.12.14",
+  "skill": "D:\\Agent_Plugins\\adapters\\humanize-kit\\skills\\humanizer\\SKILL.md",
+  "scope": [
+    "docs/optimization_and_scope.md",
+    "docs/runtime_setup.md",
+    "qa/prose_*"
+  ],
+  "technical_clarity": {
+    "pre_edit_routes": "Both technical routes returned exit 0.",
+    "final_style": "Both style_review.py scans returned exit 0 with zero candidates. Both technical profile style checks found zero advisory candidates.",
+    "runtime_fidelity_exit": 0,
+    "optimization_fidelity_exit": 1,
+    "candidate_decisions": [
+      "Protected-content additions: ParticleManagement.Calculate(true) and kernel timing identifiers were verified in Program.cs, TeilchenAufteilung.cs, GpuSituationDriver.cs, and server.py. They add source-grounded technical detail.",
+      "One added before condition describes StartCoordinates.Calculate() before GPU dispatch. Program.cs preserves this order.",
+      "The draft description of a separate LINE branch was corrected to the common LINE/AREA trajectory path. Constants.cs maps LINE to 2 and AREA to 3. generated.cu uses SourceType_54 > 1 for this path."
+    ],
+    "manual_fidelity_result": "Reviewed against current code. Draft-to-final changes include documented source-grounded additions and a terminology correction. Full prose equivalence is not claimed.",
+    "retained_precision": [
+      "CPU default and exact opt-in",
+      "Unsupported-configuration CPU fallback before GPU execution",
+      "Runtime errors remain fatal",
+      "Five Required variables",
+      "NVRTC 12.9 and compute_120",
+      "Optional local PTX cache and ACK-scoped input cache",
+      "Kernel wrapper time differs from CUDA event time",
+      "No per-optimization measured speedup attribution"
+    ],
+    "unresolved_delivery_warnings": []
+  },
+  "humanize_review": {
+    "patterns_revised": [
+      "Passive descriptions changed to explicit host/server/importer actions",
+      "Repeated startup terms made consistent",
+      "Long explanations retained only where scope or condition precision requires them"
+    ],
+    "necessary_negatives": [
+      "No CPU restart after partial GPU execution",
+      "No universal GPU feature coverage",
+      "No per-optimization measured speedup attribution",
+      "No new TieredCompilation change"
+    ],
+    "paragraph_review": "Manual review completed for scope, rhythm, terminology, unsupported comparisons, and procedural order."
+  },
+  "evidence_limits": [
+    "No benchmark completion or numerical result claim in these documents.",
+    "Old single-run timing values were not reused.",
+    "PowerShell examples are templates and were not executed.",
+    "Source SHA256 values identify the code read for this documentation."
+  ],
+  "source_evidence": [
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch\\repo\\src\\Program.cs",
+      "sha256": "2cc3d943de0b79fbfbc995a6e1b33cd7fb8cf26431a8def843d2bfffc6b94610"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch\\repo\\src\\GpuExperimental.cs",
+      "sha256": "c11eae19a565d3c5cd29c7e5e8d1123f9cfd2332ba73a24f5a2cdd1f0dc047e9"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch\\repo\\src\\GpuSituationDriver.cs",
+      "sha256": "2c759592bee377fe1356f92b95fa358c5185e8138b11f2ecccb6540cf6dc3922"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch\\repo\\src\\GpuInputCache.cs",
+      "sha256": "67f895b6447790aa665b0ba0d00a6cb849603273b1a12a60de5a1c8a8c636d7a"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch\\repo\\src\\GpuServerConnection.cs",
+      "sha256": "69b3377f5c63c7690c27f4a22e5b876f26894de33c1b87ce6bde0630a5d30b8a"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch\\repo\\src\\GpuFieldExport.cs",
+      "sha256": "9ab08b670df364e889e44280cd916f9e0008b4e76f0c3a47527b8b8509ffb457"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch\\repo\\src\\GpuFieldImport.cs",
+      "sha256": "6332ecf2de286602c4d33e59277c349203f3edcbd21f0b2274be14cc4ee4a89a"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch\\repo\\src\\TeilchenAufteilung.cs",
+      "sha256": "303848e9a30b952c1b69517661f6f497d1dae7a380a6e2687de8f6e6ece8dea2"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch\\repo\\src\\Constants.cs",
+      "sha256": "563fb2b6ddef4f487cceccbd6162b0c91140aa19e5166aa8e70ac3b7c26838d0"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch\\repo\\src\\GRAL.csproj",
+      "sha256": "340dbdf0eb5cfe39ef85f00d726a81cdd819031d5d17908c7e6712e8bdbbba7b"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch\\repo\\gpu\\runtime\\server.py",
+      "sha256": "72d7b13ed7456413dc621fd43665e97192f9027ff8ea7083dbe36b2c2f2ac170"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch\\repo\\gpu\\runtime\\cuda_common.py",
+      "sha256": "11df4a698ad772102b407599ad8e1c59e726dadd90746fbf733bf0410cb0a8aa"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch\\repo\\gpu\\runtime\\ptx_cache.py",
+      "sha256": "773d2fa29a26eeb748fc643459c1651804fd650e2fb117355285c66c3a0f6ed7"
+    },
+    {
+      "path": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_general_dispatch\\repo\\gpu\\runtime\\generated.cu",
+      "sha256": "7d196a9e9b53a724a8ed42ecd905c0726303e6c9c4bc27ddfa70e6d51ee66da5"
+    }
+  ]
+}

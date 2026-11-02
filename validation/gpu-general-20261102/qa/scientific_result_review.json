@@ -1,0 +1,7286 @@
+{
+  "status": "engineering_pass_observed_fixture",
+  "method": "Independent struct/NumPy decoding of all 22 runs; no imports from analysis or validation modules; same fixed full grid and linear quantiles. Timing and memory recomputed from raw result/CSV.",
+  "checks": [
+    {
+      "check": "science24_s0_cpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu result",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu result",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu result",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu result",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_cpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu result",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_cpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu result",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu result",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu result",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_cpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu result",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_cpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu result",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu result",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu result",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_cpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu result",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu result",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu result",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu result",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 25",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 26",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 27",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 28",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 29",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 30",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 31",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 32",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 33",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 34",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 35",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 36",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 37",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 38",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 39",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 40",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 41",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 42",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 43",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 44",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 45",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 46",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 47",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu archive 48",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu result",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 25",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 26",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 27",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 28",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 29",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 30",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 31",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 32",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 33",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 34",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 35",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 36",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 37",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 38",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 39",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 40",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 41",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 42",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 43",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 44",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 45",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 46",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 47",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu archive 48",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu result",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 25",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 26",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 27",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 28",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 29",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 30",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 31",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 32",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 33",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 34",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 35",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 36",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 37",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 38",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 39",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 40",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 41",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 42",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 43",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 44",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 45",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 46",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 47",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu archive 48",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu result",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 25",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 26",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 27",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 28",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 29",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 30",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 31",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 32",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 33",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 34",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 35",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 36",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 37",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 38",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 39",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 40",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 41",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 42",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 43",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 44",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 45",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 46",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 47",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu archive 48",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu result",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 25",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 26",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 27",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 28",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 29",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 30",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 31",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 32",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 33",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 34",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 35",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 36",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 37",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 38",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 39",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 40",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 41",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 42",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 43",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 44",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 45",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 46",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 47",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu archive 48",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu result",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 1",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 2",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 3",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 4",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 5",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 6",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 7",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 8",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 9",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 10",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 11",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 12",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 13",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 14",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 15",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 16",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 17",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 18",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 19",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 20",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 21",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 22",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 23",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 24",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 25",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 26",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 27",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 28",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 29",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 30",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 31",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 32",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 33",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 34",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 35",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 36",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 37",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 38",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 39",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 40",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 41",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 42",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 43",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 44",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 45",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 46",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 47",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu archive 48",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu finite nonnegative",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu result",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu input Computation/cadastre.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu input Computation/emissions_timeseries.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu input Computation/ggeom.asc",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu input Computation/GRAL.geb",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu input Computation/GRAMM.geb",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu input Computation/in.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu input Computation/line.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu input Computation/Max_Proc.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu input Computation/meteopgt.all",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu input Computation/mettimeseries.dat",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu input Computation/windfeld.txt",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu input Weather/00001.scl",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu input Weather/00001.wnd",
+      "pass": true
+    },
+    {
+      "check": "1 seed0 L",
+      "pass": true
+    },
+    {
+      "check": "1 seed0 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "1 seed0 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "1 seed0 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "1 seed0 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "1 seed0 p95",
+      "pass": true
+    },
+    {
+      "check": "1 seed0 p99",
+      "pass": true
+    },
+    {
+      "check": "1 seed1 L",
+      "pass": true
+    },
+    {
+      "check": "1 seed1 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "1 seed1 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "1 seed1 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "1 seed1 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "1 seed1 p95",
+      "pass": true
+    },
+    {
+      "check": "1 seed1 p99",
+      "pass": true
+    },
+    {
+      "check": "1 seed2 L",
+      "pass": true
+    },
+    {
+      "check": "1 seed2 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "1 seed2 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "1 seed2 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "1 seed2 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "1 seed2 p95",
+      "pass": true
+    },
+    {
+      "check": "1 seed2 p99",
+      "pass": true
+    },
+    {
+      "check": "1 seed3 L",
+      "pass": true
+    },
+    {
+      "check": "1 seed3 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "1 seed3 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "1 seed3 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "1 seed3 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "1 seed3 p95",
+      "pass": true
+    },
+    {
+      "check": "1 seed3 p99",
+      "pass": true
+    },
+    {
+      "check": "1 seed4 L",
+      "pass": true
+    },
+    {
+      "check": "1 seed4 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "1 seed4 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "1 seed4 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "1 seed4 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "1 seed4 p95",
+      "pass": true
+    },
+    {
+      "check": "1 seed4 p99",
+      "pass": true
+    },
+    {
+      "check": "1 seed5 L",
+      "pass": true
+    },
+    {
+      "check": "1 seed5 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "1 seed5 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "1 seed5 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "1 seed5 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "1 seed5 p95",
+      "pass": true
+    },
+    {
+      "check": "1 seed5 p99",
+      "pass": true
+    },
+    {
+      "check": "1 block0 A",
+      "pass": true
+    },
+    {
+      "check": "1 block0 B",
+      "pass": true
+    },
+    {
+      "check": "1 block0 D",
+      "pass": true
+    },
+    {
+      "check": "1 block0 R",
+      "pass": true
+    },
+    {
+      "check": "1 block0 V",
+      "pass": true
+    },
+    {
+      "check": "1 block1 A",
+      "pass": true
+    },
+    {
+      "check": "1 block1 B",
+      "pass": true
+    },
+    {
+      "check": "1 block1 D",
+      "pass": true
+    },
+    {
+      "check": "1 block1 R",
+      "pass": true
+    },
+    {
+      "check": "1 block1 V",
+      "pass": true
+    },
+    {
+      "check": "1 block2 A",
+      "pass": true
+    },
+    {
+      "check": "1 block2 B",
+      "pass": true
+    },
+    {
+      "check": "1 block2 D",
+      "pass": true
+    },
+    {
+      "check": "1 block2 R",
+      "pass": true
+    },
+    {
+      "check": "1 block2 V",
+      "pass": true
+    },
+    {
+      "check": "2 seed0 L",
+      "pass": true
+    },
+    {
+      "check": "2 seed0 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "2 seed0 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "2 seed0 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "2 seed0 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "2 seed0 p95",
+      "pass": true
+    },
+    {
+      "check": "2 seed0 p99",
+      "pass": true
+    },
+    {
+      "check": "2 seed1 L",
+      "pass": true
+    },
+    {
+      "check": "2 seed1 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "2 seed1 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "2 seed1 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "2 seed1 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "2 seed1 p95",
+      "pass": true
+    },
+    {
+      "check": "2 seed1 p99",
+      "pass": true
+    },
+    {
+      "check": "2 seed2 L",
+      "pass": true
+    },
+    {
+      "check": "2 seed2 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "2 seed2 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "2 seed2 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "2 seed2 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "2 seed2 p95",
+      "pass": true
+    },
+    {
+      "check": "2 seed2 p99",
+      "pass": true
+    },
+    {
+      "check": "2 seed3 L",
+      "pass": true
+    },
+    {
+      "check": "2 seed3 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "2 seed3 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "2 seed3 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "2 seed3 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "2 seed3 p95",
+      "pass": true
+    },
+    {
+      "check": "2 seed3 p99",
+      "pass": true
+    },
+    {
+      "check": "2 seed4 L",
+      "pass": true
+    },
+    {
+      "check": "2 seed4 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "2 seed4 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "2 seed4 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "2 seed4 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "2 seed4 p95",
+      "pass": true
+    },
+    {
+      "check": "2 seed4 p99",
+      "pass": true
+    },
+    {
+      "check": "2 seed5 L",
+      "pass": true
+    },
+    {
+      "check": "2 seed5 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "2 seed5 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "2 seed5 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "2 seed5 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "2 seed5 p95",
+      "pass": true
+    },
+    {
+      "check": "2 seed5 p99",
+      "pass": true
+    },
+    {
+      "check": "2 block0 A",
+      "pass": true
+    },
+    {
+      "check": "2 block0 B",
+      "pass": true
+    },
+    {
+      "check": "2 block0 D",
+      "pass": true
+    },
+    {
+      "check": "2 block0 R",
+      "pass": true
+    },
+    {
+      "check": "2 block0 V",
+      "pass": true
+    },
+    {
+      "check": "2 block1 A",
+      "pass": true
+    },
+    {
+      "check": "2 block1 B",
+      "pass": true
+    },
+    {
+      "check": "2 block1 D",
+      "pass": true
+    },
+    {
+      "check": "2 block1 R",
+      "pass": true
+    },
+    {
+      "check": "2 block1 V",
+      "pass": true
+    },
+    {
+      "check": "2 block2 A",
+      "pass": true
+    },
+    {
+      "check": "2 block2 B",
+      "pass": true
+    },
+    {
+      "check": "2 block2 D",
+      "pass": true
+    },
+    {
+      "check": "2 block2 R",
+      "pass": true
+    },
+    {
+      "check": "2 block2 V",
+      "pass": true
+    },
+    {
+      "check": "3 seed0 L",
+      "pass": true
+    },
+    {
+      "check": "3 seed0 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "3 seed0 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "3 seed0 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "3 seed0 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "3 seed0 p95",
+      "pass": true
+    },
+    {
+      "check": "3 seed0 p99",
+      "pass": true
+    },
+    {
+      "check": "3 seed1 L",
+      "pass": true
+    },
+    {
+      "check": "3 seed1 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "3 seed1 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "3 seed1 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "3 seed1 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "3 seed1 p95",
+      "pass": true
+    },
+    {
+      "check": "3 seed1 p99",
+      "pass": true
+    },
+    {
+      "check": "3 seed2 L",
+      "pass": true
+    },
+    {
+      "check": "3 seed2 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "3 seed2 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "3 seed2 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "3 seed2 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "3 seed2 p95",
+      "pass": true
+    },
+    {
+      "check": "3 seed2 p99",
+      "pass": true
+    },
+    {
+      "check": "3 seed3 L",
+      "pass": true
+    },
+    {
+      "check": "3 seed3 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "3 seed3 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "3 seed3 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "3 seed3 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "3 seed3 p95",
+      "pass": true
+    },
+    {
+      "check": "3 seed3 p99",
+      "pass": true
+    },
+    {
+      "check": "3 seed4 L",
+      "pass": true
+    },
+    {
+      "check": "3 seed4 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "3 seed4 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "3 seed4 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "3 seed4 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "3 seed4 p95",
+      "pass": true
+    },
+    {
+      "check": "3 seed4 p99",
+      "pass": true
+    },
+    {
+      "check": "3 seed5 L",
+      "pass": true
+    },
+    {
+      "check": "3 seed5 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "3 seed5 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "3 seed5 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "3 seed5 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "3 seed5 p95",
+      "pass": true
+    },
+    {
+      "check": "3 seed5 p99",
+      "pass": true
+    },
+    {
+      "check": "3 block0 A",
+      "pass": true
+    },
+    {
+      "check": "3 block0 B",
+      "pass": true
+    },
+    {
+      "check": "3 block0 D",
+      "pass": true
+    },
+    {
+      "check": "3 block0 R",
+      "pass": true
+    },
+    {
+      "check": "3 block0 V",
+      "pass": true
+    },
+    {
+      "check": "3 block1 A",
+      "pass": true
+    },
+    {
+      "check": "3 block1 B",
+      "pass": true
+    },
+    {
+      "check": "3 block1 D",
+      "pass": true
+    },
+    {
+      "check": "3 block1 R",
+      "pass": true
+    },
+    {
+      "check": "3 block1 V",
+      "pass": true
+    },
+    {
+      "check": "3 block2 A",
+      "pass": true
+    },
+    {
+      "check": "3 block2 B",
+      "pass": true
+    },
+    {
+      "check": "3 block2 D",
+      "pass": true
+    },
+    {
+      "check": "3 block2 R",
+      "pass": true
+    },
+    {
+      "check": "3 block2 V",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed0 L",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed0 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed0 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed0 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed0 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed0 p95",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed0 p99",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed1 L",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed1 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed1 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed1 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed1 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed1 p95",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed1 p99",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed2 L",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed2 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed2 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed2 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed2 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed2 p95",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed2 p99",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed3 L",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed3 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed3 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed3 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed3 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed3 p95",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed3 p99",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed4 L",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed4 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed4 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed4 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed4 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed4 p95",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed4 p99",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed5 L",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed5 weighted_nmae",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed5 normalized_bias",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed5 spatial_pearson",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed5 max_absolute_difference",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed5 p95",
+      "pass": true
+    },
+    {
+      "check": "aggregate seed5 p99",
+      "pass": true
+    },
+    {
+      "check": "aggregate block0 A",
+      "pass": true
+    },
+    {
+      "check": "aggregate block0 B",
+      "pass": true
+    },
+    {
+      "check": "aggregate block0 D",
+      "pass": true
+    },
+    {
+      "check": "aggregate block0 R",
+      "pass": true
+    },
+    {
+      "check": "aggregate block0 V",
+      "pass": true
+    },
+    {
+      "check": "aggregate block1 A",
+      "pass": true
+    },
+    {
+      "check": "aggregate block1 B",
+      "pass": true
+    },
+    {
+      "check": "aggregate block1 D",
+      "pass": true
+    },
+    {
+      "check": "aggregate block1 R",
+      "pass": true
+    },
+    {
+      "check": "aggregate block1 V",
+      "pass": true
+    },
+    {
+      "check": "aggregate block2 A",
+      "pass": true
+    },
+    {
+      "check": "aggregate block2 B",
+      "pass": true
+    },
+    {
+      "check": "aggregate block2 D",
+      "pass": true
+    },
+    {
+      "check": "aggregate block2 R",
+      "pass": true
+    },
+    {
+      "check": "aggregate block2 V",
+      "pass": true
+    },
+    {
+      "check": "24 cpu timing median",
+      "pass": true
+    },
+    {
+      "check": "24 cpu timing cv",
+      "pass": true
+    },
+    {
+      "check": "24 gpu timing median",
+      "pass": true
+    },
+    {
+      "check": "24 gpu timing cv",
+      "pass": true
+    },
+    {
+      "check": "24 paired speedup median",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu memory tree_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu memory tree_private_bytes",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu memory dotnet_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu memory python_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_cpu memory os_peak_working_set_bytes",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu memory tree_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu memory tree_private_bytes",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu memory dotnet_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu memory python_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu memory os_peak_working_set_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu memory tree_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu memory tree_private_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu memory dotnet_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu memory python_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu memory os_peak_working_set_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu memory tree_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu memory tree_private_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu memory dotnet_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu memory python_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_cpu memory os_peak_working_set_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu memory tree_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu memory tree_private_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu memory dotnet_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu memory python_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_cpu memory os_peak_working_set_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu memory tree_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu memory tree_private_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu memory dotnet_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu memory python_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu memory os_peak_working_set_bytes",
+      "pass": true
+    },
+    {
+      "check": "48 cpu timing median",
+      "pass": true
+    },
+    {
+      "check": "48 cpu timing cv",
+      "pass": true
+    },
+    {
+      "check": "48 gpu timing median",
+      "pass": true
+    },
+    {
+      "check": "48 gpu timing cv",
+      "pass": true
+    },
+    {
+      "check": "48 paired speedup median",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu memory tree_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu memory tree_private_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu memory dotnet_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu memory python_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu memory os_peak_working_set_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu memory tree_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu memory tree_private_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu memory dotnet_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu memory python_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_cpu memory os_peak_working_set_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu memory tree_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu memory tree_private_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu memory dotnet_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu memory python_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_cpu memory os_peak_working_set_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu memory tree_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu memory tree_private_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu memory dotnet_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu memory python_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu memory os_peak_working_set_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu memory tree_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu memory tree_private_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu memory dotnet_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu memory python_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu memory os_peak_working_set_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu memory tree_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu memory tree_private_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu memory dotnet_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu memory python_rss_bytes",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_cpu memory os_peak_working_set_bytes",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s0_gpu event interval 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s100000_gpu event interval 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s200000_gpu event interval 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s300000_gpu event interval 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s400000_gpu event interval 24",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 1",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 2",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 3",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 4",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 5",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 6",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 7",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 8",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 9",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 10",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 11",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 12",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 13",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 14",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 15",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 16",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 17",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 18",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 19",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 20",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 21",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 22",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 23",
+      "pass": true
+    },
+    {
+      "check": "science24_s500000_gpu event interval 24",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 1",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 2",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 3",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 4",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 5",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 6",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 7",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 8",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 9",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 10",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 11",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 12",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 13",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 14",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 15",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 16",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 17",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 18",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 19",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 20",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 21",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 22",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 23",
+      "pass": true
+    },
+    {
+      "check": "timing24_r1_gpu event interval 24",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 1",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 2",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 3",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 4",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 5",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 6",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 7",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 8",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 9",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 10",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 11",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 12",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 13",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 14",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 15",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 16",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 17",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 18",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 19",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 20",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 21",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 22",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 23",
+      "pass": true
+    },
+    {
+      "check": "timing24_r2_gpu event interval 24",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 1",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 2",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 3",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 4",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 5",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 6",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 7",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 8",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 9",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 10",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 11",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 12",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 13",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 14",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 15",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 16",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 17",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 18",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 19",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 20",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 21",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 22",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 23",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 24",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 25",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 26",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 27",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 28",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 29",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 30",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 31",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 32",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 33",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 34",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 35",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 36",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 37",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 38",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 39",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 40",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 41",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 42",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 43",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 44",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 45",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 46",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 47",
+      "pass": true
+    },
+    {
+      "check": "timing48_r0_gpu event interval 48",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 1",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 2",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 3",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 4",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 5",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 6",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 7",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 8",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 9",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 10",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 11",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 12",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 13",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 14",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 15",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 16",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 17",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 18",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 19",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 20",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 21",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 22",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 23",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 24",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 25",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 26",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 27",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 28",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 29",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 30",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 31",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 32",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 33",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 34",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 35",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 36",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 37",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 38",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 39",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 40",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 41",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 42",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 43",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 44",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 45",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 46",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 47",
+      "pass": true
+    },
+    {
+      "check": "timing48_r1_gpu event interval 48",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 1",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 2",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 3",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 4",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 5",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 6",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 7",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 8",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 9",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 10",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 11",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 12",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 13",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 14",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 15",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 16",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 17",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 18",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 19",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 20",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 21",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 22",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 23",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 24",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 25",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 26",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 27",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 28",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 29",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 30",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 31",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 32",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 33",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 34",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 35",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 36",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 37",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 38",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 39",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 40",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 41",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 42",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 43",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 44",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 45",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 46",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 47",
+      "pass": true
+    },
+    {
+      "check": "timing48_r2_gpu event interval 48",
+      "pass": true
+    },
+    {
+      "check": "seed 0 CPU GPU actual state equality",
+      "pass": true
+    },
+    {
+      "check": "seed 100000 CPU GPU actual state equality",
+      "pass": true
+    },
+    {
+      "check": "seed 200000 CPU GPU actual state equality",
+      "pass": true
+    },
+    {
+      "check": "seed 300000 CPU GPU actual state equality",
+      "pass": true
+    },
+    {
+      "check": "seed 400000 CPU GPU actual state equality",
+      "pass": true
+    },
+    {
+      "check": "seed 500000 CPU GPU actual state equality",
+      "pass": true
+    },
+    {
+      "check": "six distinct offset state sequences",
+      "pass": true
+    }
+  ],
+  "check_count": 1643,
+  "fail_count": 0,
+  "scientific": {
+    "1": {
+      "metrics": [
+        {
+          "L": 6.361677630338817e-05,
+          "weighted_nmae": 8.912888826767872e-06,
+          "normalized_bias": 1.1699216917422493e-07,
+          "p95_difference": 4.005432131748421e-06,
+          "p99_difference": 0.0,
+          "spatial_pearson": 0.9999999999770319,
+          "max_absolute_difference": 0.049976348876953125,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 33654,
+          "zero_cells_gpu": 33654
+        },
+        {
+          "L": 0.0001031772578467748,
+          "weighted_nmae": 1.4441306193428493e-05,
+          "normalized_bias": -3.006975994837584e-07,
+          "p95_difference": -6.084442138387658e-05,
+          "p99_difference": 1.5106201175285605e-05,
+          "spatial_pearson": 0.9999999999515299,
+          "max_absolute_difference": 0.05480194091796875,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 33691,
+          "zero_cells_gpu": 33691
+        },
+        {
+          "L": 0.00013300799305960979,
+          "weighted_nmae": 1.8686845121400206e-05,
+          "normalized_bias": 1.6088323056556097e-08,
+          "p95_difference": 1.1444091796875e-05,
+          "p99_difference": 1.5258788721439487e-07,
+          "spatial_pearson": 0.999999999926003,
+          "max_absolute_difference": 0.08696746826171875,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 33572,
+          "zero_cells_gpu": 33572
+        },
+        {
+          "L": 9.563630158137087e-05,
+          "weighted_nmae": 1.3394649399484573e-05,
+          "normalized_bias": -7.229411855429855e-08,
+          "p95_difference": 0.0019029617309627156,
+          "p99_difference": 0.0,
+          "spatial_pearson": 0.999999999960812,
+          "max_absolute_difference": 0.045619964599609375,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 33728,
+          "zero_cells_gpu": 33728
+        },
+        {
+          "L": 7.922153154421331e-05,
+          "weighted_nmae": 1.110176127862456e-05,
+          "normalized_bias": -1.4318099132896466e-07,
+          "p95_difference": -0.0005289077758305893,
+          "p99_difference": 0.0,
+          "spatial_pearson": 0.9999999999663799,
+          "max_absolute_difference": 0.04438209533691406,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 33767,
+          "zero_cells_gpu": 33767
+        },
+        {
+          "L": 6.668342183776466e-05,
+          "weighted_nmae": 9.358381172164212e-06,
+          "normalized_bias": -2.419434289512572e-07,
+          "p95_difference": 7.438659665126579e-06,
+          "p99_difference": 0.0,
+          "spatial_pearson": 0.9999999999763225,
+          "max_absolute_difference": 0.07397842407226562,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 33784,
+          "zero_cells_gpu": 33784
+        }
+      ],
+      "blocks": [
+        {
+          "A": 8.339701707508148e-05,
+          "B": 0.1663980446963255,
+          "D": 0.1663935895951448,
+          "R": 0.000501189886138867,
+          "V": 0.9999732262407962
+        },
+        {
+          "A": 0.00011432214732049033,
+          "B": 0.17098554577766198,
+          "D": 0.17096525388841705,
+          "R": 0.0006686070848886087,
+          "V": 0.9998813239496201
+        },
+        {
+          "A": 7.295247669098898e-05,
+          "B": 0.16649393629217077,
+          "D": 0.1664984701061178,
+          "R": 0.0004381689706883308,
+          "V": 1.0000272311055165
+        }
+      ],
+      "all_primary_peak_locations_equal": true,
+      "zero_reference_blocks": 0,
+      "diagnostic_comparison_max_ratios": {
+        "normalized_bias": 0.00021370018611125674,
+        "p95": 0.0021132457155098355,
+        "p99": 6.371361567838938e-05
+      }
+    },
+    "2": {
+      "metrics": [
+        {
+          "L": 5.6775018514045295e-05,
+          "weighted_nmae": 1.795141636062607e-05,
+          "normalized_bias": -1.9550019468471964e-07,
+          "p95_difference": 0.0033932685852242628,
+          "p99_difference": 3.814697265625e-06,
+          "spatial_pearson": 0.999999999814847,
+          "max_absolute_difference": 0.05545806884765625,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 32618,
+          "zero_cells_gpu": 32618
+        },
+        {
+          "L": 4.058985627877216e-05,
+          "weighted_nmae": 1.2859342035220572e-05,
+          "normalized_bias": -3.757787559564239e-07,
+          "p95_difference": -0.004603290557859907,
+          "p99_difference": 3.852844237428599e-06,
+          "spatial_pearson": 0.9999999998907457,
+          "max_absolute_difference": 0.04274749755859375,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 32556,
+          "zero_cells_gpu": 32556
+        },
+        {
+          "L": 3.461023638457326e-05,
+          "weighted_nmae": 1.0926166111874691e-05,
+          "normalized_bias": -8.634909295043156e-07,
+          "p95_difference": 3.814697265625e-06,
+          "p99_difference": 3.814697265625e-06,
+          "spatial_pearson": 0.9999999999302693,
+          "max_absolute_difference": 0.051868438720703125,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 32521,
+          "zero_cells_gpu": 32521
+        },
+        {
+          "L": 2.686596607645264e-05,
+          "weighted_nmae": 8.536714245885598e-06,
+          "normalized_bias": -2.4185169114676514e-07,
+          "p95_difference": 0.0007393836975175816,
+          "p99_difference": 0.0020318603515576683,
+          "spatial_pearson": 0.9999999999550141,
+          "max_absolute_difference": 0.03461933135986328,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 32445,
+          "zero_cells_gpu": 32445
+        },
+        {
+          "L": 2.2936428487411746e-05,
+          "weighted_nmae": 7.251202504479945e-06,
+          "normalized_bias": -5.134933173091311e-07,
+          "p95_difference": 1.8119812033035032e-06,
+          "p99_difference": 3.852844237428599e-06,
+          "spatial_pearson": 0.9999999999674105,
+          "max_absolute_difference": 0.025424957275390625,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 32489,
+          "zero_cells_gpu": 32490
+        },
+        {
+          "L": 3.6104558307367065e-05,
+          "weighted_nmae": 1.1437127104815567e-05,
+          "normalized_bias": -2.97606230746196e-07,
+          "p95_difference": -0.0011068344115265916,
+          "p99_difference": -9.613037114775125e-06,
+          "spatial_pearson": 0.9999999999099694,
+          "max_absolute_difference": 0.04414939880371094,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 32612,
+          "zero_cells_gpu": 32612
+        }
+      ],
+      "blocks": [
+        {
+          "A": 4.868243739640873e-05,
+          "B": 0.12683388532736573,
+          "D": 0.12684118113948997,
+          "R": 0.00038382832214558827,
+          "V": 1.0000575225784925
+        },
+        {
+          "A": 3.073810123051295e-05,
+          "B": 0.12814223379851375,
+          "D": 0.1281449128540804,
+          "R": 0.00023987486653966432,
+          "V": 1.000020906889846
+        },
+        {
+          "A": 2.9520493397389407e-05,
+          "B": 0.12591716972853867,
+          "D": 0.12591325984343088,
+          "R": 0.00023444374949843473,
+          "V": 0.9999689487532462
+        }
+      ],
+      "all_primary_peak_locations_equal": true,
+      "zero_reference_blocks": 0,
+      "diagnostic_comparison_max_ratios": {
+        "normalized_bias": 0.00020227923280936104,
+        "p95": 0.02194530757235245,
+        "p99": 0.001219404741096955
+      }
+    },
+    "3": {
+      "metrics": [
+        {
+          "L": 4.27437668405695e-05,
+          "weighted_nmae": 1.1564954286744582e-05,
+          "normalized_bias": 5.407948398755277e-07,
+          "p95_difference": -2.5081634518642204e-05,
+          "p99_difference": 0.00040512084960653283,
+          "spatial_pearson": 0.9999999999345163,
+          "max_absolute_difference": 0.05242729187011719,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 34951,
+          "zero_cells_gpu": 34951
+        },
+        {
+          "L": 3.865520321886011e-05,
+          "weighted_nmae": 1.0504827570580077e-05,
+          "normalized_bias": -2.459591717935269e-06,
+          "p95_difference": 1.9073486257070726e-07,
+          "p99_difference": 0.0009139251708916163,
+          "spatial_pearson": 0.9999999999333556,
+          "max_absolute_difference": 0.05681133270263672,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 35233,
+          "zero_cells_gpu": 35233
+        },
+        {
+          "L": 4.1496579818582785e-05,
+          "weighted_nmae": 1.127596932722262e-05,
+          "normalized_bias": 4.245961563438208e-07,
+          "p95_difference": 1.9073486257070726e-07,
+          "p99_difference": 7.553100573431948e-06,
+          "spatial_pearson": 0.999999999911505,
+          "max_absolute_difference": 0.10229682922363281,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 35137,
+          "zero_cells_gpu": 35137
+        },
+        {
+          "L": 3.0207293490058788e-05,
+          "weighted_nmae": 8.19749325444406e-06,
+          "normalized_bias": -7.883159773811683e-07,
+          "p95_difference": 0.0005131721496134389,
+          "p99_difference": 7.62939453125e-06,
+          "spatial_pearson": 0.9999999999627031,
+          "max_absolute_difference": 0.047771453857421875,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 35223,
+          "zero_cells_gpu": 35223
+        },
+        {
+          "L": 3.831569393874989e-05,
+          "weighted_nmae": 1.042340783095741e-05,
+          "normalized_bias": -1.4346212627466518e-06,
+          "p95_difference": -0.00034036636349554783,
+          "p99_difference": 7.62939453125e-06,
+          "spatial_pearson": 0.999999999918721,
+          "max_absolute_difference": 0.07041549682617188,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 35112,
+          "zero_cells_gpu": 35112
+        },
+        {
+          "L": 4.64242464646564e-05,
+          "weighted_nmae": 1.2542757402058393e-05,
+          "normalized_bias": 1.4565802834469375e-07,
+          "p95_difference": 0.00222349166871183,
+          "p99_difference": 7.5531005876428026e-06,
+          "spatial_pearson": 0.9999999999417758,
+          "max_absolute_difference": 0.03658294677734375,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 35177,
+          "zero_cells_gpu": 35177
+        }
+      ],
+      "blocks": [
+        {
+          "A": 4.069948502971481e-05,
+          "B": 0.12665984665585206,
+          "D": 0.12665148557826067,
+          "R": 0.00032132902497742266,
+          "V": 0.9999339879384656
+        },
+        {
+          "A": 3.585193665432079e-05,
+          "B": 0.12745833945953997,
+          "D": 0.12745660654784824,
+          "R": 0.0002812835692536347,
+          "V": 0.9999864040932976
+        },
+        {
+          "A": 4.236997020170314e-05,
+          "B": 0.12820358423380945,
+          "D": 0.12820913867716388,
+          "R": 0.00033048974765347835,
+          "V": 1.0000433251799286
+        }
+      ],
+      "all_primary_peak_locations_equal": true,
+      "zero_reference_blocks": 0,
+      "diagnostic_comparison_max_ratios": {
+        "normalized_bias": 0.0004599785757695078,
+        "p95": 0.022667714442619284,
+        "p99": 0.050319279597324615
+      }
+    },
+    "aggregate": {
+      "metrics": [
+        {
+          "L": 0.00015408947236359208,
+          "weighted_nmae": 1.1009305487351108e-05,
+          "normalized_bias": 1.582918625776554e-07,
+          "p95_difference": -4.272460937215783e-05,
+          "p99_difference": 1.5335082991896343e-05,
+          "spatial_pearson": 0.9999999999785062,
+          "max_absolute_difference": 0.05699920654296875,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 30873,
+          "zero_cells_gpu": 30873
+        },
+        {
+          "L": 0.00016985607501285681,
+          "weighted_nmae": 1.21492401667236e-05,
+          "normalized_bias": -8.858711710163044e-07,
+          "p95_difference": -0.0010559082031278422,
+          "p99_difference": 1.5106201146863896e-05,
+          "spatial_pearson": 0.9999999999755507,
+          "max_absolute_difference": 0.06441116333007812,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 30865,
+          "zero_cells_gpu": 30865
+        },
+        {
+          "L": 0.00019824018856854224,
+          "weighted_nmae": 1.4195023735426304e-05,
+          "normalized_bias": -7.577044892413332e-08,
+          "p95_difference": 0.0025802612304772765,
+          "p99_difference": -1.8692016396926192e-06,
+          "spatial_pearson": 0.9999999999687207,
+          "max_absolute_difference": 0.10414314270019531,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 30854,
+          "zero_cells_gpu": 30854
+        },
+        {
+          "L": 0.00014346297548784476,
+          "weighted_nmae": 1.0267935517613055e-05,
+          "normalized_bias": -2.9932885590994076e-07,
+          "p95_difference": -0.00285568237306677,
+          "p99_difference": 1.605033872920103e-05,
+          "spatial_pearson": 0.9999999999847191,
+          "max_absolute_difference": 0.04776763916015625,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 30802,
+          "zero_cells_gpu": 30802
+        },
+        {
+          "L": 0.00013151902299862178,
+          "weighted_nmae": 9.411027366276546e-06,
+          "normalized_bias": -5.666935124539405e-07,
+          "p95_difference": 1.1444091796875e-05,
+          "p99_difference": 1.608848572232091e-05,
+          "spatial_pearson": 0.9999999999815032,
+          "max_absolute_difference": 0.070404052734375,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 30914,
+          "zero_cells_gpu": 30914
+        },
+        {
+          "L": 0.00014012338722546008,
+          "weighted_nmae": 1.0020555788501643e-05,
+          "normalized_bias": -1.5191609906900522e-07,
+          "p95_difference": 1.5068054210587434e-05,
+          "p99_difference": -0.00013183593756593837,
+          "spatial_pearson": 0.9999999999864263,
+          "max_absolute_difference": 0.07459259033203125,
+          "peak_location_equal": true,
+          "zero_cells_cpu": 30956,
+          "zero_cells_gpu": 30956
+        }
+      ],
+      "blocks": [
+        {
+          "A": 0.00016197277368822446,
+          "B": 0.24644145049902422,
+          "D": 0.24644558035214376,
+          "R": 0.0006572464711607668,
+          "V": 1.0000167579484343
+        },
+        {
+          "A": 0.0001708515820281935,
+          "B": 0.24975522102822795,
+          "D": 0.2497584646848097,
+          "R": 0.0006840761179077952,
+          "V": 1.0000129873424404
+        },
+        {
+          "A": 0.00013582120511204093,
+          "B": 0.25119976079856665,
+          "D": 0.2512058468939304,
+          "R": 0.0005406900256603108,
+          "V": 1.0000242281097098
+        }
+      ],
+      "all_primary_peak_locations_equal": true,
+      "zero_reference_blocks": 0,
+      "diagnostic_comparison_max_ratios": {
+        "normalized_bias": 0.0005840214319082119,
+        "p95": 0.021657629355997566,
+        "p99": 0.00041371735370840243
+      }
+    }
+  },
+  "timing": {
+    "24": {
+      "cpu": {
+        "raw": [
+          37.469975399999385,
+          35.178072800001246,
+          33.68484029999672
+        ],
+        "median": 35.178072800001246,
+        "cv": 0.05379029730489514
+      },
+      "gpu": {
+        "raw": [
+          7.64655859999948,
+          7.587192799999684,
+          7.67229640000005
+        ],
+        "median": 7.64655859999948,
+        "cv": 0.00571618575787912
+      },
+      "paired_speedup": {
+        "raw": [
+          4.900240403572129,
+          4.636507035909607,
+          4.390450856408063
+        ],
+        "median": 4.636507035909607
+      }
+    },
+    "48": {
+      "cpu": {
+        "raw": [
+          70.94714830000157,
+          71.38247410000258,
+          65.37158669999917
+        ],
+        "median": 70.94714830000157,
+        "cv": 0.048412736272491944
+      },
+      "gpu": {
+        "raw": [
+          13.736075299999357,
+          13.338363499999105,
+          13.24867969999832
+        ],
+        "median": 13.338363499999105,
+        "cv": 0.019300110469386025
+      },
+      "paired_speedup": {
+        "raw": [
+          5.1650232508557155,
+          5.351666574389532,
+          4.934196325993711
+        ],
+        "median": 5.1650232508557155
+      }
+    }
+  },
+  "repeatability": {
+    "24": {
+      "cpu": {
+        "all_three_decoded_repeats_identical": true
+      },
+      "gpu": {
+        "all_three_decoded_repeats_identical": true
+      }
+    },
+    "48": {
+      "cpu": {
+        "all_three_decoded_repeats_identical": true
+      },
+      "gpu": {
+        "all_three_decoded_repeats_identical": true
+      }
+    }
+  },
+  "review_scope": "Observed synthetic fixture only; six seed offsets; three disjoint prespecified blocks; random stream independence not established.",
+  "memory_selected_raw_peaks": [
+    {
+      "run_id": "science24_s0_cpu",
+      "tree_rss_bytes_observed_max": 99758080.0,
+      "tree_private_bytes_observed_max": 63717376.0,
+      "dotnet_rss_bytes_observed_max": 91525120.0,
+      "python_rss_bytes_observed_max": 0.0,
+      "os_peak_working_set_bytes_observed_max": 103120896.0,
+      "device_wide_gpu_mib_max": 1890.0,
+      "device_wide_gpu_mib_first_sample": 1770.0
+    },
+    {
+      "run_id": "science24_s0_gpu",
+      "tree_rss_bytes_observed_max": 385916928.0,
+      "tree_private_bytes_observed_max": 559677440.0,
+      "dotnet_rss_bytes_observed_max": 106409984.0,
+      "python_rss_bytes_observed_max": 287899648.0,
+      "os_peak_working_set_bytes_observed_max": 413450240.0,
+      "device_wide_gpu_mib_max": 2059.0,
+      "device_wide_gpu_mib_first_sample": 1847.0
+    },
+    {
+      "run_id": "timing24_r1_gpu",
+      "tree_rss_bytes_observed_max": 387649536.0,
+      "tree_private_bytes_observed_max": 563195904.0,
+      "dotnet_rss_bytes_observed_max": 106528768.0,
+      "python_rss_bytes_observed_max": 289529856.0,
+      "os_peak_working_set_bytes_observed_max": 413122560.0,
+      "device_wide_gpu_mib_max": 1980.0,
+      "device_wide_gpu_mib_first_sample": 1721.0
+    },
+    {
+      "run_id": "timing24_r1_cpu",
+      "tree_rss_bytes_observed_max": 99446784.0,
+      "tree_private_bytes_observed_max": 63504384.0,
+      "dotnet_rss_bytes_observed_max": 91201536.0,
+      "python_rss_bytes_observed_max": 0.0,
+      "os_peak_working_set_bytes_observed_max": 103186432.0,
+      "device_wide_gpu_mib_max": 1728.0,
+      "device_wide_gpu_mib_first_sample": 1728.0
+    },
+    {
+      "run_id": "timing24_r2_cpu",
+      "tree_rss_bytes_observed_max": 99921920.0,
+      "tree_private_bytes_observed_max": 64114688.0,
+      "dotnet_rss_bytes_observed_max": 91676672.0,
+      "python_rss_bytes_observed_max": 0.0,
+      "os_peak_working_set_bytes_observed_max": 103133184.0,
+      "device_wide_gpu_mib_max": 1881.0,
+      "device_wide_gpu_mib_first_sample": 1734.0
+    },
+    {
+      "run_id": "timing24_r2_gpu",
+      "tree_rss_bytes_observed_max": 386220032.0,
+      "tree_private_bytes_observed_max": 561983488.0,
+      "dotnet_rss_bytes_observed_max": 107503616.0,
+      "python_rss_bytes_observed_max": 288010240.0,
+      "os_peak_working_set_bytes_observed_max": 414388224.0,
+      "device_wide_gpu_mib_max": 2006.0,
+      "device_wide_gpu_mib_first_sample": 1752.0
+    },
+    {
+      "run_id": "timing48_r0_gpu",
+      "tree_rss_bytes_observed_max": 386772992.0,
+      "tree_private_bytes_observed_max": 562270208.0,
+      "dotnet_rss_bytes_observed_max": 142602240.0,
+      "python_rss_bytes_observed_max": 288620544.0,
+      "os_peak_working_set_bytes_observed_max": 449650688.0,
+      "device_wide_gpu_mib_max": 2191.0,
+      "device_wide_gpu_mib_first_sample": 1887.0
+    },
+    {
+      "run_id": "timing48_r0_cpu",
+      "tree_rss_bytes_observed_max": 99704832.0,
+      "tree_private_bytes_observed_max": 63729664.0,
+      "dotnet_rss_bytes_observed_max": 91459584.0,
+      "python_rss_bytes_observed_max": 0.0,
+      "os_peak_working_set_bytes_observed_max": 102907904.0,
+      "device_wide_gpu_mib_max": 2168.0,
+      "device_wide_gpu_mib_first_sample": 1721.0
+    },
+    {
+      "run_id": "timing48_r1_cpu",
+      "tree_rss_bytes_observed_max": 99835904.0,
+      "tree_private_bytes_observed_max": 63987712.0,
+      "dotnet_rss_bytes_observed_max": 91594752.0,
+      "python_rss_bytes_observed_max": 0.0,
+      "os_peak_working_set_bytes_observed_max": 103170048.0,
+      "device_wide_gpu_mib_max": 1864.0,
+      "device_wide_gpu_mib_first_sample": 1864.0
+    },
+    {
+      "run_id": "timing48_r1_gpu",
+      "tree_rss_bytes_observed_max": 386048000.0,
+      "tree_private_bytes_observed_max": 562675712.0,
+      "dotnet_rss_bytes_observed_max": 137490432.0,
+      "python_rss_bytes_observed_max": 287956992.0,
+      "os_peak_working_set_bytes_observed_max": 445231104.0,
+      "device_wide_gpu_mib_max": 1940.0,
+      "device_wide_gpu_mib_first_sample": 1681.0
+    },
+    {
+      "run_id": "timing48_r2_gpu",
+      "tree_rss_bytes_observed_max": 386129920.0,
+      "tree_private_bytes_observed_max": 561766400.0,
+      "dotnet_rss_bytes_observed_max": 135651328.0,
+      "python_rss_bytes_observed_max": 287682560.0,
+      "os_peak_working_set_bytes_observed_max": 444301312.0,
+      "device_wide_gpu_mib_max": 1953.0,
+      "device_wide_gpu_mib_first_sample": 1692.0
+    },
+    {
+      "run_id": "timing48_r2_cpu",
+      "tree_rss_bytes_observed_max": 100130816.0,
+      "tree_private_bytes_observed_max": 64081920.0,
+      "dotnet_rss_bytes_observed_max": 91881472.0,
+      "python_rss_bytes_observed_max": 0.0,
+      "os_peak_working_set_bytes_observed_max": 103104512.0,
+      "device_wide_gpu_mib_max": 1918.0,
+      "device_wide_gpu_mib_first_sample": 1857.0
+    }
+  ],
+  "measurement_scope": {
+    "situation_time": "Full situation start after stop check to CompleteSituation; includes field/setup work; final output drain is outside interval",
+    "seed_to_end": "Additional diagnostic interval from RecordSeed to CompleteSituation",
+    "steady_sum": "sum of full situation intervals 4..N; not process end-to-end or boundary wall time",
+    "steady_boundary": "observer boundary start after situation3/drain through end/drain; includes intervening setup gaps",
+    "gpu_memory": "device-wide used memory; not process VRAM",
+    "device_buffers": "application allocation counters",
+    "device_kernel_time": "per-situation difference of cumulative result_server_metrics.kernel_device_ms; CUDA events",
+    "legacy_kernel_named_host_timers": "fresh_kernel_ms, residual_kernel_ms, and kernel_total_ms include host launch, synchronization, and status-read time; nested in host roundtrips"
+  },
+  "scope_flags": {
+    "inference_inconclusive": true,
+    "formal_equivalence_not_tested": true,
+    "physical_validation_not_established": true,
+    "random_stream_independence_not_established": true,
+    "six_seeds_three_disjoint_blocks_not_15_independent_pairs": true,
+    "repeatability_supplement_added_during_execution_descriptive_only": true
+  },
+  "diagnostic_review": {
+    "status": "no_unresolved_numerical_defect",
+    "SG2_signed_bias": "All six primary biases are negative; magnitude 1.96e-7 to 8.63e-7. Block mean absolute bias / CPU interseed absolute bias <= 0.000203. Retain sign trend; no defect established at observed scale. No causal mechanism inferred.",
+    "tail": "All block mean absolute backend P95/P99 differences remain below respective CPU contrasts. Largest ratio is 0.0503 for SG3 P99 block1. This is a diagnostic comparison, not a newly fitted gate.",
+    "peak": "All 24 primary group/aggregate x seed CPU/GPU peak locations agree. Stored primary hour indices are zero-based within hours4..24, so add4 to obtain model hour.",
+    "zero": "No whole-zero group or zero CPU block denominator occurs in measured science. Zero cells preserved. All decoded values nonnegative and finite. Synthetic zero tests must supply zero-branch coverage separately.",
+    "maps": "Visually reviewed seed0 full-group CPU/GPU shared-scale time-mean and signed differences: no missing plume or relocated dominant peak; small signed downstream differences visible. Other seeds checked numerically."
+  },
+  "visual_review": {
+    "reviewed_figures": [
+      "seed0_mean_spatial_maps.png",
+      "seed_level_metrics.png",
+      "seed_R_V_blocks.png",
+      "gpu_pipeline_phases_24h.png",
+      "memory_walltime_24h.png",
+      "memory_per_situation_48h.png",
+      "situation_time_repeats.png",
+      "gpu_buffer_reuse_48h.png"
+    ],
+    "required_publication_correction": "resolved in measured_v2: independently viewed corrected disjoint prespecified block labels",
+    "optional_readability": "resolved in measured_v2: independently viewed 1-Pearson r axis",
+    "final_seed_figures_reviewed": [
+      "analysis/measured_v2/figures/seed_R_V_blocks.png",
+      "analysis/measured_v2/figures/seed_level_metrics.png"
+    ]
+  },
+  "publication_status": "scientific_review_clear",
+  "remaining_integrity_dependency": "Final integrated review must reconcile preflight, functional matrix, overlay zero-offset, freeze and original-input snapshot; this reviewer verified all 22 measured inputs, output decoding and seed states, not every functional run.",
+  "humanize": {
+    "skill": "humanize-kit:humanize-korean",
+    "run_id": "2026-11-02-001-ee7d",
+    "route": "light",
+    "change_rate_percent": 0.7,
+    "gate_exit": 0,
+    "fidelity_manual": "accept",
+    "retained_candidate": "Missing WDDM process VRAM limits interpretation; informative negation retained.",
+    "followup": {
+      "run_id": "2026-11-02-002-v2",
+      "route": "light",
+      "change_rate_percent": 0.0,
+      "gate_exit": 0,
+      "fidelity_manual": "accept"
+    }
+  },
+  "analysis_binding": {
+    "directory": "analysis/measured_v2",
+    "summary_sha256": "36daac5aa7542b8b5aeb9853f4ea356f368886f47222f4fe66094dee74f50592",
+    "artifact_manifest_sha256": "4f49ec35d15d6dc99b303850a0e519e050616f01f738b6eaf61b3a4654b2d3cb",
+    "source_sha256": {
+      "analyze_study.py": "3bcd281c2b34a86e2f9c355dd532a0cd65c323d89fd0b7638a1c7666c20338dc",
+      "plot_study.py": "5b488ccea50af35f6531fcf389cb91655273d851cec0ab81ea7c6141b4ecd704",
+      "synthetic_fixture.py": "6d1a1bd2be66f9d75509851bcd7882045c62d993f4db5b13fa8897dfbefee95f",
+      "test_analysis.py": "33f2de0a124d8394738b4759143320e47cbbf0d97368a7375eed95bc84fbed80"
+    },
+    "all_artifact_hashes_verified": true,
+    "v1_v2_exact_equality": {
+      "scientific": true,
+      "timing": true,
+      "fixed_seed_numerical_repeatability": true,
+      "measurement_scope": true,
+      "run_measurements": true
+    }
+  }
+}

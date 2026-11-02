@@ -1,0 +1,39 @@
+{
+  "status": "pass",
+  "reviewer": "root",
+  "scope": "Direct visual inspection of final v2 figures; no numerical recalculation",
+  "figures": [
+    {
+      "path": "memory_walltime_24h.png",
+      "sha256": "90c35c5a5c0a8248727a06142348e7f43ca86caa637fe4089b9932d1cc28667e",
+      "status": "pass"
+    },
+    {
+      "path": "gpu_pipeline_phases_24h.png",
+      "sha256": "1e1a52df2a21523325922bb27d6b224049b54038625eb7b72978b892451d1ee3",
+      "status": "pass"
+    },
+    {
+      "path": "gpu_pipeline_phases_48h.png",
+      "sha256": "1f5a0decce558616c99c1504748599bf33f44fff1fb3fdafb20cba8cf04f6055",
+      "status": "pass"
+    },
+    {
+      "path": "situation_time_repeats.png",
+      "sha256": "4c3fbd7bc884285a5c786a4c5e8a1b7f164d62b35202f2d4fa5d3f2f7f58b256",
+      "status": "pass"
+    },
+    {
+      "path": "timing_variability.png",
+      "sha256": "dd56095f6d40257c30510c43fc996d8281ed2b793a26f4ee3e4c78fabbaf038d",
+      "status": "pass"
+    }
+  ],
+  "checks": [
+    "Labels and units readable",
+    "Legends and curves distinct",
+    "Nested CUDA event timing not stacked twice",
+    "First three situations marked for timing exclusion",
+    "Memory device-wide limitation visible"
+  ]
+}

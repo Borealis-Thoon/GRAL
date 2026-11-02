@@ -1,0 +1,130 @@
+{
+  "version": "1.0.2",
+  "route": {
+    "mode": "technical",
+    "profile": "english-ste-inspired",
+    "language": "en",
+    "genre": "technical-description",
+    "reason": "explicit_on",
+    "official_compliance": false,
+    "dictionary_available": false,
+    "humanize_route_unchanged": true
+  },
+  "style": {
+    "advisory_only": true,
+    "findings": [
+      {
+        "file": "<stdin>",
+        "line": 10,
+        "col": 24,
+        "rule": "synonym-rotation",
+        "level": "advisory",
+        "match": "Validates",
+        "message": "'validate' and 'check' name the same action. Pick one and use it every time.",
+        "segment": 12
+      },
+      {
+        "file": "<stdin>",
+        "line": 1,
+        "col": 1,
+        "rule": "long-sentence",
+        "level": "advisory",
+        "match": "26 words",
+        "message": "Sentence has 26 words (cap 25). Split it.",
+        "segment": 22
+      },
+      {
+        "file": "<stdin>",
+        "line": 1,
+        "col": 7,
+        "rule": "passive-voice",
+        "level": "advisory",
+        "match": "are instrumented",
+        "message": "Possible passive voice. Name the actor and use an active verb, unless the actor is unknown or irrelevant.",
+        "segment": 24
+      },
+      {
+        "file": "<stdin>",
+        "line": 2,
+        "col": 9,
+        "rule": "present-perfect",
+        "level": "advisory",
+        "match": "have reviewed",
+        "message": "Compound tense. Use simple past/present unless current relevance is the point (then keep and flag).",
+        "segment": 57
+      },
+      {
+        "file": "<stdin>",
+        "line": 3,
+        "col": 9,
+        "rule": "present-perfect",
+        "level": "advisory",
+        "match": "have verified",
+        "message": "Compound tense. Use simple past/present unless current relevance is the point (then keep and flag).",
+        "segment": 57
+      },
+      {
+        "file": "<stdin>",
+        "line": 5,
+        "col": 88,
+        "rule": "present-perfect",
+        "level": "advisory",
+        "match": "have been introduced",
+        "message": "Compound tense. Use simple past/present unless current relevance is the point (then keep and flag).",
+        "segment": 57
+      },
+      {
+        "file": "<stdin>",
+        "line": 5,
+        "col": 93,
+        "rule": "passive-voice",
+        "level": "advisory",
+        "match": "been introduced",
+        "message": "Possible passive voice. Name the actor and use an active verb, unless the actor is unknown or irrelevant.",
+        "segment": 57
+      }
+    ],
+    "english_segments_scanned": 57,
+    "hangul_segments_skipped_by_english_linter": 0,
+    "mixed_paragraphs_need_manual_language_review": false
+  },
+  "fidelity": {
+    "candidate_findings": [
+      {
+        "rule": "protected-content-change",
+        "level": "review",
+        "missing": {},
+        "added": {
+          "`engineering_pass_observed_fixture`": 1,
+          "https://github.com/Borealis-Thoon/GRAL/blob/EVIDENCE_COMMIT/validation/gpu-general-20261102/qa/scientific_result_review.json": 1,
+          "20261102": 1,
+          "24": 1,
+          "1,643": 1,
+          "0.000203": 1,
+          "0.05032": 1
+        }
+      },
+      {
+        "rule": "english-modality-condition",
+        "level": "review",
+        "before": {
+          "before": 5,
+          "not": 14,
+          "only": 4,
+          "after": 7,
+          "must": 1
+        },
+        "after": {
+          "before": 5,
+          "not": 15,
+          "only": 4,
+          "after": 7,
+          "must": 1
+        }
+      }
+    ],
+    "review_required": true,
+    "semantic_equivalence": "manual_review_required",
+    "automatic_certification": false
+  }
+}

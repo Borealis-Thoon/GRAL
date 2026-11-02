@@ -1,0 +1,1720 @@
+{
+  "status": "pass",
+  "case": "supported_primary",
+  "requested_mode": "cpu",
+  "seed_offset": 0,
+  "model_hours": 24,
+  "timing_eligible": true,
+  "quiet_gate_enabled": true,
+  "errors": [],
+  "allowed_affinity_mask": 4294901760,
+  "system_affinity_mask": 4294967295,
+  "build_hashes": {
+    "GRAL.deps.json": "aaf3fd57bf54f2d6bf527e4edbb469d32ab7cba98b3e085f8104e905a09ee456",
+    "GRAL.dll": "ee3a918ed0435f0fd1e7f2f3ec27f2181976534d146c36368fefb19be5d3ca0a",
+    "GRAL.exe": "ea4e0b13ef2e33d15ab85fec4a4b4d0da2fae66bd962a244039ba37fbb4ab8b3",
+    "GRAL.runtimeconfig.json": "71896cae5446bd10f51e4476e335b7cfea37f24b99e01c6c3c13bca7516b38db"
+  },
+  "runtime_controls": {
+    "requested_tiering": "default",
+    "removed_inherited_compilation": [],
+    "removed_inherited_startup_hooks": [],
+    "child_runtime_environment": {},
+    "other_prefixed_environment_keys": []
+  },
+  "quiet_gate": {
+    "status": "pass",
+    "rule": {
+      "window_seconds": 45,
+      "sample_interval_seconds": 5,
+      "window_samples": 9,
+      "mean_cpu_pct_lt": 12.0,
+      "max_cpu_pct_lt": 20.0,
+      "max_wait_seconds": 600
+    },
+    "samples": [
+      {
+        "offset_s": 5.0,
+        "duration_s": 5.0,
+        "cpu_pct": 14.398672393596252
+      },
+      {
+        "offset_s": 9.999999999998181,
+        "duration_s": 4.999999999998181,
+        "cpu_pct": 2.7092875938017738
+      },
+      {
+        "offset_s": 14.999999999998181,
+        "duration_s": 5.0,
+        "cpu_pct": 6.416642250219748
+      },
+      {
+        "offset_s": 19.99999999999818,
+        "duration_s": 5.0,
+        "cpu_pct": 4.36774885444087
+      },
+      {
+        "offset_s": 24.99999999999818,
+        "duration_s": 5.0,
+        "cpu_pct": 4.547228727556597
+      },
+      {
+        "offset_s": 29.99999999999818,
+        "duration_s": 5.0,
+        "cpu_pct": 4.144724010142384
+      },
+      {
+        "offset_s": 34.99999999999818,
+        "duration_s": 5.0,
+        "cpu_pct": 8.990087349101973
+      },
+      {
+        "offset_s": 39.99999999999818,
+        "duration_s": 5.0,
+        "cpu_pct": 6.349980491611393
+      },
+      {
+        "offset_s": 44.99999999999818,
+        "duration_s": 5.0,
+        "cpu_pct": 7.541079812206573
+      },
+      {
+        "offset_s": 49.99999999999818,
+        "duration_s": 5.0,
+        "cpu_pct": 5.4595175310088875
+      },
+      {
+        "offset_s": 54.99999999999818,
+        "duration_s": 5.0,
+        "cpu_pct": 1.609442060085837
+      }
+    ],
+    "selected_mean_pct": 5.491827898486029,
+    "selected_max_pct": 8.990087349101973
+  },
+  "pid": 23256,
+  "exit_code": 0,
+  "timed_out": false,
+  "process_start_to_exit_s": 33.68484029999672,
+  "dispatch": {
+    "path": "cpu_requested",
+    "markers": []
+  },
+  "functional": {
+    "mass_ledger": {
+      "actual_kg": [
+        24.0,
+        24.0,
+        24.0
+      ],
+      "expected_kg": [
+        24.0,
+        24.0,
+        24.0
+      ],
+      "checked": true
+    },
+    "output_members": 72,
+    "residual_ledger": [],
+    "completed_situations": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "terminal_banner_only": 25,
+    "positive_concentration": true,
+    "finite_nonnegative": true
+  },
+  "affinity": {
+    "verified": true,
+    "verification_scope": "startup_mask_exact_before_resume; runtime_mask_sampled_about_1s",
+    "observed_pids": [
+      23256,
+      53388
+    ],
+    "gpu_python_observed": false
+  },
+  "skipped_exiting_process_samples": [],
+  "observer": {
+    "status": "pass",
+    "seed_rows": [
+      {
+        "event_type": "seed",
+        "IWET": 1,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288833,
+        "Seed2": 2232123,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164322050428
+      },
+      {
+        "event_type": "seed",
+        "IWET": 2,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288837,
+        "Seed2": 2232125,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164335719399
+      },
+      {
+        "event_type": "seed",
+        "IWET": 3,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288841,
+        "Seed2": 2232127,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164348810993
+      },
+      {
+        "event_type": "seed",
+        "IWET": 4,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288845,
+        "Seed2": 2232129,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164363637153
+      },
+      {
+        "event_type": "seed",
+        "IWET": 5,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288849,
+        "Seed2": 2232131,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164377816311
+      },
+      {
+        "event_type": "seed",
+        "IWET": 6,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288853,
+        "Seed2": 2232133,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164391844773
+      },
+      {
+        "event_type": "seed",
+        "IWET": 7,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288857,
+        "Seed2": 2232135,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164406295867
+      },
+      {
+        "event_type": "seed",
+        "IWET": 8,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288861,
+        "Seed2": 2232137,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164421979694
+      },
+      {
+        "event_type": "seed",
+        "IWET": 9,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288865,
+        "Seed2": 2232139,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164436153069
+      },
+      {
+        "event_type": "seed",
+        "IWET": 10,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288869,
+        "Seed2": 2232141,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164449892437
+      },
+      {
+        "event_type": "seed",
+        "IWET": 11,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288873,
+        "Seed2": 2232143,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164465980527
+      },
+      {
+        "event_type": "seed",
+        "IWET": 12,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288877,
+        "Seed2": 2232145,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164481348644
+      },
+      {
+        "event_type": "seed",
+        "IWET": 13,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288881,
+        "Seed2": 2232147,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164494580793
+      },
+      {
+        "event_type": "seed",
+        "IWET": 14,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288885,
+        "Seed2": 2232149,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164507544284
+      },
+      {
+        "event_type": "seed",
+        "IWET": 15,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288889,
+        "Seed2": 2232151,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164520577237
+      },
+      {
+        "event_type": "seed",
+        "IWET": 16,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288893,
+        "Seed2": 2232153,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164533640528
+      },
+      {
+        "event_type": "seed",
+        "IWET": 17,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288897,
+        "Seed2": 2232155,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164546967668
+      },
+      {
+        "event_type": "seed",
+        "IWET": 18,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288901,
+        "Seed2": 2232157,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164560039799
+      },
+      {
+        "event_type": "seed",
+        "IWET": 19,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288905,
+        "Seed2": 2232159,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164574591729
+      },
+      {
+        "event_type": "seed",
+        "IWET": 20,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288909,
+        "Seed2": 2232161,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164588090028
+      },
+      {
+        "event_type": "seed",
+        "IWET": 21,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288913,
+        "Seed2": 2232163,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164601778712
+      },
+      {
+        "event_type": "seed",
+        "IWET": 22,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288917,
+        "Seed2": 2232165,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164615445953
+      },
+      {
+        "event_type": "seed",
+        "IWET": 23,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288921,
+        "Seed2": 2232167,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164628892718
+      },
+      {
+        "event_type": "seed",
+        "IWET": 24,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288925,
+        "Seed2": 2232169,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164642100362
+      }
+    ],
+    "situation_series": [
+      {
+        "situation": 1,
+        "start_s": 0.727126040145874,
+        "end_s": 2.136326940145874,
+        "wall_s": 1.4092009,
+        "seed_to_end_s": 1.3616973,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 96088064.0,
+        "peak_tree_private_bytes": 61939712.0,
+        "peak_dotnet_rss_bytes": 87842816.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 2,
+        "start_s": 2.136704240145874,
+        "end_s": 3.4446946401458742,
+        "wall_s": 1.3079904000000004,
+        "seed_to_end_s": 1.3031679,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 11,
+        "peak_tree_rss_bytes": 98340864.0,
+        "peak_tree_private_bytes": 63188992.0,
+        "peak_dotnet_rss_bytes": 90095616.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 3,
+        "start_s": 3.445382940145874,
+        "end_s": 4.9210947401458744,
+        "wall_s": 1.4757118000000005,
+        "seed_to_end_s": 1.4704086,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 98668544.0,
+        "peak_tree_private_bytes": 63385600.0,
+        "peak_dotnet_rss_bytes": 90423296.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 4,
+        "start_s": 4.927087840145874,
+        "end_s": 6.345634440145874,
+        "wall_s": 1.4185466,
+        "seed_to_end_s": 1.4123323,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 99336192.0,
+        "peak_tree_private_bytes": 63647744.0,
+        "peak_dotnet_rss_bytes": 91090944.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 5,
+        "start_s": 6.346038140145874,
+        "end_s": 7.747820440145874,
+        "wall_s": 1.4017823000000007,
+        "seed_to_end_s": 1.3966025,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 99602432.0,
+        "peak_tree_private_bytes": 63913984.0,
+        "peak_dotnet_rss_bytes": 91357184.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 6,
+        "start_s": 7.748166740145874,
+        "end_s": 9.191030040145874,
+        "wall_s": 1.4428633,
+        "seed_to_end_s": 1.4369659,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 14,
+        "peak_tree_rss_bytes": 99921920.0,
+        "peak_tree_private_bytes": 64114688.0,
+        "peak_dotnet_rss_bytes": 91676672.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 7,
+        "start_s": 9.191508140145874,
+        "end_s": 10.761388140145874,
+        "wall_s": 1.5698799999999995,
+        "seed_to_end_s": 1.5622146,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 14,
+        "peak_tree_rss_bytes": 84508672.0,
+        "peak_tree_private_bytes": 49164288.0,
+        "peak_dotnet_rss_bytes": 76263424.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 8,
+        "start_s": 10.761745440145875,
+        "end_s": 12.179101840145874,
+        "wall_s": 1.4173563999999992,
+        "seed_to_end_s": 1.4115456,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 14,
+        "peak_tree_rss_bytes": 84795392.0,
+        "peak_tree_private_bytes": 49393664.0,
+        "peak_dotnet_rss_bytes": 76550144.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 9,
+        "start_s": 12.179438540145874,
+        "end_s": 13.551283740145873,
+        "wall_s": 1.3718451999999992,
+        "seed_to_end_s": 1.36639,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 86282240.0,
+        "peak_tree_private_bytes": 50655232.0,
+        "peak_dotnet_rss_bytes": 78036992.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 10,
+        "start_s": 13.552117040145873,
+        "end_s": 15.160595740145874,
+        "wall_s": 1.608478700000001,
+        "seed_to_end_s": 1.6017652,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 14,
+        "peak_tree_rss_bytes": 86523904.0,
+        "peak_tree_private_bytes": 50921472.0,
+        "peak_dotnet_rss_bytes": 78278656.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 11,
+        "start_s": 15.161033940145874,
+        "end_s": 16.697465040145875,
+        "wall_s": 1.5364311000000015,
+        "seed_to_end_s": 1.5298255,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 14,
+        "peak_tree_rss_bytes": 86970368.0,
+        "peak_tree_private_bytes": 51118080.0,
+        "peak_dotnet_rss_bytes": 78725120.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 12,
+        "start_s": 16.697960140145874,
+        "end_s": 18.015709940145875,
+        "wall_s": 1.3177498000000014,
+        "seed_to_end_s": 1.3112587,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 86962176.0,
+        "peak_tree_private_bytes": 51253248.0,
+        "peak_dotnet_rss_bytes": 78716928.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 13,
+        "start_s": 18.020883840145874,
+        "end_s": 19.317622940145874,
+        "wall_s": 1.2967391,
+        "seed_to_end_s": 1.2899568,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 87191552.0,
+        "peak_tree_private_bytes": 51449856.0,
+        "peak_dotnet_rss_bytes": 78946304.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 14,
+        "start_s": 19.318036640145873,
+        "end_s": 20.621602040145874,
+        "wall_s": 1.3035654,
+        "seed_to_end_s": 1.2975868,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 87425024.0,
+        "peak_tree_private_bytes": 51712000.0,
+        "peak_dotnet_rss_bytes": 79179776.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 15,
+        "start_s": 20.621913240145876,
+        "end_s": 21.927911940145876,
+        "wall_s": 1.3059987,
+        "seed_to_end_s": 1.3006014,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 87068672.0,
+        "peak_tree_private_bytes": 50835456.0,
+        "peak_dotnet_rss_bytes": 78823424.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 16,
+        "start_s": 21.928227240145873,
+        "end_s": 23.255514940145876,
+        "wall_s": 1.327287700000003,
+        "seed_to_end_s": 1.3218753,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 87343104.0,
+        "peak_tree_private_bytes": 51052544.0,
+        "peak_dotnet_rss_bytes": 79097856.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 17,
+        "start_s": 23.260764340145872,
+        "end_s": 24.567568440145873,
+        "wall_s": 1.3068041000000008,
+        "seed_to_end_s": 1.3012148,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 87547904.0,
+        "peak_tree_private_bytes": 51314688.0,
+        "peak_dotnet_rss_bytes": 79302656.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 18,
+        "start_s": 24.567886440145873,
+        "end_s": 26.022151940145875,
+        "wall_s": 1.4542655000000018,
+        "seed_to_end_s": 1.4485852,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 14,
+        "peak_tree_rss_bytes": 87760896.0,
+        "peak_tree_private_bytes": 51634176.0,
+        "peak_dotnet_rss_bytes": 79515648.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 19,
+        "start_s": 26.022593740145876,
+        "end_s": 27.372767640145874,
+        "wall_s": 1.350173899999998,
+        "seed_to_end_s": 1.3440079,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 88117248.0,
+        "peak_tree_private_bytes": 51892224.0,
+        "peak_dotnet_rss_bytes": 79872000.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 20,
+        "start_s": 27.373076140145873,
+        "end_s": 28.741090040145874,
+        "wall_s": 1.3680139000000011,
+        "seed_to_end_s": 1.3625004,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 88330240.0,
+        "peak_tree_private_bytes": 52088832.0,
+        "peak_dotnet_rss_bytes": 80084992.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 21,
+        "start_s": 28.741490040145873,
+        "end_s": 30.108135240145874,
+        "wall_s": 1.3666452000000007,
+        "seed_to_end_s": 1.3606772,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 12,
+        "peak_tree_rss_bytes": 88547328.0,
+        "peak_tree_private_bytes": 52350976.0,
+        "peak_dotnet_rss_bytes": 80302080.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 22,
+        "start_s": 30.108472240145876,
+        "end_s": 31.448170440145873,
+        "wall_s": 1.3396981999999973,
+        "seed_to_end_s": 1.3339883,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 88756224.0,
+        "peak_tree_private_bytes": 52547584.0,
+        "peak_dotnet_rss_bytes": 80510976.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 23,
+        "start_s": 31.453399740145873,
+        "end_s": 32.773825340145876,
+        "wall_s": 1.3204256000000036,
+        "seed_to_end_s": 1.3149667,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 88981504.0,
+        "peak_tree_private_bytes": 52703232.0,
+        "peak_dotnet_rss_bytes": 80756736.0,
+        "peak_python_rss_bytes": 0.0
+      },
+      {
+        "situation": 24,
+        "start_s": 32.77421474014587,
+        "end_s": 34.127934640145874,
+        "wall_s": 1.3537199000000015,
+        "seed_to_end_s": 1.3483116,
+        "time_scope": "full_situation_after_stop_check",
+        "telemetry_samples": 13,
+        "peak_tree_rss_bytes": 88305664.0,
+        "peak_tree_private_bytes": 52584448.0,
+        "peak_dotnet_rss_bytes": 80080896.0,
+        "peak_python_rss_bytes": 0.0
+      }
+    ],
+    "raw_events": [
+      {
+        "event_type": "config",
+        "warmup": 3,
+        "end": 24,
+        "stopwatch_frequency": 10000000,
+        "stopwatch_timestamp": 164320505797,
+        "utc_timestamp": "2026-11-02T05:14:46.3470239+00:00"
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 1,
+        "stopwatch_timestamp": 164321575392
+      },
+      {
+        "event_type": "seed",
+        "IWET": 1,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288833,
+        "Seed2": 2232123,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164322050428
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 1,
+        "stopwatch_timestamp": 164335667401
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 2,
+        "stopwatch_timestamp": 164335671174
+      },
+      {
+        "event_type": "seed",
+        "IWET": 2,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288837,
+        "Seed2": 2232125,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164335719399
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 2,
+        "stopwatch_timestamp": 164348751078
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 3,
+        "stopwatch_timestamp": 164348757961
+      },
+      {
+        "event_type": "seed",
+        "IWET": 3,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288841,
+        "Seed2": 2232127,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164348810993
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 3,
+        "stopwatch_timestamp": 164363515079
+      },
+      {
+        "event_type": "boundary",
+        "boundary": "start",
+        "IWET": 3,
+        "stopwatch_timestamp": 164363536447,
+        "stopwatch_frequency": 10000000,
+        "elapsed_s": 0,
+        "cumulative_model_seconds": 10800,
+        "measured_model_seconds": 0,
+        "completed_situations": 3,
+        "measured_situations": 0
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 4,
+        "stopwatch_timestamp": 164363575010
+      },
+      {
+        "event_type": "seed",
+        "IWET": 4,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288845,
+        "Seed2": 2232129,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164363637153
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 4,
+        "stopwatch_timestamp": 164377760476
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 5,
+        "stopwatch_timestamp": 164377764513
+      },
+      {
+        "event_type": "seed",
+        "IWET": 5,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288849,
+        "Seed2": 2232131,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164377816311
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 5,
+        "stopwatch_timestamp": 164391782336
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 6,
+        "stopwatch_timestamp": 164391785799
+      },
+      {
+        "event_type": "seed",
+        "IWET": 6,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288853,
+        "Seed2": 2232133,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164391844773
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 6,
+        "stopwatch_timestamp": 164406214432
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 7,
+        "stopwatch_timestamp": 164406219213
+      },
+      {
+        "event_type": "seed",
+        "IWET": 7,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288857,
+        "Seed2": 2232135,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164406295867
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 7,
+        "stopwatch_timestamp": 164421918013
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 8,
+        "stopwatch_timestamp": 164421921586
+      },
+      {
+        "event_type": "seed",
+        "IWET": 8,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288861,
+        "Seed2": 2232137,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164421979694
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 8,
+        "stopwatch_timestamp": 164436095150
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 9,
+        "stopwatch_timestamp": 164436098517
+      },
+      {
+        "event_type": "seed",
+        "IWET": 9,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288865,
+        "Seed2": 2232139,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164436153069
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 9,
+        "stopwatch_timestamp": 164449816969
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 10,
+        "stopwatch_timestamp": 164449825302
+      },
+      {
+        "event_type": "seed",
+        "IWET": 10,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288869,
+        "Seed2": 2232141,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164449892437
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 10,
+        "stopwatch_timestamp": 164465910089
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 11,
+        "stopwatch_timestamp": 164465914471
+      },
+      {
+        "event_type": "seed",
+        "IWET": 11,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288873,
+        "Seed2": 2232143,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164465980527
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 11,
+        "stopwatch_timestamp": 164481278782
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 12,
+        "stopwatch_timestamp": 164481283733
+      },
+      {
+        "event_type": "seed",
+        "IWET": 12,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288877,
+        "Seed2": 2232145,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164481348644
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 12,
+        "stopwatch_timestamp": 164494461231
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 13,
+        "stopwatch_timestamp": 164494512970
+      },
+      {
+        "event_type": "seed",
+        "IWET": 13,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288881,
+        "Seed2": 2232147,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164494580793
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 13,
+        "stopwatch_timestamp": 164507480361
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 14,
+        "stopwatch_timestamp": 164507484498
+      },
+      {
+        "event_type": "seed",
+        "IWET": 14,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288885,
+        "Seed2": 2232149,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164507544284
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 14,
+        "stopwatch_timestamp": 164520520152
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 15,
+        "stopwatch_timestamp": 164520523264
+      },
+      {
+        "event_type": "seed",
+        "IWET": 15,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288889,
+        "Seed2": 2232151,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164520577237
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 15,
+        "stopwatch_timestamp": 164533583251
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 16,
+        "stopwatch_timestamp": 164533586404
+      },
+      {
+        "event_type": "seed",
+        "IWET": 16,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288893,
+        "Seed2": 2232153,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164533640528
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 16,
+        "stopwatch_timestamp": 164546859281
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 17,
+        "stopwatch_timestamp": 164546911775
+      },
+      {
+        "event_type": "seed",
+        "IWET": 17,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288897,
+        "Seed2": 2232155,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164546967668
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 17,
+        "stopwatch_timestamp": 164559979816
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 18,
+        "stopwatch_timestamp": 164559982996
+      },
+      {
+        "event_type": "seed",
+        "IWET": 18,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288901,
+        "Seed2": 2232157,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164560039799
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 18,
+        "stopwatch_timestamp": 164574525651
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 19,
+        "stopwatch_timestamp": 164574530069
+      },
+      {
+        "event_type": "seed",
+        "IWET": 19,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288905,
+        "Seed2": 2232159,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164574591729
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 19,
+        "stopwatch_timestamp": 164588031808
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 20,
+        "stopwatch_timestamp": 164588034893
+      },
+      {
+        "event_type": "seed",
+        "IWET": 20,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288909,
+        "Seed2": 2232161,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164588090028
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 20,
+        "stopwatch_timestamp": 164601715032
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 21,
+        "stopwatch_timestamp": 164601719032
+      },
+      {
+        "event_type": "seed",
+        "IWET": 21,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288913,
+        "Seed2": 2232163,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164601778712
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 21,
+        "stopwatch_timestamp": 164615385484
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 22,
+        "stopwatch_timestamp": 164615388854
+      },
+      {
+        "event_type": "seed",
+        "IWET": 22,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288917,
+        "Seed2": 2232165,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164615445953
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 22,
+        "stopwatch_timestamp": 164628785836
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 23,
+        "stopwatch_timestamp": 164628838129
+      },
+      {
+        "event_type": "seed",
+        "IWET": 23,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288921,
+        "Seed2": 2232167,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164628892718
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 23,
+        "stopwatch_timestamp": 164642042385
+      },
+      {
+        "event_type": "situation_start",
+        "IWET": 24,
+        "stopwatch_timestamp": 164642046279
+      },
+      {
+        "event_type": "seed",
+        "IWET": 24,
+        "TAUS": 3600,
+        "WindVelGral": 2,
+        "WindDirGral": 0,
+        "Seed1": 521288925,
+        "Seed2": 2232169,
+        "fixed_mode": true,
+        "stopwatch_timestamp": 164642100362
+      },
+      {
+        "event_type": "situation_end",
+        "IWET": 24,
+        "stopwatch_timestamp": 164655583478
+      },
+      {
+        "event_type": "boundary",
+        "boundary": "stop",
+        "IWET": 24,
+        "stopwatch_timestamp": 164655605286,
+        "stopwatch_frequency": 10000000,
+        "elapsed_s": 29.2068839,
+        "cumulative_model_seconds": 86400,
+        "measured_model_seconds": 75600,
+        "completed_situations": 24,
+        "measured_situations": 21
+      },
+      {
+        "event_type": "finished",
+        "complete": true,
+        "requested_end": 24,
+        "seeded_situations": 24,
+        "completed_situations": 24,
+        "cumulative_model_seconds": 86400
+      }
+    ]
+  },
+  "seed_validation": {
+    "status": "pass",
+    "offset": 0,
+    "situations": 24,
+    "states": [
+      [
+        521288833,
+        2232123
+      ],
+      [
+        521288837,
+        2232125
+      ],
+      [
+        521288841,
+        2232127
+      ],
+      [
+        521288845,
+        2232129
+      ],
+      [
+        521288849,
+        2232131
+      ],
+      [
+        521288853,
+        2232133
+      ],
+      [
+        521288857,
+        2232135
+      ],
+      [
+        521288861,
+        2232137
+      ],
+      [
+        521288865,
+        2232139
+      ],
+      [
+        521288869,
+        2232141
+      ],
+      [
+        521288873,
+        2232143
+      ],
+      [
+        521288877,
+        2232145
+      ],
+      [
+        521288881,
+        2232147
+      ],
+      [
+        521288885,
+        2232149
+      ],
+      [
+        521288889,
+        2232151
+      ],
+      [
+        521288893,
+        2232153
+      ],
+      [
+        521288897,
+        2232155
+      ],
+      [
+        521288901,
+        2232157
+      ],
+      [
+        521288905,
+        2232159
+      ],
+      [
+        521288909,
+        2232161
+      ],
+      [
+        521288913,
+        2232163
+      ],
+      [
+        521288917,
+        2232165
+      ],
+      [
+        521288921,
+        2232167
+      ],
+      [
+        521288925,
+        2232169
+      ]
+    ]
+  },
+  "memory_scope": {
+    "process_gpu_memory_mib": null,
+    "process_gpu_memory_availability": "unavailable in current WDDM query; device total must not be attributed to process",
+    "process_sample_target_s": 0.1,
+    "gpu_device_sample_target_s": 0.2,
+    "process_actual_sample_intervals_s": [
+      0.10038640000129817,
+      0.10803109999687877,
+      0.1099013000020932,
+      0.11064529999930528,
+      0.10959790000197245,
+      0.11113679999834858,
+      0.10797169999932521,
+      0.1116598000007798,
+      0.10860600000160048,
+      0.10968030000003637,
+      0.1110380999998597,
+      0.10847739999735495,
+      0.10646120000092196,
+      0.11814049999884446,
+      0.12033320000045933,
+      0.10753480000130367,
+      0.11265459999776795,
+      0.1142165000019304,
+      0.10678090000146767,
+      0.12672819999716012,
+      0.10266150000097696,
+      0.13847810000152094,
+      0.11779269999897224,
+      0.12001109999982873,
+      0.12208630000168341,
+      0.1309886999988521,
+      0.13107139999920037,
+      0.11127200000191806,
+      0.10556389999692328,
+      0.09735600000203704,
+      0.10547519999818178,
+      0.102797700001247,
+      0.11972880000030273,
+      0.11108139999851119,
+      0.11749559999952908,
+      0.11611280000215629,
+      0.10965469999791821,
+      0.11130229999980656,
+      0.12556709999989835,
+      0.11682790000122623,
+      0.10366240000075777,
+      0.11947639999925741,
+      0.12400690000140457,
+      0.10368309999830672,
+      0.10841330000039306,
+      0.11619350000182749,
+      0.10540579999724287,
+      0.09162149999974645,
+      0.10909170000013546,
+      0.11486880000302335,
+      0.11462109999774839,
+      0.10568229999989853,
+      0.11214970000219182,
+      0.12281249999796273,
+      0.12252799999987474,
+      0.11257839999962016,
+      0.11620730000140611,
+      0.1163382000013371,
+      0.12028389999977662,
+      0.09524649999730173,
+      0.09336249999978463,
+      0.09395240000230842,
+      0.10337760000038543,
+      0.1160782000006293,
+      0.10508769999796641,
+      0.11892200000147568,
+      0.11048049999953946,
+      0.10488439999971888,
+      0.10157120000076247,
+      0.10619459999725223,
+      0.11027480000120704,
+      0.11545050000131596,
+      0.12248919999910868,
+      0.11176300000079209,
+      0.09540349999952014,
+      0.09358209999845712,
+      0.09263740000096732,
+      0.09189799999876413,
+      0.11305890000221552,
+      0.09310759999789298,
+      0.10928080000303453,
+      0.0975929999985965,
+      0.115422300001228,
+      0.12104819999876781,
+      0.12106629999834695,
+      0.112938900001609,
+      0.11917080000057467,
+      0.09425039999769069,
+      0.09230860000025132,
+      0.09192430000257445,
+      0.10690969999996014,
+      0.11198959999819635,
+      0.10795810000126949,
+      0.10899609999978566,
+      0.11215979999906267,
+      0.09369929999957094,
+      0.10694860000148765,
+      0.10846089999904507,
+      0.10766439999861177,
+      0.10879510000086157,
+      0.10653110000203014,
+      0.10929289999694447,
+      0.10901480000029551,
+      0.110786500001268,
+      0.11305269999866141,
+      0.09460260000196286,
+      0.10914580000098795,
+      0.1132843999985198,
+      0.0939914000009594,
+      0.09361189999981434,
+      0.10696549999920535,
+      0.11174419999952079,
+      0.09357180000006338,
+      0.10883119999925839,
+      0.0920019000004686,
+      0.11212929999965127,
+      0.09433420000277692,
+      0.09222509999744943,
+      0.10869839999941178,
+      0.11136640000040643,
+      0.09726310000041849,
+      0.11550849999912316,
+      0.1099043000031088,
+      0.12072519999856013,
+      0.11548409999886644,
+      0.11383860000205459,
+      0.10053319999860832,
+      0.11957389999952284,
+      0.10737499999959255,
+      0.10746860000290326,
+      0.10804879999705008,
+      0.11340100000234088,
+      0.09278099999937695,
+      0.10422959999777959,
+      0.11283650000041234,
+      0.10840350000216858,
+      0.10525609999967855,
+      0.11036590000003343,
+      0.10954560000027413,
+      0.11423409999770229,
+      0.10388489999968442,
+      0.1101081000015256,
+      0.10759659999894211,
+      0.10965779999969527,
+      0.11546980000275653,
+      0.10361360000024433,
+      0.10893009999927017,
+      0.11012180000034277,
+      0.11006459999771323,
+      0.11063370000192663,
+      0.10664170000018203,
+      0.10638769999786746,
+      0.10852140000133659,
+      0.10928060000151163,
+      0.11010669999814127,
+      0.10983000000123866,
+      0.10720199999923352,
+      0.10959849999926519,
+      0.10877289999916684,
+      0.10835530000258586,
+      0.09153370000058203,
+      0.09163649999754853,
+      0.11212870000235853,
+      0.0928195999986201,
+      0.09581539999999222,
+      0.09115530000053695,
+      0.1074177000009513,
+      0.10607899999740766,
+      0.11077310000109719,
+      0.10798710000017309,
+      0.10921650000091176,
+      0.1102400999989186,
+      0.10809410000001662,
+      0.10934469999847352,
+      0.10926269999981741,
+      0.10784740000235615,
+      0.11074139999982435,
+      0.10733089999848744,
+      0.10984870000174851,
+      0.10650109999915003,
+      0.11184890000004089,
+      0.10968199999842909,
+      0.10954180000044289,
+      0.10727300000144169,
+      0.10823619999791845,
+      0.10997180000049411,
+      0.108938000001217,
+      0.11031670000011218,
+      0.10877479999908246,
+      0.10535600000002887,
+      0.09545470000011846,
+      0.09553410000080476,
+      0.11027009999816073,
+      0.10638110000218148,
+      0.09323030000086874,
+      0.09109429999807617,
+      0.10880790000010165,
+      0.11115799999970477,
+      0.0927034000014828,
+      0.11028489999807789,
+      0.09402960000079474,
+      0.09235679999983404,
+      0.0926748999991105,
+      0.110325700003159,
+      0.10675429999901098,
+      0.11009189999822411,
+      0.10954100000162725,
+      0.11096510000061244,
+      0.11018440000043483,
+      0.09239179999713087,
+      0.10746170000129496,
+      0.10876160000043456,
+      0.10936859999856097,
+      0.11003830000117887,
+      0.11019579999992857,
+      0.10958100000061677,
+      0.10903359999792883,
+      0.10876510000161943,
+      0.11029419999977108,
+      0.11011579999831156,
+      0.09468030000061844,
+      0.09209330000157934,
+      0.11078509999788366,
+      0.10825640000257408,
+      0.11077119999754359,
+      0.10926390000167885,
+      0.09596199999941746,
+      0.09218770000006771,
+      0.0940268999984255,
+      0.10693990000072517,
+      0.10890980000112904,
+      0.10732080000161659,
+      0.10691079999742215,
+      0.11303290000068955,
+      0.10856730000159587,
+      0.108834200000274,
+      0.10844189999988885,
+      0.1077616999973543,
+      0.11104600000180653,
+      0.10996890000023996,
+      0.11061049999989336,
+      0.11246570000002976,
+      0.09285589999853983,
+      0.11141359999965061,
+      0.09380349999992177,
+      0.09055630000148085,
+      0.10911059999853023,
+      0.10901390000071842,
+      0.1088592999985849,
+      0.10933790000126464,
+      0.11181460000079824,
+      0.11073960000067018,
+      0.09414919999835547,
+      0.0931349999991653,
+      0.10828120000223862,
+      0.10797249999814085,
+      0.11136900000201422,
+      0.11034989999825484,
+      0.09351099999912549,
+      0.09379290000288165,
+      0.09388609999950859,
+      0.09336360000088462,
+      0.10616029999800958,
+      0.1094559000011941,
+      0.10880819999874802,
+      0.10730250000051456,
+      0.10957000000053085,
+      0.11921789999905741,
+      0.111820500002068,
+      0.11331089999657706,
+      0.1058385000033013,
+      0.11158869999781018,
+      0.10980570000174339,
+      0.11106149999977788,
+      0.11031599999842001,
+      0.10860529999990831,
+      0.10934479999923497,
+      0.10834000000249944,
+      0.10848540000006324,
+      0.10872899999958463,
+      0.10782789999939268,
+      0.11450049999984913,
+      0.10590070000034757,
+      0.12224799999967217,
+      0.1087465999989945,
+      0.11076189999948838,
+      0.10728010000093491,
+      0.10718959999940125,
+      0.09342710000055376,
+      0.09479869999995572,
+      0.10742329999993672,
+      0.09609830000044894,
+      0.09194239999851561,
+      0.09190910000324948,
+      0.09204219999810448,
+      0.11037990000113496,
+      0.11035959999935585,
+      0.10782990000006976,
+      0.11027969999850029,
+      0.09665230000246083,
+      0.09123149999868474,
+      0.09632609999971464,
+      0.09338080000088667,
+      0.09393310000086785,
+      0.09631349999835948,
+      0.10762629999953788,
+      0.11110929999995278,
+      0.11050980000072741,
+      0.11020039999857545,
+      0.11144890000286978,
+      0.10596819999773288,
+      0.10597110000162502,
+      0.09300879999864264,
+      0.09298370000033174,
+      0.09388310000213096,
+      0.09455259999958798,
+      0.09149179999803891,
+      0.11037130000113393,
+      0.09227149999787798
+    ],
+    "process_rows": 320,
+    "idle_baseline": "samples before contained model PID creation"
+  }
+}

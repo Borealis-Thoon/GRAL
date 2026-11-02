@@ -1,0 +1,233 @@
+{
+  "schema": 1,
+  "case": "supported_primary",
+  "config": {
+    "sources": "supported_primary",
+    "dispatch": "gpu"
+  },
+  "hours": 24,
+  "input_rows": 25,
+  "workers": 16,
+  "particles_per_hour": 360000,
+  "particles_per_second": 100.0,
+  "grid_cells": [
+    50,
+    50
+  ],
+  "gral_domain_m": [
+    2000,
+    3000,
+    2000,
+    3000
+  ],
+  "factors": [
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "source_emission_kg_h": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "expected_emitted_mass_kg": [
+    24.0,
+    24.0,
+    24.0
+  ],
+  "emission_check_scope": "transient emitted mass; steady frequencies have different accounting",
+  "geometry_qa": {
+    "status": "pass",
+    "checks": {
+      "dimensions": true,
+      "flat_zero_terrain": true,
+      "positive_volumes": true,
+      "positive_face_areas": true,
+      "zero_slope_projections": true,
+      "strict_vertical_order": true,
+      "coordinate_origin": true,
+      "full_stream_consumed": true,
+      "center_y_outside_six_cell_border": true,
+      "layer_1_center_volume": true,
+      "layer_2_center_volume": true,
+      "layer_3_center_volume": true,
+      "layer_4_center_volume": true,
+      "layer_5_center_volume": true,
+      "layer_6_center_volume": true,
+      "layer_7_center_volume": true,
+      "layer_8_center_volume": true,
+      "layer_9_center_volume": true,
+      "layer_10_center_volume": true,
+      "layer_11_center_volume": true,
+      "layer_12_center_volume": true,
+      "layer_13_center_volume": true,
+      "layer_14_center_volume": true,
+      "layer_15_center_volume": true,
+      "layer_16_center_volume": true,
+      "interface_0_flat": true,
+      "interface_1_flat": true,
+      "interface_2_flat": true,
+      "interface_3_flat": true,
+      "interface_4_flat": true,
+      "interface_5_flat": true,
+      "interface_6_flat": true,
+      "interface_7_flat": true,
+      "interface_8_flat": true,
+      "interface_9_flat": true,
+      "interface_10_flat": true,
+      "interface_11_flat": true,
+      "interface_12_flat": true,
+      "interface_13_flat": true,
+      "interface_14_flat": true,
+      "interface_15_flat": true,
+      "interface_16_flat": true
+    },
+    "bytes": 261874,
+    "sha256": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+    "domain_width_m": 6000,
+    "domain_length_m": 5000,
+    "domain_top_m": 4369.43994140625,
+    "lowest_center_m": 10.0,
+    "top_nudging_lowest_center_m": 1719.52001953125,
+    "interior_after_six_cell_border_xy": [
+      12,
+      8
+    ],
+    "scope": "binary layout, geometric identities, and border clearance; not solver or scientific validity"
+  },
+  "synthetic_only": true,
+  "schedule": "constant",
+  "seed_control": "none in inputs; external benchmark overlay only",
+  "input_sha256": {
+    "Computation/cadastre.dat": "a96d6f79e30197648deb8315f1d8d59f6dcd008f0e531ace898fbbcbaa6e25e9",
+    "Computation/emissions_timeseries.txt": "2a0a3f4e76cac8b63eeab322aae00521ec928bf81a64ee69a46f79394a54402a",
+    "Computation/ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+    "Computation/GRAL.geb": "39c6b55cb3382418c34b8a84bcfe53502792819ffb9f25385e2ac27a07d1d9d3",
+    "Computation/GRAMM.geb": "cd61d72e5e3681dad5ca8e093fb5b888798fa93fee0cee5cffb37e2c1edcf3fc",
+    "Computation/in.dat": "eccd7104e122100a79315ff50402f397332fa2382699446470fa271793813df3",
+    "Computation/line.dat": "74e684ebb1ce958a20688af0ce8098be1d00ffbfc7045df98f8b67598f286838",
+    "Computation/Max_Proc.txt": "e6c21e8d260fe71882debdb339d2402a2ca7648529bc2303f48649bce0380017",
+    "Computation/meteopgt.all": "89bfee2b55c5d7bd06cd07c6ea470b38ca3659a70bd5b1b808773526c1d1f3fd",
+    "Computation/mettimeseries.dat": "722f10d19298c8957b14522b0a5fdd444bda3d445811590dc36883f275717ce3",
+    "Computation/windfeld.txt": "db7188d2cd7270d826a85aa4edc04f20d1d88ac13cf9fc535f3e50881e132ddd",
+    "Weather/00001.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00001.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e"
+  }
+}

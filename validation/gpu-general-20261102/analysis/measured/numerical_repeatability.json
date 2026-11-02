@@ -1,0 +1,2192 @@
+{
+  "scope": "supplementary descriptive comparison; primary gate unchanged",
+  "added_during_measured_execution": true,
+  "seed_offset": 0,
+  "independent_seed_count": 1,
+  "comparisons_are_dependent": true,
+  "inferential_test": null,
+  "acceptance_threshold": null,
+  "raw_array_equal_definition": "exact equality of decoded full-grid arrays, not archive byte equality",
+  "durations": {
+    "24": {
+      "backend_pairs": 3,
+      "self_pairs_per_backend": 3,
+      "windows": {
+        "all_hours": {
+          "first_hour": 1,
+          "last_hour": 24,
+          "groups": {
+            "1": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "science24_s0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 8.360531080782126e-06,
+                  "normalized_bias_candidate_minus_reference": 6.7275713148324e-08,
+                  "mean_difference_candidate_minus_reference": 4.797966726144409e-07,
+                  "maximum_absolute_difference": 0.049976348876953125,
+                  "raw_array_equal": false,
+                  "different_values": 18116,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 8.360531080782126e-06,
+                  "normalized_bias_candidate_minus_reference": 6.7275713148324e-08,
+                  "mean_difference_candidate_minus_reference": 4.797966726144409e-07,
+                  "maximum_absolute_difference": 0.049976348876953125,
+                  "raw_array_equal": false,
+                  "different_values": 18116,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r2_cpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 8.360531080782126e-06,
+                  "normalized_bias_candidate_minus_reference": 6.7275713148324e-08,
+                  "mean_difference_candidate_minus_reference": 4.797966726144409e-07,
+                  "maximum_absolute_difference": 0.049976348876953125,
+                  "raw_array_equal": false,
+                  "different_values": 18116,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            },
+            "2": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "science24_s0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.8421059340419004e-05,
+                  "normalized_bias_candidate_minus_reference": -6.787319572590803e-07,
+                  "mean_difference_candidate_minus_reference": -2.1433213470700707e-06,
+                  "maximum_absolute_difference": 0.05545806884765625,
+                  "raw_array_equal": false,
+                  "different_values": 17987,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.8421059340419004e-05,
+                  "normalized_bias_candidate_minus_reference": -6.787319572590803e-07,
+                  "mean_difference_candidate_minus_reference": -2.1433213470700707e-06,
+                  "maximum_absolute_difference": 0.05545806884765625,
+                  "raw_array_equal": false,
+                  "different_values": 17987,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r2_cpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.8421059340419004e-05,
+                  "normalized_bias_candidate_minus_reference": -6.787319572590803e-07,
+                  "mean_difference_candidate_minus_reference": -2.1433213470700707e-06,
+                  "maximum_absolute_difference": 0.05545806884765625,
+                  "raw_array_equal": false,
+                  "different_values": 17987,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            },
+            "3": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "science24_s0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0740049286053248e-05,
+                  "normalized_bias_candidate_minus_reference": 5.607431325272828e-07,
+                  "mean_difference_candidate_minus_reference": 2.069822212291683e-06,
+                  "maximum_absolute_difference": 0.05242729187011719,
+                  "raw_array_equal": false,
+                  "different_values": 16228,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0740049286053248e-05,
+                  "normalized_bias_candidate_minus_reference": 5.607431325272828e-07,
+                  "mean_difference_candidate_minus_reference": 2.069822212291683e-06,
+                  "maximum_absolute_difference": 0.05242729187011719,
+                  "raw_array_equal": false,
+                  "different_values": 16228,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r2_cpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0740049286053248e-05,
+                  "normalized_bias_candidate_minus_reference": 5.607431325272828e-07,
+                  "mean_difference_candidate_minus_reference": 2.069822212291683e-06,
+                  "maximum_absolute_difference": 0.05242729187011719,
+                  "raw_array_equal": false,
+                  "different_values": 16228,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            },
+            "aggregate": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "science24_s0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0637117597210844e-05,
+                  "normalized_bias_candidate_minus_reference": 2.9061023053075755e-08,
+                  "mean_difference_candidate_minus_reference": 4.062975342833397e-07,
+                  "maximum_absolute_difference": 0.05699920654296875,
+                  "raw_array_equal": false,
+                  "different_values": 22742,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0637117597210844e-05,
+                  "normalized_bias_candidate_minus_reference": 2.9061023053075755e-08,
+                  "mean_difference_candidate_minus_reference": 4.062975342833397e-07,
+                  "maximum_absolute_difference": 0.05699920654296875,
+                  "raw_array_equal": false,
+                  "different_values": 22742,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r2_cpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0637117597210844e-05,
+                  "normalized_bias_candidate_minus_reference": 2.9061023053075755e-08,
+                  "mean_difference_candidate_minus_reference": 4.062975342833397e-07,
+                  "maximum_absolute_difference": 0.05699920654296875,
+                  "raw_array_equal": false,
+                  "different_values": 22742,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 60000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            }
+          }
+        },
+        "hours_4_to_end": {
+          "first_hour": 4,
+          "last_hour": 24,
+          "groups": {
+            "1": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "science24_s0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 8.912888826767872e-06,
+                  "normalized_bias_candidate_minus_reference": 1.1699216927064529e-07,
+                  "mean_difference_candidate_minus_reference": 8.350451583538643e-07,
+                  "maximum_absolute_difference": 0.049976348876953125,
+                  "raw_array_equal": false,
+                  "different_values": 15888,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 8.912888826767872e-06,
+                  "normalized_bias_candidate_minus_reference": 1.1699216927064529e-07,
+                  "mean_difference_candidate_minus_reference": 8.350451583538643e-07,
+                  "maximum_absolute_difference": 0.049976348876953125,
+                  "raw_array_equal": false,
+                  "different_values": 15888,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r2_cpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 8.912888826767872e-06,
+                  "normalized_bias_candidate_minus_reference": 1.1699216927064529e-07,
+                  "mean_difference_candidate_minus_reference": 8.350451583538643e-07,
+                  "maximum_absolute_difference": 0.049976348876953125,
+                  "raw_array_equal": false,
+                  "different_values": 15888,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            },
+            "2": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "science24_s0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.795141636062607e-05,
+                  "normalized_bias_candidate_minus_reference": -1.9550019476717096e-07,
+                  "mean_difference_candidate_minus_reference": -6.183092717826355e-07,
+                  "maximum_absolute_difference": 0.05545806884765625,
+                  "raw_array_equal": false,
+                  "different_values": 15698,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.795141636062607e-05,
+                  "normalized_bias_candidate_minus_reference": -1.9550019476717096e-07,
+                  "mean_difference_candidate_minus_reference": -6.183092717826355e-07,
+                  "maximum_absolute_difference": 0.05545806884765625,
+                  "raw_array_equal": false,
+                  "different_values": 15698,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r2_cpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.795141636062607e-05,
+                  "normalized_bias_candidate_minus_reference": -1.9550019476717096e-07,
+                  "mean_difference_candidate_minus_reference": -6.183092717826355e-07,
+                  "maximum_absolute_difference": 0.05545806884765625,
+                  "raw_array_equal": false,
+                  "different_values": 15698,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            },
+            "3": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "science24_s0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.1564954286744582e-05,
+                  "normalized_bias_candidate_minus_reference": 5.407948398697054e-07,
+                  "mean_difference_candidate_minus_reference": 1.998763503152645e-06,
+                  "maximum_absolute_difference": 0.05242729187011719,
+                  "raw_array_equal": false,
+                  "different_values": 14208,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.1564954286744582e-05,
+                  "normalized_bias_candidate_minus_reference": 5.407948398697054e-07,
+                  "mean_difference_candidate_minus_reference": 1.998763503152645e-06,
+                  "maximum_absolute_difference": 0.05242729187011719,
+                  "raw_array_equal": false,
+                  "different_values": 14208,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r2_cpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.1564954286744582e-05,
+                  "normalized_bias_candidate_minus_reference": 5.407948398697054e-07,
+                  "mean_difference_candidate_minus_reference": 1.998763503152645e-06,
+                  "maximum_absolute_difference": 0.05242729187011719,
+                  "raw_array_equal": false,
+                  "different_values": 14208,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            },
+            "aggregate": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "science24_s0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.1009305487351108e-05,
+                  "normalized_bias_candidate_minus_reference": 1.5829186244801227e-07,
+                  "mean_difference_candidate_minus_reference": 2.215499387503428e-06,
+                  "maximum_absolute_difference": 0.05699920654296875,
+                  "raw_array_equal": false,
+                  "different_values": 19932,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.1009305487351108e-05,
+                  "normalized_bias_candidate_minus_reference": 1.5829186244801227e-07,
+                  "mean_difference_candidate_minus_reference": 2.215499387503428e-06,
+                  "maximum_absolute_difference": 0.05699920654296875,
+                  "raw_array_equal": false,
+                  "different_values": 19932,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r2_cpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.1009305487351108e-05,
+                  "normalized_bias_candidate_minus_reference": 1.5829186244801227e-07,
+                  "mean_difference_candidate_minus_reference": 2.215499387503428e-06,
+                  "maximum_absolute_difference": 0.05699920654296875,
+                  "raw_array_equal": false,
+                  "different_values": 19932,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_cpu",
+                  "candidate_run_id": "timing24_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "science24_s0_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing24_r1_gpu",
+                  "candidate_run_id": "timing24_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 52500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "48": {
+      "backend_pairs": 3,
+      "self_pairs_per_backend": 3,
+      "windows": {
+        "all_hours": {
+          "first_hour": 1,
+          "last_hour": 48,
+          "groups": {
+            "1": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0769153384204905e-05,
+                  "normalized_bias_candidate_minus_reference": -1.5410828849442012e-07,
+                  "mean_difference_candidate_minus_reference": -1.0988285170654422e-06,
+                  "maximum_absolute_difference": 0.0782318115234375,
+                  "raw_array_equal": false,
+                  "different_values": 36327,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0769153384204905e-05,
+                  "normalized_bias_candidate_minus_reference": -1.5410828849442012e-07,
+                  "mean_difference_candidate_minus_reference": -1.0988285170654422e-06,
+                  "maximum_absolute_difference": 0.0782318115234375,
+                  "raw_array_equal": false,
+                  "different_values": 36327,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r2_cpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0769153384204905e-05,
+                  "normalized_bias_candidate_minus_reference": -1.5410828849442012e-07,
+                  "mean_difference_candidate_minus_reference": -1.0988285170654422e-06,
+                  "maximum_absolute_difference": 0.0782318115234375,
+                  "raw_array_equal": false,
+                  "different_values": 36327,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            },
+            "2": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.41834540859094e-05,
+                  "normalized_bias_candidate_minus_reference": -2.8435643759023377e-07,
+                  "mean_difference_candidate_minus_reference": -8.984628929731286e-07,
+                  "maximum_absolute_difference": 0.05545806884765625,
+                  "raw_array_equal": false,
+                  "different_values": 35796,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.41834540859094e-05,
+                  "normalized_bias_candidate_minus_reference": -2.8435643759023377e-07,
+                  "mean_difference_candidate_minus_reference": -8.984628929731286e-07,
+                  "maximum_absolute_difference": 0.05545806884765625,
+                  "raw_array_equal": false,
+                  "different_values": 35796,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r2_cpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.41834540859094e-05,
+                  "normalized_bias_candidate_minus_reference": -2.8435643759023377e-07,
+                  "mean_difference_candidate_minus_reference": -8.984628929731286e-07,
+                  "maximum_absolute_difference": 0.05545806884765625,
+                  "raw_array_equal": false,
+                  "different_values": 35796,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            },
+            "3": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 8.740971009570417e-06,
+                  "normalized_bias_candidate_minus_reference": -1.0193649796275676e-07,
+                  "mean_difference_candidate_minus_reference": -3.7643068839798843e-07,
+                  "maximum_absolute_difference": 0.05242729187011719,
+                  "raw_array_equal": false,
+                  "different_values": 32358,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 8.740971009570417e-06,
+                  "normalized_bias_candidate_minus_reference": -1.0193649796275676e-07,
+                  "mean_difference_candidate_minus_reference": -3.7643068839798843e-07,
+                  "maximum_absolute_difference": 0.05242729187011719,
+                  "raw_array_equal": false,
+                  "different_values": 32358,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r2_cpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 8.740971009570417e-06,
+                  "normalized_bias_candidate_minus_reference": -1.0193649796275676e-07,
+                  "mean_difference_candidate_minus_reference": -3.7643068839798843e-07,
+                  "maximum_absolute_difference": 0.05242729187011719,
+                  "raw_array_equal": false,
+                  "different_values": 32358,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            },
+            "aggregate": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0414030680324941e-05,
+                  "normalized_bias_candidate_minus_reference": -1.69761737707802e-07,
+                  "mean_difference_candidate_minus_reference": -2.3737221006570053e-06,
+                  "maximum_absolute_difference": 0.07717132568359375,
+                  "raw_array_equal": false,
+                  "different_values": 45442,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0414030680324941e-05,
+                  "normalized_bias_candidate_minus_reference": -1.69761737707802e-07,
+                  "mean_difference_candidate_minus_reference": -2.3737221006570053e-06,
+                  "maximum_absolute_difference": 0.07717132568359375,
+                  "raw_array_equal": false,
+                  "different_values": 45442,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r2_cpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0414030680324941e-05,
+                  "normalized_bias_candidate_minus_reference": -1.69761737707802e-07,
+                  "mean_difference_candidate_minus_reference": -2.3737221006570053e-06,
+                  "maximum_absolute_difference": 0.07717132568359375,
+                  "raw_array_equal": false,
+                  "different_values": 45442,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 120000,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            }
+          }
+        },
+        "hours_4_to_end": {
+          "first_hour": 4,
+          "last_hour": 48,
+          "groups": {
+            "1": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.1186726675912605e-05,
+                  "normalized_bias_candidate_minus_reference": -1.4556423217724438e-07,
+                  "mean_difference_candidate_minus_reference": -1.0382875688108584e-06,
+                  "maximum_absolute_difference": 0.0782318115234375,
+                  "raw_array_equal": false,
+                  "different_values": 34099,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.1186726675912605e-05,
+                  "normalized_bias_candidate_minus_reference": -1.4556423217724438e-07,
+                  "mean_difference_candidate_minus_reference": -1.0382875688108584e-06,
+                  "maximum_absolute_difference": 0.0782318115234375,
+                  "raw_array_equal": false,
+                  "different_values": 34099,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r2_cpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.1186726675912605e-05,
+                  "normalized_bias_candidate_minus_reference": -1.4556423217724438e-07,
+                  "mean_difference_candidate_minus_reference": -1.0382875688108584e-06,
+                  "maximum_absolute_difference": 0.0782318115234375,
+                  "raw_array_equal": false,
+                  "different_values": 34099,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            },
+            "2": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.368515592742549e-05,
+                  "normalized_bias_candidate_minus_reference": -3.2827019199096566e-08,
+                  "mean_difference_candidate_minus_reference": -1.0380002768428653e-07,
+                  "maximum_absolute_difference": 0.05545806884765625,
+                  "raw_array_equal": false,
+                  "different_values": 33507,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.368515592742549e-05,
+                  "normalized_bias_candidate_minus_reference": -3.2827019199096566e-08,
+                  "mean_difference_candidate_minus_reference": -1.0380002768428653e-07,
+                  "maximum_absolute_difference": 0.05545806884765625,
+                  "raw_array_equal": false,
+                  "different_values": 33507,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r2_cpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.368515592742549e-05,
+                  "normalized_bias_candidate_minus_reference": -3.2827019199096566e-08,
+                  "mean_difference_candidate_minus_reference": -1.0380002768428653e-07,
+                  "maximum_absolute_difference": 0.05545806884765625,
+                  "raw_array_equal": false,
+                  "different_values": 33507,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            },
+            "3": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 8.994086412458117e-06,
+                  "normalized_bias_candidate_minus_reference": -1.549812832146553e-07,
+                  "mean_difference_candidate_minus_reference": -5.726749470191805e-07,
+                  "maximum_absolute_difference": 0.05242729187011719,
+                  "raw_array_equal": false,
+                  "different_values": 30338,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 8.994086412458117e-06,
+                  "normalized_bias_candidate_minus_reference": -1.549812832146553e-07,
+                  "mean_difference_candidate_minus_reference": -5.726749470191805e-07,
+                  "maximum_absolute_difference": 0.05242729187011719,
+                  "raw_array_equal": false,
+                  "different_values": 30338,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r2_cpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 8.994086412458117e-06,
+                  "normalized_bias_candidate_minus_reference": -1.549812832146553e-07,
+                  "mean_difference_candidate_minus_reference": -5.726749470191805e-07,
+                  "maximum_absolute_difference": 0.05242729187011719,
+                  "raw_array_equal": false,
+                  "different_values": 30338,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            },
+            "aggregate": {
+              "paired_cpu_gpu": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r0_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0573048748906252e-05,
+                  "normalized_bias_candidate_minus_reference": -1.2257057403439937e-07,
+                  "mean_difference_candidate_minus_reference": -1.7147625399616118e-06,
+                  "maximum_absolute_difference": 0.07717132568359375,
+                  "raw_array_equal": false,
+                  "different_values": 42632,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0573048748906252e-05,
+                  "normalized_bias_candidate_minus_reference": -1.2257057403439937e-07,
+                  "mean_difference_candidate_minus_reference": -1.7147625399616118e-06,
+                  "maximum_absolute_difference": 0.07717132568359375,
+                  "raw_array_equal": false,
+                  "different_values": 42632,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r2_cpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 1.0573048748906252e-05,
+                  "normalized_bias_candidate_minus_reference": -1.2257057403439937e-07,
+                  "mean_difference_candidate_minus_reference": -1.7147625399616118e-06,
+                  "maximum_absolute_difference": 0.07717132568359375,
+                  "raw_array_equal": false,
+                  "different_values": 42632,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "cpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r1_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_cpu",
+                  "candidate_run_id": "timing48_r2_cpu",
+                  "reference_backend": "cpu",
+                  "candidate_backend": "cpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ],
+              "gpu_self_pairs": [
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r1_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r0_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                },
+                {
+                  "reference_run_id": "timing48_r1_gpu",
+                  "candidate_run_id": "timing48_r2_gpu",
+                  "reference_backend": "gpu",
+                  "candidate_backend": "gpu",
+                  "symmetric_weighted_nmae": 0.0,
+                  "normalized_bias_candidate_minus_reference": 0.0,
+                  "mean_difference_candidate_minus_reference": 0.0,
+                  "maximum_absolute_difference": 0.0,
+                  "raw_array_equal": true,
+                  "different_values": 0,
+                  "compared_values": 112500,
+                  "zero_status": "positive_reference_scale"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

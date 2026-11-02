@@ -1,0 +1,11 @@
+{
+  "status": "pass",
+  "checks": {
+    "scientific": true,
+    "timing": true,
+    "fixed_seed_numerical_repeatability": true,
+    "measurement_scope": true,
+    "run_measurements": true
+  },
+  "change": "plot labels, consistent memory scales, unverified RNG independence metadata"
+}

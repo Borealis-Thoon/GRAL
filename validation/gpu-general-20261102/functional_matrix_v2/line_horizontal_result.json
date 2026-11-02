@@ -1,0 +1,1023 @@
+{
+  "case": "line_horizontal",
+  "status": "pass",
+  "runs": {
+    "cpu": {
+      "status": "pass",
+      "case": "line_horizontal",
+      "requested_mode": "cpu",
+      "seed_offset": 0,
+      "model_hours": 4,
+      "timing_eligible": false,
+      "quiet_gate_enabled": false,
+      "errors": [],
+      "allowed_affinity_mask": 4294901760,
+      "system_affinity_mask": 4294967295,
+      "build_hashes": {
+        "GRAL.deps.json": "aaf3fd57bf54f2d6bf527e4edbb469d32ab7cba98b3e085f8104e905a09ee456",
+        "GRAL.dll": "ee3a918ed0435f0fd1e7f2f3ec27f2181976534d146c36368fefb19be5d3ca0a",
+        "GRAL.exe": "ea4e0b13ef2e33d15ab85fec4a4b4d0da2fae66bd962a244039ba37fbb4ab8b3",
+        "GRAL.runtimeconfig.json": "71896cae5446bd10f51e4476e335b7cfea37f24b99e01c6c3c13bca7516b38db"
+      },
+      "runtime_controls": {
+        "requested_tiering": "default",
+        "removed_inherited_compilation": [],
+        "removed_inherited_startup_hooks": [],
+        "child_runtime_environment": {},
+        "other_prefixed_environment_keys": []
+      },
+      "quiet_gate": {
+        "status": "skipped_functional_smoke"
+      },
+      "pid": 3064,
+      "exit_code": 0,
+      "timed_out": false,
+      "process_start_to_exit_s": 1.5354924000002939,
+      "dispatch": {
+        "path": "cpu_requested",
+        "markers": []
+      },
+      "functional": {
+        "mass_ledger": {
+          "actual_kg": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "expected_kg": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "checked": true
+        },
+        "output_members": 12,
+        "residual_ledger": [],
+        "completed_situations": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "terminal_banner_only": 5,
+        "positive_concentration": true,
+        "finite_nonnegative": true
+      },
+      "affinity": {
+        "verified": true,
+        "verification_scope": "startup_mask_exact_before_resume; runtime_mask_sampled_about_1s",
+        "observed_pids": [
+          3064,
+          54780
+        ],
+        "gpu_python_observed": false
+      },
+      "skipped_exiting_process_samples": [],
+      "observer": {
+        "status": "pass",
+        "seed_rows": [
+          {
+            "event_type": "seed",
+            "IWET": 1,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288833,
+            "Seed2": 2232123,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150106795302
+          },
+          {
+            "event_type": "seed",
+            "IWET": 2,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288837,
+            "Seed2": 2232125,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150109960679
+          },
+          {
+            "event_type": "seed",
+            "IWET": 3,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288841,
+            "Seed2": 2232127,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150112525137
+          },
+          {
+            "event_type": "seed",
+            "IWET": 4,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288845,
+            "Seed2": 2232129,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150114317198
+          }
+        ],
+        "situation_series": [
+          {
+            "situation": 1,
+            "start_s": 1.0954848013885499,
+            "end_s": 1.4694956013885498,
+            "wall_s": 0.3740108,
+            "seed_to_end_s": 0.3040793,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 3,
+            "peak_tree_rss_bytes": 81641472.0,
+            "peak_tree_private_bytes": 47431680.0,
+            "peak_dotnet_rss_bytes": 73404416.0,
+            "peak_python_rss_bytes": 0.0
+          },
+          {
+            "situation": 2,
+            "start_s": 1.4699496013885498,
+            "end_s": 1.7228262013885498,
+            "wall_s": 0.2528766,
+            "seed_to_end_s": 0.2408722,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 2,
+            "peak_tree_rss_bytes": 83226624.0,
+            "peak_tree_private_bytes": 48365568.0,
+            "peak_dotnet_rss_bytes": 74989568.0,
+            "peak_python_rss_bytes": 0.0
+          },
+          {
+            "situation": 3,
+            "start_s": 1.7232422013885498,
+            "end_s": 1.9080357013885498,
+            "wall_s": 0.18479350000000005,
+            "seed_to_end_s": 0.1696359,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 1,
+            "peak_tree_rss_bytes": 83513344.0,
+            "peak_tree_private_bytes": 48590848.0,
+            "peak_dotnet_rss_bytes": 75276288.0,
+            "peak_python_rss_bytes": 0.0
+          },
+          {
+            "situation": 4,
+            "start_s": 1.9110225013885498,
+            "end_s": 2.05474770138855,
+            "wall_s": 0.1437252,
+            "seed_to_end_s": 0.1371418,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 1,
+            "peak_tree_rss_bytes": 83984384.0,
+            "peak_tree_private_bytes": 48803840.0,
+            "peak_dotnet_rss_bytes": 75747328.0,
+            "peak_python_rss_bytes": 0.0
+          }
+        ],
+        "raw_events": [
+          {
+            "event_type": "config",
+            "warmup": 3,
+            "end": 4,
+            "stopwatch_frequency": 10000000,
+            "stopwatch_timestamp": 150104447329,
+            "utc_timestamp": "2026-11-02T04:51:04.7412399+00:00"
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 1,
+            "stopwatch_timestamp": 150106095987
+          },
+          {
+            "event_type": "seed",
+            "IWET": 1,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288833,
+            "Seed2": 2232123,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150106795302
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 1,
+            "stopwatch_timestamp": 150109836095
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 2,
+            "stopwatch_timestamp": 150109840635
+          },
+          {
+            "event_type": "seed",
+            "IWET": 2,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288837,
+            "Seed2": 2232125,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150109960679
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 2,
+            "stopwatch_timestamp": 150112369401
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 3,
+            "stopwatch_timestamp": 150112373561
+          },
+          {
+            "event_type": "seed",
+            "IWET": 3,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288841,
+            "Seed2": 2232127,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150112525137
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 3,
+            "stopwatch_timestamp": 150114221496
+          },
+          {
+            "event_type": "boundary",
+            "boundary": "start",
+            "IWET": 3,
+            "stopwatch_timestamp": 150114236437,
+            "stopwatch_frequency": 10000000,
+            "elapsed_s": 0,
+            "cumulative_model_seconds": 10800,
+            "measured_model_seconds": 0,
+            "completed_situations": 3,
+            "measured_situations": 0
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 4,
+            "stopwatch_timestamp": 150114251364
+          },
+          {
+            "event_type": "seed",
+            "IWET": 4,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288845,
+            "Seed2": 2232129,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150114317198
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 4,
+            "stopwatch_timestamp": 150115688616
+          },
+          {
+            "event_type": "boundary",
+            "boundary": "stop",
+            "IWET": 4,
+            "stopwatch_timestamp": 150115709823,
+            "stopwatch_frequency": 10000000,
+            "elapsed_s": 0.1473386,
+            "cumulative_model_seconds": 14400,
+            "measured_model_seconds": 3600,
+            "completed_situations": 4,
+            "measured_situations": 1
+          },
+          {
+            "event_type": "finished",
+            "complete": true,
+            "requested_end": 4,
+            "seeded_situations": 4,
+            "completed_situations": 4,
+            "cumulative_model_seconds": 14400
+          }
+        ]
+      }
+    },
+    "gpu": {
+      "status": "pass",
+      "case": "line_horizontal",
+      "requested_mode": "gpu",
+      "seed_offset": 0,
+      "model_hours": 4,
+      "timing_eligible": false,
+      "quiet_gate_enabled": false,
+      "errors": [],
+      "allowed_affinity_mask": 4294901760,
+      "system_affinity_mask": 4294967295,
+      "build_hashes": {
+        "GRAL.deps.json": "aaf3fd57bf54f2d6bf527e4edbb469d32ab7cba98b3e085f8104e905a09ee456",
+        "GRAL.dll": "ee3a918ed0435f0fd1e7f2f3ec27f2181976534d146c36368fefb19be5d3ca0a",
+        "GRAL.exe": "ea4e0b13ef2e33d15ab85fec4a4b4d0da2fae66bd962a244039ba37fbb4ab8b3",
+        "GRAL.runtimeconfig.json": "71896cae5446bd10f51e4476e335b7cfea37f24b99e01c6c3c13bca7516b38db"
+      },
+      "runtime_controls": {
+        "requested_tiering": "default",
+        "removed_inherited_compilation": [],
+        "removed_inherited_startup_hooks": [],
+        "child_runtime_environment": {},
+        "other_prefixed_environment_keys": []
+      },
+      "runtime_hashes": {
+        "server.py": "72d7b13ed7456413dc621fd43665e97192f9027ff8ea7083dbe36b2c2f2ac170",
+        "cuda_common.py": "11df4a698ad772102b407599ad8e1c59e726dadd90746fbf733bf0410cb0a8aa",
+        "fields_manifest.json": "b902a54ca9ee48d7a48a52544999297f26cbe6ee14147544bb13f439e9b2d23b",
+        "generated.cu": "7d196a9e9b53a724a8ed42ecd905c0726303e6c9c4bc27ddfa70e6d51ee66da5",
+        "ptx_cache.py": "773d2fa29a26eeb748fc643459c1651804fd650e2fb117355285c66c3a0f6ed7"
+      },
+      "quiet_gate": {
+        "status": "skipped_functional_smoke"
+      },
+      "pid": 8572,
+      "exit_code": 0,
+      "timed_out": false,
+      "process_start_to_exit_s": 3.152800300000308,
+      "dispatch": {
+        "path": "gpu",
+        "metrics": [
+          {
+            "situation": 1,
+            "rng_seed1": 521288833,
+            "rng_seed2": 2232123,
+            "fresh_particles": 36000,
+            "fresh_active_particles": 36000,
+            "fresh_active_particles_definition": "positive finite mass after upstream time-series modulation, before geometry rejection",
+            "residual_particles": 0,
+            "chunk": 65536,
+            "block": 128,
+            "elapsed_s": 2.5480675,
+            "init_roundtrip_s": 2.5023101,
+            "cache_hash_s": 0.0032555,
+            "omitted_field_names": [],
+            "saved_payload_bytes": 0,
+            "saved_receptor_payload_bytes": 0,
+            "residual_split_s": 0.0027618,
+            "residual_roundtrip_s": 0,
+            "residual_kernel_ms": 0,
+            "residual_batches": 0,
+            "fresh_roundtrip_s": 0.0236358,
+            "fresh_kernel_ms": 22.31700000083947,
+            "result_request_to_header_s": 0.0053325,
+            "result_transfer_apply_s": 0.0138222,
+            "bytes_sent": 4828596,
+            "bytes_received": 2317650,
+            "kernel_total_ms": 22.31700000083947,
+            "phase_counts": {
+              "fresh": 36000,
+              "residual": 0
+            },
+            "init_server": {
+              "status": "ok",
+              "state_bytes": 1792,
+              "payload_bytes": 0,
+              "startup_ms": 2280.0175000011222,
+              "metrics_cumulative": {
+                "pipe_read_wait_ms": 5.2667000018118415,
+                "h2d_ms": 1.3674999900104012,
+                "d2h_ms": 0.0,
+                "kernel_device_ms": 0.0,
+                "kernel_launches": 0,
+                "kernel_max_device_ms": 0.0,
+                "buffer_allocation_count": 75,
+                "buffer_reuse_count": 0,
+                "buffer_free_count": 0,
+                "device_buffer_bytes": 4819814,
+                "peak_device_buffer_bytes": 4819814,
+                "h2d_bytes": 4819814,
+                "d2h_bytes": 0,
+                "status_d2h_bytes": 0,
+                "status_d2h_ms": 0.0,
+                "state_d2h_bytes": 0,
+                "state_d2h_ms": 0.0,
+                "init_count": 1,
+                "context_ms": 86.83380000002217,
+                "cache_read_ms": 76.51650000116206,
+                "nvrtc_compile_ms": 0.0,
+                "module_load_ms": 2199.520099999063,
+                "post_load_abi_ms": 0.22990000070421956,
+                "cache_status": "hit",
+                "cache_write_status": "not_attempted"
+              }
+            },
+            "result_server_metrics": {
+              "pipe_read_wait_ms": 5.2667000018118415,
+              "h2d_ms": 1.3674999900104012,
+              "d2h_ms": 0.2975999959744513,
+              "kernel_device_ms": 22.15648078918457,
+              "kernel_launches": 1,
+              "kernel_max_device_ms": 22.15648078918457,
+              "buffer_allocation_count": 75,
+              "buffer_reuse_count": 0,
+              "buffer_free_count": 0,
+              "device_buffer_bytes": 4819814,
+              "peak_device_buffer_bytes": 4819814,
+              "h2d_bytes": 4819814,
+              "d2h_bytes": 2314664,
+              "status_d2h_bytes": 12,
+              "status_d2h_ms": 0.09689999933470972,
+              "state_d2h_bytes": 1792,
+              "state_d2h_ms": 0.02519999907235615,
+              "init_count": 1,
+              "context_ms": 86.83380000002217,
+              "cache_read_ms": 76.51650000116206,
+              "nvrtc_compile_ms": 0.0,
+              "module_load_ms": 2199.520099999063,
+              "post_load_abi_ms": 0.22990000070421956,
+              "cache_status": "hit",
+              "cache_write_status": "not_attempted"
+            }
+          },
+          {
+            "situation": 2,
+            "rng_seed1": 521288837,
+            "rng_seed2": 2232125,
+            "fresh_particles": 36000,
+            "fresh_active_particles": 36000,
+            "fresh_active_particles_definition": "positive finite mass after upstream time-series modulation, before geometry rejection",
+            "residual_particles": 2013,
+            "chunk": 65536,
+            "block": 128,
+            "elapsed_s": 0.0512083,
+            "init_roundtrip_s": 0.0113979,
+            "cache_hash_s": 0.0004341,
+            "omitted_field_names": [
+              "DDX",
+              "DDY",
+              "HorSlices",
+              "ParticleMass",
+              "ParticleMode",
+              "ParticleSG",
+              "ParticleSource",
+              "ParticleVdep",
+              "ParticleVsed",
+              "SourceType"
+            ],
+            "saved_payload_bytes": 828211,
+            "saved_receptor_payload_bytes": 0,
+            "residual_split_s": 0.0018737,
+            "residual_roundtrip_s": 0.0096671,
+            "residual_kernel_ms": 9.119899999859626,
+            "residual_batches": 1,
+            "fresh_roundtrip_s": 0.0217904,
+            "fresh_kernel_ms": 21.527999999307212,
+            "result_request_to_header_s": 0.0005895,
+            "result_transfer_apply_s": 0.0058419,
+            "bytes_sent": 4048212,
+            "bytes_received": 2318604,
+            "kernel_total_ms": 52.96490000000631,
+            "phase_counts": {
+              "fresh": 72000,
+              "residual": 2013
+            },
+            "init_server": {
+              "status": "ok",
+              "state_bytes": 1792,
+              "payload_bytes": 0,
+              "startup_ms": 2280.0175000011222,
+              "metrics_cumulative": {
+                "pipe_read_wait_ms": 9.580899990396574,
+                "h2d_ms": 2.163399998607929,
+                "d2h_ms": 0.2975999959744513,
+                "kernel_device_ms": 22.15648078918457,
+                "kernel_launches": 1,
+                "kernel_max_device_ms": 22.15648078918457,
+                "buffer_allocation_count": 75,
+                "buffer_reuse_count": 65,
+                "buffer_free_count": 0,
+                "device_buffer_bytes": 4819814,
+                "peak_device_buffer_bytes": 4819814,
+                "h2d_bytes": 8811417,
+                "d2h_bytes": 2314664,
+                "status_d2h_bytes": 12,
+                "status_d2h_ms": 0.09689999933470972,
+                "state_d2h_bytes": 1792,
+                "state_d2h_ms": 0.02519999907235615,
+                "init_count": 2,
+                "context_ms": 86.83380000002217,
+                "cache_read_ms": 76.51650000116206,
+                "nvrtc_compile_ms": 0.0,
+                "module_load_ms": 2199.520099999063,
+                "post_load_abi_ms": 0.22990000070421956,
+                "cache_status": "hit",
+                "cache_write_status": "not_attempted"
+              }
+            },
+            "result_server_metrics": {
+              "pipe_read_wait_ms": 9.61809998989338,
+              "h2d_ms": 2.255399997011409,
+              "d2h_ms": 0.5112999951961683,
+              "kernel_device_ms": 52.628225326538086,
+              "kernel_launches": 3,
+              "kernel_max_device_ms": 22.15648078918457,
+              "buffer_allocation_count": 81,
+              "buffer_reuse_count": 65,
+              "buffer_free_count": 0,
+              "device_buffer_bytes": 4868126,
+              "peak_device_buffer_bytes": 4868126,
+              "h2d_bytes": 8859729,
+              "d2h_bytes": 4629328,
+              "status_d2h_bytes": 36,
+              "status_d2h_ms": 0.19839999913529027,
+              "state_d2h_bytes": 5376,
+              "state_d2h_ms": 0.07309999818971846,
+              "init_count": 2,
+              "context_ms": 86.83380000002217,
+              "cache_read_ms": 76.51650000116206,
+              "nvrtc_compile_ms": 0.0,
+              "module_load_ms": 2199.520099999063,
+              "post_load_abi_ms": 0.22990000070421956,
+              "cache_status": "hit",
+              "cache_write_status": "not_attempted"
+            }
+          },
+          {
+            "situation": 3,
+            "rng_seed1": 521288841,
+            "rng_seed2": 2232127,
+            "fresh_particles": 36000,
+            "fresh_active_particles": 36000,
+            "fresh_active_particles_definition": "positive finite mass after upstream time-series modulation, before geometry rejection",
+            "residual_particles": 2029,
+            "chunk": 65536,
+            "block": 128,
+            "elapsed_s": 0.0489785,
+            "init_roundtrip_s": 0.0109991,
+            "cache_hash_s": 0.0003397,
+            "omitted_field_names": [
+              "DDX",
+              "DDY",
+              "HorSlices",
+              "ParticleMass",
+              "ParticleMode",
+              "ParticleSG",
+              "ParticleSource",
+              "ParticleVdep",
+              "ParticleVsed",
+              "SourceType"
+            ],
+            "saved_payload_bytes": 828211,
+            "saved_receptor_payload_bytes": 0,
+            "residual_split_s": 0.0015521,
+            "residual_roundtrip_s": 0.0094329,
+            "residual_kernel_ms": 8.907700001145713,
+            "residual_batches": 1,
+            "fresh_roundtrip_s": 0.0202664,
+            "fresh_kernel_ms": 19.968599999629078,
+            "result_request_to_header_s": 0.0007826,
+            "result_transfer_apply_s": 0.0059328,
+            "bytes_sent": 4048596,
+            "bytes_received": 2318619,
+            "kernel_total_ms": 81.8412000007811,
+            "phase_counts": {
+              "fresh": 108000,
+              "residual": 4042
+            },
+            "init_server": {
+              "status": "ok",
+              "state_bytes": 1792,
+              "payload_bytes": 0,
+              "startup_ms": 2280.0175000011222,
+              "metrics_cumulative": {
+                "pipe_read_wait_ms": 14.34529999642109,
+                "h2d_ms": 3.0511000004480593,
+                "d2h_ms": 0.5112999951961683,
+                "kernel_device_ms": 52.628225326538086,
+                "kernel_launches": 3,
+                "kernel_max_device_ms": 22.15648078918457,
+                "buffer_allocation_count": 81,
+                "buffer_reuse_count": 130,
+                "buffer_free_count": 0,
+                "device_buffer_bytes": 4868126,
+                "peak_device_buffer_bytes": 4868126,
+                "h2d_bytes": 12851332,
+                "d2h_bytes": 4629328,
+                "status_d2h_bytes": 36,
+                "status_d2h_ms": 0.19839999913529027,
+                "state_d2h_bytes": 5376,
+                "state_d2h_ms": 0.07309999818971846,
+                "init_count": 3,
+                "context_ms": 86.83380000002217,
+                "cache_read_ms": 76.51650000116206,
+                "nvrtc_compile_ms": 0.0,
+                "module_load_ms": 2199.520099999063,
+                "post_load_abi_ms": 0.22990000070421956,
+                "cache_status": "hit",
+                "cache_write_status": "not_attempted"
+              }
+            },
+            "result_server_metrics": {
+              "pipe_read_wait_ms": 14.377599998624646,
+              "h2d_ms": 3.1056000025273534,
+              "d2h_ms": 0.7501999934902415,
+              "kernel_device_ms": 81.32768154144287,
+              "kernel_launches": 5,
+              "kernel_max_device_ms": 22.15648078918457,
+              "buffer_allocation_count": 87,
+              "buffer_reuse_count": 130,
+              "buffer_free_count": 6,
+              "device_buffer_bytes": 4868510,
+              "peak_device_buffer_bytes": 4868510,
+              "h2d_bytes": 12900028,
+              "d2h_bytes": 6943992,
+              "status_d2h_bytes": 60,
+              "status_d2h_ms": 0.3008999992744066,
+              "state_d2h_bytes": 8960,
+              "state_d2h_ms": 0.12209999840706587,
+              "init_count": 3,
+              "context_ms": 86.83380000002217,
+              "cache_read_ms": 76.51650000116206,
+              "nvrtc_compile_ms": 0.0,
+              "module_load_ms": 2199.520099999063,
+              "post_load_abi_ms": 0.22990000070421956,
+              "cache_status": "hit",
+              "cache_write_status": "not_attempted"
+            }
+          },
+          {
+            "situation": 4,
+            "rng_seed1": 521288845,
+            "rng_seed2": 2232129,
+            "fresh_particles": 36000,
+            "fresh_active_particles": 36000,
+            "fresh_active_particles_definition": "positive finite mass after upstream time-series modulation, before geometry rejection",
+            "residual_particles": 2002,
+            "chunk": 65536,
+            "block": 128,
+            "elapsed_s": 0.0483403,
+            "init_roundtrip_s": 0.0120201,
+            "cache_hash_s": 0.0004186,
+            "omitted_field_names": [
+              "DDX",
+              "DDY",
+              "HorSlices",
+              "ParticleMass",
+              "ParticleMode",
+              "ParticleSG",
+              "ParticleSource",
+              "ParticleVdep",
+              "ParticleVsed",
+              "SourceType"
+            ],
+            "saved_payload_bytes": 828211,
+            "saved_receptor_payload_bytes": 0,
+            "residual_split_s": 0.0016461,
+            "residual_roundtrip_s": 0.0080195,
+            "residual_kernel_ms": 7.56569999975909,
+            "residual_batches": 1,
+            "fresh_roundtrip_s": 0.0204643,
+            "fresh_kernel_ms": 20.19089999885182,
+            "result_request_to_header_s": 0.0006198,
+            "result_transfer_apply_s": 0.0055688,
+            "bytes_sent": 4047948,
+            "bytes_received": 2318615,
+            "kernel_total_ms": 109.59779999939201,
+            "phase_counts": {
+              "fresh": 144000,
+              "residual": 6044
+            },
+            "init_server": {
+              "status": "ok",
+              "state_bytes": 1792,
+              "payload_bytes": 0,
+              "startup_ms": 2280.0175000011222,
+              "metrics_cumulative": {
+                "pipe_read_wait_ms": 19.807499995295075,
+                "h2d_ms": 4.109400006200303,
+                "d2h_ms": 0.7501999934902415,
+                "kernel_device_ms": 81.32768154144287,
+                "kernel_launches": 5,
+                "kernel_max_device_ms": 22.15648078918457,
+                "buffer_allocation_count": 87,
+                "buffer_reuse_count": 195,
+                "buffer_free_count": 6,
+                "device_buffer_bytes": 4868510,
+                "peak_device_buffer_bytes": 4868510,
+                "h2d_bytes": 16891631,
+                "d2h_bytes": 6943992,
+                "status_d2h_bytes": 60,
+                "status_d2h_ms": 0.3008999992744066,
+                "state_d2h_bytes": 8960,
+                "state_d2h_ms": 0.12209999840706587,
+                "init_count": 4,
+                "context_ms": 86.83380000002217,
+                "cache_read_ms": 76.51650000116206,
+                "nvrtc_compile_ms": 0.0,
+                "module_load_ms": 2199.520099999063,
+                "post_load_abi_ms": 0.22990000070421956,
+                "cache_status": "hit",
+                "cache_write_status": "not_attempted"
+              }
+            },
+            "result_server_metrics": {
+              "pipe_read_wait_ms": 19.84209999682207,
+              "h2d_ms": 4.1711000085342675,
+              "d2h_ms": 0.9793999961402733,
+              "kernel_device_ms": 108.91337776184082,
+              "kernel_launches": 7,
+              "kernel_max_device_ms": 22.15648078918457,
+              "buffer_allocation_count": 87,
+              "buffer_reuse_count": 201,
+              "buffer_free_count": 6,
+              "device_buffer_bytes": 4868510,
+              "peak_device_buffer_bytes": 4868510,
+              "h2d_bytes": 16939679,
+              "d2h_bytes": 9258656,
+              "status_d2h_bytes": 84,
+              "status_d2h_ms": 0.4013999987364514,
+              "state_d2h_bytes": 12544,
+              "state_d2h_ms": 0.1733999997668434,
+              "init_count": 4,
+              "context_ms": 86.83380000002217,
+              "cache_read_ms": 76.51650000116206,
+              "nvrtc_compile_ms": 0.0,
+              "module_load_ms": 2199.520099999063,
+              "post_load_abi_ms": 0.22990000070421956,
+              "cache_status": "hit",
+              "cache_write_status": "not_attempted"
+            }
+          }
+        ],
+        "markers": []
+      },
+      "functional": {
+        "mass_ledger": {
+          "actual_kg": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "expected_kg": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "checked": true
+        },
+        "output_members": 12,
+        "residual_ledger": [],
+        "completed_situations": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "terminal_banner_only": 5,
+        "positive_concentration": true,
+        "finite_nonnegative": true
+      },
+      "affinity": {
+        "verified": true,
+        "verification_scope": "startup_mask_exact_before_resume; runtime_mask_sampled_about_1s",
+        "observed_pids": [
+          8572,
+          9400,
+          13388,
+          49068
+        ],
+        "gpu_python_observed": true
+      },
+      "skipped_exiting_process_samples": [],
+      "observer": {
+        "status": "pass",
+        "seed_rows": [
+          {
+            "event_type": "seed",
+            "IWET": 1,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288833,
+            "Seed2": 2232123,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150125706147
+          },
+          {
+            "event_type": "seed",
+            "IWET": 2,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288837,
+            "Seed2": 2232125,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150151842293
+          },
+          {
+            "event_type": "seed",
+            "IWET": 3,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288841,
+            "Seed2": 2232127,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150152446934
+          },
+          {
+            "event_type": "seed",
+            "IWET": 4,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288845,
+            "Seed2": 2232129,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150153041126
+          }
+        ],
+        "situation_series": [
+          {
+            "situation": 1,
+            "start_s": 0.7396162415100098,
+            "end_s": 3.3966577415100097,
+            "wall_s": 2.6570415,
+            "seed_to_end_s": 2.6081044,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 25,
+            "peak_tree_rss_bytes": 372043776.0,
+            "peak_tree_private_bytes": 547164160.0,
+            "peak_dotnet_rss_bytes": 68837376.0,
+            "peak_python_rss_bytes": 288124928.0
+          },
+          {
+            "situation": 2,
+            "start_s": 3.39703174151001,
+            "end_s": 3.45751324151001,
+            "wall_s": 0.060481499999999855,
+            "seed_to_end_s": 0.0553453,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 1,
+            "peak_tree_rss_bytes": 266162176.0,
+            "peak_tree_private_bytes": 456826880.0,
+            "peak_dotnet_rss_bytes": 72667136.0,
+            "peak_python_rss_bytes": 177004544.0
+          },
+          {
+            "situation": 3,
+            "start_s": 3.45775384151001,
+            "end_s": 3.5148096415100096,
+            "wall_s": 0.05705579999999966,
+            "seed_to_end_s": 0.0521776,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 0,
+            "peak_tree_rss_bytes": null,
+            "peak_tree_private_bytes": null,
+            "peak_dotnet_rss_bytes": null,
+            "peak_python_rss_bytes": null
+          },
+          {
+            "situation": 4,
+            "start_s": 3.51733384151001,
+            "end_s": 3.57386384151001,
+            "wall_s": 0.05652999999999997,
+            "seed_to_end_s": 0.0518126,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 1,
+            "peak_tree_rss_bytes": 267071488.0,
+            "peak_tree_private_bytes": 456048640.0,
+            "peak_dotnet_rss_bytes": 73596928.0,
+            "peak_python_rss_bytes": 176984064.0
+          }
+        ],
+        "raw_events": [
+          {
+            "event_type": "config",
+            "warmup": 3,
+            "end": 4,
+            "stopwatch_frequency": 10000000,
+            "stopwatch_timestamp": 150124155400,
+            "utc_timestamp": "2026-11-02T04:51:06.7119853+00:00"
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 1,
+            "stopwatch_timestamp": 150125216776
+          },
+          {
+            "event_type": "seed",
+            "IWET": 1,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288833,
+            "Seed2": 2232123,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150125706147
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 1,
+            "stopwatch_timestamp": 150151787191
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 2,
+            "stopwatch_timestamp": 150151790931
+          },
+          {
+            "event_type": "seed",
+            "IWET": 2,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288837,
+            "Seed2": 2232125,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150151842293
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 2,
+            "stopwatch_timestamp": 150152395746
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 3,
+            "stopwatch_timestamp": 150152398152
+          },
+          {
+            "event_type": "seed",
+            "IWET": 3,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288841,
+            "Seed2": 2232127,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150152446934
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 3,
+            "stopwatch_timestamp": 150152968710
+          },
+          {
+            "event_type": "boundary",
+            "boundary": "start",
+            "IWET": 3,
+            "stopwatch_timestamp": 150152982342,
+            "stopwatch_frequency": 10000000,
+            "elapsed_s": 0,
+            "cumulative_model_seconds": 10800,
+            "measured_model_seconds": 0,
+            "completed_situations": 3,
+            "measured_situations": 0
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 4,
+            "stopwatch_timestamp": 150152993952
+          },
+          {
+            "event_type": "seed",
+            "IWET": 4,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288845,
+            "Seed2": 2232129,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 150153041126
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 4,
+            "stopwatch_timestamp": 150153559252
+          },
+          {
+            "event_type": "boundary",
+            "boundary": "stop",
+            "IWET": 4,
+            "stopwatch_timestamp": 150153576687,
+            "stopwatch_frequency": 10000000,
+            "elapsed_s": 0.0594345,
+            "cumulative_model_seconds": 14400,
+            "measured_model_seconds": 3600,
+            "completed_situations": 4,
+            "measured_situations": 1
+          },
+          {
+            "event_type": "finished",
+            "complete": true,
+            "requested_end": 4,
+            "seeded_situations": 4,
+            "completed_situations": 4,
+            "cumulative_model_seconds": 14400
+          }
+        ]
+      }
+    }
+  },
+  "comparison_file": "line_horizontal_comparison.json",
+  "raw_members_equal": false,
+  "inference": "no numerical scientific acceptance threshold applied to functional smoke"
+}
