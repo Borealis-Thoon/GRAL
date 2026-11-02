@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "reviewer": "review_new_modes_python",
+  "review_time": "2026-11-02T15:10:53.273597+09:00",
+  "method": "Ponytail connected-code review; no edits to code; no model or GPU execution",
+  "verdict": "approve_for_offline_python_scope",
+  "critical_high_open": 0,
+  "open_findings": [],
+  "resolved_findings": [
+    {
+      "severity": "MEDIUM",
+      "file": "validation/compare.py",
+      "issue": "Standalone CLI hardcoded three source groups and receptor group count. A four-SG synthetic archive failed with source group/slice/type mismatch.",
+      "fix_owner": "root",
+      "verification": "Fresh synthetic one-hour/four-SG CLI comparison returned exit 0, four members, no stderr."
+    }
+  ],
+  "checks": {
+    "runtime_mode_offline_cases": 7,
+    "runtime_mode_offline_result": "pass",
+    "validation_unit_tests": 24,
+    "validation_unit_result": "pass",
+    "analysis_unit_tests": 17,
+    "analysis_unit_result": "pass",
+    "analysis_python": "D:/INU_Modeling_Work/envs/modeling-tools/Scripts/python.exe Python3.12.14",
+    "analysis_initial_environment_issue": "Primary runtime lacks Matplotlib; rerun in designated modeling-tools environment passed.",
+    "syntax_modified_python": "pass",
+    "repo_git_diff_check": "pass",
+    "lint_tools_unavailable": [
+      "ruff",
+      "mypy",
+      "pylint",
+      "black"
+    ],
+    "affinity_scope": "Inherited logical CPUs16..31 checked in runner, contained child, and observed descendants; no affinity override added.",
+    "quiet_gate": "10 seconds, five-second samples, two-sample window; fake-clock unit passed.",
+    "mode_contract": "Host completed-request cumulative counter deltas, kernel launches and CUDA-event time increase; steady residual zero; transient carryover positive."
+  },
+  "evidence_boundaries": [
+    "phase_counts are host bookkeeping after synchronized GPU requests, not in-kernel source counters.",
+    "source_type_device_counts_measured=false is recorded in protocol and analysis.",
+    "Review did not execute a model, GPU kernel, or timing study.",
+    "Four-source GPU evidence also requires individual actual functional cases, fixed source/SG mapping, positive SG output and CPU comparison.",
+    "No scientific equivalence or field/production claim is established by this code review."
+  ],
+  "reviewed_files_sha256": {
+    "repo/gpu/runtime/server.py": "7a3bcf8f80c0c78d3a0e557d484c9a59c43e47ea7365f372e3ef0629a7187113",
+    "repo/gpu/runtime/fields_manifest.json": "0a5ac8caf46ae88d726580fa28f7573b888eb5748d28703d0b829c6da46cf242",
+    "repo/gpu/runtime/generated.cu": "25b5689a4b0fb5af52f5767175d043fb3cf47b6620a124dfdfbb5f053d9059b6",
+    "validation/fixtures.py": "15547e8d8beb4d3d922c08ff7c0e6ca0a33a6ee0226738ca99296628f58ced5b",
+    "validation/run_matrix.py": "100539718178d10704b7ac136c897ff8b835222c19c3bcfdb4cc8d4635e101bf",
+    "validation/compare.py": "a59df3d045ae5f4b7430f331c4a44a5c4f2d243aa8e6327a924286374ab3fb81",
+    "validation/functional_matrix.py": "81107056e5b29c4221d767edb38f2ee39bdc71c78a6fb7d7e8ff2b8112c5bd70",
+    "validation/support/runtime_helpers.py": "f1050305836f3704270981c5d5dcf94154191b137cfeb422ac5169403bb563bb",
+    "validation/prepare_new_modes_study.py": "009ddb43d43480f83fd7180c0f1e0a577bf60314f92b18063048d7477f611f6a",
+    "validation/run_new_modes_study.py": "af1f91f9608973e3892d1e7909e8a208faa91c39f66b128f3727ea0072d8f564",
+    "analysis/analyze_study.py": "7a2fde248d8c63c2dca45d6753471bf0767551d1994a9280f695d488caf141af",
+    "analysis/mode_contracts.py": "b868b0c5ecd8c27bd391345c5deffecb6dedf5f7b8823306caac4702a625a280",
+    "analysis/plot_study.py": "f43ac0e6076fe5e56b3f14ab28783a6d458ee39e4438f15a6fe0b8ed5aa45bb0",
+    "qa/statistical_protocol_new_modes.json": "85a8af095794686ae87646248302bec92154d0d2e831640775551b650fcc7b52",
+    "qa/statistical_protocol_new_modes.md": "a6a505ecb3e1f72a11d4ef3b00c72a76b29239bc22d028881df8cdea4d559893"
+  },
+  "humanize": {
+    "skill": "humanize-kit:humanize-korean",
+    "run_id": "2026-11-02-001-d92f",
+    "route": "light",
+    "change_rate_percent": 1.8,
+    "verify_gate": "exit0",
+    "modality_restored": 0,
+    "modality_held": 0,
+    "technical_summary_candidate": "6/6 and HTML-comment symbols were metadata only; clean report validated separately.",
+    "technical_clean_final": "exit0; no fidelity candidates; manual source/final comparison complete",
+    "style_candidate_resolution": "KO_NEGATIVE_ADDON retained because no model/GPU/timing execution is a material evidence boundary."
+  }
+}

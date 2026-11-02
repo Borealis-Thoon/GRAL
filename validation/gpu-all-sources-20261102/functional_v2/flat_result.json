@@ -1,0 +1,710 @@
+{
+  "case": "flat",
+  "status": "pass",
+  "runs": {
+    "cpu": {
+      "status": "pass",
+      "case": "flat",
+      "requested_mode": "cpu",
+      "seed_offset": 0,
+      "model_hours": 4,
+      "timing_eligible": false,
+      "quiet_gate_enabled": false,
+      "errors": [],
+      "allowed_affinity_mask": 4294901760,
+      "system_affinity_mask": 4294967295,
+      "build_hashes": {
+        "GRAL.deps.json": "aaf3fd57bf54f2d6bf527e4edbb469d32ab7cba98b3e085f8104e905a09ee456",
+        "GRAL.dll": "1fc2a4a8dec2f9c9333ce71c17d78e14561bb37f3926ff4c216e08a3013d3c1c",
+        "GRAL.exe": "ea4e0b13ef2e33d15ab85fec4a4b4d0da2fae66bd962a244039ba37fbb4ab8b3",
+        "GRAL.runtimeconfig.json": "71896cae5446bd10f51e4476e335b7cfea37f24b99e01c6c3c13bca7516b38db"
+      },
+      "runtime_controls": {
+        "requested_tiering": "default",
+        "removed_inherited_compilation": [],
+        "removed_inherited_startup_hooks": [],
+        "child_runtime_environment": {},
+        "other_prefixed_environment_keys": []
+      },
+      "quiet_gate": {
+        "status": "skipped_functional_smoke"
+      },
+      "pid": 9252,
+      "exit_code": 0,
+      "timed_out": false,
+      "process_start_to_exit_s": 1.2578304999988177,
+      "dispatch": {
+        "path": "cpu_requested",
+        "markers": []
+      },
+      "functional": {
+        "mass_ledger": {
+          "actual_kg": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "expected_kg": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "checked": true
+        },
+        "output_members": 12,
+        "residual_ledger": [],
+        "completed_situations": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "terminal_banner_only": 5,
+        "positive_concentration": true,
+        "finite_nonnegative": true
+      },
+      "affinity": {
+        "verified": true,
+        "verification_scope": "startup_mask_exact_before_resume; runtime_mask_sampled_about_1s",
+        "observed_pids": [
+          9252,
+          47652
+        ],
+        "gpu_python_observed": false
+      },
+      "skipped_exiting_process_samples": [],
+      "observer": {
+        "status": "pass",
+        "seed_rows": [
+          {
+            "event_type": "seed",
+            "IWET": 1,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288833,
+            "Seed2": 2232123,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197221449838
+          },
+          {
+            "event_type": "seed",
+            "IWET": 2,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288837,
+            "Seed2": 2232125,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197224323451
+          },
+          {
+            "event_type": "seed",
+            "IWET": 3,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288841,
+            "Seed2": 2232127,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197226758862
+          },
+          {
+            "event_type": "seed",
+            "IWET": 4,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288845,
+            "Seed2": 2232129,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197229081905
+          }
+        ],
+        "situation_series": [
+          {
+            "situation": 1,
+            "start_s": 0.7133015132568359,
+            "end_s": 1.013590713256836,
+            "wall_s": 0.30028920000000014,
+            "seed_to_end_s": 0.2864345,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 3,
+            "peak_tree_rss_bytes": 79884288.0,
+            "peak_tree_private_bytes": 45867008.0,
+            "peak_dotnet_rss_bytes": 71655424.0,
+            "peak_python_rss_bytes": 0.0
+          },
+          {
+            "situation": 2,
+            "start_s": 1.013892913256836,
+            "end_s": 1.256734913256836,
+            "wall_s": 0.242842,
+            "seed_to_end_s": 0.2422174,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 2,
+            "peak_tree_rss_bytes": 81391616.0,
+            "peak_tree_private_bytes": 46616576.0,
+            "peak_dotnet_rss_bytes": 73162752.0,
+            "peak_python_rss_bytes": 0.0
+          },
+          {
+            "situation": 3,
+            "start_s": 1.257030013256836,
+            "end_s": 1.485639213256836,
+            "wall_s": 0.22860919999999996,
+            "seed_to_end_s": 0.2275806,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 2,
+            "peak_tree_rss_bytes": 82022400.0,
+            "peak_tree_private_bytes": 46727168.0,
+            "peak_dotnet_rss_bytes": 73793536.0,
+            "peak_python_rss_bytes": 0.0
+          },
+          {
+            "situation": 4,
+            "start_s": 1.489389713256836,
+            "end_s": 1.702440713256836,
+            "wall_s": 0.2130510000000001,
+            "seed_to_end_s": 0.2120778,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 2,
+            "peak_tree_rss_bytes": 82554880.0,
+            "peak_tree_private_bytes": 46899200.0,
+            "peak_dotnet_rss_bytes": 74326016.0,
+            "peak_python_rss_bytes": 0.0
+          }
+        ],
+        "raw_events": [
+          {
+            "event_type": "config",
+            "warmup": 3,
+            "end": 4,
+            "stopwatch_frequency": 10000000,
+            "stopwatch_timestamp": 197220310993,
+            "utc_timestamp": "2026-11-02T06:09:36.3275462+00:00"
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 1,
+            "stopwatch_timestamp": 197221311291
+          },
+          {
+            "event_type": "seed",
+            "IWET": 1,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288833,
+            "Seed2": 2232123,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197221449838
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 1,
+            "stopwatch_timestamp": 197224314183
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 2,
+            "stopwatch_timestamp": 197224317205
+          },
+          {
+            "event_type": "seed",
+            "IWET": 2,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288837,
+            "Seed2": 2232125,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197224323451
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 2,
+            "stopwatch_timestamp": 197226745625
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 3,
+            "stopwatch_timestamp": 197226748576
+          },
+          {
+            "event_type": "seed",
+            "IWET": 3,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288841,
+            "Seed2": 2232127,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197226758862
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 3,
+            "stopwatch_timestamp": 197229034668
+          },
+          {
+            "event_type": "boundary",
+            "boundary": "start",
+            "IWET": 3,
+            "stopwatch_timestamp": 197229051580,
+            "stopwatch_frequency": 10000000,
+            "elapsed_s": 0,
+            "cumulative_model_seconds": 10800,
+            "measured_model_seconds": 0,
+            "completed_situations": 3,
+            "measured_situations": 0
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 4,
+            "stopwatch_timestamp": 197229072173
+          },
+          {
+            "event_type": "seed",
+            "IWET": 4,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288845,
+            "Seed2": 2232129,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197229081905
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 4,
+            "stopwatch_timestamp": 197231202683
+          },
+          {
+            "event_type": "boundary",
+            "boundary": "stop",
+            "IWET": 4,
+            "stopwatch_timestamp": 197231214456,
+            "stopwatch_frequency": 10000000,
+            "elapsed_s": 0.2162876,
+            "cumulative_model_seconds": 14400,
+            "measured_model_seconds": 3600,
+            "completed_situations": 4,
+            "measured_situations": 1
+          },
+          {
+            "event_type": "finished",
+            "complete": true,
+            "requested_end": 4,
+            "seeded_situations": 4,
+            "completed_situations": 4,
+            "cumulative_model_seconds": 14400
+          }
+        ]
+      },
+      "seed_validation": {
+        "status": "pass",
+        "offset": 0,
+        "situations": 4,
+        "states": [
+          [
+            521288833,
+            2232123
+          ],
+          [
+            521288837,
+            2232125
+          ],
+          [
+            521288841,
+            2232127
+          ],
+          [
+            521288845,
+            2232129
+          ]
+        ]
+      },
+      "memory_scope": {
+        "process_gpu_memory_mib": null,
+        "process_gpu_memory_availability": "unavailable in current WDDM query; device total must not be attributed to process",
+        "process_sample_target_s": 0.1,
+        "gpu_device_sample_target_s": 0.2,
+        "process_actual_sample_intervals_s": [
+          0.11304929999823798,
+          0.10779340000226512,
+          0.1073365999982343,
+          0.10914129999946454,
+          0.10765299999911804,
+          0.10947680000026594,
+          0.11012860000118962,
+          0.10972450000190292,
+          0.11017299999730312,
+          0.1106197000008251,
+          0.11584769999899436,
+          0.10847049999938463,
+          0.10978520000207936,
+          0.13006409999798052,
+          0.11839840000175172
+        ],
+        "process_rows": 16,
+        "idle_baseline": "samples before contained model PID creation"
+      }
+    },
+    "gpu": {
+      "status": "pass",
+      "case": "flat",
+      "requested_mode": "gpu",
+      "seed_offset": 0,
+      "model_hours": 4,
+      "timing_eligible": false,
+      "quiet_gate_enabled": false,
+      "errors": [],
+      "allowed_affinity_mask": 4294901760,
+      "system_affinity_mask": 4294967295,
+      "build_hashes": {
+        "GRAL.deps.json": "aaf3fd57bf54f2d6bf527e4edbb469d32ab7cba98b3e085f8104e905a09ee456",
+        "GRAL.dll": "1fc2a4a8dec2f9c9333ce71c17d78e14561bb37f3926ff4c216e08a3013d3c1c",
+        "GRAL.exe": "ea4e0b13ef2e33d15ab85fec4a4b4d0da2fae66bd962a244039ba37fbb4ab8b3",
+        "GRAL.runtimeconfig.json": "71896cae5446bd10f51e4476e335b7cfea37f24b99e01c6c3c13bca7516b38db"
+      },
+      "runtime_controls": {
+        "requested_tiering": "default",
+        "removed_inherited_compilation": [],
+        "removed_inherited_startup_hooks": [],
+        "child_runtime_environment": {},
+        "other_prefixed_environment_keys": []
+      },
+      "quiet_gate": {
+        "status": "skipped_functional_smoke"
+      },
+      "pid": 30168,
+      "exit_code": 0,
+      "timed_out": false,
+      "process_start_to_exit_s": 1.3726760999998078,
+      "dispatch": {
+        "path": "cpu_fallback",
+        "reasons": [
+          "GPU fallback to CPU: Unsupported GPU configuration"
+        ]
+      },
+      "functional": {
+        "mass_ledger": {
+          "actual_kg": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "expected_kg": [
+            4.0,
+            4.0,
+            4.0
+          ],
+          "checked": true
+        },
+        "output_members": 12,
+        "residual_ledger": [],
+        "completed_situations": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "terminal_banner_only": 5,
+        "positive_concentration": true,
+        "finite_nonnegative": true
+      },
+      "affinity": {
+        "verified": true,
+        "verification_scope": "startup_mask_exact_before_resume; runtime_mask_sampled_about_1s",
+        "observed_pids": [
+          30168,
+          37364
+        ],
+        "gpu_python_observed": false
+      },
+      "skipped_exiting_process_samples": [],
+      "observer": {
+        "status": "pass",
+        "seed_rows": [
+          {
+            "event_type": "seed",
+            "IWET": 1,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288833,
+            "Seed2": 2232123,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197240038040
+          },
+          {
+            "event_type": "seed",
+            "IWET": 2,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288837,
+            "Seed2": 2232125,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197243455532
+          },
+          {
+            "event_type": "seed",
+            "IWET": 3,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288841,
+            "Seed2": 2232127,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197246103609
+          },
+          {
+            "event_type": "seed",
+            "IWET": 4,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288845,
+            "Seed2": 2232129,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197248540124
+          }
+        ],
+        "situation_series": [
+          {
+            "situation": 1,
+            "start_s": 0.7264136433563233,
+            "end_s": 1.0835034433563233,
+            "wall_s": 0.3570898,
+            "seed_to_end_s": 0.3404851,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 3,
+            "peak_tree_rss_bytes": 79888384.0,
+            "peak_tree_private_bytes": 45805568.0,
+            "peak_dotnet_rss_bytes": 71647232.0,
+            "peak_python_rss_bytes": 0.0
+          },
+          {
+            "situation": 2,
+            "start_s": 1.0838895433563231,
+            "end_s": 1.3477971433563232,
+            "wall_s": 0.2639076,
+            "seed_to_end_s": 0.2630296,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 3,
+            "peak_tree_rss_bytes": 82104320.0,
+            "peak_tree_private_bytes": 46768128.0,
+            "peak_dotnet_rss_bytes": 73863168.0,
+            "peak_python_rss_bytes": 0.0
+          },
+          {
+            "situation": 3,
+            "start_s": 1.3486434433563232,
+            "end_s": 1.5889317433563233,
+            "wall_s": 0.2402883,
+            "seed_to_end_s": 0.2393565,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 2,
+            "peak_tree_rss_bytes": 82214912.0,
+            "peak_tree_private_bytes": 46862336.0,
+            "peak_dotnet_rss_bytes": 73973760.0,
+            "peak_python_rss_bytes": 0.0
+          },
+          {
+            "situation": 4,
+            "start_s": 1.5926548433563232,
+            "end_s": 1.8180777433563233,
+            "wall_s": 0.2254229000000001,
+            "seed_to_end_s": 0.224851,
+            "time_scope": "full_situation_after_stop_check",
+            "telemetry_samples": 2,
+            "peak_tree_rss_bytes": 82292736.0,
+            "peak_tree_private_bytes": 46989312.0,
+            "peak_dotnet_rss_bytes": 74051584.0,
+            "peak_python_rss_bytes": 0.0
+          }
+        ],
+        "raw_events": [
+          {
+            "event_type": "config",
+            "warmup": 3,
+            "end": 4,
+            "stopwatch_frequency": 10000000,
+            "stopwatch_timestamp": 197238779033,
+            "utc_timestamp": "2026-11-02T06:09:38.1743511+00:00"
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 1,
+            "stopwatch_timestamp": 197239871993
+          },
+          {
+            "event_type": "seed",
+            "IWET": 1,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288833,
+            "Seed2": 2232123,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197240038040
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 1,
+            "stopwatch_timestamp": 197243442891
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 2,
+            "stopwatch_timestamp": 197243446752
+          },
+          {
+            "event_type": "seed",
+            "IWET": 2,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288837,
+            "Seed2": 2232125,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197243455532
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 2,
+            "stopwatch_timestamp": 197246085828
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 3,
+            "stopwatch_timestamp": 197246094291
+          },
+          {
+            "event_type": "seed",
+            "IWET": 3,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288841,
+            "Seed2": 2232127,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197246103609
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 3,
+            "stopwatch_timestamp": 197248497174
+          },
+          {
+            "event_type": "boundary",
+            "boundary": "start",
+            "IWET": 3,
+            "stopwatch_timestamp": 197248511066,
+            "stopwatch_frequency": 10000000,
+            "elapsed_s": 0,
+            "cumulative_model_seconds": 10800,
+            "measured_model_seconds": 0,
+            "completed_situations": 3,
+            "measured_situations": 0
+          },
+          {
+            "event_type": "situation_start",
+            "IWET": 4,
+            "stopwatch_timestamp": 197248534405
+          },
+          {
+            "event_type": "seed",
+            "IWET": 4,
+            "TAUS": 3600,
+            "WindVelGral": 2,
+            "WindDirGral": 0,
+            "Seed1": 521288845,
+            "Seed2": 2232129,
+            "fixed_mode": true,
+            "stopwatch_timestamp": 197248540124
+          },
+          {
+            "event_type": "situation_end",
+            "IWET": 4,
+            "stopwatch_timestamp": 197250788634
+          },
+          {
+            "event_type": "boundary",
+            "boundary": "stop",
+            "IWET": 4,
+            "stopwatch_timestamp": 197250801681,
+            "stopwatch_frequency": 10000000,
+            "elapsed_s": 0.2290615,
+            "cumulative_model_seconds": 14400,
+            "measured_model_seconds": 3600,
+            "completed_situations": 4,
+            "measured_situations": 1
+          },
+          {
+            "event_type": "finished",
+            "complete": true,
+            "requested_end": 4,
+            "seeded_situations": 4,
+            "completed_situations": 4,
+            "cumulative_model_seconds": 14400
+          }
+        ]
+      },
+      "seed_validation": {
+        "status": "pass",
+        "offset": 0,
+        "situations": 4,
+        "states": [
+          [
+            521288833,
+            2232123
+          ],
+          [
+            521288837,
+            2232125
+          ],
+          [
+            521288841,
+            2232127
+          ],
+          [
+            521288845,
+            2232129
+          ]
+        ]
+      },
+      "memory_scope": {
+        "process_gpu_memory_mib": null,
+        "process_gpu_memory_availability": "unavailable in current WDDM query; device total must not be attributed to process",
+        "process_sample_target_s": 0.1,
+        "gpu_device_sample_target_s": 0.2,
+        "process_actual_sample_intervals_s": [
+          0.11304730000119889,
+          0.10785450000184937,
+          0.1110564999980852,
+          0.10849180000150227,
+          0.10765059999903315,
+          0.10892769999918528,
+          0.1079293000002508,
+          0.11149890000160667,
+          0.10977789999742527,
+          0.10670920000120532,
+          0.1290289999997185,
+          0.10743020000154502,
+          0.11677539999800501,
+          0.11020579999967595,
+          0.11919480000142357,
+          0.12264480000158073
+        ],
+        "process_rows": 17,
+        "idle_baseline": "samples before contained model PID creation"
+      }
+    }
+  },
+  "comparison_file": "flat_comparison.json",
+  "raw_members_equal": true,
+  "inference": "no numerical scientific acceptance threshold applied to functional smoke"
+}

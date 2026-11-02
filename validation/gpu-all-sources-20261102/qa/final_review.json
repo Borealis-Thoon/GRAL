@@ -1,0 +1,120 @@
+{
+  "status": "pass",
+  "source_head": "b60673164b749896c3b942d0e89753addc1c6f7b",
+  "study_manifest_sha256": "602de1845eb5d11471a37ec991fd32f5293b1d11a8ac7356c934924a30c9fbac",
+  "study_freeze_sha256": "def0f7ac296b50077a388ac3e298bea8d9944307b100626da56b52847d96e343",
+  "study_results_sha256": "b04b316fee1793a5804db3a8f75de9390f99b8aa28ed3860336fca20944efdaa",
+  "analysis_inputs_manifest_sha256": "eaeaa849c42d4b54d683637e4dfbf490c89cbfce3551ee799b379efbd34b7979",
+  "cohorts": {
+    "transient_all_sources": {
+      "study_manifest_sha256": "248b49d71d1e0af94388523eaac48b44a44bb458b2a8c81d5d56788c8eafa5a4",
+      "analysis_summary_sha256": "45cead9b0966bd9f0daf6b274bdd0330bcf622605ce189f2366bb944fe59b82c",
+      "artifact_manifest_sha256": "903c8991a9103fc1a2aa980cd9bdc8c2a1b9c2b76caa1f71e64500e1f7ff0f86",
+      "analysis_source_sha256": {
+        "analyze_study.py": "7a2fde248d8c63c2dca45d6753471bf0767551d1994a9280f695d488caf141af",
+        "mode_contracts.py": "b868b0c5ecd8c27bd391345c5deffecb6dedf5f7b8823306caac4702a625a280",
+        "plot_study.py": "f43ac0e6076fe5e56b3f14ab28783a6d458ee39e4438f15a6fe0b8ed5aa45bb0",
+        "synthetic_fixture.py": "13c2402dd426ab62ed76a7db7c813f1a7289b25b9fca31e261a640631b8b4fc6",
+        "test_analysis.py": "8f1ce4a9c9f7089a3dc4c64b1b94bdd4e76f4f9c232e9f426a45ed3f5fe6d183",
+        "test_new_modes.py": "16cad104fd4eedd3751ea019c94bef168ca456a2bdbac4e282bb091d359951de"
+      }
+    },
+    "steady_all_sources": {
+      "study_manifest_sha256": "4741f2eaa1b867901e4a8200033df1e471b010cfa383b63463a7b80a2bf792d1",
+      "analysis_summary_sha256": "b7884d68444dbeb51d7ff7b08ed9f598dd9717bd3182bab8ea585562490b2207",
+      "artifact_manifest_sha256": "fee53853f3a7a659578b41067e355c2fd645489b72027bf4f24c6bbf06ded30c",
+      "analysis_source_sha256": {
+        "analyze_study.py": "7a2fde248d8c63c2dca45d6753471bf0767551d1994a9280f695d488caf141af",
+        "mode_contracts.py": "b868b0c5ecd8c27bd391345c5deffecb6dedf5f7b8823306caac4702a625a280",
+        "plot_study.py": "f43ac0e6076fe5e56b3f14ab28783a6d458ee39e4438f15a6fe0b8ed5aa45bb0",
+        "synthetic_fixture.py": "13c2402dd426ab62ed76a7db7c813f1a7289b25b9fca31e261a640631b8b4fc6",
+        "test_analysis.py": "8f1ce4a9c9f7089a3dc4c64b1b94bdd4e76f4f9c232e9f426a45ed3f5fe6d183",
+        "test_new_modes.py": "16cad104fd4eedd3751ea019c94bef168ca456a2bdbac4e282bb091d359951de"
+      }
+    }
+  },
+  "analysis_inputs_manifest_before_after_equal": true,
+  "formal_equivalence_not_tested": true,
+  "inference_inconclusive": true,
+  "claims": [
+    "The four requested mode/source families execute GPU work under the retained supported-configuration guards.",
+    "Both separate four-source measured cohorts passed completion, integrity, numerical screening and independent diagnostic review.",
+    "Timing results are descriptive paired measurements; steady 48-situation CPU variability prevents a stable speedup claim."
+  ],
+  "scope": {
+    "source": "b60673164b749896c3b942d0e89753addc1c6f7b",
+    "measured_runs": 44,
+    "functional_model_executions": 49,
+    "science_seeds_per_cohort": 6,
+    "disjoint_blocks_per_cohort": 3,
+    "synthetic_only": true,
+    "workers": 16,
+    "first_situations_excluded": 3
+  },
+  "limits": [
+    "Not physical validation or formal equivalence; random-stream independence and bootstrap coverage are unverified.",
+    "Steady 24/48 labels are separate meteorological situations, while transient labels are consecutive model hours.",
+    "Steady48 CPU process CV is 51.22%; no runtime CPU-frequency, temperature, GC or tiering traces were captured to identify cause.",
+    "Steady POINT P95 seed 300000 exceeds its paired CPU-interseed tail difference; the diagnostic exception is disclosed.",
+    "Device-wide GPU memory is not process VRAM; host phase counts are not in-kernel source-type counts.",
+    "The standalone SourceSeriesReader four-check observation was session stdout only, without a saved dedicated receipt."
+  ],
+  "scientific_review": {
+    "json_sha256": "13b0819f2c6aa0525905159511df77ad28220f566acb667bfadabb77c3500523",
+    "markdown_sha256": "99316835c1b71a53d5204d489575abb9a6e8fc4e7028b6ca487272054cb3f4ff",
+    "raw_review_sha256": "6e7373362e4f135e8885cb157273060b7ea198fa39887ad387308481f939bcea",
+    "status": "engineering_pass_observed_fixture",
+    "performance_reproducibility": "review_required_for_steady_48_cpu"
+  },
+  "visual_review": {
+    "status": "pass_with_caption_clarification",
+    "figure_count": 28,
+    "figure_sha256": {
+      "analysis/measured/transient_all_sources/figures/gpu_buffer_reuse_24h.png": "be94e3a2425b5132187ed79aab5eef1956e6a4e45b16844a7fef9cf591fc9291",
+      "analysis/measured/transient_all_sources/figures/gpu_buffer_reuse_48h.png": "ad6f5fdc172c9674ba94e7e064b578b2701c3baf5a28d63f784f951b2e6e349f",
+      "analysis/measured/transient_all_sources/figures/gpu_pipeline_phases_24h.png": "cdbe15853c4a7a447a4b828bf0b56c5332e5be1d1697db39960b65c4201b9a37",
+      "analysis/measured/transient_all_sources/figures/gpu_pipeline_phases_48h.png": "457c094c651236f6b077512e7d9ac0b06d0222e3df843b61e92046571626537c",
+      "analysis/measured/transient_all_sources/figures/memory_per_situation_24h.png": "b7243fd3d832986e1755f9eff9f10774ddc9835eb1153931025e25f56f0edc02",
+      "analysis/measured/transient_all_sources/figures/memory_per_situation_48h.png": "d1bd5109e4e72a2e48073486e3b497ee8d3fe92c89d5ebdfb7d4d1e3fb6836d0",
+      "analysis/measured/transient_all_sources/figures/memory_walltime_24h.png": "d73a90a71e75b4ee50dd49b48aacd4bbb7b8ed7f813d2ea5599d5bb710dbdd2f",
+      "analysis/measured/transient_all_sources/figures/memory_walltime_48h.png": "365a13fc08a8594e30678b0f13ec3126fcb7cc569de3fc63ad62983cd246e9b3",
+      "analysis/measured/transient_all_sources/figures/seed0_mean_spatial_maps.png": "425c976c4937a1a110de52cb30db0f5a8db3c3590e6c7fc6161a94331f33a9ae",
+      "analysis/measured/transient_all_sources/figures/seed_level_metrics.png": "1f969cde4abc96406b455d6bf57ef651c60f2faa8d5e9a231337ddba7fa0cd9d",
+      "analysis/measured/transient_all_sources/figures/seed_R_V_blocks.png": "f4c59fff01fed638697ccd2db194f46dec8bafacaa0a8669ee0aec1ceacb0388",
+      "analysis/measured/transient_all_sources/figures/seed_twins_scatter.png": "72455367eadf1d476cc451529b480201dc49e2e2706bf6494cab6428124d580b",
+      "analysis/measured/transient_all_sources/figures/situation_time_repeats.png": "9fc9e7269fd02a072bec8a5926c3fc352238e6ee1f1572ed7a45737cc895140a",
+      "analysis/measured/transient_all_sources/figures/timing_variability.png": "4257ac38ecf9e1b23f1193ee9190615a42aeb549f24e8f1285c75037fa5b1307",
+      "analysis/measured/steady_all_sources/figures/gpu_buffer_reuse_24h.png": "8d05610af6ffeb0af0d19679546f8c9ce5c20f6b2aa11a70c0e8e462f3f89ea7",
+      "analysis/measured/steady_all_sources/figures/gpu_buffer_reuse_48h.png": "9df8369f89b454fbe74d13ea0cea2bf47a8a7d17e4e4b9588f2685975b7c9d43",
+      "analysis/measured/steady_all_sources/figures/gpu_pipeline_phases_24h.png": "6163e44ea8a153cbcd3655a7262f04599b1b3bbb21134b159bf45f48b6abe71f",
+      "analysis/measured/steady_all_sources/figures/gpu_pipeline_phases_48h.png": "dac956b8874f966779271fcb285dcee67c5305979f0960d31dc45912f14bd1b4",
+      "analysis/measured/steady_all_sources/figures/memory_per_situation_24h.png": "97b0bc6415ac47836e8337da7658b157df19db0943781238d0949f62125299be",
+      "analysis/measured/steady_all_sources/figures/memory_per_situation_48h.png": "078c79f6d331cd05830f5ac7e7aa3a52400c557cecb617eb770515da63f45dfa",
+      "analysis/measured/steady_all_sources/figures/memory_walltime_24h.png": "b68069981ae27c99af41adf809b6ab645209ec660449bcc7a17bd15b4ea985d1",
+      "analysis/measured/steady_all_sources/figures/memory_walltime_48h.png": "4e09023d71dbc8076f65f33118b3b7e390eef13b4f83b2944d19c2ce8c69c932",
+      "analysis/measured/steady_all_sources/figures/seed0_mean_spatial_maps.png": "644d0fad343b5337dfd9b615d3014aad2b192ac49fbceb3aca2b9ae76323f327",
+      "analysis/measured/steady_all_sources/figures/seed_level_metrics.png": "376beb1d5ad598aa00de71cd62d02ce2a5b6e3313c8457063d2698ce12cfef72",
+      "analysis/measured/steady_all_sources/figures/seed_R_V_blocks.png": "c72d26ad58c6dbe81e997b2e768d6908d33da48c99abb1e9db12d174b188c4f8",
+      "analysis/measured/steady_all_sources/figures/seed_twins_scatter.png": "907b1d2f8fa9874953877b4d96150d41eabdd3328a688da25244205388ab3987",
+      "analysis/measured/steady_all_sources/figures/situation_time_repeats.png": "c974178f48eacc5a6809500fa737eed389f1017f1d09c3785384f0486612212a",
+      "analysis/measured/steady_all_sources/figures/timing_variability.png": "3eda096d664a6e74c12b58601b689291b1aa358a08644354725ecc6d56e78782"
+    },
+    "review_method": "All 28 figures inspected in four contact sheets; steady spatial map and pipeline additionally inspected at native resolution.",
+    "checks": [
+      "No blank panels or clipped data observed",
+      "Axes, legends, units and mode separation present",
+      "CPU timing variability retained",
+      "Device-wide GPU memory distinguished from application buffer accounting",
+      "CPU and GPU spatial maps share scales within each source group"
+    ],
+    "caption_clarification": "The existing legend term steady timing denotes the post-warm-up timing window in both model modes. Final PR caption must state this.",
+    "numeric_scope": "Numerical and statistical values are checked by the independent raw reviewer."
+  },
+  "prose_review_sha256": "773013623461a3b1f23ea236799fc5ac13b91f9c17bc40593e6d208b40947688",
+  "code_review_sha256": {
+    "csharp_new_modes_review.json": "d0c4afc0cd9b1ab79c71f53692bfb2b43cded4091beb6dfa9695a26c377ba4c6",
+    "python_new_modes_review.json": "bc040587ac021d6195c0fdcfeb3cf9643cabb15da5f9efb18cfaa08f776f81ab",
+    "publication_python_review.json": "7568f22c634e422e2340a4dc4cca6d693ab6f15f816eb3f0a0d833868201172b"
+  },
+  "review_phase": "prepublication"
+}

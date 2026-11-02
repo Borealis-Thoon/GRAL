@@ -1,0 +1,99 @@
+{
+  "status": "pass_with_documented_fidelity_reviews",
+  "skill": "humanize-kit:humanizer",
+  "mode": "Embedded",
+  "artifacts": {
+    "publication/PR_BODY.md": "cded5c9c8052179a3620e4a989f442ea9eb5454b87f8ebe78c615b20b19ff9d7",
+    "docs/evidence_README.md": "7321d66c15941e781b85f8f6c7f3b11cc76b1cbaaf5fc46f6b602902e22c40c8",
+    "docs/optimization_and_scope.md": "add2dc0356e3b9ae90e466e1f95c287e2d842456e1f28a254d78e952467f5825",
+    "docs/runtime_setup.md": "66d2d28df0d57bd414780ad333a500fb9137bfe5faa0054ec273fc504cb7a47b"
+  },
+  "checks": {
+    "measured_tables_exact": true,
+    "source_table_unchanged": true,
+    "ai_section_verbatim": true,
+    "gui_question_verbatim": true,
+    "figure_links_28": true,
+    "figure_embeds_8": true,
+    "figure_link_unique": true,
+    "result_slots_removed": true,
+    "commit_placeholder_preserved": true,
+    "source_commit": true,
+    "raw_audit": true,
+    "point_tail_values": true,
+    "portable_offline_audit_command": true,
+    "legend_explained": true,
+    "timing_caveat": true,
+    "draft_instruction_removed": true,
+    "steady_residual_observation": true,
+    "evidence_bundle_future_removed": true
+  },
+  "tables_source": {
+    "path": "qa/prose_rendered_tables.json",
+    "sha256": "1ba193a39d3da2d6f96e27ee2d570aa8c6e7e51b222c9cd50038cbabe5d06364"
+  },
+  "scientific_review": {
+    "path": "qa/scientific_result_review.json",
+    "sha256": "13b0819f2c6aa0525905159511df77ad28220f566acb667bfadabb77c3500523"
+  },
+  "style_candidate_counts": {
+    "pr": 5,
+    "evidence_README": 2,
+    "optimization_and_scope": 0,
+    "runtime_setup": 0
+  },
+  "fidelity_results": {
+    "pr": {
+      "review_required": true,
+      "candidate_count": 2
+    },
+    "evidence_README": {
+      "review_required": true,
+      "candidate_count": 2
+    },
+    "optimization_and_scope": {
+      "review_required": false,
+      "candidate_count": 0
+    },
+    "runtime_setup": {
+      "review_required": false,
+      "candidate_count": 0
+    }
+  },
+  "fidelity_resolution": "PR and README source snapshots were incomplete skeletons. Additions are measured result tables, independently reviewed diagnostics and the portable audit procedure; removed 77 was the skeleton-only draft reference to PR #77. Modality changes reflect filled results and explicit audit prerequisites. Commands were intentionally updated to use matching portable analyses. Runtime and optimization checks have no fidelity candidates. Manually reviewed scope, conditions, numbers, timing caveats and necessary negatives; automated checks do not certify semantic equivalence.",
+  "limitations": [
+    "Figure targets and portable execution remain root packaging checks.",
+    "Source-series reader four passes observed in session stdout; no dedicated saved receipt.",
+    "EVIDENCE_COMMIT is deliberately retained for root substitution."
+  ],
+  "created_at": "2026-11-02T15:57:49.647403+09:00",
+  "revision_review": {
+    "description": "Replaced an author instruction with the observed steady residual result and clarified memory metric scopes; changed future bundle wording to describe the intended completed bundle. Runtime example placeholders remain actionable reader instructions.",
+    "style_candidates": 5,
+    "fidelity": {
+      "candidate_findings": [
+        {
+          "rule": "english-modality-condition",
+          "level": "review",
+          "before": {
+            "before": 5,
+            "not": 17,
+            "only": 3,
+            "after": 6,
+            "must": 1
+          },
+          "after": {
+            "before": 5,
+            "not": 17,
+            "only": 3,
+            "after": 6
+          }
+        }
+      ],
+      "review_required": true,
+      "semantic_equivalence": "manual_review_required",
+      "automatic_certification": false
+    },
+    "manual_review": "Compared source and final paragraphs. Required distinction between device-wide and process memory remains; zero steady residual counts and work follow the reviewed mode contract. Numeric tables, links, AI disclosure and maintainer question were unchanged."
+  }
+}

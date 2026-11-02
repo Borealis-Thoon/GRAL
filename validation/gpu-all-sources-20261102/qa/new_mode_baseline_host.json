@@ -1,0 +1,231 @@
+{
+  "status": "pass",
+  "passed": 56,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "init_cache_export_reconstructs_and_invalidates_changed_contents",
+      "status": "pass"
+    },
+    {
+      "name": "residual_split_order_threshold_and_batch_boundary",
+      "status": "pass"
+    },
+    {
+      "name": "residual_split_cap_100000",
+      "status": "pass"
+    },
+    {
+      "name": "csr_boundary_cells_and_dictionary_list_order",
+      "status": "pass"
+    },
+    {
+      "name": "unsupported_configuration_rejected_before_server_launch",
+      "status": "pass"
+    },
+    {
+      "name": "particle_range_and_source_rejections",
+      "status": "pass"
+    },
+    {
+      "name": "unsupported_numeric_modes_decay_and_stack_limits",
+      "status": "pass"
+    },
+    {
+      "name": "export_jagged_padding_rectangular_dtype_and_uint_seed",
+      "status": "pass"
+    },
+    {
+      "name": "import_conz3d_double_without_float_rounding",
+      "status": "pass"
+    },
+    {
+      "name": "import_rejects_unexpected_scalars",
+      "status": "pass"
+    },
+    {
+      "name": "import_rejects_trace_shape_byte_mismatch",
+      "status": "pass"
+    },
+    {
+      "name": "active_fresh_count_uses_assigned_source_and_positive_mass",
+      "status": "pass"
+    },
+    {
+      "name": "active_fresh_count_modulates_mass_using_internal_source_group",
+      "status": "pass"
+    },
+    {
+      "name": "active_fresh_count_preserves_upstream_last_iwet_guard",
+      "status": "pass"
+    },
+    {
+      "name": "active_fresh_count_rejects_nonfinite_modulated_mass",
+      "status": "pass"
+    },
+    {
+      "name": "trace_target_situation_gate",
+      "status": "pass"
+    },
+    {
+      "name": "padding_writes_exact_bytes_between_primitive_payloads",
+      "status": "pass"
+    },
+    {
+      "name": "positive_padding_clears_only_bytes_needed",
+      "status": "pass"
+    },
+    {
+      "name": "zero_byte_padding_does_not_touch_scratch_buffer",
+      "status": "pass"
+    },
+    {
+      "name": "serialization_wire_bytes_match_preoptimization_fixture",
+      "status": "pass"
+    },
+    {
+      "name": "buffered_export_wire_equals_raw_with_fewer_writes",
+      "status": "pass"
+    },
+    {
+      "name": "server_init_and_control_flush_distinct_frames",
+      "status": "pass"
+    },
+    {
+      "name": "server_buffered_output_reuses_read_ahead_across_payload_and_next_header",
+      "status": "pass"
+    },
+    {
+      "name": "cancellation_with_pending_buffer_unblocks_dispose",
+      "status": "pass"
+    },
+    {
+      "name": "failed_partial_export_does_not_block_dispose",
+      "status": "pass"
+    },
+    {
+      "name": "server_dispose_terminates_only_its_stalled_process_tree",
+      "status": "pass"
+    },
+    {
+      "name": "server_dispose_propagates_nonzero_exit",
+      "status": "pass"
+    },
+    {
+      "name": "cancellation_unblocks_server_read_and_terminates_owned_child",
+      "status": "pass"
+    },
+    {
+      "name": "export_span_Byte_preserves_wire_bits",
+      "status": "pass"
+    },
+    {
+      "name": "export_span_Boolean_preserves_wire_bits",
+      "status": "pass"
+    },
+    {
+      "name": "export_span_Int16_preserves_wire_bits",
+      "status": "pass"
+    },
+    {
+      "name": "export_span_UInt16_preserves_wire_bits",
+      "status": "pass"
+    },
+    {
+      "name": "export_span_Int32_preserves_wire_bits",
+      "status": "pass"
+    },
+    {
+      "name": "export_span_UInt32_preserves_wire_bits",
+      "status": "pass"
+    },
+    {
+      "name": "export_span_Int64_preserves_wire_bits",
+      "status": "pass"
+    },
+    {
+      "name": "export_span_UInt64_preserves_wire_bits",
+      "status": "pass"
+    },
+    {
+      "name": "export_span_Single_preserves_wire_bits",
+      "status": "pass"
+    },
+    {
+      "name": "export_span_Double_preserves_wire_bits",
+      "status": "pass"
+    },
+    {
+      "name": "import_span_Int32_handles_partial_reads_and_exact_bits",
+      "status": "pass"
+    },
+    {
+      "name": "import_span_Int64_handles_partial_reads_and_exact_bits",
+      "status": "pass"
+    },
+    {
+      "name": "import_span_Single_handles_partial_reads_and_exact_bits",
+      "status": "pass"
+    },
+    {
+      "name": "import_span_Double_handles_partial_reads_and_exact_bits",
+      "status": "pass"
+    },
+    {
+      "name": "export_rectangular_and_non_sz_arrays_use_exact_fallback_bytes",
+      "status": "pass"
+    },
+    {
+      "name": "export_empty_and_typed_null_emit_zero_payload",
+      "status": "pass"
+    },
+    {
+      "name": "export_ragged_null_rows_preserve_nan_and_signed_zero_bits",
+      "status": "pass"
+    },
+    {
+      "name": "span_payloads_cross_one_mib_boundary_without_byte_loss",
+      "status": "pass"
+    },
+    {
+      "name": "import_rectangular_and_non_sz_fallbacks_handle_partial_reads",
+      "status": "pass"
+    },
+    {
+      "name": "rectangular_fallback_crosses_one_mib_boundary_without_byte_loss",
+      "status": "pass"
+    },
+    {
+      "name": "import_truncated_span_or_fallback_aborts_with_end_of_stream",
+      "status": "pass"
+    },
+    {
+      "name": "import_ragged_padding_rejects_nonzero_unallocated_cells",
+      "status": "pass"
+    },
+    {
+      "name": "import_zero_padding_batches_reads_and_checks_numeric_zero",
+      "status": "pass"
+    },
+    {
+      "name": "import_zero_padding_crosses_chunk_boundary_and_rejects_truncated_or_nonzero_tail",
+      "status": "pass"
+    },
+    {
+      "name": "import_integer_padding_rejects_sign_bit_only_values",
+      "status": "pass"
+    },
+    {
+      "name": "init_cache_new_grid_fields_invalidate_only_after_ack",
+      "status": "pass"
+    },
+    {
+      "name": "init_cache_coordinates_require_explicit_opt_in_and_detect_mutation",
+      "status": "pass"
+    },
+    {
+      "name": "init_cache_rejects_invalid_coordinate_environment",
+      "status": "pass"
+    }
+  ]
+}

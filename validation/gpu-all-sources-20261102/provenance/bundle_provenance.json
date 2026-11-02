@@ -1,0 +1,636 @@
+{
+  "source_head": "b60673164b749896c3b942d0e89753addc1c6f7b",
+  "original_master_sha256": "602de1845eb5d11471a37ec991fd32f5293b1d11a8ac7356c934924a30c9fbac",
+  "original_cohort_sha256": {
+    "transient_all_sources": "248b49d71d1e0af94388523eaac48b44a44bb458b2a8c81d5d56788c8eafa5a4",
+    "steady_all_sources": "4741f2eaa1b867901e4a8200033df1e471b010cfa383b63463a7b80a2bf792d1"
+  },
+  "public_cohort_sha256": {
+    "transient_all_sources": "bf2c71709e8dd3c1eaff23ea8b3b07a9f069682e3ba6205e91b104c9c86216fa",
+    "steady_all_sources": "0d2cdabd1fbf209942b83e659c4ab21217d2064bf2578e74adddba9c33820526"
+  },
+  "run_path_rewrites": [
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_science24_s0_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s0_cpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_science24_s0_cpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_science24_s0_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s0_gpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_science24_s0_gpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_science24_s100000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s100000_gpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_science24_s100000_gpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_science24_s100000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s100000_cpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_science24_s100000_cpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_science24_s200000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s200000_cpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_science24_s200000_cpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_science24_s200000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s200000_gpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_science24_s200000_gpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_science24_s300000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s300000_gpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_science24_s300000_gpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_science24_s300000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s300000_cpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_science24_s300000_cpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_science24_s400000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s400000_cpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_science24_s400000_cpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_science24_s400000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s400000_gpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_science24_s400000_gpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_science24_s500000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s500000_gpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_science24_s500000_gpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_science24_s500000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s500000_cpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_science24_s500000_cpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_timing24_r1_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing24_r1_gpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_timing24_r1_gpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_timing24_r1_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing24_r1_cpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_timing24_r1_cpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_timing24_r2_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing24_r2_cpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_timing24_r2_cpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_timing24_r2_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing24_r2_gpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_timing24_r2_gpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_timing48_r0_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing48_r0_gpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_timing48_r0_gpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_timing48_r0_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing48_r0_cpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_timing48_r0_cpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_timing48_r1_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing48_r1_cpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_timing48_r1_cpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_timing48_r1_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing48_r1_gpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_timing48_r1_gpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_timing48_r2_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing48_r2_gpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_timing48_r2_gpu"
+    },
+    {
+      "manifest": "transient_all_sources",
+      "run_id": "transient_all_sources_timing48_r2_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing48_r2_cpu",
+      "to": "../runs/study/transient_all_sources/transient_all_sources_timing48_r2_cpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_science24_s0_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s0_cpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_science24_s0_cpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_science24_s0_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s0_gpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_science24_s0_gpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_science24_s100000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s100000_gpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_science24_s100000_gpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_science24_s100000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s100000_cpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_science24_s100000_cpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_science24_s200000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s200000_cpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_science24_s200000_cpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_science24_s200000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s200000_gpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_science24_s200000_gpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_science24_s300000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s300000_gpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_science24_s300000_gpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_science24_s300000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s300000_cpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_science24_s300000_cpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_science24_s400000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s400000_cpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_science24_s400000_cpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_science24_s400000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s400000_gpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_science24_s400000_gpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_science24_s500000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s500000_gpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_science24_s500000_gpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_science24_s500000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s500000_cpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_science24_s500000_cpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_timing24_r1_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing24_r1_gpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_timing24_r1_gpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_timing24_r1_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing24_r1_cpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_timing24_r1_cpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_timing24_r2_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing24_r2_cpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_timing24_r2_cpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_timing24_r2_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing24_r2_gpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_timing24_r2_gpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_timing48_r0_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing48_r0_gpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_timing48_r0_gpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_timing48_r0_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing48_r0_cpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_timing48_r0_cpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_timing48_r1_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing48_r1_cpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_timing48_r1_cpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_timing48_r1_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing48_r1_gpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_timing48_r1_gpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_timing48_r2_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing48_r2_gpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_timing48_r2_gpu"
+    },
+    {
+      "manifest": "steady_all_sources",
+      "run_id": "steady_all_sources_timing48_r2_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing48_r2_cpu",
+      "to": "../runs/study/steady_all_sources/steady_all_sources_timing48_r2_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_science24_s0_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s0_cpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_science24_s0_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_science24_s0_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s0_gpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_science24_s0_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_science24_s100000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s100000_gpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_science24_s100000_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_science24_s100000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s100000_cpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_science24_s100000_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_science24_s200000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s200000_cpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_science24_s200000_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_science24_s200000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s200000_gpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_science24_s200000_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_science24_s300000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s300000_gpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_science24_s300000_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_science24_s300000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s300000_cpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_science24_s300000_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_science24_s400000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s400000_cpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_science24_s400000_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_science24_s400000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s400000_gpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_science24_s400000_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_science24_s500000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s500000_gpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_science24_s500000_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_science24_s500000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_science24_s500000_cpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_science24_s500000_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_timing24_r1_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing24_r1_gpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_timing24_r1_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_timing24_r1_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing24_r1_cpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_timing24_r1_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_timing24_r2_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing24_r2_cpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_timing24_r2_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_timing24_r2_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing24_r2_gpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_timing24_r2_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_timing48_r0_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing48_r0_gpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_timing48_r0_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_timing48_r0_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing48_r0_cpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_timing48_r0_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_timing48_r1_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing48_r1_cpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_timing48_r1_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_timing48_r1_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing48_r1_gpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_timing48_r1_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_timing48_r2_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing48_r2_gpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_timing48_r2_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "transient_all_sources_timing48_r2_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\transient_all_sources\\transient_all_sources_timing48_r2_cpu",
+      "to": "runs/study/transient_all_sources/transient_all_sources_timing48_r2_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_science24_s0_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s0_cpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_science24_s0_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_science24_s0_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s0_gpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_science24_s0_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_science24_s100000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s100000_gpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_science24_s100000_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_science24_s100000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s100000_cpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_science24_s100000_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_science24_s200000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s200000_cpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_science24_s200000_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_science24_s200000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s200000_gpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_science24_s200000_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_science24_s300000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s300000_gpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_science24_s300000_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_science24_s300000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s300000_cpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_science24_s300000_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_science24_s400000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s400000_cpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_science24_s400000_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_science24_s400000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s400000_gpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_science24_s400000_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_science24_s500000_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s500000_gpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_science24_s500000_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_science24_s500000_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_science24_s500000_cpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_science24_s500000_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_timing24_r1_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing24_r1_gpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_timing24_r1_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_timing24_r1_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing24_r1_cpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_timing24_r1_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_timing24_r2_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing24_r2_cpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_timing24_r2_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_timing24_r2_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing24_r2_gpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_timing24_r2_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_timing48_r0_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing48_r0_gpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_timing48_r0_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_timing48_r0_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing48_r0_cpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_timing48_r0_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_timing48_r1_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing48_r1_cpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_timing48_r1_cpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_timing48_r1_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing48_r1_gpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_timing48_r1_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_timing48_r2_gpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing48_r2_gpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_timing48_r2_gpu"
+    },
+    {
+      "manifest": "master",
+      "run_id": "steady_all_sources_timing48_r2_cpu",
+      "field": "path",
+      "from": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady\\runs\\study\\steady_all_sources\\steady_all_sources_timing48_r2_cpu",
+      "to": "runs/study/steady_all_sources/steady_all_sources_timing48_r2_cpu"
+    }
+  ],
+  "protocol_rewritten_relative": true,
+  "master_cohort_paths_and_sha256_rewritten_for_public_manifests": true,
+  "raw_logs_rewritten": false,
+  "functional_scope": "Summary and case JSON only; raw functional runs excluded.",
+  "analysis_review_receipt": "qa/final_review.json",
+  "implementation_new_modes_scope": "Historical initial implementation receipt; its initial hashes are not current source proof. See the frozen source hashes."
+}

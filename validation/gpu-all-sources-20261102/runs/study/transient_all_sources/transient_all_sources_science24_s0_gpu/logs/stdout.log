@@ -1,0 +1,610 @@
+
++------------------------------------------------------+
+|                                                      |
++  > >         G R A L Version 27.01Beta1        < <   +
+|                  .NET10 Version                      |
+|                                                      |
++------------------------------------------------------+
+
+[GRAL]  Copyright (C) <2019>  <Dietmar Oettl, Markus Kuntner>
+This program comes with ABSOLUTELY NO WARRANTY; for details start GRAL with a startup parameter ‘show_w’
+This is free software, and you are welcome to redistribute it under certain conditions; start GRAL with a startup parameter ‘show_c’ for details. )
+
+First and final weather situation from command line: 1 / 24
+
+Source group count: 4
+
+Searching for optional file ggeom.asc...
+Reading GRAMM orography file ggeom.asc
+SIMD - support: 8 float values  IsHardwareAccelerated: True
+
+Array declarations..........
+.
+
+Total number of horizontal slices for concentration grid: 1
+  Slice height above ground [m]: 1.5
+Reading emissions_timeseries.txt successful - mean factors for each source group: 
+  Source group: 1 Mean emission factor: 1
+  Source group: 2 Mean emission factor: 1
+  Source group: 3 Mean emission factor: 1
+  Source group: 4 Mean emission factor: 1
+
+GRAL Deterministic Mode
+
+Reading file point.dat
+Total number of point sources: 1
+Total emission [kg/h]: 1.000 (  SG 1[kg/h]: 0.000  SG 2[kg/h]: 0.000  SG 3[kg/h]: 1.000  SG 4[kg/h]: 0.000 )
+
+Reading file line.dat
+Total number of line source segments: 1
+Total emission [kg/h]: 1.000 (  SG 1[kg/h]: 0.000  SG 2[kg/h]: 1.000  SG 3[kg/h]: 0.000  SG 4[kg/h]: 0.000 )
+
+Reading file portals.dat
+Total number of tunnel portals: 1
+Total emission [kg/h]: 1.000 (  SG 1[kg/h]: 0.000  SG 2[kg/h]: 0.000  SG 3[kg/h]: 0.000  SG 4[kg/h]: 1.000 )
+
+Reading file cadastre.dat
+Total number of area source partitions: 1
+Total emission [kg/h]: 1.000 (  SG 1[kg/h]: 1.000  SG 2[kg/h]: 0.000  SG 3[kg/h]: 0.000  SG 4[kg/h]: 0.000 )
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Transient GRAL mode. Number of weather situations: 25
+_______________________________________________________________________________
+Weather number: 1 - 01.01-1:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 2.0
+Dispersion [s]: 2.0
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 2 - 01.01-2:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.3
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 3 - 01.01-3:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.3
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 4 - 01.01-4:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.3
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 5 - 01.01-5:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.2
+Dispersion [s]: 0.2
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 6 - 01.01-6:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.3
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 7 - 01.01-7:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.2
+Dispersion [s]: 0.2
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 8 - 01.01-8:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.3
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 9 - 01.01-9:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.2
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 10 - 01.01-10:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.2
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 11 - 01.01-11:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.3
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 12 - 01.01-12:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.3
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 13 - 01.01-13:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.3
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 14 - 01.01-14:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.2
+Dispersion [s]: 0.2
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 15 - 01.01-15:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.2
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 16 - 01.01-16:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.2
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 17 - 01.01-17:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.3
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 18 - 01.01-18:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.2
+Dispersion [s]: 0.2
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 19 - 01.01-19:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.2
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 20 - 01.01-20:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.3
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 21 - 01.01-21:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.3
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 22 - 01.01-22:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.3
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 23 - 01.01-23:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.3
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 24 - 01.01-24:00
+Reading GRAMM wind field: ../Weather\00001.wnd
+Reading GRAMM stability classes: ../Weather\00001.scl
+
+FLOW FIELD COMPUTATION WITH TOPOGRAPHY
+DIAGNOSTIC WIND FIELD CALCULATION
+Using a total of 360000 particles (100 part./s) within the model domain
+
+Obukhov length [m]:        1000.0
+Friction velocity [m/s]:   0.19
+Boundary-layer height [m]: 584
+Init meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+GRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4
+                           ----------
+
+Dispersion computation.....
+Dispersion computation.....
+
+Total simulation time [s]: 0.3
+Dispersion [s]: 0.2
+Flow field [s]: 0.0
+Writing result files in a background thread
+_______________________________________________________________________________
+Weather number: 25 - 02.01-1:00
+
+Summarized emission rates per source group in kg
+SG:   1  	SG:   2  	SG:   3  	SG:   4  	
+2.40e+001	2.40e+001	2.40e+001	2.40e+001	
+Process exit called

@@ -1,0 +1,387 @@
+{
+  "schema_version": 2,
+  "status": "predeclared_design_no_results",
+  "cohort_freeze_required": true,
+  "job": "D:\\INU_Modeling_Work\\jobs\\20261102_gral_gpu_point_portal_steady",
+  "scope": "two separate new-mode synthetic cohorts; do not pool modes or prior studies",
+  "primary_fixture": {
+    "source_groups": [
+      "AREA",
+      "horizontal_LINE",
+      "POINT",
+      "PORTAL"
+    ],
+    "unsupported_source_in_primary_fixture": false,
+    "expected_grid": [
+      50,
+      50
+    ],
+    "expected_new_particles_per_model_hour": 360000,
+    "verify_actual_fixture_before_cohort": true,
+    "source_group_ids": [
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "execution": {
+    "allowed_logical_cpus": 16,
+    "concurrent_model_processes": 1,
+    "record_effective_affinity": true,
+    "modify_process_lasso": false,
+    "cache_condition": "predeclared_warm_with_untimed_preparation",
+    "excluded_initial_situations_for_steady_timing": 3,
+    "affinity_logical_cpus": [
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "measured_quiet_continuous_seconds": 10.0,
+    "quiet_sample_interval_seconds": 5.0,
+    "optional_initial_quiet_seconds": 45.0,
+    "cohort_order": [
+      "transient_all_sources",
+      "steady_all_sources"
+    ],
+    "pool_with_prior_45s_quiet_study": false
+  },
+  "seeds": {
+    "offsets": [
+      0,
+      100000,
+      200000,
+      300000,
+      400000,
+      500000
+    ],
+    "base_offset": 0,
+    "overlay": "checked(IWET + offset) passed only to designated RNG constructor",
+    "change_model_time_or_meteorology": false,
+    "record_effective_seed1_seed2": true,
+    "verify_distinct_actual_states": true,
+    "verify_zero_offset_unchanged_build": true
+  },
+  "measured_runs": {
+    "science_24h": {
+      "seeds": 6,
+      "runs": 12,
+      "pair_backend_orders": [
+        [
+          "CPU",
+          "GPU"
+        ],
+        [
+          "GPU",
+          "CPU"
+        ],
+        [
+          "CPU",
+          "GPU"
+        ],
+        [
+          "GPU",
+          "CPU"
+        ],
+        [
+          "CPU",
+          "GPU"
+        ],
+        [
+          "GPU",
+          "CPU"
+        ]
+      ]
+    },
+    "timing_24h_extra": {
+      "base_seed_extra_pairs": 2,
+      "runs": 4,
+      "pair_backend_orders": [
+        [
+          "GPU",
+          "CPU"
+        ],
+        [
+          "CPU",
+          "GPU"
+        ]
+      ],
+      "include_base_seed_science_pair": true
+    },
+    "timing_48h": {
+      "base_seed_pairs": 3,
+      "runs": 6,
+      "pair_backend_orders": [
+        [
+          "GPU",
+          "CPU"
+        ],
+        [
+          "CPU",
+          "GPU"
+        ],
+        [
+          "GPU",
+          "CPU"
+        ]
+      ]
+    },
+    "timing_pair_count_per_duration": 3,
+    "total_per_cohort": 22,
+    "total_all_cohorts": 44,
+    "scientific_disjoint_block_count": 3,
+    "independence_of_rng_streams_verified": false,
+    "scientific_distinct_seed_count": 6
+  },
+  "functional_matrix": {
+    "duration_hours": 4,
+    "cases": [
+      "AREA",
+      "LINE",
+      "POINT",
+      "PORTAL",
+      "steady supported modes",
+      "source-specific branch probes",
+      "remaining unsupported physics fallback",
+      "offset_zero_vs_bare_CPU"
+    ],
+    "fallback_scope": "whole_situation",
+    "fallback_oracle": "explicit_CPU_same_inputs_same_seed",
+    "must_record_actual_dispatch": true,
+    "note": "functional tests and two warmups precede the 44 measured runs; validation owner defines exact matrix",
+    "outside_measured_44_runs": true
+  },
+  "science": {
+    "primary_hours_inclusive": [
+      4,
+      24
+    ],
+    "sensitivity_hours_inclusive": [
+      1,
+      24
+    ],
+    "outcomes": [
+      "SG1_AREA",
+      "SG2_horizontal_LINE",
+      "SG3_POINT",
+      "SG4_PORTAL",
+      "aggregate"
+    ],
+    "weights": "cell_area_times_output_interval",
+    "metrics": [
+      "symmetric_weighted_NMAE",
+      "signed_normalized_bias",
+      "signed_absolute_mean_difference",
+      "spatial_Pearson_time_mean_maps",
+      "P95",
+      "P99",
+      "maximum_absolute_difference",
+      "maximum_concentration_and_location"
+    ],
+    "quantile_method": "linear_for_equal_weights_otherwise_predeclared_weighted",
+    "zero_policy": "both_zero_error_zero; positive_numerator_zero_reference_infinite; constant_correlation_null",
+    "disjoint_seed_index_blocks": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        5
+      ]
+    ],
+    "L": "weighted_mean_absolute_difference",
+    "A_b": "(L(C_i,G_i)+L(C_j,G_j))/2",
+    "B_b": "L(C_i,C_j)",
+    "D_b": "L(G_i,G_j)",
+    "R_b": "A_b/B_b",
+    "V_b": "D_b/B_b",
+    "primary_observed_gate": "R_b < 1 in every informative block for every source group and aggregate",
+    "zero_cpu_reference": "A_b=0 exact_match; A_b>0 engineering_fail",
+    "dispersion_review_band_inclusive": [
+      0.5,
+      2.0
+    ],
+    "dispersion_band_is_physical_margin": false,
+    "secondary_diagnostics_review_required": true,
+    "all_15_seed_pairs_independent": false,
+    "mode_pooling": false,
+    "timing_scope": "whole mixed-source run; no attribution of run time to individual source types",
+    "independence_of_rng_streams_verified": false
+  },
+  "uncertainty": {
+    "resampling_unit": "disjoint prespecified seed-pair block within one cohort; independence is an assumption, not verified",
+    "paired_all_metrics_and_source_groups": true,
+    "block_count": 3,
+    "bootstrap": "enumerate_all_27_ordered_size3_resamples",
+    "statistics": [
+      "sum_A_over_sum_B",
+      "sum_D_over_sum_B"
+    ],
+    "percentiles": [
+      2.5,
+      97.5,
+      95
+    ],
+    "interval_status": "exploratory_small_sample_no_coverage_guarantee",
+    "interval_is_acceptance_certificate": false,
+    "optional_exact_sign_test_best_p": null,
+    "formal_physical_equivalence": "not_tested_no_application_margin",
+    "sign_test": "not reported as calibrated inference because RNG stream independence is unverified"
+  },
+  "telemetry": {
+    "elapsed": [
+      "process_start_to_exit",
+      "boundary_after_situation3_to_final_drain",
+      "full_situation_start_to_end",
+      "seed_to_end_diagnostic",
+      "CUDA_event_kernel_device_ms_delta",
+      "host_launch_sync_status_intervals_separate"
+    ],
+    "process_sample_interval_ms": 100,
+    "gpu_sample_interval_ms_range": [
+      100,
+      250
+    ],
+    "memory": [
+      "process_working_set_RSS",
+      "process_private_bytes",
+      "OS_lifetime_peak_working_set_if_available",
+      "device_wide_GPU_memory_and_idle_baseline",
+      "actual_process_GPU_memory_only_if_available",
+      "application_allocation_counters_separately"
+    ],
+    "unavailable_value": null,
+    "infer_process_VRAM_from_device_total": false,
+    "timing_statistics": [
+      "raw_three_pairs",
+      "median",
+      "min",
+      "max",
+      "sample_SD",
+      "CV",
+      "paired_speedup_median_range"
+    ]
+  },
+  "decision_values": [
+    "INVALID",
+    "engineering_fail",
+    "engineering_review_required",
+    "engineering_pass_observed_fixture"
+  ],
+  "additional_claim_fields": [
+    "inference_inconclusive",
+    "physical_validation_not_established",
+    "formal_equivalence_not_tested"
+  ],
+  "references": [
+    {
+      "title": "NIST Technical Note 2106: Comparing Instruments, Section 5",
+      "url": "https://nvlpubs.nist.gov/nistpubs/TechnicalNotes/NIST.TN.2106.pdf"
+    },
+    {
+      "title": "SciPy bootstrap: paired resampling and degenerate distributions",
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.bootstrap.html"
+    }
+  ],
+  "cohorts": {
+    "transient_all_sources": {
+      "steady": false,
+      "duration_semantics": "24/48 consecutive one-hour transient situations"
+    },
+    "steady_all_sources": {
+      "steady": true,
+      "duration_semantics": "24/48 steady meteorological situations, each with a 3600-second reference interval; no inter-situation particle carryover"
+    }
+  },
+  "warmup": {
+    "per_cohort_gpu_run_hours": 4,
+    "must_be_completed_before_measured_runs": true,
+    "must_match_frozen_binary_and_runtime": true,
+    "shared_ptx_cache": "warm; actual GPU startup cache_status=hit in each measured run",
+    "measurements_included_in_44": false
+  },
+  "mode_contract": {
+    "transient_all_sources": {
+      "fresh": "completed GPU fresh request count equals dispatched fresh particles each situation",
+      "residual": "completed GPU residual request count equals dispatched residual particles; host ledger and CUDA event/launch evidence checked",
+      "carryover": "supported; source-group output remains separate"
+    },
+    "steady_all_sources": {
+      "fresh": "completed GPU fresh request count equals dispatched fresh particles exactly once per situation",
+      "residual_particles": 0,
+      "residual_batches": 0,
+      "transient_state": "must not allocate or import transient-only state",
+      "completed_residual_request_particles": 0
+    },
+    "source_type_device_counts_measured": false,
+    "source_type_evidence": "single-source functional GPU counters and output; mixed frozen four-source inputs, positive SG outputs, total counters, and CPU comparison",
+    "per_situation_device_evidence": [
+      "positive CUDA event kernel_device_ms delta",
+      "increased kernel_launches",
+      "phase_counts deltas equal dispatched particles"
+    ],
+    "phase_counter_scope": "host cumulative particle count after successful GPU execution requests; not an in-kernel device counter"
+  },
+  "supplementary_fixed_seed_numerics": {
+    "predeclared_for_new_study": true,
+    "durations": [
+      24,
+      48
+    ],
+    "base_seed": 0,
+    "paired_CPU_GPU": 3,
+    "within_CPU_pairs": 3,
+    "within_GPU_pairs": 3,
+    "windows": [
+      "all situations",
+      "situations 4..N"
+    ],
+    "dependent_comparisons": true,
+    "adds_scientific_seeds": false,
+    "metrics": [
+      "NMAE",
+      "signed_bias",
+      "max_absolute_difference",
+      "exact_decoded_array_equality",
+      "different_value_count"
+    ]
+  },
+  "freeze": {
+    "owner": "root",
+    "before_first_measured_run": true,
+    "hashes": [
+      "protocol_json",
+      "protocol_md",
+      "ordered_manifest",
+      "source",
+      "overlay_source",
+      "binary",
+      "GPU_runtime",
+      "NVRTC",
+      "validation_scripts",
+      "analysis_scripts",
+      "input_files",
+      "warmup_receipt",
+      "seed_probe"
+    ],
+    "amendment": "record reasons and outcome visibility; never retroactively tune acceptance"
+  }
+}

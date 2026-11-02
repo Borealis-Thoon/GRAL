@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "reviewer": "review_new_modes_csharp",
+  "base_commit": "1a44c07ba76db21c557277a841e6904ace8b9328",
+  "verdict": "approve_source_with_verification_limits",
+  "files": {
+    "gpu/runtime/fields_manifest.json": "0a5ac8caf46ae88d726580fa28f7573b888eb5748d28703d0b829c6da46cf242",
+    "gpu/runtime/server.py": "7a3bcf8f80c0c78d3a0e557d484c9a59c43e47ea7365f372e3ef0629a7187113",
+    "src/Program.cs": "83ee13d672e0987b4b94a1a7bc00616c631487868d728088b362ebd82feb9dfe",
+    "gpu/runtime/generated.cu": "25b5689a4b0fb5af52f5767175d043fb3cf47b6620a124dfdfbb5f053d9059b6",
+    "src/GpuSituationDriver.cs": "e81aff1cd7cee1c5295c04d2bb53050f2b41aaf9c652d3f2c3dda234d35470fd"
+  },
+  "findings": [
+    {
+      "test": "source_series_rejects_nonfinite_values_before_device_launch",
+      "status": "resolved",
+      "fix": "Integrator added float.IsFinite in ValidateTimeSeries",
+      "file": "src/GpuSituationDriver.cs",
+      "green": "qa/source_series_finite_green_v2.json",
+      "line": 141,
+      "id": "CS-01",
+      "severity": "MEDIUM",
+      "issue": "Nonfinite source time-series values accepted before launch",
+      "red": "qa/source_series_finite_red.json"
+    }
+  ],
+  "rounding": {
+    "runtime": "10.0.12",
+    "values": 27850180,
+    "device_executed": false,
+    "lower": 0.01,
+    "evidence": "qa/csharp_probe_result.json",
+    "upper": 0.1,
+    "mismatches": 0
+  },
+  "verification": {
+    "model_build": "qa/overlay_v2_build.log and qa/bare_v2_build.log inspected: both 0 warnings and 0 errors; no duplicate build",
+    "full_postfix_host_result": "58/58 PASS; qa/source_series_finite_green_v2.json; prior seven process test failures traced by integrator to unset HOST_TEST_PYTHON",
+    "diff_check": "pass",
+    "focused_finite_test": "RED to GREEN",
+    "format": "Blocked by BuildHost named-pipe UnauthorizedAccessException",
+    "model_or_gpu_run_by_reviewer": false
+  },
+  "writing": {
+    "manual_fidelity": "Reviewed conditions, identifiers, scope, counts and evidence paths",
+    "limit": "Final source report supersedes initial draft after integrator correction",
+    "skill": "humanize-kit:humanizer",
+    "mode": "Embedded",
+    "advisory_review": "Retained compact source semantics and explicit validation limits; scanner style candidates reviewed manually. Final self-comparison has no automated protected-content candidate and is not independent semantic proof."
+  },
+  "final_literal_rebind": {
+    "previous_sha256": "c3df802c3704975aaa64b853c11b4e326e8378c950870f3ee4b89341f8ec1662",
+    "final_sha256": "e81aff1cd7cee1c5295c04d2bb53050f2b41aaf9c652d3f2c3dda234d35470fd",
+    "literal_before": "Unsupported GPU configuration: zero-decay line or area emissions without deposition required",
+    "literal_after": "Unsupported GPU configuration: zero-decay emissions without deposition required",
+    "inverse_replacement_sha256_matches_previous": true,
+    "conditions_and_numeric_code_unchanged": true
+  }
+}

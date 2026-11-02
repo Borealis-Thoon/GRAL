@@ -1,0 +1,507 @@
+{
+  "schema": 1,
+  "case": "steady_all_sources",
+  "config": {
+    "sources": "all_sources",
+    "dispatch": "gpu",
+    "steady": true
+  },
+  "hours": 48,
+  "input_rows": 49,
+  "workers": 16,
+  "particles_per_hour": 360000,
+  "particles_per_second": 100.0,
+  "grid_cells": [
+    50,
+    50
+  ],
+  "gral_domain_m": [
+    2000,
+    3000,
+    2000,
+    3000
+  ],
+  "factors": [
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      1
+    ]
+  ],
+  "source_groups": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "source_emission_kg_h": [
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "expected_emitted_mass_kg": [
+    48.0,
+    48.0,
+    48.0,
+    48.0
+  ],
+  "emission_check_scope": "transient emitted mass; steady frequencies have different accounting",
+  "geometry_qa": {
+    "status": "pass",
+    "checks": {
+      "dimensions": true,
+      "flat_zero_terrain": true,
+      "positive_volumes": true,
+      "positive_face_areas": true,
+      "zero_slope_projections": true,
+      "strict_vertical_order": true,
+      "coordinate_origin": true,
+      "full_stream_consumed": true,
+      "center_y_outside_six_cell_border": true,
+      "layer_1_center_volume": true,
+      "layer_2_center_volume": true,
+      "layer_3_center_volume": true,
+      "layer_4_center_volume": true,
+      "layer_5_center_volume": true,
+      "layer_6_center_volume": true,
+      "layer_7_center_volume": true,
+      "layer_8_center_volume": true,
+      "layer_9_center_volume": true,
+      "layer_10_center_volume": true,
+      "layer_11_center_volume": true,
+      "layer_12_center_volume": true,
+      "layer_13_center_volume": true,
+      "layer_14_center_volume": true,
+      "layer_15_center_volume": true,
+      "layer_16_center_volume": true,
+      "interface_0_flat": true,
+      "interface_1_flat": true,
+      "interface_2_flat": true,
+      "interface_3_flat": true,
+      "interface_4_flat": true,
+      "interface_5_flat": true,
+      "interface_6_flat": true,
+      "interface_7_flat": true,
+      "interface_8_flat": true,
+      "interface_9_flat": true,
+      "interface_10_flat": true,
+      "interface_11_flat": true,
+      "interface_12_flat": true,
+      "interface_13_flat": true,
+      "interface_14_flat": true,
+      "interface_15_flat": true,
+      "interface_16_flat": true
+    },
+    "bytes": 261874,
+    "sha256": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+    "domain_width_m": 6000,
+    "domain_length_m": 5000,
+    "domain_top_m": 4369.43994140625,
+    "lowest_center_m": 10.0,
+    "top_nudging_lowest_center_m": 1719.52001953125,
+    "interior_after_six_cell_border_xy": [
+      12,
+      8
+    ],
+    "scope": "binary layout, geometric identities, and border clearance; not solver or scientific validity"
+  },
+  "synthetic_only": true,
+  "schedule": "constant",
+  "source_series_units": null,
+  "seed_control": "none in inputs; external benchmark overlay only",
+  "input_sha256": {
+    "Computation/cadastre.dat": "a96d6f79e30197648deb8315f1d8d59f6dcd008f0e531ace898fbbcbaa6e25e9",
+    "Computation/emissions_timeseries.txt": "86732cdff4c858bebed15dfb2de3e4f7ff80233b6dfbe83279e06f2521914f12",
+    "Computation/ggeom.asc": "d0a221bf73a851463947847f28bf94a8dcb374a594a5aaa88019bce4581bbf69",
+    "Computation/GRAL.geb": "4a1a16a30242c488e0fc651082f8c632475c219f47b109764093936edd34bd4b",
+    "Computation/GRAMM.geb": "cd61d72e5e3681dad5ca8e093fb5b888798fa93fee0cee5cffb37e2c1edcf3fc",
+    "Computation/in.dat": "205d5fd6a642df721f0ff07dce2c387cd71d6e58264eda086c1aeba369b65df9",
+    "Computation/line.dat": "7d9a986d92e05d99d9723172aba4786c08e6329cef32c27aab0e05e286e6dc2d",
+    "Computation/Max_Proc.txt": "e6c21e8d260fe71882debdb339d2402a2ca7648529bc2303f48649bce0380017",
+    "Computation/meteopgt.all": "cb55be912348a35628914c97afe0a9f94f527615e666151bd80b3eddc2ce75fb",
+    "Computation/mettimeseries.dat": "ebe912eac873446424c3323747e4ada11c954596cd1a782251320dde939b7644",
+    "Computation/point.dat": "3cf5dce19d8799b9e800676e6e4ec9259e1cbd0f40424e8879ef95e99635b951",
+    "Computation/portals.dat": "bdfde652dd34d619291f79ce30441cb09eafdce130adb2c603024fdacdddbebb",
+    "Computation/windfeld.txt": "db7188d2cd7270d826a85aa4edc04f20d1d88ac13cf9fc535f3e50881e132ddd",
+    "Weather/00001.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00001.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00002.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00002.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00003.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00003.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00004.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00004.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00005.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00005.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00006.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00006.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00007.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00007.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00008.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00008.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00009.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00009.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00010.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00010.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00011.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00011.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00012.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00012.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00013.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00013.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00014.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00014.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00015.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00015.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00016.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00016.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00017.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00017.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00018.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00018.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00019.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00019.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00020.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00020.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00021.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00021.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00022.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00022.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00023.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00023.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00024.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00024.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00025.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00025.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00026.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00026.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00027.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00027.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00028.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00028.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00029.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00029.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00030.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00030.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00031.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00031.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00032.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00032.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00033.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00033.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00034.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00034.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00035.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00035.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00036.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00036.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00037.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00037.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00038.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00038.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00039.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00039.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00040.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00040.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00041.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00041.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00042.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00042.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00043.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00043.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00044.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00044.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00045.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00045.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00046.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00046.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00047.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00047.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e",
+    "Weather/00048.scl": "56406c8d1ef276d934f050d05b01284c763031ef0c503e7d7fd4db077e16df1b",
+    "Weather/00048.wnd": "6ae21beccb485acfd63d063c838d53de9bf4994cfa32e77dc905228e9103667e"
+  }
+}

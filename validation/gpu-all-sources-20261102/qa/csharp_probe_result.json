@@ -1,0 +1,10 @@
+{
+  "runtime": "10.0.12",
+  "probes": [],
+  "rounding": {
+    "kind": "CPU emulation of float multiply, nearest-even and divide; CUDA powf not executed",
+    "count": 27850180,
+    "mismatches": 0,
+    "examples": []
+  }
+}

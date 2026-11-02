@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "reviewer": "review_new_modes_python",
+  "reviewed_at": "2026-11-02T15:28:09.404207+09:00",
+  "scope": "Only the two named scripts; static connected logic review and eight tiny synthetic checks.",
+  "verdict": "approve_scoped_static_and_small_synthetic",
+  "reviewed_files_sha256": {
+    "publication/package_evidence.py": "f4b1de053ab18100dd74c7517f502afdb63ba304d79ca092f85a82c41fa3778b",
+    "qa/independent_scientific_review.py": "4b00e882485dcd817823f97d1010321eb31b387ce9f9ed6a1f1e33465d702a61"
+  },
+  "open_material_findings": [],
+  "resolved_findings": [
+    {
+      "id": "P1",
+      "severity": "HIGH",
+      "file": "publication/package_evidence.py",
+      "lines": [
+        261,
+        316
+      ],
+      "problem": "Direct writes to final support could leave partial canonical evidence after interruption and prevent retry.",
+      "resolution": "Owner now writes support__staging and renames after manifest creation. Small actual-copy-loop check confirms final remains absent before promotion."
+    },
+    {
+      "id": "P2",
+      "severity": "HIGH",
+      "file": "publication/package_evidence.py",
+      "lines": [
+        243,
+        268
+      ],
+      "problem": "Copy-time hashes could accept bytes changed after frozen/artifact/review validation.",
+      "resolution": "Owner binds validated sources to expected freeze, review, artifact and snapshot hashes before copying. A tiny altered source is rejected before destination creation."
+    },
+    {
+      "id": "P3",
+      "severity": "MEDIUM",
+      "file": "qa/independent_scientific_review.py",
+      "lines": [
+        172,
+        174
+      ],
+      "problem": "Public cohort paths are relative to manifest parent but audit resolved them against current working directory.",
+      "resolution": "Owner resolves relative run paths against manifest_path.parent, preserving absolute paths and containment. Actual AST path block passes a public-path fixture."
+    },
+    {
+      "id": "P4",
+      "severity": "MEDIUM",
+      "file": "publication/package_evidence.py",
+      "lines": [
+        134
+      ],
+      "problem": "Native Windows artifact keys use backslashes, so the prior figures/ prefix predicate rejected valid complete analysis manifests.",
+      "resolution": "Root normalizes each key through Path(n).as_posix before checking the figure prefix. Actual completed cohort manifests each expose 14 existing PNG paths under the new guard; both failed the old guard. Two no-figure controls remain rejected. Original artifact manifests were read without rewriting."
+    }
+  ],
+  "small_checks": {
+    "count": 8,
+    "result": "pass",
+    "model_runs": 0,
+    "builds": 0,
+    "study_analyses": 0,
+    "large_hashing": false,
+    "tests": [
+      "contained child accepted",
+      "parent escape rejected",
+      "validated-source mutation rejected before copying",
+      "staging copy followed by promotion",
+      "zero/zero and positive/zero ratios",
+      "concentration-unit absolute error and dimensionless symmetric NMAE/bias",
+      "sample SD and CV",
+      "public relative path resolved from manifest parent"
+    ],
+    "test_method": "Actual copy-loop and run-path AST blocks, helper imports without main(), and tiny local temporary files only.",
+    "python": "D:/INU_Modeling_Work/envs/modeling-tools/Scripts/python.exe Python3.12.14",
+    "initial_test_harness_issue": "First AST selector encountered a nested tuple; selector corrected before any tests executed. Subsequent eight checks all passed."
+  },
+  "static_findings": {
+    "containment": "Lexical and resolved containment plus link-component rejection in packager; resolved run/input containment in independent audit.",
+    "provenance": "Manifest, freeze, study results, analysis artifacts and review bindings checked; portable path rewrites preserve original manifest copies.",
+    "math": "For uniform fixed grid/time weights, L is mean absolute concentration difference; symmetric NMAE and bias divide by mean of two means. A/B/D carry concentration units; R and V are dimensionless. Gate uses A<B for B>0 and exact A=0 for B=0; dispersion band inclusive 0.5..2.0.",
+    "claim_boundary": "Independent review remains pending human diagnostics and explicitly does not establish physical equivalence or RNG stream independence."
+  },
+  "not_checked": [
+    "Measured raw inputs, outputs and completed cohort artifacts were not loaded.",
+    "No model, GPU, build, timing measurement or full analysis was run.",
+    "Full package construction, recipient environment and end-to-end reproduction remain untested.",
+    "No changes to frozen source, validation or analysis scripts were made by this reviewer."
+  ],
+  "humanize": {
+    "skill": "humanize-kit:humanize-korean",
+    "run_id": "2026-11-02-002-c633",
+    "route": "standard",
+    "change_rate_percent": 3.6,
+    "gate_exit": 0,
+    "technical_fidelity_exit": 0,
+    "fidelity_candidates": 0,
+    "manual_fidelity_review": "Numbers, equations, identifiers, path meaning, claim limits and nonexecution scope preserved.",
+    "style_candidate": "UNIFORM_RHYTHM was manually reviewed and retained for distinct review scope and fix statements; no semantic warning remains."
+  },
+  "narrow_rebind_history": [
+    {
+      "reviewed_at": "2026-11-02T15:31:58.379484+09:00",
+      "reason": "Owner added only independent_raw_review.json to qa_names.",
+      "prior_package_sha256": "bcbe87f41d89a0909e1cfd2d67c8d4dc0fb81db36f551c48710673b733e3b402",
+      "current_package_sha256": "490b7a5b9f7f40f81f47376086697116940368be3c7f1f5a80e9b15d1b3ecedb",
+      "exact_single_item_revert_matches_prior_hash": true,
+      "package_ast": "pass",
+      "independent_audit_unchanged": true,
+      "repeated_large_checks": false,
+      "verdict_unchanged": true,
+      "reader_test_scope": "Standalone SourceSeriesReader session-only status is separate from these two scripts."
+    }
+  ],
+  "narrow_rebind": {
+    "reason": "Normalize artifact figure prefix using Windows Path.as_posix and add four QA allowlist files.",
+    "prior_package_sha256": "490b7a5b9f7f40f81f47376086697116940368be3c7f1f5a80e9b15d1b3ecedb",
+    "current_package_sha256": "f4b1de053ab18100dd74c7517f502afdb63ba304d79ca092f85a82c41fa3778b",
+    "exact_two_changes_revert_matches_prior_hash": true,
+    "package_ast": "pass",
+    "actual_windows_artifact_manifests": [
+      {
+        "cohort": "transient_all_sources",
+        "artifact_manifest_sha256": "903c8991a9103fc1a2aa980cd9bdc8c2a1b9c2b76caa1f71e64500e1f7ff0f86",
+        "figure_entries": 14,
+        "old_guard_accepts": false,
+        "new_guard_accepts": true,
+        "all_selected_figure_paths_exist": true
+      },
+      {
+        "cohort": "steady_all_sources",
+        "artifact_manifest_sha256": "fee53853f3a7a659578b41067e355c2fd645489b72027bf4f24c6bbf06ded30c",
+        "figure_entries": 14,
+        "old_guard_accepts": false,
+        "new_guard_accepts": true,
+        "all_selected_figure_paths_exist": true
+      }
+    ],
+    "negative_artifact_cases_rejected": 2,
+    "new_qa_allowlist_items": [
+      "analysis_inputs_before.json",
+      "analysis_inputs_after.json",
+      "visual_review.json",
+      "prose_review.json"
+    ],
+    "large_artifact_hashing": false,
+    "models_run": 0,
+    "verdict_unchanged": true
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "base_commit": "1a44c07ba76db21c557277a841e6904ace8b9328",
+  "files": {
+    "src/GpuSituationDriver.cs": "2d42c7c5227fa9c0cbcd4c022c22c2ae2690fb2bd64528c4a044f7196ee6b9c9",
+    "src/Program.cs": "83ee13d672e0987b4b94a1a7bc00616c631487868d728088b362ebd82feb9dfe",
+    "gpu/runtime/server.py": "7a3bcf8f80c0c78d3a0e557d484c9a59c43e47ea7365f372e3ef0629a7187113",
+    "gpu/runtime/generated.cu": "25b5689a4b0fb5af52f5767175d043fb3cf47b6620a124dfdfbb5f053d9059b6",
+    "gpu/runtime/fields_manifest.json": "0a5ac8caf46ae88d726580fa28f7573b888eb5748d28703d0b829c6da46cf242"
+  },
+  "translator_files": {
+    "Emitter.cs": "e93d29488c1b8f7b54db4a0cf7734f4e49e69b6a35107667f4d81028f8cb5bab",
+    "entries.cuh": "bb2ef00125e50a8841960ff9523348a780f64fb0cca648d91fd6a552a9119357",
+    "Program.cs": "d4a240ab51de8533dfeadcef1ec368f517c1ead079efcbbad13f362722b261ee",
+    "support.cuh": "68ba5a8f581feb50921e272aadd1587ce19ac9490643078c7431301c7a998378",
+    "Transpile.csproj": "0d4338666ef407385d7d236b075a57190569294ff02b551432dcdd8375f81573"
+  },
+  "translation_checks": {
+    "translation_output": {
+      "generated_cu": "25b5689a4b0fb5af52f5767175d043fb3cf47b6620a124dfdfbb5f053d9059b6",
+      "fields_manifest_json": "0a5ac8caf46ae88d726580fa28f7573b888eb5748d28703d0b829c6da46cf242"
+    },
+    "translation_output_2": {
+      "generated_cu": "25b5689a4b0fb5af52f5767175d043fb3cf47b6620a124dfdfbb5f053d9059b6",
+      "fields_manifest_json": "0a5ac8caf46ae88d726580fa28f7573b888eb5748d28703d0b829c6da46cf242"
+    }
+  },
+  "observed_checks": [
+    "dotnet build src/GRAL.csproj -c Release -warnaserror --no-restore: exit 0, warnings 0, errors 0",
+    "server.py ast.parse: pass",
+    "git diff --check: pass",
+    "translator generated.cu and fields_manifest.json reproduced twice byte-for-byte",
+    "HostContracts: 57/57 pass; qa/new_mode_candidate_host_v2.json"
+  ],
+  "limits": [
+    "New dispatch target tests pending by test owner",
+    "No device execution, numerical comparison or scientific validation performed",
+    "Independent code review pending"
+  ]
+}
