@@ -1,0 +1,11 @@
+{
+  "python": ">=3.12,<3.13",
+  "python_tested": "3.12.14",
+  "python_packages": [],
+  "dotnet_sdk": ">=10.0.401,<11.0",
+  "nvrtc": ">=12.9,<12.10",
+  "cuda_compile_architecture": "compute_120",
+  "cuda_compile_options": ["--std=c++11", "--fmad=false"],
+  "platform": "Windows x64",
+  "nvrtc_directory_environment": "INU_GPU_NVRTC_DIR"
+}

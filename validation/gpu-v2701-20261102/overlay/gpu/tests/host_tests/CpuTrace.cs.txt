@@ -1,0 +1,77 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Text.Json;
+using System.Threading;
+
+namespace GRAL_2001
+{
+    // Test-only observer. This file is copied only into the separate instrumented source tree.
+    internal static class CpuTrace
+    {
+        private static double[] fresh, freshSeeds, residual;
+        private static Dictionary<(int,int,int,int,int),int> residualRows;
+        private static long residualCount, freshFinished, residualFinished, freshNonfinite, residualNonfinite, freshLong, residualLong;
+        private static int freshMax, residualMax;
+        internal static void Prepare(int count)
+        {
+            fresh=null;freshSeeds=null;residual=null;residualRows=null;
+            residualCount=0;freshFinished=0;residualFinished=0;freshNonfinite=0;residualNonfinite=0;freshLong=0;residualLong=0;freshMax=0;residualMax=0;
+            int target=int.Parse(Environment.GetEnvironmentVariable("INU_GPU_TRACE_SITUATION") ?? "1");
+            if(Program.IWET!=target)return;
+            if(Environment.GetEnvironmentVariable("INU_GPU_CPU_TRACE")!=null)fresh=new double[checked((count+1)*8)];
+            if(Environment.GetEnvironmentVariable("INU_GPU_CPU_SEED_TRACE")!=null)freshSeeds=new double[checked((count+1)*2)];
+            if(Environment.GetEnvironmentVariable("INU_GPU_CPU_RESIDUAL_TRACE")!=null)
+            {
+                int capacity=int.Parse(Environment.GetEnvironmentVariable("INU_GPU_RESIDUAL_TRACE_COUNT") ?? "64");
+                if(capacity<1 || capacity>65536)throw new InvalidOperationException("Invalid trace count");
+                residual=new double[checked(capacity*16)];residualRows=new Dictionary<(int,int,int,int,int),int>();
+                foreach(var batch in GpuResidualBatch.Enumerate(capacity))
+                {
+                    var vi=(int[])batch["_resI"];var vj=(int[])batch["_resJ"];var vk=(int[])batch["_resK"];var vg=(int[])batch["_resSG"];var vs=(int[])batch["_resSplit"];
+                    for(int q=0;q<vi.Length;q++)residualRows.Add((vi[q],vj[q],vk[q],vg[q],vs[q]),residualRows.Count);
+                    break;
+                }
+            }
+        }
+        internal static void AddResidualCount(int count) => Interlocked.Add(ref residualCount,count);
+        internal static void InitialFresh(int n,uint w,uint z)
+        {if(freshSeeds!=null){freshSeeds[n*2]=w;freshSeeds[n*2+1]=z;}}
+        private static bool Finite(double x,double y,float z,float elapsed,double mass)
+            => double.IsFinite(x)&&double.IsFinite(y)&&float.IsFinite(z)&&float.IsFinite(elapsed)&&double.IsFinite(mass);
+        private static void Max(ref int target,int value)
+        {int old=Volatile.Read(ref target);while(value>old){int actual=Interlocked.CompareExchange(ref target,value,old);if(actual==old)return;old=actual;}}
+        internal static void Fresh(int n,double x,double y,float z,float elapsed,int steps,uint w,uint rz,double mass)
+        {
+            Interlocked.Increment(ref freshFinished);Max(ref freshMax,steps);
+            if(steps>10000000)Interlocked.Increment(ref freshLong);
+            if(!Finite(x,y,z,elapsed,mass))Interlocked.Increment(ref freshNonfinite);
+            if(fresh==null)return;
+            int q=n*8;fresh[q]=x;fresh[q+1]=y;fresh[q+2]=z;fresh[q+3]=elapsed;fresh[q+4]=steps;fresh[q+5]=w;fresh[q+6]=rz;fresh[q+7]=mass;
+        }
+        internal static void Residual(int i,int j,int k,int sg,int split,uint initialW,uint initialZ,double x,double y,float z,float elapsed,int steps,uint w,uint rz,double mass)
+        {
+            Interlocked.Increment(ref residualFinished);Max(ref residualMax,steps);
+            if(steps>10000000)Interlocked.Increment(ref residualLong);
+            if(!Finite(x,y,z,elapsed,mass))Interlocked.Increment(ref residualNonfinite);
+            if(residualRows==null || !residualRows.TryGetValue((i,j,k,sg,split),out int row))return;
+            int q=row*16;residual[q]=i;residual[q+1]=j;residual[q+2]=k;residual[q+3]=sg;residual[q+4]=split;residual[q+5]=initialW;residual[q+6]=initialZ;
+            residual[q+7]=x;residual[q+8]=y;residual[q+9]=z;residual[q+10]=elapsed;residual[q+11]=steps;residual[q+12]=w;residual[q+13]=rz;residual[q+14]=mass;residual[q+15]=1;
+        }
+        private static void Write(string variable,double[] data)
+        {
+            if(data==null)return;
+            using var output=new FileStream(Environment.GetEnvironmentVariable(variable),FileMode.CreateNew,FileAccess.Write,FileShare.Read);
+            using var writer=new BinaryWriter(output);foreach(double value in data)writer.Write(value);
+        }
+        internal static void Save()
+        {
+            Write("INU_GPU_CPU_TRACE",fresh);Write("INU_GPU_CPU_SEED_TRACE",freshSeeds);Write("INU_GPU_CPU_RESIDUAL_TRACE",residual);
+            string metrics=Environment.GetEnvironmentVariable("INU_GPU_CPU_TRACE_METRICS");
+            if(metrics!=null)File.AppendAllText(metrics,JsonSerializer.Serialize(new {situation=Program.IWET,rng_seed1=Program.RnGSeed.Seed1,rng_seed2=Program.RnGSeed.Seed2,
+                fresh_slots=Program.NTEILMAX,residual_particles=residualCount,fresh_finished=freshFinished,residual_finished=residualFinished,
+                fresh_nonfinite=freshNonfinite,residual_nonfinite=residualNonfinite,fresh_max_steps=freshMax,residual_max_steps=residualMax,
+                fresh_above_10m_steps=freshLong,residual_above_10m_steps=residualLong})+Environment.NewLine);
+        }
+    }
+}

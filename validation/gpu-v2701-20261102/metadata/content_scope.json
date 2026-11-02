@@ -1,0 +1,18 @@
+{
+  "schema": 1,
+  "production_source": "Companion GPU pull request checkout; overlay/ adds validation and translation tools.",
+  "recorded_measurements": "Instrumented source with BenchmarkTelemetry.cs and four Program.cs observer hooks.",
+  "normalization": "Recorded runs.json source_hashes are raw bytes; measured_translation_source_provenance.json normalizes CRLF and CR to LF.",
+  "data_origin": "Synthetic constants only; fixture/contract.json identifies every input SHA256.",
+  "excluded": [
+    "research inputs",
+    "AIS",
+    "private deployment trees",
+    "raw job history",
+    "process identifiers",
+    "absolute local paths",
+    "compiled binaries",
+    "NVRTC DLLs",
+    "PTX caches"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "gaussian_log_assignment_lines": {
+    "src/Zeitschleife.cs": [
+      295,
+      306,
+      364,
+      398,
+      483,
+      494,
+      719,
+      793,
+      1014,
+      1027,
+      1081,
+      1092,
+      1103,
+      1198,
+      1384,
+      1395,
+      1405,
+      1452,
+      1463,
+      1474,
+      1810,
+      1829,
+      1846
+    ],
+    "src/Zeitschleife_nonsteadystate.cs": [
+      281,
+      292,
+      475,
+      589,
+      602,
+      863,
+      882,
+      898
+    ]
+  },
+  "exclude_non_log_uniform_lines": {
+    "src/Zeitschleife.cs": [
+      389
+    ],
+    "src/Zeitschleife_nonsteadystate.cs": [
+      93,
+      98,
+      103
+    ]
+  },
+  "baseline_normalized_sha256": {
+    "src/Zeitschleife.cs": "7028bbbb97f18501d0782e042a487bb552ec93f6050e606c2fc574ba1bfa3bce",
+    "src/Zeitschleife_nonsteadystate.cs": "bf008585ef65522aba5bb092b91a512cef8d253080697f18dcb9768493859a6b"
+  }
+}
