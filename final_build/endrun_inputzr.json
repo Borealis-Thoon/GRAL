@@ -1,0 +1,66 @@
+{
+ "control_cpu": {
+  "rc": 0,
+  "timed_out": false,
+  "grz": 12,
+  "tmp": [],
+  "core_end": [
+   "GRAL simulations finished at: 2026-11-05 \uc624\uc804 2:37:59"
+  ],
+  "problem": [],
+  "console_tail": [
+   "Observational heights: 3.50m  10.00m  30.00m  ",
+   "Process exit called"
+  ]
+ },
+ "trailing_blank_cpu": {
+  "rc": 0,
+  "timed_out": false,
+  "grz": 12,
+  "tmp": [],
+  "core_end": [
+   "GRAL simulations finished at: 2026-11-05 \uc624\uc804 2:38:57"
+  ],
+  "problem": [],
+  "console_tail": [
+   "Observational heights: 3.50m  10.00m  30.00m  ",
+   "Process exit called"
+  ]
+ },
+ "interior_blank_cpu": {
+  "rc": 1,
+  "timed_out": false,
+  "grz": 6,
+  "tmp": [],
+  "core_end": [
+   "GRAL simulations stopped with errors at: 2026-11-05 \uc624\uc804 2:39:25"
+  ],
+  "problem": [
+   "GRAL Error: Error when reading file inputzr.dat in line 9: blank line is followed by more data Execution stopped: press ESC to stop"
+  ],
+  "console_tail": [
+   "Error when reading file inputzr.dat in line 9: blank line is followed by more data Execution stopped: press ESC to stop",
+   "Process exit called"
+  ]
+ },
+ "interior_blank_gpu": {
+  "rc": 1,
+  "timed_out": false,
+  "grz": 6,
+  "tmp": [],
+  "core_end": [
+   "GRAL simulations stopped with errors at: 2026-11-05 \uc624\uc804 2:39:40"
+  ],
+  "problem": [
+   "GRAL Error: Error when reading file inputzr.dat in line 9: blank line is followed by more data Execution stopped: press ESC to stop"
+  ],
+  "console_tail": [
+   "Error when reading file inputzr.dat in line 9: blank line is followed by more data Execution stopped: press ESC to stop",
+   "Process exit called"
+  ]
+ },
+ "_build": {
+  "dll": "GRAL.dll",
+  "dll_sha256": "870b8895dc42e3369c9038c75539fc2f29a34757cbb2fb880b4dcda4143af266"
+ }
+}

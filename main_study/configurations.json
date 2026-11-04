@@ -1,0 +1,691 @@
+{
+ "description": "Configuration settings of the 448-run main study as executed. The run plan was frozen before measurement (frozen plan SHA256 359d925299a51c8f0206643836ce1588866f0a5ef9111064465c60031c4bf53e); this file keeps only the configuration settings.",
+ "configuration_count": 16,
+ "runs_per_configuration": 28,
+ "total_measured_runs": 448,
+ "weather_profiles": {
+  "reference_rotating": {
+   "hour_index_origin": 0,
+   "direction_degrees": "(7.5*h)%360",
+   "speed_m_s": "2+0.5*(h%4)",
+   "stability_cycle": [
+    3,
+    4,
+    5,
+    4
+   ]
+  },
+  "low_wind_stable": {
+   "direction_degrees": "(7.5*h)%360",
+   "speed_m_s": 0.75,
+   "stability": 6
+  },
+  "higher_wind_unstable": {
+   "direction_degrees": "(7.5*h)%360",
+   "speed_m_s": 5,
+   "stability": 2
+  }
+ },
+ "source_contract": {
+  "anchors_fraction": [
+   [
+    0.25,
+    0.3
+   ],
+   [
+    0.7,
+    0.65
+   ],
+   [
+    0.33,
+    0.7
+   ],
+   [
+    0.7,
+    0.27
+   ],
+   [
+    0.47,
+    0.3
+   ],
+   [
+    0.58,
+    0.73
+   ],
+   [
+    0.27,
+    0.5
+   ],
+   [
+    0.73,
+    0.5
+   ]
+  ],
+  "records_per_group": 2,
+  "same_anchors_across_profiles": true,
+  "single_type_conversion": "preserve anchors and group membership; use validated type template and normalize each source to 1 kg/h",
+  "group_labels": "configuration-specific actual source types",
+  "constant_hourly_release": true
+ },
+ "duration_contract": {
+  "pair": [
+   "B00",
+   "D12"
+  ],
+  "same_geometry": true,
+  "first_24_hour_weather_binary_and_record_identity_required": true,
+  "time_series_terminal_duplicate_exception": true
+ },
+ "configurations": [
+  {
+   "id": "B00",
+   "axis": "reference",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 50,
+    "flow_cells": [
+     40,
+     40,
+     16
+    ],
+    "concentration_spacing_m": 10,
+    "concentration_cells": [
+     200,
+     200
+    ],
+    "particles_per_hour": 360000,
+    "weather_profile": "reference_rotating",
+    "terrain_amplitude_scale": 1,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "mixed",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {},
+   "measured_runs": 28
+  },
+  {
+   "id": "C01",
+   "axis": "concentration_grid",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 50,
+    "flow_cells": [
+     40,
+     40,
+     16
+    ],
+    "concentration_spacing_m": 5,
+    "concentration_cells": [
+     400,
+     400
+    ],
+    "particles_per_hour": 360000,
+    "weather_profile": "reference_rotating",
+    "terrain_amplitude_scale": 1,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "mixed",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {
+    "concentration_spacing_m": 5,
+    "concentration_cells": [
+     400,
+     400
+    ]
+   },
+   "measured_runs": 28
+  },
+  {
+   "id": "F02",
+   "axis": "flow_grid",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 25,
+    "flow_cells": [
+     80,
+     80,
+     16
+    ],
+    "concentration_spacing_m": 10,
+    "concentration_cells": [
+     200,
+     200
+    ],
+    "particles_per_hour": 360000,
+    "weather_profile": "reference_rotating",
+    "terrain_amplitude_scale": 1,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "mixed",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {
+    "flow_spacing_m": 25,
+    "flow_cells": [
+     80,
+     80,
+     16
+    ]
+   },
+   "measured_runs": 28
+  },
+  {
+   "id": "P03",
+   "axis": "particles",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 50,
+    "flow_cells": [
+     40,
+     40,
+     16
+    ],
+    "concentration_spacing_m": 10,
+    "concentration_cells": [
+     200,
+     200
+    ],
+    "particles_per_hour": 90000,
+    "weather_profile": "reference_rotating",
+    "terrain_amplitude_scale": 1,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "mixed",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {
+    "particles_per_hour": 90000
+   },
+   "measured_runs": 28
+  },
+  {
+   "id": "P04",
+   "axis": "particles",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 50,
+    "flow_cells": [
+     40,
+     40,
+     16
+    ],
+    "concentration_spacing_m": 10,
+    "concentration_cells": [
+     200,
+     200
+    ],
+    "particles_per_hour": 1440000,
+    "weather_profile": "reference_rotating",
+    "terrain_amplitude_scale": 1,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "mixed",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {
+    "particles_per_hour": 1440000
+   },
+   "measured_runs": 28
+  },
+  {
+   "id": "W05",
+   "axis": "weather_profile",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 50,
+    "flow_cells": [
+     40,
+     40,
+     16
+    ],
+    "concentration_spacing_m": 10,
+    "concentration_cells": [
+     200,
+     200
+    ],
+    "particles_per_hour": 360000,
+    "weather_profile": "low_wind_stable",
+    "terrain_amplitude_scale": 1,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "mixed",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {
+    "weather_profile": "low_wind_stable"
+   },
+   "measured_runs": 28
+  },
+  {
+   "id": "W06",
+   "axis": "weather_profile",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 50,
+    "flow_cells": [
+     40,
+     40,
+     16
+    ],
+    "concentration_spacing_m": 10,
+    "concentration_cells": [
+     200,
+     200
+    ],
+    "particles_per_hour": 360000,
+    "weather_profile": "higher_wind_unstable",
+    "terrain_amplitude_scale": 1,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "mixed",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {
+    "weather_profile": "higher_wind_unstable"
+   },
+   "measured_runs": 28
+  },
+  {
+   "id": "T07",
+   "axis": "terrain",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 50,
+    "flow_cells": [
+     40,
+     40,
+     16
+    ],
+    "concentration_spacing_m": 10,
+    "concentration_cells": [
+     200,
+     200
+    ],
+    "particles_per_hour": 360000,
+    "weather_profile": "reference_rotating",
+    "terrain_amplitude_scale": 0,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "mixed",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {
+    "terrain_amplitude_scale": 0
+   },
+   "measured_runs": 28
+  },
+  {
+   "id": "S08",
+   "axis": "source_profile",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 50,
+    "flow_cells": [
+     40,
+     40,
+     16
+    ],
+    "concentration_spacing_m": 10,
+    "concentration_cells": [
+     200,
+     200
+    ],
+    "particles_per_hour": 360000,
+    "weather_profile": "reference_rotating",
+    "terrain_amplitude_scale": 1,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "area",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {
+    "source_profile": "area"
+   },
+   "measured_runs": 28
+  },
+  {
+   "id": "S09",
+   "axis": "source_profile",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 50,
+    "flow_cells": [
+     40,
+     40,
+     16
+    ],
+    "concentration_spacing_m": 10,
+    "concentration_cells": [
+     200,
+     200
+    ],
+    "particles_per_hour": 360000,
+    "weather_profile": "reference_rotating",
+    "terrain_amplitude_scale": 1,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "line",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {
+    "source_profile": "line"
+   },
+   "measured_runs": 28
+  },
+  {
+   "id": "S10",
+   "axis": "source_profile",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 50,
+    "flow_cells": [
+     40,
+     40,
+     16
+    ],
+    "concentration_spacing_m": 10,
+    "concentration_cells": [
+     200,
+     200
+    ],
+    "particles_per_hour": 360000,
+    "weather_profile": "reference_rotating",
+    "terrain_amplitude_scale": 1,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "point",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {
+    "source_profile": "point"
+   },
+   "measured_runs": 28
+  },
+  {
+   "id": "S11",
+   "axis": "source_profile",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 50,
+    "flow_cells": [
+     40,
+     40,
+     16
+    ],
+    "concentration_spacing_m": 10,
+    "concentration_cells": [
+     200,
+     200
+    ],
+    "particles_per_hour": 360000,
+    "weather_profile": "reference_rotating",
+    "terrain_amplitude_scale": 1,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "portal",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {
+    "source_profile": "portal"
+   },
+   "measured_runs": 28
+  },
+  {
+   "id": "D12",
+   "axis": "duration",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 48,
+    "flow_spacing_m": 50,
+    "flow_cells": [
+     40,
+     40,
+     16
+    ],
+    "concentration_spacing_m": 10,
+    "concentration_cells": [
+     200,
+     200
+    ],
+    "particles_per_hour": 360000,
+    "weather_profile": "reference_rotating",
+    "terrain_amplitude_scale": 1,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "mixed",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {
+    "hours": 48
+   },
+   "measured_runs": 28
+  },
+  {
+   "id": "R13",
+   "axis": "runtime_setting",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 50,
+    "flow_cells": [
+     40,
+     40,
+     16
+    ],
+    "concentration_spacing_m": 10,
+    "concentration_cells": [
+     200,
+     200
+    ],
+    "particles_per_hour": 360000,
+    "weather_profile": "reference_rotating",
+    "terrain_amplitude_scale": 1,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "mixed",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 256
+   },
+   "changes_from_B00": {
+    "gpu_block": 256
+   },
+   "measured_runs": 28
+  },
+  {
+   "id": "I14",
+   "axis": "interaction",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 50,
+    "flow_cells": [
+     40,
+     40,
+     16
+    ],
+    "concentration_spacing_m": 5,
+    "concentration_cells": [
+     400,
+     400
+    ],
+    "particles_per_hour": 1440000,
+    "weather_profile": "reference_rotating",
+    "terrain_amplitude_scale": 1,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "mixed",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {
+    "concentration_spacing_m": 5,
+    "concentration_cells": [
+     400,
+     400
+    ],
+    "particles_per_hour": 1440000
+   },
+   "measured_runs": 28
+  },
+  {
+   "id": "I15",
+   "axis": "interaction",
+   "settings": {
+    "domain_m": [
+     2000,
+     2000
+    ],
+    "hours": 24,
+    "flow_spacing_m": 25,
+    "flow_cells": [
+     80,
+     80,
+     16
+    ],
+    "concentration_spacing_m": 10,
+    "concentration_cells": [
+     200,
+     200
+    ],
+    "particles_per_hour": 360000,
+    "weather_profile": "reference_rotating",
+    "terrain_amplitude_scale": 0,
+    "terrain_input_mode": "terrain_following",
+    "source_profile": "mixed",
+    "source_count": 8,
+    "source_groups": 4,
+    "emission_kg_h_per_source": 1,
+    "emission_kg_h_per_group": 2,
+    "gpu_chunk": 65536,
+    "gpu_block": 128
+   },
+   "changes_from_B00": {
+    "flow_spacing_m": 25,
+    "flow_cells": [
+     80,
+     80,
+     16
+    ],
+    "terrain_amplitude_scale": 0
+   },
+   "measured_runs": 28
+  }
+ ]
+}

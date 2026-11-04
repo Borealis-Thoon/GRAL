@@ -1,0 +1,2193 @@
+{
+ "schema": "gral_gpu_feature_suite_1",
+ "dll": "<jobs>\\20261104_gral_gpu_pr_integration\\build_f\\out\\GRAL.dll",
+ "dll_sha256": "f9afb3315ad5e5f0401e3cc2331f1be9aff2339e85ffdf2efd5d270bc23c8eee",
+ "runtime": "<jobs>\\20261104_gral_gpu_pr_integration\\wt_final\\gpu\\runtime",
+ "runtime_sha256": {
+  "cuda_common.py": "d9e382f81b655c583fa69af48ed077bc4286cbf6f7726680962b52fd81bb7389",
+  "fields_manifest.json": "cfda79932738dbee68fc9b9fdc3415fbdc9e7654c50c7dfd75137899169d92bc",
+  "generated.cu": "e235d48461b1109570ec6aec7c9a23440b8e6d677d349e9946c2312286fe0390",
+  "ptx_cache.py": "0f3600b505ad55963b57730f8f40de21de5552fe72ea01099afda16637b13072",
+  "server.py": "7185214507c2641bec844b379dcd684afc4dd7c35867efc01b7f273dce854701"
+ },
+ "allow_unvalidated": true,
+ "gpu_native": false,
+ "hours": 12,
+ "particles_per_hour": 360000,
+ "affinity_mask": 65535,
+ "thresholds": {
+  "A_over_B_pass_below": 0.05,
+  "A_over_B_fail_at": 1.0,
+  "statistical_range": [
+   0.5,
+   2.0
+  ],
+  "host_only_types": [
+   "odr_ch2",
+   "odr_ch3"
+  ]
+ },
+ "timing_eligible": false,
+ "cases_requested": [
+  "vertical_conc",
+  "vertical_conc_all_sources",
+  "vertical_conc_tmp",
+  "neg_vertical_inf"
+ ],
+ "cases": {
+  "vertical_conc": {
+   "purpose": "Vertical_Concentrations.txt (ConzSsum)",
+   "group": "feature",
+   "config": {
+    "sources": "area",
+    "vertical": true
+   },
+   "control": "transient_area",
+   "unvalidated_feature": true,
+   "statistical": false,
+   "runs": {
+    "cpu_fixed": {
+     "mode": "cpu",
+     "native_seed_line": false,
+     "rc": 0,
+     "timed_out": false,
+     "wall_s": 25.32,
+     "fallback_lines": [],
+     "extra_env": {}
+    },
+    "gpu_fixed": {
+     "mode": "gpu",
+     "native_seed_line": false,
+     "rc": 0,
+     "timed_out": false,
+     "wall_s": 24.03,
+     "fallback_lines": [],
+     "extra_env": {},
+     "gpu_situations": 13,
+     "metrics": {
+      "lines": 13,
+      "situations": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13
+      ],
+      "residual_particles_sum": 107540,
+      "fresh_particles": [
+       360000
+      ],
+      "rng_seed_mode": [
+       "fixed"
+      ],
+      "kernel_max_device_ms": 22.521343231201172,
+      "peak_mapped_output_bytes": 0,
+      "fresh_memory_windows_max": 78,
+      "mapped_buffer_names": [],
+      "cache_status": [
+       "disabled"
+      ],
+      "unparsed_lines": 0
+     },
+     "server_startup": [
+      "CUDA device 0 compute_120; NVRTC 12.9; target compute_120; NVIDIA GeForce RTX 5080; 16275 MiB; driver 13.4 (13040); kernel_exec_timeout=1; tcc=0; fp32:fp64=64:1; compute_mode=default"
+     ]
+    },
+    "cpu_native": {
+     "mode": "cpu",
+     "native_seed_line": true,
+     "rc": 0,
+     "timed_out": false,
+     "wall_s": 25.33,
+     "fallback_lines": [],
+     "extra_env": {}
+    }
+   },
+   "inventory": {
+    "cpu_fixed": {
+     "con": {
+      "values": 34801,
+      "nonzero": 34801,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 694489.9743098316,
+      "members": 39
+     },
+     "vertical": {
+      "values": 124950,
+      "nonzero": 44976,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 106892.96537189765,
+      "members": 1
+     },
+     "vertical_topo": {
+      "values": 2550,
+      "nonzero": 0,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 0.0,
+      "members": 1
+     }
+    },
+    "gpu_fixed": {
+     "con": {
+      "values": 34801,
+      "nonzero": 34801,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 694489.9028230885,
+      "members": 39
+     },
+     "vertical": {
+      "values": 124950,
+      "nonzero": 44976,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 106892.50245089763,
+      "members": 1
+     },
+     "vertical_topo": {
+      "values": 2550,
+      "nonzero": 0,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 0.0,
+      "members": 1
+     }
+    },
+    "cpu_native": {
+     "con": {
+      "values": 33801,
+      "nonzero": 33801,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 693683.4796124088,
+      "members": 39
+     },
+     "vertical": {
+      "values": 124950,
+      "nonzero": 41042,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 106485.07086910027,
+      "members": 1
+     },
+     "vertical_topo": {
+      "values": 2550,
+      "nonzero": 0,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 0.0,
+      "members": 1
+     }
+    },
+    "control": {
+     "con": {
+      "values": 32103,
+      "nonzero": 32103,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 640993.2004285,
+      "members": 36
+     }
+    }
+   },
+   "pairs": {
+    "A": {
+     "con": {
+      "sum_abs_diff": 8.177772749535507,
+      "sum_abs_ref": 694489.9743098314,
+      "max_abs_diff": 0.06068611145019531,
+      "keys": 34801,
+      "different_keys": 29594,
+      "nonfinite_pairs": 0,
+      "members": 39,
+      "members_equal": 0,
+      "mean_abs_diff": 0.00023498671732236163,
+      "relative": 1.177522074046122e-05
+     },
+     "vertical_topo": {
+      "sum_abs_diff": 0.0,
+      "sum_abs_ref": 0.0,
+      "max_abs_diff": 0.0,
+      "keys": 2550,
+      "different_keys": 0,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 1,
+      "mean_abs_diff": 0.0,
+      "relative": null
+     },
+     "vertical": {
+      "sum_abs_diff": 0.8213009999999963,
+      "sum_abs_ref": 106892.9653718987,
+      "max_abs_diff": 0.10000000000000853,
+      "keys": 124950,
+      "different_keys": 86,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 0,
+      "mean_abs_diff": 6.5730372148859246e-06,
+      "relative": 7.683396163092222e-06
+     }
+    },
+    "B": {
+     "con": {
+      "sum_abs_diff": 44037.85948538873,
+      "sum_abs_ref": 694489.9743098314,
+      "max_abs_diff": 23.905838012695312,
+      "keys": 37222,
+      "different_keys": 37222,
+      "nonfinite_pairs": 0,
+      "members": 39,
+      "members_equal": 0,
+      "mean_abs_diff": 1.1831137361073756,
+      "relative": 0.06341036028511797
+     },
+     "vertical_topo": {
+      "sum_abs_diff": 0.0,
+      "sum_abs_ref": 0.0,
+      "max_abs_diff": 0.0,
+      "keys": 2550,
+      "different_keys": 0,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 1,
+      "mean_abs_diff": 0.0,
+      "relative": null
+     },
+     "vertical": {
+      "sum_abs_diff": 6175.410647600086,
+      "sum_abs_ref": 106892.9653718987,
+      "max_abs_diff": 48.0,
+      "keys": 124950,
+      "different_keys": 49827,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 0,
+      "mean_abs_diff": 0.049423054402561714,
+      "relative": 0.057771908807233374
+     }
+    },
+    "effect": {
+     "con": {
+      "sum_abs_diff": 53496.77388133158,
+      "sum_abs_ref": 694489.9743098314,
+      "max_abs_diff": 273.52099609375,
+      "keys": 34801,
+      "different_keys": 2698,
+      "nonfinite_pairs": 0,
+      "members": 39,
+      "members_equal": 36,
+      "mean_abs_diff": 1.5372194443071057,
+      "relative": 0.0770303040508187
+     },
+     "vertical_topo": {
+      "sum_abs_diff": 0.0,
+      "sum_abs_ref": 0.0,
+      "max_abs_diff": 0.0,
+      "keys": 2550,
+      "different_keys": 0,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 1,
+      "mean_abs_diff": 0.0,
+      "relative": null
+     },
+     "vertical": {
+      "sum_abs_diff": 106892.9653718987,
+      "sum_abs_ref": 106892.9653718987,
+      "max_abs_diff": 641.0,
+      "keys": 124950,
+      "different_keys": 44976,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 0,
+      "mean_abs_diff": 0.8554859173421264,
+      "relative": 1.0
+     }
+    }
+   },
+   "grz_files": {
+    "cpu_fixed": 13,
+    "gpu_fixed": 13,
+    "cpu_native": 13,
+    "control": 12
+   },
+   "text_meta": {
+    "cpu_fixed": {
+     "Vertical_Concentrations.txt": {
+      "header": {
+       "west": 2000.0,
+       "east": 3000.0,
+       "south": 2000.0,
+       "north": 3000.0,
+       "nii": 50.0,
+       "njj": 50.0,
+       "nkk": 50.0,
+       "dxk": 20.0,
+       "ahmin": 0.0,
+       "layer_heights": [
+        2.5,
+        7.5,
+        12.5,
+        17.5,
+        22.5,
+        27.5,
+        32.5,
+        38.0,
+        44.0,
+        50.0,
+        56.0,
+        62.0,
+        68.8,
+        76.2,
+        83.8,
+        91.2,
+        98.8,
+        107.5,
+        117.5,
+        127.5,
+        137.5,
+        147.5,
+        160.0,
+        175.0,
+        190.0,
+        205.0,
+        220.0,
+        235.0,
+        250.0,
+        267.5,
+        287.5,
+        307.5,
+        327.5,
+        347.5,
+        367.5,
+        387.5,
+        407.5,
+        432.5,
+        462.5,
+        492.5,
+        522.5,
+        552.5,
+        582.5,
+        612.5,
+        642.5,
+        672.5,
+        702.5,
+        732.5,
+        762.5
+       ],
+       "layers_found": 49
+      }
+     }
+    },
+    "gpu_fixed": {
+     "Vertical_Concentrations.txt": {
+      "header": {
+       "west": 2000.0,
+       "east": 3000.0,
+       "south": 2000.0,
+       "north": 3000.0,
+       "nii": 50.0,
+       "njj": 50.0,
+       "nkk": 50.0,
+       "dxk": 20.0,
+       "ahmin": 0.0,
+       "layer_heights": [
+        2.5,
+        7.5,
+        12.5,
+        17.5,
+        22.5,
+        27.5,
+        32.5,
+        38.0,
+        44.0,
+        50.0,
+        56.0,
+        62.0,
+        68.8,
+        76.2,
+        83.8,
+        91.2,
+        98.8,
+        107.5,
+        117.5,
+        127.5,
+        137.5,
+        147.5,
+        160.0,
+        175.0,
+        190.0,
+        205.0,
+        220.0,
+        235.0,
+        250.0,
+        267.5,
+        287.5,
+        307.5,
+        327.5,
+        347.5,
+        367.5,
+        387.5,
+        407.5,
+        432.5,
+        462.5,
+        492.5,
+        522.5,
+        552.5,
+        582.5,
+        612.5,
+        642.5,
+        672.5,
+        702.5,
+        732.5,
+        762.5
+       ],
+       "layers_found": 49
+      }
+     }
+    },
+    "cpu_native": {
+     "Vertical_Concentrations.txt": {
+      "header": {
+       "west": 2000.0,
+       "east": 3000.0,
+       "south": 2000.0,
+       "north": 3000.0,
+       "nii": 50.0,
+       "njj": 50.0,
+       "nkk": 50.0,
+       "dxk": 20.0,
+       "ahmin": 0.0,
+       "layer_heights": [
+        2.5,
+        7.5,
+        12.5,
+        17.5,
+        22.5,
+        27.5,
+        32.5,
+        38.0,
+        44.0,
+        50.0,
+        56.0,
+        62.0,
+        68.8,
+        76.2,
+        83.8,
+        91.2,
+        98.8,
+        107.5,
+        117.5,
+        127.5,
+        137.5,
+        147.5,
+        160.0,
+        175.0,
+        190.0,
+        205.0,
+        220.0,
+        235.0,
+        250.0,
+        267.5,
+        287.5,
+        307.5,
+        327.5,
+        347.5,
+        367.5,
+        387.5,
+        407.5,
+        432.5,
+        462.5,
+        492.5,
+        522.5,
+        552.5,
+        582.5,
+        612.5,
+        642.5,
+        672.5,
+        702.5,
+        732.5,
+        762.5
+       ],
+       "layers_found": 49
+      }
+     }
+    },
+    "control": {}
+   },
+   "text_token_mismatch": {
+    "A": 0,
+    "B": 0,
+    "effect": 0
+   },
+   "A_over_B": {
+    "con": {
+     "A_sum_abs_diff": 8.177772749535507,
+     "B_sum_abs_diff": 44037.85948538873,
+     "A_mean_abs": 0.00023498671732236163,
+     "B_mean_abs": 1.1831137361073756,
+     "A_relative": 1.177522074046122e-05,
+     "A_over_B": 0.00018569868847165017,
+     "A_nonfinite_pairs": 0
+    },
+    "vertical": {
+     "A_sum_abs_diff": 0.8213009999999963,
+     "B_sum_abs_diff": 6175.410647600086,
+     "A_mean_abs": 6.5730372148859246e-06,
+     "B_mean_abs": 0.049423054402561714,
+     "A_relative": 7.683396163092222e-06,
+     "A_over_B": 0.0001329953661169357,
+     "A_nonfinite_pairs": 0
+    },
+    "vertical_topo": {
+     "A_sum_abs_diff": 0.0,
+     "B_sum_abs_diff": 0.0,
+     "A_mean_abs": 0.0,
+     "B_mean_abs": 0.0,
+     "A_relative": null,
+     "A_over_B": 0.0,
+     "A_nonfinite_pairs": 0
+    }
+   },
+   "vertical_unit_check": {
+    "values": 124950,
+    "values_beyond_one_unit": 26,
+    "header_equal": {
+     "west": true,
+     "east": true,
+     "south": true,
+     "north": true,
+     "nii": true,
+     "njj": true,
+     "nkk": true,
+     "dxk": true,
+     "layer_heights": true,
+     "layers_found": true
+    },
+    "layers_found": [
+     49,
+     49
+    ],
+    "domain_total_rel_diff": 4.330696584081782e-06
+   },
+   "type_status": {
+    "con": "pass",
+    "vertical": "pass"
+   },
+   "effect_check": {
+    "kind": "new",
+    "type": "vertical",
+    "case_nonzero": 44976,
+    "control_nonzero": 0,
+    "status": "pass"
+   },
+   "problems": [
+    "gpu_fixed: gpu_metrics lines 13 != situations 12",
+    "vertical: 26 values differ by >1 unit in the 3rd significant digit"
+   ],
+   "notes": [],
+   "screen": "fail",
+   "case_wall_s": 95.9
+  },
+  "vertical_conc_all_sources": {
+   "purpose": "vertical concentration, all source types",
+   "group": "feature",
+   "config": {
+    "sources": "all_sources",
+    "vertical": true
+   },
+   "control": "transient_all_sources",
+   "unvalidated_feature": true,
+   "statistical": false,
+   "runs": {
+    "cpu_fixed": {
+     "mode": "cpu",
+     "native_seed_line": false,
+     "rc": 0,
+     "timed_out": false,
+     "wall_s": 22.39,
+     "fallback_lines": [],
+     "extra_env": {}
+    },
+    "gpu_fixed": {
+     "mode": "gpu",
+     "native_seed_line": false,
+     "rc": 0,
+     "timed_out": false,
+     "wall_s": 21.5,
+     "fallback_lines": [],
+     "extra_env": {},
+     "gpu_situations": 13,
+     "metrics": {
+      "lines": 13,
+      "situations": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13
+      ],
+      "residual_particles_sum": 124028,
+      "fresh_particles": [
+       360000
+      ],
+      "rng_seed_mode": [
+       "fixed"
+      ],
+      "kernel_max_device_ms": 21.545312881469727,
+      "peak_mapped_output_bytes": 0,
+      "fresh_memory_windows_max": 78,
+      "mapped_buffer_names": [],
+      "cache_status": [
+       "disabled"
+      ],
+      "unparsed_lines": 0
+     },
+     "server_startup": [
+      "CUDA device 0 compute_120; NVRTC 12.9; target compute_120; NVIDIA GeForce RTX 5080; 16275 MiB; driver 13.4 (13040); kernel_exec_timeout=1; tcc=0; fp32:fp64=64:1; compute_mode=default"
+     ]
+    },
+    "cpu_native": {
+     "mode": "cpu",
+     "native_seed_line": true,
+     "rc": 0,
+     "timed_out": false,
+     "wall_s": 22.52,
+     "fallback_lines": [],
+     "extra_env": {}
+    }
+   },
+   "inventory": {
+    "cpu_fixed": {
+     "con": {
+      "values": 43788,
+      "nonzero": 43788,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 726979.8770335482,
+      "members": 52
+     },
+     "vertical": {
+      "values": 124950,
+      "nonzero": 48308,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 142068.66642499997,
+      "members": 1
+     },
+     "vertical_topo": {
+      "values": 2550,
+      "nonzero": 0,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 0.0,
+      "members": 1
+     }
+    },
+    "gpu_fixed": {
+     "con": {
+      "values": 43788,
+      "nonzero": 43788,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 726980.0503068797,
+      "members": 52
+     },
+     "vertical": {
+      "values": 124950,
+      "nonzero": 48308,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 142068.65524499997,
+      "members": 1
+     },
+     "vertical_topo": {
+      "values": 2550,
+      "nonzero": 0,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 0.0,
+      "members": 1
+     }
+    },
+    "cpu_native": {
+     "con": {
+      "values": 43108,
+      "nonzero": 43108,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 727782.9248034162,
+      "members": 52
+     },
+     "vertical": {
+      "values": 124950,
+      "nonzero": 39036,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 141805.56485139998,
+      "members": 1
+     },
+     "vertical_topo": {
+      "values": 2550,
+      "nonzero": 0,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 0.0,
+      "members": 1
+     }
+    },
+    "control": {
+     "con": {
+      "values": 40324,
+      "nonzero": 40324,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 671105.8283718561,
+      "members": 48
+     }
+    }
+   },
+   "pairs": {
+    "A": {
+     "con": {
+      "sum_abs_diff": 6.453080702864099,
+      "sum_abs_ref": 726979.8770335482,
+      "max_abs_diff": 0.057628631591796875,
+      "keys": 43788,
+      "different_keys": 36573,
+      "nonfinite_pairs": 0,
+      "members": 52,
+      "members_equal": 0,
+      "mean_abs_diff": 0.00014737098526683336,
+      "relative": 8.876560282790753e-06
+     },
+     "vertical_topo": {
+      "sum_abs_diff": 0.0,
+      "sum_abs_ref": 0.0,
+      "max_abs_diff": 0.0,
+      "keys": 2550,
+      "different_keys": 0,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 1,
+      "mean_abs_diff": 0.0,
+      "relative": null
+     },
+     "vertical": {
+      "sum_abs_diff": 0.529019999999993,
+      "sum_abs_ref": 142068.66642499983,
+      "max_abs_diff": 0.10000000000000142,
+      "keys": 124950,
+      "different_keys": 107,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 0,
+      "mean_abs_diff": 4.233853541416511e-06,
+      "relative": 3.7236923053632704e-06
+     }
+    },
+    "B": {
+     "con": {
+      "sum_abs_diff": 34137.30724037596,
+      "sum_abs_ref": 726979.8770335482,
+      "max_abs_diff": 26.6484375,
+      "keys": 47430,
+      "different_keys": 47430,
+      "nonfinite_pairs": 0,
+      "members": 52,
+      "members_equal": 0,
+      "mean_abs_diff": 0.7197408231156643,
+      "relative": 0.0469577058716862
+     },
+     "vertical_topo": {
+      "sum_abs_diff": 0.0,
+      "sum_abs_ref": 0.0,
+      "max_abs_diff": 0.0,
+      "keys": 2550,
+      "different_keys": 0,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 1,
+      "mean_abs_diff": 0.0,
+      "relative": null
+     },
+     "vertical": {
+      "sum_abs_diff": 4832.321600600097,
+      "sum_abs_ref": 142068.66642499983,
+      "max_abs_diff": 64.0,
+      "keys": 124950,
+      "different_keys": 51710,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 0,
+      "mean_abs_diff": 0.03867404242176948,
+      "relative": 0.03401398578729639
+     }
+    },
+    "effect": {
+     "con": {
+      "sum_abs_diff": 55874.04866169207,
+      "sum_abs_ref": 726979.8770335482,
+      "max_abs_diff": 1358.7940673828125,
+      "keys": 43788,
+      "different_keys": 3464,
+      "nonfinite_pairs": 0,
+      "members": 52,
+      "members_equal": 48,
+      "mean_abs_diff": 1.2760128040031988,
+      "relative": 0.07685776515532579
+     },
+     "vertical_topo": {
+      "sum_abs_diff": 0.0,
+      "sum_abs_ref": 0.0,
+      "max_abs_diff": 0.0,
+      "keys": 2550,
+      "different_keys": 0,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 1,
+      "mean_abs_diff": 0.0,
+      "relative": null
+     },
+     "vertical": {
+      "sum_abs_diff": 142068.66642499983,
+      "sum_abs_ref": 142068.66642499983,
+      "max_abs_diff": 1280.0,
+      "keys": 124950,
+      "different_keys": 48308,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 0,
+      "mean_abs_diff": 1.13700413305322,
+      "relative": 1.0
+     }
+    }
+   },
+   "grz_files": {
+    "cpu_fixed": 13,
+    "gpu_fixed": 13,
+    "cpu_native": 13,
+    "control": 12
+   },
+   "text_meta": {
+    "cpu_fixed": {
+     "Vertical_Concentrations.txt": {
+      "header": {
+       "west": 2000.0,
+       "east": 3000.0,
+       "south": 2000.0,
+       "north": 3000.0,
+       "nii": 50.0,
+       "njj": 50.0,
+       "nkk": 50.0,
+       "dxk": 20.0,
+       "ahmin": 0.0,
+       "layer_heights": [
+        2.5,
+        7.5,
+        12.5,
+        17.5,
+        22.5,
+        27.5,
+        32.5,
+        38.0,
+        44.0,
+        50.0,
+        56.0,
+        62.0,
+        68.8,
+        76.2,
+        83.8,
+        91.2,
+        98.8,
+        107.5,
+        117.5,
+        127.5,
+        137.5,
+        147.5,
+        160.0,
+        175.0,
+        190.0,
+        205.0,
+        220.0,
+        235.0,
+        250.0,
+        267.5,
+        287.5,
+        307.5,
+        327.5,
+        347.5,
+        367.5,
+        387.5,
+        407.5,
+        432.5,
+        462.5,
+        492.5,
+        522.5,
+        552.5,
+        582.5,
+        612.5,
+        642.5,
+        672.5,
+        702.5,
+        732.5,
+        762.5
+       ],
+       "layers_found": 49
+      }
+     }
+    },
+    "gpu_fixed": {
+     "Vertical_Concentrations.txt": {
+      "header": {
+       "west": 2000.0,
+       "east": 3000.0,
+       "south": 2000.0,
+       "north": 3000.0,
+       "nii": 50.0,
+       "njj": 50.0,
+       "nkk": 50.0,
+       "dxk": 20.0,
+       "ahmin": 0.0,
+       "layer_heights": [
+        2.5,
+        7.5,
+        12.5,
+        17.5,
+        22.5,
+        27.5,
+        32.5,
+        38.0,
+        44.0,
+        50.0,
+        56.0,
+        62.0,
+        68.8,
+        76.2,
+        83.8,
+        91.2,
+        98.8,
+        107.5,
+        117.5,
+        127.5,
+        137.5,
+        147.5,
+        160.0,
+        175.0,
+        190.0,
+        205.0,
+        220.0,
+        235.0,
+        250.0,
+        267.5,
+        287.5,
+        307.5,
+        327.5,
+        347.5,
+        367.5,
+        387.5,
+        407.5,
+        432.5,
+        462.5,
+        492.5,
+        522.5,
+        552.5,
+        582.5,
+        612.5,
+        642.5,
+        672.5,
+        702.5,
+        732.5,
+        762.5
+       ],
+       "layers_found": 49
+      }
+     }
+    },
+    "cpu_native": {
+     "Vertical_Concentrations.txt": {
+      "header": {
+       "west": 2000.0,
+       "east": 3000.0,
+       "south": 2000.0,
+       "north": 3000.0,
+       "nii": 50.0,
+       "njj": 50.0,
+       "nkk": 50.0,
+       "dxk": 20.0,
+       "ahmin": 0.0,
+       "layer_heights": [
+        2.5,
+        7.5,
+        12.5,
+        17.5,
+        22.5,
+        27.5,
+        32.5,
+        38.0,
+        44.0,
+        50.0,
+        56.0,
+        62.0,
+        68.8,
+        76.2,
+        83.8,
+        91.2,
+        98.8,
+        107.5,
+        117.5,
+        127.5,
+        137.5,
+        147.5,
+        160.0,
+        175.0,
+        190.0,
+        205.0,
+        220.0,
+        235.0,
+        250.0,
+        267.5,
+        287.5,
+        307.5,
+        327.5,
+        347.5,
+        367.5,
+        387.5,
+        407.5,
+        432.5,
+        462.5,
+        492.5,
+        522.5,
+        552.5,
+        582.5,
+        612.5,
+        642.5,
+        672.5,
+        702.5,
+        732.5,
+        762.5
+       ],
+       "layers_found": 49
+      }
+     }
+    },
+    "control": {}
+   },
+   "text_token_mismatch": {
+    "A": 0,
+    "B": 0,
+    "effect": 0
+   },
+   "A_over_B": {
+    "con": {
+     "A_sum_abs_diff": 6.453080702864099,
+     "B_sum_abs_diff": 34137.30724037596,
+     "A_mean_abs": 0.00014737098526683336,
+     "B_mean_abs": 0.7197408231156643,
+     "A_relative": 8.876560282790753e-06,
+     "A_over_B": 0.00018903309090623606,
+     "A_nonfinite_pairs": 0
+    },
+    "vertical": {
+     "A_sum_abs_diff": 0.529019999999993,
+     "B_sum_abs_diff": 4832.321600600097,
+     "A_mean_abs": 4.233853541416511e-06,
+     "B_mean_abs": 0.03867404242176948,
+     "A_relative": 3.7236923053632704e-06,
+     "A_over_B": 0.0001094753296085048,
+     "A_nonfinite_pairs": 0
+    },
+    "vertical_topo": {
+     "A_sum_abs_diff": 0.0,
+     "B_sum_abs_diff": 0.0,
+     "A_mean_abs": 0.0,
+     "B_mean_abs": 0.0,
+     "A_relative": null,
+     "A_over_B": 0.0,
+     "A_nonfinite_pairs": 0
+    }
+   },
+   "vertical_unit_check": {
+    "values": 124950,
+    "values_beyond_one_unit": 44,
+    "header_equal": {
+     "west": true,
+     "east": true,
+     "south": true,
+     "north": true,
+     "nii": true,
+     "njj": true,
+     "nkk": true,
+     "dxk": true,
+     "layer_heights": true,
+     "layers_found": true
+    },
+    "layers_found": [
+     49,
+     49
+    ],
+    "domain_total_rel_diff": 7.869434043877554e-08
+   },
+   "type_status": {
+    "con": "pass",
+    "vertical": "pass"
+   },
+   "effect_check": {
+    "kind": "new",
+    "type": "vertical",
+    "case_nonzero": 48308,
+    "control_nonzero": 0,
+    "status": "pass"
+   },
+   "problems": [
+    "gpu_fixed: gpu_metrics lines 13 != situations 12",
+    "vertical: 44 values differ by >1 unit in the 3rd significant digit"
+   ],
+   "notes": [],
+   "screen": "fail",
+   "case_wall_s": 85.3
+  },
+  "vertical_conc_tmp": {
+   "purpose": "vertical conc + KeepAndReadTransientTempFiles 4 (.tmp writes at IWET 4/8/12)",
+   "group": "feature",
+   "config": {
+    "sources": "area",
+    "vertical": true,
+    "vertical_tmp_interval": 4
+   },
+   "control": "transient_area",
+   "unvalidated_feature": true,
+   "statistical": false,
+   "runs": {
+    "cpu_fixed": {
+     "mode": "cpu",
+     "native_seed_line": false,
+     "rc": 0,
+     "timed_out": false,
+     "wall_s": 26.23,
+     "fallback_lines": [],
+     "extra_env": {}
+    },
+    "gpu_fixed": {
+     "mode": "gpu",
+     "native_seed_line": false,
+     "rc": 0,
+     "timed_out": false,
+     "wall_s": 22.34,
+     "fallback_lines": [],
+     "extra_env": {},
+     "gpu_situations": 13,
+     "metrics": {
+      "lines": 13,
+      "situations": [
+       1,
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13
+      ],
+      "residual_particles_sum": 107540,
+      "fresh_particles": [
+       360000
+      ],
+      "rng_seed_mode": [
+       "fixed"
+      ],
+      "kernel_max_device_ms": 22.53468894958496,
+      "peak_mapped_output_bytes": 0,
+      "fresh_memory_windows_max": 78,
+      "mapped_buffer_names": [],
+      "cache_status": [
+       "disabled"
+      ],
+      "unparsed_lines": 0
+     },
+     "server_startup": [
+      "CUDA device 0 compute_120; NVRTC 12.9; target compute_120; NVIDIA GeForce RTX 5080; 16275 MiB; driver 13.4 (13040); kernel_exec_timeout=1; tcc=0; fp32:fp64=64:1; compute_mode=default"
+     ]
+    },
+    "cpu_native": {
+     "mode": "cpu",
+     "native_seed_line": true,
+     "rc": 0,
+     "timed_out": false,
+     "wall_s": 25.29,
+     "fallback_lines": [],
+     "extra_env": {}
+    }
+   },
+   "inventory": {
+    "cpu_fixed": {
+     "con": {
+      "values": 34801,
+      "nonzero": 34801,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 694489.9743098316,
+      "members": 39
+     },
+     "vertical": {
+      "values": 124950,
+      "nonzero": 44976,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 106892.96537189765,
+      "members": 1
+     },
+     "vertical_topo": {
+      "values": 2550,
+      "nonzero": 0,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 0.0,
+      "members": 1
+     }
+    },
+    "gpu_fixed": {
+     "con": {
+      "values": 34801,
+      "nonzero": 34801,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 694489.9028230885,
+      "members": 39
+     },
+     "vertical": {
+      "values": 124950,
+      "nonzero": 44976,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 106892.50245089763,
+      "members": 1
+     },
+     "vertical_topo": {
+      "values": 2550,
+      "nonzero": 0,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 0.0,
+      "members": 1
+     }
+    },
+    "cpu_native": {
+     "con": {
+      "values": 33705,
+      "nonzero": 33705,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 693408.8157218867,
+      "members": 39
+     },
+     "vertical": {
+      "values": 124950,
+      "nonzero": 39856,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 106514.69532999881,
+      "members": 1
+     },
+     "vertical_topo": {
+      "values": 2550,
+      "nonzero": 0,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 0.0,
+      "members": 1
+     }
+    },
+    "control": {
+     "con": {
+      "values": 32103,
+      "nonzero": 32103,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 640993.2004285,
+      "members": 36
+     }
+    }
+   },
+   "pairs": {
+    "A": {
+     "con": {
+      "sum_abs_diff": 8.177772749535507,
+      "sum_abs_ref": 694489.9743098314,
+      "max_abs_diff": 0.06068611145019531,
+      "keys": 34801,
+      "different_keys": 29594,
+      "nonfinite_pairs": 0,
+      "members": 39,
+      "members_equal": 0,
+      "mean_abs_diff": 0.00023498671732236163,
+      "relative": 1.177522074046122e-05
+     },
+     "vertical_topo": {
+      "sum_abs_diff": 0.0,
+      "sum_abs_ref": 0.0,
+      "max_abs_diff": 0.0,
+      "keys": 2550,
+      "different_keys": 0,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 1,
+      "mean_abs_diff": 0.0,
+      "relative": null
+     },
+     "vertical": {
+      "sum_abs_diff": 0.8213009999999963,
+      "sum_abs_ref": 106892.9653718987,
+      "max_abs_diff": 0.10000000000000853,
+      "keys": 124950,
+      "different_keys": 86,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 0,
+      "mean_abs_diff": 6.5730372148859246e-06,
+      "relative": 7.683396163092222e-06
+     }
+    },
+    "B": {
+     "con": {
+      "sum_abs_diff": 43522.87800856566,
+      "sum_abs_ref": 694489.9743098314,
+      "max_abs_diff": 23.110000610351562,
+      "keys": 37231,
+      "different_keys": 37231,
+      "nonfinite_pairs": 0,
+      "members": 39,
+      "members_equal": 0,
+      "mean_abs_diff": 1.1689956758767066,
+      "relative": 0.06266883557508188
+     },
+     "vertical_topo": {
+      "sum_abs_diff": 0.0,
+      "sum_abs_ref": 0.0,
+      "max_abs_diff": 0.0,
+      "keys": 2550,
+      "different_keys": 0,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 1,
+      "mean_abs_diff": 0.0,
+      "relative": null
+     },
+     "vertical": {
+      "sum_abs_diff": 6138.779147900085,
+      "sum_abs_ref": 106892.9653718987,
+      "max_abs_diff": 49.0,
+      "keys": 124950,
+      "different_keys": 49516,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 0,
+      "mean_abs_diff": 0.04912988513725559,
+      "relative": 0.05742921553857389
+     }
+    },
+    "effect": {
+     "con": {
+      "sum_abs_diff": 53496.77388133158,
+      "sum_abs_ref": 694489.9743098314,
+      "max_abs_diff": 273.52099609375,
+      "keys": 34801,
+      "different_keys": 2698,
+      "nonfinite_pairs": 0,
+      "members": 39,
+      "members_equal": 36,
+      "mean_abs_diff": 1.5372194443071057,
+      "relative": 0.0770303040508187
+     },
+     "vertical_topo": {
+      "sum_abs_diff": 0.0,
+      "sum_abs_ref": 0.0,
+      "max_abs_diff": 0.0,
+      "keys": 2550,
+      "different_keys": 0,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 1,
+      "mean_abs_diff": 0.0,
+      "relative": null
+     },
+     "vertical": {
+      "sum_abs_diff": 106892.9653718987,
+      "sum_abs_ref": 106892.9653718987,
+      "max_abs_diff": 641.0,
+      "keys": 124950,
+      "different_keys": 44976,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 0,
+      "mean_abs_diff": 0.8554859173421264,
+      "relative": 1.0
+     }
+    }
+   },
+   "grz_files": {
+    "cpu_fixed": 13,
+    "gpu_fixed": 13,
+    "cpu_native": 13,
+    "control": 12
+   },
+   "text_meta": {
+    "cpu_fixed": {
+     "Vertical_Concentrations.txt": {
+      "header": {
+       "west": 2000.0,
+       "east": 3000.0,
+       "south": 2000.0,
+       "north": 3000.0,
+       "nii": 50.0,
+       "njj": 50.0,
+       "nkk": 50.0,
+       "dxk": 20.0,
+       "ahmin": 0.0,
+       "layer_heights": [
+        2.5,
+        7.5,
+        12.5,
+        17.5,
+        22.5,
+        27.5,
+        32.5,
+        38.0,
+        44.0,
+        50.0,
+        56.0,
+        62.0,
+        68.8,
+        76.2,
+        83.8,
+        91.2,
+        98.8,
+        107.5,
+        117.5,
+        127.5,
+        137.5,
+        147.5,
+        160.0,
+        175.0,
+        190.0,
+        205.0,
+        220.0,
+        235.0,
+        250.0,
+        267.5,
+        287.5,
+        307.5,
+        327.5,
+        347.5,
+        367.5,
+        387.5,
+        407.5,
+        432.5,
+        462.5,
+        492.5,
+        522.5,
+        552.5,
+        582.5,
+        612.5,
+        642.5,
+        672.5,
+        702.5,
+        732.5,
+        762.5
+       ],
+       "layers_found": 49
+      }
+     }
+    },
+    "gpu_fixed": {
+     "Vertical_Concentrations.txt": {
+      "header": {
+       "west": 2000.0,
+       "east": 3000.0,
+       "south": 2000.0,
+       "north": 3000.0,
+       "nii": 50.0,
+       "njj": 50.0,
+       "nkk": 50.0,
+       "dxk": 20.0,
+       "ahmin": 0.0,
+       "layer_heights": [
+        2.5,
+        7.5,
+        12.5,
+        17.5,
+        22.5,
+        27.5,
+        32.5,
+        38.0,
+        44.0,
+        50.0,
+        56.0,
+        62.0,
+        68.8,
+        76.2,
+        83.8,
+        91.2,
+        98.8,
+        107.5,
+        117.5,
+        127.5,
+        137.5,
+        147.5,
+        160.0,
+        175.0,
+        190.0,
+        205.0,
+        220.0,
+        235.0,
+        250.0,
+        267.5,
+        287.5,
+        307.5,
+        327.5,
+        347.5,
+        367.5,
+        387.5,
+        407.5,
+        432.5,
+        462.5,
+        492.5,
+        522.5,
+        552.5,
+        582.5,
+        612.5,
+        642.5,
+        672.5,
+        702.5,
+        732.5,
+        762.5
+       ],
+       "layers_found": 49
+      }
+     }
+    },
+    "cpu_native": {
+     "Vertical_Concentrations.txt": {
+      "header": {
+       "west": 2000.0,
+       "east": 3000.0,
+       "south": 2000.0,
+       "north": 3000.0,
+       "nii": 50.0,
+       "njj": 50.0,
+       "nkk": 50.0,
+       "dxk": 20.0,
+       "ahmin": 0.0,
+       "layer_heights": [
+        2.5,
+        7.5,
+        12.5,
+        17.5,
+        22.5,
+        27.5,
+        32.5,
+        38.0,
+        44.0,
+        50.0,
+        56.0,
+        62.0,
+        68.8,
+        76.2,
+        83.8,
+        91.2,
+        98.8,
+        107.5,
+        117.5,
+        127.5,
+        137.5,
+        147.5,
+        160.0,
+        175.0,
+        190.0,
+        205.0,
+        220.0,
+        235.0,
+        250.0,
+        267.5,
+        287.5,
+        307.5,
+        327.5,
+        347.5,
+        367.5,
+        387.5,
+        407.5,
+        432.5,
+        462.5,
+        492.5,
+        522.5,
+        552.5,
+        582.5,
+        612.5,
+        642.5,
+        672.5,
+        702.5,
+        732.5,
+        762.5
+       ],
+       "layers_found": 49
+      }
+     }
+    },
+    "control": {}
+   },
+   "text_token_mismatch": {
+    "A": 0,
+    "B": 0,
+    "effect": 0
+   },
+   "A_over_B": {
+    "con": {
+     "A_sum_abs_diff": 8.177772749535507,
+     "B_sum_abs_diff": 43522.87800856566,
+     "A_mean_abs": 0.00023498671732236163,
+     "B_mean_abs": 1.1689956758767066,
+     "A_relative": 1.177522074046122e-05,
+     "A_over_B": 0.00018789595550014072,
+     "A_nonfinite_pairs": 0
+    },
+    "vertical": {
+     "A_sum_abs_diff": 0.8213009999999963,
+     "B_sum_abs_diff": 6138.779147900085,
+     "A_mean_abs": 6.5730372148859246e-06,
+     "B_mean_abs": 0.04912988513725559,
+     "A_relative": 7.683396163092222e-06,
+     "A_over_B": 0.00013378897989528452,
+     "A_nonfinite_pairs": 0
+    },
+    "vertical_topo": {
+     "A_sum_abs_diff": 0.0,
+     "B_sum_abs_diff": 0.0,
+     "A_mean_abs": 0.0,
+     "B_mean_abs": 0.0,
+     "A_relative": null,
+     "A_over_B": 0.0,
+     "A_nonfinite_pairs": 0
+    }
+   },
+   "vertical_unit_check": {
+    "values": 124950,
+    "values_beyond_one_unit": 26,
+    "header_equal": {
+     "west": true,
+     "east": true,
+     "south": true,
+     "north": true,
+     "nii": true,
+     "njj": true,
+     "nkk": true,
+     "dxk": true,
+     "layer_heights": true,
+     "layers_found": true
+    },
+    "layers_found": [
+     49,
+     49
+    ],
+    "domain_total_rel_diff": 4.330696584081782e-06
+   },
+   "type_status": {
+    "con": "pass",
+    "vertical": "pass"
+   },
+   "effect_check": {
+    "kind": "new",
+    "type": "vertical",
+    "case_nonzero": 44976,
+    "control_nonzero": 0,
+    "status": "pass"
+   },
+   "problems": [
+    "gpu_fixed: gpu_metrics lines 13 != situations 12",
+    "vertical: 26 values differ by >1 unit in the 3rd significant digit"
+   ],
+   "notes": [],
+   "screen": "fail",
+   "case_wall_s": 74.5
+  },
+  "neg_vertical_inf": {
+   "purpose": "vertical restart from Vertical_Concentrations.tmp holding +Inf (F3c)",
+   "group": "negative",
+   "config": {
+    "sources": "area",
+    "vertical": true,
+    "vertical_inf_tmp": true
+   },
+   "control": null,
+   "unvalidated_feature": true,
+   "statistical": false,
+   "runs": {
+    "cpu_fixed": {
+     "mode": "cpu",
+     "native_seed_line": false,
+     "rc": 0,
+     "timed_out": false,
+     "wall_s": 25.45,
+     "fallback_lines": [],
+     "extra_env": {},
+     "grz_files": 13
+    },
+    "gpu_fixed": {
+     "mode": "gpu",
+     "native_seed_line": false,
+     "rc": 0,
+     "timed_out": false,
+     "wall_s": 25.53,
+     "fallback_lines": [
+      "GPU fallback to CPU: non-finite accumulated output"
+     ],
+     "extra_env": {},
+     "gpu_situations": 0,
+     "metrics": {
+      "lines": 0
+     },
+     "server_startup": [],
+     "grz_files": 13
+    },
+    "cpu_native": {
+     "mode": "cpu",
+     "native_seed_line": true,
+     "rc": 0,
+     "timed_out": false,
+     "wall_s": 25.36,
+     "fallback_lines": [],
+     "extra_env": {},
+     "grz_files": 13
+    }
+   },
+   "inventory": {
+    "cpu_fixed": {
+     "con": {
+      "values": 34801,
+      "nonzero": 34801,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 694489.9743098316,
+      "members": 39
+     },
+     "vertical": {
+      "values": 124950,
+      "nonzero": 44975,
+      "nonfinite": 1,
+      "negative": 0,
+      "sum": 98855.79908189837,
+      "members": 1
+     },
+     "vertical_topo": {
+      "values": 2550,
+      "nonzero": 0,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 0.0,
+      "members": 1
+     }
+    },
+    "gpu_fixed": {
+     "con": {
+      "values": 34801,
+      "nonzero": 34801,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 694489.9743098316,
+      "members": 39
+     },
+     "vertical": {
+      "values": 124950,
+      "nonzero": 44975,
+      "nonfinite": 1,
+      "negative": 0,
+      "sum": 98855.79908189837,
+      "members": 1
+     },
+     "vertical_topo": {
+      "values": 2550,
+      "nonzero": 0,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 0.0,
+      "members": 1
+     }
+    },
+    "cpu_native": {
+     "con": {
+      "values": 33740,
+      "nonzero": 33740,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 692885.5924520115,
+      "members": 39
+     },
+     "vertical": {
+      "values": 124950,
+      "nonzero": 40207,
+      "nonfinite": 1,
+      "negative": 0,
+      "sum": 98502.15609019816,
+      "members": 1
+     },
+     "vertical_topo": {
+      "values": 2550,
+      "nonzero": 0,
+      "nonfinite": 0,
+      "negative": 0,
+      "sum": 0.0,
+      "members": 1
+     }
+    }
+   },
+   "pairs": {
+    "A": {
+     "con": {
+      "sum_abs_diff": 0.0,
+      "sum_abs_ref": 694489.9743098314,
+      "max_abs_diff": 0.0,
+      "keys": 34801,
+      "different_keys": 0,
+      "nonfinite_pairs": 0,
+      "members": 39,
+      "members_equal": 39,
+      "mean_abs_diff": 0.0,
+      "relative": 0.0
+     },
+     "vertical_topo": {
+      "sum_abs_diff": 0.0,
+      "sum_abs_ref": 0.0,
+      "max_abs_diff": 0.0,
+      "keys": 2550,
+      "different_keys": 0,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 1,
+      "mean_abs_diff": 0.0,
+      "relative": null
+     },
+     "vertical": {
+      "sum_abs_diff": 0.0,
+      "sum_abs_ref": 98855.79908189953,
+      "max_abs_diff": 0.0,
+      "keys": 124950,
+      "different_keys": 0,
+      "nonfinite_pairs": 1,
+      "members": 1,
+      "members_equal": 1,
+      "mean_abs_diff": 0.0,
+      "relative": 0.0
+     }
+    },
+    "B": {
+     "con": {
+      "sum_abs_diff": 43559.018503754254,
+      "sum_abs_ref": 694489.9743098314,
+      "max_abs_diff": 23.77691650390625,
+      "keys": 37274,
+      "different_keys": 37274,
+      "nonfinite_pairs": 0,
+      "members": 39,
+      "members_equal": 0,
+      "mean_abs_diff": 1.1686166900186257,
+      "relative": 0.06272087447632665
+     },
+     "vertical_topo": {
+      "sum_abs_diff": 0.0,
+      "sum_abs_ref": 0.0,
+      "max_abs_diff": 0.0,
+      "keys": 2550,
+      "different_keys": 0,
+      "nonfinite_pairs": 0,
+      "members": 1,
+      "members_equal": 1,
+      "mean_abs_diff": 0.0,
+      "relative": null
+     },
+     "vertical": {
+      "sum_abs_diff": 5769.649806100072,
+      "sum_abs_ref": 98855.79908189953,
+      "max_abs_diff": 45.0,
+      "keys": 124950,
+      "different_keys": 49977,
+      "nonfinite_pairs": 1,
+      "members": 1,
+      "members_equal": 0,
+      "mean_abs_diff": 0.04617566871628709,
+      "relative": 0.05836430295121142
+     }
+    }
+   },
+   "grz_files": {
+    "cpu_fixed": 13,
+    "gpu_fixed": 13,
+    "cpu_native": 13
+   },
+   "text_meta": {
+    "cpu_fixed": {
+     "Vertical_Concentrations.txt": {
+      "header": {
+       "west": 2000.0,
+       "east": 3000.0,
+       "south": 2000.0,
+       "north": 3000.0,
+       "nii": 50.0,
+       "njj": 50.0,
+       "nkk": 50.0,
+       "dxk": 20.0,
+       "ahmin": 0.0,
+       "layer_heights": [
+        2.5,
+        7.5,
+        12.5,
+        17.5,
+        22.5,
+        27.5,
+        32.5,
+        38.0,
+        44.0,
+        50.0,
+        56.0,
+        62.0,
+        68.8,
+        76.2,
+        83.8,
+        91.2,
+        98.8,
+        107.5,
+        117.5,
+        127.5,
+        137.5,
+        147.5,
+        160.0,
+        175.0,
+        190.0,
+        205.0,
+        220.0,
+        235.0,
+        250.0,
+        267.5,
+        287.5,
+        307.5,
+        327.5,
+        347.5,
+        367.5,
+        387.5,
+        407.5,
+        432.5,
+        462.5,
+        492.5,
+        522.5,
+        552.5,
+        582.5,
+        612.5,
+        642.5,
+        672.5,
+        702.5,
+        732.5,
+        762.5
+       ],
+       "layers_found": 49
+      }
+     }
+    },
+    "gpu_fixed": {
+     "Vertical_Concentrations.txt": {
+      "header": {
+       "west": 2000.0,
+       "east": 3000.0,
+       "south": 2000.0,
+       "north": 3000.0,
+       "nii": 50.0,
+       "njj": 50.0,
+       "nkk": 50.0,
+       "dxk": 20.0,
+       "ahmin": 0.0,
+       "layer_heights": [
+        2.5,
+        7.5,
+        12.5,
+        17.5,
+        22.5,
+        27.5,
+        32.5,
+        38.0,
+        44.0,
+        50.0,
+        56.0,
+        62.0,
+        68.8,
+        76.2,
+        83.8,
+        91.2,
+        98.8,
+        107.5,
+        117.5,
+        127.5,
+        137.5,
+        147.5,
+        160.0,
+        175.0,
+        190.0,
+        205.0,
+        220.0,
+        235.0,
+        250.0,
+        267.5,
+        287.5,
+        307.5,
+        327.5,
+        347.5,
+        367.5,
+        387.5,
+        407.5,
+        432.5,
+        462.5,
+        492.5,
+        522.5,
+        552.5,
+        582.5,
+        612.5,
+        642.5,
+        672.5,
+        702.5,
+        732.5,
+        762.5
+       ],
+       "layers_found": 49
+      }
+     }
+    },
+    "cpu_native": {
+     "Vertical_Concentrations.txt": {
+      "header": {
+       "west": 2000.0,
+       "east": 3000.0,
+       "south": 2000.0,
+       "north": 3000.0,
+       "nii": 50.0,
+       "njj": 50.0,
+       "nkk": 50.0,
+       "dxk": 20.0,
+       "ahmin": 0.0,
+       "layer_heights": [
+        2.5,
+        7.5,
+        12.5,
+        17.5,
+        22.5,
+        27.5,
+        32.5,
+        38.0,
+        44.0,
+        50.0,
+        56.0,
+        62.0,
+        68.8,
+        76.2,
+        83.8,
+        91.2,
+        98.8,
+        107.5,
+        117.5,
+        127.5,
+        137.5,
+        147.5,
+        160.0,
+        175.0,
+        190.0,
+        205.0,
+        220.0,
+        235.0,
+        250.0,
+        267.5,
+        287.5,
+        307.5,
+        327.5,
+        347.5,
+        367.5,
+        387.5,
+        407.5,
+        432.5,
+        462.5,
+        492.5,
+        522.5,
+        552.5,
+        582.5,
+        612.5,
+        642.5,
+        672.5,
+        702.5,
+        732.5,
+        762.5
+       ],
+       "layers_found": 49
+      }
+     }
+    }
+   },
+   "text_token_mismatch": {
+    "A": 0,
+    "B": 0
+   },
+   "A_over_B": {
+    "con": {
+     "A_sum_abs_diff": 0.0,
+     "B_sum_abs_diff": 43559.018503754254,
+     "A_mean_abs": 0.0,
+     "B_mean_abs": 1.1686166900186257,
+     "A_relative": 0.0,
+     "A_over_B": 0.0,
+     "A_nonfinite_pairs": 0
+    },
+    "vertical": {
+     "A_sum_abs_diff": 0.0,
+     "B_sum_abs_diff": 5769.649806100072,
+     "A_mean_abs": 0.0,
+     "B_mean_abs": 0.04617566871628709,
+     "A_relative": 0.0,
+     "A_over_B": 0.0,
+     "A_nonfinite_pairs": 1
+    },
+    "vertical_topo": {
+     "A_sum_abs_diff": 0.0,
+     "B_sum_abs_diff": 0.0,
+     "A_mean_abs": 0.0,
+     "B_mean_abs": 0.0,
+     "A_relative": null,
+     "A_over_B": 0.0,
+     "A_nonfinite_pairs": 0
+    }
+   },
+   "matched_outcome": null,
+   "problems": [],
+   "notes": [],
+   "screen": "negative_unexpected",
+   "case_wall_s": 102.2
+  }
+ }
+}

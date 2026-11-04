@@ -1,0 +1,243 @@
+{
+ "A_cpu": {
+  "rc": 0,
+  "timed_out": false,
+  "grz": [
+   "00001.grz",
+   "00002.grz",
+   "00003.grz",
+   "00004.grz",
+   "00005.grz",
+   "00006.grz",
+   "00007.grz",
+   "00008.grz",
+   "00009.grz",
+   "00010.grz",
+   "00011.grz",
+   "00012.grz",
+   "00013.grz",
+   "00014.grz",
+   "00015.grz",
+   "00016.grz",
+   "00017.grz",
+   "00018.grz",
+   "00019.grz",
+   "00020.grz",
+   "00021.grz",
+   "00022.grz",
+   "00023.grz",
+   "00024.grz",
+   "00025.grz",
+   "00026.grz"
+  ],
+  "tmp": [],
+  "vertical_size": 1262175,
+  "core_end": [
+   "GRAL simulations finished at: 2026-11-05 \uc624\uc804 2:42:35"
+  ],
+  "problem_tail": [],
+  "resume_lines": [
+   "Transient GRAL mode. Number of weather situations: 26"
+  ]
+ },
+ "B_cpu": {
+  "rc": 1,
+  "timed_out": false,
+  "grz": [
+   "00001.grz",
+   "00002.grz",
+   "00003.grz",
+   "00004.grz",
+   "00005.grz",
+   "00006.grz",
+   "00007.grz",
+   "00008.grz",
+   "00009.grz",
+   "00010.grz",
+   "00011.grz",
+   "00012.grz",
+   "00013.grz",
+   "00014.grz",
+   "00015.grz",
+   "00016.grz",
+   "00017.grz",
+   "00018.grz",
+   "00019.grz",
+   "00020.grz",
+   "00021.grz",
+   "00022.grz",
+   "00023.grz",
+   "00024.grz",
+   "00025.grz",
+   "00026.grz"
+  ],
+  "tmp": [
+   "Transient_Concentrations1.tmp",
+   "Vertical_Concentrations.tmp"
+  ],
+  "vertical_size": 0,
+  "core_end": [
+   "GRAL simulations stopped with errors at: 2026-11-05 \uc624\uc804 2:45:35"
+  ],
+  "problem_tail": [
+   "GRAL Error: Error writing complete vertical concentration file Vertical_Concentrations.txt: The process cannot access the file '<jobs>\\20261104_gral_gpu_pr_integration\\vertical_resume\\r4\\B_cpu\\Computation\\Vertical_Concentrations.txt' because it is being used by another process.",
+   "GRAL Error: Vertical_Concentrations.txt was not written. The transient checkpoint files were kept, as after an interrupted run; delete the *.tmp files to repeat the run from the start."
+  ],
+  "resume_lines": [
+   "Transient GRAL mode. Number of weather situations: 26"
+  ]
+ },
+ "C_cpu": {
+  "rc": 0,
+  "timed_out": false,
+  "grz": [
+   "00001.grz",
+   "00002.grz",
+   "00003.grz",
+   "00004.grz",
+   "00005.grz",
+   "00006.grz",
+   "00007.grz",
+   "00008.grz",
+   "00009.grz",
+   "00010.grz",
+   "00011.grz",
+   "00012.grz",
+   "00013.grz",
+   "00014.grz",
+   "00015.grz",
+   "00016.grz",
+   "00017.grz",
+   "00018.grz",
+   "00019.grz",
+   "00020.grz",
+   "00021.grz",
+   "00022.grz",
+   "00023.grz",
+   "00024.grz",
+   "00025.grz",
+   "00026.grz"
+  ],
+  "tmp": [],
+  "vertical_size": 1262175,
+  "core_end": [
+   "GRAL simulations finished at: 2026-11-05 \uc624\uc804 2:45:49"
+  ],
+  "problem_tail": [],
+  "resume_lines": [
+   "Array declarations..........Reading Transient_Concentrations.tmp successful! Already calculated emission rates:",
+   "Transient GRAL mode. Number of weather situations: 26"
+  ],
+  "vertical_vs_A": {
+   "n": [
+    127607,
+    127607
+   ],
+   "max_abs_diff": 0.0,
+   "sum_A": 142692.4882425,
+   "sum_C": 142692.4882425
+  }
+ },
+ "B_gpu": {
+  "rc": 1,
+  "timed_out": false,
+  "grz": [
+   "00001.grz",
+   "00002.grz",
+   "00003.grz",
+   "00004.grz",
+   "00005.grz",
+   "00006.grz",
+   "00007.grz",
+   "00008.grz",
+   "00009.grz",
+   "00010.grz",
+   "00011.grz",
+   "00012.grz",
+   "00013.grz",
+   "00014.grz",
+   "00015.grz",
+   "00016.grz",
+   "00017.grz",
+   "00018.grz",
+   "00019.grz",
+   "00020.grz",
+   "00021.grz",
+   "00022.grz",
+   "00023.grz",
+   "00024.grz",
+   "00025.grz",
+   "00026.grz"
+  ],
+  "tmp": [
+   "Transient_Concentrations1.tmp",
+   "Vertical_Concentrations.tmp"
+  ],
+  "vertical_size": 0,
+  "core_end": [
+   "GRAL simulations stopped with errors at: 2026-11-05 \uc624\uc804 2:46:36"
+  ],
+  "problem_tail": [
+   "GRAL Error: Error writing complete vertical concentration file Vertical_Concentrations.txt: The process cannot access the file '<jobs>\\20261104_gral_gpu_pr_integration\\vertical_resume\\r4\\B_gpu\\Computation\\Vertical_Concentrations.txt' because it is being used by another process.",
+   "GRAL Error: Vertical_Concentrations.txt was not written. The transient checkpoint files were kept, as after an interrupted run; delete the *.tmp files to repeat the run from the start."
+  ],
+  "resume_lines": [
+   "Transient GRAL mode. Number of weather situations: 26"
+  ]
+ },
+ "C_gpu": {
+  "rc": 0,
+  "timed_out": false,
+  "grz": [
+   "00001.grz",
+   "00002.grz",
+   "00003.grz",
+   "00004.grz",
+   "00005.grz",
+   "00006.grz",
+   "00007.grz",
+   "00008.grz",
+   "00009.grz",
+   "00010.grz",
+   "00011.grz",
+   "00012.grz",
+   "00013.grz",
+   "00014.grz",
+   "00015.grz",
+   "00016.grz",
+   "00017.grz",
+   "00018.grz",
+   "00019.grz",
+   "00020.grz",
+   "00021.grz",
+   "00022.grz",
+   "00023.grz",
+   "00024.grz",
+   "00025.grz",
+   "00026.grz"
+  ],
+  "tmp": [],
+  "vertical_size": 1262175,
+  "core_end": [
+   "GRAL simulations finished at: 2026-11-05 \uc624\uc804 2:46:41"
+  ],
+  "problem_tail": [],
+  "resume_lines": [
+   "Array declarations..........Reading Transient_Concentrations.tmp successful! Already calculated emission rates:",
+   "Transient GRAL mode. Number of weather situations: 26"
+  ],
+  "vertical_vs_A": {
+   "n": [
+    127607,
+    127607
+   ],
+   "max_abs_diff": 0.10000000000000142,
+   "sum_A": 142692.4882425,
+   "sum_C": 142692.40976950002
+  }
+ },
+ "_build": {
+  "dll": "GRAL.dll",
+  "dll_sha256": "870b8895dc42e3369c9038c75539fc2f29a34757cbb2fb880b4dcda4143af266"
+ }
+}

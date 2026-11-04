@@ -1,0 +1,30 @@
+{
+ "mode": "cpu",
+ "dll_sha256": "870b8895dc42e3369c9038c75539fc2f29a34757cbb2fb880b4dcda4143af266",
+ "runtime_sha256": {
+  "cuda_common.py": "d9e382f81b655c583fa69af48ed077bc4286cbf6f7726680962b52fd81bb7389",
+  "fields_manifest.json": "cfda79932738dbee68fc9b9fdc3415fbdc9e7654c50c7dfd75137899169d92bc",
+  "generated.cu": "e235d48461b1109570ec6aec7c9a23440b8e6d677d349e9946c2312286fe0390",
+  "ptx_cache.py": "0f3600b505ad55963b57730f8f40de21de5552fe72ea01099afda16637b13072",
+  "server.py": "7185214507c2641bec844b379dcd684afc4dd7c35867efc01b7f273dce854701"
+ },
+ "rc": 0,
+ "timed_out": false,
+ "wall_s": 126.866,
+ "affinity": [
+  {
+   "pid": 20096,
+   "process_mask": 65535,
+   "system_mask": 4294967295
+  }
+ ],
+ "members_reference": 96,
+ "members_candidate": 96,
+ "members_identical": 96,
+ "gpu_fallback_lines": [],
+ "leftover_tmp": [],
+ "gpu_metrics_lines": null,
+ "startup_lines": null,
+ "reference": "<jobs>\\20261103_gral_gpu_final_validation\\runs\\final448_001\\targets\\B00_fixed00_cpu",
+ "timing_eligible": false
+}
