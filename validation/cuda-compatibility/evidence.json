@@ -114,5 +114,5 @@
     "Actual device startup and isolated atomic helper execution do not validate GRAL model results.",
     "Driver version is the CUDA driver API version reported by cuDriverGetVersion, not an NVIDIA display-driver package version."
   ],
-  "compute_50_scope": "Compile-only for compute capability 5.0 (GTX 750 class); no physical GTX 750 device test"
+  "gtx_1650_scope": "The full kernel compiled for compute_75, the target for the GTX 1650. Execution on a physical GTX 1650 remains unverified."
 }
