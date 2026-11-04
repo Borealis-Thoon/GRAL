@@ -1,0 +1,118 @@
+{
+  "scope": "Public PR variant; isolated CUDA compatibility QA; no model inputs or trajectories",
+  "result": "pass",
+  "runtime_inputs_unchanged": true,
+  "compiler": {
+    "nvrtc_version": [
+      12,
+      9
+    ],
+    "ptx_version": "8.8",
+    "options": [
+      "--gpu-architecture=compute_<target>",
+      "--std=c++11",
+      "--fmad=false"
+    ],
+    "generated_cu_sha256": "816d2b98389710c3483b804a9cd1f8d1d9d7af7eb58b0114c20f3b715e61c58a"
+  },
+  "compile_matrix": {
+    "scope": "Full generated CUDA source; compilation only; no physical legacy-device test",
+    "targets": [
+      {
+        "target": 50,
+        "status": "pass",
+        "ptx_bytes": 859430,
+        "ptx_sha256": "5e821f355912099078f010d88f7c86a6d49ea840d397f0256ef6ee2ba325f806"
+      },
+      {
+        "target": 52,
+        "status": "pass",
+        "ptx_bytes": 859430,
+        "ptx_sha256": "498a65e557082d0b5717f51a9db71f24783c74c042b797de90eb7bf3117c1366"
+      },
+      {
+        "target": 60,
+        "status": "pass",
+        "ptx_bytes": 873062,
+        "ptx_sha256": "e87c7e9056ca4ab6385523cbb57a64d9a5b40ebe0f591169c397fbd160954887"
+      },
+      {
+        "target": 70,
+        "status": "pass",
+        "ptx_bytes": 874020,
+        "ptx_sha256": "b2e176ee9b31fac83ad9769188d19b734dd22592e4f24af18069490ffbe21850"
+      },
+      {
+        "target": 75,
+        "status": "pass",
+        "ptx_bytes": 874020,
+        "ptx_sha256": "8bec2a233cc73826e720c93a70e8c02f77efff295238c44f4d895a87969c7243"
+      },
+      {
+        "target": 86,
+        "status": "pass",
+        "ptx_bytes": 874020,
+        "ptx_sha256": "0f522196a0e91f7cc097ef711caf3b21b216d74d1c0de90cc646c685e601bdec"
+      },
+      {
+        "target": 89,
+        "status": "pass",
+        "ptx_bytes": 874020,
+        "ptx_sha256": "9ba2cf451dcdc6ac5d96e6da453199bba77d75b2b8bb8cadbaaaff4583d3e732"
+      },
+      {
+        "target": 120,
+        "status": "pass",
+        "ptx_bytes": 788514,
+        "ptx_sha256": "dd14ce7121e36235e0758237926fa31c8b779cfc6dc600a8cee1d84e11e157f9"
+      }
+    ]
+  },
+  "physical_device": {
+    "name": "NVIDIA GeForce RTX 5080",
+    "compute_capability": [
+      12,
+      0
+    ],
+    "driver_api_version": 13040
+  },
+  "startup": {
+    "constructor": "Server",
+    "cold_cache_status": "miss",
+    "cold_cache_write_status": "written",
+    "warm_cache_status": "hit",
+    "warm_nvrtc_compile_ms": 0.0,
+    "cold_warm_cache_pass": true,
+    "python_state_bytes": 1792,
+    "cuda_state_bytes": 1792,
+    "cold_status": "pass",
+    "warm_status": "pass"
+  },
+  "fp64_cas": {
+    "status": "pass",
+    "target": 50,
+    "actual_generated_prefix_sha256": "651b7b95fc6593827ca1a75b9b9e1311f124cbf7f9a1cb80677af4a13a2e33c8",
+    "initial": 1.5,
+    "threads": 32,
+    "increment": 0.25,
+    "expected": 9.5,
+    "actual": 9.5,
+    "pre_sm60_ptx_cas": true,
+    "scope": "actual atomic helper only; no GRAL trajectories or model input"
+  },
+  "frozen_native_ptx_comparison": {
+    "baseline_commit": "b60673164b749896c3b942d0e89753addc1c6f7b",
+    "baseline_generated_cu_sha256": "2b97d8caf2c0bd483deab62a2fced92d71f006383ddbf1caf2754097eec18f01",
+    "target": 120,
+    "same_options": true,
+    "same_ptx_sha256": true,
+    "ptx_bytes": 788514,
+    "ptx_sha256": "dd14ce7121e36235e0758237926fa31c8b779cfc6dc600a8cee1d84e11e157f9"
+  },
+  "limitations": [
+    "PTX compilation does not demonstrate execution on a GTX device.",
+    "Actual device startup and isolated atomic helper execution do not validate GRAL model results.",
+    "Driver version is the CUDA driver API version reported by cuDriverGetVersion, not an NVIDIA display-driver package version."
+  ],
+  "compute_50_scope": "Compile-only for compute capability 5.0 (GTX 750 class); no physical GTX 750 device test"
+}
