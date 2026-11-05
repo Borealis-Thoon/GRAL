@@ -1,0 +1,20 @@
+{
+ "host": "inproc",
+ "rc": 0,
+ "stop_after_s": 0.09,
+ "situations_before_stop": 10,
+ "grz": 10,
+ "tail": [
+  "Dispersion computation.....",
+  ".....shutting down GRAL gracefully, triggered by the GUI......(ID:StopGRAL)",
+  "Summarized emission rates per source group in kg",
+  "SG:   1  \tSG:   2  \tSG:   3  \tSG:   4  \t",
+  "2.00e+001\t2.00e+001\t2.00e+001\t2.00e+001\t",
+  "Process exit called"
+ ],
+ "stderr_tail": [],
+ "server_log_tail": [
+  "CUDA device 0 compute_120; NVRTC 12.9; target compute_120; NVIDIA GeForce RTX 5080; 16275 MiB; driver 13.4 (13040); kernel_exec_timeout=1; tcc=0; fp32:fp64=64:1; compute_mode=default",
+  "GPU run cancelled"
+ ]
+}

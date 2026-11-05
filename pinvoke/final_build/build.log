@@ -1,0 +1,12 @@
+commit: 605719549b318ec507c0407ba1059e1f492a4f62
+command: dotnet build src/GRAL.csproj -c Release -o <out> -p:TreatWarningsAsErrors=true
+dotnet SDK: 10.0.401
+  Determining projects to restore...
+  Restored <jobs>\20261105_gral_gpu_pinvoke\wt_final_c3\src\GRAL.csproj (in 47 ms).
+  GRAL -> <jobs>\20261105_gral_gpu_pinvoke\build_final\out\GRAL.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.44

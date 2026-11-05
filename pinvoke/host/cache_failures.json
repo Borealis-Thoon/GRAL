@@ -1,0 +1,40 @@
+[
+ {
+  "run": "cachefail_parentfile",
+  "build": "build7",
+  "host": "inproc",
+  "note": "INU_GPU_CACHE_DIR below an existing file: folder cannot be created",
+  "rc": 0,
+  "wall_s": 42.822,
+  "grz_members_identical_to_reference": "96/96",
+  "gpu_fallback_lines": [],
+  "kernel_device_s": 27.384,
+  "kernel_launches": 2322,
+  "nvrtc_compile_ms": 5638.1,
+  "cache_status": "miss",
+  "cache_write_status": "write_error",
+  "fresh_registers": 255,
+  "fresh_local_bytes": 72,
+  "block": 128,
+  "chunk": 4096
+ },
+ {
+  "run": "cachefail_corrupt2",
+  "build": "build7",
+  "host": "inproc",
+  "note": "cache entry for this kernel truncated to half its size",
+  "rc": 0,
+  "wall_s": 42.508,
+  "grz_members_identical_to_reference": "96/96",
+  "gpu_fallback_lines": [],
+  "kernel_device_s": 27.406,
+  "kernel_launches": 2322,
+  "nvrtc_compile_ms": 5502.7,
+  "cache_status": "read_error",
+  "cache_write_status": "written",
+  "fresh_registers": 255,
+  "fresh_local_bytes": 72,
+  "block": 128,
+  "chunk": 4096
+ }
+]

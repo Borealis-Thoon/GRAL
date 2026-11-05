@@ -1,0 +1,109 @@
+{
+ "nvrtc": "12.9",
+ "supported_archs": [
+  50,
+  52,
+  53,
+  60,
+  61,
+  62,
+  70,
+  72,
+  75,
+  80,
+  86,
+  87,
+  89,
+  90,
+  100,
+  101,
+  103,
+  120,
+  121
+ ],
+ "generated_cu_sha256": "3091ffbbb1e819fc2ff4edf70584f139b6c3c18802bda9ac90da131f94889bfc",
+ "options": [
+  "--std=c++11",
+  "--fmad=false"
+ ],
+ "results": [
+  {
+   "target": "compute_50",
+   "rc": 0,
+   "image_bytes": 967574,
+   "log_tail": "was set but never used\n  int ISTATIONAER_51{};\n      ^\n\nkernel.cu(2329): warning #550-D: variable \"AHintold_59\" was set but never used\n  float AHintold_59{};\n        ^\n\nkernel.cu(2380): warning #550-D: variable \"zcoord_nteil_Prev_110\" was set but never used\n  float zcoord_nteil_Prev_110{};\n        ^"
+  },
+  {
+   "target": "compute_52",
+   "rc": 0,
+   "image_bytes": 967574,
+   "log_tail": "was set but never used\n  int ISTATIONAER_51{};\n      ^\n\nkernel.cu(2329): warning #550-D: variable \"AHintold_59\" was set but never used\n  float AHintold_59{};\n        ^\n\nkernel.cu(2380): warning #550-D: variable \"zcoord_nteil_Prev_110\" was set but never used\n  float zcoord_nteil_Prev_110{};\n        ^"
+  },
+  {
+   "target": "compute_60",
+   "rc": 0,
+   "image_bytes": 991189,
+   "log_tail": "was set but never used\n  int ISTATIONAER_51{};\n      ^\n\nkernel.cu(2329): warning #550-D: variable \"AHintold_59\" was set but never used\n  float AHintold_59{};\n        ^\n\nkernel.cu(2380): warning #550-D: variable \"zcoord_nteil_Prev_110\" was set but never used\n  float zcoord_nteil_Prev_110{};\n        ^"
+  },
+  {
+   "target": "compute_70",
+   "rc": 0,
+   "image_bytes": 992147,
+   "log_tail": "was set but never used\n  int ISTATIONAER_51{};\n      ^\n\nkernel.cu(2329): warning #550-D: variable \"AHintold_59\" was set but never used\n  float AHintold_59{};\n        ^\n\nkernel.cu(2380): warning #550-D: variable \"zcoord_nteil_Prev_110\" was set but never used\n  float zcoord_nteil_Prev_110{};\n        ^"
+  },
+  {
+   "target": "compute_75",
+   "rc": 0,
+   "image_bytes": 992147,
+   "log_tail": "was set but never used\n  int ISTATIONAER_51{};\n      ^\n\nkernel.cu(2329): warning #550-D: variable \"AHintold_59\" was set but never used\n  float AHintold_59{};\n        ^\n\nkernel.cu(2380): warning #550-D: variable \"zcoord_nteil_Prev_110\" was set but never used\n  float zcoord_nteil_Prev_110{};\n        ^"
+  },
+  {
+   "target": "compute_86",
+   "rc": 0,
+   "image_bytes": 992147,
+   "log_tail": "was set but never used\n  int ISTATIONAER_51{};\n      ^\n\nkernel.cu(2329): warning #550-D: variable \"AHintold_59\" was set but never used\n  float AHintold_59{};\n        ^\n\nkernel.cu(2380): warning #550-D: variable \"zcoord_nteil_Prev_110\" was set but never used\n  float zcoord_nteil_Prev_110{};\n        ^"
+  },
+  {
+   "target": "compute_89",
+   "rc": 0,
+   "image_bytes": 992147,
+   "log_tail": "was set but never used\n  int ISTATIONAER_51{};\n      ^\n\nkernel.cu(2329): warning #550-D: variable \"AHintold_59\" was set but never used\n  float AHintold_59{};\n        ^\n\nkernel.cu(2380): warning #550-D: variable \"zcoord_nteil_Prev_110\" was set but never used\n  float zcoord_nteil_Prev_110{};\n        ^"
+  },
+  {
+   "target": "compute_120",
+   "rc": 0,
+   "image_bytes": 957977,
+   "log_tail": "was set but never used\n  int ISTATIONAER_51{};\n      ^\n\nkernel.cu(2329): warning #550-D: variable \"AHintold_59\" was set but never used\n  float AHintold_59{};\n        ^\n\nkernel.cu(2380): warning #550-D: variable \"zcoord_nteil_Prev_110\" was set but never used\n  float zcoord_nteil_Prev_110{};\n        ^"
+  },
+  {
+   "target": "compute_121",
+   "rc": 0,
+   "image_bytes": 957977,
+   "log_tail": "was set but never used\n  int ISTATIONAER_51{};\n      ^\n\nkernel.cu(2329): warning #550-D: variable \"AHintold_59\" was set but never used\n  float AHintold_59{};\n        ^\n\nkernel.cu(2380): warning #550-D: variable \"zcoord_nteil_Prev_110\" was set but never used\n  float zcoord_nteil_Prev_110{};\n        ^"
+  },
+  {
+   "target": "sm_61",
+   "rc": 0,
+   "image_bytes": 470120,
+   "log_tail": "was set but never used\n  int ISTATIONAER_51{};\n      ^\n\nkernel.cu(2329): warning #550-D: variable \"AHintold_59\" was set but never used\n  float AHintold_59{};\n        ^\n\nkernel.cu(2380): warning #550-D: variable \"zcoord_nteil_Prev_110\" was set but never used\n  float zcoord_nteil_Prev_110{};\n        ^"
+  },
+  {
+   "target": "sm_75",
+   "rc": 0,
+   "image_bytes": 527880,
+   "log_tail": "was set but never used\n  int ISTATIONAER_51{};\n      ^\n\nkernel.cu(2329): warning #550-D: variable \"AHintold_59\" was set but never used\n  float AHintold_59{};\n        ^\n\nkernel.cu(2380): warning #550-D: variable \"zcoord_nteil_Prev_110\" was set but never used\n  float zcoord_nteil_Prev_110{};\n        ^"
+  },
+  {
+   "target": "sm_86",
+   "rc": 0,
+   "image_bytes": 510600,
+   "log_tail": "was set but never used\n  int ISTATIONAER_51{};\n      ^\n\nkernel.cu(2329): warning #550-D: variable \"AHintold_59\" was set but never used\n  float AHintold_59{};\n        ^\n\nkernel.cu(2380): warning #550-D: variable \"zcoord_nteil_Prev_110\" was set but never used\n  float zcoord_nteil_Prev_110{};\n        ^"
+  },
+  {
+   "target": "sm_120",
+   "rc": 0,
+   "image_bytes": 735936,
+   "log_tail": "was set but never used\n  int ISTATIONAER_51{};\n      ^\n\nkernel.cu(2329): warning #550-D: variable \"AHintold_59\" was set but never used\n  float AHintold_59{};\n        ^\n\nkernel.cu(2380): warning #550-D: variable \"zcoord_nteil_Prev_110\" was set but never used\n  float zcoord_nteil_Prev_110{};\n        ^"
+  }
+ ]
+}

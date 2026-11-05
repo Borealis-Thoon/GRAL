@@ -1,0 +1,22 @@
+{
+ "mode": "gpu",
+ "host": "inproc",
+ "dll_sha256": "ab7bb1b6bdf83fec4fa4f021e37eccabaa4d49ca9ad1bf964c41b6a4bce33ddd",
+ "rc": 0,
+ "timed_out": false,
+ "wall_s": 11.219,
+ "members_reference": 96,
+ "members_candidate": 96,
+ "members_identical": 96,
+ "leftover_tmp": [],
+ "gpu_fallback_lines": [],
+ "gpu_device_line": [
+  "GPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.4, NVRTC 12.9 ptx compute_120, kernel_exec_timeout=True, tcc=False"
+ ],
+ "gpu_metrics_lines": 24,
+ "stderr_tail": [
+  "CUDA device 0 compute_120; NVRTC 12.9; target compute_120; NVIDIA GeForce RTX 5080; 16275 MiB; driver 13.4 (13040); kernel_exec_timeout=1; tcc=0; fp32:fp64=64:1; compute_mode=default"
+ ],
+ "reference": "<jobs>\\20261103_gral_gpu_final_validation\\runs\\final448_001\\targets\\B00_fixed00_gpu",
+ "timing_eligible": false
+}

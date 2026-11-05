@@ -1,0 +1,143 @@
+{
+ "chunk256": {
+  "files": 14,
+  "identical": true,
+  "different": []
+ },
+ "many_sg_slices": {
+  "files": 14,
+  "identical": true,
+  "different": []
+ },
+ "neg_eki_calm": {
+  "files": 13,
+  "identical": true,
+  "different": []
+ },
+ "neg_transient_zr": {
+  "files": 14,
+  "identical": true,
+  "different": []
+ },
+ "neg_vertical_inf": {
+  "files": 16,
+  "identical": false,
+  "different": [
+   "Vertical_Concentrations.txt"
+  ]
+ },
+ "odour": {
+  "files": 14,
+  "identical": true,
+  "different": []
+ },
+ "odour_all_sources": {
+  "files": 14,
+  "identical": true,
+  "different": []
+ },
+ "receptors51_vram_tight": {
+  "files": 16,
+  "identical": false,
+  "different": [
+   "ReceptorConcentrations.dat"
+  ]
+ },
+ "steady_eki_terrain": {
+  "files": 16,
+  "identical": false,
+  "different": [
+   "ReceptorConcentrations.dat"
+  ]
+ },
+ "steady_rot_all_sources": {
+  "files": 14,
+  "identical": true,
+  "different": []
+ },
+ "steady_rot_nonfixed": {
+  "files": 14,
+  "identical": false,
+  "different": [
+   "00001.grz",
+   "00002.grz",
+   "00003.grz",
+   "00004.grz",
+   "00005.grz",
+   "00006.grz",
+   "00007.grz",
+   "00008.grz",
+   "00009.grz",
+   "00010.grz"
+  ]
+ },
+ "steady_sonic_flat": {
+  "files": 15,
+  "identical": false,
+  "different": [
+   "ReceptorConcentrations.dat"
+  ]
+ },
+ "steady_zr_terrain": {
+  "files": 16,
+  "identical": false,
+  "different": [
+   "ReceptorConcentrations.dat"
+  ]
+ },
+ "transient_all_sources": {
+  "files": 14,
+  "identical": true,
+  "different": []
+ },
+ "transient_area": {
+  "files": 14,
+  "identical": true,
+  "different": []
+ },
+ "tunnel_entrance": {
+  "files": 16,
+  "identical": false,
+  "different": [
+   "ReceptorConcentrations.dat"
+  ]
+ },
+ "tunnel_opp_lane": {
+  "files": 14,
+  "identical": true,
+  "different": []
+ },
+ "vertical_conc": {
+  "files": 16,
+  "identical": true,
+  "different": []
+ },
+ "wet_drift_all": {
+  "files": 14,
+  "identical": false,
+  "different": [
+   "00003.grz",
+   "00004.grz",
+   "00005.grz",
+   "00007.grz",
+   "00008.grz",
+   "00009.grz",
+   "00011.grz",
+   "00012.grz"
+  ]
+ },
+ "wet_drift_terrain": {
+  "files": 14,
+  "identical": false,
+  "different": [
+   "00003.grz",
+   "00004.grz",
+   "00005.grz",
+   "00007.grz",
+   "00008.grz",
+   "00009.grz",
+   "00011.grz",
+   "00012.grz"
+  ]
+ }
+}

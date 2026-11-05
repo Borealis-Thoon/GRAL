@@ -1,0 +1,140 @@
+{
+ "nvrtc_missing": {
+  "rc": 3762504530,
+  "timed_out": false,
+  "grz": 0,
+  "gpu_lines": [
+   "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_NVRTC_DIR contains no NVRTC library: <work>\\\\no_such_nvrtc\",\"payload_bytes\":0}"
+  ],
+  "stderr_tail": [
+   "   --- End of inner exception stack trace ---",
+   "   at GRAL_2001.GpuExperimental.Start() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuExperimental.cs:line 43",
+   "   at GRAL_2001.Program.Main(String[] args) in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\Program.cs:line 732"
+  ],
+  "server_log_tail": [
+   "   at GRAL_2001.GpuRuntimeServer.Initialize() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuRuntimeServer.cs:line 128",
+   "   at GRAL_2001.GpuRuntimeServer.Run() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuRuntimeServer.cs:line 1257"
+  ]
+ },
+ "nvrtc_missing_fallback": {
+  "rc": 0,
+  "timed_out": false,
+  "grz": 2,
+  "gpu_lines": [
+   "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_NVRTC_DIR contains no NVRTC library: <work>\\\\no_such_nvrtc\",\"payload_bytes\":0}"
+  ],
+  "stderr_tail": [],
+  "server_log_tail": [
+   "   at GRAL_2001.GpuRuntimeServer.Initialize() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuRuntimeServer.cs:line 128",
+   "   at GRAL_2001.GpuRuntimeServer.Run() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuRuntimeServer.cs:line 1257"
+  ]
+ },
+ "device_out_of_range": {
+  "rc": 3762504530,
+  "timed_out": false,
+  "grz": 0,
+  "gpu_lines": [
+   "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_DEVICE=7 is out of range: 1 CUDA device(s) visible (valid 0..0; CUDA_VISIBLE_DEVICES renumbers devices)\",\"payload_bytes\":0}"
+  ],
+  "stderr_tail": [
+   "   --- End of inner exception stack trace ---",
+   "   at GRAL_2001.GpuExperimental.Start() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuExperimental.cs:line 43",
+   "   at GRAL_2001.Program.Main(String[] args) in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\Program.cs:line 732"
+  ],
+  "server_log_tail": [
+   "   at GRAL_2001.GpuRuntimeServer.Initialize() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuRuntimeServer.cs:line 128",
+   "   at GRAL_2001.GpuRuntimeServer.Run() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuRuntimeServer.cs:line 1257"
+  ]
+ },
+ "device_out_of_range_fallback": {
+  "rc": 0,
+  "timed_out": false,
+  "grz": 2,
+  "gpu_lines": [
+   "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_DEVICE=7 is out of range: 1 CUDA device(s) visible (valid 0..0; CUDA_VISIBLE_DEVICES renumbers devices)\",\"payload_bytes\":0}"
+  ],
+  "stderr_tail": [],
+  "server_log_tail": [
+   "   at GRAL_2001.GpuRuntimeServer.Initialize() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuRuntimeServer.cs:line 128",
+   "   at GRAL_2001.GpuRuntimeServer.Run() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuRuntimeServer.cs:line 1257"
+  ]
+ },
+ "device_not_number": {
+  "rc": 3762504530,
+  "timed_out": false,
+  "grz": 0,
+  "gpu_lines": [
+   "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_DEVICE must be a nonnegative integer, got 'gpu1'\",\"payload_bytes\":0}"
+  ],
+  "stderr_tail": [
+   "   --- End of inner exception stack trace ---",
+   "   at GRAL_2001.GpuExperimental.Start() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuExperimental.cs:line 43",
+   "   at GRAL_2001.Program.Main(String[] args) in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\Program.cs:line 732"
+  ],
+  "server_log_tail": [
+   "   at GRAL_2001.GpuRuntimeServer.Initialize() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuRuntimeServer.cs:line 128",
+   "   at GRAL_2001.GpuRuntimeServer.Run() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuRuntimeServer.cs:line 1257"
+  ]
+ },
+ "device_not_number_fallback": {
+  "rc": 0,
+  "timed_out": false,
+  "grz": 2,
+  "gpu_lines": [
+   "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_DEVICE must be a nonnegative integer, got 'gpu1'\",\"payload_bytes\":0}"
+  ],
+  "stderr_tail": [],
+  "server_log_tail": [
+   "   at GRAL_2001.GpuRuntimeServer.Initialize() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuRuntimeServer.cs:line 128",
+   "   at GRAL_2001.GpuRuntimeServer.Run() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuRuntimeServer.cs:line 1257"
+  ]
+ },
+ "manifest_missing": {
+  "rc": 3762504530,
+  "timed_out": false,
+  "grz": 0,
+  "gpu_lines": [
+   "GPU startup failed: Could not find file '<jobs>\\20261105_gral_gpu_pinvoke\\wt\\gpu\\runtime\\no_such_manifest.json'."
+  ],
+  "stderr_tail": [
+   "   --- End of inner exception stack trace ---",
+   "   at GRAL_2001.GpuExperimental.Start() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuExperimental.cs:line 43",
+   "   at GRAL_2001.Program.Main(String[] args) in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\Program.cs:line 732"
+  ],
+  "server_log_tail": null
+ },
+ "manifest_missing_fallback": {
+  "rc": 0,
+  "timed_out": false,
+  "grz": 2,
+  "gpu_lines": [
+   "GPU fallback to CPU for the whole run: GPU startup failed: Could not find file '<jobs>\\20261105_gral_gpu_pinvoke\\wt\\gpu\\runtime\\no_such_manifest.json'."
+  ],
+  "stderr_tail": [],
+  "server_log_tail": null
+ },
+ "block_invalid": {
+  "rc": 3762504530,
+  "timed_out": false,
+  "grz": 0,
+  "gpu_lines": [
+   "GPU startup failed: Invalid INU_GRAL_GPU_BLOCK"
+  ],
+  "stderr_tail": [
+   "   --- End of inner exception stack trace ---",
+   "   at GRAL_2001.GpuExperimental.Start() in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\GpuExperimental.cs:line 43",
+   "   at GRAL_2001.Program.Main(String[] args) in <jobs>\\20261105_gral_gpu_pinvoke\\wt_final_c3\\src\\Program.cs:line 732"
+  ],
+  "server_log_tail": null
+ },
+ "block_invalid_fallback": {
+  "rc": 0,
+  "timed_out": false,
+  "grz": 2,
+  "gpu_lines": [
+   "GPU fallback to CPU for the whole run: GPU startup failed: Invalid INU_GRAL_GPU_BLOCK"
+  ],
+  "stderr_tail": [],
+  "server_log_tail": null
+ }
+}
