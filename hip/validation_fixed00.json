@@ -1,0 +1,754 @@
+{
+ "B00": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 17.736,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0042609988870783355,
+    "con_nmae_max_hour": 0.0057937917073062044,
+    "con_bias_pooled": -8.712870551226453e-05,
+    "con_jaccard_min_hour": 0.9939301290409603,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.004291763533005163,
+    "con_nmae_max_hour": 0.005889159748891279,
+    "con_bias_pooled": -7.188769598775869e-05,
+    "con_jaccard_min_hour": 0.9933944459423025,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.003498099803951879,
+   "con_nmae_max_hour": 0.004925341755446688,
+   "con_bias_pooled": -1.5242105244333856e-05,
+   "con_jaccard_min_hour": 0.9974765681326604
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.11359537147026363,
+   "con_nmae_max_hour": 0.13180994883881977,
+   "con_bias_pooled": -0.00032709220378764634,
+   "con_jaccard_min_hour": 0.8694991165714755
+  }
+ },
+ "C01": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 34.057,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.008622528319106895,
+    "con_nmae_max_hour": 0.011650432713783817,
+    "con_bias_pooled": -9.169157423211793e-06,
+    "con_jaccard_min_hour": 0.9937681896374515,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.008674877137085176,
+    "con_nmae_max_hour": 0.01161358100512006,
+    "con_bias_pooled": -4.3174316088914215e-05,
+    "con_jaccard_min_hour": 0.9934122279434036,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.007284017731392522,
+   "con_nmae_max_hour": 0.009884485608283384,
+   "con_bias_pooled": 3.400662687856039e-05,
+   "con_jaccard_min_hour": 0.9964354204362005
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.16758268846443625,
+   "con_nmae_max_hour": 0.1966171716154726,
+   "con_bias_pooled": 0.00019042333111851426,
+   "con_jaccard_min_hour": 0.8658571595657583
+  }
+ },
+ "D12": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 32.246,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 192,
+    "con_nmae_pooled": 0.004358937760436172,
+    "con_nmae_max_hour": 0.006272405937968964,
+    "con_bias_pooled": -2.9899030048827683e-05,
+    "con_jaccard_min_hour": 0.9939301290409603,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 192,
+    "con_nmae_pooled": 0.00440334273434641,
+    "con_nmae_max_hour": 0.006275792798412014,
+    "con_bias_pooled": -2.5625534312231784e-05,
+    "con_jaccard_min_hour": 0.9933944459423025,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 192,
+   "con_nmae_pooled": 0.0035876416014828678,
+   "con_nmae_max_hour": 0.005162807393755741,
+   "con_bias_pooled": -4.2736052500138696e-06,
+   "con_jaccard_min_hour": 0.9971225609207806
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 192,
+   "con_nmae_pooled": 0.11336480382016279,
+   "con_nmae_max_hour": 0.13272512599727102,
+   "con_bias_pooled": -3.132904026619902e-05,
+   "con_jaccard_min_hour": 0.8694991165714755
+  }
+ },
+ "F02": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 16.377,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.004363350299177957,
+    "con_nmae_max_hour": 0.00595178906491226,
+    "con_bias_pooled": -5.862575223778304e-06,
+    "con_jaccard_min_hour": 0.9937519525148392,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.004358833020424128,
+    "con_nmae_max_hour": 0.005828540372681663,
+    "con_bias_pooled": -4.7078090823164775e-06,
+    "con_jaccard_min_hour": 0.993353851643695,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.0035334146294834696,
+   "con_nmae_max_hour": 0.004967703441675338,
+   "con_bias_pooled": -1.1547715779059488e-06,
+   "con_jaccard_min_hour": 0.9969141488577745
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.11210953952185726,
+   "con_nmae_max_hour": 0.12969349830486648,
+   "con_bias_pooled": 0.00021502210388154233,
+   "con_jaccard_min_hour": 0.870342580285555
+  }
+ },
+ "I14": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 74.349,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.005253866071053436,
+    "con_nmae_max_hour": 0.006661020608646939,
+    "con_bias_pooled": 5.5329931368859515e-06,
+    "con_jaccard_min_hour": 0.9895472917510884,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0052983856015972166,
+    "con_nmae_max_hour": 0.0066975936268347915,
+    "con_bias_pooled": -1.3929969857733434e-05,
+    "con_jaccard_min_hour": 0.9885175610718328,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.0045134017787896545,
+   "con_nmae_max_hour": 0.005867965578735163,
+   "con_bias_pooled": 1.9463234116883967e-05,
+   "con_jaccard_min_hour": 0.9937097093344164
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.08551021911626887,
+   "con_nmae_max_hour": 0.10136134512955998,
+   "con_bias_pooled": -0.00016193862267370834,
+   "con_jaccard_min_hour": 0.8612419783245119
+  }
+ },
+ "I15": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 15.312,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0004019527495561525,
+    "con_nmae_max_hour": 0.0022039647106583573,
+    "con_bias_pooled": -5.2705952261535224e-06,
+    "con_jaccard_min_hour": 0.9928254468543939,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0004011155393204235,
+    "con_nmae_max_hour": 0.002214568545060485,
+    "con_bias_pooled": -2.1103406819434914e-06,
+    "con_jaccard_min_hour": 0.9925370040217256,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.00022982458684193545,
+   "con_nmae_max_hour": 0.0006588916423060348,
+   "con_bias_pooled": -3.1602612134378354e-06,
+   "con_jaccard_min_hour": 0.9971499660710247
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.10695522931711161,
+   "con_nmae_max_hour": 0.12936094247450336,
+   "con_bias_pooled": -0.000858774354295733,
+   "con_jaccard_min_hour": 0.902738432483475
+  }
+ },
+ "P03": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 7.986,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0062362628389239,
+    "con_nmae_max_hour": 0.008880544447784659,
+    "con_bias_pooled": 6.709499697248222e-05,
+    "con_jaccard_min_hour": 0.9964113606069928,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0063252942933683986,
+    "con_nmae_max_hour": 0.009237155107203996,
+    "con_bias_pooled": 7.260660270616615e-05,
+    "con_jaccard_min_hour": 0.9960773193440143,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.004828463963214771,
+   "con_nmae_max_hour": 0.007304219445962982,
+   "con_bias_pooled": -5.5112055837696695e-06,
+   "con_jaccard_min_hour": 0.9966153846153846
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.2200072461422956,
+   "con_nmae_max_hour": 0.25385250734748555,
+   "con_bias_pooled": -1.3666074779194487e-05,
+   "con_jaccard_min_hour": 0.8400519552813471
+  }
+ },
+ "P04": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 50.54,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0025714886337677594,
+    "con_nmae_max_hour": 0.0033090816365299682,
+    "con_bias_pooled": -2.665187945549859e-05,
+    "con_jaccard_min_hour": 0.987943520653801,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0025782988336145707,
+    "con_nmae_max_hour": 0.0033536323136805946,
+    "con_bias_pooled": -8.2933034485379e-06,
+    "con_jaccard_min_hour": 0.9872608889068629,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.002127843918553156,
+   "con_nmae_max_hour": 0.0028018244718658104,
+   "con_bias_pooled": -1.835872826146509e-05,
+   "con_jaccard_min_hour": 0.9920129738495844
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.05855398967393007,
+   "con_nmae_max_hour": 0.06934358993981565,
+   "con_bias_pooled": -0.00019387820423439305,
+   "con_jaccard_min_hour": 0.844358875625722
+  }
+ },
+ "R13": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 17.748,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0042609988870783355,
+    "con_nmae_max_hour": 0.0057937917073062044,
+    "con_bias_pooled": -8.712870551226453e-05,
+    "con_jaccard_min_hour": 0.9939301290409603,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.004291763533005163,
+    "con_nmae_max_hour": 0.005889159748891279,
+    "con_bias_pooled": -7.188769598775869e-05,
+    "con_jaccard_min_hour": 0.9933944459423025,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.003498099803951879,
+   "con_nmae_max_hour": 0.004925341755446688,
+   "con_bias_pooled": -1.5242105244333856e-05,
+   "con_jaccard_min_hour": 0.9974765681326604
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.11359537147026363,
+   "con_nmae_max_hour": 0.13180994883881977,
+   "con_bias_pooled": -0.00032709220378764634,
+   "con_jaccard_min_hour": 0.8694991165714755
+  }
+ },
+ "S08": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 19.469,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.003482562341263659,
+    "con_nmae_max_hour": 0.004769470786166133,
+    "con_bias_pooled": 4.883009888895581e-05,
+    "con_jaccard_min_hour": 0.9996167481076937,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0034828908125436207,
+    "con_nmae_max_hour": 0.0047240612631565485,
+    "con_bias_pooled": 3.643725204726819e-05,
+    "con_jaccard_min_hour": 0.9995225134889939,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.002858614000775148,
+   "con_nmae_max_hour": 0.00407001300416473,
+   "con_bias_pooled": 1.2392395296856721e-05,
+   "con_jaccard_min_hour": 0.9995225134889939
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.08266693987288595,
+   "con_nmae_max_hour": 0.0993156564729863,
+   "con_bias_pooled": 4.897684610107819e-05,
+   "con_jaccard_min_hour": 0.9134790933784566
+  }
+ },
+ "S09": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 18.426,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.003972402069794365,
+    "con_nmae_max_hour": 0.005543388952139933,
+    "con_bias_pooled": 6.012685946947565e-06,
+    "con_jaccard_min_hour": 0.9982279378259329,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.004004497912713971,
+    "con_nmae_max_hour": 0.005452703123904282,
+    "con_bias_pooled": 7.091482767312304e-06,
+    "con_jaccard_min_hour": 0.9982279378259329,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.0033513012975789885,
+   "con_nmae_max_hour": 0.004759706794638078,
+   "con_bias_pooled": -1.0787891701499295e-06,
+   "con_jaccard_min_hour": 0.9994199816327517
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.1085708496648962,
+   "con_nmae_max_hour": 0.12290889795389405,
+   "con_bias_pooled": -0.0010240725857497924,
+   "con_jaccard_min_hour": 0.9145242803779389
+  }
+ },
+ "S10": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 17.495,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.004542352127748522,
+    "con_nmae_max_hour": 0.00625917413116756,
+    "con_bias_pooled": -4.851961314775081e-05,
+    "con_jaccard_min_hour": 0.9996549344375432,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0045519793088509035,
+    "con_nmae_max_hour": 0.0062482663335196075,
+    "con_bias_pooled": -1.4430881455922639e-05,
+    "con_jaccard_min_hour": 0.9991754777378989,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.003907745715365419,
+   "con_nmae_max_hour": 0.005413069610590993,
+   "con_bias_pooled": -3.408922362937329e-05,
+   "con_jaccard_min_hour": 0.9991754777378989
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.12515503786949747,
+   "con_nmae_max_hour": 0.14037522853958107,
+   "con_bias_pooled": -0.00014013390683666392,
+   "con_jaccard_min_hour": 0.9060456072123033
+  }
+ },
+ "S11": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 14.715,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.00640178556230168,
+    "con_nmae_max_hour": 0.01846687954898022,
+    "con_bias_pooled": -6.109933394857575e-05,
+    "con_jaccard_min_hour": 0.9869829939114004,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0065335522592841885,
+    "con_nmae_max_hour": 0.019170268724963545,
+    "con_bias_pooled": -5.194984575742586e-05,
+    "con_jaccard_min_hour": 0.9857238831037958,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.004164754741102466,
+   "con_nmae_max_hour": 0.013241732592061252,
+   "con_bias_pooled": -9.149963530343977e-06,
+   "con_jaccard_min_hour": 0.9930897905869465
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.2763110811422641,
+   "con_nmae_max_hour": 0.38096420259160063,
+   "con_bias_pooled": -0.0008430785086514162,
+   "con_jaccard_min_hour": 0.8563120728069181
+  }
+ },
+ "T07": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 16.688,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0004019527495561525,
+    "con_nmae_max_hour": 0.0022039647106583573,
+    "con_bias_pooled": -5.2705952261535224e-06,
+    "con_jaccard_min_hour": 0.9928254468543939,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0004011155393204235,
+    "con_nmae_max_hour": 0.002214568545060485,
+    "con_bias_pooled": -2.1103406819434914e-06,
+    "con_jaccard_min_hour": 0.9925370040217256,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.00022982458684193545,
+   "con_nmae_max_hour": 0.0006588916423060348,
+   "con_bias_pooled": -3.1602612134378354e-06,
+   "con_jaccard_min_hour": 0.9971499660710247
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.10695522931711161,
+   "con_nmae_max_hour": 0.12936094247450336,
+   "con_bias_pooled": -0.000858774354295733,
+   "con_jaccard_min_hour": 0.902738432483475
+  }
+ },
+ "W05": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 24.187,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.004686960565170568,
+    "con_nmae_max_hour": 0.005340142985148979,
+    "con_bias_pooled": 1.2168221247225435e-05,
+    "con_jaccard_min_hour": 0.9864368355222014,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.004749146892733132,
+    "con_nmae_max_hour": 0.005464155103972938,
+    "con_bias_pooled": -6.870977849088125e-06,
+    "con_jaccard_min_hour": 0.9865590328866266,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.0038038189882012253,
+   "con_nmae_max_hour": 0.004565218109165964,
+   "con_bias_pooled": 1.9039329915127666e-05,
+   "con_jaccard_min_hour": 0.9911669367909238
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.13960908737974334,
+   "con_nmae_max_hour": 0.14643038814992257,
+   "con_bias_pooled": -0.0008306671461912207,
+   "con_jaccard_min_hour": 0.8662594552363365
+  }
+ },
+ "W06": {
+  "hip": {
+   "rc": 0,
+   "wall_s": 9.523,
+   "gpu_fallback_lines": [],
+   "gpu_device_line": [
+    "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+   ],
+   "vs_frozen_cpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.0020710460835983635,
+    "con_nmae_max_hour": 0.00235743546289056,
+    "con_bias_pooled": -3.909838196577957e-06,
+    "con_jaccard_min_hour": 0.9947946790052054,
+    "receptors_equal": []
+   },
+   "vs_frozen_gpu": {
+    "raw_members_equal": false,
+    "members_identical": 0,
+    "members": 96,
+    "con_nmae_pooled": 0.002099883309123691,
+    "con_nmae_max_hour": 0.0024147613928900188,
+    "con_bias_pooled": 7.647317114187053e-06,
+    "con_jaccard_min_hour": 0.9942430297839947,
+    "receptors_equal": []
+   },
+   "error": null
+  },
+  "baseline_cpu_vs_cuda": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.001595754970303983,
+   "con_nmae_max_hour": 0.0018073178888514784,
+   "con_bias_pooled": -1.1557066930209286e-05,
+   "con_jaccard_min_hour": 0.9955726935161382
+  },
+  "baseline_cpu_seed_pair": {
+   "members_identical": 0,
+   "members": 96,
+   "con_nmae_pooled": 0.17115700404280682,
+   "con_nmae_max_hour": 0.2515388350845926,
+   "con_bias_pooled": -0.0010684504843600198,
+   "con_jaccard_min_hour": 0.8171395483497395
+  }
+ }
+}

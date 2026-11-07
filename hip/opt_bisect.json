@@ -1,0 +1,63 @@
+{
+ "last_good": 10158,
+ "first_bad": 10239,
+ "culprit_lines": [],
+ "steps": [
+  {
+   "limit": 5160,
+   "rc": 0,
+   "nmae": 0.0029882497610805464,
+   "wall": 12.5,
+   "good": true
+  },
+  {
+   "limit": 7740,
+   "rc": 0,
+   "nmae": 0.0029882497610805464,
+   "wall": 12.5,
+   "good": true
+  },
+  {
+   "limit": 9030,
+   "rc": 0,
+   "nmae": 0.0029882497610805464,
+   "wall": 12.7,
+   "good": true
+  },
+  {
+   "limit": 9675,
+   "rc": 0,
+   "nmae": 0.0029882497610805464,
+   "wall": 12.9,
+   "good": true
+  },
+  {
+   "limit": 9997,
+   "rc": 0,
+   "nmae": 0.0029882497610805464,
+   "wall": 6.3,
+   "good": true
+  },
+  {
+   "limit": 10158,
+   "rc": 0,
+   "nmae": 0.0029882497610805464,
+   "wall": 6.6,
+   "good": true
+  },
+  {
+   "limit": 10239,
+   "rc": 0,
+   "nmae": 1.3993632258933684,
+   "wall": 8.2,
+   "good": false
+  },
+  {
+   "limit": 10198,
+   "rc": 3762504530,
+   "nmae": null,
+   "wall": 11.8,
+   "good": false
+  }
+ ]
+}

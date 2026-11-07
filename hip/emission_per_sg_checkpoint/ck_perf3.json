@@ -1,0 +1,30 @@
+{
+ "mode": "gpu",
+ "label": "ck_perf3",
+ "build": "<jobs>\\20261107_gral_gpu_hip_radeon\\build_perf3",
+ "dll_sha256": "400d32e1b26f87ada65c984a8e1f394ad3e823bedbf98ef0875daf05fe6e2825",
+ "rc": 0,
+ "wall_s": 21.03,
+ "tmp_files": {
+  "Transient_Concentrations1.tmp": "70ba585051669fb792ed0c267bde04815affb32befa100b7418fb83befad252b"
+ },
+ "checkpoint": "Transient_Concentrations1.tmp",
+ "nii": 200,
+ "njj": 200,
+ "nkk": 50,
+ "iwet": 24,
+ "nsg": 4,
+ "payload_bytes": 1450984,
+ "emission_per_sg": [
+  "66666.66796879756",
+  "66666.67113521622",
+  "66666.66796879756",
+  "66666.66796879756"
+ ],
+ "emission_per_sg_hex": [
+  "c40c00b0aa46f040",
+  "ce47f8bcaa46f040",
+  "c40c00b0aa46f040",
+  "c40c00b0aa46f040"
+ ]
+}

@@ -1,0 +1,34 @@
+{
+ "mode": "gpu",
+ "reference_case": "B00_fixed00",
+ "dll_sha256": "47f96fda1725cc065b7cd919e084ae5d2c81a6a7693a0999295dadd79fc3dd85",
+ "rc": 0,
+ "timed_out": false,
+ "wall_s": 39.34,
+ "gpu_fallback_lines": [],
+ "gpu_device_line": [
+  "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+ ],
+ "gpu_metrics_lines": 24,
+ "timing_eligible": false,
+ "vs_frozen_cpu": {
+  "raw_members_equal": false,
+  "members_identical": 0,
+  "members": 96,
+  "con_nmae_pooled": 1.1122763044020239,
+  "con_nmae_max_hour": 1.7662317368252718,
+  "con_bias_pooled": 0.03282458693544852,
+  "con_jaccard_min_hour": 0.7075283446712018,
+  "receptors_equal": []
+ },
+ "vs_frozen_gpu": {
+  "raw_members_equal": false,
+  "members_identical": 0,
+  "members": 96,
+  "con_nmae_pooled": 1.1122732959436743,
+  "con_nmae_max_hour": 1.766248249878765,
+  "con_bias_pooled": 0.03284032959645282,
+  "con_jaccard_min_hour": 0.7077020774743717,
+  "receptors_equal": []
+ }
+}

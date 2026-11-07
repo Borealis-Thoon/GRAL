@@ -1,0 +1,225 @@
+{
+ "auto_cold": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 22.977,
+  "dll_sha256": "f18c68b26882e643933e608b14ef78e9da94f1d4470c1dac2024da586b731616",
+  "gpu_console_lines": [
+   "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+  ],
+  "gpu_log_tail": [
+   "No NVIDIA device (NVIDIA driver library nvcuda.dll could not be loaded (Unable to load DLL 'nvcuda.dll' or one of its dependencies: 지정된 모듈을 찾을 수 없습니다. (0x8007007E)); install the NVIDIA display driver); trying the AMD HIP runtime",
+   "HIP device 0 gfx1201; hiprtc 9.0 (<user>\\AppData\\Local\\rocm-sdk\\venv-10.1\\Lib\\site-packages\\_rocm_sdk_core\\bin\\hiprtc0716.dll); AMD Radeon RX 9070 XT; 16304 MiB; HIP runtime 7.12.60602 (amdhip64_7.dll); kernel_exec_timeout=0; fp32:fp64=n/a; compute_mode=default"
+  ],
+  "situations_with_metrics": 24,
+  "cache_status": "miss",
+  "cache_write_status": "written",
+  "peak_device_buffer_bytes": 62639584,
+  "peak_mapped_host_bytes": 0,
+  "mapped_buffer_names": [],
+  "harness_error": null,
+  "grz_identical_to_reference": "96/96",
+  "reference": "<jobs>\\20261107_gral_gpu_hip_radeon\\smoke\\B00_fixed00_build_hip3\\Computation"
+ },
+ "hip_upper": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 19.494,
+  "dll_sha256": "f18c68b26882e643933e608b14ef78e9da94f1d4470c1dac2024da586b731616",
+  "gpu_console_lines": [
+   "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+  ],
+  "gpu_log_tail": [
+   "HIP device 0 gfx1201; hiprtc 9.0 (<user>\\AppData\\Local\\rocm-sdk\\venv-10.1\\Lib\\site-packages\\_rocm_sdk_core\\bin\\hiprtc0716.dll); AMD Radeon RX 9070 XT; 16304 MiB; HIP runtime 7.12.60602 (amdhip64_7.dll); kernel_exec_timeout=0; fp32:fp64=n/a; compute_mode=default"
+  ],
+  "situations_with_metrics": 24,
+  "cache_status": "hit",
+  "cache_write_status": "not_attempted",
+  "peak_device_buffer_bytes": 62639584,
+  "peak_mapped_host_bytes": 0,
+  "mapped_buffer_names": [],
+  "harness_error": null,
+  "grz_identical_to_reference": "96/96",
+  "reference": "<jobs>\\20261107_gral_gpu_hip_radeon\\smoke\\B00_fixed00_build_hip3\\Computation"
+ },
+ "cuda": {
+  "rc": 3762504530,
+  "timed_out": false,
+  "wall_s": 0.604,
+  "dll_sha256": "f18c68b26882e643933e608b14ef78e9da94f1d4470c1dac2024da586b731616",
+  "gpu_console_lines": [
+   "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"NVIDIA driver library nvcuda.dll could not be loaded (Unable to load DLL 'nvcuda.dll' or one of its dependencies: 지정된 모듈을 찾을 수 없습니다. (0x8007007E)); install the NVIDIA display driver\",\"payload_bytes\":0}"
+  ],
+  "gpu_log_tail": [
+   "   at GRAL_2001.GpuCuda.Initialize(String runtimeDirectory) in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuCuda.cs:line 245",
+   "   at GRAL_2001.GpuCuda..ctor(String runtimeDirectory, Action`1 log) in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuCuda.cs:line 116",
+   "   at GRAL_2001.GpuRuntimeServer.Initialize() in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 128",
+   "   at GRAL_2001.GpuRuntimeServer.Run() in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 1302"
+  ],
+  "situations_with_metrics": 0,
+  "cache_status": null,
+  "cache_write_status": null,
+  "peak_device_buffer_bytes": null,
+  "peak_mapped_host_bytes": null,
+  "mapped_buffer_names": [],
+  "harness_error": null
+ },
+ "cuda_fallback": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 50.524,
+  "dll_sha256": "f18c68b26882e643933e608b14ef78e9da94f1d4470c1dac2024da586b731616",
+  "gpu_console_lines": [
+   "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"NVIDIA driver library nvcuda.dll could not be loaded (Unable to load DLL 'nvcuda.dll' or one of its dependencies: 지정된 모듈을 찾을 수 없습니다. (0x8007007E)); install the NVIDIA display driver\",\"payload_bytes\":0}"
+  ],
+  "gpu_log_tail": [
+   "   at GRAL_2001.GpuCuda.Initialize(String runtimeDirectory) in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuCuda.cs:line 245",
+   "   at GRAL_2001.GpuCuda..ctor(String runtimeDirectory, Action`1 log) in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuCuda.cs:line 116",
+   "   at GRAL_2001.GpuRuntimeServer.Initialize() in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 128",
+   "   at GRAL_2001.GpuRuntimeServer.Run() in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 1302"
+  ],
+  "situations_with_metrics": 0,
+  "cache_status": null,
+  "cache_write_status": null,
+  "peak_device_buffer_bytes": null,
+  "peak_mapped_host_bytes": null,
+  "mapped_buffer_names": [],
+  "harness_error": null,
+  "grz_identical_to_reference": "96/96",
+  "reference": "<jobs>\\20261103_gral_gpu_final_validation\\runs\\final448_001\\targets\\B00_fixed00_cpu\\Computation"
+ },
+ "bogus": {
+  "rc": 3762504530,
+  "timed_out": false,
+  "wall_s": 0.613,
+  "dll_sha256": "f18c68b26882e643933e608b14ef78e9da94f1d4470c1dac2024da586b731616",
+  "gpu_console_lines": [
+   "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_BACKEND must be cuda or hip, got 'bogus'\",\"payload_bytes\":0}"
+  ],
+  "gpu_log_tail": [
+   "System.ArgumentException: INU_GPU_BACKEND must be cuda or hip, got 'bogus'",
+   "   at GRAL_2001.GpuCuda..ctor(String runtimeDirectory, Action`1 log) in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuCuda.cs:line 118",
+   "   at GRAL_2001.GpuRuntimeServer.Initialize() in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 128",
+   "   at GRAL_2001.GpuRuntimeServer.Run() in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 1302"
+  ],
+  "situations_with_metrics": 0,
+  "cache_status": null,
+  "cache_write_status": null,
+  "peak_device_buffer_bytes": null,
+  "peak_mapped_host_bytes": null,
+  "mapped_buffer_names": [],
+  "harness_error": null
+ },
+ "device1": {
+  "rc": 3762504530,
+  "timed_out": false,
+  "wall_s": 0.626,
+  "dll_sha256": "f18c68b26882e643933e608b14ef78e9da94f1d4470c1dac2024da586b731616",
+  "gpu_console_lines": [
+   "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_DEVICE=1 is out of range: 1 HIP device(s) visible (valid 0..0; HIP_VISIBLE_DEVICES renumbers devices)\",\"payload_bytes\":0}"
+  ],
+  "gpu_log_tail": [
+   "   at GRAL_2001.GpuCuda.InitializeHip(String runtimeDirectory, Boolean automatic) in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuCuda.cs:line 462",
+   "   at GRAL_2001.GpuCuda..ctor(String runtimeDirectory, Action`1 log) in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuCuda.cs:line 117",
+   "   at GRAL_2001.GpuRuntimeServer.Initialize() in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 128",
+   "   at GRAL_2001.GpuRuntimeServer.Run() in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 1302"
+  ],
+  "situations_with_metrics": 0,
+  "cache_status": null,
+  "cache_write_status": null,
+  "peak_device_buffer_bytes": null,
+  "peak_mapped_host_bytes": null,
+  "mapped_buffer_names": [],
+  "harness_error": null
+ },
+ "runtime_missing": {
+  "rc": 3762504530,
+  "timed_out": false,
+  "wall_s": 0.606,
+  "dll_sha256": "f18c68b26882e643933e608b14ef78e9da94f1d4470c1dac2024da586b731616",
+  "gpu_console_lines": [
+   "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_HIP_RUNTIME points to a missing file: <jobs>\\\\20261107_gral_gpu_hip_radeon\\\\tests\\\\build_final3\\\\missing\\\\amdhip64_7.dll\",\"payload_bytes\":0}"
+  ],
+  "gpu_log_tail": [
+   "   at GRAL_2001.GpuCuda.InitializeHip(String runtimeDirectory, Boolean automatic) in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuCuda.cs:line 438",
+   "   at GRAL_2001.GpuCuda..ctor(String runtimeDirectory, Action`1 log) in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuCuda.cs:line 117",
+   "   at GRAL_2001.GpuRuntimeServer.Initialize() in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 128",
+   "   at GRAL_2001.GpuRuntimeServer.Run() in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 1302"
+  ],
+  "situations_with_metrics": 0,
+  "cache_status": null,
+  "cache_write_status": null,
+  "peak_device_buffer_bytes": null,
+  "peak_mapped_host_bytes": null,
+  "mapped_buffer_names": [],
+  "harness_error": null
+ },
+ "no_comgr": {
+  "rc": 3762504530,
+  "timed_out": false,
+  "wall_s": 0.629,
+  "dll_sha256": "f18c68b26882e643933e608b14ef78e9da94f1d4470c1dac2024da586b731616",
+  "gpu_console_lines": [
+   "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"No compatible hiprtc toolchain for gfx1201: <jobs>\\\\20261107_gral_gpu_hip_radeon\\\\tests\\\\build_final3\\\\hiprtc_nocomgr\\\\hiprtc0716.dll: amd_comgr*.dll not found next to <jobs>\\\\20261107_gral_gpu_hip_radeon\\\\tests\\\\build_final3\\\\hiprtc_nocomgr\\\\hiprtc0716.dll\",\"payload_bytes\":0}"
+  ],
+  "gpu_log_tail": [
+   "   at GRAL_2001.GpuCuda.InitializeHip(String runtimeDirectory, Boolean automatic) in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuCuda.cs:line 504",
+   "   at GRAL_2001.GpuCuda..ctor(String runtimeDirectory, Action`1 log) in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuCuda.cs:line 117",
+   "   at GRAL_2001.GpuRuntimeServer.Initialize() in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 128",
+   "   at GRAL_2001.GpuRuntimeServer.Run() in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 1302"
+  ],
+  "situations_with_metrics": 0,
+  "cache_status": null,
+  "cache_write_status": null,
+  "peak_device_buffer_bytes": null,
+  "peak_mapped_host_bytes": null,
+  "mapped_buffer_names": [],
+  "harness_error": null
+ },
+ "mapped_host": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 22.156,
+  "dll_sha256": "f18c68b26882e643933e608b14ef78e9da94f1d4470c1dac2024da586b731616",
+  "gpu_console_lines": [
+   "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+  ],
+  "gpu_log_tail": [
+   "HIP device 0 gfx1201; hiprtc 9.0 (<user>\\AppData\\Local\\rocm-sdk\\venv-10.1\\Lib\\site-packages\\_rocm_sdk_core\\bin\\hiprtc0716.dll); AMD Radeon RX 9070 XT; 16304 MiB; HIP runtime 7.12.60602 (amdhip64_7.dll); kernel_exec_timeout=0; fp32:fp64=n/a; compute_mode=default"
+  ],
+  "situations_with_metrics": 24,
+  "cache_status": "hit",
+  "cache_write_status": "not_attempted",
+  "peak_device_buffer_bytes": 15959808,
+  "peak_mapped_host_bytes": 46679776,
+  "mapped_buffer_names": [
+   "Conz5d",
+   "WK"
+  ],
+  "harness_error": null,
+  "grz_identical_to_reference": "96/96",
+  "reference": "<jobs>\\20261107_gral_gpu_hip_radeon\\smoke\\B00_fixed00_build_hip3\\Computation"
+ },
+ "trap": {
+  "rc": 3762504530,
+  "timed_out": false,
+  "wall_s": 4.807,
+  "dll_sha256": "f18c68b26882e643933e608b14ef78e9da94f1d4470c1dac2024da586b731616",
+  "gpu_console_lines": [
+   "GPU device 0: AMD Radeon RX 9070 XT, gfx1201, 16304 MiB, HIP 7.12.60602, hiprtc 9.0 hsaco gfx1201, kernel_exec_timeout=False"
+  ],
+  "gpu_log_tail": [
+   "   at GRAL_2001.GpuRuntimeServer.CheckHipTrap() in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 1064",
+   "   at GRAL_2001.GpuRuntimeServer.Launch(IntPtr function, Int64 count, Void** args, Int32 block) in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 1069",
+   "   at GRAL_2001.GpuRuntimeServer.Execute(JsonElement header) in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 1170",
+   "   at GRAL_2001.GpuRuntimeServer.Run() in <jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\src\\GpuRuntimeServer.cs:line 1332"
+  ],
+  "situations_with_metrics": 0,
+  "cache_status": null,
+  "cache_write_status": null,
+  "peak_device_buffer_bytes": null,
+  "peak_mapped_host_bytes": null,
+  "mapped_buffer_names": [],
+  "harness_error": null
+ }
+}

@@ -1,0 +1,818 @@
+{
+ "note": "kernel times are GPU-event sums over 24 situations (fixed seed 00); RTX 5080 values are the stored 2026-11-03 study runs; 7-Zip archiving ran on CPUs during this session, so elapsed/wall values are indicative",
+ "variants": {
+  "ref_B00": {
+   "case": "B00",
+   "build": "build_pr4",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime"
+   },
+   "fresh_kernel_s": 26.088,
+   "residual_kernel_s": 0.771,
+   "elapsed_s": 29.748,
+   "wall_s": 37.518,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": null,
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 1024,
+     "local_size_bytes": 576,
+     "registers": 192
+    },
+    "residual": {
+     "max_threads_per_block": 1024,
+     "local_size_bytes": 64,
+     "registers": 192
+    }
+   }
+  },
+  "b256bound_blk128": {
+   "case": "B00",
+   "build": "build_pr4",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "--gpu-max-threads-per-block=256"
+   },
+   "fresh_kernel_s": 19.755,
+   "residual_kernel_s": 0.763,
+   "elapsed_s": 23.272,
+   "wall_s": 30.248,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 288,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 205
+    }
+   }
+  },
+  "t_noemis_b256": {
+   "case": "B00",
+   "build": "build_pr4",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\perf2\\rt_noemis",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "--gpu-max-threads-per-block=256"
+   },
+   "fresh_kernel_s": 16.204,
+   "residual_kernel_s": 0.781,
+   "elapsed_s": 19.933,
+   "wall_s": 27.198,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 288,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 205
+    }
+   }
+  },
+  "t_f32proxy_b256": {
+   "case": "B00",
+   "build": "build_pr4",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\perf2\\rt_f32proxy",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "--gpu-max-threads-per-block=256"
+   },
+   "fresh_kernel_s": 16.034,
+   "residual_kernel_s": 0.752,
+   "elapsed_s": 19.197,
+   "wall_s": 25.708,
+   "nmae_vs_cpu": 1.0,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 96,
+    "first_differing": [
+     "00001.grz/00001-101.con",
+     "00001.grz/00001-102.con",
+     "00001.grz/00001-103.con",
+     "00001.grz/00001-104.con",
+     "00002.grz/00002-101.con",
+     "00002.grz/00002-102.con",
+     "00002.grz/00002-103.con",
+     "00002.grz/00002-104.con"
+    ]
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 288,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 205
+    }
+   }
+  },
+  "agg_b256": {
+   "case": "B00",
+   "build": "build_pr4",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\perf2\\rt_agg",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "--gpu-max-threads-per-block=256"
+   },
+   "fresh_kernel_s": 16.2,
+   "residual_kernel_s": 0.864,
+   "elapsed_s": 19.481,
+   "wall_s": 26.485,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 416,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 202
+    }
+   }
+  },
+  "agg_constP_b256": {
+   "case": "B00",
+   "build": "build_pr4",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\perf2\\rt_agg_constP",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "--gpu-max-threads-per-block=256"
+   },
+   "fresh_kernel_s": 13.486,
+   "residual_kernel_s": 0.659,
+   "elapsed_s": 16.456,
+   "wall_s": 22.393,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 185
+    }
+   }
+  },
+  "perf1_B00": {
+   "case": "B00",
+   "build": "build_perf1",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime"
+   },
+   "fresh_kernel_s": 13.446,
+   "residual_kernel_s": 0.663,
+   "elapsed_s": 16.379,
+   "wall_s": 22.796,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 185
+    }
+   }
+  },
+  "t_deverr": {
+   "case": "B00",
+   "build": "build_perf1",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\perf2\\rt_deverr",
+    "SMOKE_TIMEOUT": "600"
+   },
+   "fresh_kernel_s": 0.0,
+   "residual_kernel_s": 0.0,
+   "elapsed_s": 0,
+   "wall_s": 4.625,
+   "nmae_vs_cpu": null,
+   "identity_vs_reference": null,
+   "resources": null
+  },
+  "perf1_I14": {
+   "case": "I14",
+   "build": "build_perf1",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime"
+   },
+   "fresh_kernel_s": 67.8,
+   "residual_kernel_s": 2.886,
+   "elapsed_s": 80.034,
+   "wall_s": 91.247,
+   "nmae_vs_cpu": 0.005253866071053436,
+   "identity_vs_reference": null,
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 185
+    }
+   }
+  },
+  "perf1_P04": {
+   "case": "P04",
+   "build": "build_perf1",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime"
+   },
+   "fresh_kernel_s": 49.026,
+   "residual_kernel_s": 1.412,
+   "elapsed_s": 54.565,
+   "wall_s": 58.184,
+   "nmae_vs_cpu": 0.0025714886337677594,
+   "identity_vs_reference": null,
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 185
+    }
+   }
+  },
+  "t_proxy_constP_I14": {
+   "case": "I14",
+   "build": "build_pr4",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\perf2\\rt_proxy_constP",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "--gpu-max-threads-per-block=256"
+   },
+   "fresh_kernel_s": 70.27,
+   "residual_kernel_s": 2.015,
+   "elapsed_s": 80.588,
+   "wall_s": 91.779,
+   "nmae_vs_cpu": 1.0,
+   "identity_vs_reference": null,
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 192
+    }
+   }
+  },
+  "t_inline_B00": {
+   "case": "B00",
+   "build": "build_perf1",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\perf2\\rt_inline"
+   },
+   "fresh_kernel_s": 13.011,
+   "residual_kernel_s": 0.634,
+   "elapsed_s": 16.012,
+   "wall_s": 22.516,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 176
+    }
+   }
+  },
+  "t_inlthr_B00": {
+   "case": "B00",
+   "build": "build_perf1",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "-mllvm -inline-threshold=50000"
+   },
+   "fresh_kernel_s": 12.897,
+   "residual_kernel_s": 0.617,
+   "elapsed_s": 15.883,
+   "wall_s": 22.387,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 176
+    }
+   }
+  },
+  "t_idx32_B00": {
+   "case": "B00",
+   "build": "build_perf1",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\perf2\\rt_idx32",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "-mllvm -inline-threshold=50000"
+   },
+   "fresh_kernel_s": 12.97,
+   "residual_kernel_s": 0.642,
+   "elapsed_s": 16.015,
+   "wall_s": 22.521,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 176
+    }
+   }
+  },
+  "t_chunk32768_B00": {
+   "case": "B00",
+   "build": "build_perf1",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "-mllvm -inline-threshold=50000",
+    "SMOKE_INU_GRAL_GPU_CHUNK": "32768"
+   },
+   "fresh_kernel_s": 14.872,
+   "residual_kernel_s": 0.748,
+   "elapsed_s": 17.919,
+   "wall_s": 20.77,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 176
+    }
+   }
+  },
+  "t_blk256_B00": {
+   "case": "B00",
+   "build": "build_perf1",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "-mllvm -inline-threshold=50000",
+    "SMOKE_INU_GRAL_GPU_BLOCK": "256"
+   },
+   "fresh_kernel_s": 14.188,
+   "residual_kernel_s": 0.64,
+   "elapsed_s": 17.019,
+   "wall_s": 19.846,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 176
+    }
+   }
+  },
+  "t_chunk131072_B00": {
+   "case": "B00",
+   "build": "build_chunktest",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "-mllvm -inline-threshold=50000",
+    "SMOKE_INU_GRAL_GPU_CHUNK": "131072"
+   },
+   "fresh_kernel_s": 12.875,
+   "residual_kernel_s": 0.64,
+   "elapsed_s": 15.849,
+   "wall_s": 18.931,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 176
+    }
+   }
+  },
+  "t_chunk262144_B00": {
+   "case": "B00",
+   "build": "build_chunktest",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "-mllvm -inline-threshold=50000",
+    "SMOKE_INU_GRAL_GPU_CHUNK": "262144"
+   },
+   "fresh_kernel_s": 12.914,
+   "residual_kernel_s": 0.663,
+   "elapsed_s": 15.945,
+   "wall_s": 18.911,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 176
+    }
+   }
+  },
+  "t_hotonly_B00": {
+   "case": "B00",
+   "build": "build_pr4",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\perf2\\rt_hotonly",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "--gpu-max-threads-per-block=256 -mllvm -inline-threshold=50000"
+   },
+   "fresh_kernel_s": 15.119,
+   "residual_kernel_s": 0.65,
+   "elapsed_s": 18.092,
+   "wall_s": 24.994,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 175
+    }
+   }
+  },
+  "t_agg2k4_B00": {
+   "case": "B00",
+   "build": "build_pr4",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\perf2\\rt_agg2_k4",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "--gpu-max-threads-per-block=256 -mllvm -inline-threshold=50000"
+   },
+   "fresh_kernel_s": 13.154,
+   "residual_kernel_s": 0.638,
+   "elapsed_s": 16.115,
+   "wall_s": 22.876,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 176
+    }
+   }
+  },
+  "t_agg2k32_B00": {
+   "case": "B00",
+   "build": "build_pr4",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\perf2\\rt_agg2_k32",
+    "SMOKE_INU_GPU_HIPRTC_EXTRA": "--gpu-max-threads-per-block=256 -mllvm -inline-threshold=50000"
+   },
+   "fresh_kernel_s": 13.208,
+   "residual_kernel_s": 0.634,
+   "elapsed_s": 16.17,
+   "wall_s": 22.433,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 176
+    }
+   }
+  },
+  "perf2_B00": {
+   "case": "B00",
+   "build": "build_perf2",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime"
+   },
+   "fresh_kernel_s": 13.252,
+   "residual_kernel_s": 0.647,
+   "elapsed_s": 16.271,
+   "wall_s": 19.741,
+   "nmae_vs_cpu": 0.0042609988870783355,
+   "identity_vs_reference": {
+    "members": 96,
+    "differing": 0,
+    "first_differing": []
+   },
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 176
+    }
+   }
+  },
+  "perf2_I14": {
+   "case": "I14",
+   "build": "build_perf2",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime"
+   },
+   "fresh_kernel_s": 64.231,
+   "residual_kernel_s": 2.083,
+   "elapsed_s": 75.32,
+   "wall_s": 86.41,
+   "nmae_vs_cpu": 0.005253866071053436,
+   "identity_vs_reference": null,
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 176
+    }
+   }
+  },
+  "perf2_P04": {
+   "case": "P04",
+   "build": "build_perf2",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime"
+   },
+   "fresh_kernel_s": 48.647,
+   "residual_kernel_s": 1.312,
+   "elapsed_s": 53.567,
+   "wall_s": 57.38,
+   "nmae_vs_cpu": 0.0025714886337677594,
+   "identity_vs_reference": null,
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 352,
+     "registers": 256
+    },
+    "residual": {
+     "max_threads_per_block": 256,
+     "local_size_bytes": 0,
+     "registers": 176
+    }
+   }
+  },
+  "ref_I14": {
+   "case": "I14",
+   "build": "build_pr4",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime"
+   },
+   "fresh_kernel_s": 115.712,
+   "residual_kernel_s": 2.439,
+   "elapsed_s": 126.789,
+   "wall_s": 137.085,
+   "nmae_vs_cpu": 0.005253866071053436,
+   "identity_vs_reference": null,
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 1024,
+     "local_size_bytes": 576,
+     "registers": 192
+    },
+    "residual": {
+     "max_threads_per_block": 1024,
+     "local_size_bytes": 64,
+     "registers": 192
+    }
+   }
+  },
+  "ref_P04": {
+   "case": "P04",
+   "build": "build_pr4",
+   "overrides": {
+    "SMOKE_RUNTIME": "<jobs>\\20261107_gral_gpu_hip_radeon\\pr77_hip\\gpu\\runtime"
+   },
+   "fresh_kernel_s": 103.668,
+   "residual_kernel_s": 1.557,
+   "elapsed_s": 108.741,
+   "wall_s": 111.989,
+   "nmae_vs_cpu": 0.0025714886337677594,
+   "identity_vs_reference": null,
+   "resources": {
+    "fresh": {
+     "max_threads_per_block": 1024,
+     "local_size_bytes": 576,
+     "registers": 192
+    },
+    "residual": {
+     "max_threads_per_block": 1024,
+     "local_size_bytes": 64,
+     "registers": 192
+    }
+   }
+  }
+ },
+ "before_after": {
+  "B00": {
+   "before": {
+    "fresh_kernel_s": 26.088,
+    "residual_kernel_s": 0.771,
+    "elapsed_s": 29.748,
+    "nmae_vs_cpu": 0.0042609988870783355
+   },
+   "after": {
+    "fresh_kernel_s": 13.252,
+    "residual_kernel_s": 0.647,
+    "elapsed_s": 16.271,
+    "nmae_vs_cpu": 0.0042609988870783355
+   },
+   "rtx5080": {
+    "fresh_kernel_s": 6.004,
+    "residual_kernel_s": 0.339,
+    "elapsed_s": 8.796
+   },
+   "speedup_fresh": 1.97,
+   "speedup_elapsed": 1.83,
+   "hip_over_cuda_fresh_before": 4.35,
+   "hip_over_cuda_fresh_after": 2.21,
+   "hip_over_cuda_kernel_after": 2.19,
+   "hip_over_cuda_elapsed_after": 1.85
+  },
+  "I14": {
+   "before": {
+    "fresh_kernel_s": 115.712,
+    "residual_kernel_s": 2.439,
+    "elapsed_s": 126.789,
+    "nmae_vs_cpu": 0.005253866071053436
+   },
+   "after": {
+    "fresh_kernel_s": 64.231,
+    "residual_kernel_s": 2.083,
+    "elapsed_s": 75.32,
+    "nmae_vs_cpu": 0.005253866071053436
+   },
+   "rtx5080": {
+    "fresh_kernel_s": 31.274,
+    "residual_kernel_s": 1.284,
+    "elapsed_s": 42.246
+   },
+   "speedup_fresh": 1.8,
+   "speedup_elapsed": 1.68,
+   "hip_over_cuda_fresh_before": 3.7,
+   "hip_over_cuda_fresh_after": 2.05,
+   "hip_over_cuda_kernel_after": 2.04,
+   "hip_over_cuda_elapsed_after": 1.78
+  },
+  "P04": {
+   "before": {
+    "fresh_kernel_s": 103.668,
+    "residual_kernel_s": 1.557,
+    "elapsed_s": 108.741,
+    "nmae_vs_cpu": 0.0025714886337677594
+   },
+   "after": {
+    "fresh_kernel_s": 48.647,
+    "residual_kernel_s": 1.312,
+    "elapsed_s": 53.567,
+    "nmae_vs_cpu": 0.0025714886337677594
+   },
+   "rtx5080": {
+    "fresh_kernel_s": 23.773,
+    "residual_kernel_s": 0.806,
+    "elapsed_s": 27.827
+   },
+   "speedup_fresh": 2.13,
+   "speedup_elapsed": 2.03,
+   "hip_over_cuda_fresh_before": 4.36,
+   "hip_over_cuda_fresh_after": 2.05,
+   "hip_over_cuda_kernel_after": 2.03,
+   "hip_over_cuda_elapsed_after": 1.93
+  }
+ }
+}
