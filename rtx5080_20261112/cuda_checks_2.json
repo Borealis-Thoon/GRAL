@@ -1,0 +1,145 @@
+{
+ "kernel_time_b00": {
+  "on_ms": [
+   7521.3,
+   7530.7,
+   7538.7
+  ],
+  "off_ms": [
+   7244.5,
+   7245.7,
+   7256.5
+  ],
+  "repro_finalize_ms": [
+   16.9,
+   16.9,
+   17.2
+  ],
+  "note": "alternating on/off, otherwise idle GPU, logical CPUs 0-15"
+ },
+ "budget_placement_b00": {
+  "280": {
+   "differing_vs_r1": 0,
+   "repro_words_in_host_memory": [
+    "_repro_Conz5d"
+   ]
+  },
+  "285": {
+   "differing_vs_r1": 0,
+   "repro_words_in_host_memory": [
+    "_repro_Conz5d"
+   ]
+  },
+  "290": {
+   "differing_vs_r1": 0,
+   "repro_words_in_host_memory": [
+    "_repro_Conz5d"
+   ]
+  },
+  "295": {
+   "differing_vs_r1": 0,
+   "repro_words_in_host_memory": [
+    "_repro_Conz5d"
+   ]
+  },
+  "300": {
+   "differing_vs_r1": 0,
+   "repro_words_in_host_memory": [
+    "_repro_Conz5d"
+   ]
+  },
+  "305": {
+   "differing_vs_r1": 0,
+   "repro_words_in_host_memory": [
+    "_repro_Depo_conz"
+   ]
+  },
+  "310": {
+   "differing_vs_r1": 0,
+   "repro_words_in_host_memory": []
+  },
+  "315": {
+   "differing_vs_r1": 0,
+   "repro_words_in_host_memory": []
+  },
+  "320": {
+   "differing_vs_r1": 0,
+   "repro_words_in_host_memory": []
+  },
+  "360": {
+   "differing_vs_r1": 0,
+   "repro_words_in_host_memory": []
+  },
+  "400": {
+   "differing_vs_r1": 0,
+   "repro_words_in_host_memory": []
+  },
+  "440": {
+   "differing_vs_r1": 0,
+   "repro_words_in_host_memory": []
+  },
+  "480": {
+   "differing_vs_r1": 0,
+   "repro_words_in_host_memory": []
+  }
+ },
+ "reserve0_differing_vs_r1": 0,
+ "err5": {
+  "rc": 3762504530,
+  "stderr_first_line": [
+   "Unhandled exception. System.AggregateException: GPU execution and cleanup failed (GPU server failed: {\"status\":\"error\",\"error\":\"GPU reproducible sums: an addend is not finite or its magnitude is 2^62 or more (INU_GPU_REPRODUCIBLE_SUMS=0 turns reproducible sums off); phase=0, particle=0; whole run aborted; results unavailable\",\"payload_bytes\":0}) (GPU close and cleanup failed (Pipe is broken.) (GPU server cleanup failed (Pipe is broken.) (GPU server exit code 1)))"
+  ]
+ },
+ "err5_off": {
+  "rc": 0,
+  "stderr_first_line": []
+ },
+ "novis_fb": {
+  "rc": 0,
+  "fallback": [
+   "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"The NVIDIA driver reports no CUDA device (check CUDA_VISIBLE_DEVICES)\",\"payload_bytes\":0}"
+  ],
+  "device": [],
+  "differing_vs_cpu": 0
+ },
+ "novis_auto_fb": {
+  "rc": 0,
+  "fallback": [
+   "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"No usable GPU. CUDA: The NVIDIA driver reports no CUDA device (check CUDA_VISIBLE_DEVICES); HIP: The AMD HIP runtime reports no device (check the AMD driver and HIP_VISIBLE_DEVICES)\",\"payload_bytes\":0}"
+  ],
+  "device": [],
+  "differing_vs_cpu": 0
+ },
+ "nofb_repro2": {
+  "rc": 3762504530,
+  "fallback": [
+   "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_REPRODUCIBLE_SUMS: use 0 or 1, not '2'\",\"payload_bytes\":0}"
+  ],
+  "device": [],
+  "differing_vs_cpu": 37
+ },
+ "old_runtime_off": {
+  "rc": 0,
+  "fallback": [],
+  "device": [
+   "GPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.5, NVRTC 12.9 ptx compute_120, kernel_exec_timeout=True, tcc=False"
+  ],
+  "differing_vs_cpu": 36
+ },
+ "pinned_x": {
+  "rc": 3762504530,
+  "fallback": [],
+  "device": [
+   "GPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.5, NVRTC 12.9 ptx compute_120, kernel_exec_timeout=True, tcc=False"
+  ],
+  "differing_vs_cpu": 37
+ },
+ "nested_log": {
+  "rc": 0,
+  "fallback": [],
+  "device": [
+   "GPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.5, NVRTC 12.9 ptx compute_120, kernel_exec_timeout=True, tcc=False"
+  ],
+  "differing_vs_cpu": 36
+ }
+}

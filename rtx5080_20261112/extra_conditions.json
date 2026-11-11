@@ -1,0 +1,232 @@
+{
+ "concurrent_a": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 14.34,
+  "fallback_lines": [],
+  "gpu_situations": 12,
+  "server_startup": [
+   "CUDA device 0 compute_120; NVRTC 12.9; target compute_120; NVIDIA GeForce RTX 5080; 16275 MiB; driver 13.5 (13050); kernel_exec_timeout=1; tcc=0; fp32:fp64=64:1; compute_mode=default"
+  ],
+  "extra_env": {},
+  "vs_suite_gpu_fixed": {
+   "members_a": 36,
+   "members_b": 36,
+   "differing": 0,
+   "first_differing": []
+  },
+  "expect_identical": true
+ },
+ "concurrent_b": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 14.24,
+  "fallback_lines": [],
+  "gpu_situations": 12,
+  "server_startup": [
+   "CUDA device 0 compute_120; NVRTC 12.9; target compute_120; NVIDIA GeForce RTX 5080; 16275 MiB; driver 13.5 (13050); kernel_exec_timeout=1; tcc=0; fp32:fp64=64:1; compute_mode=default"
+  ],
+  "extra_env": {},
+  "vs_suite_gpu_fixed": {
+   "members_a": 36,
+   "members_b": 36,
+   "differing": 0,
+   "first_differing": []
+  },
+  "expect_identical": true
+ },
+ "concurrent_a_vs_b": {
+  "members_a": 36,
+  "members_b": 36,
+  "differing": 0,
+  "first_differing": []
+ },
+ "specialize0": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 10.09,
+  "fallback_lines": [],
+  "gpu_situations": 12,
+  "server_startup": [
+   "CUDA device 0 compute_120; NVRTC 12.9; target compute_120; NVIDIA GeForce RTX 5080; 16275 MiB; driver 13.5 (13050); kernel_exec_timeout=1; tcc=0; fp32:fp64=64:1; compute_mode=default"
+  ],
+  "extra_env": {
+   "INU_GPU_SPECIALIZE": "0"
+  },
+  "vs_suite_gpu_fixed": {
+   "members_a": 48,
+   "members_b": 48,
+   "differing": 0,
+   "first_differing": []
+  },
+  "expect_identical": true
+ },
+ "repro_off": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 10.04,
+  "fallback_lines": [],
+  "gpu_situations": 12,
+  "server_startup": [
+   "CUDA device 0 compute_120; NVRTC 12.9; target compute_120; NVIDIA GeForce RTX 5080; 16275 MiB; driver 13.5 (13050); kernel_exec_timeout=1; tcc=0; fp32:fp64=64:1; compute_mode=default"
+  ],
+  "extra_env": {
+   "INU_GPU_REPRODUCIBLE_SUMS": "0"
+  },
+  "vs_suite_gpu_fixed": {
+   "members_a": 36,
+   "members_b": 36,
+   "differing": 33,
+   "first_differing": [
+    "00002.grz/00002-101.con",
+    "00002.grz/00002-102.con",
+    "00002.grz/00002-103.con",
+    "00003.grz/00003-101.con",
+    "00003.grz/00003-102.con"
+   ]
+  },
+  "expect_identical": false
+ },
+ "budget_tiny": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 276.79,
+  "fallback_lines": [],
+  "gpu_situations": 12,
+  "server_startup": [
+   "CUDA device 0 compute_120; NVRTC 12.9; target compute_120; NVIDIA GeForce RTX 5080; 16275 MiB; driver 13.5 (13050); kernel_exec_timeout=1; tcc=0; fp32:fp64=64:1; compute_mode=default"
+  ],
+  "extra_env": {
+   "INU_GPU_MEMORY_BUDGET_BYTES": "131072"
+  },
+  "vs_suite_gpu_fixed": {
+   "members_a": 48,
+   "members_b": 48,
+   "differing": 0,
+   "first_differing": []
+  },
+  "expect_identical": true
+ },
+ "budget_tiny_steady": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 207.64,
+  "fallback_lines": [],
+  "gpu_situations": 12,
+  "server_startup": [
+   "CUDA device 0 compute_120; NVRTC 12.9; target compute_120; NVIDIA GeForce RTX 5080; 16275 MiB; driver 13.5 (13050); kernel_exec_timeout=1; tcc=0; fp32:fp64=64:1; compute_mode=default"
+  ],
+  "extra_env": {
+   "INU_GPU_MEMORY_BUDGET_BYTES": "131072"
+  },
+  "vs_suite_gpu_fixed": {
+   "members_a": 48,
+   "members_b": 48,
+   "differing": 0,
+   "first_differing": []
+  },
+  "expect_identical": true
+ },
+ "block256_chunk4096": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 40.59,
+  "fallback_lines": [],
+  "gpu_situations": 12,
+  "server_startup": [
+   "CUDA device 0 compute_120; NVRTC 12.9; target compute_120; NVIDIA GeForce RTX 5080; 16275 MiB; driver 13.5 (13050); kernel_exec_timeout=1; tcc=0; fp32:fp64=64:1; compute_mode=default"
+  ],
+  "extra_env": {
+   "INU_GRAL_GPU_BLOCK": "256",
+   "INU_GRAL_GPU_CHUNK": "4096"
+  },
+  "vs_suite_gpu_fixed": {
+   "members_a": 48,
+   "members_b": 48,
+   "differing": 0,
+   "first_differing": []
+  },
+  "expect_identical": true
+ },
+ "range_7_12": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 5.56,
+  "fallback_lines": [],
+  "gpu_situations": 6,
+  "grz": [
+   "00007.grz",
+   "00008.grz",
+   "00009.grz",
+   "00010.grz",
+   "00011.grz",
+   "00012.grz"
+  ]
+ },
+ "zero_config_transient_area": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 10.6,
+  "fallback_lines": [],
+  "gpu_situations": 12,
+  "server_startup": null,
+  "extra_env": null,
+  "vs_suite_gpu_fixed": {
+   "members_a": 36,
+   "members_b": 36,
+   "differing": 0,
+   "first_differing": []
+  },
+  "expect_identical": true
+ },
+ "zero_config_transient_all_sources": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 10.38,
+  "fallback_lines": [],
+  "gpu_situations": 12,
+  "server_startup": null,
+  "extra_env": null,
+  "vs_suite_gpu_fixed": {
+   "members_a": 48,
+   "members_b": 48,
+   "differing": 0,
+   "first_differing": []
+  },
+  "expect_identical": true
+ },
+ "zero_config_steady_rot_all_sources": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 7.35,
+  "fallback_lines": [],
+  "gpu_situations": 12,
+  "server_startup": null,
+  "extra_env": null,
+  "vs_suite_gpu_fixed": {
+   "members_a": 48,
+   "members_b": 48,
+   "differing": 0,
+   "first_differing": []
+  },
+  "expect_identical": true
+ },
+ "avx512_on": {
+  "rc": 0,
+  "timed_out": false,
+  "wall_s": 10.56,
+  "fallback_lines": [],
+  "gpu_situations": 12,
+  "server_startup": [
+   "CUDA device 0 compute_120; NVRTC 12.9; target compute_120; NVIDIA GeForce RTX 5080; 16275 MiB; driver 13.5 (13050); kernel_exec_timeout=1; tcc=0; fp32:fp64=64:1; compute_mode=default"
+  ],
+  "extra_env": {},
+  "vs_suite_gpu_fixed": {
+   "members_a": 36,
+   "members_b": 36,
+   "differing": 0,
+   "first_differing": []
+  },
+  "expect_identical": true
+ }
+}

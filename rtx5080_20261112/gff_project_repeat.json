@@ -1,0 +1,104 @@
+{
+ "summary": {
+  "on1_vs_on2": {
+   "members_a": 26,
+   "members_b": 26,
+   "differing": []
+  },
+  "off1_vs_off2": {
+   "members_a": 26,
+   "members_b": 26,
+   "differing": [
+    "00001-101.txt",
+    "00002-101.txt",
+    "00003-101.txt",
+    "00004-101.txt",
+    "00005-101.txt",
+    "00006-101.txt",
+    "00007-101.txt",
+    "00007.grz/00007-101.con",
+    "00008-101.txt",
+    "00009-101.txt",
+    "00010-101.txt",
+    "00011-101.txt",
+    "00012-101.txt"
+   ]
+  },
+  "on1_vs_off1": {
+   "members_a": 26,
+   "members_b": 26,
+   "differing": [
+    "00001-101.txt",
+    "00002-101.txt",
+    "00002.grz/00002-101.con",
+    "00003-101.txt",
+    "00003.grz/00003-101.con",
+    "00004-101.txt",
+    "00004.grz/00004-101.con",
+    "00005-101.txt",
+    "00005.grz/00005-101.con",
+    "00006-101.txt",
+    "00006.grz/00006-101.con",
+    "00007-101.txt",
+    "00007.grz/00007-101.con",
+    "00008-101.txt",
+    "00008.grz/00008-101.con",
+    "00009-101.txt",
+    "00009.grz/00009-101.con",
+    "00010-101.txt",
+    "00010.grz/00010-101.con",
+    "00011-101.txt",
+    "00011.grz/00011-101.con",
+    "00012-101.txt",
+    "00012.grz/00012-101.con",
+    "ReceptorConcentrations.dat"
+   ]
+  }
+ },
+ "runs": {
+  "on1": {
+   "rc": 0,
+   "env": {},
+   "device": [
+    "GPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.5, NVRTC 12.9 ptx compute_120, kernel_exec_timeout=True, tcc=False"
+   ],
+   "fallback": [],
+   "deterministic": true,
+   "outputs": 26
+  },
+  "on2": {
+   "rc": 0,
+   "env": {},
+   "device": [
+    "GPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.5, NVRTC 12.9 ptx compute_120, kernel_exec_timeout=True, tcc=False"
+   ],
+   "fallback": [],
+   "deterministic": true,
+   "outputs": 26
+  },
+  "off1": {
+   "rc": 0,
+   "env": {
+    "INU_GPU_REPRODUCIBLE_SUMS": "0"
+   },
+   "device": [
+    "GPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.5, NVRTC 12.9 ptx compute_120, kernel_exec_timeout=True, tcc=False"
+   ],
+   "fallback": [],
+   "deterministic": true,
+   "outputs": 26
+  },
+  "off2": {
+   "rc": 0,
+   "env": {
+    "INU_GPU_REPRODUCIBLE_SUMS": "0"
+   },
+   "device": [
+    "GPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.5, NVRTC 12.9 ptx compute_120, kernel_exec_timeout=True, tcc=False"
+   ],
+   "fallback": [],
+   "deterministic": true,
+   "outputs": 26
+  }
+ }
+}

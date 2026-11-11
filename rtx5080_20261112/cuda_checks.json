@@ -1,0 +1,873 @@
+{
+ "item1_repeatability": {
+  "frozen_B00_fixed00": {
+   "r1_rc": 0,
+   "r1_outputs": 98,
+   "r1_fallback": [],
+   "r2": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c4096b256": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c1000": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk50": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk0": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "launches": {
+    "r1": [
+     467
+    ],
+    "mk50": [
+     642
+    ],
+    "mk0": [
+     359
+    ]
+   },
+   "adaptive": {
+    "r1": [
+     [
+      true,
+      256,
+      65536
+     ]
+    ],
+    "mk50": [
+     [
+      true,
+      239,
+      65536
+     ]
+    ],
+    "mk0": [
+     [
+      false,
+      null,
+      null
+     ]
+    ]
+   },
+   "repro_flag": [
+    "True"
+   ]
+  },
+  "transient_area_drydep": {
+   "r1_rc": 0,
+   "r1_outputs": 74,
+   "r1_fallback": [],
+   "r2": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c4096b256": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c1000": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk50": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk0": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "launches": {
+    "r1": [
+     234
+    ],
+    "mk50": [
+     366
+    ],
+    "mk0": [
+     179
+    ]
+   },
+   "adaptive": {
+    "r1": [
+     [
+      true,
+      256,
+      65536
+     ]
+    ],
+    "mk50": [
+     [
+      true,
+      256,
+      29429
+     ]
+    ],
+    "mk0": [
+     [
+      false,
+      null,
+      null
+     ]
+    ]
+   },
+   "repro_flag": [
+    "True"
+   ]
+  },
+  "wet_nodrift": {
+   "r1_rc": 0,
+   "r1_outputs": 74,
+   "r1_fallback": [],
+   "r2": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c4096b256": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c1000": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk50": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk0": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "launches": {
+    "r1": [
+     234
+    ],
+    "mk50": [
+     381
+    ],
+    "mk0": [
+     179
+    ]
+   },
+   "adaptive": {
+    "r1": [
+     [
+      true,
+      256,
+      65536
+     ]
+    ],
+    "mk50": [
+     [
+      true,
+      256,
+      31024
+     ]
+    ],
+    "mk0": [
+     [
+      false,
+      null,
+      null
+     ]
+    ]
+   },
+   "repro_flag": [
+    "True"
+   ]
+  },
+  "wet_drift_all": {
+   "r1_rc": 0,
+   "r1_outputs": 98,
+   "r1_fallback": [],
+   "r2": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c4096b256": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c1000": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk50": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk0": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "launches": {
+    "r1": [
+     253
+    ],
+    "mk50": [
+     125909
+    ],
+    "mk0": [
+     179
+    ]
+   },
+   "adaptive": {
+    "r1": [
+     [
+      true,
+      256,
+      65536
+     ]
+    ],
+    "mk50": [
+     [
+      true,
+      1,
+      40002
+     ]
+    ],
+    "mk0": [
+     [
+      false,
+      null,
+      null
+     ]
+    ]
+   },
+   "repro_flag": [
+    "True"
+   ]
+  },
+  "steady_pgt_terrain_primary": {
+   "r1_rc": 0,
+   "r1_outputs": 40,
+   "r1_fallback": [],
+   "r2": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c4096b256": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c1000": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk50": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk0": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "launches": {
+    "r1": [
+     174
+    ],
+    "mk50": [
+     298
+    ],
+    "mk0": [
+     144
+    ]
+   },
+   "adaptive": {
+    "r1": [
+     [
+      true,
+      256,
+      65536
+     ]
+    ],
+    "mk50": [
+     [
+      true,
+      256,
+      34786
+     ]
+    ],
+    "mk0": [
+     [
+      false,
+      null,
+      null
+     ]
+    ]
+   },
+   "repro_flag": [
+    "True"
+   ]
+  },
+  "odour_all_sources": {
+   "r1_rc": 0,
+   "r1_outputs": 194,
+   "r1_fallback": [],
+   "r2": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c4096b256": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c1000": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk50": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk0": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "launches": {
+    "r1": [
+     234
+    ],
+    "mk50": [
+     442
+    ],
+    "mk0": [
+     179
+    ]
+   },
+   "adaptive": {
+    "r1": [
+     [
+      true,
+      256,
+      65536
+     ]
+    ],
+    "mk50": [
+     [
+      true,
+      26,
+      28802
+     ]
+    ],
+    "mk0": [
+     [
+      false,
+      null,
+      null
+     ]
+    ]
+   },
+   "repro_flag": [
+    "True"
+   ]
+  },
+  "transient_all_sources": {
+   "r1_rc": 0,
+   "r1_outputs": 50,
+   "r1_fallback": [],
+   "r2": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c4096b256": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c1000": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk50": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk0": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "launches": {
+    "r1": [
+     234
+    ],
+    "mk50": [
+     333
+    ],
+    "mk0": [
+     179
+    ]
+   },
+   "adaptive": {
+    "r1": [
+     [
+      true,
+      256,
+      65536
+     ]
+    ],
+    "mk50": [
+     [
+      true,
+      256,
+      41309
+     ]
+    ],
+    "mk0": [
+     [
+      false,
+      null,
+      null
+     ]
+    ]
+   },
+   "repro_flag": [
+    "True"
+   ]
+  },
+  "tunnel_entrance": {
+   "r1_rc": 0,
+   "r1_outputs": 52,
+   "r1_fallback": [],
+   "r2": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c4096b256": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c1000": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk50": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk0": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "launches": {
+    "r1": [
+     234
+    ],
+    "mk50": [
+     287
+    ],
+    "mk0": [
+     179
+    ]
+   },
+   "adaptive": {
+    "r1": [
+     [
+      true,
+      51,
+      65536
+     ]
+    ],
+    "mk50": [
+     [
+      true,
+      51,
+      60593
+     ]
+    ],
+    "mk0": [
+     [
+      false,
+      null,
+      null
+     ]
+    ]
+   },
+   "repro_flag": [
+    "True"
+   ]
+  },
+  "vertical_conc": {
+   "r1_rc": 0,
+   "r1_outputs": 42,
+   "r1_fallback": [],
+   "r2": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c4096b256": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "c1000": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk50": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "mk0": {
+    "rc": 0,
+    "fallback": 0,
+    "differing": 0
+   },
+   "launches": {
+    "r1": [
+     253
+    ],
+    "mk50": [
+     457
+    ],
+    "mk0": [
+     194
+    ]
+   },
+   "adaptive": {
+    "r1": [
+     [
+      true,
+      256,
+      65536
+     ]
+    ],
+    "mk50": [
+     [
+      true,
+      256,
+      26278
+     ]
+    ],
+    "mk0": [
+     [
+      false,
+      null,
+      null
+     ]
+    ]
+   },
+   "repro_flag": [
+    "True"
+   ]
+  }
+ },
+ "item2_b00_float_sums": {
+  "ref_members": 96,
+  "off1_members": 96,
+  "off1_vs_reference_differing": 0,
+  "off1_vs_off2_differing": 0,
+  "repro_r1_vs_reference_differing": 57,
+  "off1_repro_flag": [
+   "False"
+  ],
+  "kernel_ms_off1": 7264.918940678239,
+  "kernel_ms_r1": 7534.320239541121,
+  "wall_off1": 11.27,
+  "wall_r1": 11.65
+ },
+ "item2_atomic_order_control": {
+  "wet_drift_all": {
+   "off_c65536_vs_off_c4096_differing": 48,
+   "members": 98
+  },
+  "steady_rot_receptors51": {
+   "off_c65536_vs_off_c4096_differing": 1,
+   "members": 40,
+   "repro_r1_vs_c4096_differing": 0
+  }
+ },
+ "item4_carry": {
+  "frozen_B00_fixed00": {
+   "rc": 0,
+   "differing_vs_r1": 0
+  },
+  "transient_area_drydep": {
+   "rc": 0,
+   "differing_vs_r1": 0
+  },
+  "wet_drift_all": {
+   "rc": 0,
+   "differing_vs_r1": 0
+  },
+  "steady_pgt_terrain_primary": {
+   "rc": 0,
+   "differing_vs_r1": 0
+  },
+  "odour_all_sources": {
+   "rc": 0,
+   "differing_vs_r1": 0
+  },
+  "err6": {
+   "rc": 3762504530,
+   "fallback": [],
+   "stdout_tail": "H TOPOGRAPHY\r\nDIAGNOSTIC WIND FIELD CALCULATION\r\nUsing a total of 360000 particles (100 part./s) within the model domain\r\n\r\nObukhov length [m]:        1000.0\r\nFriction velocity [m/s]:   0.19\r\nBoundary-layer height [m]: 584\r\nInit meteo:  wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4\r\nGRAMM meteo: wind speed [m/s]: 2.00  direction [deg]: 270  Stability class [-]: 4\r\n                           ----------\r\nGPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.5, NVRTC 12.9 ptx compute_120, kernel_exec_timeout=True, tcc=False\r\n\r\nDispersion computation....."
+  }
+ },
+ "item5_cubin": {
+  "frozen_B00_fixed00": {
+   "rc": [
+    0,
+    0
+   ],
+   "device_line": [
+    "GPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.5, NVRTC 12.9 cubin sm_120, kernel_exec_timeout=True, tcc=False"
+   ],
+   "cubin1_vs_cubin2": 0,
+   "cubin1_vs_ptx_r1": 0,
+   "cache": [
+    [
+     "miss"
+    ],
+    [
+     "hit"
+    ]
+   ]
+  },
+  "wet_drift_all": {
+   "rc": [
+    0,
+    0
+   ],
+   "device_line": [
+    "GPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.5, NVRTC 12.9 cubin sm_120, kernel_exec_timeout=True, tcc=False"
+   ],
+   "cubin1_vs_cubin2": 0,
+   "cubin1_vs_ptx_r1": 0,
+   "cache": [
+    [
+     "hit"
+    ],
+    [
+     "hit"
+    ]
+   ]
+  }
+ },
+ "item7_9_backend_and_fallback": {
+  "be_default": {
+   "rc": 0,
+   "device": [
+    "GPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.5, NVRTC 12.9 ptx compute_120, kernel_exec_timeout=True, tcc=False"
+   ],
+   "fallback": [],
+   "gpu_lines": [
+    "GPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.5, NVRTC 12.9 ptx compute_120, kernel_exec_timeout=True, tcc=False"
+   ],
+   "outputs": 38,
+   "differing_vs_cpu": 36,
+   "differing_vs_default": 0
+  },
+  "be_cuda_spaces": {
+   "rc": 0,
+   "device": [
+    "GPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.5, NVRTC 12.9 ptx compute_120, kernel_exec_timeout=True, tcc=False"
+   ],
+   "fallback": [],
+   "gpu_lines": [
+    "GPU device 0: NVIDIA GeForce RTX 5080, CC 12.0, 16275 MiB, driver CUDA 13.5, NVRTC 12.9 ptx compute_120, kernel_exec_timeout=True, tcc=False"
+   ],
+   "outputs": 38,
+   "differing_vs_cpu": 36,
+   "differing_vs_default": 0
+  },
+  "be_nvidia": {
+   "rc": 3762504530,
+   "device": [],
+   "fallback": [
+    "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_BACKEND must be cuda or hip, got 'nvidia'\",\"payload_bytes\":0}"
+   ],
+   "gpu_lines": [
+    "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_BACKEND must be cuda or hip, got 'nvidia'\",\"payload_bytes\":0}"
+   ],
+   "outputs": 2,
+   "differing_vs_cpu": 37,
+   "differing_vs_default": 37
+  },
+  "be_hip": {
+   "rc": 3762504530,
+   "device": [],
+   "fallback": [
+    "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"The AMD HIP runtime reports no device (check the AMD driver and HIP_VISIBLE_DEVICES)\",\"payload_bytes\":0}"
+   ],
+   "gpu_lines": [
+    "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"The AMD HIP runtime reports no device (check the AMD driver and HIP_VISIBLE_DEVICES)\",\"payload_bytes\":0}"
+   ],
+   "outputs": 2,
+   "differing_vs_cpu": 37,
+   "differing_vs_default": 37
+  },
+  "be_hip_fb": {
+   "rc": 0,
+   "device": [],
+   "fallback": [
+    "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"The AMD HIP runtime reports no device (check the AMD driver and HIP_VISIBLE_DEVICES)\",\"payload_bytes\":0}"
+   ],
+   "gpu_lines": [
+    "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"The AMD HIP runtime reports no device (check the AMD driver and HIP_VISIBLE_DEVICES)\",\"payload_"
+   ],
+   "outputs": 38,
+   "differing_vs_cpu": 0,
+   "differing_vs_default": 36
+  },
+  "dev5": {
+   "rc": 3762504530,
+   "device": [],
+   "fallback": [
+    "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_DEVICE=5 is out of range: 1 CUDA device(s) visible (valid 0..0; CUDA_VISIBLE_DEVICES renumbers devices)\",\"payload_bytes\":0}"
+   ],
+   "gpu_lines": [
+    "GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_DEVICE=5 is out of range: 1 CUDA device(s) visible (valid 0..0; CUDA_VISIBLE_DEVICES renumbers devices)\",\"payload_bytes\":0}"
+   ],
+   "outputs": 2,
+   "differing_vs_cpu": 37,
+   "differing_vs_default": 37
+  },
+  "fb_repro2": {
+   "rc": 0,
+   "device": [],
+   "fallback": [
+    "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_REPRODUCIBLE_SUMS: use 0 or 1, not '2'\",\"payload_bytes\":0}"
+   ],
+   "gpu_lines": [
+    "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_REPRODUCIBLE_SUMS: use 0 or 1, not '2'\",\"payload_bytes\":0}"
+   ],
+   "outputs": 38,
+   "differing_vs_cpu": 0,
+   "differing_vs_default": 36
+  },
+  "fb_manifest": {
+   "rc": 0,
+   "device": [],
+   "fallback": [
+    "GPU fallback to CPU for the whole run: GPU startup failed: Could not find file 'D:\\INU_Modeling_Work\\jobs\\20261112_gral_gpu_rtx5080\\empty_dir\\fields_manifest.json'."
+   ],
+   "gpu_lines": [
+    "GPU fallback to CPU for the whole run: GPU startup failed: Could not find file 'D:\\INU_Modeling_Work\\jobs\\20261112_gral_gpu_rtx5080\\empty_dir\\fields_manifest.json'."
+   ],
+   "outputs": 38,
+   "differing_vs_cpu": 0,
+   "differing_vs_default": 36
+  },
+  "fb_nvrtc_empty": {
+   "rc": 0,
+   "device": [],
+   "fallback": [
+    "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_NVRTC_DIR contains no NVRTC library: D:\\\\INU_Modeling_Work\\\\jobs\\\\20261112_gral_gpu_rtx5080\\\\empty_dir\",\"pa"
+   ],
+   "gpu_lines": [
+    "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"INU_GPU_NVRTC_DIR contains no NVRTC library: D:\\\\INU_Modeling_Work\\\\jobs\\\\20261112_gral_gpu_rtx"
+   ],
+   "outputs": 38,
+   "differing_vs_cpu": 0,
+   "differing_vs_default": 36
+  },
+  "fb_block64": {
+   "rc": 0,
+   "device": [],
+   "fallback": [
+    "GPU fallback to CPU for the whole run: GPU startup failed: Invalid INU_GRAL_GPU_BLOCK"
+   ],
+   "gpu_lines": [
+    "GPU fallback to CPU for the whole run: GPU startup failed: Invalid INU_GRAL_GPU_BLOCK"
+   ],
+   "outputs": 38,
+   "differing_vs_cpu": 0,
+   "differing_vs_default": 36
+  },
+  "fb_maxkernel_abc": {
+   "rc": 0,
+   "device": [],
+   "fallback": [
+    "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"Invalid GPU memory setting: INU_GPU_MAX_KERNEL_MS\",\"payload_bytes\":0}"
+   ],
+   "gpu_lines": [
+    "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"Invalid GPU memory setting: INU_GPU_MAX_KERNEL_MS\",\"payload_bytes\":0}"
+   ],
+   "outputs": 38,
+   "differing_vs_cpu": 0,
+   "differing_vs_default": 36
+  },
+  "fb_old_runtime": {
+   "rc": 0,
+   "device": [],
+   "fallback": [
+    "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"generated.cu: expected exactly one '#define GRAL_REPRO_SUMS 0'\",\"payload_bytes\":0}"
+   ],
+   "gpu_lines": [
+    "GPU fallback to CPU for the whole run: GPU startup failed: GPU server failed: {\"status\":\"error\",\"error\":\"generated.cu: expected exactly one '#define GRAL_REPRO_SUMS 0'\",\"payload_bytes\":0}"
+   ],
+   "outputs": 38,
+   "differing_vs_cpu": 0,
+   "differing_vs_default": 36
+  }
+ },
+ "item11_specialize": {
+  "rc": 0,
+  "fallback": [],
+  "differing_vs_r1": 0,
+  "specialization_keys": []
+ },
+ "item15_mixed": {
+  "rc": [
+   0,
+   0
+  ],
+  "fallback": [
+   "GPU fallback to CPU: meteorology profile count out of range"
+  ],
+  "r1_vs_r2": 0
+ }
+}

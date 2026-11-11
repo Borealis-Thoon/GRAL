@@ -22,7 +22,7 @@ ax.text(.25, 6.08, 'GRAL GPU execution', fontsize=18, weight='bold', color=INK, 
 # One GRAL process holds the host threads and the GPU runtime thread; the GPU sits outside it.
 ax.add_patch(Rectangle((.12, .62), 8.33, 4.88, facecolor='none', edgecolor='#9fb3c2', linestyle=(0, (5, 3)), lw=1.1))
 ax.text(.25, 5.38, 'ONE GRAL PROCESS (.NET)', fontsize=9.5, weight='bold', color=MUTED, va='top')
-for x, w, title in [(.25, 3.7, 'GRAL HOST  /  CPU'), (4.6, 3.7, 'GPU RUNTIME THREAD  /  C#'), (8.95, 3.8, 'NVIDIA GPU')]:
+for x, w, title in [(.25, 3.7, 'GRAL HOST  /  CPU'), (4.6, 3.7, 'GPU RUNTIME THREAD  /  C#'), (8.95, 3.8, 'NVIDIA OR AMD GPU')]:
     ax.add_patch(Rectangle((x, .75), w, 4.3, facecolor='#f8fafb', edgecolor='#c6d4dd'))
     ax.text(x + .13, 4.86, title, fontsize=10, weight='bold', color=MUTED, va='top')
 
@@ -40,11 +40,11 @@ def arrow(x1, y1, x2, y2):
 node(.48, 3.45, 3.24, .95, 'Prepare situation', 'Inputs, fields and source setup', '#e8f1f6')
 node(.48, 2.25, 3.24, .95, 'Coordinate execution', 'Fresh and residual requests', '#ffffff')
 node(.48, 1.05, 3.24, .95, 'Write GRAL outputs', 'Receive and apply results', '#ffffff')
-node(4.83, 3.08, 3.24, 1.20, 'Start once per run', 'CUDA context; NVRTC compile or\nkernel cache; static input cache', '#e8f1f6')
+node(4.83, 3.08, 3.24, 1.20, 'Start once per run', 'GPU context; NVRTC or hiprtc compile\nor kernel cache; static input cache', '#e8f1f6')
 node(4.83, 2.00, 3.24, .95, 'Dispatch batches', 'Fresh and residual particle work', '#ffffff')
 node(4.83, 1.05, 3.24, .82, 'Return results', 'Synchronized response', '#ffffff')
 node(9.18, 2.75, 3.34, 1.35, 'GPU particle work', 'Trajectories and output\naccumulation', '#dcefeb')
-ax.text(4.73, 4.60, 'calls the CUDA driver and NVRTC directly from C#', fontsize=8.5, color=MUTED, va='top', style='italic')
+ax.text(4.73, 4.60, 'calls CUDA + NVRTC or HIP + hiprtc from C#', fontsize=8.5, color=MUTED, va='top', style='italic')
 arrow(3.72, 3.92, 4.83, 3.92)
 arrow(3.72, 2.73, 4.83, 2.73)
 arrow(8.07, 2.80, 9.18, 2.80)

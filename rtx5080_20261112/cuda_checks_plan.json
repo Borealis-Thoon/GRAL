@@ -1,0 +1,683 @@
+{
+ "dll": "D:\\INU_Modeling_Work\\jobs\\20261111_gral_gpu_reproducible_sums\\builds\\head_63ce3c6\\out\\GRAL.dll",
+ "runtime": "D:\\INU_Modeling_Work\\jobs\\20261111_gral_gpu_radeon_stability\\runtime",
+ "nvrtc": "D:\\INU_Modeling_Work\\jobs\\20261031_132339_gral_gramm_gpu_resident\\work\\gral_host\\candidate_gpu\\support\\nvrtc\\nvidia\\cuda_nvrtc\\bin",
+ "runs": [
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "r1",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "r2",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "c4096b256",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "4096",
+    "INU_GRAL_GPU_BLOCK": "256"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "c1000",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "1000"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "mk50",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "50"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "mk0",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "0"
+   }
+  },
+  {
+   "case": "transient_area_drydep",
+   "label": "r1",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "transient_area_drydep",
+   "label": "r2",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "transient_area_drydep",
+   "label": "c4096b256",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "4096",
+    "INU_GRAL_GPU_BLOCK": "256"
+   }
+  },
+  {
+   "case": "transient_area_drydep",
+   "label": "c1000",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "1000"
+   }
+  },
+  {
+   "case": "transient_area_drydep",
+   "label": "mk50",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "50"
+   }
+  },
+  {
+   "case": "transient_area_drydep",
+   "label": "mk0",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "0"
+   }
+  },
+  {
+   "case": "wet_nodrift",
+   "label": "r1",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "wet_nodrift",
+   "label": "r2",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "wet_nodrift",
+   "label": "c4096b256",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "4096",
+    "INU_GRAL_GPU_BLOCK": "256"
+   }
+  },
+  {
+   "case": "wet_nodrift",
+   "label": "c1000",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "1000"
+   }
+  },
+  {
+   "case": "wet_nodrift",
+   "label": "mk50",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "50"
+   }
+  },
+  {
+   "case": "wet_nodrift",
+   "label": "mk0",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "0"
+   }
+  },
+  {
+   "case": "wet_drift_all",
+   "label": "r1",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "wet_drift_all",
+   "label": "r2",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "wet_drift_all",
+   "label": "c4096b256",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "4096",
+    "INU_GRAL_GPU_BLOCK": "256"
+   }
+  },
+  {
+   "case": "wet_drift_all",
+   "label": "c1000",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "1000"
+   }
+  },
+  {
+   "case": "wet_drift_all",
+   "label": "mk50",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "50"
+   }
+  },
+  {
+   "case": "wet_drift_all",
+   "label": "mk0",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "0"
+   }
+  },
+  {
+   "case": "steady_pgt_terrain_primary",
+   "label": "r1",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "steady_pgt_terrain_primary",
+   "label": "r2",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "steady_pgt_terrain_primary",
+   "label": "c4096b256",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "4096",
+    "INU_GRAL_GPU_BLOCK": "256"
+   }
+  },
+  {
+   "case": "steady_pgt_terrain_primary",
+   "label": "c1000",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "1000"
+   }
+  },
+  {
+   "case": "steady_pgt_terrain_primary",
+   "label": "mk50",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "50"
+   }
+  },
+  {
+   "case": "steady_pgt_terrain_primary",
+   "label": "mk0",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "0"
+   }
+  },
+  {
+   "case": "odour_all_sources",
+   "label": "r1",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "odour_all_sources",
+   "label": "r2",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "odour_all_sources",
+   "label": "c4096b256",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "4096",
+    "INU_GRAL_GPU_BLOCK": "256"
+   }
+  },
+  {
+   "case": "odour_all_sources",
+   "label": "c1000",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "1000"
+   }
+  },
+  {
+   "case": "odour_all_sources",
+   "label": "mk50",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "50"
+   }
+  },
+  {
+   "case": "odour_all_sources",
+   "label": "mk0",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "0"
+   }
+  },
+  {
+   "case": "transient_all_sources",
+   "label": "r1",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "transient_all_sources",
+   "label": "r2",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "transient_all_sources",
+   "label": "c4096b256",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "4096",
+    "INU_GRAL_GPU_BLOCK": "256"
+   }
+  },
+  {
+   "case": "transient_all_sources",
+   "label": "c1000",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "1000"
+   }
+  },
+  {
+   "case": "transient_all_sources",
+   "label": "mk50",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "50"
+   }
+  },
+  {
+   "case": "transient_all_sources",
+   "label": "mk0",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "0"
+   }
+  },
+  {
+   "case": "tunnel_entrance",
+   "label": "r1",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "tunnel_entrance",
+   "label": "r2",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "tunnel_entrance",
+   "label": "c4096b256",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "4096",
+    "INU_GRAL_GPU_BLOCK": "256"
+   }
+  },
+  {
+   "case": "tunnel_entrance",
+   "label": "c1000",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "1000"
+   }
+  },
+  {
+   "case": "tunnel_entrance",
+   "label": "mk50",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "50"
+   }
+  },
+  {
+   "case": "tunnel_entrance",
+   "label": "mk0",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "0"
+   }
+  },
+  {
+   "case": "vertical_conc",
+   "label": "r1",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "vertical_conc",
+   "label": "r2",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "vertical_conc",
+   "label": "c4096b256",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "4096",
+    "INU_GRAL_GPU_BLOCK": "256"
+   }
+  },
+  {
+   "case": "vertical_conc",
+   "label": "c1000",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "1000"
+   }
+  },
+  {
+   "case": "vertical_conc",
+   "label": "mk50",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "50"
+   }
+  },
+  {
+   "case": "vertical_conc",
+   "label": "mk0",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "0"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "off1",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_REPRODUCIBLE_SUMS": "0"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "off2",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_REPRODUCIBLE_SUMS": "0"
+   }
+  },
+  {
+   "case": "wet_drift_all",
+   "label": "off_c65536",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_REPRODUCIBLE_SUMS": "0"
+   }
+  },
+  {
+   "case": "wet_drift_all",
+   "label": "off_c4096",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_REPRODUCIBLE_SUMS": "0",
+    "INU_GRAL_GPU_CHUNK": "4096"
+   }
+  },
+  {
+   "case": "steady_rot_receptors51",
+   "label": "off_c65536",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_REPRODUCIBLE_SUMS": "0"
+   }
+  },
+  {
+   "case": "steady_rot_receptors51",
+   "label": "off_c4096",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_REPRODUCIBLE_SUMS": "0",
+    "INU_GRAL_GPU_CHUNK": "4096"
+   }
+  },
+  {
+   "case": "steady_rot_receptors51",
+   "label": "r1",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "steady_rot_receptors51",
+   "label": "c4096",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_CHUNK": "4096"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "carry",
+   "mode": "gpu",
+   "env": {},
+   "runtime": "D:\\INU_Modeling_Work\\jobs\\20261111_gral_gpu_reproducible_sums\\work\\runtime_carrytest"
+  },
+  {
+   "case": "transient_area_drydep",
+   "label": "carry",
+   "mode": "gpu",
+   "env": {},
+   "runtime": "D:\\INU_Modeling_Work\\jobs\\20261111_gral_gpu_reproducible_sums\\work\\runtime_carrytest"
+  },
+  {
+   "case": "wet_drift_all",
+   "label": "carry",
+   "mode": "gpu",
+   "env": {},
+   "runtime": "D:\\INU_Modeling_Work\\jobs\\20261111_gral_gpu_reproducible_sums\\work\\runtime_carrytest"
+  },
+  {
+   "case": "steady_pgt_terrain_primary",
+   "label": "carry",
+   "mode": "gpu",
+   "env": {},
+   "runtime": "D:\\INU_Modeling_Work\\jobs\\20261111_gral_gpu_reproducible_sums\\work\\runtime_carrytest"
+  },
+  {
+   "case": "odour_all_sources",
+   "label": "carry",
+   "mode": "gpu",
+   "env": {},
+   "runtime": "D:\\INU_Modeling_Work\\jobs\\20261111_gral_gpu_reproducible_sums\\work\\runtime_carrytest"
+  },
+  {
+   "case": "transient_area_drydep",
+   "label": "err6",
+   "mode": "gpu",
+   "env": {},
+   "runtime": "D:\\INU_Modeling_Work\\jobs\\20261112_gral_gpu_rtx5080\\runtime_err6"
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "cubin1",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_FORCE_CUBIN": "1",
+    "INU_GPU_CACHE_DIR": "D:\\INU_Modeling_Work\\jobs\\20261112_gral_gpu_rtx5080\\cache_cubin"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "cubin2",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_FORCE_CUBIN": "1",
+    "INU_GPU_CACHE_DIR": "D:\\INU_Modeling_Work\\jobs\\20261112_gral_gpu_rtx5080\\cache_cubin"
+   }
+  },
+  {
+   "case": "wet_drift_all",
+   "label": "cubin1",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_FORCE_CUBIN": "1",
+    "INU_GPU_CACHE_DIR": "D:\\INU_Modeling_Work\\jobs\\20261112_gral_gpu_rtx5080\\cache_cubin"
+   }
+  },
+  {
+   "case": "wet_drift_all",
+   "label": "cubin2",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_FORCE_CUBIN": "1",
+    "INU_GPU_CACHE_DIR": "D:\\INU_Modeling_Work\\jobs\\20261112_gral_gpu_rtx5080\\cache_cubin"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "be_cuda_spaces",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_BACKEND": " CUDA "
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "be_default",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_BACKEND": null
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "be_nvidia",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_BACKEND": "nvidia"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "be_hip",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_BACKEND": "hip"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "be_hip_fb",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_BACKEND": "hip",
+    "INU_GPU_FALLBACK_ON_STARTUP": "1"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "dev5",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_DEVICE": "5"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "fb_repro2",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_REPRODUCIBLE_SUMS": "2",
+    "INU_GPU_FALLBACK_ON_STARTUP": "1"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "fb_manifest",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MANIFEST": "D:\\INU_Modeling_Work\\jobs\\20261112_gral_gpu_rtx5080\\empty_dir\\fields_manifest.json",
+    "INU_GPU_FALLBACK_ON_STARTUP": "1"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "fb_nvrtc_empty",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_NVRTC_DIR": "D:\\INU_Modeling_Work\\jobs\\20261112_gral_gpu_rtx5080\\empty_dir",
+    "INU_GPU_FALLBACK_ON_STARTUP": "1"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "fb_block64",
+   "mode": "gpu",
+   "env": {
+    "INU_GRAL_GPU_BLOCK": "64",
+    "INU_GPU_FALLBACK_ON_STARTUP": "1"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "fb_maxkernel_abc",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MAX_KERNEL_MS": "abc",
+    "INU_GPU_FALLBACK_ON_STARTUP": "1"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "fb_old_runtime",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MANIFEST": "D:\\INU_Modeling_Work\\jobs\\20261105_gral_gpu_pinvoke\\rt_bundled\\fields_manifest.json",
+    "INU_GPU_FALLBACK_ON_STARTUP": "1"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "cpu_ref",
+   "mode": "cpu",
+   "env": {}
+  },
+  {
+   "case": "transient_all_sources",
+   "label": "spec_bogus",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_SPECIALIZE": "bogus,,"
+   }
+  },
+  {
+   "case": "neg_eki_calm",
+   "label": "r1",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "neg_eki_calm",
+   "label": "r2",
+   "mode": "gpu",
+   "env": {}
+  }
+ ]
+}

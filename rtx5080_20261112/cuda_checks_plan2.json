@@ -1,0 +1,164 @@
+{
+ "dll": "D:\\INU_Modeling_Work\\jobs\\20261111_gral_gpu_reproducible_sums\\builds\\head_63ce3c6\\out\\GRAL.dll",
+ "runtime": "D:\\INU_Modeling_Work\\jobs\\20261111_gral_gpu_radeon_stability\\runtime",
+ "nvrtc": "D:\\INU_Modeling_Work\\jobs\\20261031_132339_gral_gramm_gpu_resident\\work\\gral_host\\candidate_gpu\\support\\nvrtc\\nvidia\\cuda_nvrtc\\bin",
+ "runs": [
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "t_on1",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "t_off1",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_REPRODUCIBLE_SUMS": "0"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "t_on2",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "t_off2",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_REPRODUCIBLE_SUMS": "0"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "t_on3",
+   "mode": "gpu",
+   "env": {}
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "t_off3",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_REPRODUCIBLE_SUMS": "0"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "budget280",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MEMORY_BUDGET_BYTES": "293601280"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "budget320",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MEMORY_BUDGET_BYTES": "335544320"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "budget360",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MEMORY_BUDGET_BYTES": "377487360"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "budget400",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MEMORY_BUDGET_BYTES": "419430400"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "budget440",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MEMORY_BUDGET_BYTES": "461373440"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "budget480",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MEMORY_BUDGET_BYTES": "503316480"
+   }
+  },
+  {
+   "case": "frozen:B00_fixed00",
+   "label": "reserve0",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MEMORY_RESERVE_BYTES": "0"
+   }
+  },
+  {
+   "case": "transient_area_drydep",
+   "label": "err5",
+   "mode": "gpu",
+   "env": {},
+   "runtime": "D:\\INU_Modeling_Work\\jobs\\20261112_gral_gpu_rtx5080\\runtime_err5"
+  },
+  {
+   "case": "transient_area_drydep",
+   "label": "err5_off",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_REPRODUCIBLE_SUMS": "0"
+   },
+   "runtime": "D:\\INU_Modeling_Work\\jobs\\20261112_gral_gpu_rtx5080\\runtime_err5"
+  },
+  {
+   "case": "transient_area",
+   "label": "novis_fb",
+   "mode": "gpu",
+   "env": {
+    "CUDA_VISIBLE_DEVICES": "-1",
+    "INU_GPU_FALLBACK_ON_STARTUP": "1"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "nofb_repro2",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_REPRODUCIBLE_SUMS": "2"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "old_runtime_off",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_MANIFEST": "D:\\INU_Modeling_Work\\jobs\\20261105_gral_gpu_pinvoke\\rt_bundled\\fields_manifest.json",
+    "INU_GPU_REPRODUCIBLE_SUMS": "0"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "pinned_x",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_PINNED_BUDGET_BYTES": "x",
+    "INU_GPU_FALLBACK_ON_STARTUP": "1"
+   }
+  },
+  {
+   "case": "transient_area",
+   "label": "nested_log",
+   "mode": "gpu",
+   "env": {
+    "INU_GPU_STDERR": "D:\\INU_Modeling_Work\\jobs\\20261112_gral_gpu_rtx5080\\nested_log_test\\a\\b\\runtime.log"
+   }
+  }
+ ]
+}
