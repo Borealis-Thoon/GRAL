@@ -1,0 +1,102 @@
+{
+ "figure": "pr81_wind_directions.png",
+ "quantity": "change of the summed continuity residual in percent, build with the plus at the prognostic line (e8e110a + instrumentation) against upstream (9d819a7 + instrumentation); fields \"pexit_pct\" and \"dexit_sum_pct\" of \"directions\" in the source file",
+ "source": "<job folder>/gapfix/cpu/t4/t4_results.json",
+ "table_with_the_same_numbers": "<job folder>/gapfix/cpu/t4/t4_results.md (Test A)",
+ "directions_left_to_right": [
+  "N",
+  "NE",
+  "E",
+  "SE",
+  "S",
+  "SW",
+  "W",
+  "NW"
+ ],
+ "plotted": {
+  "N": {
+   "wind_from_deg": 360,
+   "after_prognostic_solver_pct": -18.120979988401842,
+   "after_prognostic_solver_label": "-18.1",
+   "final_sum_pct": -2.7445920111968114,
+   "final_sum_label": "-2.7"
+  },
+  "NE": {
+   "wind_from_deg": 45,
+   "after_prognostic_solver_pct": -15.714329656721137,
+   "after_prognostic_solver_label": "-15.7",
+   "final_sum_pct": -3.9270697196033155,
+   "final_sum_label": "-3.9"
+  },
+  "E": {
+   "wind_from_deg": 90,
+   "after_prognostic_solver_pct": -19.11441283220736,
+   "after_prognostic_solver_label": "-19.1",
+   "final_sum_pct": -5.904172402150287,
+   "final_sum_label": "-5.9"
+  },
+  "SE": {
+   "wind_from_deg": 135,
+   "after_prognostic_solver_pct": -15.777530252774774,
+   "after_prognostic_solver_label": "-15.8",
+   "final_sum_pct": -2.9267677013751325,
+   "final_sum_label": "-2.9"
+  },
+  "S": {
+   "wind_from_deg": 180,
+   "after_prognostic_solver_pct": -14.898615159821615,
+   "after_prognostic_solver_label": "-14.9",
+   "final_sum_pct": -0.858294590656139,
+   "final_sum_label": "-0.9"
+  },
+  "SW": {
+   "wind_from_deg": 225,
+   "after_prognostic_solver_pct": -13.495100294993879,
+   "after_prognostic_solver_label": "-13.5",
+   "final_sum_pct": -2.1625776030582355,
+   "final_sum_label": "-2.2"
+  },
+  "W": {
+   "wind_from_deg": 270,
+   "after_prognostic_solver_pct": -11.724552577582404,
+   "after_prognostic_solver_label": "-11.7",
+   "final_sum_pct": -3.281603842491887,
+   "final_sum_label": "-3.3"
+  },
+  "NW": {
+   "wind_from_deg": 315,
+   "after_prognostic_solver_pct": -14.750046748988376,
+   "after_prognostic_solver_label": "-14.8",
+   "final_sum_pct": -2.805523363677387,
+   "final_sum_label": "-2.8"
+  }
+ },
+ "reference_line_pct": -5,
+ "range_check_against_the_description": {
+  "after_prognostic_solver": {
+   "text": [
+    -19.1,
+    -11.7
+   ],
+   "plotted_min_max": [
+    -19.1,
+    -11.7
+   ],
+   "agree": true
+  },
+  "final_sum": {
+   "text": [
+    -5.9,
+    -0.9
+   ],
+   "plotted_min_max": [
+    -5.9,
+    -0.9
+   ],
+   "agree": true
+  }
+ },
+ "final_sum_beyond_5_pct": [
+  "E"
+ ]
+}

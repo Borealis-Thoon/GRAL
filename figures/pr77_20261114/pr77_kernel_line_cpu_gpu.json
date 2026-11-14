@@ -1,0 +1,108 @@
+{
+ "figure": "pr77_kernel_line_cpu_gpu.png",
+ "quantity": "sum of absolute concentration differences over the sum of the CPU values (field \"nmae\" of kind \"con\" in the source files), CPU run against GPU run",
+ "sources": {
+  "old_line": "<job folder>/gapfix/pr77/evidence/T1_before_merged_cpu__merged_gpu.json",
+  "new_line": "<job folder>/gapfix/pr77/evidence/T1_after_merged_cpu__wk_gpu.json"
+ },
+ "compared_runs": {
+  "old_line": {
+   "A": [
+    "<job folder>/gapfix/pr77/runs/merged",
+    "cpu"
+   ],
+   "B": [
+    "<job folder>/gapfix/pr77/runs/merged",
+    "gpu"
+   ]
+  },
+  "new_line": {
+   "A": [
+    "<job folder>/gapfix/pr77/runs/merged",
+    "cpu"
+   ],
+   "B": [
+    "<job folder>/gapfix/pr77/runs/wk",
+    "gpu"
+   ]
+  }
+ },
+ "table_with_the_same_numbers": "<job folder>/gapfix/pr77/evidence/T1_table.md",
+ "projects_top_to_bottom": [
+  "B00",
+  "odour",
+  "transient_all_sources",
+  "wet_drift_all",
+  "tunnel_entrance",
+  "transient_area_drydep",
+  "prog_buildings_terrain"
+ ],
+ "plotted": {
+  "B00": {
+   "old_line": 0.03077921240976328,
+   "old_line_label": "3.1e-2",
+   "new_line": 0.005168449576916176,
+   "new_line_label": "5.2e-3"
+  },
+  "odour": {
+   "old_line": 0.010273265274763277,
+   "old_line_label": "1.0e-2",
+   "new_line": 0.00014438897662739922,
+   "new_line_label": "1.4e-4"
+  },
+  "transient_all_sources": {
+   "old_line": 0.008552183002226673,
+   "old_line_label": "8.6e-3",
+   "new_line": 5.241555530930811e-05,
+   "new_line_label": "5.2e-5"
+  },
+  "wet_drift_all": {
+   "old_line": 0.008330909476516168,
+   "old_line_label": "8.3e-3",
+   "new_line": 2.3376747207968663e-05,
+   "new_line_label": "2.3e-5"
+  },
+  "tunnel_entrance": {
+   "old_line": 0.00776083133665225,
+   "old_line_label": "7.8e-3",
+   "new_line": 3.61322085556055e-05,
+   "new_line_label": "3.6e-5"
+  },
+  "transient_area_drydep": {
+   "old_line": 0.006954860422056553,
+   "old_line_label": "7.0e-3",
+   "new_line": 2.523402016187573e-05,
+   "new_line_label": "2.5e-5"
+  },
+  "prog_buildings_terrain": {
+   "old_line": 0.00038631154461392576,
+   "old_line_label": "3.9e-4",
+   "new_line": 2.1685407359754e-06,
+   "new_line_label": "2.2e-6"
+  }
+ },
+ "range_check_against_the_description": {
+  "old_line": {
+   "text": [
+    "3.9e-4",
+    "3.1e-2"
+   ],
+   "plotted_min_max": [
+    "3.9e-4",
+    "3.1e-2"
+   ],
+   "agree": true
+  },
+  "new_line": {
+   "text": [
+    "2.2e-6",
+    "5.2e-3"
+   ],
+   "plotted_min_max": [
+    "2.2e-6",
+    "5.2e-3"
+   ],
+   "agree": true
+  }
+ }
+}
