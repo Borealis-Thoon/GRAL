@@ -1,11 +1,11 @@
 """Figure for the #77 reply of 16 Nov 2026: how far apart two runs of the Boiler project end up, per situation.
 
-Grouped bars, one group per weather situation: sum of absolute cell differences of the 2 m concentration over the
+Grouped bars, one group per weather situation: sum of absolute cell differences of the 3 m concentration (the only slice of this project) over the
 sum of the first run (NMAE), for
-  - random seeds, GPU against GPU (seed noise),
+  - reproducible results off, GPU against GPU (new seeds; the flow field also runs on all threads),
   - fixed seeds, CPU against CPU with the source moved 1 cm,
   - fixed seeds, CPU against GPU,
-  - fixed seeds, CPU against GPU without plume rise (exit velocity 0).
+  - fixed seeds, CPU against GPU with exit velocity 0 (no plume rise; a different concentration field).
 Numbers are recomputed here from the .grz files of the run folders (same decoding as tools/diff_detail.py).
 """
 import json
@@ -22,10 +22,10 @@ JOB = Path(r'<job folder>')
 OUT = Path(__file__).resolve().parent
 NAME = 'pr77_boiler_divergence'
 PAIRS = [
-    ('gpu', 'gpu_repeat', 'random seeds: GPU against GPU (seed noise)', '#8a96a3'),
+    ('gpu', 'gpu_repeat', 'reproducible results off: GPU against GPU (new seeds)', '#8a96a3'),
     ('cpu_fixed', 'cpu_fixed_pert', 'fixed seeds: CPU against CPU, source moved 1 cm', '#d9822b'),
     ('cpu_fixed', 'gpu_fixed', 'fixed seeds: CPU against GPU', '#2f6f9f'),
-    ('cpu_fixed_nopr', 'gpu_fixed_nopr', 'fixed seeds: CPU against GPU, no plume rise', '#7fa7c9'),
+    ('cpu_fixed_nopr', 'gpu_fixed_nopr', 'fixed seeds: CPU against GPU, exit velocity 0', '#7fa7c9'),
 ]
 INK, MUTED, GRID = '#1f2d3d', '#5b6b7b', '#d9e1e8'
 plt.rcParams.update({'font.family': 'DejaVu Sans', 'font.size': 10.5, 'axes.edgecolor': GRID,
@@ -61,12 +61,12 @@ def main():
             ax.text(bx.get_x() + bx.get_width() / 2, bv + 0.01, f'{bv:.2f}', ha='center', va='bottom', fontsize=8.2, color=INK)
     ax.set_xticks(x)
     ax.set_xticklabels([f'situation {s}' for s in range(1, 5)])
-    ax.set_ylabel('sum |difference| / sum of first run')
+    ax.set_ylabel('sum |difference| / sum of the first-named run')
     ax.set_ylim(0, 0.85)
     ax.yaxis.grid(True, color=GRID, linewidth=0.8)
     ax.set_axisbelow(True)
     ax.legend(loc='upper left', frameon=False, fontsize=9.2)
-    fig.suptitle('Boiler project, 2 m concentration: difference between two runs (RX 9070 XT, Windows)',
+    fig.suptitle('Boiler project, 3 m concentration: difference between two runs (RX 9070 XT, Windows)',
                  x=0.01, ha='left', fontsize=11.5, color=INK)
     fig.tight_layout()
     fig.savefig(OUT / f'{NAME}.png', facecolor='white')
